@@ -1,0 +1,20 @@
+
+configuration {
+    font: "CaskaydiaCoveNerdFont-Regular 16";
+    line-margin: 10;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
+}
+
+
+@theme "~/.config/rofi/themes/nord.rasi"
+
+listview {
+	lines: 10;
+	columns: 1;
+}

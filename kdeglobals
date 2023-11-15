@@ -1,0 +1,36 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[Colors:View]
+BackgroundNormal=#2e3440
+
+[General]
+TerminalApplication=foot
+toolBarFont="Cascadia Code",10,-1,5,50,0,0,0,0,0,Regular
+
+[KDE]
+AnimationDurationFactor=0.500000
+ShowDeleteCommand=false
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=true
+Sort reversed=false
+Speedbar Width=144
+View Style=DetailTree
+
+[PreviewSettings]
+MaximumRemoteSize=0
