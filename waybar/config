@@ -1,5 +1,6 @@
 {
-    "layer": "top",
+    "name": "waybar#Info",
+	"layer": "top",
     "position": "top",
     "height": 40,
     "width": 1920,
@@ -7,8 +8,12 @@
     // "gtk-layer-shell": "false",
     // Choose the order of the modules
     "modules-left": ["cpu", "memory", "temperature", "network", "custom/zypper"],
-    "modules-center": ["hyprland/workspaces", "tray"], 
+    "modules-center": ["hyprland/workspaces", "custom/rofi", "tray"], 
     "modules-right": ["wireplumber", "custom/layout", "clock", "custom/notification"],
+	"custom/rofi":{
+		"format": "▷",
+		"on-click": "sleep 0.1; rofi -modes drun,run -show drun"
+	},
     "sway/mode": {
         "format": " {}"
     },
@@ -23,14 +28,14 @@
         "tooltip": false,
         "exec": "swaymsg -mrt subscribe '[\"input\"]' | jq -r --unbuffered \"select(.change == \\\"xkb_layout\\\") | .input | select(.type == \\\"keyboard\\\") | .xkb_active_layout_name | .[0:2]\""
     },
-    "custom/zypper": {
-        "format": " {}",
-        "interval": 3600,
-        "exec": "zypper lu | grep 'v |' | wc -l; echo 'packages to update'",
-        "exec-if": "exit 0",
-        "on-click": "exec foot -e sudo sh -c 'zypper ref; zypper dup; pkill -SIGRTMIN+8 waybar'",
-        "signal": 8
-    },
+    //"custom/portage": {
+    //    "format": " {}",
+    //    "interval": 3600,
+    //    "exec": "emerge -puD --with-bdeps=y @world | grep -c '\[ebuild",
+    //    "exec-if": "exit 0",
+    //    "on-click": "exec foot -e sudo sh -c 'zypper ref; zypper dup; pkill -SIGRTMIN+8 waybar'",
+    //    "signal": 8
+    //},
     // Modules configuration
     //  "sway/workspaces": {
     //     "disable-scroll": true,
@@ -87,9 +92,9 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "<span color='#a3be8c'></span>",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "<span color='#bf616a'>⚠</span>",
+        "format-ethernet": "◎",
+        "format-linked": "◉",
+        "format-disconnected": "<span color='#bf616a'>◍</span>",
         "format-alt": "{ifname} {essid} ({signalStrength}%)"
     },
     "wireplumber": {
@@ -129,12 +134,3 @@
 	"escape": true
    }
 }
-
-{
-    "layer": "top",
-    "position": "bottom",
-    "height": 40,
-    "width": 500,
-	"margin-top": 0
-}
-
