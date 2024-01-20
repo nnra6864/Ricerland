@@ -22,8 +22,8 @@
 
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
- bars = 512
- bar_width = 0.001
+ bars = 0
+ bar_width = 4
  bar_spacing = 0
 # bar_height is only used for output in "noritake" format
 ; bar_height = 32
