@@ -1,0 +1,153 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240120_120557
+====================================================================================================
+
+0     |Info:    Found file: Nord.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Nord
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Dim.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Dim
+0     |Info:    Found file: Green.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Green
+0     |Info:    Found file: Snow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Snow
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |               Start device detection               |
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1005  |Info:    ------------------------------------------------------
+1005  |Info:    |             Detecting I2C interfaces               |
+1005  |Info:    ------------------------------------------------------
+1005  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1005  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1006  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1006  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1006  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1006  |Info:    ------------------------------------------------------
+1006  |Info:    |               Detecting I2C devices                |
+1006  |Info:    ------------------------------------------------------
+1487  |Info:    [ENE DRAM] Registering RGB controller
+1663  |Info:    [ENE DRAM] Registering RGB controller
+1827  |Info:    [ENE DRAM] Registering RGB controller
+1991  |Info:    [ENE DRAM] Registering RGB controller
+2031  |Info:    ------------------------------------------------------
+2031  |Info:    |               Detecting I2C PCI devices            |
+2031  |Info:    ------------------------------------------------------
+2032  |Info:    ------------------------------------------------------
+2032  |Info:    |               Detecting HID devices                |
+2032  |Info:    ------------------------------------------------------
+2196  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2456  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+2456  |Info:    ------------------------------------------------------
+2456  |Info:    |            Detecting libusb HID devices            |
+2456  |Info:    ------------------------------------------------------
+2475  |Info:    [HyperX Quadcast S] Registering RGB controller
+2475  |Info:    ------------------------------------------------------
+2475  |Info:    |              Detecting other devices               |
+2475  |Info:    ------------------------------------------------------
+2484  |Info:    ------------------------------------------------------
+2484  |Info:    |                Detection completed                 |
+2484  |Info:    ------------------------------------------------------
+7934  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+7935  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+7935  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+7935  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+7935  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw7
+7935  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+7935  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-7.4:1.0
+210228|Info:    Found file: Nord.orp attempting to validate header
+210228|Info:    Valid v4 profile found for Nord
+210228|Info:    Found file: Off.orp attempting to validate header
+210228|Info:    Valid v4 profile found for Off
+210228|Info:    Found file: Dim.orp attempting to validate header
+210228|Info:    Valid v4 profile found for Dim
+210228|Info:    Found file: Green.orp attempting to validate header
+210228|Info:    Valid v4 profile found for Green
+210228|Info:    Found file: Snow.orp attempting to validate header
+210228|Info:    Valid v4 profile found for Snow
+290664|Info:    Found file: Nord.orp attempting to validate header
+290664|Info:    Valid v4 profile found for Nord
+290664|Info:    Found file: Off.orp attempting to validate header
+290664|Info:    Valid v4 profile found for Off
+290664|Info:    Found file: Dim.orp attempting to validate header
+290664|Info:    Valid v4 profile found for Dim
+290664|Info:    Found file: Green.orp attempting to validate header
+290664|Info:    Valid v4 profile found for Green
+290664|Info:    Found file: Snow.orp attempting to validate header
+290664|Info:    Valid v4 profile found for Snow
+351380|Info:    Found file: Nord.orp attempting to validate header
+351380|Info:    Valid v4 profile found for Nord
+351380|Info:    Found file: Off.orp attempting to validate header
+351380|Info:    Valid v4 profile found for Off
+351380|Info:    Found file: Dim.orp attempting to validate header
+351380|Info:    Valid v4 profile found for Dim
+351380|Info:    Found file: Green.orp attempting to validate header
+351380|Info:    Valid v4 profile found for Green
+351380|Info:    Found file: Snow.orp attempting to validate header
+351380|Info:    Valid v4 profile found for Snow
+414729|Info:    Found file: Nord.orp attempting to validate header
+414730|Info:    Valid v4 profile found for Nord
+414730|Info:    Found file: Off.orp attempting to validate header
+414730|Info:    Valid v4 profile found for Off
+414730|Info:    Found file: Dim.orp attempting to validate header
+414730|Info:    Valid v4 profile found for Dim
+414730|Info:    Found file: Green.orp attempting to validate header
+414730|Info:    Valid v4 profile found for Green
+414730|Info:    Found file: Snow.orp attempting to validate header
+414730|Info:    Valid v4 profile found for Snow
+415982|Info:    Found file: Nord.orp attempting to validate header
+415982|Info:    Valid v4 profile found for Nord
+415982|Info:    Found file: Off.orp attempting to validate header
+415982|Info:    Valid v4 profile found for Off
+415982|Info:    Found file: Dim.orp attempting to validate header
+415982|Info:    Valid v4 profile found for Dim
+415982|Info:    Found file: Green.orp attempting to validate header
+415982|Info:    Valid v4 profile found for Green
+415982|Info:    Found file: Snow.orp attempting to validate header
+415982|Info:    Valid v4 profile found for Snow
+481202|Info:    Found file: Nord.orp attempting to validate header
+481202|Info:    Valid v4 profile found for Nord
+481202|Info:    Found file: Off.orp attempting to validate header
+481202|Info:    Valid v4 profile found for Off
+481202|Info:    Found file: Dim.orp attempting to validate header
+481202|Info:    Valid v4 profile found for Dim
+481202|Info:    Found file: Green.orp attempting to validate header
+481202|Info:    Valid v4 profile found for Green
+481202|Info:    Found file: Snow.orp attempting to validate header
+481202|Info:    Valid v4 profile found for Snow
+634452|Info:    Found file: Nord.orp attempting to validate header
+634452|Info:    Valid v4 profile found for Nord
+634452|Info:    Found file: Off.orp attempting to validate header
+634452|Info:    Valid v4 profile found for Off
+634452|Info:    Found file: Dim.orp attempting to validate header
+634452|Info:    Valid v4 profile found for Dim
+634452|Info:    Found file: Green.orp attempting to validate header
+634452|Info:    Valid v4 profile found for Green
+634452|Info:    Found file: Snow.orp attempting to validate header
+634452|Info:    Valid v4 profile found for Snow
+695930|Info:    Found file: Nord.orp attempting to validate header
+695930|Info:    Valid v4 profile found for Nord
+695930|Info:    Found file: Off.orp attempting to validate header
+695930|Info:    Valid v4 profile found for Off
+695930|Info:    Found file: Dim.orp attempting to validate header
+695930|Info:    Valid v4 profile found for Dim
+695930|Info:    Found file: Green.orp attempting to validate header
+695930|Info:    Valid v4 profile found for Green
+695930|Info:    Found file: Snow.orp attempting to validate header
+695930|Info:    Valid v4 profile found for Snow
+708283|Info:    Found file: Nord.orp attempting to validate header
+708283|Info:    Valid v4 profile found for Nord
+708283|Info:    Found file: Off.orp attempting to validate header
+708283|Info:    Valid v4 profile found for Off
+708283|Info:    Found file: Dim.orp attempting to validate header
+708283|Info:    Valid v4 profile found for Dim
+708283|Info:    Found file: Green.orp attempting to validate header
+708283|Info:    Valid v4 profile found for Green
+708283|Info:    Found file: Snow.orp attempting to validate header
+708283|Info:    Valid v4 profile found for Snow

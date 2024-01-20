@@ -1,0 +1,59 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240118_222634
+====================================================================================================
+
+0     |Info:    Found file: Nord.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Nord
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Dim.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Dim
+0     |Info:    Found file: Green.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Green
+1003  |Info:    ------------------------------------------------------
+1003  |Info:    |               Start device detection               |
+1003  |Info:    ------------------------------------------------------
+1003  |Info:    Initializing HID interfaces: Success
+1008  |Info:    ------------------------------------------------------
+1008  |Info:    |             Detecting I2C interfaces               |
+1008  |Info:    ------------------------------------------------------
+1009  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1009  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1009  |Info:    ------------------------------------------------------
+1009  |Info:    |               Detecting I2C devices                |
+1009  |Info:    ------------------------------------------------------
+1694  |Info:    [ENE DRAM] Registering RGB controller
+1879  |Info:    [ENE DRAM] Registering RGB controller
+2053  |Info:    [ENE DRAM] Registering RGB controller
+2235  |Info:    [ENE DRAM] Registering RGB controller
+2238  |Info:    ------------------------------------------------------
+2238  |Info:    |               Detecting I2C PCI devices            |
+2238  |Info:    ------------------------------------------------------
+2239  |Info:    ------------------------------------------------------
+2239  |Info:    |               Detecting HID devices                |
+2239  |Info:    ------------------------------------------------------
+2397  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2603  |Info:    ------------------------------------------------------
+2603  |Info:    |            Detecting libusb HID devices            |
+2603  |Info:    ------------------------------------------------------
+2610  |Info:    [HyperX Quadcast S] Registering RGB controller
+2610  |Info:    ------------------------------------------------------
+2610  |Info:    |              Detecting other devices               |
+2610  |Info:    ------------------------------------------------------
+2612  |Info:    ------------------------------------------------------
+2612  |Info:    |                Detection completed                 |
+2612  |Info:    ------------------------------------------------------
+7871  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x39
+7871  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3B
+7871  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3C
+7871  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3D
+7871  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw7
+7871  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-7.4:1.0

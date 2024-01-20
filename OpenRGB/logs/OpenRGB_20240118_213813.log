@@ -1,0 +1,73 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240118_213813
+====================================================================================================
+
+23    |Info:    Found file: Nord.orp attempting to validate header
+24    |Info:    Valid v4 profile found for Nord
+24    |Info:    Found file: Off.orp attempting to validate header
+25    |Info:    Valid v4 profile found for Off
+25    |Info:    Found file: Dim.orp attempting to validate header
+26    |Info:    Valid v4 profile found for Dim
+1028  |Info:    ------------------------------------------------------
+1028  |Info:    |               Start device detection               |
+1028  |Info:    ------------------------------------------------------
+1028  |Info:    Initializing HID interfaces: Success
+1032  |Info:    ------------------------------------------------------
+1032  |Info:    |             Detecting I2C interfaces               |
+1032  |Info:    ------------------------------------------------------
+1032  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1032  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1032  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1035  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1035  |Info:    ------------------------------------------------------
+1035  |Info:    |               Detecting I2C devices                |
+1035  |Info:    ------------------------------------------------------
+1734  |Info:    [ENE DRAM] Registering RGB controller
+1928  |Info:    [ENE DRAM] Registering RGB controller
+2097  |Info:    [ENE DRAM] Registering RGB controller
+2263  |Info:    [ENE DRAM] Registering RGB controller
+2265  |Info:    ------------------------------------------------------
+2265  |Info:    |               Detecting I2C PCI devices            |
+2265  |Info:    ------------------------------------------------------
+2266  |Info:    ------------------------------------------------------
+2266  |Info:    |               Detecting HID devices                |
+2266  |Info:    ------------------------------------------------------
+2426  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2689  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+2689  |Info:    ------------------------------------------------------
+2689  |Info:    |            Detecting libusb HID devices            |
+2689  |Info:    ------------------------------------------------------
+2699  |Info:    [HyperX Quadcast S] Registering RGB controller
+2699  |Info:    ------------------------------------------------------
+2699  |Info:    |              Detecting other devices               |
+2699  |Info:    ------------------------------------------------------
+2700  |Info:    ------------------------------------------------------
+2700  |Info:    |                Detection completed                 |
+2700  |Info:    ------------------------------------------------------
+7746  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x39
+7746  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3B
+7746  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3C
+7746  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3D
+7746  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw8
+7746  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+7746  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-7.4:1.0
+8860  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x39
+8860  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3B
+8860  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3C
+8860  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3D
+8860  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw8
+8860  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+8860  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-7.4:1.0
+9117  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x39
+9117  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3B
+9117  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3C
+9117  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x3D
+9117  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw8
+9117  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+9117  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-7.4:1.0

@@ -1,0 +1,85 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240112_130049
+====================================================================================================
+
+1001  |Info:    ------------------------------------------------------
+1001  |Info:    |               Start device detection               |
+1001  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    |             Detecting I2C interfaces               |
+1004  |Info:    ------------------------------------------------------
+1005  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1005  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1005  |Info:    ------------------------------------------------------
+1005  |Info:    |               Detecting I2C devices                |
+1005  |Info:    ------------------------------------------------------
+1672  |Info:    [ENE DRAM] Registering RGB controller
+1857  |Info:    [ENE DRAM] Registering RGB controller
+2024  |Info:    [ENE DRAM] Registering RGB controller
+2195  |Info:    [ENE DRAM] Registering RGB controller
+2198  |Info:    ------------------------------------------------------
+2198  |Info:    |               Detecting I2C PCI devices            |
+2198  |Info:    ------------------------------------------------------
+2199  |Info:    ------------------------------------------------------
+2199  |Info:    |               Detecting HID devices                |
+2199  |Info:    ------------------------------------------------------
+2199  |Info:    ------------------------------------------------------
+2199  |Info:    |            Detecting libusb HID devices            |
+2199  |Info:    ------------------------------------------------------
+2200  |Info:    ------------------------------------------------------
+2200  |Info:    |              Detecting other devices               |
+2200  |Info:    ------------------------------------------------------
+2201  |Info:    ------------------------------------------------------
+2201  |Info:    |                Detection completed                 |
+2201  |Info:    ------------------------------------------------------
+138372|Info:    ------------------------------------------------------
+138372|Info:    |               Start device detection               |
+138372|Info:    ------------------------------------------------------
+138373|Info:    Initializing HID interfaces: Success
+138375|Info:    ------------------------------------------------------
+138375|Info:    |             Detecting I2C interfaces               |
+138375|Info:    ------------------------------------------------------
+138375|Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+138375|Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+138375|Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+138375|Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+138375|Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+138376|Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+138376|Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+138376|Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+138376|Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+138376|Info:    ------------------------------------------------------
+138376|Info:    |               Detecting I2C devices                |
+138376|Info:    ------------------------------------------------------
+139052|Info:    [ENE DRAM] Registering RGB controller
+139235|Info:    [ENE DRAM] Registering RGB controller
+139404|Info:    [ENE DRAM] Registering RGB controller
+139576|Info:    [ENE DRAM] Registering RGB controller
+139579|Info:    ------------------------------------------------------
+139579|Info:    |               Detecting I2C PCI devices            |
+139579|Info:    ------------------------------------------------------
+139580|Info:    ------------------------------------------------------
+139580|Info:    |               Detecting HID devices                |
+139580|Info:    ------------------------------------------------------
+139580|Info:    ------------------------------------------------------
+139580|Info:    |            Detecting libusb HID devices            |
+139580|Info:    ------------------------------------------------------
+139581|Info:    ------------------------------------------------------
+139581|Info:    |              Detecting other devices               |
+139581|Info:    ------------------------------------------------------
+139581|Info:    ------------------------------------------------------
+139581|Info:    |                Detection completed                 |
+139581|Info:    ------------------------------------------------------
+189789|Info:    Found file: Nord.orp attempting to validate header
+189789|Info:    Valid v4 profile found for Nord
+192760|Info:    Found file: Nord.orp attempting to validate header
+192760|Info:    Valid v4 profile found for Nord
