@@ -45,7 +45,6 @@ local packages = {
 
 	-- Eyecandy
 	"nvim-lualine/lualine.nvim",
-  	"lukas-reineke/indent-blankline.nvim",
   	"Pocco81/true-zen.nvim",
   	"shaunsingh/nord.nvim",
   	"folke/twilight.nvim",

@@ -34,7 +34,6 @@ require("lazy").setup(vars.packages)
 vim.cmd("colorscheme " .. vars.colorscheme)
 
 vim.defer_fn(function()
-  require("indent_blankline").setup({})
   require("autoclose").setup({})
   require("true-zen").setup({})
   require("nvim-tree").setup({})
