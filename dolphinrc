@@ -9,6 +9,10 @@ PreviewSize=64
 [DetailsMode]
 PreviewSize=16
 
+[ExtractDialog]
+5120x1440 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/
+
 [General]
 Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136
@@ -16,6 +20,9 @@ ViewPropsTimestamp=2023,8,28,1,16,21.136
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+Recent Files[$e]=file:$HOME,file:$HOME
+Recent URLs[$e]=file:$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/
+detailViewIconSize=16
 
 [KPropertiesDialog]
 5120x1440 screen: Height=473
