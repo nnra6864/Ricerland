@@ -1,6 +1,6 @@
 
 configuration {
-    font: "CaskaydiaCoveNerdFont-Regular 16";
+    font: "Cascadia Code 16";
     line-margin: 10;
 
     display-ssh:    "";

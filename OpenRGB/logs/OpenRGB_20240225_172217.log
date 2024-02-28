@@ -1,0 +1,61 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240225_172217
+====================================================================================================
+
+14    |Info:    Found file: Nord.orp attempting to validate header
+15    |Info:    Valid v4 profile found for Nord
+15    |Info:    Found file: Off.orp attempting to validate header
+16    |Info:    Valid v4 profile found for Off
+16    |Info:    Found file: Dim.orp attempting to validate header
+16    |Info:    Valid v4 profile found for Dim
+16    |Info:    Found file: Green.orp attempting to validate header
+18    |Info:    Valid v4 profile found for Green
+18    |Info:    Found file: Snow.orp attempting to validate header
+18    |Info:    Valid v4 profile found for Snow
+1020  |Info:    ------------------------------------------------------
+1020  |Info:    |               Start device detection               |
+1020  |Info:    ------------------------------------------------------
+1020  |Info:    Initializing HID interfaces: Success
+1024  |Info:    ------------------------------------------------------
+1024  |Info:    |             Detecting I2C interfaces               |
+1024  |Info:    ------------------------------------------------------
+1024  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1024  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1024  |Info:    ------------------------------------------------------
+1024  |Info:    |               Detecting I2C devices                |
+1024  |Info:    ------------------------------------------------------
+1519  |Info:    [ENE DRAM] Registering RGB controller
+1683  |Info:    [ENE DRAM] Registering RGB controller
+1850  |Info:    [ENE DRAM] Registering RGB controller
+2017  |Info:    [ENE DRAM] Registering RGB controller
+2058  |Info:    ------------------------------------------------------
+2058  |Info:    |               Detecting I2C PCI devices            |
+2058  |Info:    ------------------------------------------------------
+2058  |Info:    ------------------------------------------------------
+2058  |Info:    |               Detecting HID devices                |
+2058  |Info:    ------------------------------------------------------
+2219  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2424  |Info:    ------------------------------------------------------
+2424  |Info:    |            Detecting libusb HID devices            |
+2424  |Info:    ------------------------------------------------------
+2435  |Info:    [HyperX Quadcast S] Registering RGB controller
+2435  |Info:    ------------------------------------------------------
+2435  |Info:    |              Detecting other devices               |
+2435  |Info:    ------------------------------------------------------
+2440  |Info:    ------------------------------------------------------
+2440  |Info:    |                Detection completed                 |
+2440  |Info:    ------------------------------------------------------
+202927|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+202927|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+202927|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+202927|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+202927|Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw5
+202927|Info:    Profile loading: FAILED! for HyperX Quadcast S @ 1-4.4:1.0

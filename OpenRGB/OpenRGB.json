@@ -5,11 +5,11 @@
         "enabled": true,
         "host": "0.0.0.0",
         "port": "6742",
-        "profile": "Dim",
+        "profile": "Snow",
         "setclient": false,
         "setcustom": false,
         "setminimized": true,
-        "setprofile": false,
+        "setprofile": true,
         "setserver": false,
         "setserverhost": false,
         "setserverport": false
