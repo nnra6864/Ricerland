@@ -11,7 +11,7 @@ PreviewSize=16
 
 [ExtractDialog]
 5120x1440 screen: Window-Maximized=true
-DirHistory[$e]=$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/
+DirHistory[$e]=$HOME/Downloads/Premiere.Pro.2024/PP/,$HOME/Downloads/After.Effects.2024/AE/,$HOME/Downloads/After.Effects.2024/,$HOME/Downloads/,$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/
 
 [General]
 Version=202
@@ -20,8 +20,8 @@ ViewPropsTimestamp=2023,8,28,1,16,21.136
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
-Recent Files[$e]=file:$HOME,file:$HOME
-Recent URLs[$e]=file:$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:$HOME/.var/app/com.mojang.Minecraft/data/minecraft/resourcepacks/,file:$HOME/Downloads/,file:$HOME/Downloads/After.Effects.2024/,file:$HOME/Downloads/After.Effects.2024/AE/,file:$HOME/Downloads/Premiere.Pro.2024/PP/
 detailViewIconSize=16
 
 [KPropertiesDialog]

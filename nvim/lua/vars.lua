@@ -18,7 +18,7 @@ local lsp_keymaps = {
 	{ "d]", "diagnostics.goto_next" },
 }
 
-local lsps = { "clangd", "lua_ls", "omnisharp" }
+local lsps = { "clangd", "lua_ls", "omnisharp", "pylsp" }
 
 local autocomplete_icons = {
 	nvim_lsp = "L",
@@ -60,6 +60,7 @@ local packages = {
   	"L3MON4D3/LuaSnip",
   	"saadparwaiz1/cmp_luasnip",
   	"folke/trouble.nvim",
+	"python-lsp/python-lsp-server",
 
   	-- IDE
   	"nvim-telescope/telescope.nvim",
@@ -80,9 +81,12 @@ vim.opt.colorcolumn = "0"
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.softtabstop = 0
-vim.g.mapleader = ","
+vim.g.mapleader = "<Space>"
 vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>D", function ()
+    vim.diagnostic.open_float()
+end)
 
 return {
   colorscheme = colorscheme,
