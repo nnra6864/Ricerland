@@ -1,2 +1,2 @@
 # Hyprnord
-![Hyprmouse](Icon.svg "Hyprmouse")
+![Hyprnord](HyprnordLogo.png "Hyprnord")
