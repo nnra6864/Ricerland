@@ -27,6 +27,7 @@
 !/cava/
 !/btop/
 !/OpenRGB/
+/OpenRGB/logs/
 !/pipewire/
 !/JetBrainsSettings.zip
 !/vencord-settings-backup.json
