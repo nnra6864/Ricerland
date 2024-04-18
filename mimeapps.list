@@ -15,7 +15,7 @@ image/svg+xml=firefox-bin.desktop;google-chrome.desktop;nvim.desktop;
 text/css=Neovide.desktop;
 text/plain=nvim.desktop;Rider.desktop;
 text/x-csharp=Rider.desktop;
-video/mp4=mpv.desktop;mediainfo-gui.desktop;vlc.desktop;
+video/mp4=vlc.desktop;mpv.desktop;mediainfo-gui.desktop;
 video/vnd.avi=mpv.desktop;vlc.desktop;mediainfo-gui.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mediainfo-gui.desktop;
 
@@ -36,7 +36,7 @@ image/svg+xml=firefox-bin.desktop;
 text/css=Neovide.desktop;
 text/plain=nvim.desktop;
 text/x-csharp=Rider.desktop;
-video/mp4=mpv.desktop;
+video/mp4=vlc.desktop;
 video/vnd.avi=mpv.desktop;
 video/x-matroska=mpv.desktop;
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
