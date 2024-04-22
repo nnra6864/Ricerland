@@ -1,4 +1,5 @@
 [Added Associations]
+application/json=Neovide.desktop;
 application/pdf=firefox-bin.desktop;google-chrome.desktop;mupdf.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/x-blender=Blender.desktop;
@@ -12,7 +13,9 @@ audio/x-ms-asx=mpv.desktop;mediainfo-gui.desktop;vlc.desktop;
 image/gif=mpv.desktop;
 image/png=google-chrome.desktop;firefox-bin.desktop;mpv.desktop;
 image/svg+xml=firefox-bin.desktop;google-chrome.desktop;nvim.desktop;
+image/vnd.adobe.photoshop=Krita.desktop;
 text/css=Neovide.desktop;
+text/markdown=Neovide.desktop;nvim.desktop;Rider.desktop;
 text/plain=nvim.desktop;Rider.desktop;
 text/x-csharp=Rider.desktop;
 video/mp4=vlc.desktop;mpv.desktop;mediainfo-gui.desktop;
@@ -20,6 +23,7 @@ video/vnd.avi=mpv.desktop;vlc.desktop;mediainfo-gui.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;mediainfo-gui.desktop;
 
 [Default Applications]
+application/json=Neovide.desktop;
 application/pdf=firefox-bin.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
 application/x-blender=Blender.desktop;
@@ -33,7 +37,9 @@ audio/x-ms-asx=mpv.desktop;
 image/gif=mpv.desktop;
 image/png=google-chrome.desktop;
 image/svg+xml=firefox-bin.desktop;
+image/vnd.adobe.photoshop=Krita.desktop;
 text/css=Neovide.desktop;
+text/markdown=Neovide.desktop;
 text/plain=nvim.desktop;
 text/x-csharp=Rider.desktop;
 video/mp4=vlc.desktop;
