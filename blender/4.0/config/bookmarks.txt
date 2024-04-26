@@ -1,0 +1,12 @@
+[Bookmarks]
+[Recent]
+/home/nnra/Documents/Projects/SkywardSoftware/Pillars/
+/home/nnra/Documents/Projects/
+/mnt/HDD2TB/Work/3D/Blender/Saves/
+/home/nnra/Documents/SkywardMattress/
+/mnt/HDD2TB/Work/3D/Blender/Saves/SkywardSoftware/Football/Mattress/
+/home/nnra/Documents/
+/mnt/HDD2TB/Work/3D/Blender/Saves/SkywardSoftware/Football/Glove/
+/mnt/HDD2TB/Work/3D/Blender/Saves/SkywardSoftware/Football/Glove/Textures/
+/mnt/HDD2TB/Work/3D/Blender/Saves/Skyward Software/Football/
+/home/nnra/.local/share/fonts/Cascadia/ttf/

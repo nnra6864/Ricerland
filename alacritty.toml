@@ -1,0 +1,14 @@
+[window]
+padding = {x = 10, y = 10}
+
+[font]
+normal = { family = "Iosevka Comfy", style = "Regular" }
+bold = { family = "Iosevka Comfy", style = "Bold" }
+italic = { family = "Iosevka Comfy", style = "Italic" }
+bold_italic = { family = "Iosevka Comfy", style = "Bold Italic" }
+size = 12
+
+[cursor]
+smooth_motion = true
+smooth_motion_factor = 0.2
+smooth_motion_spring = 0.5
