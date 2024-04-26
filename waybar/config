@@ -1,0 +1,136 @@
+{
+    "name": "waybar#Info",
+	"layer": "top",
+    "position": "top",
+    "height": 40,
+    "width": 1920,
+	"margin-top": 0,
+    // "gtk-layer-shell": "false",
+    // Choose the order of the modules
+    "modules-left": ["cpu", "memory", "temperature", "network", "custom/zypper"],
+    "modules-center": ["hyprland/workspaces", "custom/rofi", "tray"], 
+    "modules-right": ["wireplumber", "custom/layout", "clock", "custom/notification"],
+	"custom/rofi":{
+		"format": "▷",
+		"on-click": "sleep 0.1; rofi -modes drun,run -show drun"
+	},
+    "sway/mode": {
+        "format": " {}"
+    },
+	"hyprland/workspaces": {
+		"format": "<span color='#88c0d0'><b>{}</b></span>",
+	},
+    "sway/window": {
+        "max-length": 80,
+        "tooltip": false
+    },
+    "custom/layout": {
+        "tooltip": false,
+        "exec": "swaymsg -mrt subscribe '[\"input\"]' | jq -r --unbuffered \"select(.change == \\\"xkb_layout\\\") | .input | select(.type == \\\"keyboard\\\") | .xkb_active_layout_name | .[0:2]\""
+    },
+    //"custom/portage": {
+    //    "format": " {}",
+    //    "interval": 3600,
+    //    "exec": "emerge -puD --with-bdeps=y @world | grep -c '\[ebuild",
+    //    "exec-if": "exit 0",
+    //    "on-click": "exec foot -e sudo sh -c 'zypper ref; zypper dup; pkill -SIGRTMIN+8 waybar'",
+    //    "signal": 8
+    //},
+    // Modules configuration
+    //  "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "format": "{name}: {icon}",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
+    // },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        } 
+    },
+    "tray": {
+        //"icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": " {:%a %d.%m.%Y. %H:%M:%S}",
+        "tooltip-format": "<span color='#88c0d0'><big>{:%Y %B}</big></span>\n<span color='#88c0d0'><tt><small>{calendar}</small></tt></span>",
+        "format-alt": "{:w:%V, %a, %d.%m.%Y. %H:%M:%S}",
+        "today-format": "<span color='#88c0d0'><b><u>{}</u></b></span>",
+        "calendar-weeks-pos": "left",
+        "format-calendar": "<span background='#3b4252' bgalpha='60%'><b>{}</b></span>",
+        "format-calendar-weeks": "<span color='#88c0d0'><b>{}</b></span>",
+        "format-calendar-weekdays": "<span color='#88c0d0'><b>{}</b></span>",
+        "interval": 1
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "format": "{icon} {temperatureC}°C",
+        "critical-threshold": 90,
+        "format-critical": "<span color='#bf616a'>{icon}<b>{temperatureC}°C</b></span>",
+        "format-icons": ["", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "<span color='#a3be8c'></span>",
+        "format-ethernet": "◎",
+        "format-linked": "◉",
+        "format-disconnected": "<span color='#bf616a'>◍</span>",
+        "format-alt": "{ifname} {essid} ({signalStrength}%)"
+    },
+    "wireplumber": {
+    "format": "{icon} {volume:2}%",
+    "format-muted": "<span color='#bf616a'> </span>",
+    "format-icons": {
+        "default": ["", "", ""]
+    },
+    "scroll-step": 5,
+    "max-volume": 100,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pavucontrol"
+    },
+    "custom/scratchpad": {
+        "format-text": "{}",
+        "return-type": "json",
+        "interval": 3,
+        "exec": "/usr/share/openSUSEway/helpers/scratchpad-indicator.sh 2> /dev/null",
+        "exec-if": "exit 0",
+        "on-click": "swaymsg 'scratchpad show'",
+        "on-click-right": "swaymsg 'move scratchpad'"
+    },
+    "custom/notification": {
+	"tooltip": true,
+	"format": "{icon}",
+	"format-icons": {
+	     "notification": "<span foreground='#a3be8c'><small><sup>⬤</sup></small></span>",
+	     "none": " ",
+	     "dnd-notification": "<span foreground='#bf616a'><small><sup>⬤</sup></small></span>",
+	     "dnd-none": " "
+	},
+	"return-type": "json",
+	"exec-if": "which swaync-client",
+	"exec": "swaync-client -swb",
+	"on-click": "sleep 0.1; swaync-client -t -sw",
+	"on-click-right": "swaync-client -d -sw",
+	"escape": true
+   }
+}

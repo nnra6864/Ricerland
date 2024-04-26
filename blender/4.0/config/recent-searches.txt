@@ -1,0 +1,53 @@
+Color ▸ Mix Color
+Texture ▸ Noise Texture
+Vector Math ▸Add
+Map Range ▸Value
+Clamp ▸Value
+Add Shader ▸Shader
+Math ▸Add
+Mix ▸B
+Invert Color ▸Fac
+Mix ▸A
+Float Curve ▸Value
+Input ▸ Value
+Math ▸Multiply
+Deform ▸ Displace
+   Texture
+   GloveMat.001
+ 0 flying-pen-freedom-writing-logo-design-vector.png
+Invert Color ▸Color
+Color Ramp ▸Fac
+Mix ▸Screen
+Principled BSDF ▸Alpha
+Mix Shader ▸Shader
+Converter ▸ Vector Math
+Emission ▸Color
+Transparent BSDF ▸BSDF
+Math ▸Greater Than
+Mesh ▸ Cube
+   GloveMat
+Mapping ▸Vector
+Attribute ▸Vector
+Input ▸ UV Map
+   Bauzly1Tex.png.002
+   Templateshirtr151Tex.png
+   Workspace1Tex.png.001
+   Logo
+   flying-pen-freedom-writing-logo-design-vector.png.002
+   Render Result
+   flying-pen-freedom-writing-logo-design-vector.png.001
+Generate ▸ Subdivision Surface
+   BlanketRim
+Texture ▸ Image Texture
+ 0 LogoRender.png
+Vector Math ▸Multiply
+Shader ▸ Transparent BSDF
+RGB ▸Color
+   BlenderMiddle
+
+  BlenderLogo
+Deform ▸ Shrinkwrap
+Generate ▸ Bevel
+Generate ▸ Mirror
+   Black
+   Orange

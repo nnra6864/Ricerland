@@ -1,0 +1,106 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240425_183904
+====================================================================================================
+
+0     |Info:    Found file: Dim.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Dim
+0     |Info:    Found file: Green.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Green
+0     |Info:    Found file: Nord.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Nord
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Snow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Snow
+8165  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+8165  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+8165  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+8165  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+8165  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+8165  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+8165  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+9190  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+9190  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+9190  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+9190  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+9190  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+9190  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+9190  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+9366  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+9366  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+9366  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+9366  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+9366  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+9366  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+9366  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+9757  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+9757  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+9757  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+9757  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+9757  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+9757  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+9757  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+16115 |Info:    Found file: Dim.orp attempting to validate header
+16115 |Info:    Valid v4 profile found for Dim
+16115 |Info:    Found file: Green.orp attempting to validate header
+16115 |Info:    Valid v4 profile found for Green
+16115 |Info:    Found file: Nord.orp attempting to validate header
+16115 |Info:    Valid v4 profile found for Nord
+16115 |Info:    Found file: Off.orp attempting to validate header
+16115 |Info:    Valid v4 profile found for Off
+16115 |Info:    Found file: Snow.orp attempting to validate header
+16115 |Info:    Valid v4 profile found for Snow
+48182 |Info:    Found file: Dim.orp attempting to validate header
+48182 |Info:    Valid v4 profile found for Dim
+48182 |Info:    Found file: Green.orp attempting to validate header
+48182 |Info:    Valid v4 profile found for Green
+48182 |Info:    Found file: Off.orp attempting to validate header
+48182 |Info:    Valid v4 profile found for Off
+48182 |Info:    Found file: Snow.orp attempting to validate header
+48182 |Info:    Valid v4 profile found for Snow
+52811 |Info:    Found file: Dim.orp attempting to validate header
+52811 |Info:    Valid v4 profile found for Dim
+52811 |Info:    Found file: Off.orp attempting to validate header
+52811 |Info:    Valid v4 profile found for Off
+52811 |Info:    Found file: Snow.orp attempting to validate header
+52811 |Info:    Valid v4 profile found for Snow
+56709 |Info:    Found file: Off.orp attempting to validate header
+56709 |Info:    Valid v4 profile found for Off
+56709 |Info:    Found file: Snow.orp attempting to validate header
+56709 |Info:    Valid v4 profile found for Snow
+61589 |Info:    Found file: Snow.orp attempting to validate header
+61589 |Info:    Valid v4 profile found for Snow
+65616 |Info:    Found file: Snow.orp attempting to validate header
+65616 |Info:    Valid v4 profile found for Snow
+66074 |Info:    Found file: Snow.orp attempting to validate header
+66074 |Info:    Valid v4 profile found for Snow
+66256 |Info:    Found file: Snow.orp attempting to validate header
+66256 |Info:    Valid v4 profile found for Snow
+66443 |Info:    Found file: Snow.orp attempting to validate header
+66443 |Info:    Valid v4 profile found for Snow
+66611 |Info:    Found file: Snow.orp attempting to validate header
+66611 |Info:    Valid v4 profile found for Snow
+78606 |Info:    Found file: Snow.orp attempting to validate header
+78606 |Info:    Valid v4 profile found for Snow
+78606 |Info:    Found file: Off.orp attempting to validate header
+78606 |Info:    Valid v4 profile found for Off
+109582|Info:    Found file: Snow.orp attempting to validate header
+109582|Info:    Valid v4 profile found for Snow
+109582|Info:    Found file: Off.orp attempting to validate header
+109582|Info:    Valid v4 profile found for Off
+116247|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x72
+116247|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x73
+116247|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x74
+116247|Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-1, address 0x75
+116247|Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+116247|Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+116247|Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+220410|Info:    Found file: Snow.orp attempting to validate header
+220410|Info:    Valid v4 profile found for Snow
+220410|Info:    Found file: Off.orp attempting to validate header
+220410|Info:    Valid v4 profile found for Off
+228724|Info:    Found file: Snow.orp attempting to validate header
+228724|Info:    Valid v4 profile found for Snow
+228724|Info:    Found file: Off.orp attempting to validate header
+228724|Info:    Valid v4 profile found for Off

@@ -1,0 +1,72 @@
+* {
+    border:        none; 
+    border-radius: 0px;
+    font-family:   "Cascadia Code";
+    font-size:     16px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+    padding: 1px 5px 1px 5px;
+}
+
+#waybar {
+    color: rgba(136, 192, 208, 1);
+    background-color: rgba(46, 52, 64, .8);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px;
+    border-top: none;
+    border-bottom: 2px solid rgba(94, 129, 172, 1);
+    border-left: 0px;
+    border-right: 0px;
+    background-size: 2px 100%;
+}
+
+window#waybar.solo {
+    color: rgba(53, 185, 171, 1);
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#custom-scratchpad {
+    margin: 0px	5px;
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0px 0px;
+    color: rgba(46, 52, 64, 0);
+	border-radius: 15px;
+	margin: 0px 1px;
+}
+
+#workspaces button.focused {
+    color: rgba(59, 66, 82, 0);
+}
+
+#workspaces button.visible {
+    color: rgba(59, 66, 82, 0);
+}
+
+#workspaces button.urgent {
+    color: rgba(59, 66, 82, 0);
+}
+
+#mode, 
+#battery, 
+#cpu, 
+#memory, 
+#network, 
+#pulseaudio, 
+#idle_inhibitor, 
+#temperature,
+#custom-layout,
+#backlight {
+    margin: 0px 6px 0px 10px;
+/*    min-width: 30px;*/
+}
+
+#clock {
+    margin: 0px 6px 0px 10px;
+}
