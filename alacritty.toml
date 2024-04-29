@@ -1,14 +1,57 @@
+live_config_reload = true
+
 [window]
 padding = {x = 10, y = 10}
+opacity = 0.9
 
 [font]
-normal = { family = "Iosevka Comfy", style = "Regular" }
-bold = { family = "Iosevka Comfy", style = "Bold" }
-italic = { family = "Iosevka Comfy", style = "Italic" }
-bold_italic = { family = "Iosevka Comfy", style = "Bold Italic" }
+normal = { family = "CaskaydiaCove NerdFont", style = "Regular" }
+bold = { family = "CaskaydiaCove NerdFont", style = "Bold" }
+italic = { family = "CaskaydiaCove NerdFont", style = "Italic" }
+bold_italic = { family = "CaskaydiaCove NerdFont", style = "Bold Italic" }
 size = 12
 
+[colors]
+footer_bar = { foreground = "#eceff4", background = "#3b4252" }
+transparent_background_colors = true
+
+[colors.primary]
+foreground = "#e5e9f0"
+background = "#2e3440"
+dim_foreground = "#d8dee9"
+bright_foreground = "#eceff4"
+
+[colors.search]
+matches = { foreground = "#81a1c1", background = "#2e3440" }
+focused_match = { foreground = "#88c0d0", background = "#2e3440" }
+
+[colors.hints]
+start = { foreground = "#4c566a", background = "#2e3440" }
+end = { foreground = "#434c5e", background = "#2e3440" }
+
+[colors.normal]
+black = "#2e3440"
+red = "#bf616a"
+green = "#a3be8c"
+yellow = "#ebcb8b"
+blue = "#5e81ac"
+magenta = "#b48ead"
+cyan = "#88c0d0"
+white = "#e5e9f0"
+
+[colors.bright]
+black = "#3b4252"
+red = "#bf616a"
+green = "#a3be8c"
+yellow = "#ebcb8b"
+blue = "#81a1c1"
+magenta = "#b48ead"
+cyan = "#8fbcbb"
+white = "#eceff4"
+
 [cursor]
+style = { shape = "Beam", blinking = "Off" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
 smooth_motion = true
 smooth_motion_factor = 0.2
 smooth_motion_spring = 0.5
