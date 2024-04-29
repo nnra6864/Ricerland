@@ -1,0 +1,55 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240428_232056
+====================================================================================================
+
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Green.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Green
+0     |Info:    Found file: Nord.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Nord
+0     |Info:    Found file: Dim.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Dim
+0     |Info:    Found file: Snow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Snow
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    |               Start device detection               |
+1004  |Info:    ------------------------------------------------------
+1004  |Info:    Initializing HID interfaces: Success
+1012  |Info:    ------------------------------------------------------
+1012  |Info:    |             Detecting I2C interfaces               |
+1012  |Info:    ------------------------------------------------------
+1012  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1012  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:1E07 Subsystem: 1458:37BD
+1012  |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:A323 Subsystem: 1458:5001
+1012  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1012  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1012  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1E07 Subsystem: 1458:37BD
+1012  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1AD7 Subsystem: 1458:37BD
+1013  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1013  |Info:    ------------------------------------------------------
+1013  |Info:    |               Detecting I2C devices                |
+1013  |Info:    ------------------------------------------------------
+1291  |Info:    ------------------------------------------------------
+1291  |Info:    |               Detecting I2C PCI devices            |
+1291  |Info:    ------------------------------------------------------
+1292  |Info:    ------------------------------------------------------
+1292  |Info:    |               Detecting HID devices                |
+1292  |Info:    ------------------------------------------------------
+1456  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+1719  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+1719  |Info:    ------------------------------------------------------
+1719  |Info:    |            Detecting libusb HID devices            |
+1719  |Info:    ------------------------------------------------------
+1742  |Info:    [HyperX Quadcast S] Registering RGB controller
+1742  |Info:    ------------------------------------------------------
+1742  |Info:    |              Detecting other devices               |
+1742  |Info:    ------------------------------------------------------
+1769  |Info:    ------------------------------------------------------
+1769  |Info:    |                Detection completed                 |
+1769  |Info:    ------------------------------------------------------
+1769  |Dialog:  <h2>WARNING:</h2><p>One or more I2C/SMBus interfaces failed to initialize.</p><p>RGB DRAM modules and some motherboards' onboard RGB lighting will not be available without I2C/SMBus.</p><p>On Linux, this is usually because the i2c-dev module is not loaded.  You must load the i2c-dev module along with the correct i2c driver for your motherboard.  This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p>
+7363  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+7363  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+7363  |Info:    Profile loading: FAILED! for HyperX Quadcast S @ 1-11.4.4:1.0

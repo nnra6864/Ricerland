@@ -1,0 +1,48 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240423_135904
+====================================================================================================
+
+21    |Info:    Found file: Nord.orp attempting to validate header
+23    |Info:    Valid v4 profile found for Nord
+23    |Info:    Found file: Off.orp attempting to validate header
+29    |Info:    Valid v4 profile found for Off
+29    |Info:    Found file: Dim.orp attempting to validate header
+34    |Info:    Valid v4 profile found for Dim
+34    |Info:    Found file: Green.orp attempting to validate header
+36    |Info:    Valid v4 profile found for Green
+36    |Info:    Found file: Snow.orp attempting to validate header
+38    |Info:    Valid v4 profile found for Snow
+1043  |Info:    ------------------------------------------------------
+1043  |Info:    |               Start device detection               |
+1043  |Info:    ------------------------------------------------------
+1043  |Info:    Initializing HID interfaces: Success
+1047  |Info:    ------------------------------------------------------
+1047  |Info:    |             Detecting I2C interfaces               |
+1047  |Info:    ------------------------------------------------------
+1047  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-1 Device 8086:A323 Subsystem: 1458:5001
+1047  |Info:    Registering I2C interface: /dev/i2c-8 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1AD7 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1047  |Info:    ------------------------------------------------------
+1047  |Info:    |               Detecting I2C devices                |
+1047  |Info:    ------------------------------------------------------
+1540  |Info:    [ENE DRAM] Registering RGB controller
+1705  |Info:    [ENE DRAM] Registering RGB controller
+1874  |Info:    [ENE DRAM] Registering RGB controller
+2045  |Info:    [ENE DRAM] Registering RGB controller
+2088  |Info:    ------------------------------------------------------
+2088  |Info:    |               Detecting I2C PCI devices            |
+2088  |Info:    ------------------------------------------------------
+2088  |Info:    ------------------------------------------------------
+2088  |Info:    |               Detecting HID devices                |
+2088  |Info:    ------------------------------------------------------
+2250  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2455  |Info:    ------------------------------------------------------
+2455  |Info:    |            Detecting libusb HID devices            |
+2455  |Info:    ------------------------------------------------------
