@@ -6,8 +6,11 @@ BackgroundAlternate=#2e3440
 BackgroundNormal=#2e3440
 BackgroundSelected=#2e3440
 
+[Colors:Button]
+TextColor=#eceff4
+
 [General]
-TerminalApplication=foot
+TerminalApplication=alacritty
 font="CaskaydiaCove Nerd Font",10,-1,5,50,0,0,0,0,0,Regular
 toolBarFont="CaskaydiaCove Nerd Font",10,-1,5,50,0,0,0,0,0,Regular
 
