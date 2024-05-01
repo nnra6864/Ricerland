@@ -1,22 +1,25 @@
 [global]
 follow = mouse
-width = (250, 500)
+width = (0, 500)
 height = 100
-notification_limit = 10
+notification_limit = 1
+origin = top-center
 offset = 0x10
 progress_bar_max_width = 500
 progress_bar_corner_radius = 0
-font = "Cascadia Code 12"
+font = "CaskaydiaCove Nerd Font 13"
 corner_radius = 10
+frame_width = 2
 mouse_left_click = do_action
 mouse_middle_click = close_current
 mouse_right_click = context
-background = "#2e3440e6"
+transparency = 100
+background = "#2e344080"
 foreground = "#eceff4ff"
 highlight = "#ebcb8bff"
-frame_color = "#ebcb8be6"
+frame_color = "#eceff4ff"
 separator_color = frame
 format = "<span color='#88c0d0ff'>%s</span>\n%b"
-icon_corner_radius = 10
+icon_corner_radius = 15
 
 show_indicators = no
