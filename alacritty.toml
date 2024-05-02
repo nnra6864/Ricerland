@@ -5,10 +5,10 @@ padding = {x = 10, y = 10}
 opacity = 0.9
 
 [font]
-normal = { family = "CaskaydiaCove NerdFont", style = "Regular" }
-bold = { family = "CaskaydiaCove NerdFont", style = "Bold" }
-italic = { family = "CaskaydiaCove NerdFont", style = "Italic" }
-bold_italic = { family = "CaskaydiaCove NerdFont", style = "Bold Italic" }
+normal = { family = "Cascadia Code NF", style = "Regular" }
+bold = { family = "Cascadia Code NF", style = "Bold" }
+italic = { family = "Cascadia Code NF", style = "Italic" }
+bold_italic = { family = "Cascadia Code NF", style = "Bold Italic" }
 size = 12
 
 [colors]
