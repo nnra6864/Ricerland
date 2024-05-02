@@ -8,8 +8,8 @@ BackgroundSelected=#2e3440
 
 [General]
 TerminalApplication=alacritty
-font="CaskaydiaCove Nerd Font",10,-1,5,50,0,0,0,0,0,Regular
-toolBarFont="CaskaydiaCove Nerd Font",10,-1,5,50,0,0,0,0,0,Regular
+font="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
+toolBarFont="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
 
 [KDE]
 AnimationDurationFactor=0.500000
