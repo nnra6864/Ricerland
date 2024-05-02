@@ -13,7 +13,7 @@
    as a 2D sampler.
    
    See documentation for more details. */
-#request mod bars
+#request mod graph
 
 /* Window hints */
 #request setfloating  false
@@ -48,7 +48,7 @@
 #request settitle "GLava"
 
 /* Window geometry (x, y, width, height) */
-#request setgeometry 0 0 800 600
+#request setgeometry 0 0 5120 1440
 
 /* Window background color (RGB format).
    Does not work with `setopacity "xroot"` */
@@ -148,7 +148,7 @@
    by pulseaudio, and require transformations to be re-applied
    (thus being a good measure of how much work your CPU has to
    perform over time) */
-#request setprintframes true
+#request setprintframes false
 
 /* PulseAudio sample buffer size. Lower values result in more
    frequent audio updates (also depends on sampling rate), but
