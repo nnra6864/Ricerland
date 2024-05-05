@@ -1,0 +1,5 @@
+[Bookmarks]
+[Recent]
+/home/nnra/.fonts/CascadiaCode/
+/home/nnra/.fonts/
+/home/nnra/.config/
