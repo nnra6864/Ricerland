@@ -1,5 +1,10 @@
 [Added Associations]
 application/xml=nvim.desktop;
+text/x-csharp=rider.desktop;vim.desktop;nvim.desktop;
 
 [Default Applications]
 application/xml=nvim.desktop;
+text/x-csharp=rider.desktop;
+
+[Removed Associations]
+text/x-csharp=azuredatastudio.desktop;
