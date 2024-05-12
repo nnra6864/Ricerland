@@ -13,7 +13,7 @@
    as a 2D sampler.
    
    See documentation for more details. */
-#request mod graph
+#request mod radial
 
 /* Window hints */
 #request setfloating  false
@@ -37,7 +37,7 @@
 #request setopacity "native"
 
 /* Whether to mirror left and right audio input channels from PulseAudio.*/
-#request setmirror false
+#request setmirror true
 
 /* OpenGL context and GLSL shader versions, do not change unless
    you *absolutely* know what you are doing. */
@@ -131,7 +131,7 @@
 
 /* Frame limiter, set to the frames per second (FPS) desired or
    simply set to zero (or lower) to disable the frame limiter. */
-#request setframerate 0
+#request setframerate 240
 
 /* Suspends rendering if a fullscreen window is focused while
    GLava is still visible (ie. on another monitor). This prevents
