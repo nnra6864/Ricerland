@@ -1,5 +1,7 @@
 [Bookmarks]
 [Recent]
+/home/data/Projects/Unity/FlowSlasher/Project/FlowSlasher/Assets/Models/
+/home/data/Projects/Unity/FlowSlasher/Project/Blender/
 /home/nnra/.fonts/CascadiaCode/
 /home/nnra/.fonts/
 /home/nnra/.config/

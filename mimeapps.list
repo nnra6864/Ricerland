@@ -3,6 +3,16 @@ application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.deskto
 application/xml=nvim.desktop;
 text/plain=nvim.desktop;azuredatastudio.desktop;vim.desktop;
 text/x-csharp=rider.desktop;vim.desktop;nvim.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+text/html=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
@@ -10,6 +20,16 @@ application/xml=nvim.desktop;
 text/plain=nvim.desktop;
 text/x-csharp=rider.desktop;
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
 
 [Removed Associations]
 text/x-csharp=azuredatastudio.desktop;
