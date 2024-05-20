@@ -90,7 +90,7 @@ use_grid=false
 ColorSchemePath=Nord.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAnIAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACcgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAkoAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACSgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -110,7 +110,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,4,30,21,4,31.547
+lastCacheCheck=2024,5,15,19,9,11.952
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -151,14 +151,14 @@ colorclipcolor=255,255,255
 consumerslist=xml,sdl2,sdl2_audio,qglsl,cbrts,blipflash,xgl,decklink,multi,null,avformat
 default_profile=qhd_1440p_60
 defaultrescaleheight=720
-defaultrescalewidth=1280
+defaultrescalewidth=2560
 guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
 monitor_audio=false
 previewScaling=0
 producerslist=decklink,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,qimage,qtext,kdenlivetitle,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,xml,xml-string,xml-nogl,glaxnimate,framebuffer,avformat,avformat-novalidate,blipflash,count,pgm,vorbis
 project_fps=60
 properties_panel_page=1
-renderProfile=2K 60FPS
+renderProfile=5120x1440@60
 use_dark_breeze=true
 widgetstyle=qt6ct-style
 
