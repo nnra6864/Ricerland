@@ -16,9 +16,6 @@ ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 [ExtractDialog]
 5120x1440 screen: Window-Maximized=true
 
-[FoldersPanel]
-HiddenFilesShown=true
-
 [General]
 Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136
