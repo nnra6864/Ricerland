@@ -1,0 +1,61 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240526_213654
+====================================================================================================
+
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Snow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Snow
+1003  |Info:    ------------------------------------------------------
+1003  |Info:    |               Start device detection               |
+1003  |Info:    ------------------------------------------------------
+1003  |Info:    Initializing HID interfaces: Success
+1020  |Info:    ------------------------------------------------------
+1020  |Info:    |             Detecting I2C interfaces               |
+1020  |Info:    ------------------------------------------------------
+1024  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1025  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:1E07 Subsystem: 1458:37BD
+1025  |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:A323 Subsystem: 1458:5001
+1025  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1025  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1025  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1026  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1E07 Subsystem: 1458:37BD
+1026  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1AD7 Subsystem: 1458:37BD
+1026  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1026  |Info:    ------------------------------------------------------
+1026  |Info:    |               Detecting I2C devices                |
+1026  |Info:    ------------------------------------------------------
+1222  |Info:    [ENE DRAM] Registering RGB controller
+1396  |Info:    [ENE DRAM] Registering RGB controller
+1573  |Info:    [ENE DRAM] Registering RGB controller
+1746  |Info:    [ENE DRAM] Registering RGB controller
+2093  |Info:    ------------------------------------------------------
+2093  |Info:    |               Detecting I2C PCI devices            |
+2093  |Info:    ------------------------------------------------------
+2095  |Info:    ------------------------------------------------------
+2095  |Info:    |               Detecting HID devices                |
+2095  |Info:    ------------------------------------------------------
+2254  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2513  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+2513  |Info:    ------------------------------------------------------
+2513  |Info:    |            Detecting libusb HID devices            |
+2513  |Info:    ------------------------------------------------------
+2530  |Info:    [HyperX Quadcast S] Registering RGB controller
+2530  |Info:    ------------------------------------------------------
+2530  |Info:    |              Detecting other devices               |
+2530  |Info:    ------------------------------------------------------
+2535  |Info:    ------------------------------------------------------
+2535  |Info:    |                Detection completed                 |
+2535  |Info:    ------------------------------------------------------
+4801  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x72
+4801  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x73
+4801  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x74
+4801  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x75
+4801  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+4801  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+4801  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+19986 |Info:    Found file: Off.orp attempting to validate header
+19986 |Info:    Valid v4 profile found for Off
+19986 |Info:    Found file: Snow.orp attempting to validate header
+19986 |Info:    Valid v4 profile found for Snow
