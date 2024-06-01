@@ -2,20 +2,17 @@
  * vim: ft=less
  */
 
-@define-color cc-bg rgba(46, 52, 64, 0.9);
-
-@define-color noti-border-color rgba(136, 192, 208, 1);
-@define-color noti-bg rgb(59, 66, 82);
-@define-color noti-bg-darker rgb(46, 52, 64);
-@define-color noti-bg-hover rgb(67, 76, 94);
-@define-color noti-bg-focus rgba(46, 52, 64, 1);
+@define-color cc-bg rgba(46, 52, 64, 0.5);
+@define-color noti-border-color rgba(236, 239, 244, 1);
+@define-color noti-bg rgba(46, 52, 64, 0.5);
+@define-color noti-bg-darker rgba(46, 52, 64, 0.5);
+@define-color noti-bg-hover rgba(46, 52, 64, 0.75);
+@define-color noti-bg-focus rgba(46, 52, 64, 0.5);
 @define-color noti-close-bg rgba(236, 239, 244, 0.1);
 @define-color noti-close-bg-hover rgba(236, 239, 244, 0.15);
-
 @define-color text-color rgb(236, 239, 244);
 @define-color text-color-disabled rgb(216, 222, 233);
-
-@define-color bg-selected rgb(136, 192, 208);
+@define-color bg-selected rgba(136, 192, 208, 0.1);
 
 *{
 	font-family: "Cascadia Code NF";
@@ -33,30 +30,8 @@
 
 .notification {
   border-radius: 10px;
-  margin: 10px 10px;
-  box-shadow: 0 0 0 1px rgba(46, 52, 64, 0.3), 0 1px 3px 1px rgba(46, 52, 64, 0.7),
-    0px 2px 6px 2px rgba(46, 52, 64, 0.3);
+  margin: 0px 0px;
 }
-
-/* Uncomment to enable specific urgency colors
-.low {
-  background: yellow;
-  padding: 6px;
-  border-radius: 12px;
-}
-
-.normal {
-  background: green;
-  padding: 6px;
-  border-radius: 12px;
-}
-
-.critical {
-  background: red;
-  padding: 6px;
-  border-radius: 12px;
-}#88c0d0 
-*/
 
 .notification-content {
   background: transparent;
@@ -160,14 +135,14 @@
 .body-image {
   margin-top: 6px;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 100%;
 }
 
 .summary {
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: #88c0d0;
+  color: @text-color;
   text-shadow: none;
 }
 
@@ -175,7 +150,7 @@
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: #ebcb8b;
+  color: #81a1c1;
   text-shadow: none;
   margin-right: 18px;
 }
@@ -223,9 +198,10 @@
   color: @text-color;
   text-shadow: none;
   background: @noti-bg;
-  border: 1px solid @noti-border-color;
+  border: 2px solid @noti-border-color;
   box-shadow: none;
   border-radius: 12px;
+  padding: 1px;
 }
 .widget-title > button:hover {
   background: @noti-bg-hover;
@@ -239,15 +215,15 @@
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 12px;
-  background: @noti-bg;
-  border: 1px solid @noti-border-color;
+  background: transparent;
+  border: 2px solid @noti-border-color;
   box-shadow: none;
 }
 .widget-dnd > switch:checked {
-  background: @bg-selected;
+  background: @text-color;
 }
 .widget-dnd > switch slider {
-  background: @noti-bg-hover;
+  background: @cc-bg;
   border-radius: 12px;
 }
 

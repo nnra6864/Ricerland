@@ -3,7 +3,7 @@
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
   
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
   "notification-window-width": 500,
   "notification-2fa-action": false,

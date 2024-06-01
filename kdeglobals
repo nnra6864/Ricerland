@@ -7,7 +7,7 @@ BackgroundNormal=#2e3440
 BackgroundSelected=#2e3440
 
 [General]
-TerminalApplication=alacritty
+TerminalApplication=kitty
 font="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
 toolBarFont="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
 

@@ -1,0 +1,61 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240531_125310
+====================================================================================================
+
+0     |Info:    Found file: Off.orp attempting to validate header
+1     |Info:    Valid v4 profile found for Off
+1     |Info:    Found file: Snow.orp attempting to validate header
+1     |Info:    Valid v4 profile found for Snow
+1007  |Info:    ------------------------------------------------------
+1007  |Info:    |               Start device detection               |
+1007  |Info:    ------------------------------------------------------
+1007  |Info:    Initializing HID interfaces: Success
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    |             Detecting I2C interfaces               |
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:A323 Subsystem: 1458:5001
+1011  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1AD7 Subsystem: 1458:37BD
+1011  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    |               Detecting I2C devices                |
+1011  |Info:    ------------------------------------------------------
+1259  |Info:    [ENE DRAM] Registering RGB controller
+1427  |Info:    [ENE DRAM] Registering RGB controller
+1597  |Info:    [ENE DRAM] Registering RGB controller
+1765  |Info:    [ENE DRAM] Registering RGB controller
+2108  |Info:    ------------------------------------------------------
+2108  |Info:    |               Detecting I2C PCI devices            |
+2108  |Info:    ------------------------------------------------------
+2110  |Info:    ------------------------------------------------------
+2110  |Info:    |               Detecting HID devices                |
+2110  |Info:    ------------------------------------------------------
+2266  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2471  |Info:    ------------------------------------------------------
+2471  |Info:    |            Detecting libusb HID devices            |
+2471  |Info:    ------------------------------------------------------
+2491  |Info:    [HyperX Quadcast S] Registering RGB controller
+2491  |Info:    ------------------------------------------------------
+2491  |Info:    |              Detecting other devices               |
+2491  |Info:    ------------------------------------------------------
+2499  |Info:    ------------------------------------------------------
+2499  |Info:    |                Detection completed                 |
+2499  |Info:    ------------------------------------------------------
+60159 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x72
+60159 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x73
+60159 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x74
+60159 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x75
+60159 |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw7
+60159 |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
+60484 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x72
+60484 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x73
+60484 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x74
+60484 |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x75
+60484 |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw7
+60484 |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
