@@ -23,11 +23,13 @@ zoom=7
 
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Documents/Projects/EdgeShift,$HOME/Documents/Projects/EdgeShift/,$HOME/Documents
+KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Hyprnord,$HOME/Documents/Projects/EdgeShift,$HOME/Documents/Projects/EdgeShift/
 
 [Recent Files]
 File1[$e]=$HOME/Documents/Projects/EdgeShift/EdgeShift.kdenlive
+File2[$e]=$HOME/Data/Projects/Hyprnord/Hyprnord.kdenlive
 Name1[$e]=EdgeShift.kdenlive
+Name2[$e]=Hyprnord.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -90,7 +92,7 @@ use_grid=false
 ColorSchemePath=Nord.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAABJkAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAEmQAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAksAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACSwAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -110,7 +112,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,5,15,19,9,11.952
+lastCacheCheck=2024,6,11,0,54,50.807
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -151,7 +153,7 @@ colorclipcolor=255,255,255
 consumerslist=xml,sdl2,sdl2_audio,qglsl,cbrts,blipflash,xgl,decklink,multi,null,avformat
 default_profile=qhd_1440p_60
 defaultrescaleheight=720
-defaultrescalewidth=1280
+defaultrescalewidth=2560
 guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
 monitor_audio=false
 previewScaling=0
@@ -162,4 +164,4 @@ use_dark_breeze=true
 widgetstyle=qt6ct-style
 
 [version]
-version=24.02.2
+version=24.05.0
