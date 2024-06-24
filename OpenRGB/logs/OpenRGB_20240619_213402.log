@@ -1,0 +1,57 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20240619_213402
+====================================================================================================
+
+0     |Info:    Found file: Off.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Off
+0     |Info:    Found file: Snow.orp attempting to validate header
+0     |Info:    Valid v4 profile found for Snow
+1001  |Info:    ------------------------------------------------------
+1001  |Info:    |               Start device detection               |
+1001  |Info:    ------------------------------------------------------
+1002  |Info:    Initializing HID interfaces: Success
+1005  |Info:    ------------------------------------------------------
+1005  |Info:    |             Detecting I2C interfaces               |
+1005  |Info:    ------------------------------------------------------
+1007  |Info:    Registering I2C interface: /dev/i2c-3 Device 10DE:1E07 Subsystem: 1458:37BD
+1007  |Info:    Registering I2C interface: /dev/i2c-1 Device 10DE:1E07 Subsystem: 1458:37BD
+1007  |Info:    Registering I2C interface: /dev/i2c-8 Device 8086:A323 Subsystem: 1458:5001
+1007  |Info:    Registering I2C interface: /dev/i2c-6 Device 10DE:1E07 Subsystem: 1458:37BD
+1007  |Info:    Registering I2C interface: /dev/i2c-4 Device 10DE:1E07 Subsystem: 1458:37BD
+1007  |Info:    Registering I2C interface: /dev/i2c-2 Device 10DE:1E07 Subsystem: 1458:37BD
+1007  |Info:    Registering I2C interface: /dev/i2c-0 Device 10DE:1E07 Subsystem: 1458:37BD
+1008  |Info:    Registering I2C interface: /dev/i2c-7 Device 10DE:1AD7 Subsystem: 1458:37BD
+1008  |Info:    Registering I2C interface: /dev/i2c-5 Device 10DE:1E07 Subsystem: 1458:37BD
+1008  |Info:    ------------------------------------------------------
+1008  |Info:    |               Detecting I2C devices                |
+1008  |Info:    ------------------------------------------------------
+1207  |Info:    [ENE DRAM] Registering RGB controller
+1388  |Info:    [ENE DRAM] Registering RGB controller
+1566  |Info:    [ENE DRAM] Registering RGB controller
+1743  |Info:    [ENE DRAM] Registering RGB controller
+2090  |Info:    ------------------------------------------------------
+2090  |Info:    |               Detecting I2C PCI devices            |
+2090  |Info:    ------------------------------------------------------
+2091  |Info:    ------------------------------------------------------
+2091  |Info:    |               Detecting HID devices                |
+2091  |Info:    ------------------------------------------------------
+2247  |Info:    [Z390 AORUS MASTER-CF] Registering RGB controller
+2505  |Info:    [Logitech G915 Wireless RGB Mechanical Gaming Keyboard] Registering RGB controller
+2505  |Info:    ------------------------------------------------------
+2505  |Info:    |            Detecting libusb HID devices            |
+2505  |Info:    ------------------------------------------------------
+2521  |Info:    [HyperX Quadcast S] Registering RGB controller
+2521  |Info:    ------------------------------------------------------
+2521  |Info:    |              Detecting other devices               |
+2521  |Info:    ------------------------------------------------------
+2526  |Info:    ------------------------------------------------------
+2526  |Info:    |                Detection completed                 |
+2526  |Info:    ------------------------------------------------------
+5098  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x72
+5098  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x73
+5098  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x74
+5098  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-8, address 0x75
+5098  |Info:    Profile loading: Succeeded for Z390 AORUS MASTER-CF @ HID: /dev/hidraw6
+5098  |Info:    Profile loading: Succeeded for Logitech G915 Wireless RGB Mechanical Gaming Keyboard @ 
+5098  |Info:    Profile loading: Succeeded for HyperX Quadcast S @ 1-11.4.4:1.0
