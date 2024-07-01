@@ -9,7 +9,7 @@ normal = { family = "Cascadia Code NF", style = "Regular" }
 bold = { family = "Cascadia Code NF", style = "Bold" }
 italic = { family = "Cascadia Code NF", style = "Italic" }
 bold_italic = { family = "Cascadia Code NF", style = "Bold Italic" }
-size = 12
+size = 15
 
 [colors]
 footer_bar = { foreground = "#eceff4", background = "#3b4252" }
@@ -52,6 +52,6 @@ white = "#eceff4"
 [cursor]
 style = { shape = "Beam", blinking = "Off" }
 vi_mode_style = { shape = "Block", blinking = "Off" }
-smooth_motion = true
-smooth_motion_factor = 0.2
-smooth_motion_spring = 0.5
+#smooth_motion = true
+#smooth_motion_factor = 0.2
+#smooth_motion_spring = 0.5
