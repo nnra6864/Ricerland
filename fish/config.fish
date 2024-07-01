@@ -7,9 +7,25 @@ if status is-interactive
 end
 alias doas='sudo'
 alias nlear='clear; neofetch'
+alias py='python'
 
 function 8k
 	ffmpeg -i $argv[1] -vf scale=7680:4320 -c:v libx265 -crf 23 -c:a copy $argv[2]
+end
+
+function nv
+    set current_window (hyprctl activewindow -j | jq -r .address 2>/dev/null)
+    
+    neovide &
+    set neovide_pid $last_pid
+    
+    hyprctl dispatch movetoworkspacesilent "special:nv,address:$current_window" >/dev/null 2>&1
+    while kill -0 $neovide_pid 2>/dev/null
+        sleep 1
+    end
+    set current_workspace (hyprctl activeworkspace -j | jq -r .id 2>/dev/null)
+    hyprctl dispatch movetoworkspacesilent "$current_workspace,address:$current_window" >/dev/null 2>&1
+    hyprctl dispatch focusurgentorlast >/dev/null 2>&1
 end
 
 function spc
