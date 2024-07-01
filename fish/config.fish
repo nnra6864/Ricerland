@@ -16,7 +16,7 @@ end
 function nv
     set current_window (hyprctl activewindow -j | jq -r .address 2>/dev/null)
     
-    neovide &
+    neovide $argv &
     set neovide_pid $last_pid
     
     hyprctl dispatch movetoworkspacesilent "special:nv,address:$current_window" >/dev/null 2>&1
