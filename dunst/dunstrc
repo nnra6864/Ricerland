@@ -21,5 +21,6 @@ frame_color = "#eceff4ff"
 separator_color = frame
 format = "<span color='#88c0d0ff'>%s</span>\n%b"
 icon_corner_radius = 15
+timeout = 3
 
 show_indicators = no
