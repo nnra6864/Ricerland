@@ -24,7 +24,8 @@
 - [hyprexpo](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo) - App overview `SUPER+grave`
 - [hyprwinwrap](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprwinwrap) - Any app as background
 - [hypr-dynamic-cursors](https://github.com/VirtCode/hypr-dynamic-cursors) - Cursor rotates in the direction you are moving
-- [hyprfocus](https://github.com/pyt0xic/hyprfocus) - Animate on focus
+- [hyprfocus](https://github.com/pyt0xic/hyprfocus) - Animate on focus [*causes weird animations behaviour*](https://github.com/pyt0xic/hyprfocus/issues/8)
+- [hycov](https://github.com/DreamMaoMao/hycov) - App overview *causes crashes*
 
 # Apps
 - [Hyprmouse](https://github.com/nnra6864/Hyprmouse) - Control the mouse with your keyboard using Vim Motions `SUPER+M`
