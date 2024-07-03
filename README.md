@@ -26,9 +26,11 @@
 - [hypr-dynamic-cursors](https://github.com/VirtCode/hypr-dynamic-cursors) - Cursor rotates in the direction you are moving
 - [hyprfocus](https://github.com/pyt0xic/hyprfocus) - Animate on focus [*causes weird animations behaviour*](https://github.com/pyt0xic/hyprfocus/issues/8)
 - [hycov](https://github.com/DreamMaoMao/hycov) - App overview *causes crashes*
+- [toggle_special](https://hyprland-community.github.io/pyprland/toggle_special.html) - Moving windows from and to a special workspace on the same bind
 
 # Apps
 - [Hyprmouse](https://github.com/nnra6864/Hyprmouse) - Control the mouse with your keyboard using Vim Motions `SUPER+M`
+- [Pyprland](https://hyprland-community.github.io/pyprland/) - Lots of useful plugins
 - [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `CTRL+ATL+X` *active window* `$mainMod+ALT+X` *window* `Pint` *fullscreen(comment grim and uncomment hyprshot if you have multiple monitors)*
 - [hyprpicker](https://github.com/hyprwm/hyprpicker) - Easy to use color picker `SUPER+P`
 - [hyprcursor](https://github.com/hyprwm/hyprcursor) - Hyprland implementation of cursors
