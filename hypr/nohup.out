@@ -1,2 +1,18 @@
 Terminating PipeWire processes ...
 PipeWire terminated.
+[31;20mtoggle_special::run_toggle_special(()) failed:[0m
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/site-packages/pyprland/command.py", line 183, in _run_plugin_handler
+    await getattr(plugin, full_name)(*params)
+  File "/usr/lib/python3.12/site-packages/pyprland/plugins/toggle_special.py", line 15, in run_toggle_special
+    wid = aw["workspace"]["id"]
+          ~~^^^^^^^^^^^^^
+KeyError: 'workspace'
+[31;20mtoggle_special::run_toggle_special(()) failed:[0m
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/site-packages/pyprland/command.py", line 183, in _run_plugin_handler
+    await getattr(plugin, full_name)(*params)
+  File "/usr/lib/python3.12/site-packages/pyprland/plugins/toggle_special.py", line 15, in run_toggle_special
+    wid = aw["workspace"]["id"]
+          ~~^^^^^^^^^^^^^
+KeyError: 'workspace'
