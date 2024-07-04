@@ -1,9 +1,9 @@
 if status is-interactive
-  	if test (tty) = /dev/tty1
-    	if not set -q WAYLAND_DISPLAY
-			dbus-run-session Hyprland
-    	end
- 	end
+    if test (tty) = /dev/tty1
+        if not set -q WAYLAND_DISPLAY
+            dbus-run-session Hyprland
+        end
+    end
 end
 alias doas='sudo'
 alias nlear='clear; neofetch'
@@ -18,14 +18,18 @@ function nv
     
     neovide $argv &
     set neovide_pid $last_pid
+	#Sleep is needed to avoid window rearangement when opening
+    #Adjust as needed per system, the slower the system the bigger the pause
+    sleep 0.3
     
     hyprctl dispatch movetoworkspacesilent "special:nv,address:$current_window" >/dev/null 2>&1
     while kill -0 $neovide_pid 2>/dev/null
-        sleep 1
+		#Lowering this number reduces the pause between checks
+		#May lead to a very slight performance increase at the cost of seamlessness
+        sleep 0.1
     end
     set current_workspace (hyprctl activeworkspace -j | jq -r .id 2>/dev/null)
-    hyprctl dispatch movetoworkspacesilent "$current_workspace,address:$current_window" >/dev/null 2>&1
-    hyprctl dispatch focusurgentorlast >/dev/null 2>&1
+    hyprctl dispatch movetoworkspace "$current_workspace,address:$current_window" >/dev/null 2>&1
 end
 
 function spc
