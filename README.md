@@ -46,3 +46,4 @@
 - [GLava](https://github.com/jarcode-foss/glava) - Background audio visualizer
 - [Vesktop](https://github.com/Vencord/Vesktop) - I hate it but screensharing works
 - [ydotool](https://github.com/ReimuNotMoe/ydotool) - Simulating mouse movement and clicks *also required for Hyprmouse*
+- [clapboard](https://github.com/bjesus/clapboard) - Clipboard manager `$mainMod+ALT+C`
