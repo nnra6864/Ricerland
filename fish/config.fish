@@ -5,6 +5,7 @@ if status is-interactive
         end
     end
 end
+
 alias doas='sudo'
 alias nlear='clear; neofetch'
 alias py='python'
@@ -30,6 +31,20 @@ function nv
     end
     set current_workspace (hyprctl activeworkspace -j | jq -r .id 2>/dev/null)
     hyprctl dispatch movetoworkspace "$current_workspace,address:$current_window" >/dev/null 2>&1
+end
+
+function nvimf
+    set file (fzf --preview="bat --color=always {}")
+    if test -n "$file"
+        nvim "$file"
+    end
+end
+
+function nvf
+    set file (fzf --preview="bat --color=always {}")
+    if test -n "$file"
+        nv "$file"
+    end
 end
 
 function spc
