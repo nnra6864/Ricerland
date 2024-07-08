@@ -29,15 +29,18 @@
 - [toggle_special](https://hyprland-community.github.io/pyprland/toggle_special.html) - Moving windows from and to a special workspace on the same bind
 
 # Apps
+- [Ricer](https://github.com/nnra6864/Ricer) - Rice with ease
 - [Hyprmouse](https://github.com/nnra6864/Hyprmouse) - Control the mouse with your keyboard using Vim Motions `SUPER+M`
 - [Pyprland](https://hyprland-community.github.io/pyprland/) - Lots of useful plugins
 - [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `CTRL+ATL+X` *active window* `$mainMod+ALT+X` *window* `Pint` *fullscreen(comment grim and uncomment hyprshot if you have multiple monitors)*
 - [hyprpicker](https://github.com/hyprwm/hyprpicker) - Easy to use color picker `SUPER+P`
 - [hyprcursor](https://github.com/hyprwm/hyprcursor) - Hyprland implementation of cursors
-- [wpaperd](https://github.com/danyspin97/wpaperd) - Backgrounds
+TODO: Update Link
+- [swww](https://github.com/LGFae/swww) - Backgrounds
 - [hyprlock](https://github.com/hyprwm/hyprlock) - Hyprland lock
 - [fish](https://fishshell.com/) - Best shell
 - [tide](https://github.com/IlanCosman/tide) - The ultimate Fish prompt
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - The ultimate Fish prompt
 - [nwg-look](https://github.com/nwg-piotr/nwg-look) - Customize GTK apps
 - [qt5ct](https://github.com/desktop-app/qt5ct) & [qt6ct](https://github.com/trialuser02/qt6ct) - Customize QT apps
 - [Neovide](https://neovide.dev/) - Best Neovim GUI `SUPER+T` *use `nv` when launching from terminal 0)*
