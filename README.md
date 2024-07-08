@@ -17,6 +17,7 @@
 - [VS Codium](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
 - [Neovim](https://github.com/shaunsingh/nord.nvim)
 - [Blender](https://github.com/TehMerow/Blender_Nord_Dark_Theme)
+- [Krita](https://github.com/nnra6864/KritaNord)
 - [Unity](https://github.com/nnra6864/UnityNord)
 
 # Plugins
