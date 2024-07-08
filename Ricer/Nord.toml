@@ -3,10 +3,10 @@ default_format = "hex"
 color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
 file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}\n"
 rgba01_precision = 2
-replace_files = false
+replace_files = true
 
 [Values]
-bg = "~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg"
+bg = "NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
 font_size = 13
 icons = "Nordzy-dark"
@@ -14,6 +14,7 @@ cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
 border_radius = 10
+nvim_theme = "nord"
 
 [Colors]
 black = "2e3440"
@@ -55,3 +56,5 @@ shadow_inactive = "2e34401a"
 
 [Files]
 Hyprland = ["~/.config/hypr/hyprland.conf", "hex"]
+Alacritty = ["~/.config/alacritty.toml", "hex"]
+NvimTheme = ["~/.config/nvim/lua/theme.lua"]

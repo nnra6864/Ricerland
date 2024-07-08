@@ -80,5 +80,6 @@ function spc
 	ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr_hq -cq $cqp_quality -c:a copy -map 0 "$output_file" #Uses CQP which greatly reducec the file size while keeping the quality
 	#ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr_hq -cq <cq_value> -filter_complex "[0:a]amerge=inputs=$(ffprobe -v error -select_streams a:0 -show_entries stream=index -of csv=p=0 "$input_file" | wc -l)[a]" -map "[a]" -c:a aac -map 0 "$output_file"
 end
+
 zoxide init fish | source
 fish_vi_key_bindings

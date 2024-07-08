@@ -140,6 +140,12 @@ vim.opt.rtp:prepend(lazypath)
 --
 -- NOTE: Here is where you install your plugins.
 require("lazy").setup({
+
+	-- NOTE: Themes
+	{ "shaunsingh/nord.nvim" },
+	{ "Mofiqul/dracula.nvim" },
+	{ "catppuccin/nvim" },
+
 	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 
@@ -694,13 +700,15 @@ require("lazy").setup({
 		end,
 	},
 
+	-- Markdown formatting
 	{
-		"shaunsingh/nord.nvim",
-		priority = 1000, -- Make sure to load this before all the other start plugins.
-		init = function()
-			vim.cmd.colorscheme("nord")
-			-- You can configure highlights by doing something like:
-			vim.cmd.hi("Comment gui=none")
+		"MeanderingProgrammer/markdown.nvim",
+		name = "render-markdown", -- Only needed if you have another plugin named markdown.nvim
+		dependencies = { "nvim-treesitter/nvim-treesitter" }, -- if you use the mini.nvim suite
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+		config = function()
+			require("render-markdown").setup({})
 		end,
 	},
 
@@ -820,6 +828,8 @@ require("lazy").setup({
 		},
 	},
 })
+
+require("dynamic_theme").setup()
 
 -- Neovide
 vim.g.neovide_padding_top = 10

@@ -73,7 +73,6 @@ source = ~/.config/hypr/env.conf
 source = ~/.config/hypr/rules.conf
 source = ~/.config/hypr/binds.conf
 
-exec-once = swww-daemon
 exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec-once = dunst
 exec-once = hyprctl setcursor Nordzy-cursors-white 30
@@ -83,12 +82,11 @@ exec-once = wl-paste -p --watch clapboard store
 exec-once = ydotoold # required for Hyprmouse
 #exec-once = wayvnc -C=/home/nnra/.config/wayvnc/config
 #exec-once = wl-paste -p --watch wl-copy -p ''
-exec-once = hyprctl
+exec-once = wpaperd & hyprctl
 exec-once = firefox & kdeconnect-indicator & openrgb
 exec-once = vesktop
 exec-once = obsidian
 #exec-once = glava
-exec = swww img ~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg --transition-fps 240 --transition-type center --transition-step 255
 
 input {
     kb_layout = us

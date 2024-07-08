@@ -1,0 +1,59 @@
+live_config_reload = true
+
+[window]
+padding = {x = 10, y = 10}
+opacity = 0.9
+
+[font]
+normal = { family = "ricer.val.font", style = "Regular" }
+bold = { family = "ricer.val.font", style = "Bold" }
+italic = { family = "ricer.val.font", style = "Italic" }
+bold_italic = { family = "ricer.val.font", style = "Bold Italic" }
+size = 15
+
+[colors]
+footer_bar = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
+transparent_background_colors = true
+
+[colors.primary]
+foreground = "#ricer.col.text"
+background = "#ricer.col.background"
+dim_foreground = "#ricer.col.text_inactive"
+bright_foreground = "#ricer.col.text_highlight"
+
+[colors.search]
+matches = { foreground = "#ricer.col.br_blue", background = "#ricer.col.background" }
+focused_match = { foreground = "#ricer.col.yellow", background = "#ricer.col.background" }
+
+[colors.hints]
+start = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
+end = { foreground = "#ricer.col.text_inactive", background = "#ricer.col.background" }
+
+[colors.normal]
+black = "#ricer.col.black"
+red = "#ricer.col.red"
+green = "#ricer.col.green"
+yellow = "#ricer.col.yellow"
+blue = "#ricer.col.blue"
+magenta = "#ricer.col.magenta"
+cyan = "#ricer.col.cyan"
+white = "#ricer.col.white"
+
+[colors.bright]
+black = "#ricer.col.br_black"
+red = "#ricer.col.br_red"
+green = "#ricer.col.br_green"
+yellow = "#ricer.col.br_yellow"
+blue = "#ricer.col.br_blue"
+magenta = "#ricer.col.br_magenta"
+cyan = "#ricer.col.br_cyan"
+white = "#ricer.col.br_white"
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
+
+#alacritty-smooth-cursor settings
+#smooth_motion = true
+#smooth_motion_factor = 0.2
+#smooth_motion_spring = 0.5
