@@ -2,8 +2,11 @@ alias = "ricer"
 default_color_format = "hex"
 rgba01_precision = 2
 replace_files = true
+create_example = false
 color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
-file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}\n"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
 
 [Values]
 bg = "NordicRuinsInASnowyBlizzard.jpg"
