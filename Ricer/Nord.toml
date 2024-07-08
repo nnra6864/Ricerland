@@ -1,9 +1,9 @@
 alias = "ricer"
-default_format = "hex"
-color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
-file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}\n"
+default_color_format = "hex"
 rgba01_precision = 2
 replace_files = true
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}\n"
 
 [Values]
 bg = "NordicRuinsInASnowyBlizzard.jpg"
@@ -57,4 +57,4 @@ shadow_inactive = "2e34401a"
 [Files]
 Hyprland = ["~/.config/hypr/hyprland.conf", "hex"]
 Alacritty = ["~/.config/alacritty.toml", "hex"]
-NvimTheme = ["~/.config/nvim/lua/theme.lua"]
+NvimTheme = "~/.config/nvim/lua/theme.lua"
