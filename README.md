@@ -1,7 +1,8 @@
 [![Hyprnord](HyprnordLogo.png "Hyprnord")](https://www.youtube.com/watch?v=mIKWoNQUwN4)
 # [Nordic](https://www.nordtheme.com/) [Hyprland](https://hyprland.org/) Rice
 
-# Wallpaper
+# Wallpapers
+- [Nordic Ruins](https://www.heroscreen.cc/2023/05/4k-wallpaper-nordic-ruins-in-snowy.html)
 - [Snow Mountains](https://www.wallpaperflare.com/mountains-snow-nordic-landscapes-wallpaper-yujbl)
 
 # Font
