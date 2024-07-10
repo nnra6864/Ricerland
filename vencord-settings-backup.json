@@ -5,9 +5,12 @@
         "autoUpdateNotification": true,
         "useQuickCss": true,
         "themeLinks": [
-            "https://raw.githubusercontent.com/nnra6864/discord-nordic/master/nordic.vencord.css"
+            "https://raw.githubusercontent.com/nnra6864/TransparentNord/master/TransparentNord.css"
         ],
-        "enabledThemes": [],
+        "enabledThemes": [
+            "TranslucencePlus.theme.css",
+            "TransparentNord.css"
+        ],
         "enableReactDevtools": false,
         "frameless": false,
         "transparent": true,
@@ -143,7 +146,8 @@
                 "emojiSize": 48,
                 "hyperLinkText": "{{NAME}}",
                 "useHyperLinks": true,
-                "disableEmbedPermissionCheck": false
+                "disableEmbedPermissionCheck": false,
+                "stickerSize": 160
             },
             "FakeProfileThemes": {
                 "enabled": true,
@@ -374,7 +378,8 @@
                 "groups": true,
                 "servers": true,
                 "friends": true,
-                "friendRequestCancels": true
+                "friendRequestCancels": true,
+                "notices": false
             },
             "RevealAllSpoilers": {
                 "enabled": true
@@ -398,9 +403,6 @@
             "ServerListIndicators": {
                 "enabled": true,
                 "mode": 2
-            },
-            "ServerProfile": {
-                "enabled": true
             },
             "ShikiCodeblocks": {
                 "enabled": true,
@@ -649,6 +651,42 @@
             },
             "ReplaceGoogleSearch": {
                 "enabled": false
+            },
+            "DontRoundMyTimestamps": {
+                "enabled": false
+            },
+            "MaskedLinkPaste": {
+                "enabled": false
+            },
+            "Summaries": {
+                "enabled": false
+            },
+            "WatchTogetherAdblock": {
+                "enabled": true
+            },
+            "MessageUpdaterAPI": {
+                "enabled": true
+            },
+            "ServerInfo": {
+                "enabled": true
+            },
+            "AppleMusicRichPresence": {
+                "enabled": false
+            },
+            "CopyEmojiMarkdown": {
+                "enabled": false
+            },
+            "NoOnboardingDelay": {
+                "enabled": false
+            },
+            "SettingsStoreAPI": {
+                "enabled": true
+            },
+            "UserSettingsAPI": {
+                "enabled": true
+            },
+            "ShowAllRoles": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -661,7 +699,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1716819842665
+            "settingsSyncVersion": 1720147209130
         }
     },
     "quickCss": ""
