@@ -45,15 +45,8 @@
 !/UnityUltraWideLayout.wlt
 !/UnityNord.json
 !/vesktop/
-/vesktop/Crashpad/
-/vesktop/sessionData/
-/vesktop/themes/
-/vesktop/vencordDist/
-/vesktop/settings.json
-/vesktop/SingletonCookie
-/vesktop/SingletonLock
-/vesktop/SingletonSocket
-/vesktop/state.json
+/vesktop/*
+!/vesktop/settings/
 !/waybar/
 !/wpaperd/
 !/xdg-desktop-portal/
