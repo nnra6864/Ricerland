@@ -44,7 +44,9 @@
 !/swaync/
 !/UnityUltraWideLayout.wlt
 !/UnityNord.json
-!/vesktop/settings/settings.json
+!/vesktop/
+/vesktop/
+!/vesktop/settings/
 !/waybar/
 !/wpaperd/
 !/xdg-desktop-portal/
