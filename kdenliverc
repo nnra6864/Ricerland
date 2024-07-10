@@ -112,7 +112,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,6,11,0,54,50.807
+lastCacheCheck=2024,7,9,20,16,46.824
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -164,4 +164,4 @@ use_dark_breeze=true
 widgetstyle=qt6ct-style
 
 [version]
-version=24.05.0
+version=24.05.2
