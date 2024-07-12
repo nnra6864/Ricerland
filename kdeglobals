@@ -137,10 +137,18 @@ ForegroundVisited=#b48ead
 
 [General]
 ColorScheme=Nord
-ColorSchemeHash=38f350e0530aaa58cc20a2cf2011a8a2d0c7a4fc
+ColorSchemeHash=d05680ca25bbbbf09a8b5f36923ee7f2b1117fbf
 TerminalApplication=alacritty
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 font="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
+menuFont=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Cascadia Code NF,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont="Cascadia Code NF",10,-1,5,50,0,0,0,0,0,Regular
+
+[Icons]
+Theme=Nordzy-dark
 
 [KDE]
 AnimationDurationFactor=0.500000
@@ -173,6 +181,7 @@ MaximumRemoteSize=0
 [WM]
 activeBackground=46,52,64
 activeBlend=236,239,244
+activeFont=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=236,239,244
 inactiveBackground=46,52,64
 inactiveBlend=216,222,233
