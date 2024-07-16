@@ -37,7 +37,6 @@
 - [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `CTRL+ATL+X` *active window* `$mainMod+ALT+X` *window* `Pint` *fullscreen(comment grim and uncomment hyprshot if you have multiple monitors)*
 - [hyprpicker](https://github.com/hyprwm/hyprpicker) - Easy to use color picker `SUPER+P`
 - [hyprcursor](https://github.com/hyprwm/hyprcursor) - Hyprland implementation of cursors
-TODO: Update Link
 - [swww](https://github.com/LGFae/swww) - Backgrounds
 - [hyprlock](https://github.com/hyprwm/hyprlock) - Hyprland lock
 - [fish](https://fishshell.com/) - Best shell
