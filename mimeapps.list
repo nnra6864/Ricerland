@@ -1,5 +1,6 @@
 [Added Associations]
 application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;
+application/octet-stream=org.kde.okteta.desktop;
 application/pdf=firefox.desktop;krita_pdf.desktop;chromium.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/xml=nvim.desktop;
@@ -14,12 +15,13 @@ text/x-c++src=neovide.desktop;nvim.desktop;azuredatastudio.desktop;vim.desktop;c
 text/x-csharp=codium-wayland.desktop;rider.desktop;nvim.desktop;vim.desktop;codium.desktop;
 text/x-python=neovide.desktop;nvim.desktop;azuredatastudio.desktop;vim.desktop;codium.desktop;dev.zed.Zed.desktop;codium-wayland.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
-video/x-matroska=vlc.desktop;mpv.desktop;
+video/x-matroska=vlc.desktop;mpv.desktop;org.kde.okteta.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
+application/octet-stream=org.kde.okteta.desktop;
 application/pdf=firefox.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
 application/x-extension-htm=firefox.desktop
