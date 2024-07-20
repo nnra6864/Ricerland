@@ -193,7 +193,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 2.601892847653758,
+            "zoom": 2.226892862554919,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -416,9 +416,10 @@
             "enabled": false
         },
         "ShowHiddenChannels": {
-            "enabled": true,
+            "enabled": false,
             "showMode": 0,
-            "hideUnreads": true
+            "hideUnreads": true,
+            "defaultAllowedUsersAndRolesDropdownState": true
         },
         "ShowMeYourName": {
             "enabled": true,
@@ -705,6 +706,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1721184355629
+        "settingsSyncVersion": 1721401339767
     }
 }

@@ -99,5 +99,9 @@ function spc
     end
 end
 
+func ytdl
+    yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
+end
+
 zoxide init fish | source
 fish_vi_key_bindings
