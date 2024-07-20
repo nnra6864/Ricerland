@@ -99,7 +99,7 @@ function spc
     end
 end
 
-func ytdl
+function ytdl
     yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
 end
 
