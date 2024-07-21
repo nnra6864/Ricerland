@@ -1,5 +1,5 @@
 configuration {
-    font: "Cascadia Code NF 16";
+    font: "ricer.val.font ricer.val.font_size";
     line-margin: 10;
 
     display-ssh:    "";
@@ -10,8 +10,7 @@ configuration {
     show-icons:     true;
 }
 
-
-@theme "~/.config/rofi/themes/nord.rasi"
+@theme "~/.config/rofi/themes/Theme.rasi"
 
 listview {
 	lines: 10;
