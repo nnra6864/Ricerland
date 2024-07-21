@@ -21,6 +21,7 @@ outline_size = 2
 rounding = 10
 gtk_theme = "catppuccin-macchiato-blue-standard+default"
 nvim_theme = "catppuccin-macchiato"
+notification_duration = 3
 
 [Colors]
 black = "181926"
@@ -70,3 +71,4 @@ RofiConfig = "~/.config/rofi/config.rasi"
 RofiTheme = "~/.config/rofi/themes/theme.rasi"
 GLavaRadial = "~/.config/glava/radial.glsl"
 GTKSettings = "~/.local/share/nwg-look/gsettings"
+Dunst = "~/.config/dunst/dunstrc"

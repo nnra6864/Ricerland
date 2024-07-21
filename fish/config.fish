@@ -13,9 +13,16 @@ alias py='python'
 function rice
     py ~/Data/Projects/Ricer/Ricer.py $argv
     
-    nwg-look -a
-    killall glava
-    nohup glava &
+    nwg-look -a >/dev/null 2>&1 &
+    disown
+    
+    killall glava >/dev/null 2>&1
+    glava >/dev/null 2>&1 &
+    disown
+    
+    killall dunst >/dev/null 2>&1
+    dunst >/dev/null 2>&1 &
+    disown
 end
 
 function 8k
