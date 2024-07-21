@@ -34,7 +34,7 @@ message {
     padding: 5;
     border-color: @border-col;
     border-radius: 10px;
-    border:  0 3px 3px 3px;
+    border:  0 2px 2px 2px;
 }
 
 inputbar {
@@ -42,7 +42,7 @@ inputbar {
     padding: 16px;
     background-color: @background-col;
 
-    border: 3px;
+    border: 2px;
     border-radius: 10px 10px 0 0;
     border-color: @border-col;
 }
@@ -60,7 +60,7 @@ listview {
     padding: 0;
     border-radius: 0 0 10px 10px;
     border-color: @border-col;
-    border: 0 3px 3px 3px;
+    border: 0 2px 2px 2px;
     background-color: @background-col;
     dynamic: false;
 }
@@ -94,12 +94,12 @@ button {
     color: @text-col;
     horizontal-align: 0.5;
 
-    border: 3px 0 3px 3px;
+    border: 2px 0 2px 2px;
     border-radius: 0;
     border-color: @border-col;
 }
 
 button selected normal {
-    border: 3px 0 3px 3px;
+    border: 2px 0 2px 2px;
     border-color: @border-col;
 }
