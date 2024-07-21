@@ -15,14 +15,17 @@ function rice
     
     nwg-look -a >/dev/null 2>&1 &
     disown
+    echo "Applied GTK Theme"
     
     killall glava >/dev/null 2>&1
     glava >/dev/null 2>&1 &
     disown
+    echo "Restarted GLava"
     
     killall dunst >/dev/null 2>&1
     dunst >/dev/null 2>&1 &
     disown
+    echo "Restarted Dunst"
 end
 
 function 8k
