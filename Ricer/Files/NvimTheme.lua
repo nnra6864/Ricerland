@@ -1,1 +1,1 @@
-return "ricer.val.nvim_theme"
+return "ricer.val.nvim_theme\"

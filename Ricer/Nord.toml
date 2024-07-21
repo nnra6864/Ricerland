@@ -12,11 +12,13 @@ space_files = true
 bg = "NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
 font_size = 13
+small_font_size = 11
+big_font_size = 15
 icons = "Nordzy-dark"
 cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
-border_radius = 10
+rounding = 10
 nvim_theme = "nord"
 
 [Colors]
@@ -39,8 +41,8 @@ br_cyan = "8fbcbb"
 br_white = "eceff4"
 
 text = "eceff4"
-text_highlight = "88c0d0"
-text_link = "81a1c1"
+text_highlight = "81a1c1"
+text_link = "88c0d0"
 text_inactive = "d8dee9"
 text_placeholder = "4c566a"
 
@@ -51,8 +53,8 @@ background_highlight_alt = "4c566a"
 background_inactive = "4c566a"
 background_inactive_alt = "4c566a"
 
-outline = "eceff4"
-outline_alt = "81a1c1"
+outline = "81a1c1"
+outline_alt = "eceff4"
 outline_inactive = "2e3440"
 outline_inactive_alt = "4c566a"
 
@@ -63,3 +65,5 @@ shadow_inactive = "2e34401a"
 Hyprland = ["~/.config/hypr/hyprland.conf", "hex"]
 Alacritty = ["~/.config/alacritty.toml", "hex"]
 NvimTheme = "~/.config/nvim/lua/theme.lua"
+RofiConfig = "~/.config/rofi/config.rasi"
+RofiTheme = "~/.config/rofi/themes/theme.rasi"

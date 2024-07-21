@@ -1,17 +1,16 @@
 configuration {
-    font: "Cascadia Code NF 16";
+    font: "Cascadia Code NF 15";
     line-margin: 10;
 
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
+    display-ssh: "";
+    display-run: "";
+    display-drun: "";
     display-window: "";
-    display-combi:  "";
-    show-icons:     true;
+    display-combi: "";
+    show-icons: true;
 }
 
-
-@theme "~/.config/rofi/themes/nord.rasi"
+@theme "~/.config/rofi/themes/theme.rasi"
 
 listview {
 	lines: 10;
