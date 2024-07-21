@@ -1,0 +1,105 @@
+* {
+	background-col: rgba(ricer.col.background.rgb, 0.5);
+	background-selected-col: rgba(ricer.col.background_highlight.rgb, 0.1);
+	text-col: ricer.col.text;
+	text-selected-col: ricer.col.text_highlight.hex;
+	border-col: ricer.col.outline;
+
+    background-color: transparent;
+    transparency: "real";
+    highlight: underline bold ricer.col.text_link.hex;
+}
+
+window {
+    location: center;
+    anchor: center;
+	width: 20%;
+	height: 40%;
+    border: 0%;
+    border-radius: 10px;
+
+	fullscreen: false;
+    children: [mainbox];
+    orientation: horizontal;
+    spacing: 0;
+}
+
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+message {
+    padding: 5;
+    border-color: @border-col;
+    border-radius: 10px;
+    border:  0px 3px 3px 3px;
+}
+
+inputbar {
+    color: @text-col;
+    padding: 16px;
+    background-color: @background-col;
+
+    border: 2px;
+    border-radius:  10px 10px 0px 0px;
+    border-color: @border-col;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    margin: 0px 1em 0em 0em;
+}
+
+listview {
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px;
+    border-color: @border-col;
+    border: 0px 2px 2px 2px;
+    background-color: @background-col;
+    dynamic: false;
+}
+
+element {
+    padding: 15px 25px 15px 6px;
+    vertical-align: 0.5;
+    border-radius: 0px;
+    background-color: transparent;
+    color: @text-col;
+    text-color: @text-col;
+}
+
+element-icon{
+	size: 1em;
+	padding: 0px 25px 0px 0px;
+}
+
+element selected.normal {
+	background-color: @background-selected-col;
+	text-color: @text-selected-col;
+}
+
+element-text, element-icon {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+button {
+    padding: 6px;
+    color: @text-col;
+    horizontal-align: 0.5;
+
+    border: 2px 0px 2px 2px;
+    border-radius: 0px 0px 0px 0px;
+    border-color: @border-col;
+}
+
+button selected normal {
+    border: 2px 0px 2px 2px;
+    border-color: @border-col;
+}
