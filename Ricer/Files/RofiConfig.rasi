@@ -1,16 +1,16 @@
 configuration {
-    font: "ricer.val.font ricer.val.font_size";
+    font: "ricer.val.font ricer.val.big_font_size";
     line-margin: 10;
 
-    display-ssh:    "";
-    display-run:    "";
-    display-drun:   "";
+    display-ssh: "";
+    display-run: "";
+    display-drun: "";
     display-window: "";
-    display-combi:  "";
-    show-icons:     true;
+    display-combi: "";
+    show-icons: true;
 }
 
-@theme "~/.config/rofi/themes/Theme.rasi"
+@theme "~/.config/rofi/themes/theme.rasi"
 
 listview {
 	lines: 10;

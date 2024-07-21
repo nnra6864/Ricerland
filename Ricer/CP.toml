@@ -2,23 +2,18 @@ alias = "ricer"
 default_color_format = "hex"
 rgba01_precision = 2
 replace_files = true
-create_example = false
 color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
-file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
-space_colors = false
-space_files = true
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}\n"
 
 [Values]
 bg = "CatppuccinRuinsInASnowyBlizzard.png"
 font = "Cascadia Code NF"
 font_size = 13
-small_font_size = 11
-big_font_size = 15
 icons = "Nordzy-dark"
 cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
-rounding = 10
+border_radius = 10
 nvim_theme = "catppuccin-macchiato"
 
 [Colors]
@@ -41,15 +36,13 @@ br_cyan = "91d7e3"
 br_white = "cad3f5"
 
 text = "cad3f5"
-text_highlight = "b7bdf8"
 text_link = "8aadf4"
+text_highlight = "b7bdf8"
 text_inactive = "a5adcb"
 text_placeholder = "b8c0e0"
 
 background = "24273a"
 background_alt = "24273a"
-background_highlight = "6e738d"
-background_highlight_alt = "8087a2"
 background_inactive = "5b6078"
 background_inactive_alt = "5b6078"
 
@@ -58,12 +51,9 @@ outline_alt = "8aadf4"
 outline_inactive = "24273a"
 outline_inactive_alt = "5b6078"
 
-shadow = "1819261a"
-shadow_inactive = "1819261a"
+shadow = "181926"
 
 [Files]
 Hyprland = ["~/.config/hypr/hyprland.conf", "hex"]
 Alacritty = ["~/.config/alacritty.toml", "hex"]
 NvimTheme = "~/.config/nvim/lua/theme.lua"
-RofiConfig = "~/.config/rofi/config.rasi"
-RofiTheme = "~/.config/rofi/themes/theme.rasi"
