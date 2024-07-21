@@ -19,6 +19,7 @@ cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
 rounding = 10
+gtk_theme = "catppuccin-macchiato-blue-standard+default"
 nvim_theme = "catppuccin-macchiato"
 
 [Colors]
@@ -62,8 +63,10 @@ shadow = "1819261a"
 shadow_inactive = "1819261a"
 
 [Files]
-Hyprland = ["~/.config/hypr/hyprland.conf", "hex"]
-Alacritty = ["~/.config/alacritty.toml", "hex"]
+Hyprland = "~/.config/hypr/hyprland.conf"
+Alacritty = "~/.config/alacritty.toml"
 NvimTheme = "~/.config/nvim/lua/theme.lua"
 RofiConfig = "~/.config/rofi/config.rasi"
 RofiTheme = "~/.config/rofi/themes/theme.rasi"
+GLavaRadial = "~/.config/glava/radial.glsl"
+GLavaRadial = "~/.local/share/nwg-look/gsettings"

@@ -10,8 +10,16 @@ alias doas='sudo'
 alias nlear='clear; neofetch'
 alias py='python'
 
+function rice
+    py ~/Data/Projects/Ricer/Ricer.py $argv
+    
+    nwg-look -a
+    killall glava
+    nohup glava &
+end
+
 function 8k
-	ffmpeg -i $argv[1] -vf scale=7680:4320 -c:v libx265 -crf 23 -c:a copy $argv[2]
+    ffmpeg -i $argv[1] -vf scale=7680:4320 -c:v libx265 -crf 23 -c:a copy $argv[2]
 end
 
 function nv
