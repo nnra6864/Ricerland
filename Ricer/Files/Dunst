@@ -1,0 +1,25 @@
+[global]
+follow = mouse
+width = (0, 500)
+height = 100
+notification_limit = 1
+origin = top-center
+offset = 0x10
+progress_bar_max_width = 500
+progress_bar_corner_radius = 0
+font = "ricer.val.font ricer.val.font_size"
+corner_radius = ricer.val.rounding
+frame_width = ricer.val.outline_size
+mouse_left_click = do_action, close_current
+mouse_middle_click = close_current
+mouse_right_click = context
+transparency = 100
+background = "#ricer.col.background\01"
+foreground = "#ricer.col.text\FF"
+highlight = "#ricer.col.text_highlight\FF"
+frame_color = "#ricer.col.outline\FF"
+separator_color = frame
+format = "<span color='#ricer.col.text_highlight\FF'>%s</span>\n%b"
+icon_corner_radius = ricer.val.rounding
+timeout = ricer.val.notification_duration
+show_indicators = no
