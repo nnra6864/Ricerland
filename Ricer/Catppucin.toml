@@ -2,25 +2,21 @@ alias = "ricer"
 default_color_format = "hex"
 rgba01_precision = 2
 replace_files = true
-create_example = false
+create_example = true
 color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
 file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
 space_colors = false
 space_files = true
 
 [Values]
-bg = "NordicRuinsInASnowyBlizzard.jpg"
+bg = "Background.png"
 font = "Cascadia Code NF"
 font_size = 13
-small_font_size = 11
-big_font_size = 15
 icons = "Nordzy-dark"
 cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
-rounding = 10
-gtk_theme = "Nordic-darker-v40"
-nvim_theme = "nord"
+border_radius = 10
 
 [Colors]
 black = "2e3440"
@@ -42,20 +38,18 @@ br_cyan = "8fbcbb"
 br_white = "eceff4"
 
 text = "eceff4"
-text_highlight = "81a1c1"
-text_link = "88c0d0"
+text_link = "81a1c1"
+text_highlight = "88c0d0"
 text_inactive = "d8dee9"
 text_placeholder = "4c566a"
 
 background = "2e3440"
 background_alt = "2e3440"
-background_highlight = "4c566a"
-background_highlight_alt = "4c566a"
 background_inactive = "4c566a"
 background_inactive_alt = "4c566a"
 
-outline = "81a1c1"
-outline_alt = "eceff4"
+outline = "eceff4"
+outline_alt = "81a1c1"
 outline_inactive = "2e3440"
 outline_inactive_alt = "4c566a"
 
@@ -63,10 +57,4 @@ shadow = "2e34401a"
 shadow_inactive = "2e34401a"
 
 [Files]
-Hyprland = "~/.config/hypr/hyprland.conf"
-Alacritty = "~/.config/alacritty.toml"
-NvimTheme = "~/.config/nvim/lua/theme.lua"
-RofiConfig = "~/.config/rofi/config.rasi"
-RofiTheme = "~/.config/rofi/themes/theme.rasi"
-GLavaRadial = "~/.config/glava/radial.glsl"
-GLavaRadial = "~/.local/share/nwg-look/gsettings"
+Example = ["~/.config/Ricer/Example", "hex"]

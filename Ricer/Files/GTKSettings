@@ -1,0 +1,14 @@
+gtk-theme=ricer.val.gtk_theme
+icon-theme=ricer.val.icons
+font-name=ricer.val.font ricer.val.font_size
+cursor-theme=ricer.val.cursor
+cursor-size=ricer.val.cursor_size
+toolbar-style=both-horiz
+toolbar-icons-size=large
+font-hinting=slight
+font-antialiasing=grayscale
+font-rgba-order=rgb
+text-scaling-factor=1.0
+color-scheme=default
+event-sounds=false
+input-feedback-sounds=false
