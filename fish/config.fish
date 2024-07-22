@@ -11,21 +11,28 @@ alias nlear='clear; neofetch'
 alias py='python'
 
 function rice
-    py ~/Data/Projects/Ricer/Ricer.py $argv
-    
-    nwg-look -a >/dev/null 2>&1 &
+    python ~/Test.py > /dev/null 2>&1 &
+    set pid $last_pid
     disown
-    echo "Applied GTK Theme"
     
-    killall glava >/dev/null 2>&1
+    sleep 0.1
+
+    python ~/Data/Projects/Ricer/Ricer.py $argv > /dev/null 2>&1
+    
+    killall glava > /dev/null 2>&1
     glava >/dev/null 2>&1 &
     disown
-    echo "Restarted GLava"
+
+    nwg-look -a > /dev/null 2>&1 &
+    disown
     
-    killall dunst >/dev/null 2>&1
+    killall dunst > /dev/null 2>&1
     dunst >/dev/null 2>&1 &
     disown
-    echo "Restarted Dunst"
+
+    nlear
+    sleep 1
+    kill -SIGUSR1 $pid
 end
 
 function 8k
