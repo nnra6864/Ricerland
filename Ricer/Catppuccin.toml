@@ -9,14 +9,16 @@ space_colors = false
 space_files = true
 
 [Values]
-bg = "CatppuccinRuinsInASnowyBlizzard.png"
+terminal = "alacritty"
+bg = "CatppuccinCity.png"
 font = "Cascadia Code NF"
-font_size = 13
+min_font_size = 8
 small_font_size = 11
+font_size = 13
 big_font_size = 15
-huge_font_size = 30
+max_font_size = 30
 icons = "Nordzy-dark"
-cursor = "Nordzy-cursors-white"
+cursor = "Nordzy-catppuccin-macchiato-blue"
 cursor_size = 30
 outline_size = 2
 rounding = 10
@@ -45,9 +47,10 @@ br_white = "cad3f5"
 
 text = "cad3f5"
 text_highlight = "b7bdf8"
-text_link = "8aadf4"
 text_inactive = "a5adcb"
 text_placeholder = "b8c0e0"
+link = "8aadf4"
+link_visited = "c6a0f6"
 
 background = "24273a"
 background_alt = "24273a"
@@ -64,6 +67,9 @@ outline_inactive_alt = "5b6078"
 shadow = "1819261a"
 shadow_inactive = "1819261a"
 
+button = "363a4f"
+button_inactive = "6e738d"
+
 [Files]
 Hyprland = "~/.config/hypr/hyprland.conf"
 Alacritty = "~/.config/alacritty.toml"
@@ -75,3 +81,6 @@ GTKSettings = "~/.local/share/nwg-look/gsettings"
 Dunst = "~/.config/dunst/dunstrc"
 Fonts = "~/.config/fontconfig/fonts.conf"
 Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = "~/.config/qt5ct/colors/theme.conf"
+QtColors = "~/.config/qt6ct/colors/theme.conf"
+KDEGlobals = "~/.config/kdeglobals"

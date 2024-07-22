@@ -9,12 +9,14 @@ space_colors = false
 space_files = true
 
 [Values]
+terminal = "alacritty"
 bg = "NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
-font_size = 13
+min_font_size = 8
 small_font_size = 11
+font_size = 13
 big_font_size = 15
-huge_font_size = 30
+max_font_size = 30
 icons = "Nordzy-dark"
 cursor = "Nordzy-cursors-white"
 cursor_size = 30
@@ -45,9 +47,10 @@ br_white = "eceff4"
 
 text = "eceff4"
 text_highlight = "81a1c1"
-text_link = "88c0d0"
 text_inactive = "d8dee9"
 text_placeholder = "4c566a"
+link = "88c0d0"
+link_visited = "5e81ac"
 
 background = "2e3440"
 background_alt = "2e3440"
@@ -64,6 +67,9 @@ outline_inactive_alt = "4c566a"
 shadow = "2e34401a"
 shadow_inactive = "2e34401a"
 
+button = "3b4252"
+button_inactive = "434c5e"
+
 [Files]
 Hyprland = "~/.config/hypr/hyprland.conf"
 Alacritty = "~/.config/alacritty.toml"
@@ -75,3 +81,6 @@ GTKSettings = "~/.local/share/nwg-look/gsettings"
 Dunst = "~/.config/dunst/dunstrc"
 Fonts = "~/.config/fontconfig/fonts.conf"
 Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = "~/.config/qt5ct/colors/theme.conf"
+QtColors = "~/.config/qt6ct/colors/theme.conf"
+KDEGlobals = "~/.config/kdeglobals"

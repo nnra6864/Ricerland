@@ -7,7 +7,7 @@
 
     background-color: transparent;
     transparency: "real";
-    highlight: underline bold #ricer.col.text_link.hex;
+    highlight: underline bold #ricer.col.link.hex;
 }
 
 window {

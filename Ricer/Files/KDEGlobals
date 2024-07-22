@@ -1,0 +1,188 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=#ricer.col.background
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enable=
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=#ricer.col.background_inactive
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=#ricer.col.background_alt
+BackgroundNormal=#ricer.col.background
+DecorationFocus=#ricer.col.outline
+DecorationHover=#ricer.col.outline_alt
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[Colors:Complementary]
+BackgroundAlternate=#2e3440
+BackgroundNormal=#2e3440
+DecorationFocus=#3b4252
+DecorationHover=#434c5e
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[Colors:Header]
+BackgroundAlternate=#ricer.col.background_alt
+BackgroundNormal=#ricer.col.background
+DecorationFocus=#3b4252
+DecorationHover=#434c5e
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[Colors:Header][Inactive]
+BackgroundAlternate=#ricer.col.background_alt
+BackgroundNormal=#ricer.col.background
+DecorationFocus=#3b4252
+DecorationHover=#434c5e
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[Colors:Selection]
+BackgroundAlternate=#5e81ac
+BackgroundNormal=#5e81ac
+DecorationFocus=#5e81ac
+DecorationHover=#5e81ac
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#ebcb8b
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#a3be8c
+ForegroundVisited=#b48ead
+
+[Colors:Tooltip]
+BackgroundAlternate=#2e3440
+BackgroundNormal=#2e3440
+DecorationFocus=#3b4252
+DecorationHover=#434c5e
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[Colors:View]
+BackgroundAlternate=#ricer.col.background_alt
+BackgroundNormal=#ricer.col.background
+DecorationFocus=#3b4252
+DecorationHover=#3b4252
+ForegroundActive=#eceff4
+ForegroundInactive=#eceff4
+ForegroundLink=#3b4252
+ForegroundNegative=#3b4252
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#3b4252
+ForegroundVisited=#eceff4
+
+[Colors:Window]
+BackgroundAlternate=#ricer.col.background_alt
+BackgroundNormal=#ricer.col.background
+DecorationFocus=#3b4252
+DecorationHover=#434c5e
+ForegroundActive=#eceff4
+ForegroundInactive=#d8dee9
+ForegroundLink=#88c0d0
+ForegroundNegative=#4c566a
+ForegroundNeutral=#eceff4
+ForegroundNormal=#eceff4
+ForegroundPositive=#ebcb8b
+ForegroundVisited=#b48ead
+
+[General]
+ColorScheme=Nordic-darker
+ColorSchemeHash=d05680ca25bbbbf09a8b5f36923ee7f2b1117fbf
+TerminalApplication=ricer.val.terminal
+XftHintStyle=hintslight
+XftSubPixel=rgb
+fixed=ricer.val.font\,ricer.val.font_size\,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=ricer.val.font\,ricer.val.font_size\,-1,5,50,0,0,0,0,0,Regular
+menuFont=ricer.val.font\,ricer.val.font_size\,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=ricer.val.font\,ricer.val.min_font_size\,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=ricer.val.font\,ricer.val.font_size\,-1,5,50,0,0,0,0,0,Regular
+
+[Icons]
+Theme=ricer.val.icons
+
+[KDE]
+AnimationDurationFactor=0.500000
+LookAndFeelPackage=Nordic-darker
+ShowDeleteCommand=false
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=144
+View Style=Detail
+
+[PreviewSettings]
+MaximumRemoteSize=0
+
+[WM]
+activeBackground=46,52,64
+activeBlend=236,239,244
+activeFont=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeForeground=236,239,244
+inactiveBackground=46,52,64
+inactiveBlend=216,222,233
+inactiveForeground=216,222,233
