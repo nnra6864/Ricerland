@@ -11,9 +11,9 @@ alias nlear='clear; neofetch'
 alias py='python'
 
 function rice
-    python ~/Test.py > /dev/null 2>&1 &
-    set pid $last_pid
-    disown
+    #python ~/Test.py > /dev/null 2>&1 &
+    #set pid $last_pid
+    #disown
     
     sleep 0.1
 
@@ -30,9 +30,9 @@ function rice
     dunst >/dev/null 2>&1 &
     disown
 
-    nlear
+    #nlear
     sleep 1
-    kill -SIGUSR1 $pid
+    #kill -SIGUSR1 $pid
 end
 
 function 8k
