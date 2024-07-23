@@ -1,5 +1,5 @@
 [Added Associations]
-application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;
+application/json=neovide.desktop;nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;dev.zed.Zed.desktop;libreoffice-writer.desktop;org.kde.okteta.desktop;
 application/octet-stream=org.kde.okteta.desktop;
 application/pdf=firefox.desktop;krita_pdf.desktop;chromium.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
@@ -20,7 +20,7 @@ x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
-application/json=nvim.desktop;
+application/json=neovide.desktop;
 application/octet-stream=org.kde.okteta.desktop;
 application/pdf=firefox.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
