@@ -22,8 +22,8 @@ dim_foreground = "#ricer.col.text_inactive"
 bright_foreground = "#ricer.col.text_highlight"
 
 [colors.search]
-matches = { foreground = "#ricer.col.br_blue", background = "#ricer.col.background" }
-focused_match = { foreground = "#ricer.col.yellow", background = "#ricer.col.background" }
+matches = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
+focused_match = { foreground = "#ricer.col.text_highlight", background = "#ricer.col.background" }
 
 [colors.hints]
 start = { foreground = "#ricer.col.text", background = "#ricer.col.background" }

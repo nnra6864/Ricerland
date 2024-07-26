@@ -22,8 +22,8 @@ dim_foreground = "#9ACBE6"
 bright_foreground = "#4D99BF"
 
 [colors.search]
-matches = { foreground = "#4D99BF", background = "#14283C" }
-focused_match = { foreground = "#99993D", background = "#14283C" }
+matches = { foreground = "#ABE3FF", background = "#14283C" }
+focused_match = { foreground = "#4D99BF", background = "#14283C" }
 
 [colors.hints]
 start = { foreground = "#ABE3FF", background = "#14283C" }
