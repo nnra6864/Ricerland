@@ -1,1 +1,1 @@
-return "nord"
+return "night-owl"

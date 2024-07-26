@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 terminal = "alacritty"
-bg = "NordicRuinsInASnowyBlizzard.jpg"
+bg = "~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11
@@ -18,12 +18,12 @@ font_size = 13
 big_font_size = 15
 max_font_size = 30
 icons = "Nordzy-dark"
-cursor = "Nordzy-cursors-white"
+cursor = "Nordzy-catppuccin-macchiato-sapphire"
 cursor_size = 30
 outline_size = 2
 rounding = 10
-gtk_theme = "Nordic-darker-v40"
-nvim_theme = "nord"
+gtk_theme = "VALYRIAN-Blue-Steel"
+nvim_theme = "night-owl"
 notification_duration = 3
 
 [Colors]
@@ -86,3 +86,4 @@ QtColors = "~/.config/qt6ct/colors/theme.conf"
 KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
+Kitty = "~/.config/kitty/kitty.conf"

@@ -15,6 +15,7 @@ ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [ExtractDialog]
 5120x1440 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/HDD2TB/Work/Uni/Homework/CS130/
 
 [General]
 Version=202

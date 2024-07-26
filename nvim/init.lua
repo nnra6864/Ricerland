@@ -11,9 +11,26 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Tab width
+-- Indentation
 vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.autoindent = true
+
+-- Set tab to 4 if vim-sleuth sets it to 8
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	callback = function()
+		vim.schedule(function()
+			if vim.bo.tabstop == 8 then
+				vim.bo.tabstop = 4
+				vim.bo.softtabstop = 4
+				vim.bo.shiftwidth = 4
+			end
+		end)
+	end,
+})
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
@@ -142,6 +159,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
 	-- NOTE: Themes
+	{ "oxfist/night-owl.nvim" },
 	{ "shaunsingh/nord.nvim" },
 	{ "Mofiqul/dracula.nvim" },
 	{ "catppuccin/nvim" },
