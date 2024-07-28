@@ -1,13 +1,13 @@
 * {
-	background-col: rgba(20, 40, 60, 0.5);
-	background-selected-col: rgba(25, 51, 77, 0.1);
-	text-col: #ABE3FF;
-	text-selected-col: #4D99BF;
-	border-col: #4D99BF;
+	background-col: rgba(46, 52, 64, 0.5);
+	background-selected-col: rgba(76, 86, 106, 0.1);
+	text-col: #ECEFF4;
+	text-selected-col: #81A1C1;
+	border-col: #81A1C1;
 
     background-color: transparent;
     transparency: "real";
-    highlight: underline bold #3D9991;
+    highlight: underline bold #88C0D0;
 }
 
 window {

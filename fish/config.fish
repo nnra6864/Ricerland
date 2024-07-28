@@ -18,6 +18,7 @@ function rice
     sleep 0.2
 
     python ~/Data/Projects/Ricer/Ricer.py $argv > /dev/null 2>&1
+    cat ~/.config/YouTubeEnhancer.json | wl-copy
     
     killall glava > /dev/null 2>&1
     glava >/dev/null 2>&1 &
