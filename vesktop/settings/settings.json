@@ -541,7 +541,7 @@
             "enabled": false
         },
         "FixCodeblockGap": {
-            "enabled": false
+            "enabled": true
         },
         "ReviewDB": {
             "enabled": false
@@ -585,7 +585,8 @@
             "enabled": true
         },
         "ImplicitRelationships": {
-            "enabled": false
+            "enabled": false,
+            "sortByAffinity": true
         },
         "OverrideForumDefaults": {
             "enabled": false
@@ -658,7 +659,7 @@
             "enabled": false
         },
         "MaskedLinkPaste": {
-            "enabled": false
+            "enabled": true
         },
         "Summaries": {
             "enabled": false
@@ -707,6 +708,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722015011770
+        "settingsSyncVersion": 1722105170631
     }
 }
