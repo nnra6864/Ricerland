@@ -1,0 +1,10 @@
+{
+    "settings": {
+        "icons": {
+            "web": true,
+            "desktop": true,
+            "mobile": true,
+            "embedded": true
+        }
+    }
+}

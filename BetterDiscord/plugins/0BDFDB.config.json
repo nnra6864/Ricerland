@@ -1,0 +1,34 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "3.7.6",
+			"BetterFriendList": "1.5.5",
+			"BetterSearchPage": "1.2.4",
+			"CharCounter": "1.6.5",
+			"FriendNotifications": "2.0.0",
+			"ImageUtilities": "5.4.6",
+			"MessageUtilities": "1.9.8",
+			"NotificationSounds": "3.9.6",
+			"PluginRepo": "2.5.7",
+			"ReadAllNotificationsButton": "1.7.7",
+			"ServerCounter": "1.0.7",
+			"ServerDetails": "1.2.0",
+			"ShowBadgesInChat": "2.0.5",
+			"SplitLargeMessages": "1.8.2",
+			"Translator": "2.6.2"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": true,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"hashes": {
+			"0BDFDB.data.json": "4e7a8935448a523f4234a67f60f9b6896ac46195",
+			"0BDFDB.raw.css": "1ddbcd89c71de4668cbcd0b64a92ada84288b3a5"
+		}
+	}
+}
