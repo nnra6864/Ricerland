@@ -1,0 +1,22 @@
+{
+    "currentVersionInfo": {
+        "version": "1.4.11",
+        "hasShownChangelog": true
+    },
+    "hasShownAttention": true,
+    "attempts": 0,
+    "delayUntil": null,
+    "locked": false,
+    "settings": {
+        "codeType": "4-digit",
+        "hash": "c39477cbe1817c4b9d404799687f4b70f8a8aa44",
+        "salt": "360b629191f45d1a9ffd613f4cf35f69b071f6ea5c583d0703368f2d3f300c34",
+        "iterations": 4000,
+        "autolock": false,
+        "keybind": "control+l",
+        "highlightButtons": false,
+        "lockOnStartup": true,
+        "hideNotifications": false
+    },
+    "autoDeafened": false
+}

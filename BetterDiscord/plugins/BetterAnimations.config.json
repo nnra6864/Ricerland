@@ -1,0 +1,45 @@
+{
+    "currentVersionInfo": {
+        "version": "1.1.21",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "guild": {
+            "enabled": true,
+            "type": "slipRight",
+            "easing": "easeOutExpo",
+            "duration": 700
+        },
+        "channel": {
+            "enabled": true,
+            "type": "slipUp",
+            "easing": "easeOutExpo",
+            "duration": 500
+        },
+        "settings": {
+            "enabled": true,
+            "type": "slipUp",
+            "easing": "easeOutExpo",
+            "duration": 500
+        },
+        "messages": {
+            "enabled": true,
+            "type": "slip",
+            "easing": "easeOutExpo",
+            "position": "bottom",
+            "duration": 500
+        },
+        "popouts": {
+            "enabled": true,
+            "type": "rotateBackwardsLeft",
+            "easing": "easeOutExpo",
+            "duration": 500
+        },
+        "expressionPicker": {
+            "enabled": true,
+            "type": "scaleChange",
+            "easing": "easeOutExpo",
+            "duration": 500
+        }
+    }
+}
