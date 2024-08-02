@@ -30,7 +30,7 @@
     "ServerCounter": true,
     "ServerDetails": true,
     "ShowAllActivities": false,
-    "ShowBadgesInChat": true,
+    "ShowBadgesInChat": false,
     "Snowfall": false,
     "SplitLargeMessages": true,
     "Translator": true,

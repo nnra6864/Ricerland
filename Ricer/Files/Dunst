@@ -15,11 +15,11 @@ mouse_middle_click = close_current
 mouse_right_click = context
 transparency = 100
 background = "#ricer.col.background\01"
-foreground = "#ricer.col.text\FF"
-highlight = "#ricer.col.text_highlight\FF"
+foreground = "#ricer.col.foreground\FF"
+highlight = "#ricer.col.foreground_highlight\FF"
 frame_color = "#ricer.col.outline\FF"
 separator_color = frame
-format = "<span color='#ricer.col.text_highlight\FF'>%s</span>\n%b"
+format = "<span color='#ricer.col.foreground_alt\FF'>%s</span>\n%b"
 icon_corner_radius = ricer.val.rounding
 timeout = ricer.val.notification_duration
 show_indicators = no

@@ -2,29 +2,29 @@
   "manifest_version": 2,
   "name": "Frost",
   "version": "1.0",
-  "description": "Frost theme for Firefox",
+  "description": "Ricer theme for Firefox",
   "theme": {
     "colors": {
 	  "frame": "#ricer.col.background",
       "ntp_background": "#ricer.col.background",
-      "ntp_text": "#ricer.col.text",
+      "ntp_text": "#ricer.col.foreground",
       
-      "tab_text": "#ricer.col.text",
+      "tab_text": "#ricer.col.foreground",
       "tab_line": "#ricer.col.outline",
 	  "tab_selected": "#ricer.col.background_highlight",
-	  "tab_background_text": "#ricer.col.text",
+	  "tab_background_text": "#ricer.col.foreground",
       
 	  "sidebar": "#ricer.col.background",
-      "sidebar_text": "#ricer.col.text",
+      "sidebar_text": "#ricer.col.foreground",
       "sidebar_highlight": "#ricer.col.background_highlight",
-      "sidebar_highlight_text": "#ricer.col.text_highlight",
+      "sidebar_highlight_text": "#ricer.col.foreground_highlight",
       
 	  "toolbar": "#ricer.col.background",
-      "toolbar_text": "#ricer.col.text",
+      "toolbar_text": "#ricer.col.foreground",
       "toolbar_field": "#ricer.col.background_alt",
-      "toolbar_field_text": "#ricer.col.text_highlight",
+      "toolbar_field_text": "#ricer.col.foreground_highlight",
       "toolbar_field_focus": "#ricer.col.background_highlight",
-      "toolbar_field_text_focus": "#ricer.col.text_highlight",
+      "toolbar_field_text_focus": "#ricer.col.foreground_highlight",
       "toolbar_field_border_focus": "#ricer.col.outline",
       "toolbar_bottom_separator": "#ricer.col.outline",
       "toolbar_vertical_separator": "#ricer.col.outline",
@@ -33,17 +33,17 @@
       
 	  "button_background_hover": "#ricer.col.background_alt",
       "button_background_active": "#ricer.col.background_highlight_alt",
-      "icons": "#ricer.col.text",
-      "icons_attention": "#ricer.col.text_highlight",
+      "icons": "#ricer.col.foreground",
+      "icons_attention": "#ricer.col.foreground_highlight",
       
 	  "popup": "#ricer.col.background",
-      "popup_text": "#ricer.col.text",
+      "popup_text": "#ricer.col.foreground",
       "popup_border": "#ricer.col.outline",
       "popup_highlight": "#ricer.col.background_highlight",
-      "popup_highlight_text": "#ricer.col.text_highlight",
+      "popup_highlight_text": "#ricer.col.foreground_highlight",
 
-      "tab_loading": "#ricer.col.text_highlight",
-      "tab_loading_inactive": "#ricer.col.text"
+      "tab_loading": "#ricer.col.foreground_highlight",
+      "tab_loading_inactive": "#ricer.col.foreground"
 	}
   }
 }

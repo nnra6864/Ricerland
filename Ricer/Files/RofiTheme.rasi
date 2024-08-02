@@ -1,13 +1,13 @@
 * {
 	background-col: rgba(ricer.col.background.rgb, 0.5);
 	background-selected-col: rgba(ricer.col.background_highlight.rgb, 0.1);
-	text-col: #ricer.col.text.hex;
-	text-selected-col: #ricer.col.text_highlight.hex;
+	text-col: #ricer.col.foreground.hex;
+	text-selected-col: #ricer.col.foreground_alt.hex;
 	border-col: #ricer.col.outline.hex;
 
     background-color: transparent;
     transparency: "real";
-    highlight: underline bold #ricer.col.link.hex;
+    highlight: underline bold #ricer.col.foreground_highlight_alt.hex;
 }
 
 window {
