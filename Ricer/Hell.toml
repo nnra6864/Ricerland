@@ -1,0 +1,89 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+terminal = "alacritty"
+bg = "~/.config/Backgrounds/Hell.jpg"
+font = "Cascadia Code NF"
+min_font_size = 8
+small_font_size = 11
+font_size = 13
+big_font_size = 15
+max_font_size = 30
+icons = "Nordzy-dark"
+cursor = "Nordzy-cursors-white"
+cursor_size = 30
+outline_size = 2
+rounding = 10
+gtk_theme = "Nordic-darker-v40"
+nvim_theme = "nord"
+notification_duration = 3
+
+[Colors]
+black = "1a1a1a"
+red = "802b00"
+yellow = "bf9f00"
+green = "$yellow"
+cyan = "$yellow"
+blue = "$red"
+magenta = "$red"
+white = "bf9486"
+
+br_black = "262626"
+br_red = "bf4000"
+br_yellow = "ffd500"
+br_green = "$br_yellow"
+br_cyan = "$br_yellow"
+br_blue = "$br_red"
+br_magenta = "$br_red"
+br_white = "ffc6b3"
+
+text = "$br_red"
+text_highlight = "$red"
+text_inactive = "$white"
+text_placeholder = "$white"
+link = "$yellow"
+link_visited = "$br_yellow"
+
+background = "$black"
+background_alt = "$br_black"
+background_highlight = "$br_black"
+background_highlight_alt = "$black"
+background_inactive = "$black"
+background_inactive_alt = "$br_black"
+
+outline = "$br_red"
+outline_alt = "$br_white"
+outline_inactive = "$red"
+outline_inactive_alt = "$br_black"
+
+shadow = "$black"
+shadow_inactive = "$black"
+
+button = "$br_black"
+button_inactive = "$black"
+
+[Files]
+Hyprland = "~/.config/hypr/hyprland.conf"
+Alacritty = "~/.config/alacritty.toml"
+NvimTheme = "~/.config/nvim/lua/theme.lua"
+RofiConfig = "~/.config/rofi/config.rasi"
+RofiTheme = "~/.config/rofi/themes/theme.rasi"
+GLavaRadial = "~/.config/glava/radial.glsl"
+GTKSettings = "~/.local/share/nwg-look/gsettings"
+Dunst = "~/.config/dunst/dunstrc"
+Fonts = "~/.config/fontconfig/fonts.conf"
+Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = "~/.config/qt5ct/colors/theme.conf"
+QtColors = "~/.config/qt6ct/colors/theme.conf"
+KDEGlobals = "~/.config/kdeglobals"
+FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
+YTEnhancer = "~/.config/YouTubeEnhancer.json"
+Kitty = "~/.config/kitty/kitty.conf"

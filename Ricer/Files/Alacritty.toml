@@ -12,22 +12,22 @@ bold_italic = { family = "ricer.val.font", style = "Bold Italic" }
 size = ricer.val.big_font_size
 
 [colors]
-footer_bar = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
+footer_bar = { foreground = "#ricer.col.foreground", background = "#ricer.col.background" }
 transparent_background_colors = true
 
 [colors.primary]
-foreground = "#ricer.col.text"
+foreground = "#ricer.col.foreground"
 background = "#ricer.col.background"
-dim_foreground = "#ricer.col.text_inactive"
-bright_foreground = "#ricer.col.text_highlight"
+dim_foreground = "#ricer.col.foreground_inactive"
+bright_foreground = "#ricer.col.foreground_highlight"
 
 [colors.search]
-matches = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
-focused_match = { foreground = "#ricer.col.text_highlight", background = "#ricer.col.background" }
+matches = { foreground = "#ricer.col.foreground", background = "#ricer.col.background" }
+focused_match = { foreground = "#ricer.col.foreground_highlight", background = "#ricer.col.background" }
 
 [colors.hints]
-start = { foreground = "#ricer.col.text", background = "#ricer.col.background" }
-end = { foreground = "#ricer.col.text_inactive", background = "#ricer.col.background" }
+start = { foreground = "#ricer.col.foreground", background = "#ricer.col.background" }
+end = { foreground = "#ricer.col.foreground_inactive", background = "#ricer.col.background" }
 
 [colors.normal]
 black = "#ricer.col.black"
