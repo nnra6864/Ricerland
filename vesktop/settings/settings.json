@@ -193,7 +193,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 2.226892862554919,
+            "zoom": 1.8518928774560797,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -322,7 +322,8 @@
             "spotify": true,
             "steam": true,
             "epic": true,
-            "tidal": true
+            "tidal": true,
+            "itunes": true
         },
         "PermissionFreeWill": {
             "enabled": true,
@@ -664,9 +665,6 @@
         "Summaries": {
             "enabled": false
         },
-        "WatchTogetherAdblock": {
-            "enabled": true
-        },
         "MessageUpdaterAPI": {
             "enabled": true
         },
@@ -696,6 +694,9 @@
         },
         "MentionAvatars": {
             "enabled": false
+        },
+        "YoutubeAdblock": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -708,6 +709,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722443737617
+        "settingsSyncVersion": 1723083080796
     }
 }
