@@ -31,6 +31,8 @@ function rice
     dunst >/dev/null 2>&1 &
     disown
 
+    #sudo flatpak override --env=GTK_THEME=(gsettings get org.gnome.desktop.interface gtk-theme | string trim -c "\'")
+
     nlear
     sleep 1
     kill -SIGUSR1 $pid

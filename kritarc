@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=0.12170342088536286
+ArtColorSel.Light=0.3472580654587141
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
 ArtColorSel.SelColorH=0
 ArtColorSel.SelColorS=0
-ArtColorSel.SelColorX=0.12170342088536286
+ArtColorSel.SelColorX=0.3472580654587141
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -31,7 +31,7 @@ ConvertToImageColorSpaceOnImport=false
 CreateBackupFile=false
 CurrentWorkspace=Default
 ExportConfiguration-image/jpeg=<!DOCTYPE params>\n<params>\n <param type="internal" name="baseline">true</param>\n <param type="internal" name="exif">true</param>\n <param type="string" name="filters"><![CDATA[]]></param>\n <param type="internal" name="forceSRGB">false</param>\n <param type="internal" name="iptc">true</param>\n <param type="internal" name="optimize">true</param>\n <param type="internal" name="progressive">false</param>\n <param type="internal" name="quality">100</param>\n <param type="internal" name="saveProfile">true</param>\n <param type="internal" name="smoothing">0</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="internal" name="subsampling">0</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB g="1" space="sRGB-elle-V2-g10.icc" r="1" b="1"/>\n</color>\n]]></param>\n <param type="internal" name="xmp">true</param>\n</params>\n
-ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">9</param>\n <param type="internal" name="downsample">false</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB g="1" b="1" r="1" space="sRGB-elle-V2-g10.icc"/>\n</color>\n]]></param>\n</params>\n
+ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">9</param>\n <param type="internal" name="downsample">false</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB r="1" b="1" g="1" space="sRGB-elle-V2-g10.icc"/>\n</color>\n]]></param>\n</params>\n
 FilterSelector/LastUsedFilter=height to normal
 GamutMasks.viewMode=0
 KineticScrollingEnabled=true
@@ -48,8 +48,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB g="0.0343633182346821" b="0.0512703135609627" r="0.0273441672325134" space="sRGB-elle-V2-g10.icc"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB g="0.0980392172932625" b="0.0980392172932625" r="0.0980392172932625" space="sRGB IEC61966-2.1"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="0.0273441672325134" b="0.0512703135609627" g="0.0343633182346821" space="sRGB-elle-V2-g10.icc"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="0.0980392172932625" b="0.0980392172932625" g="0.0980392172932625" space="sRGB-elle-V2-g10.icc"/>\n</LastForeGroundColor>\n
 LastPreset=u) Pixel Art
 LastPreset_-1=u) Pixel Art
 LineSmoothingDelayDistance=50
@@ -294,7 +294,7 @@ zoomSteps=2
 [File Dialogs]
 DontUseNativeFileDialog=true
 OpenDocument=/home/nnra/Downloads
-SaveAs=/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/Assets/Images
+SaveAs=/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/Assets/Images/Bomber
 savenodeasimage=/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/Assets/Images
 
 [GenericGradientEditor]
@@ -662,8 +662,8 @@ File4[$e]=$HOME/Data/Projects/Ricer/Ricer.kra
 File5[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Enemy.psd
 File6[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Icons.psb
 File7[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Player.psd
-File8[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Enemy.kra
-File9[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Icons.kra
+File8[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Icons.kra
+File9[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Enemy.kra
 Name1=RadialMenu.kra
 Name10=Player.kra
 Name2=IMG_20240113_111533.jpg
@@ -672,8 +672,8 @@ Name4=Ricer.kra
 Name5=Enemy.psd
 Name6=Icons.psb
 Name7=Player.psd
-Name8=Enemy.kra
-Name9=Icons.kra
+Name8=Icons.kra
+Name9=Enemy.kra
 maxRecentFileItems=100
 
 [SelectedTags]
@@ -714,7 +714,7 @@ showPreview=true
 Last Used=<!DOCTYPE params>\n<params version="1">\n <param type="internal" name="horizRadius">20</param>\n <param type="internal" name="lockAspect">true</param>\n <param type="internal" name="vertRadius">20</param>\n</params>\n
 
 [height to normal_filter_bookmarks]
-Last Used=<!DOCTYPE params>\n<params version="1">\n <param type="internal" name="blueSwizzle">0</param>\n <param type="internal" name="channelToConvert">0</param>\n <param type="internal" name="greenSwizzle">2</param>\n <param type="internal" name="horizRadius">1</param>\n <param type="internal" name="lockAspect">true</param>\n <param type="internal" name="redSwizzle">0</param>\n <param type="string" name="type"><![CDATA[sobol]]></param>\n <param type="internal" name="vertRadius">1</param>\n</params>\n
+Last Used=<!DOCTYPE params>\n<params version="1">\n <param type="internal" name="blueSwizzle">4</param>\n <param type="internal" name="channelToConvert">2</param>\n <param type="internal" name="greenSwizzle">2</param>\n <param type="internal" name="horizRadius">1</param>\n <param type="internal" name="lockAspect">true</param>\n <param type="internal" name="redSwizzle">0</param>\n <param type="string" name="type"><![CDATA[sobol]]></param>\n <param type="internal" name="vertRadius">1</param>\n</params>\n
 
 [krita]
 ColorSpaceExtensionsPlugins=\\0
