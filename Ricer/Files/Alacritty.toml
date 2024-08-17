@@ -2,7 +2,7 @@ live_config_reload = true
 
 [window]
 padding = {x = 10, y = 10}
-opacity = 0.9
+opacity = 1
 
 [font]
 normal = { family = "ricer.val.font", style = "Regular" }

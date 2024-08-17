@@ -10,6 +10,13 @@ alias doas='sudo'
 alias nlear='clear; neofetch'
 alias py='python'
 
+function monero
+    echo "Enter your password:"
+    read -s password
+    echo $password | nohup sudo -E QT_QPA_PLATFORM=wayland monero-wallet-gui >/dev/null 2>&1 & disown
+    exit
+end
+
 function rice
     python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
     set pid $last_pid
