@@ -1,0 +1,21 @@
+{
+  "albumFolderFormat": "{ArtistName}/{Flag} {AlbumTitle} [{AlbumID}] [{AlbumYear}]",
+  "apiKeyIndex": 4,
+  "audioQuality": "HiFi",
+  "checkExist": true,
+  "downloadDelay": false,
+  "downloadPath": "/home/nnra/HDD2TB/Songs/Tidal/",
+  "includeEP": true,
+  "language": "0",
+  "lyricFile": true,
+  "multiThread": true,
+  "playlistFolderFormat": "{PlaylistName}",
+  "saveAlbumInfo": true,
+  "saveCovers": true,
+  "showProgress": true,
+  "showTrackInfo": true,
+  "trackFileFormat": "{TrackNumber}_{TrackTitle}_{ArtistName}",
+  "usePlaylistFolder": true,
+  "videoFileFormat": "{VideoNumber}_{VideoTitle}_{ArtistName}",
+  "videoQuality": "P1080"
+}
