@@ -1,0 +1,5 @@
+/home/nnra/HDD2TB/Work/Uni/Homework/AD185/1.blend
+/home/nnra/HDD2TB/Work/3D/Blender/Saves/HexagonWaves.blend
+/home/data/Projects/Blender/NnStudios/NnStudios.blend
+/home/data/Projects/Unity/FlowSlasher/Project/Blender/Glass.blend
+/home/data/Projects/Unity/FlowSlasher/Project/Blender/ViewModel.blend
