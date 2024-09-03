@@ -1,2 +1,25 @@
+Input ▸ Value
+Mix ▸ B
+Hue/Saturation/Value ▸ Saturation
+RGB ▸ Color
+Color Ramp ▸ Fac
+Color ▸ Mix Color
+Clamp ▸ Value
+   fabrics_0066_color_4k.jpg
+   Metal046B_4K-JPG_Color.jpg
+Mix ▸ A
+   AxeMetal
+   ToolMetal
+   ToolPlank
+Texture ▸ Noise Texture
+Vector Math ▸ Multiply
+Value ▸ Value
 Generate ▸ Subdivision Surface
 Generate ▸ Bevel
+   WellRoof
+   Rope
+   WellPlank
+   WellMetal
+   WellStone
+   BucketMetal
+   TowerStone

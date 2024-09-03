@@ -23,7 +23,7 @@ cursor_size = 30
 outline_size = 2
 rounding = 10
 gtk_theme = "Nordic-darker-v40"
-nvim_theme = "wal"
+nvim_theme = "nord"
 notification_duration = 3
 
 highlight_hsv = "h+0.s+0.v+10"
@@ -32,7 +32,7 @@ inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
-black = "2e3440"
+black = "000000"
 red = "bf616a"
 green = "a3be8c"
 yellow = "ebcb8b"
@@ -113,4 +113,3 @@ KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
-Pywalfox = "~/.cache/wal/colors.json"

@@ -138,5 +138,9 @@ function ytdl
     yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
 end
 
+function ytdla
+    yt-dlp -f bestaudio --extract-audio --audio-format mp3 "$argv"
+end
+
 zoxide init fish | source
 fish_vi_key_bindings

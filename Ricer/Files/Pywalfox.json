@@ -1,0 +1,28 @@
+{
+    "wallpaper": "ricer.val.bg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#ricer.col.background",
+        "foreground": "#ricer.col.foreground",
+        "cursor": "#ricer.col.foreground_highlight"
+    },
+    "colors": {
+        "color0":  "#ricer.col.black",
+        "color1":  "#ricer.col.red",
+        "color2":  "#ricer.col.green",
+        "color3":  "#ricer.col.yellow",
+        "color4":  "#ricer.col.blue",
+        "color5":  "#ricer.col.magenta",
+        "color6":  "#ricer.col.cyan",
+        "color7":  "#ricer.col.white",
+        "color8":  "#ricer.col.br_black",
+        "color9":  "#ricer.col.br_red",
+        "color10": "#ricer.col.br_green",
+        "color11": "#ricer.col.br_yellow",
+        "color12": "#ricer.col.br_blue",
+        "color13": "#ricer.col.br_magenta",
+        "color14": "#ricer.col.br_cyan",
+        "color15": "#ricer.col.br_white"
+    }
+}
