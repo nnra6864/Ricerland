@@ -1,16 +1,17 @@
 import bpy
 op = bpy.context.active_operator
 
-op.filepath = '/home/data/Projects/Unity/FlowSlasher/Project/Blender/ViewModel.fbx'
+op.filepath = '/home/nnra/Data/Projects/Unity/AD185-DZ05-Mateja-Popovic-5962/Assets/Models/Axe.fbx'
 op.use_selection = True
 op.use_visible = False
 op.use_active_collection = False
+op.collection = ''
 op.global_scale = 1.0
 op.apply_unit_scale = True
 op.apply_scale_options = 'FBX_SCALE_UNITS'
 op.use_space_transform = True
 op.bake_space_transform = False
-op.object_types = {'OTHER', 'EMPTY', 'ARMATURE', 'MESH'}
+op.object_types = {'MESH', 'EMPTY', 'LIGHT', 'ARMATURE', 'OTHER', 'CAMERA'}
 op.use_mesh_modifiers = True
 op.use_mesh_modifiers_render = True
 op.mesh_smooth_type = 'OFF'
@@ -37,5 +38,5 @@ op.path_mode = 'AUTO'
 op.embed_textures = False
 op.batch_mode = 'OFF'
 op.use_batch_own_dir = True
-op.axis_forward = '-Z'
+op.axis_forward = 'Z'
 op.axis_up = 'Y'

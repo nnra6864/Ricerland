@@ -6,7 +6,6 @@ Color Ramp ▸ Fac
 Color ▸ Mix Color
 Clamp ▸ Value
    fabrics_0066_color_4k.jpg
-   Metal046B_4K-JPG_Color.jpg
 Mix ▸ A
    AxeMetal
    ToolMetal
@@ -23,3 +22,5 @@ Generate ▸ Bevel
    WellStone
    BucketMetal
    TowerStone
+   red_plaster_weathered_diff_4k.jpg
+   Metal046B_4K-JPG_Color.jpg

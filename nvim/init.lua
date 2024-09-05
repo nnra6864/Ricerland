@@ -186,7 +186,6 @@ require("lazy").setup({
 	{ "shaunsingh/nord.nvim" },
 	{ "Mofiqul/dracula.nvim" },
 	{ "catppuccin/nvim" },
-	{ "dylanaraps/wal.vim" },
 
 	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically

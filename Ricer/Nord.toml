@@ -23,7 +23,7 @@ cursor_size = 30
 outline_size = 2
 rounding = 10
 gtk_theme = "Nordic-darker-v40"
-nvim_theme = "wal"
+nvim_theme = "nord"
 notification_duration = 3
 
 highlight_hsv = "h+0.s+0.v+10"
