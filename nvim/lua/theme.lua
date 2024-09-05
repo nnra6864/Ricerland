@@ -1,1 +1,1 @@
-return "wal"
+return "nord"

@@ -18,11 +18,11 @@ font_size = 13
 big_font_size = 15
 max_font_size = 30
 icons = "Nordzy-dark"
-cursor = "Nordzy-cursors-white"
+cursor = "Nordzy-catppuccin-macchiato-sapphire"
 cursor_size = 30
 outline_size = 2
 rounding = 10
-gtk_theme = "Nordic-darker-v40"
+gtk_theme = "VALYRIAN-Blue-Steel"
 nvim_theme = "night-owl"
 notification_duration = 3
 
@@ -32,14 +32,14 @@ inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
-black = "0d1a31"
-red = "365d8f"
-green = "4775a7"
-yellow = "5788b7"
-blue = "709ec7"
-magenta = "7cc8ef"
-cyan = "8fb5d3"
-white = "c2c5cb"
+black = "14283c"
+red = "993d3d"
+green = "3d9945"
+yellow = "99993d"
+blue = "3d7a99"
+magenta = "7a3d99"
+cyan = "3d9991"
+white = "9acbe6"
 
 br_black = "$black.$highlight_hsv"
 br_red = "$red.$highlight_hsv"
@@ -56,7 +56,7 @@ foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
-foreground_alt = "$cyan"
+foreground_alt = "$blue"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
@@ -77,12 +77,12 @@ button_highlight = "$button.$highlight_hsv"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
-button_text = "$cyan"
+button_text = "$blue"
 button_text_highlight = "$button_text.$highlight_hsv"
 button_text_inactive = "$button_text.$inactive_hsv"
 button_text_disabled = "$button_text.$disabled_hsv"
 
-outline = "$cyan"
+outline = "$blue"
 outline_alt = "$br_white"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
@@ -90,11 +90,11 @@ outline_inactive_alt = "$outline_alt.v-50"
 shadow = "$black"
 shadow_inactive = "$shadow.$inactive_hsv"
 
-link = "$cyan"
+link = "$blue"
 link_visited = "$blue"
 
 visualizer = "$white"
-visualizer_outline = "$cyan"
+visualizer_outline = "$blue"
 
 [Files]
 Hyprland = "~/.config/hypr/hyprland.conf"
@@ -113,4 +113,3 @@ KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
-Pywalfox = "~/.cache/wal/colors.json"

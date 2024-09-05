@@ -700,6 +700,12 @@
         },
         "AlwaysExpandRoles": {
             "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": false
+        },
+        "StickerPaste": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -712,6 +718,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1725275796734
+        "settingsSyncVersion": 1725430641434
     }
 }
