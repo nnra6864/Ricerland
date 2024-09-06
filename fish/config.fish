@@ -142,5 +142,28 @@ function ytdla
     yt-dlp -f bestaudio --extract-audio --audio-format mp3 "$argv"
 end
 
+function mp3
+    if test (count $argv) -ne 1
+        echo "Usage: mp3 <input_file>"
+        return 1
+    end
+
+    set input_file $argv[1]
+    set output_file (string replace -r '\.[^.]+$' '.mp3' $input_file)
+
+    if not test -f $input_file
+        echo "Error: Input file '$input_file' does not exist."
+        return 1
+    end
+
+    ffmpeg -i $input_file -acodec libmp3lame -b:a 320k $output_file
+
+    if test $status -eq 0
+        echo "Conversion successful: $output_file"
+    else
+        echo "Conversion failed"
+    end
+end
+
 zoxide init fish | source
 fish_vi_key_bindings
