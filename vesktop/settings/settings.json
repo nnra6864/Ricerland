@@ -188,7 +188,8 @@
             "enabled": true,
             "ignoredActivities": [],
             "allowedIds": "",
-            "ignorePlaying": false
+            "ignorePlaying": false,
+            "idsList": ""
         },
         "ImageZoom": {
             "enabled": true,
@@ -718,6 +719,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1725580037775
+        "settingsSyncVersion": 1726502391626
     }
 }

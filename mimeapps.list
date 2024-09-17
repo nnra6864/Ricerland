@@ -6,6 +6,7 @@ application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottle
 application/x-msdownload=wine.desktop;com.usebottles.bottles.desktop;
 application/xml=nvim.desktop;
 audio/mpeg=vlc.desktop;mpv.desktop;
+audio/vnd.wave=vlc.desktop;mpv.desktop;skypeforlinux-share.desktop;
 audio/x-ms-asx=mpv.desktop;vlc.desktop;
 image/jpeg=org.kde.gwenview.desktop;firefox.desktop;krita_jpeg.desktop;chromium.desktop;
 image/png=org.kde.gwenview.desktop;firefox.desktop;chromium.desktop;krita_png.desktop;brave-browser.desktop;
@@ -21,6 +22,7 @@ video/quicktime=vlc.desktop;mpv.desktop;skypeforlinux-share.desktop;
 video/x-matroska=vlc.desktop;mpv.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Default Applications]
 application/json=neovide.desktop;
@@ -36,6 +38,7 @@ application/x-msdownload=wine.desktop;
 application/xhtml+xml=firefox.desktop
 application/xml=nvim.desktop;
 audio/mpeg=vlc.desktop;
+audio/vnd.wave=vlc.desktop;
 audio/x-ms-asx=mpv.desktop;
 image/jpeg=org.kde.gwenview.desktop;
 image/png=org.kde.gwenview.desktop;
@@ -55,6 +58,7 @@ x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/mailto=brave-browser.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/unknown=firefox.desktop
 
 [Removed Associations]
