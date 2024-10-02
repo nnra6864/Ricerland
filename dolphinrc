@@ -22,6 +22,7 @@ Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136
 
 [IconsMode]
+IconSize=208
 PreviewSize=256
 UseSystemFont=false
 ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1

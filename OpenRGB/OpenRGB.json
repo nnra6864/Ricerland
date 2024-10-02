@@ -1326,6 +1326,25 @@
             6856110824172292845
         ]
     },
+    "Plugins": {
+        "plugins": [
+            {
+                "description": "Provides a variety of custom effects",
+                "enabled": true,
+                "name": "OpenRGB Effects Plugin"
+            },
+            {
+                "description": "Group and organize your devices on a spatial map",
+                "enabled": true,
+                "name": "OpenRGB Visual Map Plugin"
+            },
+            {
+                "description": "Receive E1.31 lighting control data from external applications to control OpenRGB devices",
+                "enabled": true,
+                "name": "OpenRGB E1.31 Receiver Plugin"
+            }
+        ]
+    },
     "Theme": {
         "theme": "light"
     },

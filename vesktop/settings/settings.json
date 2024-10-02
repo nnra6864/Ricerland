@@ -393,9 +393,6 @@
         "RoleColorEverywhere": {
             "enabled": false
         },
-        "SearchReply": {
-            "enabled": true
-        },
         "SecretRingToneEnabler": {
             "enabled": false
         },
@@ -495,7 +492,9 @@
         "UserVoiceShow": {
             "enabled": true,
             "showInUserProfileModal": true,
-            "showVoiceChannelSectionHeader": true
+            "showVoiceChannelSectionHeader": true,
+            "showInMemberList": true,
+            "showInMessages": true
         },
         "USRBG": {
             "enabled": true,
@@ -707,6 +706,12 @@
         },
         "StickerPaste": {
             "enabled": false
+        },
+        "AccountPanelServerProfile": {
+            "enabled": true
+        },
+        "FullSearchContext": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -719,6 +724,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1726502391626
+        "settingsSyncVersion": 1727372671014
     }
 }

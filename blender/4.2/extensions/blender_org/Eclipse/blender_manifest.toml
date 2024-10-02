@@ -1,0 +1,10 @@
+schema_version = "1.0.0"
+id = "Eclipse"
+version = "1.1.0"
+name = "Eclipse"
+tagline = "Where Darkness Meets Elegance"
+maintainer = "DaoL <Originate_Dao@proton.me>"
+type = "theme"
+tags = ["Dark"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-2.0-or-later"]

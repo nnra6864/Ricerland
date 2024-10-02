@@ -3,7 +3,7 @@ update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd
 
 [ColorEffects:Disabled]
 ChangeSelectionColor=
-Color=#2D323F
+Color=#000000
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
@@ -14,7 +14,7 @@ IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
-Color=#121419
+Color=#000000
 ColorAmount=0.025
 ColorEffect=2
 ContrastAmount=0.1
@@ -24,10 +24,10 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=#3F4759
-BackgroundNormal=#2D323F
-DecorationFocus=#82A0C1
-DecorationHover=#EDF2FF
+BackgroundAlternate=#000000
+BackgroundNormal=#000000
+DecorationFocus=#FFFFFF
+DecorationHover=#FFFFFF
 ForegroundActive=#eceff4
 ForegroundInactive=#d8dee9
 ForegroundLink=#88c0d0
@@ -52,8 +52,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header]
-BackgroundAlternate=#3F4759
-BackgroundNormal=#2D323F
+BackgroundAlternate=#000000
+BackgroundNormal=#000000
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -66,8 +66,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header][Inactive]
-BackgroundAlternate=#3F4759
-BackgroundNormal=#2D323F
+BackgroundAlternate=#000000
+BackgroundNormal=#000000
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -108,8 +108,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:View]
-BackgroundAlternate=#3F4759
-BackgroundNormal=#2D323F
+BackgroundAlternate=#000000
+BackgroundNormal=#000000
 DecorationFocus=#3b4252
 DecorationHover=#3b4252
 ForegroundActive=#eceff4
@@ -122,8 +122,8 @@ ForegroundPositive=#3b4252
 ForegroundVisited=#eceff4
 
 [Colors:Window]
-BackgroundAlternate=#3F4759
-BackgroundNormal=#2D323F
+BackgroundAlternate=#000000
+BackgroundNormal=#000000
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -148,7 +148,7 @@ smallestReadableFont=Cascadia Code NF,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Cascadia Code NF,13,-1,5,50,0,0,0,0,0,Regular
 
 [Icons]
-Theme=Nordzy-dark
+Theme=besgnulinux-mono-grey
 
 [KDE]
 AnimationDurationFactor=0.500000
