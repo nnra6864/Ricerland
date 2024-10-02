@@ -40,6 +40,8 @@ function rice
 
     #sudo flatpak override --env=GTK_THEME=(gsettings get org.gnome.desktop.interface gtk-theme | string trim -c "\'")
 
+    #sudo python .config/RicerHub.py /opt/unityhub/
+
     nlear
     sleep 1
     kill -SIGUSR1 $pid

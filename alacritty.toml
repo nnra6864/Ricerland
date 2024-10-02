@@ -12,42 +12,42 @@ bold_italic = { family = "Cascadia Code NF", style = "Bold Italic" }
 size = 15
 
 [colors]
-footer_bar = { foreground = "#D8DDE8", background = "#2D323F" }
+footer_bar = { foreground = "#FFFFFF", background = "#000000" }
 transparent_background_colors = true
 
 [colors.primary]
-foreground = "#D8DDE8"
-background = "#2D323F"
-dim_foreground = "#B5B9C1"
-bright_foreground = "#EEF3FF"
+foreground = "#FFFFFF"
+background = "#000000"
+dim_foreground = "#D8D8D8"
+bright_foreground = "#FFFFFF"
 
 [colors.search]
-matches = { foreground = "#D8DDE8", background = "#2D323F" }
-focused_match = { foreground = "#EEF3FF", background = "#2D323F" }
+matches = { foreground = "#FFFFFF", background = "#000000" }
+focused_match = { foreground = "#FFFFFF", background = "#000000" }
 
 [colors.hints]
-start = { foreground = "#D8DDE8", background = "#2D323F" }
-end = { foreground = "#B5B9C1", background = "#2D323F" }
+start = { foreground = "#FFFFFF", background = "#000000" }
+end = { foreground = "#D8D8D8", background = "#000000" }
 
 [colors.normal]
-black = "#2D323F"
-red = "#BF606B"
-green = "#A3BF8C"
-yellow = "#EACC8C"
-blue = "#5E82AA"
-magenta = "#B58EAD"
-cyan = "#82A0C1"
-white = "#D8DDE8"
+black = "#000000"
+red = "#FFFFFF"
+green = "#FFFFFF"
+yellow = "#FFFFFF"
+blue = "#FFFFFF"
+magenta = "#FFFFFF"
+cyan = "#FFFFFF"
+white = "#FFFFFF"
 
 [colors.bright]
-black = "#404759"
-red = "#D86D79"
-green = "#B8D89E"
-yellow = "#FFDD98"
-blue = "#6C95C4"
-magenta = "#CEA2C5"
-cyan = "#93B5DB"
-white = "#EEF3FF"
+black = "#FFFFFF"
+red = "#FFFFFF"
+green = "#FFFFFF"
+yellow = "#FFFFFF"
+blue = "#FFFFFF"
+magenta = "#FFFFFF"
+cyan = "#FFFFFF"
+white = "#FFFFFF"
 
 [cursor]
 style = { shape = "Beam", blinking = "Off" }

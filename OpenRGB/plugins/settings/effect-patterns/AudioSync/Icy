@@ -1,0 +1,50 @@
+{
+    "AllowOnlyFirst": false,
+    "Brightness": 100,
+    "CustomSettings": {
+        "audio_settings": {
+            "amplitude": 200,
+            "audio_device": 4,
+            "avg_mode": 0,
+            "avg_size": 8,
+            "decay": 80,
+            "equalizer": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "filter_constant": 1.0,
+            "nrml_ofst": 0.03999999910593033,
+            "nrml_scl": 0.5,
+            "window_mode": 0
+        },
+        "bypass_max": 256,
+        "bypass_min": 0,
+        "fade_step": 99,
+        "hue_shift": 0,
+        "roll_mode": 0,
+        "saturation_mode": 2,
+        "silent_color": false,
+        "silent_color_value": 0
+    },
+    "EffectClassName": "AudioSync",
+    "FPS": 60,
+    "RandomColors": false,
+    "Slider2Val": 1,
+    "Speed": 1,
+    "Temperature": -25,
+    "Tint": 25
+}

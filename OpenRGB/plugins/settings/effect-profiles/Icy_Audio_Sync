@@ -1,0 +1,163 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-8, address 0x72",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-8, address 0x73",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-8, address 0x74",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "ENE SMBus Device",
+                    "is_segment": false,
+                    "location": "I2C: /dev/i2c-8, address 0x75",
+                    "name": "ENE DRAM",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "ENE",
+                    "version": "AUDA0-E6K5-0101",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "IT8297-GIGABYTE V1.0.1.0",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw9",
+                    "name": "Z390 AORUS MASTER-CF",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "0x00000000",
+                    "vendor": "Gigabyte",
+                    "version": "0x00010001",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "IT8297-GIGABYTE V1.0.1.0",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw9",
+                    "name": "Z390 AORUS MASTER-CF",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "0x00000000",
+                    "vendor": "Gigabyte",
+                    "version": "0x00010001",
+                    "zone_idx": 1
+                },
+                {
+                    "description": "IT8297-GIGABYTE V1.0.1.0",
+                    "is_segment": false,
+                    "location": "HID: /dev/hidraw9",
+                    "name": "Z390 AORUS MASTER-CF",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "0x00000000",
+                    "vendor": "Gigabyte",
+                    "version": "0x00010001",
+                    "zone_idx": 2
+                },
+                {
+                    "description": "HyperX Microphone Device",
+                    "is_segment": false,
+                    "location": "1-4.4:1.0",
+                    "name": "HyperX Quadcast S",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "\t",
+                    "vendor": "HyperX",
+                    "version": "",
+                    "zone_idx": 0
+                }
+            ],
+            "CustomName": "",
+            "CustomSettings": {
+                "audio_settings": {
+                    "amplitude": 100,
+                    "audio_device": 4,
+                    "avg_mode": 0,
+                    "avg_size": 8,
+                    "decay": 80,
+                    "equalizer": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "filter_constant": 1.0,
+                    "nrml_ofst": 0.03999999910593033,
+                    "nrml_scl": 0.5,
+                    "window_mode": 0
+                },
+                "bypass_max": 256,
+                "bypass_min": 0,
+                "fade_step": 99,
+                "hue_shift": 29467,
+                "roll_mode": 0,
+                "saturation_mode": 2,
+                "silent_color": false,
+                "silent_color_value": 0
+            },
+            "EffectClassName": "AudioSync",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 1,
+            "Temperature": -25,
+            "Tint": 25
+        }
+    ],
+    "version": 2
+}

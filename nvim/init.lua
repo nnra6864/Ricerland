@@ -19,27 +19,27 @@ vim.opt.smarttab = true
 vim.opt.autoindent = true
 
 -- Disable background
---vim.cmd([[
---  augroup MyColors
---    autocmd!
---    autocmd ColorScheme * highlight Normal guibg=none
---    autocmd ColorScheme * highlight NonText guibg=none
---    autocmd ColorScheme * highlight SignColumn guibg=none
---    autocmd ColorScheme * highlight StatusLine guibg=none
---    autocmd ColorScheme * highlight StatusLineNC guibg=none
---    autocmd ColorScheme * highlight LineNr guibg=none
---    autocmd ColorScheme * highlight CursorLineNr guibg=none
---    autocmd ColorScheme * highlight VertSplit guibg=none
---    autocmd ColorScheme * highlight Pmenu guibg=none
---    autocmd ColorScheme * highlight PmenuSel guibg=none
---    autocmd ColorScheme * highlight PmenuSbar guibg=none
---    autocmd ColorScheme * highlight PmenuThumb guibg=none
---    autocmd ColorScheme * highlight TabLine guibg=none
---    autocmd ColorScheme * highlight TabLineFill guibg=none
---    autocmd ColorScheme * highlight TabLineSel guibg=none
---    autocmd ColorScheme * highlight Visual guibg=none
---  augroup END
---]])
+vim.cmd([[
+  augroup MyColors
+    autocmd!
+    autocmd ColorScheme * highlight Normal guibg=none
+    autocmd ColorScheme * highlight NonText guibg=none
+    autocmd ColorScheme * highlight SignColumn guibg=none
+    autocmd ColorScheme * highlight StatusLine guibg=none
+    autocmd ColorScheme * highlight StatusLineNC guibg=none
+    autocmd ColorScheme * highlight LineNr guibg=none
+    autocmd ColorScheme * highlight CursorLineNr guibg=none
+    autocmd ColorScheme * highlight VertSplit guibg=none
+    autocmd ColorScheme * highlight Pmenu guibg=none
+    autocmd ColorScheme * highlight PmenuSel guibg=none
+    autocmd ColorScheme * highlight PmenuSbar guibg=none
+    autocmd ColorScheme * highlight PmenuThumb guibg=none
+    autocmd ColorScheme * highlight TabLine guibg=none
+    autocmd ColorScheme * highlight TabLineFill guibg=none
+    autocmd ColorScheme * highlight TabLineSel guibg=none
+    autocmd ColorScheme * highlight Visual guibg=none
+  augroup END
+]])
 
 -- Set tab to 4 if vim-sleuth sets it to 8
 vim.api.nvim_create_autocmd("FileType", {
@@ -186,6 +186,7 @@ require("lazy").setup({
 	{ "shaunsingh/nord.nvim" },
 	{ "Mofiqul/dracula.nvim" },
 	{ "catppuccin/nvim" },
+	{ "kdheepak/monochrome.nvim" },
 
 	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
@@ -258,8 +259,7 @@ require("lazy").setup({
 		end,
 	},
 
-	-- NOTE: Plugins can specify dependencies.
-	--
+	-- NOTE: Plugins can specify dependencies.-
 	-- The dependencies are proper plugin specifications as well - anything
 	-- you do for a plugin at the top level, you can do for a dependency.
 	--
