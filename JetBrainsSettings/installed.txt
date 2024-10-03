@@ -1,0 +1,3 @@
+com.jetbrains.space
+IdeaVIM
+com.arcticicestudio.nord.jetbrains
