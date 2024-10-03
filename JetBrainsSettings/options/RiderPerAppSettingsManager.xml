@@ -1,0 +1,11 @@
+<application>
+  <component name="RiderPerAppSettingsManager">
+    <option name="enabledBlacklistToolWindowsId">
+      <set>
+        <option value="Bookmarks" />
+        <option value="TODO" />
+      </set>
+    </option>
+    <option name="toolWindowsPerApp" value="true" />
+  </component>
+</application>
