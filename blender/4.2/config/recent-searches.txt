@@ -2,15 +2,12 @@ Input ▸ Value
 Mix ▸ B
 Hue/Saturation/Value ▸ Saturation
 RGB ▸ Color
-Color Ramp ▸ Fac
-Color ▸ Mix Color
 Clamp ▸ Value
    fabrics_0066_color_4k.jpg
 Mix ▸ A
    AxeMetal
    ToolMetal
    ToolPlank
-Texture ▸ Noise Texture
 Vector Math ▸ Multiply
 Value ▸ Value
 Generate ▸ Subdivision Surface
@@ -24,3 +21,44 @@ Generate ▸ Bevel
    TowerStone
    red_plaster_weathered_diff_4k.jpg
    Metal046B_4K-JPG_Color.jpg
+Mesh ▸ Primitives ▸ Grid
+Instances ▸ Instance on Points
+Point ▸ Points
+Mesh ▸ Primitives ▸ Mesh Line
+Utilities ▸ Random Value
+Geometry ▸ Write ▸ Set Position
+Points to Vertices ▸ Selection
+Combine XYZ ▸ Y
+Points to Vertices ▸ Points
+Realize Instances ▸ Geometry
+Geometry ▸ Read ▸ Position
+Compare ▸ Greater Than
+Utilities ▸ Vector ▸ Separate XYZ
+Combine XYZ ▸ Z
+Set Position ▸ Selection
+Input ▸ Bevel
+Vector Math ▸ Dot Product
+Normal ▸ Normal
+Color Ramp ▸ Fac
+Bump ▸ Normal
+Geometry ▸ Normal
+Color ▸ Mix Color
+  CubeGrid
+Input ▸ Scene ▸ Object Info
+  Cube
+Light ▸ Sun
+Filter ▸ Glare
+Filter ▸ Denoise
+  Scene
+Texture ▸ Noise Texture
+Invert Color ▸ Fac
+Color ▸ Invert Color
+Vector Math ▸ Add
+Vector Math ▸ Scale
+Math ▸ Multiply
+Math ▸ Power
+Math ▸ Add
+Light ▸ Spot
+Input ▸ Fresnel
+Input ▸ Layer Weight
+Generate ▸ Wireframe

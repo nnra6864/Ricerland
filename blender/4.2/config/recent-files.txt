@@ -1,3 +1,4 @@
+/home/nnra/Data/Projects/Blender/Blackout/Blackout.blend
 /home/nnra/HDD2TB/Work/Uni/Homework/AD185/23.blend
 /home/nnra/HDD2TB/Work/3D/Blender/Saves/Custom Icons.blend
 /home/nnra/HDD2TB/Work/Uni/Homework/AD185/1.blend
