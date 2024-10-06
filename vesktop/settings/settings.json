@@ -194,7 +194,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 1.8518928774560797,
+            "zoom": 2.226892862554919,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -708,7 +708,8 @@
             "enabled": false
         },
         "AccountPanelServerProfile": {
-            "enabled": true
+            "enabled": true,
+            "prioritizeServerProfile": false
         },
         "FullSearchContext": {
             "enabled": true
@@ -724,6 +725,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1727372671014
+        "settingsSyncVersion": 1728226187448
     }
 }

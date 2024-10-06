@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 terminal = "alacritty"
-bg = "~/.config/Backgrounds/Blackout/Blackout.png"
+bg = "~/.config/Backgrounds/Blackout/BlackoutUW.png"
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11
