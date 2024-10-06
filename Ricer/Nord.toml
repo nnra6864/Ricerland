@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 terminal = "alacritty"
-bg = "~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg"
+bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11

@@ -21,8 +21,6 @@ Generate ▸ Bevel
    TowerStone
    red_plaster_weathered_diff_4k.jpg
    Metal046B_4K-JPG_Color.jpg
-Mesh ▸ Primitives ▸ Grid
-Instances ▸ Instance on Points
 Point ▸ Points
 Mesh ▸ Primitives ▸ Mesh Line
 Utilities ▸ Random Value
@@ -30,7 +28,6 @@ Geometry ▸ Write ▸ Set Position
 Points to Vertices ▸ Selection
 Combine XYZ ▸ Y
 Points to Vertices ▸ Points
-Realize Instances ▸ Geometry
 Geometry ▸ Read ▸ Position
 Compare ▸ Greater Than
 Utilities ▸ Vector ▸ Separate XYZ
@@ -57,8 +54,23 @@ Vector Math ▸ Add
 Vector Math ▸ Scale
 Math ▸ Multiply
 Math ▸ Power
-Math ▸ Add
 Light ▸ Spot
 Input ▸ Fresnel
 Input ▸ Layer Weight
 Generate ▸ Wireframe
+Unassigned ▸ CubeGrid
+Set Position ▸ Geometry
+Utilities ▸ Math ▸ Float Curve
+Input ▸ Constant ▸ Value
+Viewer ▸ Value
+Cube ▸ Mesh
+Object Info ▸ Object
+Realize Instances ▸ Geometry
+Geometry to Instance ▸ Geometry
+Separate Geometry ▸ Geometry
+Split to Instances ▸ Geometry
+Mesh ▸ Primitives ▸ Grid
+Instances ▸ Instance on Points
+Grid ▸ Mesh
+Math ▸ Subtract
+Math ▸ Add
