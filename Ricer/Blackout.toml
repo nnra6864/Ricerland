@@ -23,7 +23,7 @@ cursor_size = 32
 cursor_rot = 21
 outline_size = 2
 rounding = 10
-opacity = 0.8
+opacity = 1
 inactive_opacity = 0.8
 gtk_theme = "BlackAndWhite"
 nvim_theme = "monochrome"
@@ -86,7 +86,7 @@ button_text_inactive = "$button_text.$inactive_hsv"
 button_text_disabled = "$button_text.$disabled_hsv"
 
 outline = "$br_white"
-outline_alt = "$br_white"
+outline_alt = "$black"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
 
@@ -119,3 +119,4 @@ Kitty = "~/.config/kitty/kitty.conf"
 Pywalfox = "~/.cache/wal/colors.json"
 Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
+MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"

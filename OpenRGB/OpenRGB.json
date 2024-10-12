@@ -1330,7 +1330,7 @@
         "plugins": [
             {
                 "description": "Provides a variety of custom effects",
-                "enabled": true,
+                "enabled": false,
                 "name": "OpenRGB Effects Plugin"
             },
             {
@@ -1340,7 +1340,7 @@
             },
             {
                 "description": "Receive E1.31 lighting control data from external applications to control OpenRGB devices",
-                "enabled": true,
+                "enabled": false,
                 "name": "OpenRGB E1.31 Receiver Plugin"
             }
         ]
