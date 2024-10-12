@@ -4,7 +4,7 @@
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
-        "https://raw.githubusercontent.com/nnra6864/TransparentNord/master/TransparentNord.css"
+        "https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css"
     ],
     "enabledThemes": [
         "TranslucencePlus.theme.css",
@@ -194,7 +194,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 2.226892862554919,
+            "zoom": 2.601892847653758,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -382,7 +382,7 @@
             "servers": true,
             "friends": true,
             "friendRequestCancels": true,
-            "notices": false
+            "notices": true
         },
         "RevealAllSpoilers": {
             "enabled": true
@@ -725,6 +725,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1728226187448
+        "settingsSyncVersion": 1728692471625
     }
 }

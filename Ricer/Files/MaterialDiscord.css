@@ -1,16 +1,16 @@
 :root {
-    --app-font: "Cascadia Code NF";
+    --app-font: "ricer.val.font";
 
-    --background-col: #000000;
-    --background-col-alt: #000000;
-    --background-highlight: #3F3F3F;
-    --background-highlight-alt: #3F3F3F;
+    --background-col: #ricer.col.background;
+    --background-col-alt: #ricer.col.background_alt;
+    --background-highlight: #ricer.col.background_highlight;
+    --background-highlight-alt: #ricer.col.background_highlight_alt;
 
-	--text-col: #FFFFFF;
-	--highlight-col: #FFFFFF;
+	--text-col: #ricer.col.foreground;
+	--highlight-col: #ricer.col.foreground_highlight;
     
-    --outline-col: #FFFFFF;
-    --rounding-big: 10;
+    --outline-col: #ricer.col.outline;
+    --rounding-big: ricer.val.rounding;
     --rounding-small: calc(var(--rounding-big) / 2);
 
 

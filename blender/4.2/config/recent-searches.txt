@@ -36,7 +36,6 @@ Set Position ▸ Selection
 Input ▸ Bevel
 Vector Math ▸ Dot Product
 Normal ▸ Normal
-Color Ramp ▸ Fac
 Bump ▸ Normal
 Geometry ▸ Normal
 Color ▸ Mix Color
@@ -74,3 +73,8 @@ Instances ▸ Instance on Points
 Grid ▸ Mesh
 Math ▸ Subtract
 Math ▸ Add
+   CubeMat
+Input ▸ Ambient Occlusion
+Color Ramp ▸ Fac
+Mix ▸ Color
+   OriginalMat
