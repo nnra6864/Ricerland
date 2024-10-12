@@ -10,7 +10,7 @@
 	--highlight-col: #ricer.col.foreground_highlight;
     
     --outline-col: #ricer.col.outline;
-    --rounding-big: ricer.val.rounding;
+    --rounding-big: ricer.val.rounding\px;
     --rounding-small: calc(var(--rounding-big) / 2);
 
 
@@ -22,8 +22,8 @@
     --tooltip-text-color: var(--text-col);
     --tooltip-shadow: var(--background-col-alt);
 
-    --accent-lightness: 0%;
-    --accent-text-color: var(--highlight-col);
+    --accent-lightness: 100%;
+    --accent-text-color: var(--background-col);
 
     --message-color: var(--background-col-alt);
     --message-color-hover: var(--background-highlight);
