@@ -31,6 +31,7 @@ function rice
     glava >/dev/null 2>&1 &
     disown
 
+    /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o OomoxRicer
     nwg-look -a > /dev/null 2>&1 &
     disown
     

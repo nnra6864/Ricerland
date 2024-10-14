@@ -1,0 +1,17 @@
+BG=ricer.col.background
+BTN_BG=ricer.col.button
+BTN_FG=ricer.col.button_text
+FG=ricer.col.foreground
+GRADIENT=0.0
+HDR_BG=ricer.col.background
+HDR_BTN_BG=ricer.col.button
+HDR_BTN_FG=ricer.col.button_text
+HDR_FG=ricer.col.foreground
+ROUNDNESS=ricer.val.rounding
+SEL_BG=ricer.col.background_highlight
+SEL_FG=ricer.col.foreground_highlight
+SPACING=3
+TXT_BG=ricer.col.button
+TXT_FG=ricer.col.foreground
+WM_BORDER_FOCUS=ricer.col.outline
+WM_BORDER_UNFOCUS=ricer.col.outline_inactive
