@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 terminal = "alacritty"
-bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+bg = "~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg"
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11
@@ -21,12 +21,9 @@ icons = "Nordzy-dark"
 cursor = "Nordzy-cursors-white"
 cursor_size = 30
 outline_size = 2
-cursor_rot = -21
 rounding = 10
-opacity = 0.8
-inactive_opacity = 0.9
-gtk_theme = "OomoxRicer"
-nvim_theme = "nord"
+gtk_theme = "Nordic-darker-v40"
+nvim_theme = "night-owl"
 notification_duration = 3
 
 highlight_hsv = "h+0.s+0.v+10"
@@ -35,14 +32,14 @@ inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
-black = "2e3440"
-red = "bf616a"
-green = "a3be8c"
-yellow = "ebcb8b"
-blue = "5e81ac"
-magenta = "b48ead"
-cyan = "81a1c1"
-white = "d8dee9"
+black = "0d1a31"
+red = "365d8f"
+green = "4775a7"
+yellow = "5788b7"
+blue = "709ec7"
+magenta = "7cc8ef"
+cyan = "8fb5d3"
+white = "c2c5cb"
 
 br_black = "$black.$highlight_hsv"
 br_red = "$red.$highlight_hsv"
@@ -117,7 +114,3 @@ FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
 Pywalfox = "~/.cache/wal/colors.json"
-Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
-RicerHub = "~/.config/RicerHub.py"
-MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
-Oomox = "~/.config/OomoxRicer"

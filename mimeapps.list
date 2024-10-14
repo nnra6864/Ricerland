@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=neovide.desktop;nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;dev.zed.Zed.desktop;libreoffice-writer.desktop;org.kde.okteta.desktop;
-application/octet-stream=org.kde.okteta.desktop;
+application/octet-stream=neovide.desktop;org.kde.okteta.desktop;
 application/pdf=firefox.desktop;krita_pdf.desktop;chromium.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/x-msdownload=wine.desktop;com.usebottles.bottles.desktop;
@@ -27,7 +27,7 @@ x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Default Applications]
 application/json=neovide.desktop;
-application/octet-stream=org.kde.okteta.desktop;
+application/octet-stream=neovide.desktop;
 application/pdf=firefox.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
 application/x-extension-htm=firefox.desktop
