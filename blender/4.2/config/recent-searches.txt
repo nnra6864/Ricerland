@@ -78,3 +78,4 @@ Input ▸ Ambient Occlusion
 Color Ramp ▸ Fac
 Mix ▸ Color
    OriginalMat
+Bump ▸ Strength

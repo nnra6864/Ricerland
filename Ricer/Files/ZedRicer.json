@@ -1,0 +1,377 @@
+{
+	"$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+	"name": "ZedRicer",
+	"author": "nnra",
+	"themes": [
+		{
+			"name": "ZedRicer",
+			"appearance": "dark",
+			"style": {
+				"border": "#ricer.col.outline",
+				"border.variant": "#ricer.col.outline_alt",
+				"border.focused": "#ricer.col.outline",
+				"border.selected": "#ricer.col.outline",
+				"border.transparent": "#00000000",
+				"border.disabled": "#ricer.col.outline_inactive",
+				"elevated_surface.background": "#ricer.col.background",
+				"surface.background": "#ricer.col.background",
+				"background": "#ricer.col.background",
+				"element.background": "#ricer.col.background_alt",
+				"element.hover": "#ricer.col.background_highlight_alt",
+				"element.active": "#ricer.col.background_alt",
+				"element.selected": "#ricer.col.background_highlight_alt",
+				"element.disabled": "#ricer.col.background_disabled_alt",
+				"drop_target.background": "#ricer.col.background_highlight",
+				"ghost_element.background": "#00000000",
+				"ghost_element.hover": "#ricer.col.background_highlight",
+				"ghost_element.active": "#ricer.col.background",
+				"ghost_element.selected": "#ricer.col.background_highlight",
+				"ghost_element.disabled": "#ricer.col.background_disabled",
+				"text": "#ricer.col.foreground",
+				"text.muted": "#ricer.col.foreground_inactive",
+				"text.placeholder": "#ricer.col.foreground_placeholder",
+				"text.disabled": "#ricer.col.foreground_disabled",
+				"text.accent": "#ricer.col.foreground_highlight",
+				"icon": "#ricer.col.foreground",
+				"icon.muted": "#ricer.col.foreground_inactive",
+				"icon.disabled": "#ricer.col.foreground_disabled",
+				"icon.placeholder": "#ricer.col.foreground_placeholder",
+				"icon.accent": "#ricer.col.foreground_highlight",
+				"status_bar.background": "#ricer.col.background_alt",
+				"title_bar.background": "#ricer.col.background_alt",
+				"title_bar.inactive_background": "#ricer.col.background_inactive_alt",
+				"toolbar.background": "#ricer.col.background_alt",
+				"tab_bar.background": "#ricer.col.background_alt",
+				"tab.inactive_background": "#ricer.col.background_inactive_alt",
+				"tab.active_background": "#ricer.col.background_highlight",
+				"search.match_background": "#ricer.col.background_highlight",
+				"panel.background": "#ricer.col.background",
+				"panel.focused_border": null,
+				"pane.focused_border": null,
+				"scrollbar.thumb.background": "#ricer.col.button",
+				"scrollbar.thumb.hover_background": "#ricer.col.button_highlight",
+				"scrollbar.thumb.border": "#ricer.col.outline",
+				"scrollbar.track.background": "#00000000",
+				"scrollbar.track.border": "#ricer.col.outline",
+				"editor.foreground": "#ricer.col.foreground",
+				"editor.background": "#ricer.col.background",
+				"editor.gutter.background": "#ricer.col.background",
+				"editor.subheader.background": "#ricer.col.background",
+				"editor.active_line.background": "#ricer.col.background_alt",
+				"editor.highlighted_line.background": "#ricer.col.background_highlight",
+				"editor.line_number": "#ricer.col.foreground",
+				"editor.active_line_number": "#ricer.col.foreground_highlight",
+				"editor.invisible": "#ricer.col.foreground_placeholder",
+				"editor.wrap_guide": "#ricer.col.foreground_placeholder",
+				"editor.active_wrap_guide": "#ricer.col.foreground_placeholder",
+				"editor.document_highlight.read_background": "#ricer.col.background_highlight",
+				"editor.document_highlight.write_background": "#ricer.col.background_highlight_alt",
+				"terminal.background": "#ricer.col.background",
+				"terminal.foreground": "#ricer.col.foreground",
+				"terminal.bright_foreground": "#ricer.col.foreground_highlight",
+				"terminal.dim_foreground": "#ricer.col.foreground_placeholder",
+				"terminal.ansi.black": "#ricer.col.black",
+				"terminal.ansi.bright_black": "#ricer.col.br_black",
+				"terminal.ansi.dim_black": "#ricer.col.black",
+				"terminal.ansi.red": "#ricer.col.red",
+				"terminal.ansi.bright_red": "#ricer.col.br_red",
+				"terminal.ansi.dim_red": "#ricer.col.red",
+				"terminal.ansi.green": "#ricer.col.green",
+				"terminal.ansi.bright_green": "#ricer.col.br_green",
+				"terminal.ansi.dim_green": "#ricer.col.green",
+				"terminal.ansi.yellow": "#ricer.col.yellow",
+				"terminal.ansi.bright_yellow": "#ricer.col.br_yellow",
+				"terminal.ansi.dim_yellow": "#ricer.col.yellow",
+				"terminal.ansi.blue": "#riceer.col.blue",
+				"terminal.ansi.bright_blue": "#ricer.col.br_blue",
+				"terminal.ansi.dim_blue": "#ricer.col.blue",
+				"terminal.ansi.magenta": "#ricer.col.magenta",
+				"terminal.ansi.bright_magenta": "#ricer.col.br_magenta",
+				"terminal.ansi.dim_magenta": "#ricer.col.magenta",
+				"terminal.ansi.cyan": "#ricer.col.cyan",
+				"terminal.ansi.bright_cyan": "#ricer.col.br_cyan",
+				"terminal.ansi.dim_cyan": "#ricer.col.cyan",
+				"terminal.ansi.white": "#ricer.col.white",
+				"terminal.ansi.bright_white": "#ricer.col.br_white",
+				"terminal.ansi.dim_white": "#ricer.col.white",
+				"link_text.hover": "#ricer.col.link",
+				"conflict": "#ricer.col.red",
+				"conflict.background": "#ricer.col.background",
+				"conflict.border": "#ricer.col.br_red",
+				"created": "#ricer.col.foreground_alt",
+				"created.background": "#ricer.col.background",
+				"created.border": "#ricer.col.background",
+				"deleted": "#ricer.col.red",
+				"deleted.background": "#ricer.col.background",
+				"deleted.border": "#ricer.col.br_red",
+				"error": "#ricer.col.red",
+				"error.background": "#ricer.col.background",
+				"error.border": "#ricer.col.br_red",
+				"hidden": "#ricer.col.foreground_placeholder",
+				"hidden.background": "#ricer.col.background",
+				"hidden.border": "#ricer.col.background",
+				"hint": "#ricer.col.foreground_highlight",
+				"hint.background": "#ricer.col.background",
+				"hint.border": "#ricer.col.background",
+				"ignored": "#ricer.col.foreground_placeholder",
+				"ignored.background": "#ricer.col.background",
+				"ignored.border": "#ricer.col.background",
+				"info": "#ricer.col.foreground_placeholder",
+				"info.background": "#ricer.col.background",
+				"info.border": "#ricer.col.background",
+				"modified": "#ricer.col.foreground_highlight",
+				"modified.background": "#ricer.col.background",
+				"modified.border": "#ricer.col.background",
+				"predictive": "#ricer.col.foreground_placeholder",
+				"predictive.background": "#ricer.col.background",
+				"predictive.border": "#ricer.col.background",
+				"renamed": "#ricer.col.foreground_alt",
+				"renamed.background": "#ricer.col.background",
+				"renamed.border": "#ricer.col.background",
+				"success": "#ricer.col.green",
+				"success.background": "#ricer.col.background",
+				"success.border": "#ricer.col.background",
+				"unreachable": "#ricer.col.foreground_placeholder",
+				"unreachable.background": "#ricer.col.background",
+				"unreachable.border": "#ricer.col.background",
+				"warning": "#ricer.col.yellow",
+				"warning.background": "#ricer.col.background",
+				"warning.border": "#ricer.col.background",
+				"players": [
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					},
+					{
+						"cursor": "#ricer.col.foreground",
+						"background": "#ricer.col.background",
+						"selection": "#ricer.col.background_highlight"
+					}
+				],
+				"syntax": {
+					"attribute": {
+						"color": "#ricer.col.code_attribute",
+						"font_style": null,
+						"font_weight": null
+					},
+					"boolean": {
+						"color": "#ricer.col.code_const",
+						"font_style": null,
+						"font_weight": null
+					},
+					"comment": {
+						"color": "#ricer.col.code_comment",
+						"font_style": null,
+						"font_weight": null
+					},
+					"comment.doc": {
+						"color": "#ricer.col.code_comment",
+						"font_style": null,
+						"font_weight": null
+					},
+					"constant": {
+						"color": "#ricer.col.code_const",
+						"font_style": null,
+						"font_weight": null
+					},
+					"constructor": {
+						"color": "#ricer.col.code_type",
+						"font_style": null,
+						"font_weight": null
+					},
+					"embedded": {
+						"color": "#ricer.col.code_comment",
+						"font_style": null,
+						"font_weight": null
+					},
+					"emphasis": {
+						"color": "#ricer.col.code_special_char",
+						"font_style": null,
+						"font_weight": null
+					},
+					"emphasis.strong": {
+						"color": "#ricer.col.code_special_char",
+						"font_style": null,
+						"font_weight": 700
+					},
+					"enum": {
+						"color": "#ricer.col.code_type",
+						"font_style": null,
+						"font_weight": null
+					},
+					"function": {
+						"color": "#ricer.col.code_type",
+						"font_style": null,
+						"font_weight": null
+					},
+					"hint": {
+						"color": "#ricer.col.code_comment",
+						"font_style": null,
+						"font_weight": 700
+					},
+					"keyword": {
+						"color": "#ricer.col.code_keyword",
+						"font_style": null,
+						"font_weight": null
+					},
+					"label": {
+						"color": "#ricer.col.foreground",
+						"font_style": null,
+						"font_weight": null
+					},
+					"link_text": {
+						"color": "#ricer.col.link",
+						"font_style": "italic",
+						"font_weight": null
+					},
+					"link_uri": {
+						"color": "#ricer.col.link",
+						"font_style": null,
+						"font_weight": null
+					},
+					"number": {
+						"color": "#ricer.col.code_const",
+						"font_style": null,
+						"font_weight": null
+					},
+					"operator": {
+						"color": "#ricer.col.code_operator",
+						"font_style": null,
+						"font_weight": null
+					},
+					"predictive": {
+						"color": "#ricer.col.code_comment",
+						"font_style": "italic",
+						"font_weight": null
+					},
+					"preproc": {
+						"color": "#ricer.col.code_keyword",
+						"font_style": null,
+						"font_weight": null
+					},
+					"primary": {
+						"color": "#ricer.col.foreground",
+						"font_style": null,
+						"font_weight": null
+					},
+					"property": {
+						"color": "#ricer.col.code_var",
+						"font_style": null,
+						"font_weight": null
+					},
+					"punctuation": {
+						"color": "#ricer.col.code_punctuation",
+						"font_style": null,
+						"font_weight": null
+					},
+					"punctuation.bracket": {
+						"color": "#ricer.col.code_bracket",
+						"font_style": null,
+						"font_weight": null
+					},
+					"punctuation.delimiter": {
+						"color": "#ricer.col.code_punctuation",
+						"font_style": null,
+						"font_weight": null
+					},
+					"punctuation.list_marker": {
+						"color": "#ricer.col.code_punctuation",
+						"font_style": null,
+						"font_weight": null
+					},
+					"punctuation.special": {
+						"color": "#ricer.col.code_punctuation",
+						"font_style": null,
+						"font_weight": null
+					},
+					"string": {
+						"color": "#ricer.col.code_str",
+						"font_style": null,
+						"font_weight": null
+					},
+					"string.escape": {
+						"color": "#ricer.col.code_special_char",
+						"font_style": null,
+						"font_weight": null
+					},
+					"string.regex": {
+						"color": "#ricer.col.code_str_literal",
+						"font_style": null,
+						"font_weight": null
+					},
+					"string.special": {
+						"color": "#ricer.col.code_special_char",
+						"font_style": null,
+						"font_weight": null
+					},
+					"string.special.symbol": {
+						"color": "#ricer.col.code_special_char",
+						"font_style": null,
+						"font_weight": null
+					},
+					"tag": {
+						"color": "#ricer.col.code_keyword",
+						"font_style": null,
+						"font_weight": null
+					},
+					"text.literal": {
+						"color": "#ricer.col.code_str_literal",
+						"font_style": null,
+						"font_weight": null
+					},
+					"title": {
+						"color": "#ricer.col.code_keyword",
+						"font_style": null,
+						"font_weight": 700
+					},
+					"type": {
+						"color": "#ricer.col.code_type",
+						"font_style": null,
+						"font_weight": null
+					},
+					"variable": {
+						"color": "#ricer.col.code_var",
+						"font_style": null,
+						"font_weight": null
+					},
+					"variant": {
+						"color": "#ricer.col.code_var",
+						"font_style": null,
+						"font_weight": null
+					}
+				}
+			}
+		}
+	]
+}

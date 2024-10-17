@@ -121,3 +121,5 @@ Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
 MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
+Zed = [ "~/.config/zed/themes/ZedRicer.json", "hexa" ]
+DarkReader = "~/.config/Dark-Reader-Settings.json"
