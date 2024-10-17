@@ -1,1 +1,1 @@
-return "monochrome"
+return "nord"

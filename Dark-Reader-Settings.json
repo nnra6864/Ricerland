@@ -1,0 +1,238 @@
+{
+    "schemeVersion": 2,
+    "enabled": true,
+    "fetchNews": true,
+    "theme": {
+        "mode": 1,
+        "brightness": 100,
+        "contrast": 100,
+        "grayscale": 0,
+        "sepia": 0,
+        "useFont": true,
+        "fontFamily": "Cascadia Code NF",
+        "textStroke": 0,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#0F283F",
+        "darkSchemeTextColor": "#AAC9E5",
+        "lightSchemeBackgroundColor": "#0F283F",
+        "lightSchemeTextColor": "#AAC9E5",
+        "scrollbarColor": "#BDDFFF",
+        "selectionColor": "#153959",
+        "styleSystemControls": false,
+        "lightColorScheme": "Default",
+        "darkColorScheme": "Default",
+        "immediateModify": true
+    },
+    "presets": [],
+    "customThemes": [
+        {
+            "url": [
+                "*.officeapps.live.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Open Sans",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "*.sharepoint.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Open Sans",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "docs.google.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Open Sans",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        },
+        {
+            "url": [
+                "onedrive.live.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Open Sans",
+                "textStroke": 0,
+                "engine": "cssFilter",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            },
+            "builtIn": true
+        }
+    ],
+    "enabledByDefault": true,
+    "enabledFor": [
+        "chat.openai.com",
+        "trello.com",
+        "www.bleepingcomputer.com",
+        "www.linkedin.com",
+        "hitmarker.net",
+        "app.milanote.com",
+        "web3.career",
+        "odysee.com",
+        "hyprland-community.github.io",
+        "docs.github.com",
+        "hyprland.org",
+        "claude.ai",
+        "chatgpt.com",
+        "xmpp.org",
+        "www.curseforge.com",
+        "www.google.com",
+        "search.brave.com",
+        "x.com",
+        "www.imagine.art",
+        "forum.mattkc.com",
+        "auroraoss.com",
+        "zoom.us",
+        "us04web.zoom.us",
+        "listen.tidal.com",
+        "www.instagram.com",
+        "studio.youtube.com",
+        "forums.playdeadlock.com",
+        "fish-networking.gitbook.io",
+        "gdl.space",
+        "discussions.unity.com",
+        "pastebin.com",
+        "www.reddit.com",
+        "jellyfin.org",
+        "www.facebook.com",
+        "web.whatsapp.com",
+        "discord.com"
+    ],
+    "disabledFor": [
+        "excalidraw.com",
+        "vaxry.net",
+        "raw.githubusercontent.com",
+        "store.steelcase.com",
+        "bo-gi.itch.io",
+        "dmarket.com",
+        "hyprland-community.org",
+        "catppuccin.com",
+        "farbenfroh.io",
+        "notneelpatel.tech",
+        "templeos.org",
+        "gamesense.pub",
+        "htmlcolors.com",
+        "www1.123moviesme.online",
+        "eldrejko.itch.io",
+        "fonts.google.com",
+        "kholmogorov27.github.io",
+        "donovan.is",
+        "huly.io",
+        "colorkit.co",
+        "www.ebay.com",
+        "proxzima.dev"
+    ],
+    "changeBrowserTheme": false,
+    "syncSettings": true,
+    "syncSitesFixes": true,
+    "automation": {
+        "enabled": false,
+        "mode": "",
+        "behavior": "OnOff"
+    },
+    "time": {
+        "activation": "18:00",
+        "deactivation": "9:00"
+    },
+    "location": {
+        "latitude": null,
+        "longitude": null
+    },
+    "previewNewDesign": true,
+    "previewNewestDesign": true,
+    "enableForPDF": true,
+    "enableForProtectedPages": false,
+    "enableContextMenus": false,
+    "detectDarkTheme": true,
+    "displayedNews": [
+        "thanks-2023"
+    ],
+    "readNews": [
+        "thanks-2023"
+    ],
+    "installation": {
+        "date": 1726503093268,
+        "reason": "update",
+        "version": "4.9.89"
+    }
+}

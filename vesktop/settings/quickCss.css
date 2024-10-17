@@ -1,15 +1,15 @@
 :root {
     --app-font: "Cascadia Code NF";
 
-    --background-col: #000000;
-    --background-col-alt: #000000;
-    --background-highlight: #3F3F3F;
-    --background-highlight-alt: #3F3F3F;
+    --background-col: #0F283F;
+    --background-col-alt: #0F283F;
+    --background-highlight: #153959;
+    --background-highlight-alt: #153959;
 
-	--text-col: #FFFFFF;
-	--highlight-col: #FFFFFF;
+	--text-col: #AAC9E5;
+	--highlight-col: #BDDFFF;
     
-    --outline-col: #FFFFFF;
+    --outline-col: #6699CC;
     --rounding-big: 10px;
     --rounding-small: calc(var(--rounding-big) / 2);
 

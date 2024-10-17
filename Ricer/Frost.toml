@@ -9,32 +9,39 @@ space_colors = false
 space_files = true
 
 [Values]
-terminal = "alacritty"
+#Theme
 bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+icons = "Nordzy-dark"
+cursor = "Bibata-Modern-Ice"
+gtk_theme = "OomoxRicer"
+nvim_theme = "nord"
+
+#Font
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11
 font_size = 13
 big_font_size = 15
 max_font_size = 30
-icons = "Nordzy-dark"
-cursor = "Nordzy-cursors-white"
-cursor_size = 30
-outline_size = 2
-cursor_rot = -21
-rounding = 10
+
+#Misc
+terminal = "alacritty"
 opacity = 0.8
 inactive_opacity = 0.9
-gtk_theme = "OomoxRicer"
-nvim_theme = "nord"
+outline_size = 2
+rounding = 10
+cursor_size = 32
+cursor_rot = -21
 notification_duration = 3
 
+#Color Values
 highlight_hsv = "h+0.s+0.v+10"
 placeholder_hsv = "h+0.s+0.v-10"
 inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
+#Terminal
 black = "102840"
 red = "13304d"
 green = "1a4066"
@@ -44,6 +51,7 @@ magenta = "2d70b3"
 cyan = "6699cc"
 white = "accae6"
 
+#Terminal Bright
 br_black = "$black.$highlight_hsv"
 br_red = "$red.$highlight_hsv"
 br_green = "$green.$highlight_hsv"
@@ -53,49 +61,75 @@ br_magenta = "$magenta.$highlight_hsv"
 br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
+#Foreground
 foreground = "$white"
 foreground_highlight = "$foreground.$highlight_hsv"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
+#Foreground Alternative
 foreground_alt = "$cyan"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
 foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
 
+#Background
 background = "$black"
 background_highlight = "$background.$highlight_hsv"
 background_inactive = "$background.$inactive_hsv"
 background_disabled = "$background.$disabled_hsv"
 
-background_alt = "$br_black"
+#Background Alternative
+background_alt = "$black"
 background_highlight_alt = "$background_alt.$highlight_hsv"
 background_inactive_alt = "$background_alt.$inactive_hsv"
 background_disabled_alt = "$background_alt.$disabled_hsv"
 
+#Button Background
 button = "$br_black"
 button_highlight = "$button.$highlight_hsv"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
+#Button Foreground
 button_text = "$cyan"
 button_text_highlight = "$button_text.$highlight_hsv"
 button_text_inactive = "$button_text.$inactive_hsv"
 button_text_disabled = "$button_text.$disabled_hsv"
 
+#Outline
 outline = "$cyan"
 outline_alt = "$br_white"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
 
+#Shadow
 shadow = "$black"
 shadow_inactive = "$shadow.$inactive_hsv"
 
+#Link
 link = "$cyan"
 link_visited = "$blue"
 
+#Code
+code_var = "$foreground"
+code_type = "$cyan"
+code_keyword = "$magenta"
+code_attribute = "$br_blue"
+
+code_const = "$br_blue"
+code_bracket = "$foreground"
+code_operator = "$magenta"
+code_punctuation = "$blue"
+
+code_str = "$cyan"
+code_str_literal = "$foreground"
+code_special_char = "$foreground_highlight_alt"
+code_comment = "$foreground_inactive"
+
+#Music Visualizer
 visualizer = "$white"
 visualizer_outline = "$cyan"
 
@@ -121,3 +155,5 @@ Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
 MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
+Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
+DarkReader = "~/.config/Dark-Reader-Settings.json"
