@@ -1,0 +1,47 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.5120.1440" x="1170" y="336" />
+    <size key="find.popup.0.0.5120.1440" width="868" height="762" />
+    <size key="GridCell.Tab.0.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.0.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.0.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.0.bottom.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.4.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.4.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.4.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.4.bottom.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.1.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.1.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.1.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.1.bottom.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.2.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.2.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.2.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.2.bottom.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.3.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.3.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.3.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.3.bottom.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.5.left.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.5.center.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.5.right.0.0.5120.1440" width="5030" height="287" />
+    <size key="GridCell.Tab.5.bottom.0.0.5120.1440" width="5030" height="287" />
+  </component>
+  <component name="WindowManager">
+    <frame x="12" y="12" width="5096" height="1416" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="1358" y="185" width="1238" height="970" key="FileChooserDialogImpl" timestamp="1729021960814">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="1358" y="185" width="1238" height="970" key="FileChooserDialogImpl/0.0.5120.1440" timestamp="1729021960814" />
+    <state width="474" height="143" key="ShowUsagesActions.dimensionServiceKey" timestamp="1728124134478">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="474" height="143" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1728124134478" />
+    <state x="2560" y="721" width="5096" height="1416" key="WELCOME_SCREEN" timestamp="1729284957976">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2560" y="721" width="5096" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1729284957976" />
+  </component>
+</application>

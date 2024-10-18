@@ -1,0 +1,127 @@
+<application>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="ActivateTODOToolWindow" />
+    </ids>
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="C#" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Courier Prime Code" />
+    <option name="fontSize" value="17.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "ColorChooser.RecentColors": "255-255-255-255,,,255-0-0-255,,,200-255-50-255,,,50-255-200-255,,,100-255-225-255,,,150-255-200-255,,,150-200-255-255,,,150-225-255-255,,,80-80-80-255,,,200-200-200-255,,,128-128-128-255,,,150-150-150-255,,,225-225-225-255,,,48-48-48-255,,,255-255-255-89,,,0-0-0-255,,,16-16-16-255,,,1-1-1-255,,,240-240-240-255",
+    "Debug.Allow.Typing": "true",
+    "Grazie.Professional.Advertisement.Invoked": "1",
+    "InstalledPluginsSearchHistory": "tok\no\now\nowl\nt",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "2",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "RD-241.14494.325",
+    "MarketplacePluginsSearchHistory": "tokyo\ntoky\ntokuy\ntok\n/tag:Theme tokyo",
+    "NextRunPlatformUpdateBuild": "RD-242.23339.62",
+    "NextRunPlatformUpdateVersion": "2024.2.6",
+    "PluginConfigurable.selectionTab": "1",
+    "RD.Init.Cfg.2": "true",
+    "RD.Init.DialogShown.Ide": "true",
+    "Rider.Current.Build.Use.Start": "2024-07-05T01:27:01.859384720Z",
+    "Rider.Last.Observed.New.UI.State": "true",
+    "Rider.Last.Started.IDE.Build": "RD-242.22855.90",
+    "RunOnceActivity.Run Grazie Token Refresher": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "SettingsSearchHistory": "font\nTODO\nBUG:\nTODO:\npower",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "codeium.api_key": "570bf004-ab29-471e-9405-5f1ce9919fad",
+    "enter_selection_count": "5",
+    "evlsprt.241": "18f2bdf3700",
+    "evlsprt.242": "191fcd98700",
+    "evlsprt3.241": "4",
+    "evlsprt3.242": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "242.22855.90",
+    "export.settings.path": "/home/nnra/.config/JetBrainsSettings.zip",
+    "file.gist.reindex.count": "7",
+    "fileTypeChangedCounter": "4",
+    "fontSizeToResetConsole": "22.0",
+    "fontSizeToResetEditor": "22.0",
+    "got.it.tooltip.shader_variant.widget.got.it": "1",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1729242717845",
+    "ift.hide.welcome.screen.promo": "true",
+    "input.method.disabler.muted": "true",
+    "last_open_solution_path": "/home/nnra/Data/Projects/Unity/BeatShifter/BeatShifter",
+    "last_opened_file_path": "/home/nnra/Data/Projects/Unity/BeatShifter/BeatShifter",
+    "last_selected_project_template": "Project Type_Console",
+    "last_selected_project_template_parameters": "createDirectoryForSolution=true;DockerSupport=false;Microsoft.Common.Console.CSharp.8.0:langVersion=;Microsoft.Common.Console.CSharp.8.0:UseProgramMain=false;DockerCompose=false;sameDirectory=true;TargetFramework=net8.0_net8.0_true;Type=Console App;Language=C#;Microsoft.Common.Console.CSharp.8.0:NativeAot=false;SDK=8.0;createGitRepository=false;Framework=net8.0;Directory=/home/nnra/Data/Projects/Vez/BinarySearch;",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER_HIDDEN",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "org.intellij.images.editor.actions.BackgroundImageDialog#recent": "/home/nnra/.config/Background.png",
+    "previousColorScheme": "_@user_Nord",
+    "promo.ignore.ultimate.edition": "true",
+    "registry.to.advanced.settings.migration.build": "RD-242.22855.90",
+    "selected.color.option.type": "TEXT",
+    "settings.code.style.selected.tab.C#": "Naming",
+    "toolwindow.stripes.buttons.info.shown": "true",
+    "ts.lib.d.ts.version": "5.4.3",
+    "unity.user.content.model.migrated--119e161f": "/home/nnra/Data/Projects/Unity/VolcanicRush/VolcanicRush/.idea/.idea.VolcanicRush/.idea",
+    "unity.user.content.model.migrated--18faa3c3": "/home/nnra/Data/Projects/Unity/AD185/AD185/.idea/.idea.AD185/.idea",
+    "unity.user.content.model.migrated--22dca967": "/home/nnra/Data/Projects/Unity/Govware/Govware/Govware/.idea/.idea.Govware/.idea",
+    "unity.user.content.model.migrated--22f77499": "/home/nnra/Data/Projects/Unity/BeatShifter/BeatShifter/.idea/.idea.BeatShifter/.idea",
+    "unity.user.content.model.migrated--2e2ac36": "/home/nnra/Data/Projects/Unity/EndlessShooter/EndlessShooter/.idea/.idea.EndlessShooter/.idea",
+    "unity.user.content.model.migrated--324d854e": "/home/nnra/Data/Projects/Unity/Escapeon/Escapeon/.idea/.idea.Escapeon/.idea",
+    "unity.user.content.model.migrated--40d679c8": "/home/data/Projects/Unity/FlowSlasher/Project/FlowSlasher/.idea/.idea.FlowSlasher/.idea",
+    "unity.user.content.model.migrated--40e1f7f9": "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ02/.idea/.idea.CS106-DZ02/.idea",
+    "unity.user.content.model.migrated--422b6c5c": "/home/data/Projects/Unity/FlowSlasher/Project/ConquerTheAstrid/.idea/.idea.ConquerTheAstrid/.idea",
+    "unity.user.content.model.migrated--6a4ba8f6": "/home/nnra/Data/Projects/Unity/ZombiePlague/ZombiePlague/.idea/.idea.ZombiePlague/.idea",
+    "unity.user.content.model.migrated--7674ded9": "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ01/.idea/.idea.CS106-DZ01/.idea",
+    "unity.user.content.model.migrated--78905928": "/home/data/Projects/Unity/CTA/Project/ConquerTheAstrid/.idea/.idea.ConquerTheAstrid/.idea",
+    "unity.user.content.model.migrated--8136cf": "/home/nnra/Data/Projects/Unity/SaveTheNord/SaveTheNord/.idea/.idea.SaveTheNord/.idea",
+    "unity.user.content.model.migrated--acde328": "/home/data/Projects/Unity/CTA/Project/Conquer The Astrid/.idea/.idea.Conquer The Astrid/.idea",
+    "unity.user.content.model.migrated--b4f1119": "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ03/.idea/.idea.CS106-DZ03/.idea",
+    "unity.user.content.model.migrated-11eb3462": "/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/.idea/.idea.SpaceConqueror/.idea",
+    "unity.user.content.model.migrated-13b04496": "/home/nnra/Data/Projects/Unity/UnityRicer/UnityRicer/.idea/.idea.UnityRicer/.idea",
+    "unity.user.content.model.migrated-2ae6f72f": "/home/nnra/Data/Projects/Unity/BeatRunner/BeatRunner/BeatRunner/.idea/.idea.BeatRunner/.idea",
+    "unity.user.content.model.migrated-410dce78": "/home/data/Projects/Unity/FlowSlasher/Project/FlowSLasher/.idea/.idea.FlowSLasher/.idea",
+    "unity.user.content.model.migrated-43c62134": "/home/nnra/Data/Projects/Unity/dsa/OMA/.idea/.idea.OMA/.idea",
+    "unity.user.content.model.migrated-4e9e9298": "/home/nnra/Data/Projects/Unity/BeatRunner/BeatRunner/.idea/.idea.BeatRunner/.idea",
+    "unity.user.content.model.migrated-4f123da": "/home/nnra/Data/Projects/Unity/FlowSlasher/Project/FlowSlasher/.idea/.idea.FlowSlasher/.idea",
+    "whats.new.last.shown.version": "2024-2.4-21829-7890de2744a5f60a239878afaffeaa01425f5c54"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/nnra/Data/Projects/Unity/BeatShifter/BeatShifter",
+      "/home/nnra/.config/JetBrainsSettings/colors",
+      "/home/nnra/Data/Projects/Unity/UnityRicer/UnityRicer",
+      "/home/nnra/Data/Projects/Unity/UnityRicer/UnityRicer/Assets",
+      "/home/nnra/Monochrome.icls",
+      "/home/nnra/Data/Projects/Unity/Escapeon/Escapeon",
+      "/home/nnra/Data/Projects/Unity/ZombiePlague/ZombiePlague",
+      "/home/nnra/Downloads/Mateja_Popovic_5962_CS106/Assets",
+      "/home/nnra/Data/Projects/Unity/SaveTheNord/SaveTheNord",
+      "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ03",
+      "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ02",
+      "/home/nnra/Data/Projects/Unity/CS106/CS106-DZ01",
+      "/home/nnra/Data/Projects/Unity/AD185/AD185",
+      "/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror",
+      "/home/nnra/Data/Projects/NEditor",
+      "/home/nnra/Data/Projects/Vez/BinarySearch",
+      "/home/nnra/.config/JetBrainsSettings.zip",
+      "/home/nnra/.config/Background.png"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

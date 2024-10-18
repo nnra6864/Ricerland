@@ -5,11 +5,11 @@ padding = {x = 10, y = 10}
 opacity = 1
 
 [font]
-normal = { family = "Cascadia Code NF", style = "Regular" }
-bold = { family = "Cascadia Code NF", style = "Bold" }
-italic = { family = "Cascadia Code NF", style = "Italic" }
-bold_italic = { family = "Cascadia Code NF", style = "Bold Italic" }
-size = 15
+normal = { family = "Courier Prime Code", style = "Regular" }
+bold = { family = "Courier Prime Code", style = "Bold" }
+italic = { family = "Courier Prime Code", style = "Italic" }
+bold_italic = { family = "Courier Prime Code", style = "Bold Italic" }
+size = 17
 
 [colors]
 footer_bar = { foreground = "#AAC9E5", background = "#0F283F" }

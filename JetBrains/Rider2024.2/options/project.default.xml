@@ -1,0 +1,27 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+      <component name="VcsDirectoryMappings" defaultProject="true" />
+      <component name="WindowStateProjectService">
+        <state x="2491" y="442" width="646" height="785" key="FileChooserDialogImpl" timestamp="1719447688712">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="2491" y="442" width="646" height="785" key="FileChooserDialogImpl/0.0.5120.1440" timestamp="1719447688712" />
+        <state x="2253" y="346" width="900" height="647" key="Rider.NewProjectDialog.Size" timestamp="1719447718364">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="2253" y="346" width="900" height="647" key="Rider.NewProjectDialog.Size/0.0.5120.1440" timestamp="1719447718364" />
+        <state x="1682" y="486" width="1092" height="775" key="SettingsEditor" timestamp="1726582533713">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1682" y="486" width="1092" height="775" key="SettingsEditor/0.0.5120.1440" timestamp="1726582533713" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

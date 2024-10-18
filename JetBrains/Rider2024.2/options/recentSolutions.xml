@@ -1,0 +1,268 @@
+<application>
+  <component name="RiderRecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Data/Projects/NEditor">
+          <value>
+            <RecentProjectMetaInfo displayName="NEditor" frameTitle="NEditor – Cursor.cpp" projectWorkspaceId="2jmjtRxEC0BNxHnHYpxCRG5AHOk">
+              <option name="activationTimestamp" value="1721999733539" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18034.76" />
+              <option name="buildTimestamp" value="1719162060000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="2567" y="12" width="2541" height="701" />
+              <option name="metadata" value="NEditor|" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1721999719910" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/FlowSlasher/Project/FlowSlasher/FlowSlasher.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="FlowSlasher" projectWorkspaceId="2g2QuXPG4awIGjxqKkrU6ouT4Px">
+              <option name="activationTimestamp" value="1722476715032" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18034.76" />
+              <option name="buildTimestamp" value="1719162060000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="2430" y="144" width="1802" height="1033" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1722476717657" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/VolcanicRush/VolcanicRush/VolcanicRush.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="VolcanicRush – Meteor.cs" projectWorkspaceId="2kwLvDp2xxv6MQlBjnjphxWxzzo">
+              <option name="activationTimestamp" value="1724625892164" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1724587736428" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/AD185/AD185/AD185.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="AD185 – TerrainSurface.cs" projectWorkspaceId="2lOQbBZF46G6iUnOkP74TtPERwN">
+              <option name="activationTimestamp" value="1725069735017" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1725048712381" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ01/CS106-DZ01.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CS106-DZ01 – StatsScript.cs" projectWorkspaceId="2lQaszmw9fQTZsdc9aTaWcU2onq">
+              <option name="activationTimestamp" value="1725115864970" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1725114965773" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ02/CS106-DZ02.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CS106-DZ02 – GameManager.cs" projectWorkspaceId="2lQe2OibhYiq9Ps7OoWr1bDUCbw">
+              <option name="activationTimestamp" value="1725118438753" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1725116520969" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ03/CS106-DZ03.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CS106-DZ03 – DoorTriggerScript.cs" projectWorkspaceId="2lQj5OT8qoRyMYUDeETWCEVQMaX">
+              <option name="activationTimestamp" value="1725162549745" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1725159000222" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/SpaceConqueror.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="SpaceConqueror – PlayerMovement.cs" projectWorkspaceId="2kFm7rtNGfq87UYyou5hQA86UIu">
+              <option name="activationTimestamp" value="1725275830795" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="0" y="0" width="5120" height="1440" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1725213074525" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/dsa/OMA/OMA.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="OMA – CameraScript.cs" projectWorkspaceId="2lwHLrKd3wQDXUPikjS1UEmJEmD">
+              <option name="activationTimestamp" value="1726157081247" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="0" y="0" width="5120" height="1440" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726157084181" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/SaveTheNord/SaveTheNord/SaveTheNord.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="SaveTheNord – Hotbar.cs" projectWorkspaceId="2lYLHHi6gADT9QKjwl4KJUNq25o">
+              <option name="activationTimestamp" value="1726170867803" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="0" y="0" width="5120" height="1440" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726160455680" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Mateja_Popovic_5962_CS106/Assets">
+          <value>
+            <RecentProjectMetaInfo displayName="Assets" frameTitle="Assets" projectWorkspaceId="2m4k7RoPpCDDJRbplMnDjwbtTWe">
+              <option name="activationTimestamp" value="1726343067224" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-241.18968.19" />
+              <option name="buildTimestamp" value="1722612840000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="metadata" value="Assets|" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726343068331" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/ZombiePlague/ZombiePlague/ZombiePlague.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="ZombiePlague – PlayerMovementScript.cs" projectWorkspaceId="2mF3cTCs80WZ8RiUdgv5xktkKuh">
+              <option name="activationTimestamp" value="1726866795358" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.21829.210" />
+              <option name="buildTimestamp" value="1725634200000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1726864398899" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/UnityRicer/UnityRicer/Assets">
+          <value>
+            <RecentProjectMetaInfo displayName="Assets" frameTitle="Assets – FontChangerScript.cs" projectWorkspaceId="2munayIXYx5XC6iEIAeYwoQ9kFJ">
+              <option name="activationTimestamp" value="1727935470313" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.22855.90" />
+              <option name="buildTimestamp" value="1726748220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="3847" y="12" width="1261" height="1416" />
+              <option name="metadata" value="Assets|" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1727935396099" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/UnityRicer/UnityRicer/UnityRicer.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="UnityRicer – FontChangerScript.cs" projectWorkspaceId="2munkDtO6s4Tzd9DpaaCmk0P0Dn">
+              <option name="activationTimestamp" value="1727947571764" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.22855.90" />
+              <option name="buildTimestamp" value="1726748220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1727935470115" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/BeatShifter/BeatShifter/BeatShifter.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="BeatShifter – NnManager.cs" projectWorkspaceId="2nUJwvr6gmpDhIqELf9gWIOvva6">
+              <option name="activationTimestamp" value="1729245336762" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.22855.90" />
+              <option name="buildTimestamp" value="1726748220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1729245178847" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Escapeon – GroundCheckScript.cs" opened="true" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
+              <option name="activationTimestamp" value="1729285833214" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.22855.90" />
+              <option name="buildTimestamp" value="1726748220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="1287" y="12" width="2045" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1729284962264" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln" />
+  </component>
+</application>

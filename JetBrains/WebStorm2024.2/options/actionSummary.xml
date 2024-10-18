@@ -1,0 +1,121 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="2" l="1720449336571" />
+    </e>
+    <e n="$Paste">
+      <i c="1" l="1720448585855" />
+    </e>
+    <e n="AutoIndentLines">
+      <i c="10" l="1720449204416" />
+    </e>
+    <e n="CheckForUpdate">
+      <i c="1" l="1714451218127" />
+    </e>
+    <e n="CollapseAll">
+      <i c="2" l="1714531585213" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="83" l="1720449599711" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1720449324690" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="3" l="1720449211227" />
+    </e>
+    <e n="EditorDown">
+      <i c="21" l="1720449405762" />
+    </e>
+    <e n="EditorEnter">
+      <i c="1" l="1720449572391" />
+    </e>
+    <e n="EditorEscape">
+      <i c="29" l="1720449855744" />
+    </e>
+    <e n="EditorPaste">
+      <i c="7" l="1720449480163" />
+    </e>
+    <e n="EditorUp">
+      <i c="8" l="1720448839174" />
+    </e>
+    <e n="ExportSettings">
+      <i c="3" l="1714655378640" />
+    </e>
+    <e n="ImportSettings">
+      <i c="1" l="1718040570043" />
+    </e>
+    <e n="OpenFile">
+      <i c="3" l="1714531816995" />
+    </e>
+    <e n="SaveAll">
+      <i c="24" l="1720449856361" />
+    </e>
+    <e n="SelectInProjectView">
+      <i c="1" l="1714531586458" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="9" l="1728297922120" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="9" l="1720449540801" />
+    </e>
+    <e n="ShowSettings">
+      <i c="6" l="1728297924832" />
+    </e>
+    <e n="SpeedSearch">
+      <i c="1" l="1714531593743" />
+    </e>
+    <e n="Tree-selectNext">
+      <i c="2" l="1720448568881" />
+    </e>
+    <e n="WelcomeScreen.OpenDirectoryProject">
+      <i c="2" l="1718040230281" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="1" l="1714603906526" />
+    </e>
+    <e n="com.intellij.application.options.schemes.AbstractSchemeActions$ImportAction">
+      <i c="2" l="1728297997708" />
+    </e>
+    <e n="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction">
+      <i c="2" l="1728297996358" />
+    </e>
+    <e n="com.intellij.ide.browsers.actions.BaseOpenInBrowserAction">
+      <i c="6" l="1720448645714" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+      <i c="2" l="1714451214010" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="2" l="1715434800304" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="518" l="1720449851542" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="4" l="1720452626578" />
+    </e>
+    <e n="com.intellij.openapi.updateSettings.impl.UpdateSettingsEntryPointActionProvider$3">
+      <i c="1" l="1718058140753" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="7" l="1718040564820" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="3" l="1718040214948" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1714531587166" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="4" l="1728297913144" />
+    </e>
+    <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$2">
+      <i c="1" l="1714531384112" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="28" l="1720452625291" />
+    </e>
+  </component>
+</application>

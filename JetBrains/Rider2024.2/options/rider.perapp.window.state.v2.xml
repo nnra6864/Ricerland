@@ -1,0 +1,261 @@
+<application>
+  <component name="RiderPerAppToolWindowLayoutV2"><![CDATA[{
+  "layouts": {
+    "Custom": {
+      "v2": [
+        {
+          "id": "Space Code Reviews",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Merge Requests",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Pull Requests"
+        },
+        {
+          "id": "Learn",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Commit",
+          "order": 1,
+          "weight": 0.25
+        },
+        {
+          "id": "Structure",
+          "order": 2,
+          "weight": 0.095214844,
+          "sideWeight": 0.49963874,
+          "isSplit": true
+        },
+        {
+          "id": "Project",
+          "order": 3,
+          "contentUiType": "COMBO",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.10782967,
+          "sideWeight": 0.83308554
+        },
+        {
+          "id": "Bookmarks",
+          "order": 5,
+          "weight": 0.19578907,
+          "sideWeight": 0.49963236,
+          "isSplit": true
+        },
+        {
+          "id": "TODO",
+          "order": 5,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.10782967,
+          "sideWeight": 0.1669145,
+          "isSplit": true
+        },
+        {
+          "id": "Database Changes",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Tests",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "TypeScript",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Build",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Dynamic Program Analysis",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "dotTrace Profiler",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Unit Tests",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "File Transfer",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "NuGet",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "dotMemory",
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Version Control",
+          "order": 1,
+          "anchor": "BOTTOM",
+          "weight": 0.22563559
+        },
+        {
+          "id": "Problems",
+          "order": 2,
+          "anchor": "BOTTOM"
+        },
+        {
+          "id": "Debug",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isVisible": true,
+          "weight": 0.22563559
+        },
+        {
+          "id": "Services",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "weight": 0.22563559
+        },
+        {
+          "id": "Unity",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "weight": 0.22563559
+        },
+        {
+          "id": "Find",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isShowStripeButton": false,
+          "weight": 0.21786723
+        },
+        {
+          "id": "Endpoints",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "documentation.v2",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Coverage",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "isSplit": true
+        },
+        {
+          "id": "Test Coverage",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
+        },
+        {
+          "id": "Notifications",
+          "order": 0,
+          "anchor": "RIGHT",
+          "weight": 0.25892857,
+          "sideWeight": 0.50036764
+        },
+        {
+          "id": "AIAssistant",
+          "order": 1,
+          "anchor": "RIGHT",
+          "isShowStripeButton": false,
+          "weight": 0.32977885
+        },
+        {
+          "id": "Database",
+          "order": 2,
+          "anchor": "RIGHT",
+          "weight": 0.14511383
+        },
+        {
+          "id": "Gradle",
+          "order": 3,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 4,
+          "anchor": "RIGHT",
+          "weight": 0.25
+        },
+        {
+          "id": "Terminal",
+          "order": 10,
+          "anchor": "RIGHT",
+          "weight": 0.12783203,
+          "sideWeight": 0.654263,
+          "isSplit": true
+        },
+        {
+          "id": "Problems View",
+          "order": 12,
+          "anchor": "RIGHT",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.06779827,
+          "sideWeight": 0.34573698
+        },
+        {
+          "id": "Codeium Chat",
+          "order": 13,
+          "anchor": "RIGHT",
+          "floatingBounds": [
+            2727,
+            156,
+            935,
+            1174
+          ],
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.15830079,
+          "sideWeight": 0.654263,
+          "isSplit": true
+        },
+        {
+          "id": "IL Viewer",
+          "order": 13,
+          "anchor": "RIGHT",
+          "weight": 0.25892857,
+          "sideWeight": 0.40183824
+        },
+        {
+          "id": "Monitoring",
+          "order": 13,
+          "anchor": "RIGHT",
+          "weight": 0.3299647
+        },
+        {
+          "id": "IL",
+          "order": 13,
+          "anchor": "RIGHT",
+          "weight": 0.18004316
+        }
+      ],
+      "unifiedWeights": {
+        "top": 0.33,
+        "left": 0.10782967,
+        "bottom": 0.21786723,
+        "right": 0.06779827
+      }
+    }
+  }
+}]]></component>
+</application>

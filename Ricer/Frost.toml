@@ -17,12 +17,12 @@ gtk_theme = "OomoxRicer"
 nvim_theme = "nord"
 
 #Font
-font = "Cascadia Code NF"
-min_font_size = 8
-small_font_size = 11
-font_size = 13
-big_font_size = 15
-max_font_size = 30
+font = "Courier Prime Code"
+min_font_size = 10
+small_font_size = 13
+font_size = 15
+big_font_size = 17
+max_font_size = 32
 
 #Misc
 terminal = "alacritty"
