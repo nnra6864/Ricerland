@@ -141,11 +141,11 @@ ColorSchemeHash=d05680ca25bbbbf09a8b5f36923ee7f2b1117fbf
 TerminalApplication=alacritty
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=Cascadia Code NF,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Cascadia Code NF,13,-1,5,50,0,0,0,0,0,Regular
-menuFont=Cascadia Code NF,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=Cascadia Code NF,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Cascadia Code NF,13,-1,5,50,0,0,0,0,0,Regular
+fixed=Courier Prime Code,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Courier Prime Code,15,-1,5,50,0,0,0,0,0,Regular
+menuFont=Courier Prime Code,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Courier Prime Code,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Courier Prime Code,15,-1,5,50,0,0,0,0,0,Regular
 
 [Icons]
 Theme=Nordzy-dark

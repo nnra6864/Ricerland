@@ -1,0 +1,11 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="File 'SurfCharacter.cs'" />
+    <option name="defaultScopeName" value="File 'SurfCharacter.cs'" />
+    <option name="SEARCH_SCOPE" value="File 'SurfCharacter.cs'" />
+    <mask>*.css</mask>
+    <mask>*.html</mask>
+    <mask>*.xml</mask>
+    <mask>*.cs</mask>
+  </component>
+</application>

@@ -1,0 +1,60 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Cascadia Code NF" />
+    <option name="fontSize" value="15.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "GeneralSettings.initiallyConfigured": "true",
+    "InstalledPluginsSearchHistory": "electron",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "2",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "WS-241.15989.105",
+    "MarketplacePluginsSearchHistory": "/tag:Theme true black\n/tag:Theme tr\n/tag:Theme t\n/tag:Theme\nelectron",
+    "RunOnceActivity.Run Grazie Token Refresher": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.webstorm.auto-popup.quick-doc.initialized": "true",
+    "RunOnceActivity.webstorm.code.vision.default.position.initialized": "true",
+    "SettingsSearchHistory": "font",
+    "disable.forced.soft.wraps.notification": "true",
+    "evlsprt.241": "18f2bdf3700",
+    "evlsprt3.241": "7",
+    "evlsprt3.242": "6",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "242.23339.15",
+    "export.settings.path": "/home/nnra/.config/JetBrainsSettings.zip",
+    "fileTypeChangedCounter": "1",
+    "fontSizeToResetConsole": "18.0",
+    "fontSizeToResetEditor": "18.0",
+    "got.it.tooltip.speed.search.shown": "1",
+    "ide.memory.adjusted": "true",
+    "ideavim.statistics.timestamp": "1728298033440",
+    "last_opened_file_path": "/home/nnra/.config/JetBrainsSettings/colors/Blackout.icls",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "True Black copy",
+    "registry.to.advanced.settings.migration.build": "WS-242.23339.15",
+    "ts.lib.d.ts.version": "5.4.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/nnra/.config/JetBrainsSettings/colors/Blackout.icls",
+      "/home/nnra/.config/JetBrainsSettings.zip",
+      "/home/nnra/Data/Projects/nnra",
+      "/home/data/Projects/unityhub/resources/app.asar.unpacked",
+      "/home/data/Projects/unityhub/resources/app",
+      "/home/nnra/Documents/Projects/nnra"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

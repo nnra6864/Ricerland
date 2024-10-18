@@ -1,0 +1,20 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="/home/data/Projects/unityhub/resources/app" value="true" />
+        <entry key="/home/data/Projects/unityhub/resources/app.asar.unpacked" value="true" />
+        <entry key="$USER_HOME$/Data/Projects/nnra" value="true" />
+        <entry key="$USER_HOME$/Documents/Projects/nnra" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Documents/Projects" />
+        <option value="$USER_HOME$/Data/Projects" />
+      </list>
+    </option>
+  </component>
+</application>

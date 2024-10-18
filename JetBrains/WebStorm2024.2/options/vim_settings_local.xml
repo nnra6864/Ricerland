@@ -1,0 +1,176 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">RHI=</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">dw==</entry>
+        <entry encoding="base64">cQ==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="$USER_HOME$/Documents/Projects/nnra">
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="42" column="21" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="58" column="38" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="60" column="38" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="8" column="41" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="10" column="56" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Projects/nnra/index.js" />
+      <jump line="18" column="39" filename="$USER_HOME$/Documents/Projects/nnra/index.html" />
+    </project>
+    <project id="/home/data/Projects/unityhub/resources/app">
+      <jump line="0" column="0" filename="/home/data/Projects/unityhub/resources/app/build/renderer/index.html" />
+      <jump line="0" column="0" filename="/home/data/Projects/unityhub/resources/app/public/index.html" />
+    </project>
+    <project id="$USER_HOME$/Data/Projects/nnra">
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="56" column="27" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="57" column="33" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="83" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="88" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="87" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="82" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="54" column="23" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="65" column="46" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="76" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="79" column="46" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="128" column="55" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="140" column="25" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="126" column="32" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="115" column="37" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="141" column="38" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="169" column="16" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="142" column="20" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="159" column="44" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="161" column="28" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="118" column="83" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="123" column="93" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="119" column="52" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="9" column="49" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="17" column="49" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="33" column="77" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="34" column="78" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="57" column="8" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="42" column="21" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="56" column="83" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/nnra/index.css" />
+      <jump line="642" column="4" filename="$USER_HOME$/Data/Projects/nnra/index.css" />
+      <jump line="127" column="94" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="103" column="79" filename="$USER_HOME$/Data/Projects/nnra/index.html" />
+      <jump line="67" column="51" filename="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" />
+      <jump line="512" column="30" filename="$USER_HOME$/Data/Projects/nnra/index.css" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/Data/Projects/nnra/index.css" timestamp="1720452625318">
+        <mark key="&quot;" line="512" column="30" />
+        <mark key="[" line="512" column="15" />
+        <mark key="]" line="512" column="31" />
+        <mark key="." line="512" column="30" />
+        <mark key="^" line="512" column="31" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/nnra/index.html" timestamp="1718064505928">
+        <mark key="[" line="127" column="33" />
+        <mark key="]" line="127" column="33" />
+        <mark key="." line="127" column="33" />
+        <mark key="^" line="118" column="84" />
+      </file>
+      <file name="/home/data/Projects/unityhub/resources/app/build/renderer/index.html" timestamp="1714531823429">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/nnra/Data/Projects/27.json" timestamp="1720449479140">
+        <mark key="[" line="67" column="20" />
+        <mark key="]" line="67" column="20" />
+        <mark key="." line="67" column="20" />
+        <mark key="^" line="56" column="84" />
+      </file>
+      <file name="$USER_HOME$/Documents/Projects/nnra/index.html" timestamp="1715434766507">
+        <mark key="&quot;" line="18" column="39" />
+        <mark key="'" line="18" column="39" />
+        <mark key="[" line="124" column="96" />
+        <mark key="]" line="124" column="97" />
+        <mark key="^" line="124" column="97" />
+        <mark key="." line="124" column="96" />
+      </file>
+      <file name="/home/data/Projects/unityhub/resources/app/public/index.html" timestamp="1714531629011">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Projects/nnra/index.js" timestamp="1714655418967">
+        <mark key="&quot;" line="16" column="22" />
+        <mark key="[" line="16" column="22" />
+        <mark key="]" line="16" column="23" />
+        <mark key="^" line="16" column="23" />
+        <mark key="." line="16" column="22" />
+      </file>
+      <file name="/" timestamp="1714655372220">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgIG1pbi13aWR0aDogNTB2dzsK</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">aHR0cHM6Ly9pLmltZ3VyLmNvbS9teHJnT0I4LnBuZw==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">bWluKCksIDEwMjRweA==</text>
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">RHI=</text>
+      </register>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICJBdCBsZWFzdCBJIGxlYXJuZWQgYSBsb3QgYWJvdXQgUHl0aG9uLCBtYWRlIG5lb3ZpbSB0aGVtZSBob3QtcmVsb2FkaW5nIGFuZCBhIGZldyBvdGhlciB0aGluZ3MuIgo=</text>
+      </register>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">ICAgIG1pbi13aWR0aDogNTB2dzsK</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgewogICAgICAgICJUZXh0IjogIkh5cHJsYW5kIiwKICAgICAgICAiTGluayI6ICJodHRwczovL2h5cHJsYW5kLm9yZy8iLAogICAgICAgICJJbWFnZSI6ICJIeXBybGFuZCIKICAgICAgfQo=</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICA8aWZyYW1lIHNyYz0iaHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQvSVp1cWM0cEx2Wnc/c2k9M05zVW9TekFZbUhnLWJVUyIgdGl0bGU9Ik5vcmRpYyBXaW5kb3dzIiBhbGxvdz0iYWNjZWxlcm9tZXRlcjsgYXV0b3BsYXk7IGNsaXBib2FyZC13cml0ZTsgZW5jcnlwdGVkLW1lZGlhOyBneXJvc2NvcGU7IHBpY3R1cmUtaW4tcGljdHVyZTsgd2ViLXNoYXJlIiBhbGxvd2Z1bGxzY3JlZW4+PC9pZnJhbWU+Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJtYXJnaW46IDEwcHgiPjwvZGl2Pgo=</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJIb3Jpem9udGFsTGluZSIgc3R5bGU9ImhlaWdodDogMXB4Ij48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJFbmVucmFDZW50ZXJlZENvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5QQzwvaDI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9Im1hcmdpbjogMTBweCI+PC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Nb3RoZXJib2FyZDogPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ2lnYWJ5dGUuY29tL01vdGhlcmJvYXJkL1ozOTAtQU9SVVMtTUFTVEVSLXJldi0xMCI+R2lnYWJ5dGUgWjM5MCBBT1JVUyBNQVNURVI8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5HUFU6IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmdpZ2FieXRlLmNvbS9HcmFwaGljcy1DYXJkL0dWLU4yMDhUQU9SVVMtWC0xMUdDIj5BT1VSVVMgR2VGb3JjZSBSVFggMjA4MFRpIFhUUkVNRTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkNQVTogPGEgaHJlZj0iaHR0cHM6Ly9hcmsuaW50ZWwuY29tL2NvbnRlbnQvd3d3L3VzL2VuL2Fyay9wcm9kdWN0cy8xODY2MDUvaW50ZWwtY29yZS1pOS05OTAway1wcm9jZXNzb3ItMTZtLWNhY2hlLXVwLXRvLTUtMDAtZ2h6Lmh0bWwiPkludGVsIGk5LTk5MDBLPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+UkFNOiA8YSBocmVmPSJodHRwczovL3d3dy5nc2tpbGwuY29tL3Byb2R1Y3QvMTY1LzMyNi8xNTYyODQwNTI1L0Y0LTM2MDBDMThELTMyR1RaTiI+Ry5TS0lMTCBUcmlkZW50IFogTmVvIDMyR0IgMzYwME1IejwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkFJTzogPGEgaHJlZj0iaHR0cHM6Ly93d3cuZGVlcGNvb2wuY29tL3Byb2R1Y3RzL0Nvb2xpbmcvY3B1bGlxdWlkY29vbGVycy9DYXN0bGUtMzYwRVgtTGlxdWlkLUNQVS1Db29sZXIvMjAyMS8xMjEuc2h0bWwiPkRlZXBDb29sIENBU1RMRSAzNjBFWDwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkNhc2U6IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmNvb2xlcm1hc3Rlci5jb20vY2F0YWxvZy9sZWdhY3ktcHJvZHVjdHMvY2FzZXMvbWFzdGVyY2FzZS1zbDYwMG0vIj5Db29sZXIgTWFzdGVyIE1hc3RlckNhc2UgU0w2MDBNPC9hPjwvbGk+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+Q29vbGVyczogPGEgaHJlZj0iaHR0cHM6Ly93d3cuYW50ZWMuY29tL3Byb2R1Y3QvY29vbGluZy9wcml6bS0xMjAtYXJnYiI+QW50ZWMgUHJpem0gMTIwIEFSR0I8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5MRUQgU3RyaXA6IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmNvb2xlcm1hc3Rlci5jb20vY2F0YWxvZy9sZWdhY3ktcHJvZHVjdHMvYWNjZXNzb3JpZXMvdW5pdmVyc2FsLWxlZC1zdHJpcC1yZ2IvIj5Db29sZXIgTWFzdGVyIFVuaXZlcnNhbCBMRUQgU3RyaXA8L2E+PC9saT4KICAgICAgICAgICAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJIb3Jpem9udGFsTGluZSIgc3R5bGU9ImhlaWdodDogMXB4Ij48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJFbmVucmFDZW50ZXJlZENvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5QZXJpcGhlcmFsczwvaDI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9Im1hcmdpbjogMTBweCI+PC9kaXY+CiAgICAgICAgICAgICAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT5Nb25pdG9yOiA8YSBocmVmPSJodHRwczovL3d3dy5zYW1zdW5nLmNvbS91cy9jb21wdXRpbmcvbW9uaXRvcnMvZ2FtaW5nLzQ5LS1vZHlzc2V5LWc5NW5hLWdhbWluZy1kcWhkLWxlZC1tb25pdG9yLWxzNDlhZzk1Mm5ueHphLyI+U2Ftc3VuZyBPZHlzc2V5IE5lbyBHOTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPk1vdXNlOiA8YSBocmVmPSJodHRwczovL3d3dy5sb2dpdGVjaGcuY29tL2VuLWV1L3Byb2R1Y3RzL2dhbWluZy1taWNlL3Byby14LXN1cGVybGlnaHQtd2lyZWxlc3MtbW91c2UiPkxvZ2l0ZWNoIEcgUHJvIFggU3VwZXJsaWdodDwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPktleWJvYXJkOiA8YSBocmVmPSJodHRwczovL2Vjb21tZXJjZS5kYXRhYmxpdHouY29tLnBoL3Byb2R1Y3RzL2h5cGVyeC1hbGxveS1mcHMtbWVjaGFuaWNhbC1nYW1pbmcta2V5Ym9hcmQtY2hlcnJ5LW14LXJlZCI+SHlwZXJYIEFsbG95IEZQUyhDaGVycnkgTVggUmVkKTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPkhlYWRwaG9uZXM6IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmF1ZGV6ZS5jb20vcHJvZHVjdHMvbWF4d2VsbC13aXJlbGVzcy1nYW1pbmctaGVhZHNldD92YXJpYW50PTQwMDk0NzY0OTkwNTQyIj5BdWRlemUgTWF4d2VsbChYYm94KTwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPk1pY3JvcGhvbmU6IDxhIGhyZWY9Imh0dHBzOi8vaHlwZXJ4LmNvbS9wcm9kdWN0cy9oeXBlcngtcXVhZGNhc3Qtcy11c2ItbWljcm9waG9uZSI+SHlwZXJYIFF1YWRDYXN0UzwvYT48L2xpPgogICAgICAgICAgICAgICAgICAgICAgICA8L3VsPgogICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJIb3Jpem9udGFsTGluZSIgc3R5bGU9ImhlaWdodDogMXB4Ij48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJFbmVucmFDZW50ZXJlZENvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5QeXRob248L2gyPgogICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJIb3Jpem9udGFsTGluZSIgc3R5bGU9ImhlaWdodDogMXB4Ij48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJFbmVucmFDZW50ZXJlZENvbnRhaW5lciI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxoMj5XZWIgRGV2ZWxvcG1lbnQ8L2gyPgogICAgICAgICAgICAgICAgICAgIDwvZGl2Pgo=</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0ibWFyZ2luOiAxMHB4Ij48L2Rpdj4K</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0ibWFyZ2luOiAxMHB4Ij48L2Rpdj4K</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">cQ==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

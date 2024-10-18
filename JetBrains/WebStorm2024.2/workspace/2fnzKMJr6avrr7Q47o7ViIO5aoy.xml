@@ -1,0 +1,126 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="nnra" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="txbqa15m8xdg" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="609">
+              <caret line="124" column="96" selection-start-line="124" selection-start-column="96" selection-end-line="124" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "HTML": {
+      "usageCount": 6,
+      "lastUsed": 1715531024977
+    },
+    "JavaScript": {
+      "usageCount": 1,
+      "lastUsed": 1714655412690
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/index.js" />
+      <option value="$PROJECT_DIR$/index.html" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="HTML">
+      <summary usageCount="6" lastUsage="1715531024978" />
+    </language>
+    <language id="JavaScript">
+      <summary usageCount="1" lastUsage="1714655412690" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nnra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/nnra/Documents/Projects/nnra}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="716000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15171193" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights left="0.15171193" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3544" y="572" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1714655380225">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3544" y="572" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1714655380225" />
+    <state x="3544" y="478" key="FileChooserDialogImpl" timestamp="1714531181861">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3544" y="478" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1714531181861" />
+    <state x="3144" y="180" width="1247" height="756" key="SettingsEditor" timestamp="1714655372221">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3144" y="180" width="1247" height="756" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1714655372221" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="124" column="96" selection-start-line="124" selection-start-column="96" selection-end-line="124" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

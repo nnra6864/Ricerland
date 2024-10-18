@@ -1,0 +1,531 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="nnra" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="3jf8ak9o512le" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1029">
+              <caret line="103" column="79" lean-forward="true" selection-start-line="103" selection-start-column="79" selection-end-line="103" selection-end-column="79" />
+              <folding>
+                <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"index.html","foregroundColor":-4473925,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,68,10,18,102,105,108,101,84,121,112,101,115,47,104,116,109,108,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,116,109,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-72,-21,-93,-62,3,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Data/Projects/27.json">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1809">
+              <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"27.json","foregroundColor":-4473925,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-55,-15,-115,-58,-6,-1,-1,-1,-1,1,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/index.css">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="-1692">
+              <caret line="512" column="30" selection-start-line="512" selection-start-column="30" selection-end-line="512" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"index.css","foregroundColor":-4473925,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,71,10,17,102,105,108,101,84,121,112,101,115,47,99,115,115,46,115,118,103,18,23,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-107,-61,-84,-104,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="-9987" />
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"index.js","foregroundColor":-4473925,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,85,10,24,102,105,108,101,84,121,112,101,115,47,106,97,118,97,83,99,114,105,112,116,46,115,118,103,18,30,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,97,118,97,83,99,114,105,112,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-88,-59,-110,-33,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "HTML": {
+      "usageCount": 6,
+      "lastUsed": 1728297920181
+    },
+    "JSON": {
+      "usageCount": 3,
+      "lastUsed": 1728297919642
+    },
+    "CSS": {
+      "usageCount": 2,
+      "lastUsed": 1728298031428
+    },
+    "JavaScript": {
+      "usageCount": 1,
+      "lastUsed": 1728298035423
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/index.html" />
+      <option value="$PROJECT_DIR$/Data/Projects/27.json" />
+      <option value="$PROJECT_DIR$/index.css" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="CSS">
+      <summary usageCount="2" lastUsage="1728298031428" />
+    </language>
+    <language id="HTML">
+      <summary usageCount="6" lastUsage="1728297920181" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="3" lastUsage="1728297919644" />
+    </language>
+    <language id="JavaScript">
+      <summary usageCount="1" lastUsage="1728298035423" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nnra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nnra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra/Data}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nnra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra/Data}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra/Data/Projects}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="nnra" />
+            <item name="nnra" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="nnra" />
+              <item name="dir{file:///home/nnra/Data/Projects/nnra}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/Data" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Data" />
+                <item name="dir{file:///home/nnra/Data/Projects/nnra/Data}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/Data/Projects" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Projects" />
+                  <item name="dir{file:///home/nnra/Data/Projects/nnra/Data/Projects}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/0.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="0.json" />
+                    <item name="0.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/1.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="1.json" />
+                    <item name="1.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/2.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="2.json" />
+                    <item name="2.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/3.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="3.json" />
+                    <item name="3.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/4.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="4.json" />
+                    <item name="4.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/5.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="5.json" />
+                    <item name="5.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/6.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="6.json" />
+                    <item name="6.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/7.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="7.json" />
+                    <item name="7.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/8.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="8.json" />
+                    <item name="8.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/9.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="9.json" />
+                    <item name="9.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/10.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="10.json" />
+                    <item name="10.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/11.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="11.json" />
+                    <item name="11.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/12.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="12.json" />
+                    <item name="12.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/13.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="13.json" />
+                    <item name="13.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/14.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="14.json" />
+                    <item name="14.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/15.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="15.json" />
+                    <item name="15.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/16.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="16.json" />
+                    <item name="16.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/17.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="17.json" />
+                    <item name="17.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/18.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="18.json" />
+                    <item name="18.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/19.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="19.json" />
+                    <item name="19.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/20.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="20.json" />
+                    <item name="20.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/21.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="21.json" />
+                    <item name="21.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/22.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="22.json" />
+                    <item name="22.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/23.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="23.json" />
+                    <item name="23.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/24.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="24.json" />
+                    <item name="24.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/25.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="25.json" />
+                    <item name="25.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/26.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="26.json" />
+                    <item name="26.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/Data/Projects/27.json" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="27.json" />
+                    <item name="27.json" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/Images" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Images" />
+                <item name="dir{file:///home/nnra/Data/Projects/nnra/Images}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/index.css" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/css.svg" iconPlugin="com.intellij" isLeaf="true" text="index.css" />
+                <item name="index.css" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/index.html" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/html.svg" iconPlugin="com.intellij" isLeaf="true" text="index.html" />
+                <item name="index.html" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/index.js" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/javaScript.svg" iconPlugin="com.intellij" isLeaf="true" text="index.js" />
+                <item name="index.js" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7843000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16198981" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights left="0.16198981" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2273" y="478" key="FileChooserDialogImpl" timestamp="1728298000046">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2273" y="478" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1728298000046" />
+    <state x="2084" y="370" key="SettingsEditor" timestamp="1728298003767">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2084" y="370" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1728298003767" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="103" column="79" lean-forward="true" selection-start-line="103" selection-start-column="79" selection-end-line="103" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#5;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Projects/27.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1809">
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1692">
+          <caret line="512" column="30" selection-start-line="512" selection-start-column="30" selection-end-line="512" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9987" />
+      </provider>
+    </entry>
+  </component>
+</project>

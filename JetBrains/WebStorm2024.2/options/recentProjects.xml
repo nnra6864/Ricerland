@@ -1,0 +1,25 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Data/Projects/nnra">
+          <value>
+            <RecentProjectMetaInfo frameTitle="nnra – index.js" opened="true" projectWorkspaceId="2hhJEaNqRcpbxeFcc8i1pAEUffo">
+              <option name="activationTimestamp" value="1728298070192" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="WS-242.23339.15" />
+              <option name="buildTimestamp" value="1727263800000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="WS" />
+              <option name="projectOpenTimestamp" value="1728297920181" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/nnra" />
+  </component>
+</application>

@@ -1,5 +1,5 @@
 configuration {
-    font: "Cascadia Code NF 15";
+    font: "Courier Prime Code 17";
     line-margin: 10;
 
     display-ssh: "";
