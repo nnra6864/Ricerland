@@ -9,7 +9,7 @@
         "grayscale": 0,
         "sepia": 0,
         "useFont": true,
-        "fontFamily": "Courier Prime Code",
+        "fontFamily": "system-ui",
         "textStroke": 0,
         "engine": "dynamicTheme",
         "stylesheet": "",

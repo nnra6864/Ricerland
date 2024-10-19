@@ -5,13 +5,9 @@ update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detai
 
 [CompactMode]
 PreviewSize=64
-UseSystemFont=false
-ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [DetailsMode]
 PreviewSize=16
-UseSystemFont=false
-ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [ExtractDialog]
 5120x1440 screen: Window-Maximized=true
@@ -24,8 +20,6 @@ ViewPropsTimestamp=2023,8,28,1,16,21.136
 [IconsMode]
 IconSize=208
 PreviewSize=256
-UseSystemFont=false
-ViewFont=Cascadia Code NF,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false

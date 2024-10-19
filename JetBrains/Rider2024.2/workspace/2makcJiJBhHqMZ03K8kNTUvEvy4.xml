@@ -15,10 +15,10 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="788">
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
               <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <marker date="1727849646110" expanded="true" signature="6:71" ph="..." />
               </folding>
             </state>
           </provider>
@@ -28,7 +28,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
+            <state relative-caret-position="801">
               <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
             </state>
           </provider>
@@ -38,8 +38,8 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="411">
-              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+            <state relative-caret-position="2128">
+              <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -48,12 +48,15 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="644">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1729306244358" expanded="true" signature="6:40" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
@@ -73,10 +76,10 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -356,7 +359,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53937000" />
+    <option name="totallyTimeSpent" value="59019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,14 +421,18 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2210" y="370" key="#Context_Actions/0.0.5120.1440@0.0.5120.1440" timestamp="1727587513648" />
+    <state x="2042" y="447" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog" timestamp="1729306517176">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2042" y="447" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1729306517176" />
     <state x="2509" y="562" width="768" height="784" key="FileChooserDialogImpl" timestamp="1727877519650">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2509" y="562" width="768" height="784" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1727877519650" />
-    <state x="1648" y="161" width="1823" height="1117" key="SettingsEditor" timestamp="1729285833193">
+    <state x="1648" y="161" width="1823" height="1117" key="SettingsEditor" timestamp="1729306471176">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="1648" y="161" width="1823" height="1117" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1729285833193" />
+    <state x="1648" y="161" width="1823" height="1117" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1729306471176" />
     <state width="515" height="420" key="SwitcherDM" timestamp="1727503163987">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -456,34 +463,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1729306244358" expanded="true" signature="6:40" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="788">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding>
-            <element signature="e#0#71#0" expanded="true" />
+            <marker date="1727849646110" expanded="true" signature="6:71" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="801">
           <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="2128">
+          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
         </state>
       </provider>
     </entry>

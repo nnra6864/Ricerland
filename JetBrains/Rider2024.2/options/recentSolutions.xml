@@ -248,14 +248,14 @@
         <entry key="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln">
           <value>
             <RecentProjectMetaInfo frameTitle="Escapeon – GroundCheckScript.cs" opened="true" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
-              <option name="activationTimestamp" value="1729285833214" />
+              <option name="activationTimestamp" value="1729321156503" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.22855.90" />
               <option name="buildTimestamp" value="1726748220000" />
               <option name="colorInfo">
                 <RecentProjectColorInfo associatedIndex="8" />
               </option>
-              <frame x="1287" y="12" width="2045" height="1416" />
+              <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
               <option name="projectOpenTimestamp" value="1729284962264" />
             </RecentProjectMetaInfo>

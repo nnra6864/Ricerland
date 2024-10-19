@@ -1499,8 +1499,6 @@
       <jump line="76" column="52" filename="$USER_HOME$/Data/Projects/Unity/ZombiePlague/ZombiePlague/Assets/Scripts/PlayerMovementScript.cs" protocol="file" />
     </project>
     <project id="Escapeon-5165725c">
-      <jump line="18" column="24" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="17" column="8" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="11" column="45" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="6" column="4" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="9" column="7" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
@@ -1583,8 +1581,6 @@
       <jump line="111" column="8" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
       <jump line="114" column="11" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
       <jump line="115" column="28" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
-      <jump line="0" column="20" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="14" column="7" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" protocol="file" />
       <jump line="74" column="11" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
       <jump line="17" column="23" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
       <jump line="19" column="34" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
@@ -1596,8 +1592,12 @@
       <jump line="14" column="0" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
       <jump line="13" column="42" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
       <jump line="46" column="34" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
-      <jump line="70" column="37" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
       <jump line="18" column="39" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
+      <jump line="0" column="20" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="70" column="56" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
+      <jump line="14" column="7" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" protocol="file" />
+      <jump line="66" column="20" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" protocol="file" />
       <jump line="112" column="18" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
     </project>
     <project id="Assets-c9705a6c">
@@ -1714,13 +1714,13 @@
         <mark key="." line="5" column="44" />
         <mark key="^" line="5" column="45" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" timestamp="1727857592963">
+      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" timestamp="1729306607416">
         <mark key="&quot;" line="6" column="6" />
         <mark key="'" line="119" column="0" />
-        <mark key="[" line="85" column="65" />
-        <mark key="]" line="85" column="65" />
-        <mark key="." line="85" column="64" />
-        <mark key="^" line="85" column="65" />
+        <mark key="[" line="66" column="20" />
+        <mark key="]" line="68" column="32" />
+        <mark key="." line="68" column="31" />
+        <mark key="^" line="68" column="32" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/BeatShifter/BeatShifter/Assets/NnUtils/Scripts/NnBehaviour.cs" timestamp="1729023104757">
         <mark key="&quot;" line="11" column="4" />
@@ -1728,7 +1728,7 @@
         <mark key="]" line="19" column="0" />
         <mark key="." line="19" column="0" />
       </file>
-      <file name="/" timestamp="1729285833192">
+      <file name="/" timestamp="1729306471169">
         <mark key="&quot;" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/ZombiePlague/ZombiePlague/Assets/Scripts/PlayerMovementScript.cs" timestamp="1727329318063">
@@ -1771,12 +1771,12 @@
         <mark key="^" line="68" column="51" />
         <mark key="." line="68" column="50" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" timestamp="1727857827448">
+      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" timestamp="1729306512818">
         <mark key="&quot;" line="18" column="24" />
-        <mark key="[" line="17" column="9" />
-        <mark key="]" line="17" column="9" />
-        <mark key="." line="17" column="8" />
-        <mark key="^" line="17" column="9" />
+        <mark key="[" line="20" column="114" />
+        <mark key="]" line="21" column="122" />
+        <mark key="." line="21" column="121" />
+        <mark key="^" line="21" column="122" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" timestamp="1728775731166">
         <mark key="&quot;" line="8" column="6" />
@@ -1841,20 +1841,20 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+      <register name="&quot;" type="CHARACTER_WISE">
+        <text encoding="base64">IA==</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
         <text encoding="base64">Tm5CZWhhdmlvdXI=</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">ID0+</text>
+        <text encoding="base64">ICAgICAgICAg</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">VXBkYXRl</text>
       </register>
-      <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgKCFJc0NsaWVudEluaXRpYWxpemVkKSByZXR1cm47Cg==</text>
+      <register name="0" type="CHARACTER_WISE">
+        <text encoding="base64">IA==</text>
       </register>
       <register name="1" type="LINE_WISE">
         <text encoding="base64">Cg==</text>

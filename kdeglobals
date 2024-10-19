@@ -181,7 +181,7 @@ MaximumRemoteSize=0
 [WM]
 activeBackground=46,52,64
 activeBlend=236,239,244
-activeFont=Cascadia Code NF,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=Courier Prime Code,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=236,239,244
 inactiveBackground=46,52,64
 inactiveBlend=216,222,233

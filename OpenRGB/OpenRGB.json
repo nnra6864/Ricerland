@@ -1340,7 +1340,7 @@
             },
             {
                 "description": "Receive E1.31 lighting control data from external applications to control OpenRGB devices",
-                "enabled": false,
+                "enabled": true,
                 "name": "OpenRGB E1.31 Receiver Plugin"
             }
         ]
