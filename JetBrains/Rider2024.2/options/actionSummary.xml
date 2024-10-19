@@ -16,7 +16,7 @@
       <i c="136" l="1727944241226" />
     </e>
     <e n="$SelectAll">
-      <i c="14" l="1729245089591" />
+      <i c="15" l="1729306444810" />
     </e>
     <e n="$Undo">
       <i c="15" l="1727947048320" />
@@ -55,7 +55,7 @@
       <i c="2" l="1717725859704" />
     </e>
     <e n="EditorBackSpace">
-      <i c="13528" l="1729245092839" />
+      <i c="13549" l="1729306602474" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="6619" l="1729024870672" />
@@ -76,19 +76,19 @@
       <i c="106" l="1727396945195" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="3191" l="1729245013527" />
+      <i c="3192" l="1729306217204" />
     </e>
     <e n="EditorDown">
-      <i c="10696" l="1729024873385" />
+      <i c="10704" l="1729306605542" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
     </e>
     <e n="EditorEnter">
-      <i c="4269" l="1729024872544" />
+      <i c="4271" l="1729306500906" />
     </e>
     <e n="EditorEscape">
-      <i c="5507" l="1729242887208" />
+      <i c="5529" l="1729306607415" />
     </e>
     <e n="EditorLeft">
       <i c="123" l="1727586456683" />
@@ -100,7 +100,7 @@
       <i c="17" l="1727322175208" />
     </e>
     <e n="EditorLineStart">
-      <i c="2" l="1726079697689" />
+      <i c="4" l="1729306447870" />
     </e>
     <e n="EditorLookupUp">
       <i c="2" l="1717078695047" />
@@ -151,7 +151,7 @@
       <i c="1" l="1717642941469" />
     </e>
     <e n="EditorTab">
-      <i c="165" l="1727584013111" />
+      <i c="172" l="1729306489740" />
     </e>
     <e n="EditorToggleInsertState">
       <i c="3" l="1725696070515" />
@@ -160,7 +160,7 @@
       <i c="1" l="1723437135048" />
     </e>
     <e n="EditorUp">
-      <i c="8236" l="1729024871977" />
+      <i c="8237" l="1729306508901" />
     </e>
     <e n="ExportSettings">
       <i c="1" l="1715782453655" />
@@ -250,22 +250,22 @@
       <i c="6" l="1727584796086" />
     </e>
     <e n="SaveAll">
-      <i c="2875" l="1729245240152" />
+      <i c="2878" l="1729306610707" />
     </e>
     <e n="SearchEverywhere">
       <i c="31" l="1727604884362" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="114" l="1729285824439" />
+      <i c="115" l="1729306395276" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="1189" l="1729025144346" />
+      <i c="1211" l="1729306593855" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
     </e>
     <e n="ShowSettings">
-      <i c="70" l="1729285825496" />
+      <i c="71" l="1729306396156" />
     </e>
     <e n="SplitVertically">
       <i c="1" l="1726765416581" />
@@ -373,7 +373,7 @@
       <i c="6" l="1724077380294" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="95348" l="1729245238522" />
+      <i c="95527" l="1729306605881" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="43" l="1725119039751" />
@@ -400,7 +400,7 @@
       <i c="37" l="1727503163987" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="32" l="1729245341120" />
+      <i c="33" l="1729321159417" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="1" l="1723711415745" />
@@ -454,7 +454,7 @@
       <i c="1" l="1716930488561" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="20" l="1729024906517" />
+      <i c="25" l="1729306494240" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAsyncBackendDelegatingActionPromoter$DumbAwareActionWrapper">
       <i c="33" l="1726166352633" />
@@ -475,7 +475,7 @@
       <i c="1" l="1719448160078" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="2999" l="1729245239963" />
+      <i c="3002" l="1729306610702" />
     </e>
   </component>
 </application>
