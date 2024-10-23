@@ -2,6 +2,13 @@
   <component name="ProjectManager">
     <defaultProject>
       <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="MaterialThemeProjectNewConfig">
+        <option name="metadata">
+          <MTProjectMetadataState>
+            <option name="userId" value="-535b86c5:192a7efc94f:-7fff" />
+          </MTProjectMetadataState>
+        </option>
+      </component>
       <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;

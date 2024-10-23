@@ -1595,10 +1595,10 @@
       <jump line="18" column="39" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
       <jump line="0" column="20" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="70" column="56" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
       <jump line="14" column="7" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" protocol="file" />
       <jump line="66" column="20" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerMovementScript.cs" protocol="file" />
       <jump line="112" column="18" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" protocol="file" />
+      <jump line="70" column="56" filename="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" protocol="file" />
     </project>
     <project id="Assets-c9705a6c">
       <jump line="2" column="13" filename="$USER_HOME$/Data/Projects/Unity/UnityRicer/UnityRicer/Assets/UnityRicer/Font/FontChangerScript.cs" protocol="file" />
@@ -1728,7 +1728,7 @@
         <mark key="]" line="19" column="0" />
         <mark key="." line="19" column="0" />
       </file>
-      <file name="/" timestamp="1729306471169">
+      <file name="/" timestamp="1729394537340">
         <mark key="&quot;" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/ZombiePlague/ZombiePlague/Assets/Scripts/PlayerMovementScript.cs" timestamp="1727329318063">

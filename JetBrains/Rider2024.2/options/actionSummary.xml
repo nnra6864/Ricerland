@@ -250,13 +250,13 @@
       <i c="6" l="1727584796086" />
     </e>
     <e n="SaveAll">
-      <i c="2878" l="1729306610707" />
+      <i c="2879" l="1729394543260" />
     </e>
     <e n="SearchEverywhere">
       <i c="31" l="1727604884362" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="115" l="1729306395276" />
+      <i c="119" l="1729394465632" />
     </e>
     <e n="ShowIntentionActions">
       <i c="1211" l="1729306593855" />
@@ -265,7 +265,7 @@
       <i c="1" l="1723602793199" />
     </e>
     <e n="ShowSettings">
-      <i c="71" l="1729306396156" />
+      <i c="73" l="1729394466986" />
     </e>
     <e n="SplitVertically">
       <i c="1" l="1726765416581" />
@@ -310,7 +310,7 @@
       <i c="1" l="1723516037314" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="13" l="1729245004669" />
+      <i c="14" l="1729394447827" />
     </e>
     <e n="WelcomeScreen.RemoveSelected">
       <i c="9" l="1723516043995" />
@@ -334,7 +334,7 @@
       <i c="2" l="1727877516552" />
     </e>
     <e n="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction">
-      <i c="15" l="1729284973465" />
+      <i c="16" l="1729394522489" />
     </e>
     <e n="com.intellij.codeInsight.daemon.impl.DaemonTooltipWithActionRenderer$addActionsRow$2">
       <i c="1" l="1714990534838" />
@@ -367,7 +367,7 @@
       <i c="4" l="1727945182816" />
     </e>
     <e n="com.intellij.ide.ui.OpenEditorSchemeConfigurableAction">
-      <i c="7" l="1729284974804" />
+      <i c="8" l="1729394524000" />
     </e>
     <e n="com.intellij.notification.NotificationAction$Simple">
       <i c="6" l="1724077380294" />
@@ -436,10 +436,10 @@
       <i c="1" l="1717072495955" />
     </e>
     <e n="com.intellij.ui.components.BasicOptionButtonUI$ActionDelegate">
-      <i c="5" l="1726670975201" />
+      <i c="6" l="1729394455996" />
     </e>
     <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
-      <i c="15" l="1726582506797" />
+      <i c="17" l="1729394214189" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectNextAction">
       <i c="53" l="1728125654786" />
@@ -475,7 +475,7 @@
       <i c="1" l="1719448160078" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="3002" l="1729306610702" />
+      <i c="3003" l="1729394543108" />
     </e>
   </component>
 </application>

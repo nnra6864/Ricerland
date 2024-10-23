@@ -37,7 +37,7 @@
           "isActiveOnStart": true,
           "isVisible": true,
           "weight": 0.10782967,
-          "sideWeight": 0.83308554
+          "sideWeight": 0.832342
         },
         {
           "id": "Bookmarks",
@@ -52,7 +52,7 @@
           "isActiveOnStart": true,
           "isVisible": true,
           "weight": 0.10782967,
-          "sideWeight": 0.1669145,
+          "sideWeight": 0.167658,
           "isSplit": true
         },
         {

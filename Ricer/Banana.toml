@@ -1,0 +1,160 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+#Theme
+bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+icons = "Nordzy-dark"
+cursor = "Bibata-Modern-Ice"
+gtk_theme = "OomoxRicer"
+nvim_theme = "nord"
+
+#Font
+font = "Courier Prime Code"
+min_font_size = 10
+small_font_size = 13
+font_size = 15
+big_font_size = 17
+max_font_size = 32
+
+#Misc
+terminal = "alacritty"
+opacity = 0.8
+inactive_opacity = 0.9
+outline_size = 2
+rounding = 10
+cursor_size = 32
+cursor_rot = -21
+notification_duration = 3
+
+#Color Values
+highlight_hsv = "h+0.s+0.v+10"
+placeholder_hsv = "h+0.s+0.v-10"
+inactive_hsv = "h+0.s+0.v-15"
+disabled_hsv = "h+0.s-5.v-15"
+
+[Colors]
+#Terminal
+black = "0f0b0f"
+red = "66514c"
+green = "b05948"
+yellow = "A06550"
+blue = "dc9071"
+magenta = "937E81"
+cyan = "e1a594"
+white = "aaa08e"
+
+#terminal bright
+br_black = "aaa08e"
+br_red = "66514c"
+br_green = "b05948"
+br_yellow = "a06550"
+br_blue = "dc9071"
+br_magenta = "937e81"
+br_cyan = "e1a594"
+br_white = "f4e5cb"
+
+#Foreground
+foreground = "$white"
+foreground_highlight = "$foreground.$highlight_hsv"
+foreground_placeholder = "$foreground.$placeholder_hsv"
+foreground_inactive = "$foreground.$inactive_hsv"
+foreground_disabled = "$foreground.$disabled_hsv"
+
+#Foreground Alternative
+foreground_alt = "$br_white"
+foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
+foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
+foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
+foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
+
+#Background
+background = "$black"
+background_highlight = "$background.$highlight_hsv"
+background_inactive = "$background.$inactive_hsv"
+background_disabled = "$background.$disabled_hsv"
+
+#Background Alternative
+background_alt = "$black"
+background_highlight_alt = "$background_alt.$highlight_hsv"
+background_inactive_alt = "$background_alt.$inactive_hsv"
+background_disabled_alt = "$background_alt.$disabled_hsv"
+
+#Button Background
+button = "$black"
+button_highlight = "$button.$highlight_hsv"
+button_inactive = "$button.$inactive_hsv"
+button_disabled = "$button.$disabled_hsv"
+
+#Button Foreground
+button_text = "$br_white"
+button_text_highlight = "$button_text.$highlight_hsv"
+button_text_inactive = "$button_text.$inactive_hsv"
+button_text_disabled = "$button_text.$disabled_hsv"
+
+#Outline
+outline = "$br_white"
+outline_alt = "$br_white"
+outline_inactive = "$outline.v-50"
+outline_inactive_alt = "$outline_alt.v-50"
+
+#Shadow
+shadow = "$black"
+shadow_inactive = "$shadow.$inactive_hsv"
+
+#Link
+link = "$white"
+link_visited = "$white"
+
+#Code
+code_var = "$foreground"
+code_type = "$red"
+code_keyword = "$green"
+code_attribute = "$foreground"
+
+code_const = "$red"
+code_bracket = "$foreground"
+code_operator = "$red"
+code_punctuation = "$green"
+
+code_str = "$green"
+code_str_literal = "$foreground"
+code_special_char = "$foreground_highlight_alt"
+code_comment = "$foreground_inactive"
+
+#Music Visualizer
+visualizer = "$white"
+visualizer_outline = "$cyan"
+
+[Files]
+Hyprland = "~/.config/hypr/hyprland.conf"
+Alacritty = "~/.config/alacritty.toml"
+NvimTheme = "~/.config/nvim/lua/theme.lua"
+RofiConfig = "~/.config/rofi/config.rasi"
+RofiTheme = "~/.config/rofi/themes/theme.rasi"
+GLavaRadial = "~/.config/glava/radial.glsl"
+GTKSettings = "~/.local/share/nwg-look/gsettings"
+Dunst = "~/.config/dunst/dunstrc"
+Fonts = "~/.config/fontconfig/fonts.conf"
+Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = "~/.config/qt5ct/colors/theme.conf"
+QtColors = "~/.config/qt6ct/colors/theme.conf"
+KDEGlobals = "~/.config/kdeglobals"
+FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
+YTEnhancer = "~/.config/YouTubeEnhancer.json"
+Kitty = "~/.config/kitty/kitty.conf"
+Pywalfox = "~/.cache/wal/colors.json"
+Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
+RicerHub = "~/.config/RicerHub.py"
+MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
+Oomox = "~/.config/OomoxRicer"
+Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
+DarkReader = "~/.config/Dark-Reader-Settings.json"
+Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
