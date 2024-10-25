@@ -360,9 +360,6 @@
         "PreviewMessage": {
             "enabled": true
         },
-        "PronounDB": {
-            "enabled": false
-        },
         "QuickMention": {
             "enabled": true
         },
@@ -713,6 +710,15 @@
         },
         "FullSearchContext": {
             "enabled": true
+        },
+        "UserMessagesPronouns": {
+            "enabled": false
+        },
+        "DynamicImageModalAPI": {
+            "enabled": true
+        },
+        "FixImagesQuality": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -725,6 +731,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1729578551936
+        "settingsSyncVersion": 1729854333979
     }
 }

@@ -75,7 +75,7 @@ Math ▸ Subtract
 Math ▸ Add
    CubeMat
 Input ▸ Ambient Occlusion
-Color Ramp ▸ Fac
 Mix ▸ Color
    OriginalMat
 Bump ▸ Strength
+Color Ramp ▸ Fac
