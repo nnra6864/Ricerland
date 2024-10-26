@@ -170,7 +170,7 @@ end
 
 function combine_mics
     # Create a new virtual source that other apps can use as input
-    set SOURCE_NAME "combined_mic"
+    set SOURCE_NAME "CombinedMic"
 
     # First create a null sink that will serve as our mixing point
     pactl load-module module-null-sink sink_name="$SOURCE_NAME"_mix sink_properties=device.description="$SOURCE_NAME"_mix
@@ -192,6 +192,27 @@ function combine_mics
 
     echo "All microphone inputs have been combined into the virtual source '$SOURCE_NAME'"
     echo "You can now select '$SOURCE_NAME' as an input device in your applications"
+end
+
+function output_input
+    # Create a new virtual source that other apps can use as input
+    set SOURCE_NAME "OutputInput"
+
+    # Create a null sink to serve as the mixing point
+    pactl load-module module-null-sink sink_name="$SOURCE_NAME"_mix sink_properties=device.description="$SOURCE_NAME"_mix
+
+    # Create a virtual source that monitors the null sink, making the mixed audio available as input
+    pactl load-module module-virtual-source source_name=$SOURCE_NAME master="$SOURCE_NAME"_mix.monitor source_properties=device.description="OutputInput"
+
+    # Get the name of the current default output sink
+    set DEFAULT_SINK (pactl info | grep "Default Sink" | awk '{print $3}')
+
+    # Create a loopback from the default sink's monitor to our null sink
+    if test -n "$DEFAULT_SINK"
+        pactl load-module module-loopback source="$DEFAULT_SINK.monitor" sink="$SOURCE_NAME"_mix latency_msec=1
+    else
+        echo "Error: Could not find default output sink."
+    end
 end
 
 zoxide init fish | source

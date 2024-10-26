@@ -11,11 +11,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="3cc0jd7f46a6f" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="2cxetojcmcaux" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="528">
+            <state>
               <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
@@ -28,7 +28,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="864">
+            <state>
               <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
             </state>
           </provider>
@@ -38,8 +38,8 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="2128">
-              <caret line="70" column="59" lean-forward="true" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+            <state relative-caret-position="397">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -48,7 +48,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="168">
+            <state>
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -63,12 +63,12 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 94,
-      "lastUsed": 1729394466067
+      "usageCount": 98,
+      "lastUsed": 1729926029695
     },
     "WebPreview": {
-      "usageCount": 1,
-      "lastUsed": 1729394437978
+      "usageCount": 2,
+      "lastUsed": 1729926035816
     }
   }
 }]]></component>
@@ -80,10 +80,10 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -95,7 +95,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="94" lastUsage="1729394466067" />
+      <summary usageCount="98" lastUsage="1729926029695" />
     </language>
   </component>
   <component name="ProjectView">
@@ -152,8 +152,8 @@
         <option name="search-dependencies" value="false" />
         <option name="show-unreal-project-files" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="RiderPerAppToolWindowOpenedTWKeeper">
@@ -363,7 +363,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59270000" />
+    <option name="totallyTimeSpent" value="59285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,6 +419,9 @@
       <window_info anchor="right" id="IL" order="13" weight="0.18004316" />
       <unified_weights bottom="0.21786723" left="0.10782967" right="0.06779827" />
     </layoutV2>
+    <recentWindows>
+      <value>Problems View</value>
+    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="2210" y="370" key="#Context_Actions" timestamp="1727587513648">
@@ -467,9 +470,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state>
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -477,27 +490,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2128">
-          <caret line="70" column="59" lean-forward="true" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAimScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
+        <state>
           <caret line="112" column="18" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovementScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/GroundCheckScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="397">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
