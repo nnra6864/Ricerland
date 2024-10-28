@@ -36,8 +36,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.10782967,
-          "sideWeight": 0.832342
+          "weight": 0.36737508,
+          "sideWeight": 0.831384
         },
         {
           "id": "Bookmarks",
@@ -51,8 +51,8 @@
           "order": 5,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.10782967,
-          "sideWeight": 0.167658,
+          "weight": 0.36737508,
+          "sideWeight": 0.16861598,
           "isSplit": true
         },
         {
@@ -122,6 +122,14 @@
           "anchor": "BOTTOM",
           "isVisible": true,
           "weight": 0.22563559
+        },
+        {
+          "id": "UnrealBuildTool",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.58792377
         },
         {
           "id": "Services",
@@ -210,7 +218,7 @@
           "anchor": "RIGHT",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.06779827,
+          "weight": 0.23160173,
           "sideWeight": 0.34573698
         },
         {
@@ -251,9 +259,9 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.10782967,
-        "bottom": 0.21786723,
-        "right": 0.06779827
+        "left": 0.36737508,
+        "bottom": 0.58792377,
+        "right": 0.23160173
       }
     }
   }

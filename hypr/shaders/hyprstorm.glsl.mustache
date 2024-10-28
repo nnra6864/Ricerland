@@ -17,8 +17,8 @@ uniform float time;
 //Snow settings
 float snowOpacity = 0.5;
 float snowSpeedX = 0.01; //How fast is switches sides
-float snowSpeedY = 10.0;
-float snowOffsetX = 0.05;
+float snowSpeedY = 5.0;
+float snowOffsetX = 0.75;
 vec3 snowCol = vec3(1.0);
 
 //Fog settings
@@ -35,8 +35,9 @@ float snowLayer(vec2 uv, float scale) {
     float t = time / scale;
     
     //Animate X and Y
+    float wind = cos(time * snowSpeedX);
     uv.y -= t * snowSpeedY;
-    uv.x += cos(time * snowSpeedX) * snowOffsetX * (uv.y * scale);
+    uv.x += wind * snowOffsetX;
     uv *= scale;
     
     //I have no earthly clue what's being done here

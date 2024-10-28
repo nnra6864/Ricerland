@@ -247,7 +247,7 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Escapeon – ~/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" opened="true" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
+            <RecentProjectMetaInfo frameTitle="Escapeon – ~/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
               <option name="activationTimestamp" value="1729926045205" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.23726.100" />
@@ -261,8 +261,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Default – ~/Data/UnrealEngine/README.md" opened="true" projectWorkspaceId="2o4BhsMczt02MiujwvVcFXsJMZd">
+              <option name="activationTimestamp" value="1730123154307" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.23726.100" />
+              <option name="buildTimestamp" value="1729617600000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="2567" y="12" width="2541" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1730120270555" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" />
   </component>
 </application>

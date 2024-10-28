@@ -1676,6 +1676,10 @@
       <jump line="5" column="4" filename="$USER_HOME$/Data/Projects/Unity/BeatShifter/BeatShifter/Assets/NnUtils/Scripts/NnManager.cs" protocol="file" />
       <jump line="28" column="8" filename="$USER_HOME$/Data/Projects/Unity/BeatShifter/BeatShifter/Assets/NnUtils/Scripts/NnManager.cs" protocol="file" />
     </project>
+    <project id="Default-a049ec1d">
+      <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/README.md" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
@@ -1769,12 +1773,6 @@
         <mark key="." line="14" column="9" />
         <mark key="^" line="14" column="10" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/SaveTheNord/SaveTheNord/Assets/Scripts/Core/Hotbar.cs" timestamp="1726170278362">
-        <mark key="[" line="68" column="49" />
-        <mark key="]" line="68" column="51" />
-        <mark key="^" line="68" column="51" />
-        <mark key="." line="68" column="50" />
-      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerScript.cs" timestamp="1729306512818">
         <mark key="&quot;" line="18" column="24" />
         <mark key="[" line="20" column="114" />
@@ -1796,6 +1794,9 @@
         <mark key="]" line="0" column="0" />
         <mark key="^" line="10" column="49" />
         <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" timestamp="1730120288232">
+        <mark key="&quot;" line="0" column="0" />
       </file>
     </localmarks>
   </component>

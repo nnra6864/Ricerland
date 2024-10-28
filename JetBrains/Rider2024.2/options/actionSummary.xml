@@ -244,7 +244,7 @@
       <i c="3" l="1719447643543" />
     </e>
     <e n="RiderOpenSolution">
-      <i c="13" l="1729021953079" />
+      <i c="15" l="1730120260910" />
     </e>
     <e n="RunAnything">
       <i c="6" l="1727584796086" />
@@ -256,7 +256,7 @@
       <i c="31" l="1727604884362" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="119" l="1729394465632" />
+      <i c="120" l="1730119092220" />
     </e>
     <e n="ShowIntentionActions">
       <i c="1211" l="1729306593855" />
@@ -358,7 +358,7 @@
       <i c="1" l="1727876993134" />
     </e>
     <e n="com.intellij.ide.plugins.PluginManagerMain$3">
-      <i c="3" l="1723346194720" />
+      <i c="4" l="1730119114369" />
     </e>
     <e n="com.intellij.ide.plugins.newui.SelectionBasedPluginModelAction$UninstallAction">
       <i c="1" l="1729245220744" />
@@ -406,7 +406,7 @@
       <i c="1" l="1723711415745" />
     </e>
     <e n="com.intellij.openapi.updateSettings.impl.UpdateSettingsEntryPointActionProvider$3">
-      <i c="4" l="1723345976741" />
+      <i c="5" l="1730119094319" />
     </e>
     <e n="com.intellij.openapi.wm.impl.DockToolWindowAction">
       <i c="2" l="1717164797270" />
@@ -415,7 +415,7 @@
       <i c="1" l="1717164564734" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="59" l="1728125086433" />
+      <i c="61" l="1730120290247" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="9" l="1727935459674" />
