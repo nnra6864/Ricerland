@@ -1,11 +1,16 @@
 [![Hyprnord](HyprnordLogo.png "Hyprnord")](https://www.youtube.com/watch?v=mIKWoNQUwN4)
 # [Nordic](https://www.nordtheme.com/) [Hyprland](https://hyprland.org/) Rice
 
-# Usage
+# Setup
 ## Cloning
-To clone the repo, run the following commands:
+To clone the repo, run these commands:
 ```sh
+cd ~/.config;
 git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git;
+cd Ricerland;
+mv * ..;
+cd ..;
+rm -rf Ricerland;
 ```
 If you clone without using the '--recurse-submodules` you won't get any submodules, such as shaders, ricer stuff etc.
 ## Updating
