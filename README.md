@@ -1,6 +1,19 @@
 [![Hyprnord](HyprnordLogo.png "Hyprnord")](https://www.youtube.com/watch?v=mIKWoNQUwN4)
 # [Nordic](https://www.nordtheme.com/) [Hyprland](https://hyprland.org/) Rice
 
+# Usage
+## Cloning
+To clone the repo, run the following commands:
+```sh
+git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git;
+```
+If you clone without using the '--recurse-submodules` you won't get any submodules, such as shaders, ricer stuff etc.
+## Updating
+To pull all the latest changes, including submodules, run:
+```sh
+git submodule update --remote --merge
+```
+
 # Wallpapers
 - [Nordic Ruins](https://www.heroscreen.cc/2023/05/4k-wallpaper-nordic-ruins-in-snowy.html)
 - [Snow Mountains](https://www.wallpaperflare.com/mountains-snow-nordic-landscapes-wallpaper-yujbl)
