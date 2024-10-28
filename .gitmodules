@@ -1,0 +1,3 @@
+[submodule "hypr/shaders/Hyprstorm"]
+	path = hypr/shaders/Hyprstorm
+	url = https://github.com/nnra6864/Hyprstorm.git
