@@ -1,0 +1,44 @@
+/*
+ * Grayscale with Hue Shift
+ */
+
+precision highp float;
+varying vec2 v_texcoord;
+uniform sampler2D tex;
+uniform float time;
+
+vec3 hsv2rgb(vec3 c) {
+    float h = c.x * 6.0;
+    float s = c.y;
+    float v = c.z;
+    float k = floor(h);
+    float f = h - k;
+    float p = v * (1.0 - s);
+    float q = v * (1.0 - f * s);
+    float t = v * (1.0 - (1.0 - f) * s);
+    
+    if (k == 0.0) return vec3(v, t, p);
+    else if (k == 1.0) return vec3(q, v, p);
+    else if (k == 2.0) return vec3(p, v, t);
+    else if (k == 3.0) return vec3(p, q, v);
+    else if (k == 4.0) return vec3(t, p, v);
+    else return vec3(v, p, q);
+}
+
+void main() {
+    vec4 color = texture2D(tex, v_texcoord);
+    
+    // Convert to grayscale by calculating the luminance
+    float grayscale = dot(color.rgb, vec3(0.299, 0.587, 0.114));
+    
+    // Create an HSV color with grayscale value as brightness, animated hue, and fixed saturation
+    vec3 hsv = vec3(mod(time * 0.1, 1.0), 1.0, grayscale); // Adjust 0.1 for hue shift speed
+    
+    // Convert back to RGB
+    vec3 shiftedColor = hsv2rgb(hsv) * vec3(1);
+    
+    gl_FragColor = vec4(shiftedColor, color.a);
+}
+
+// vim: ft=glsl
+

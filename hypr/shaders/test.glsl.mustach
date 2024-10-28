@@ -1,0 +1,79 @@
+/*
+ * Fog Effect with Layered Noise
+ */
+
+precision highp float;
+varying vec2 v_texcoord;
+uniform sampler2D tex;
+uniform float time;
+
+// Simple noise function
+float noise(vec2 p) {
+    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
+}
+
+// Smooth noise
+float smoothNoise(vec2 p) {
+    vec2 i = floor(p);
+    vec2 f = fract(p);
+    float a = noise(i);
+    float b = noise(i + vec2(1.0, 0.0));
+    float c = noise(i + vec2(0.0, 1.0));
+    float d = noise(i + vec2(1.0, 1.0));
+    vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+}
+
+// Create a layered fog effect with additive noise
+float fogLayer(vec2 uv, float speed, float scale) {
+    uv += vec2(sin(time * speed), cos(time * speed)) * 0.2;
+    return smoothNoise(uv * scale) * 0.5;
+}
+
+// Snowfall effect function
+float snowfall(vec2 uv, float density, float size, float fallSpeed) {
+    vec2 p = floor(uv * density) / density;
+
+    // Randomize snowflake positions based on density and time
+    uv.y -= time * fallSpeed;  // Move down for falling effect
+    float xOffset = noise(p + vec2(time * 0.1));
+    uv.x += sin(time * 0.5 + xOffset);  // Add horizontal randomness based on sin function
+
+    // Offset position for animated, falling effect
+    vec2 offset = fract(uv * density) - vec2(0.5);
+    float snowflake = smoothstep(size, 0.0, length(offset));
+
+    // Randomize snowflake appearance
+    float randomness = noise(p + vec2(time * 0.1, time * 0.1));
+    return snowflake * step(0.0, randomness);  // Lower threshold for denser snow
+}
+
+void main() {
+    vec4 color = texture2D(tex, v_texcoord);
+    
+    // Fog layers with different speeds and scales
+    float fog = fogLayer(v_texcoord, 0.1, 3.0);
+    fog += fogLayer(v_texcoord, 0.15, 5.0);
+    fog += fogLayer(v_texcoord, 0.2, 8.0);
+    
+    // Clamp fog intensity and add to base color
+    fog = pow(fog, 5.0); //Raise to a higher power to reduce density
+    fog = clamp(fog, 0.0, 1.0);  // Adjust maximum intensity if needed
+    fog *= 0.1; //Multiply to adjust intensity
+    vec3 fogColor = vec3(0.7, 0.8, 0.9);  // Light grayish-blue fog color
+    vec3 finalColor = mix(color.rgb, fogColor, fog);
+
+    // Snowfall effect parameters
+    float snowDensity = 50.0;    // Controls how many snowflakes appear
+    float snowSize = 0.02;       // Controls the size of each snowflake
+    float fallSpeed = 0.001;       // Controls the speed at which snow falls
+
+    // Add snowfall layer
+    float snow = snowfall(v_texcoord, snowDensity, snowSize, fallSpeed);
+    finalColor = mix(finalColor, vec3(1.0), snow);  // Blend snow as white circles
+    
+    gl_FragColor = vec4(finalColor, color.a);
+}
+
+// vim: ft=glsl
+

@@ -1,0 +1,52 @@
+/*
+ * Fog Effect with Layered Noise
+ */
+
+precision highp float;
+varying vec2 v_texcoord;
+uniform sampler2D tex;
+uniform float time;
+
+// Simple noise function
+float noise(vec2 p) {
+    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
+}
+
+// Smooth noise
+float smoothNoise(vec2 p) {
+    vec2 i = floor(p);
+    vec2 f = fract(p);
+    float a = noise(i);
+    float b = noise(i + vec2(1.0, 0.0));
+    float c = noise(i + vec2(0.0, 1.0));
+    float d = noise(i + vec2(1.0, 1.0));
+    vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+}
+
+// Create a layered fog effect with additive noise
+float fogLayer(vec2 uv, float speed, float scale) {
+    uv += vec2(sin(time * speed), cos(time * speed)) * 0.2;
+    return smoothNoise(uv * scale) * 0.5;
+}
+
+void main() {
+    vec4 color = texture2D(tex, v_texcoord);
+    
+    // Fog layers with different speeds and scales
+    float fog = fogLayer(v_texcoord, 0.1, 3.0);
+    fog += fogLayer(v_texcoord, 0.15, 5.0);
+    fog += fogLayer(v_texcoord, 0.2, 8.0);
+    
+    // Clamp fog intensity and add to base color
+    fog = pow(fog, 5.0); //Raise to a higher power to reduce density
+    fog = clamp(fog, 0.0, 1.0);  // Adjust maximum intensity if needed
+    fog *= 0.05; //Multiply to adjust intensity
+    vec3 fogColor = vec3(0.7, 0.8, 0.9);  // Light grayish-blue fog color
+    vec3 finalColor = mix(color.rgb, fogColor, fog);
+    
+    gl_FragColor = vec4(finalColor, color.a);
+}
+
+// vim: ft=glsl
+

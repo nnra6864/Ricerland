@@ -31,7 +31,7 @@ inactive_opacity = 0.9
 outline_size = 2
 rounding = 10
 cursor_size = 32
-cursor_rot = -21
+cursor_rot = 21
 notification_duration = 3
 
 #Color Values
