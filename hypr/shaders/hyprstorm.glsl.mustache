@@ -15,20 +15,18 @@ uniform vec2 resolution;
 uniform float time;
 
 //Snow settings
-float snowOpacity = 0.5;
-float snowSpeedX = 0.01; //How fast is switches sides
-float snowSpeedY = 5.0;
-float snowOffsetX = 0.75;
-vec3 snowCol = vec3(1.0);
+vec3 snowCol = vec3(1.0, 1.0, 1.0) * 1.0; //Color * Intensity
+float snowSpeedY = 2.5; //How fast it falls down
+float snowSpeedX = 0.01; //How fast it switches sides
+float snowOffsetX = 0.75; //How much it's moved on the X axis
 
 //Fog settings
-float fogOpacity = 0.25;
+vec3 fogCol = vec3(0.6, 0.75, 0.9) * 0.15; //Color * Intensity
 float fogPow = 0.75; //Determins the density of the fog, lower the denser
-float fogSpeed = 0.05;
-float fogScale = 0.1;
-float smallFogScale = 10.0;
-float smallFogSpeed = 0.1;
-vec3 fogCol = vec3(0.6, 0.75, 0.9);
+float fogSpeed = 0.05; //How fast the fog moves
+float fogScale = 0.1; //How big the fog is, smaller the bigger
+float smallFogScale = 10.0; //How fast the small fog moves
+float smallFogSpeed = 0.1; //How big the small fog is, smaller the bigger
 
 float snowLayer(vec2 uv, float scale) {
     //Scale time so that bigger particles fall faster
@@ -91,7 +89,7 @@ float getSnow() {
     sc += snowLayer(uv, 30.0) * 0.5;
     sc += snowLayer(uv, 20.0);
     
-    return sc * snowOpacity;
+    return sc;
 }
 
 float getFog() {
@@ -103,7 +101,6 @@ float getFog() {
     
     //Scale fog density and intensity
     fog = pow(fog, fogPow);
-    fog *= fogOpacity;
     
     return fog;
 }
