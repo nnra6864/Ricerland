@@ -36,8 +36,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.36737508,
-          "sideWeight": 0.831384
+          "weight": 0.24656594,
+          "sideWeight": 0.8310153
         },
         {
           "id": "Bookmarks",
@@ -51,8 +51,8 @@
           "order": 5,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.36737508,
-          "sideWeight": 0.16861598,
+          "weight": 0.24656594,
+          "sideWeight": 0.16898471,
           "isSplit": true
         },
         {
@@ -67,11 +67,6 @@
         },
         {
           "id": "TypeScript",
-          "anchor": "BOTTOM",
-          "isShowStripeButton": false
-        },
-        {
-          "id": "Build",
           "anchor": "BOTTOM",
           "isShowStripeButton": false
         },
@@ -115,6 +110,14 @@
           "id": "Problems",
           "order": 2,
           "anchor": "BOTTOM"
+        },
+        {
+          "id": "Build",
+          "order": 5,
+          "anchor": "BOTTOM",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.4424435
         },
         {
           "id": "Debug",
@@ -176,7 +179,7 @@
           "id": "Notifications",
           "order": 0,
           "anchor": "RIGHT",
-          "weight": 0.25892857,
+          "weight": 0.23165229,
           "sideWeight": 0.50036764
         },
         {
@@ -218,7 +221,7 @@
           "anchor": "RIGHT",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.23160173,
+          "weight": 0.23165229,
           "sideWeight": 0.34573698
         },
         {
@@ -259,9 +262,9 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.36737508,
-        "bottom": 0.58792377,
-        "right": 0.23160173
+        "left": 0.24656594,
+        "bottom": 0.4424435,
+        "right": 0.23165229
       }
     }
   }

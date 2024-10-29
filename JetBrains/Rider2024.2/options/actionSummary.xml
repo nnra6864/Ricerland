@@ -45,6 +45,9 @@
     <e n="BraceOrQuoteOut">
       <i c="47" l="1718617447235" />
     </e>
+    <e n="BuildSelection">
+      <i c="1" l="1730132069552" />
+    </e>
     <e n="ChangeLaf">
       <i c="6" l="1729244983751" />
     </e>
@@ -238,13 +241,13 @@
       <i c="1" l="1717164779081" />
     </e>
     <e n="Resume">
-      <i c="18" l="1719449500332" />
+      <i c="19" l="1730132064989" />
     </e>
     <e n="RiderNewSolution">
       <i c="3" l="1719447643543" />
     </e>
     <e n="RiderOpenSolution">
-      <i c="15" l="1730120260910" />
+      <i c="17" l="1730132042901" />
     </e>
     <e n="RunAnything">
       <i c="6" l="1727584796086" />
@@ -290,6 +293,9 @@
     </e>
     <e n="Tree-selectNext">
       <i c="1" l="1727583782183" />
+    </e>
+    <e n="Tree-selectParent">
+      <i c="1" l="1730140914161" />
     </e>
     <e n="TriggerPlayInUnity">
       <i c="2" l="1717726104497" />
@@ -370,7 +376,7 @@
       <i c="8" l="1729394524000" />
     </e>
     <e n="com.intellij.notification.NotificationAction$Simple">
-      <i c="6" l="1724077380294" />
+      <i c="7" l="1730143818650" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
       <i c="95529" l="1729926034818" />
@@ -379,7 +385,7 @@
       <i c="43" l="1725119039751" />
     </e>
     <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
-      <i c="1" l="1716297278023" />
+      <i c="2" l="1730136311436" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorGutterComponentImpl$CloseAnnotationsAction">
       <i c="2" l="1724002447245" />
@@ -400,7 +406,7 @@
       <i c="37" l="1727503163987" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="33" l="1729321159417" />
+      <i c="34" l="1730143953589" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="1" l="1723711415745" />
@@ -415,10 +421,10 @@
       <i c="1" l="1717164564734" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="61" l="1730120290247" />
+      <i c="65" l="1730143944855" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="9" l="1727935459674" />
+      <i c="10" l="1730132027444" />
     </e>
     <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
       <i c="22" l="1726582517704" />

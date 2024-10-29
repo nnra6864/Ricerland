@@ -3,7 +3,7 @@
 
 # Setup
 ## Cloning
-To clone the repo, run these commands:
+Simply run this:
 ```sh
 cd ~/.config;
 git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git;
@@ -13,6 +13,7 @@ cd ..;
 rm -rf Ricerland;
 ```
 If you clone without using the '--recurse-submodules` you won't get any submodules, such as shaders, ricer stuff etc.
+
 ## Updating
 To pull all the latest changes, including submodules, run:
 ```sh

@@ -24,8 +24,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "Markdown": {
-      "usageCount": 3,
-      "lastUsed": 1730120270232
+      "usageCount": 5,
+      "lastUsed": 1730132049587
     },
     "PLAIN_TEXT": {
       "usageCount": 1,
@@ -56,7 +56,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="Markdown">
-      <summary usageCount="3" lastUsage="1730120270234" />
+      <summary usageCount="5" lastUsage="1730132049589" />
     </language>
     <language id="TEXT">
       <summary usageCount="1" lastUsage="1730120282296" />
@@ -67,7 +67,22 @@
     <panes>
       <pane id="SolutionExplorer">
         <subPane>
-          <expand />
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="UnrealEngine" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="UnrealEngine" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Engine" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="UnrealEngine" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Programs" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
           <select>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -101,7 +116,7 @@
         </entry>
         <entry key="Build">
           <value>
-            <window_info anchor="bottom" id="Build" show_stripe_button="false" />
+            <window_info active="true" anchor="bottom" id="Build" order="5" visible="true" weight="0.4424435" />
           </value>
         </entry>
         <entry key="Codeium Chat">
@@ -191,7 +206,7 @@
         </entry>
         <entry key="Notifications">
           <value>
-            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.25892857" />
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.23165229" />
           </value>
         </entry>
         <entry key="NuGet">
@@ -206,12 +221,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23160173" />
+            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23165229" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.831384" visible="true" weight="0.36737508" />
+            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.8310153" visible="true" weight="0.24656594" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -236,7 +251,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info active="true" id="TODO" order="5" sideWeight="0.16861598" side_tool="true" visible="true" weight="0.36737508" />
+            <window_info active="true" id="TODO" order="5" sideWeight="0.16898471" side_tool="true" visible="true" weight="0.24656594" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -298,7 +313,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3716000" />
+    <option name="totallyTimeSpent" value="11492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,13 +333,12 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.831384" visible="true" weight="0.36737508" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.8310153" visible="true" weight="0.24656594" />
       <window_info id="Bookmarks" order="5" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
-      <window_info active="true" id="TODO" order="5" sideWeight="0.16861598" side_tool="true" visible="true" weight="0.36737508" />
+      <window_info active="true" id="TODO" order="5" sideWeight="0.16898471" side_tool="true" visible="true" weight="0.24656594" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" show_stripe_button="false" />
       <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
@@ -333,6 +347,7 @@
       <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.22563559" />
       <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info active="true" anchor="bottom" id="Build" order="5" visible="true" weight="0.4424435" />
       <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.22563559" />
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="5" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
@@ -342,22 +357,23 @@
       <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
-      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.25892857" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.23165229" />
       <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.32977885" />
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="10" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23160173" />
+      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23165229" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="13" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="IL Viewer" order="13" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="13" weight="0.3299647" />
       <window_info anchor="right" id="IL" order="13" weight="0.18004316" />
-      <unified_weights bottom="0.58792377" left="0.36737508" right="0.23160173" />
+      <unified_weights bottom="0.4424435" left="0.24656594" right="0.23165229" />
     </layoutV2>
     <recentWindows>
       <value>Problems View</value>
-      <value>UnrealBuildTool</value>
+      <value>Build</value>
+      <value>Notifications</value>
       <value>Project</value>
     </recentWindows>
   </component>
@@ -366,6 +382,14 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="3337" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1730119100554" />
+    <state x="2290" y="421" width="530" height="568" key="FileChooserDialogImpl" timestamp="1730132031817">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2290" y="421" width="530" height="568" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1730132031817" />
+    <state x="3808" y="1221" width="1274" height="163" key="ProcessPopupWindow" timestamp="1730143837846">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3808" y="1221" width="1274" height="163" key="ProcessPopupWindow/0.0.5120.1440@0.0.5120.1440" timestamp="1730143837846" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Default.uprojectdirs">

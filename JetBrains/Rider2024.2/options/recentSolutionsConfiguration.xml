@@ -198,7 +198,10 @@
         </entry>
         <entry key="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs">
           <value>
-            <ConfigurationInfo />
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Development Editor" />
+              <option name="activePlatform" value="Linux" />
+            </ConfigurationInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Downloads/Mateja_Popovic_5962_CS106/Assets">
