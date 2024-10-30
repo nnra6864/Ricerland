@@ -36,8 +36,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.24656594,
-          "sideWeight": 0.8310153
+          "weight": 0.28870457,
+          "sideWeight": 0.830855
         },
         {
           "id": "Bookmarks",
@@ -51,8 +51,8 @@
           "order": 5,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.24656594,
-          "sideWeight": 0.16898471,
+          "weight": 0.28870457,
+          "sideWeight": 0.16914499,
           "isSplit": true
         },
         {
@@ -115,9 +115,7 @@
           "id": "Build",
           "order": 5,
           "anchor": "BOTTOM",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.4424435
+          "weight": 0.12040961
         },
         {
           "id": "Debug",
@@ -221,7 +219,7 @@
           "anchor": "RIGHT",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.23165229,
+          "weight": 0.029319167,
           "sideWeight": 0.34573698
         },
         {
@@ -262,9 +260,9 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.24656594,
-        "bottom": 0.4424435,
-        "right": 0.23165229
+        "left": 0.28870457,
+        "bottom": 0.12040961,
+        "right": 0.029319167
       }
     }
   }

@@ -263,7 +263,7 @@
         </entry>
         <entry key="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs">
           <value>
-            <RecentProjectMetaInfo frameTitle="Default – ~/Data/UnrealEngine/README.md" opened="true" projectWorkspaceId="2o4BhsMczt02MiujwvVcFXsJMZd">
+            <RecentProjectMetaInfo frameTitle="Default – ~/Data/UnrealEngine/README.md" projectWorkspaceId="2o4BhsMczt02MiujwvVcFXsJMZd">
               <option name="activationTimestamp" value="1730143952582" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.23726.100" />
@@ -277,8 +277,23 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
+              <option name="activationTimestamp" value="1730301061288" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-242.23726.100" />
+              <option name="buildTimestamp" value="1729617600000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1730295431358" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln" />
   </component>
 </application>

@@ -1680,16 +1680,46 @@
       <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/README.md" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" protocol="file" />
     </project>
+    <project id="Nisualizer-40a33c22">
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="18" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="15" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="29" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="7" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="21" column="46" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="17" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="27" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="4" column="40" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="28" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="13" column="26" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="35" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="33" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="8" column="31" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="53" column="5" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="56" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="11" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="50" column="53" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="61" column="81" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="51" column="61" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="44" column="30" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="14" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="20" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="17" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="13" column="42" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="5" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="12" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="18" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
+      <jump line="12" column="72" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+      <jump line="62" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Downloads/Mateja_Popovic_5962_CS106/Assets/Scripts/EnemyScript.cs" timestamp="1726343171107">
-        <mark key="&quot;" line="44" column="32" />
-      </file>
-      <file name="$USER_HOME$/Downloads/Mateja_Popovic_5962_CS106/Assets/Scripts/BarrierScript.cs" timestamp="1726343171583">
-        <mark key="&quot;" line="3" column="13" />
-      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" timestamp="1729926035476">
         <mark key="&quot;" line="0" column="0" />
         <mark key="'" line="0" column="0" />
@@ -1759,6 +1789,18 @@
         <mark key="]" line="76" column="20" />
         <mark key="^" line="76" column="20" />
         <mark key="." line="76" column="19" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" timestamp="1730300983475">
+        <mark key="[" line="16" column="5" />
+        <mark key="]" line="18" column="12" />
+        <mark key="." line="18" column="11" />
+        <mark key="^" line="18" column="12" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/MicrophoneDataScript.cs" timestamp="1730301063846">
+        <mark key="[" line="62" column="0" />
+        <mark key="]" line="62" column="0" />
+        <mark key="." line="62" column="0" />
+        <mark key="^" line="12" column="73" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/BeatShifter/BeatShifter/Assets/NnUtils/Scripts/MonoBehaviourExtensions.cs" timestamp="1729023425870">
         <mark key="&quot;" line="4" column="27" />
@@ -1846,14 +1888,14 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">IA==</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICB0cmFuc2Zvcm0ubG9jYWxTY2FsZSA9IFZlY3RvcjMuTGVycChWZWN0b3IzLm9uZSAqIDAuNWYsIFZlY3RvcjMub25lICogMywgTG91ZG5lc3MpOwo=</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">Tm5CZWhhdmlvdXI=</text>
+        <text encoding="base64">MDFm</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">ZA==</text>
+        <text encoding="base64">Q3ViaWNPdXQ=</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">VXBkYXRl</text>
@@ -1862,31 +1904,31 @@
         <text encoding="base64">IA==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICB0cmFuc2Zvcm0ubG9jYWxTY2FsZSA9IFZlY3RvcjMuTGVycChWZWN0b3IzLm9uZSAqIDAuNWYsIFZlY3RvcjMub25lICogMywgTG91ZG5lc3MpOwo=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgfQo=</text>
+        <text encoding="base64">ICAgICAgICBfbWFpbk1vZHVsZSA9IF9wYXJ0aWNsZVN5c3RlbS5tYWluOwo=</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgewo=</text>
+        <text encoding="base64">ICAgIHByaXZhdGUgUGFydGljbGVTeXN0ZW0uTWFpbk1vZHVsZSBfbWFpbk1vZHVsZTsK</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgTm5VdGlscy5TY3JpcHRzLkF1ZGlvOwo=</text>
+        <text encoding="base64">ICAgIHByaXZhdGUgUGFydGljbGVTeXN0ZW0uTWFpbk1vZHVsZSBfbWFpbk1vZHVsZTsK</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgIAogICAgICAgIFtTZXJpYWxpemVGaWVsZF0gcHJpdmF0ZSBBdWRpb01hbmFnZXIgX2F1ZGlvTWFuYWdlcjsKICAgICAgICBwdWJsaWMgc3RhdGljIEF1ZGlvTWFuYWdlciBBdWRpb01hbmFnZXIgPT4KICAgICAgICAgICAgSW5zdGFuY2UuX2F1ZGlvTWFuYWdlciA/PyAoSW5zdGFuY2UuX2F1ZGlvTWFuYWdlciA9IEluc3RhbmNlLmdhbWVPYmplY3QuR2V0T3JBZGRDb21wb25lbnQ8QXVkaW9NYW5hZ2VyPigpKTsK</text>
+        <text encoding="base64">ICAgICAgICB2YXIgbWFpbiA9IF9wYXJ0aWNsZVN5c3RlbS5tYWluOwo=</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICBfcGFydGljbGVTeXN0ZW0ubWFpbiA9IG1haW47Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBwcml2YXRlIENvcm91dGluZSBfYW5pbWF0ZVBvc2l0aW9uUm91dGluZSwgX2FuaW1hdGVSb3RhdGlvblJvdXRpbmUsIF9hbmltYXRlU2NhbGVSb3V0aW5lOwogICAgICAgIHB1YmxpYyBib29sIElzQW5pbWF0aW5nID0+CiAgICAgICAgICAgIF9hbmltYXRlUG9zaXRpb25Sb3V0aW5lICE9IG51bGwgfHwgX2FuaW1hdGVSb3RhdGlvblJvdXRpbmUgIT0gbnVsbCB8fCBfYW5pbWF0ZVNjYWxlUm91dGluZSAhPSBudWxsOwogICAgICAgIAogICAgICAgIHB1YmxpYyB2b2lkIEFuaW1hdGUoQW5pbWF0aW9uUGFyYW1zIGFuaW1QYXJhbXMpCiAgICAgICAgewogICAgICAgICAgICBSZXN0YXJ0Um91dGluZShyZWYgX2FuaW1hdGVQb3NpdGlvblJvdXRpbmUsIEFuaW1hdGVQb3NpdGlvblJvdXRpbmUoYW5pbVBhcmFtcykpOwogICAgICAgICAgICBSZXN0YXJ0Um91dGluZShyZWYgX2FuaW1hdGVSb3RhdGlvblJvdXRpbmUsIEFuaW1hdGVSb3RhdGlvblJvdXRpbmUoYW5pbVBhcmFtcykpOwogICAgICAgICAgICBSZXN0YXJ0Um91dGluZShyZWYgX2FuaW1hdGVTY2FsZVJvdXRpbmUsIEFuaW1hdGVTY2FsZVJvdXRpbmUoYW5pbVBhcmFtcykpOwogICAgICAgIH0KCiAgICAgICAgcHJpdmF0ZSBJRW51bWVyYXRvciBBbmltYXRlUG9zaXRpb25Sb3V0aW5lKEFuaW1hdGlvblBhcmFtcyBhbmltUGFyYW1zKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIHN0YXJ0UG9zID0gdHJhbnNmb3JtLmxvY2FsUG9zaXRpb247CiAgICAgICAgICAgIHZhciB0YXJnZXRQb3MgPSBhbmltUGFyYW1zLkFkZGl0aXZlUG9zaXRpb24gPyBzdGFydFBvcyArIGFuaW1QYXJhbXMuUG9zaXRpb24gOiBhbmltUGFyYW1zLlBvc2l0aW9uOwogICAgICAgICAgICB2YXIgcHJldlBvcyA9IHN0YXJ0UG9zOwogICAgICAgICAgICBmbG9hdCBsZXJwUG9zID0gMDsKCiAgICAgICAgICAgIHdoaWxlIChsZXJwUG9zIDwgMSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdmFyIHBvc1QgPSBNaXNjLlR3ZWVuKHJlZiBsZXJwUG9zLCBhbmltUGFyYW1zLlBvc2l0aW9uRHVyYXRpb24sIGFuaW1QYXJhbXMuUG9zaXRpb25FYXNpbmcsIGFuaW1QYXJhbXMuVW5zY2FsZWQpOwogICAgICAgICAgICAgICAgdmFyIG5ld1BvcyA9IFZlY3RvcjMuTGVycFVuY2xhbXBlZChzdGFydFBvcywgdGFyZ2V0UG9zLCBwb3NUKTsKICAgICAgICAgICAgICAgIHZhciBwb3NEZWx0YSA9IG5ld1BvcyAtIHByZXZQb3M7CiAgICAgICAgICAgICAgICB0cmFuc2Zvcm0ubG9jYWxQb3NpdGlvbiArPSBwb3NEZWx0YTsKICAgICAgICAgICAgICAgIHByZXZQb3MgPSBuZXdQb3M7CiAgICAgICAgICAgICAgICB5aWVsZCByZXR1cm4gbnVsbDsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgX2FuaW1hdGVQb3NpdGlvblJvdXRpbmUgPSBudWxsOwogICAgICAgIH0KCiAgICAgICAgcHJpdmF0ZSBJRW51bWVyYXRvciBBbmltYXRlUm90YXRpb25Sb3V0aW5lKEFuaW1hdGlvblBhcmFtcyBhbmltUGFyYW1zKQogICAgICAgIHsKICAgICAgICAgICAgdmFyIHN0YXJ0Um90ID0gdHJhbnNmb3JtLmxvY2FsUm90YXRpb24uZXVsZXJBbmdsZXM7CiAgICAgICAgICAgIHZhciB0YXJnZXRSb3QgPSBhbmltUGFyYW1zLkFkZGl0aXZlUm90YXRpb24gPyBzdGFydFJvdCArIGFuaW1QYXJhbXMuUm90YXRpb24gOiBhbmltUGFyYW1zLlJvdGF0aW9uOwogICAgICAgICAgICB2YXIgcHJldlJvdCA9IHN0YXJ0Um90OwogICAgICAgICAgICBmbG9hdCBsZXJwUm90ID0gMDsKCiAgICAgICAgICAgIHdoaWxlIChsZXJwUm90IDwgMSkKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgdmFyIHJvdFQgPSBNaXNjLlR3ZWVuKHJlZiBsZXJwUm90LCBhbmltUGFyYW1zLlJvdGF0aW9uRHVyYXRpb24sIGFuaW1QYXJhbXMuUm90YXRpb25FYXNpbmcsIGFuaW1QYXJhbXMuVW5zY2FsZWQpOwogICAgICAgICAgICAgICAgdmFyIG5ld1JvdCA9IFZlY3RvcjMuTGVycFVuY2xhbXBlZChzdGFydFJvdCwgdGFyZ2V0Um90LCByb3RUKTsKICAgICAgICAgICAgICAgIHZhciByb3REZWx0YSA9IG5ld1JvdCAtIHByZXZSb3Q7CiAgICAgICAgICAgICAgICB0cmFuc2Zvcm0ubG9jYWxSb3RhdGlvbiAqPSBRdWF0ZXJuaW9uLkV1bGVyKHJvdERlbHRhKTsKICAgICAgICAgICAgICAgIHByZXZSb3QgPSBuZXdSb3Q7CiAgICAgICAgICAgICAgICB5aWVsZCByZXR1cm4gbnVsbDsKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgX2FuaW1hdGVSb3RhdGlvblJvdXRpbmUgPSBudWxsOwogICAgICAgIH0KICAgICAgICAKICAgICAgICBwcml2YXRlIElFbnVtZXJhdG9yIEFuaW1hdGVTY2FsZVJvdXRpbmUoQW5pbWF0aW9uUGFyYW1zIGFuaW1QYXJhbXMpCiAgICAgICAgewogICAgICAgICAgICB2YXIgc3RhcnRTY2FsZSA9IHRyYW5zZm9ybS5sb2NhbFNjYWxlOwogICAgICAgICAgICB2YXIgdGFyZ2V0U2NhbGUgPSBhbmltUGFyYW1zLkFkZGl0aXZlU2NhbGUgPyBzdGFydFNjYWxlICsgYW5pbVBhcmFtcy5TY2FsZSA6IGFuaW1QYXJhbXMuU2NhbGU7CiAgICAgICAgICAgIHZhciBwcmV2U2NhbGUgPSBzdGFydFNjYWxlOwogICAgICAgICAgICBmbG9hdCBsZXJwU2NhbGUgPSAwOwogICAgICAgICAgICAKICAgICAgICAgICAgd2hpbGUgKGxlcnBTY2FsZSA8IDEpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHZhciBzY2FsZVQgPSBNaXNjLlR3ZWVuKHJlZiBsZXJwU2NhbGUsIGFuaW1QYXJhbXMuU2NhbGVEdXJhdGlvbiwgYW5pbVBhcmFtcy5TY2FsZUVhc2luZywgYW5pbVBhcmFtcy5VbnNjYWxlZCk7CiAgICAgICAgICAgICAgICB2YXIgbmV3U2NhbGUgPSBWZWN0b3IzLkxlcnBVbmNsYW1wZWQoc3RhcnRTY2FsZSwgdGFyZ2V0U2NhbGUsIHNjYWxlVCk7CiAgICAgICAgICAgICAgICB2YXIgc2NhbGVEZWx0YSA9IG5ld1NjYWxlIC0gcHJldlNjYWxlOwogICAgICAgICAgICAgICAgdHJhbnNmb3JtLmxvY2FsU2NhbGUgKz0gc2NhbGVEZWx0YTsKICAgICAgICAgICAgICAgIHByZXZTY2FsZSA9IG5ld1NjYWxlOwogICAgICAgICAgICAgICAgeWllbGQgcmV0dXJuIG51bGw7CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIF9hbmltYXRlU2NhbGVSb3V0aW5lID0gbnVsbDsKICAgICAgICB9CgogICAgICAgIHB1YmxpYyB2b2lkIFN0b3BBbmltYXRpb24oKQogICAgICAgIHsKICAgICAgICAgICAgU3RvcFJvdXRpbmUocmVmIF9hbmltYXRlUG9zaXRpb25Sb3V0aW5lKTsKICAgICAgICAgICAgU3RvcFJvdXRpbmUocmVmIF9hbmltYXRlUm90YXRpb25Sb3V0aW5lKTsKICAgICAgICAgICAgU3RvcFJvdXRpbmUocmVmIF9hbmltYXRlU2NhbGVSb3V0aW5lKTsKICAgICAgICB9CiAgICAgICAgI2VuZHJlZ2lvbgo=</text>
+        <text encoding="base64">ICAgICAgICBfcGFydGljbGVTeXN0ZW0ubWFpbi4K</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAjcmVnaW9uIEFuaW1hdGlvbgo=</text>
+        <text encoding="base64">dXNpbmcgU3lzdGVtOwo=</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAKICAgICAgICAvL1N0b3JpbmcgdGlsdCBnbG9iYWxseSBmb3IgZWFzZSBvZiB1c2UKICAgICAgICBwcml2YXRlIGZsb2F0IF90aWx0Owo=</text>
+        <text encoding="base64">dXNpbmcgU3lzdGVtOwo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">dw==</text>
