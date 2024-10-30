@@ -9,6 +9,7 @@ end
 alias doas='sudo'
 alias nlear='clear; neofetch'
 alias py='python'
+alias timeshit='timeshift'
 
 function monero
     echo "Enter your password:"

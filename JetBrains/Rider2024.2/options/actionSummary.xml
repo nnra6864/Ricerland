@@ -58,10 +58,10 @@
       <i c="2" l="1717725859704" />
     </e>
     <e n="EditorBackSpace">
-      <i c="13765" l="1730300856996" />
+      <i c="13768" l="1730314284954" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="6705" l="1730301042454" />
+      <i c="6706" l="1730314040384" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="10" l="1730296998842" />
@@ -91,7 +91,7 @@
       <i c="4353" l="1730300977584" />
     </e>
     <e n="EditorEscape">
-      <i c="5600" l="1730301042623" />
+      <i c="5605" l="1730314285080" />
     </e>
     <e n="EditorLeft">
       <i c="126" l="1730300757654" />
@@ -253,7 +253,7 @@
       <i c="6" l="1727584796086" />
     </e>
     <e n="SaveAll">
-      <i c="2922" l="1730301071104" />
+      <i c="2925" l="1730314285807" />
     </e>
     <e n="SearchEverywhere">
       <i c="31" l="1727604884362" />
@@ -379,7 +379,7 @@
       <i c="7" l="1730143818650" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="96900" l="1730301040479" />
+      <i c="96908" l="1730314284953" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="43" l="1725119039751" />
@@ -481,7 +481,7 @@
       <i c="1" l="1719448160078" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="3047" l="1730301071102" />
+      <i c="3051" l="1730314285799" />
     </e>
   </component>
 </application>

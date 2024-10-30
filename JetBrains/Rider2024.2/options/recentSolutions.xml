@@ -279,16 +279,17 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
           <value>
-            <RecentProjectMetaInfo opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
-              <option name="activationTimestamp" value="1730301061288" />
+            <RecentProjectMetaInfo frameTitle="Nisualizer – MicrophoneDataScript.cs" opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
+              <option name="activationTimestamp" value="1730317530895" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.23726.100" />
               <option name="buildTimestamp" value="1729617600000" />
               <option name="colorInfo">
                 <RecentProjectColorInfo associatedIndex="5" />
               </option>
+              <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1730295431358" />
+              <option name="projectOpenTimestamp" value="1730313976956" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
