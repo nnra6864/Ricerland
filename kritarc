@@ -48,8 +48,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="1" g="1" space="sRGB-elle-V2-srgbtrc.icc" b="1"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="0" g="0" space="sRGB-elle-V2-srgbtrc.icc" b="0"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="1" g="1" b="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="0" g="0" b="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
 LastPreset=b) Airbrush Soft
 LastPreset_-1=b) Airbrush Soft
 LineSmoothingDelayDistance=50
@@ -683,6 +683,7 @@ pinControls=true
 File1[$e]=$HOME/HDD2TB/Backups/RedmiNote12Pro/Syncthing-24.04.2024./Camera/IMG_20240113_111533.jpg
 File10[$e]=$HOME/HDD2TB/Pictures/Backgrounds/CyberCube.jpg
 File11[$e]=$HOME/HDD2TB/Pictures/Backgrounds/feet.jpg
+File12[$e]=$HOME/HDD2TB/Autism/dimke.webp
 File2[$e]=$HOME/Data/Projects/Ricer/Ricer.kra
 File3[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Player.kra
 File4[$e]=$HOME/HDD2TB/Work/Game Development/Unity/Unity Projects/ChronoScape/Project/Photoshop/Bolt.psb
@@ -694,6 +695,7 @@ File9[$e]=$HOME/.config/Backgrounds/NeonCity.jpg
 Name1=IMG_20240113_111533.jpg
 Name10=CyberCube.jpg
 Name11=feet.jpg
+Name12=dimke.webp
 Name2=Ricer.kra
 Name3=Player.kra
 Name4=Bolt.psb
