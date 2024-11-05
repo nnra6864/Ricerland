@@ -216,5 +216,18 @@ function output_input
     end
 end
 
+function unload_modules_from
+    set start_id $argv[1]
+    while true
+        # Attempt to unload the current module
+        if not pactl unload-module $start_id
+            break
+        end
+        # Increment the module ID
+        set start_id (math "$start_id + 1")
+    end
+end
+
+
 zoxide init fish | source
 fish_vi_key_bindings

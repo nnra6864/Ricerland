@@ -67,54 +67,6 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ01/CS106-DZ01.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="CS106-DZ01 – StatsScript.cs" projectWorkspaceId="2lQaszmw9fQTZsdc9aTaWcU2onq">
-              <option name="activationTimestamp" value="1725115864970" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-241.18968.19" />
-              <option name="buildTimestamp" value="1722612840000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="1" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1725114965773" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ02/CS106-DZ02.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="CS106-DZ02 – GameManager.cs" projectWorkspaceId="2lQe2OibhYiq9Ps7OoWr1bDUCbw">
-              <option name="activationTimestamp" value="1725118438753" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-241.18968.19" />
-              <option name="buildTimestamp" value="1722612840000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1725116520969" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/CS106/CS106-DZ03/CS106-DZ03.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="CS106-DZ03 – DoorTriggerScript.cs" projectWorkspaceId="2lQj5OT8qoRyMYUDeETWCEVQMaX">
-              <option name="activationTimestamp" value="1725162549745" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-241.18968.19" />
-              <option name="buildTimestamp" value="1722612840000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="3" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1725159000222" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/SpaceConqueror.sln">
           <value>
             <RecentProjectMetaInfo frameTitle="SpaceConqueror – PlayerMovement.cs" projectWorkspaceId="2kFm7rtNGfq87UYyou5hQA86UIu">
@@ -279,8 +231,8 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Nisualizer – InteractiveParticleSystemScript.cs" opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
-              <option name="activationTimestamp" value="1730404090934" />
+            <RecentProjectMetaInfo frameTitle="Nisualizer – DigitalClockScript.cs" opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
+              <option name="activationTimestamp" value="1730764296062" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.23726.100" />
               <option name="buildTimestamp" value="1729617600000" />
@@ -289,7 +241,7 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1730396191356" />
+              <option name="projectOpenTimestamp" value="1730762565382" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

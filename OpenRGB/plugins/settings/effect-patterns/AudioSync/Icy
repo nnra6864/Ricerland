@@ -4,7 +4,7 @@
     "CustomSettings": {
         "audio_settings": {
             "amplitude": 200,
-            "audio_device": 4,
+            "audio_device": 9,
             "avg_mode": 0,
             "avg_size": 8,
             "decay": 80,
@@ -34,7 +34,7 @@
         "bypass_max": 256,
         "bypass_min": 0,
         "fade_step": 99,
-        "hue_shift": 0,
+        "hue_shift": 538976288,
         "roll_mode": 0,
         "saturation_mode": 2,
         "silent_color": false,

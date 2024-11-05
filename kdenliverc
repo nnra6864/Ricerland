@@ -22,17 +22,19 @@ provider=Freesound
 zoom=7
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/Videos,$HOME/Documents
+KdenliveClipFolder[$e]=$HOME/Videos/OBS/,$HOME/Videos,$HOME/Documents
 KdenliveFramesFolder[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2,$HOME/Data/Projects/Hyprnord,$HOME/Documents/Projects/EdgeShift
+KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Editing/Nisualizer/Alpha,$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2,$HOME/Data/Projects/Hyprnord
 
 [Recent Files]
 File1[$e]=$HOME/Documents/Projects/EdgeShift/EdgeShift.kdenlive
 File2[$e]=$HOME/Data/Projects/Hyprnord/Hyprnord.kdenlive
 File3[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/IS_THIS_NORMAL.kdenlive
+File4[$e]=$HOME/Data/Projects/Editing/Nisualizer/Alpha/NisualizerAlpha.kdenlive
 Name1[$e]=EdgeShift.kdenlive
 Name2[$e]=Hyprnord.kdenlive
 Name3[$e]=IS_THIS_NORMAL.kdenlive
+Name4[$e]=NisualizerAlpha.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -95,7 +97,7 @@ use_grid=false
 ColorSchemePath=
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAARYAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABFgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAQoAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABCgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -114,7 +116,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,10,20,5,15,25.555
+lastCacheCheck=2024,11,3,15,18,21.966
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -128,6 +130,7 @@ profile_fps_filter=Any
 SupportedHWCodecs=h264_nvenc,hevc_nvenc
 externalProxyProfile=./;;.LRV;./;;.MP4
 parallelrender=true
+renderDeinterlacer=bwdif
 renderInterp=hyper
 transcodeFriendly=Lossy x264 I frame only (NVidia GPU)
 
@@ -168,4 +171,4 @@ use_dark_breeze=true
 widgetstyle=qt6ct-style
 
 [version]
-version=24.08.1
+version=24.08.2

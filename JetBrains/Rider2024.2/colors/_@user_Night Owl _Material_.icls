@@ -9,7 +9,7 @@
   </metaInfo>
   <option name="LINE_SPACING" value="1.4" />
   <font>
-    <option name="EDITOR_FONT_NAME" value="Menlo" />
+    <option name="EDITOR_FONT_NAME" value="Courier Prime Code" />
     <option name="EDITOR_FONT_SIZE" value="12" />
   </font>
   <font>
@@ -17,7 +17,7 @@
     <option name="EDITOR_FONT_SIZE" value="12" />
   </font>
   <console-font>
-    <option name="EDITOR_FONT_NAME" value="Hack" />
+    <option name="EDITOR_FONT_NAME" value="Courier Prime Code" />
     <option name="EDITOR_FONT_SIZE" value="13" />
   </console-font>
   <console-font>

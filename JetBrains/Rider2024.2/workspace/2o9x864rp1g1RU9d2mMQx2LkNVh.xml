@@ -11,40 +11,60 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="465">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state>
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"MicrophoneDataScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"MicrophoneDataScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="532">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"InteractiveVFX.cs","foregroundColor":-4234902,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveParticleSystemScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="308">
-              <caret line="9" column="23" selection-start-line="8" selection-end-line="9" selection-end-column="24" />
+            <state>
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"InteractiveParticleSystemScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"InteractiveVFX.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVolume.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"InteractiveVolume.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clock/DigitalClockScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="280">
+              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"DigitalClockScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 13,
-      "lastUsed": 1730396197817
+      "usageCount": 40,
+      "lastUsed": 1730762565491
     }
   }
 }]]></component>
@@ -55,9 +75,16 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveParticleSystemScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveVolume.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVolume.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MousePos.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UnfocusedEventSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Clock/DigitalClockScript.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -69,7 +96,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="13" lastUsage="1730396197817" />
+      <summary usageCount="40" lastUsage="1730762565491" />
     </language>
   </component>
   <component name="ProjectView">
@@ -87,13 +114,17 @@
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Clock" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="InteractiveVFX.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -246,12 +277,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.029140502" />
+            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23675433" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.28738225" />
+            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.28600866" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -276,7 +307,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.28738225" />
+            <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.28600866" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -338,7 +369,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14665000" />
+    <option name="totallyTimeSpent" value="36669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,9 +389,9 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.28738225" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.28600866" />
       <window_info id="Bookmarks" order="5" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
-      <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.28738225" />
+      <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.28600866" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -388,50 +419,66 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="10" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.029140502" />
+      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23675433" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="13" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="IL Viewer" order="13" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="13" weight="0.3299647" />
       <window_info anchor="right" id="IL" order="13" weight="0.18004316" />
-      <unified_weights bottom="0.12040961" left="0.28738225" right="0.029140502" />
+      <unified_weights bottom="0.12040961" left="0.28600866" right="0.23675433" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="2290" y="421" width="530" height="568" key="FileChooserDialogImpl" timestamp="1730375541457">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2290" y="421" width="530" height="568" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1730375541457" />
-    <state x="3252" y="282" key="SettingsEditor" timestamp="1730295924016">
+    <state x="3252" y="282" key="SettingsEditor" timestamp="1730641871244">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="3252" y="282" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1730295924016" />
+    <state x="3252" y="282" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1730641871244" />
     <state width="648" height="500" key="SwitcherDM" timestamp="1730296729692">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="648" height="500" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1730296729692" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveParticleSystemScript.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVolume.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnfocusedEventSystem.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MousePos.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clock/DigitalClockScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state>
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state>
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveParticleSystemScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="9" column="23" selection-start-line="8" selection-end-line="9" selection-end-column="24" />
+        <state>
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVolume.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
         </state>
       </provider>
     </entry>
