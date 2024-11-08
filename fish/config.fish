@@ -19,31 +19,44 @@ function monero
 end
 
 function rice
+    #Start the Shifter transition
     python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
     set pid $last_pid
     disown
     
     sleep 0.2
 
+    #Execute Ricer
     python ~/Data/Projects/Ricer/Ricer.py $argv > /dev/null 2>&1
+    
+    #Copy the YT Enhancer cfg
     cat ~/.config/YouTubeEnhancer.json | wl-copy
     
-    killall glava > /dev/null 2>&1
-    glava >/dev/null 2>&1 &
-    disown
+    #Restart GLava
+    #killall glava > /dev/null 2>&1
+    #glava >/dev/null 2>&1 &
+    #disown
 
+    #Reload Kitty cfg
+    kill -SIGUSR1 (pgrep kitty)
+
+    #Generate Oomox theme and update nwg-look
     /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o OomoxRicer
     nwg-look -a > /dev/null 2>&1 &
     disown
     
+    #Restart Dunst
     killall dunst > /dev/null 2>&1
     dunst >/dev/null 2>&1 &
     disown
 
+    #Update flatpak env(requires sudo)
     #sudo flatpak override --env=GTK_THEME=(gsettings get org.gnome.desktop.interface gtk-theme | string trim -c "\'")
 
+    #Update Unity Hub(requires sudo)
     #sudo python .config/RicerHub.py /opt/unityhub/
 
+    #Nlear the console, sleep and kill Shifter
     nlear
     sleep 1
     kill -SIGUSR1 $pid

@@ -25,7 +25,7 @@ big_font_size = 17
 max_font_size = 32
 
 #Misc
-terminal = "alacritty"
+terminal = "kitty"
 opacity = 0.8
 inactive_opacity = 0.9
 outline_size = 2

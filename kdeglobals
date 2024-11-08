@@ -138,7 +138,7 @@ ForegroundVisited=#b48ead
 [General]
 ColorScheme=Nordic-darker
 ColorSchemeHash=d05680ca25bbbbf09a8b5f36923ee7f2b1117fbf
-TerminalApplication=alacritty
+TerminalApplication=kitty
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=Courier Prime Code,15,-1,5,400,0,0,0,0,0,0,0,0,0,0,1

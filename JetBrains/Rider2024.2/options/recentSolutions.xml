@@ -231,8 +231,8 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Nisualizer – DigitalClockScript.cs" opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
-              <option name="activationTimestamp" value="1730764296062" />
+            <RecentProjectMetaInfo frameTitle="Nisualizer – ConfigScript.cs" opened="true" projectWorkspaceId="2o9x864rp1g1RU9d2mMQx2LkNVh">
+              <option name="activationTimestamp" value="1731054067196" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-242.23726.100" />
               <option name="buildTimestamp" value="1729617600000" />
@@ -241,7 +241,7 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1730762565382" />
+              <option name="projectOpenTimestamp" value="1731044547071" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
