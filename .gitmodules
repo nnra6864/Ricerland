@@ -1,3 +1,6 @@
 [submodule "hypr/shaders/Hyprstorm"]
 	path = hypr/shaders/Hyprstorm
 	url = https://github.com/nnra6864/Hyprstorm.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/nnra6864/kickstart.nvim
