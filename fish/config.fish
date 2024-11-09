@@ -182,16 +182,16 @@ function mp3
     end
 end
 
-function combine_mics
+function combine_input
     # Create a new virtual source that other apps can use as input
-    set SOURCE_NAME "CombinedMic"
+    set SOURCE_NAME "CombinedInput"
 
     # First create a null sink that will serve as our mixing point
     pactl load-module module-null-sink sink_name="$SOURCE_NAME"_mix sink_properties=device.description="$SOURCE_NAME"_mix
 
     # Create a virtual source that monitors our null sink
     # This makes the mixed audio available as an input
-    pactl load-module module-virtual-source source_name=$SOURCE_NAME master="$SOURCE_NAME"_mix.monitor source_properties=device.description="Combined Microphones"
+    pactl load-module module-virtual-source source_name=$SOURCE_NAME master="$SOURCE_NAME"_mix.monitor source_properties=device.description="Combined Input"
 
     # Get a list of all audio input sources
     set SOURCES (pactl list sources short | awk '/input/ {print $2}')
@@ -204,7 +204,7 @@ function combine_mics
         end
     end
 
-    echo "All microphone inputs have been combined into the virtual source '$SOURCE_NAME'"
+    echo "All inputs have been combined into the virtual source '$SOURCE_NAME'"
     echo "You can now select '$SOURCE_NAME' as an input device in your applications"
 end
 
