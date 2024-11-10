@@ -1342,6 +1342,11 @@
                 "description": "Receive E1.31 lighting control data from external applications to control OpenRGB devices",
                 "enabled": true,
                 "name": "OpenRGB E1.31 Receiver Plugin"
+            },
+            {
+                "description": "Sync colors with hardware measures",
+                "enabled": true,
+                "name": "Hardware Sync"
             }
         ]
     },

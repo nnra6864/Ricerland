@@ -58,19 +58,19 @@
       <i c="2" l="1717725859704" />
     </e>
     <e n="EditorBackSpace">
-      <i c="14678" l="1731054077268" />
+      <i c="14783" l="1731151276490" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="6924" l="1731053822090" />
+      <i c="6936" l="1731151360057" />
     </e>
     <e n="EditorChooseLookupItemReplace">
-      <i c="12" l="1731052632648" />
+      <i c="13" l="1731151195426" />
     </e>
     <e n="EditorContextInfo">
       <i c="1" l="1714805071275" />
     </e>
     <e n="EditorCopy">
-      <i c="211" l="1731053912314" />
+      <i c="213" l="1731151284193" />
     </e>
     <e n="EditorCut">
       <i c="1" l="1724158650430" />
@@ -79,19 +79,19 @@
       <i c="107" l="1730536754304" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="3531" l="1731053887507" />
+      <i c="3570" l="1731151397914" />
     </e>
     <e n="EditorDown">
-      <i c="11673" l="1731053891052" />
+      <i c="11724" l="1731151409219" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
     </e>
     <e n="EditorEnter">
-      <i c="4654" l="1731054074610" />
+      <i c="4685" l="1731151262985" />
     </e>
     <e n="EditorEscape">
-      <i c="5881" l="1731054115716" />
+      <i c="5907" l="1731151409395" />
     </e>
     <e n="EditorLeft">
       <i c="128" l="1730737637784" />
@@ -133,7 +133,7 @@
       <i c="16" l="1727946151978" />
     </e>
     <e n="EditorRight">
-      <i c="877" l="1731053485801" />
+      <i c="883" l="1731151073032" />
     </e>
     <e n="EditorRightWithSelection">
       <i c="46" l="1725261594771" />
@@ -166,7 +166,7 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="9051" l="1731054083012" />
+      <i c="9098" l="1731151268513" />
     </e>
     <e n="ExportSettings">
       <i c="1" l="1715782453655" />
@@ -205,7 +205,7 @@
       <i c="3" l="1714450697758" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="212" l="1731053885666" />
+      <i c="218" l="1731151120025" />
     </e>
     <e n="JumpToLastChange">
       <i c="14" l="1723808359686" />
@@ -235,7 +235,7 @@
       <i c="6" l="1723248532530" />
     </e>
     <e n="RenameElement">
-      <i c="302" l="1731049606348" />
+      <i c="303" l="1731150198901" />
     </e>
     <e n="Replace">
       <i c="1" l="1723710046396" />
@@ -256,7 +256,7 @@
       <i c="6" l="1727584796086" />
     </e>
     <e n="SaveAll">
-      <i c="3046" l="1731054116557" />
+      <i c="3052" l="1731151410381" />
     </e>
     <e n="SearchEverywhere">
       <i c="31" l="1727604884362" />
@@ -265,7 +265,7 @@
       <i c="123" l="1730968009512" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="1318" l="1731053590226" />
+      <i c="1326" l="1731151246609" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -385,7 +385,7 @@
       <i c="7" l="1730143818650" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="102266" l="1731054083011" />
+      <i c="102925" l="1731151409218" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="52" l="1731049355469" />
@@ -427,7 +427,7 @@
       <i c="1" l="1717164564734" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="69" l="1731053573196" />
+      <i c="70" l="1731150490653" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="11" l="1730375531460" />
@@ -466,7 +466,7 @@
       <i c="1" l="1716930488561" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="45" l="1731052362422" />
+      <i c="46" l="1731150198875" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAsyncBackendDelegatingActionPromoter$DumbAwareActionWrapper">
       <i c="33" l="1726166352633" />
@@ -487,7 +487,7 @@
       <i c="1" l="1719448160078" />
     </e>
     <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
-      <i c="3174" l="1731054116555" />
+      <i c="3180" l="1731151410378" />
     </e>
   </component>
 </application>

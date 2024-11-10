@@ -11,24 +11,23 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ConfigScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="784">
-              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+            <state relative-caret-position="605">
+              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
               <folding>
-                <marker date="1731054116566" expanded="false" signature="151:626" ph="FPS" />
-                <marker date="1731054116566" expanded="false" signature="644:2156" ph="Background" />
+                <marker date="1731151410383" expanded="false" signature="535:602" ph="FPS" />
               </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ConfigScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"ConfigScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 66,
-      "lastUsed": 1731049969332
+      "usageCount": 67,
+      "lastUsed": 1731148364886
     }
   }
 }]]></component>
@@ -66,7 +65,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="66" lastUsage="1731049969332" />
+      <summary usageCount="67" lastUsage="1731148364889" />
     </language>
   </component>
   <component name="ProjectView">
@@ -112,9 +111,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="UI" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="BackgroundScript.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -267,12 +263,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="12" sideWeight="0.34573698" weight="0.23671782" />
+            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23675433" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.35989767" />
+            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.3599882" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -297,7 +293,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.35989767" />
+            <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.3599882" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -359,7 +355,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47149000" />
+    <option name="totallyTimeSpent" value="53988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,9 +375,9 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.35989767" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.830855" visible="true" weight="0.3599882" />
       <window_info id="Bookmarks" order="5" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
-      <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.35989767" />
+      <window_info active="true" id="TODO" order="5" sideWeight="0.16914499" side_tool="true" visible="true" weight="0.3599882" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -409,16 +405,15 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="10" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info anchor="right" id="Problems View" order="12" sideWeight="0.34573698" weight="0.23671782" />
+      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.23675433" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="13" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="IL Viewer" order="13" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="13" weight="0.3299647" />
       <window_info anchor="right" id="IL" order="13" weight="0.18004316" />
-      <unified_weights bottom="0.12040961" left="0.35989767" right="0.23671782" />
+      <unified_weights bottom="0.12040961" left="0.3599882" right="0.23675433" />
     </layoutV2>
     <recentWindows>
       <value>Problems View</value>
-      <value>Project</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -441,20 +436,8 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnfocusedEventSystem.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MousePos.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="45" column="4" selection-start-line="45" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -516,11 +499,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ConfigScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        <state relative-caret-position="605">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
           <folding>
-            <marker date="1731054116566" expanded="false" signature="151:626" ph="FPS" />
-            <marker date="1731054116566" expanded="false" signature="644:2156" ph="Background" />
+            <marker date="1731151410383" expanded="false" signature="535:602" ph="FPS" />
           </folding>
         </state>
       </provider>
