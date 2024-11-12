@@ -1,7 +1,7 @@
 if status is-interactive
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
-            dbus-run-session Hyprland
+            dbus-run-session Hyprland -c ~/.config/hypr/hyprland.conf
         end
     end
 end

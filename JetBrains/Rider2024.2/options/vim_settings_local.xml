@@ -60,6 +60,7 @@
         <entry encoding="base64">Vw==</entry>
         <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">JzwsJz53</entry>
+        <entry encoding="base64">MTU0</entry>
         <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
@@ -1681,51 +1682,6 @@
       <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" protocol="file" />
     </project>
     <project id="Nisualizer-40a33c22">
-      <jump line="16" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="38" column="39" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="34" column="50" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="31" column="47" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="9" column="41" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="41" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="45" column="28" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="19" column="37" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="27" column="20" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="66" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="51" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="38" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="167" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="168" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="45" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="43" column="39" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="46" column="18" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="47" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="14" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="13" column="62" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="31" column="35" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="35" column="19" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="37" column="65" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="10" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="49" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="52" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="9" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="29" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="58" column="57" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="19" column="78" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="17" column="47" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="30" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="28" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="29" column="24" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="16" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
-      <jump line="32" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="40" column="25" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="44" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="46" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="47" column="25" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="25" column="42" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="13" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="48" column="25" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="49" column="27" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
@@ -1748,38 +1704,84 @@
       <jump line="81" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="44" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="40" column="44" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="57" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="15" column="17" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs" protocol="file" />
       <jump line="28" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="73" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="76" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="79" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="99" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="83" column="18" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="71" column="35" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="69" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="11" column="29" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="90" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="85" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="82" column="10" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="84" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="12" column="30" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="91" column="36" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="13" column="29" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="15" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="20" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="106" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="93" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="110" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="104" column="71" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="123" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="120" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="128" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="117" column="47" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="113" column="24" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
       <jump line="127" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="107" column="21" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
-      <jump line="97" column="43" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" protocol="file" />
+      <jump line="1" column="1" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" protocol="file" />
+      <jump line="26" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" protocol="file" />
+      <jump line="90" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="97" column="82" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="5" column="1" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" protocol="file" />
+      <jump line="9" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Resources/DefaultConfig.json" protocol="file" />
+      <jump line="98" column="9" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="106" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="147" column="26" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="18" column="48" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="57" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="104" column="26" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="122" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="135" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="131" column="28" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="113" column="57" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="96" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="99" column="24" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="152" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="19" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="107" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="118" column="31" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="91" column="28" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="145" column="25" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="126" column="54" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="132" column="54" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="162" column="20" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="163" column="29" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="160" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="169" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="146" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="159" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="136" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="143" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="154" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="102" column="45" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="101" column="54" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="103" column="59" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="108" column="51" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="13" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Resources/DefaultConfig.json" protocol="file" />
+      <jump line="139" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="83" column="86" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="111" column="26" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="109" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="110" column="11" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="84" column="43" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="86" column="20" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="85" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="88" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="137" column="57" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="117" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="11" column="51" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="115" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="112" column="35" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="12" column="127" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="87" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="16" column="60" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="165" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" protocol="file" />
+      <jump line="55" column="22" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/ConfigScript.cs" protocol="file" />
+      <jump line="5" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/ConfigScript.cs" protocol="file" />
     </project>
     <project id="Nisualizer-c5573ef">
       <jump line="3" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
@@ -1820,13 +1822,11 @@
         <mark key="." line="47" column="12" />
         <mark key="^" line="47" column="13" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/GroundCheckScript.cs" timestamp="1729926035476">
-        <mark key="&quot;" line="0" column="0" />
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="67" column="58" />
-        <mark key="]" line="68" column="0" />
-        <mark key="^" line="68" column="0" />
-        <mark key="." line="68" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DefaultConfig.json" timestamp="1731228079408">
+        <mark key="[" line="1" column="3" />
+        <mark key="]" line="5" column="2" />
+        <mark key="." line="5" column="1" />
+        <mark key="^" line="5" column="2" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/Misc.cs" timestamp="1731049983943">
         <mark key="&quot;" line="168" column="13" />
@@ -1835,12 +1835,12 @@
         <mark key="." line="168" column="13" />
         <mark key="^" line="168" column="14" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" timestamp="1731053466642">
-        <mark key="&quot;" line="57" column="4" />
-        <mark key="[" line="57" column="0" />
-        <mark key="]" line="57" column="0" />
-        <mark key="." line="57" column="0" />
-        <mark key="^" line="49" column="28" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs" timestamp="1731229120687">
+        <mark key="&quot;" line="58" column="4" />
+        <mark key="[" line="56" column="19" />
+        <mark key="]" line="56" column="23" />
+        <mark key="." line="56" column="22" />
+        <mark key="^" line="56" column="23" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs" timestamp="1731049132463">
         <mark key="&quot;" line="8" column="57" />
@@ -1872,11 +1872,12 @@
         <mark key="." line="58" column="0" />
         <mark key="^" line="63" column="171" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" timestamp="1731151409397">
-        <mark key="[" line="96" column="10" />
-        <mark key="]" line="97" column="44" />
-        <mark key="." line="97" column="43" />
-        <mark key="^" line="97" column="44" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/ConfigScript.cs" timestamp="1731405709274">
+        <mark key="&quot;" line="165" column="8" />
+        <mark key="[" line="165" column="0" />
+        <mark key="]" line="165" column="0" />
+        <mark key="." line="165" column="0" />
+        <mark key="^" line="12" column="128" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Clock/DigitalClockScript.cs" timestamp="1731049132807">
         <mark key="&quot;" line="9" column="31" />
@@ -1921,9 +1922,6 @@
         <mark key="]" line="40" column="103" />
         <mark key="." line="40" column="102" />
         <mark key="^" line="40" column="103" />
-      </file>
-      <file name="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" timestamp="1730120288232">
-        <mark key="&quot;" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveVFX.cs" timestamp="1730729644081">
         <mark key="&quot;" line="23" column="39" />
@@ -1980,47 +1978,47 @@
           <key char="65535" code="27" mods="0" />
         </keys>
       </register>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">VE9ETzogV2F0Y2ggZm9yIGNvbmZpZyBmaWxlIGNoYW5nZXM=</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAvL1RPRE86IFRoaXMgd2lsbCB0cmlnZ2VyIE9uQ2hhbmdlZCBldmVudHMsIGNiYSB0byBvcHRpbWl6ZSBub3cK</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">VE9ETzogV2F0Y2ggZm9yIGNvbmZpZyBmaWxlIGNoYW5nZXM=</text>
+        <text encoding="base64">VGV4dEFzc2V0IA==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64" />
+        <text encoding="base64">Ly9JIGFtIGdlR2V0dGluZyB0ZXh0IGRpcmVjdGx5IGJlY2F1c2UgdGFraW5nIGEgcmVzdG9yaW5nIGl0IGFzIGEgdGV4dCBhc3NldCBhbmQgbm90IGEgc3RyaW5nIGNhdXNlcyBzb21lIGNvZGUgdG8gbm90IGVleGVjdXRlIGxhdGVyIDov</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">VXBkYXRl</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgLy9UT0RPOiBBZGQgY3VzdG9tIGxvZ2dpbmcgd2hlbiBpbXBsZW1lbnRlZAo=</text>
+        <text encoding="base64">ICAgICAgICBwcml2YXRlIHZvaWQgSGFuZGxlQ29uZmlnUmVuYW1lZChvYmplY3Qgc2VuZGVyLCBGaWxlU3lzdGVtRXZlbnRBcmdzIGFyZ3MpCiAgICAgICAgewogICAgICAgICAgICBjb25zdCBzdHJpbmcgZGVidWdQcmVmaXggPSAiSGFuZGxlQ29uZmlnQ2hhbmdlczogIjsKICAgICAgICAgICAgRGVidWcuTG9nKGRlYnVnUHJlZml4ICsgIkNvbmZpZyBjaGFuZ2VkLCByZWxvYWRpbmciKTsKICAgICAgICAgICAgTG9hZENvbmZpZ0ZpbGUoKTsKICAgICAgICB9Cg==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgLy9JZiBjb25maWcgaXMgY2hhbmdlZCwgcmVnZW5lcmF0ZSBpZiBkZWxldGVkIGFuZCByZWxvYWQgdGhlIGNvbmZpZwo=</text>
+        <text encoding="base64">ICAgICAgICAvL1RPRE86IFRoaXMgd2lsbCB0cmlnZ2VyIE9uQ2hhbmdlZCBldmVudHMsIGNiYSB0byBvcHRpbWl6ZSBub3cK</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgewogICAgICAgICAgICB9Owo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuQXNzZXJ0KF9kZWZhdWx0Q29uZmlnICE9IG51bGwsIGRlYnVnUHJlZml4ICsgIkRlZmF1bHQgY29uZmlnIHdhcyBub3QgZm91bmQgaW4gUmVzb3VyY2VzLCB0aGlzIGlzIHJlYWxseSBiYWQhIik7Cg==</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgbmV3IEFyZ3VtZW50T3V0T2ZSYW5nZUV4Y2VwdGlvbigpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuTG9nKCJIRVJFIik7Cg==</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgbmV3IEFyZ3VtZW50T3V0T2ZSYW5nZUV4Y2VwdGlvbigpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuTG9nKCJIRVJFIik7Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgbmV3IEFyZ3VtZW50T3V0T2ZSYW5nZUV4Y2VwdGlvbigpOwo=</text>
+        <text encoding="base64">ICAgICAgICAvL0xvYWQgdGhlIGRlZmF1bHQgY29uZmlnIGZyb20gUmVzb3VyY2VzCg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGNhc2UgV2F0Y2hlckNoYW5nZVR5cGVzLlJlbmFtZWQ6CiAgICAgICAgICAgICAgICAgICAgR2VuZXJhdGVEZWZhdWx0Q29uZmlnKCk7CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy9Mb2FkIHRoZSBkZWZhdWx0IGNvbmZpZyBmcm9tIFJlc291cmNlcwo=</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGNhc2UgV2F0Y2hlckNoYW5nZVR5cGVzLkFsbDoKICAgICAgICAgICAgICAgICAgICBicmVhazsK</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuQXNzZXJ0KF9kZWZhdWx0Q29uZmlnICE9IG51bGwsIGRlYnVnUHJlZml4ICsgIkRlZmF1bHQgY29uZmlnIHdhcyBub3QgZm91bmQgaW4gUmVzb3VyY2VzLCB0aGlzIGlzIHJlYWxseSBiYWQhIik7Cg==</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGNhc2UgV2F0Y2hlckNoYW5nZVR5cGVzLkNyZWF0ZWQ6CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuQXNzZXJ0KF9kZWZhdWx0Q29uZmlnICE9IG51bGwsIGRlYnVnUHJlZml4ICsgIkRlZmF1bHQgY29uZmlnIHdhcyBub3QgZm91bmQgaW4gUmVzb3VyY2VzLCB0aGlzIGlzIHJlYWxseSBiYWQhIik7Cg==</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy9Mb2FkIHRoZSBkZWZhdWx0IGNvbmZpZyBmcm9tIFJlc291cmNlcwo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">dw==</text>
