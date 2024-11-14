@@ -36,8 +36,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.30877158,
-          "sideWeight": 0.65167284
+          "weight": 0.057005495,
+          "sideWeight": 0.6506091
         },
         {
           "id": "Bookmarks",
@@ -51,8 +51,8 @@
           "order": 5,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.30877158,
-          "sideWeight": 0.34832713,
+          "weight": 0.057005495,
+          "sideWeight": 0.34939092,
           "isSplit": true
         },
         {
@@ -121,8 +121,9 @@
           "id": "Debug",
           "order": 5,
           "anchor": "BOTTOM",
+          "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.22563559
+          "weight": 0.3125
         },
         {
           "id": "UnrealBuildTool",
@@ -217,9 +218,7 @@
           "id": "Problems View",
           "order": 12,
           "anchor": "RIGHT",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.1390306,
+          "weight": 0.12372449,
           "sideWeight": 0.34573698
         },
         {
@@ -239,6 +238,12 @@
           "isSplit": true
         },
         {
+          "id": "Hierarchy",
+          "order": 13,
+          "anchor": "RIGHT",
+          "weight": 0.06936813
+        },
+        {
           "id": "IL Viewer",
           "order": 13,
           "anchor": "RIGHT",
@@ -249,7 +254,8 @@
           "id": "Monitoring",
           "order": 13,
           "anchor": "RIGHT",
-          "weight": 0.3299647
+          "isVisible": true,
+          "weight": 0.0958595
         },
         {
           "id": "IL",
@@ -260,9 +266,9 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.30877158,
-        "bottom": 0.12040961,
-        "right": 0.1390306
+        "left": 0.057005495,
+        "bottom": 0.3125,
+        "right": 0.0958595
       }
     }
   }

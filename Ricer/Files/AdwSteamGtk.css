@@ -1,0 +1,80 @@
+:root
+{
+	/* The main accent color and the matching text value */
+	--adw-accent-bg-rgb: ricer.col.background;
+	--adw-accent-fg-rgb: ricer.col.foreground;
+	--adw-accent-rgb: ricer.col.foreground_highlight;
+
+	/* destructive-action buttons */
+	--adw-destructive-bg-rgb: ricer.col.red;
+	--adw-destructive-fg-rgb: ricer.col.foreground;
+	--adw-destructive-rgb: ricer.col.foreground_highlight;
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg-rgb: ricer.col.background_highlight;
+	--adw-success-fg-rgb: ricer.col.foreground_highlight;
+	--adw-success-rgb: ricer.col.foreground_highlight_alt;
+
+	--adw-warning-bg-rgb: ricer.col.yellow;
+	--adw-warning-fg-rgb: ricer.col.foreground;
+	--adw-warning-fg-a: 0.8;
+	--adw-warning-rgb: ricer.col.yellow;
+
+	--adw-error-bg-rgb: ricer.col.red;
+	--adw-error-fg-rgb: ricer.col.foreground;
+	--adw-error-rgb: ricer.col.red;
+
+	/* Window */
+	--adw-window-bg-rgb: ricer.col.background;
+	--adw-window-fg-rgb: ricer.col.foreground;
+
+	/* Views - e.g. text view or tree view */
+	--adw-view-bg-rgb: ricer.col.background_alt;
+	--adw-view-fg-rgb: ricer.col.foreground;
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: ricer.col.background_alt;
+	--adw-headerbar-fg-rgb: ricer.col.foreground;
+	--adw-headerbar-border-rgb: ricer.col.outline;
+	--adw-headerbar-backdrop-rgb: ricer.col.shadow;
+	--adw-headerbar-shade-rgb: ricer.col.shadow;
+	--adw-headerbar-shade-a: 0.36;
+	--adw-headerbar-darker-shade-rgb: ricer.col.shadow;
+	--adw-headerbar-darker-shade-a: 0.9;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: ricer.col.background_alt;
+	--adw-sidebar-fg-rgb: ricer.col.foreground;
+	--adw-sidebar-backdrop-rgb: ricer.col.shadow;
+	--adw-sidebar-shade-rgb: ricer.col.shadow;
+	--adw-sidebar-shade-a: 0.36;
+
+	--adw-secondary-sidebar-bg-rgb: ricer.col.background_alt;
+	--adw-secondary-sidebar-fg-rgb: ricer.col.foreground;
+	--adw-secondary-sidebar-backdrop-rgb: ricer.col.shadow;
+	--adw-secondary-sidebar-shade-rgb: ricer.col.shadow;
+	--adw-secondary-sidebar-shade-a: 0.36;
+
+	/* Cards, boxed lists */
+	--adw-card-bg-rgb: ricer.col.background_alt;
+	--adw-card-bg-a: 0.08;
+	--adw-card-fg-rgb: ricer.col.foreground;
+	--adw-card-shade-rgb: 0, 0, 0;
+	--adw-card-shade-a: 0.36;
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: ricer.col.background;
+	--adw-dialog-fg-rgb: ricer.col.foreground;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: ricer.col.background;
+	--adw-popover-fg-rgb: ricer.col.foreground;
+
+	/* Thumbnails */
+	--adw-thumbnail-bg-rgb: ricer.col.background;
+	--adw-popover-fg-rgb: ricer.col.foreground;
+
+	/* Miscellaneous */
+	--adw-shade-rgb: ricer.col.shadow;
+	--adw-shade-a: 0.36;
+}
