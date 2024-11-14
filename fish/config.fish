@@ -44,6 +44,10 @@ function rice
     /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o OomoxRicer
     nwg-look -a > /dev/null 2>&1 &
     disown
+
+    #Generate Steam theme
+    adwaita-steam-gtk -i > /dev/null 2>&1 &
+    disown
     
     #Restart Dunst
     killall dunst > /dev/null 2>&1
