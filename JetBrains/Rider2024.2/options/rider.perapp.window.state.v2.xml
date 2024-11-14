@@ -36,8 +36,8 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.057005495,
-          "sideWeight": 0.6506091
+          "weight": 0.22615778,
+          "sideWeight": 0.6501859
         },
         {
           "id": "Bookmarks",
@@ -51,8 +51,8 @@
           "order": 5,
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.057005495,
-          "sideWeight": 0.34939092,
+          "weight": 0.22615778,
+          "sideWeight": 0.34981412,
           "isSplit": true
         },
         {
@@ -122,7 +122,6 @@
           "order": 5,
           "anchor": "BOTTOM",
           "isActiveOnStart": true,
-          "isVisible": true,
           "weight": 0.3125
         },
         {
@@ -218,7 +217,9 @@
           "id": "Problems View",
           "order": 12,
           "anchor": "RIGHT",
-          "weight": 0.12372449,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.0958595,
           "sideWeight": 0.34573698
         },
         {
@@ -254,7 +255,6 @@
           "id": "Monitoring",
           "order": 13,
           "anchor": "RIGHT",
-          "isVisible": true,
           "weight": 0.0958595
         },
         {
@@ -266,7 +266,7 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.057005495,
+        "left": 0.22615778,
         "bottom": 0.3125,
         "right": 0.0958595
       }

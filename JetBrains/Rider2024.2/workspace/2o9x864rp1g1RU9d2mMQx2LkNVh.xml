@@ -11,53 +11,53 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="644">
+            <state>
               <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file current-in-tab="true">
+      <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="611">
-              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+            <state relative-caret-position="392">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding>
-                <marker date="1731493208129" expanded="true" signature="929:3926" ph="ConfigFile" />
+                <marker date="1731597643858" expanded="true" signature="1137:4094" ph="ConfigFile" />
               </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ConfigScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"ConfigScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file>
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dbb227d7b33d42b595370bacbf9858301f4200/85/7721c22a/LayoutDataStore.cs">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-229">
-              <caret line="342" column="8" selection-start-line="342" selection-start-column="8" selection-end-line="342" selection-end-column="8" />
+            <state relative-caret-position="672">
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"LayoutDataStore.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"MicrophoneDataScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/Config.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="392">
+            <state>
               <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"Config.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"Config.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="415">
+            <state>
               <caret line="179" column="37" selection-start-line="179" selection-start-column="37" selection-end-line="179" selection-end-column="37" />
               <folding>
-                <marker date="1731489040618" expanded="true" signature="6:195" ph="..." />
+                <element signature="e#0#195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,33 +68,23 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/BackgroundScript.cs">
           <provider editor-type-id="text-editor" selected="true">
             <state>
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"BackgroundScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/DefaultConfig.json">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="112">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"DefaultConfig.json","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,106,115,111,110,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-55,-15,-115,-58,-6,-1,-1,-1,-1,1,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 104,
-      "lastUsed": 1731492140426
+      "usageCount": 122,
+      "lastUsed": 1731598369854
     },
     "JSON": {
-      "usageCount": 11,
-      "lastUsed": 1731490698884
+      "usageCount": 12,
+      "lastUsed": 1731562386065
     }
   }
 }]]></component>
@@ -116,15 +106,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Clock/DigitalClockScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/DefaultConfig.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/ConfigScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/DefaultConfig.json" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BackgroundScript.cs" />
       <option value="$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Config/Config.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BackgroundScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/UnityMainThreadDispatcher/Runtime/UnityMainThreadDispatcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Config/ConfigScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs" />
     </changedPaths>
   </component>
   <component name="IgnoredFileRootStore">
@@ -136,10 +127,10 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="104" lastUsage="1731492140427" />
+      <summary usageCount="122" lastUsage="1731598369855" />
     </language>
     <language id="JSON">
-      <summary usageCount="11" lastUsage="1731490698884" />
+      <summary usageCount="12" lastUsage="1731562386067" />
     </language>
   </component>
   <component name="ProjectView">
@@ -185,6 +176,9 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MicrophoneDataScript.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -213,8 +207,8 @@
         <option name="search-dependencies" value="false" />
         <option name="show-unreal-project-files" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="RiderPerAppToolWindowOpenedTWKeeper">
@@ -262,7 +256,7 @@
         </entry>
         <entry key="Debug">
           <value>
-            <window_info anchor="bottom" id="Debug" order="5" show_stripe_button="false" weight="0.3125" />
+            <window_info active="true" anchor="bottom" id="Debug" order="5" weight="0.3125" />
           </value>
         </entry>
         <entry key="Dynamic Program Analysis">
@@ -342,12 +336,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="12" sideWeight="0.34573698" weight="0.12372449" />
+            <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.0958595" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6506091" visible="true" weight="0.057005495" />
+            <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6501859" visible="true" weight="0.22615778" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -372,7 +366,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info active="true" id="TODO" order="5" sideWeight="0.34939092" side_tool="true" visible="true" weight="0.057005495" />
+            <window_info active="true" id="TODO" order="5" sideWeight="0.34981412" side_tool="true" visible="true" weight="0.22615778" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -439,7 +433,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91022000" />
+    <option name="totallyTimeSpent" value="102275000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,9 +453,9 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6506091" visible="true" weight="0.057005495" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6501859" visible="true" weight="0.22615778" />
       <window_info id="Bookmarks" order="5" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
-      <window_info active="true" id="TODO" order="5" sideWeight="0.34939092" side_tool="true" visible="true" weight="0.057005495" />
+      <window_info active="true" id="TODO" order="5" sideWeight="0.34981412" side_tool="true" visible="true" weight="0.22615778" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -474,7 +468,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.22563559" />
       <window_info anchor="bottom" id="Problems" order="2" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.12040961" />
-      <window_info anchor="bottom" id="Debug" order="5" show_stripe_button="false" weight="0.3125" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" weight="0.3125" />
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="5" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="5" weight="0.22563559" />
@@ -489,16 +483,16 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="10" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info anchor="right" id="Problems View" order="12" sideWeight="0.34573698" weight="0.12372449" />
+      <window_info active="true" anchor="right" id="Problems View" order="12" sideWeight="0.34573698" visible="true" weight="0.0958595" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="13" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="13" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="13" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="13" weight="0.0958595" />
       <window_info anchor="right" id="IL" order="13" weight="0.18004316" />
-      <unified_weights bottom="0.3125" left="0.057005495" right="0.0958595" />
+      <unified_weights bottom="0.3125" left="0.22615778" right="0.0958595" />
     </layoutV2>
     <recentWindows>
-      <value>Debug</value>
+      <value>Project</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -667,35 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ConfigScript.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/BackgroundScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/DefaultConfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f724beac1c704825ad74571377c52f70468c00/72/cd1aca71/Task.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -717,37 +683,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/DefaultConfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="179" column="37" selection-start-line="179" selection-start-column="37" selection-end-line="179" selection-end-column="37" />
-          <folding>
-            <marker date="1731489040618" expanded="true" signature="6:195" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/Config.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="112">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dbb227d7b33d42b595370bacbf9858301f4200/85/7721c22a/LayoutDataStore.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
+        <state>
           <caret line="342" column="8" selection-start-line="342" selection-start-column="8" selection-end-line="342" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/BackgroundScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/Config.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="179" column="37" selection-start-line="179" selection-start-column="37" selection-end-line="179" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UnityMainThreadDispatcher/Runtime/UnityMainThreadDispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="27" column="137" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="137" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state relative-caret-position="392">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
-            <marker date="1731493208129" expanded="true" signature="929:3926" ph="ConfigFile" />
+            <marker date="1731597643858" expanded="true" signature="1137:4094" ph="ConfigFile" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
         </state>
       </provider>
     </entry>
