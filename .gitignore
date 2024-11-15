@@ -53,6 +53,7 @@
 !/Backgrounds/
 !/fontconfig/
 !/wpaperd/
+!/ags/
 !/Dark-Reader-Settings.json
 !/YouTubeEnhancer.json
 
@@ -62,27 +63,33 @@
 ################
 
 # Terminals
+!/kitty/
 !/alacritty.toml
 !/foot/
-!/fish/
-!/kitty/
 
 # CLI
+!/fish/
 !/btop/
+!/htop/
 !/cava/
 !/dunst/
 !/mpd/
 !/ncmpcpp/
 !/neofetch/
 
-# Tools
-!/blender/
-!/BlenderNord.xml
-!/JetBrains/
-!/neovide/
-!/nvim/
+# Unity
 !/UnityUltraWideLayout.wlt
 !/UnityNord.json
+
+# Blender
+!/blender/
+!/BlenderNord.xml
+
+# IDE
+!/nvim/
+!/neovide/
+!/JetBrains/
+!/JetBrainsSettings/
 
 # Files
 !/bat/
@@ -99,13 +106,14 @@
 !/vesktop/settings/
 
 # Misc
-!/.tidal-dl.json
 !/glava/
 !/mpv/
-!/OpenRGB/
-/OpenRGB/logs/
-!/pipewire/
 !/rofi/
 !/clapboard/
 !/swaync/
 !/waybar/
+!/hyprpanel/
+!/pipewire/
+!/.tidal-dl.json
+!/OpenRGB/
+/OpenRGB/logs/

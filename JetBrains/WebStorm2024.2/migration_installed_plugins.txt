@@ -1,2 +1,0 @@
-com.intellij.ml.llm
-com.jetbrains.space
