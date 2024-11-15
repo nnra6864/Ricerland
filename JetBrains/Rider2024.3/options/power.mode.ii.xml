@@ -1,0 +1,14 @@
+<application>
+  <component name="PowerModeII">
+    <option name="blueFrom" value="255" />
+    <option name="flamesEnabled" value="false" />
+    <option name="frameRateHertz" value="120" />
+    <option name="gravityFactor" value="35.55" />
+    <option name="greenFrom" value="255" />
+    <option name="isBamEnabled" value="false" />
+    <option name="isCaretAction" value="true" />
+    <option name="redFrom" value="255" />
+    <option name="sparkCount" value="100" />
+    <option name="sparkVelocityFactor" value="-10.66" />
+  </component>
+</application>

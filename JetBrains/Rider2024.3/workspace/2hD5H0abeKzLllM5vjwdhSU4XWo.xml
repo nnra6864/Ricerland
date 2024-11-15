@@ -1,0 +1,173 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="BeatRunner" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="36n1mnhobho3k" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 1,
+      "lastUsed": 1717115718957
+    },
+    "Markdown": {
+      "usageCount": 1,
+      "lastUsed": 1717115720493
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/NnUtils/Scripts/UI/RadialMenu/RadialMenuScript.cs" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.BeatRunner/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="1" lastUsage="1717115718958" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="1" lastUsage="1717115720493" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="0.9" version="1" />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand />
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-project-names" value="true" />
+        <option name="show-tilde-folders" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BeatRunner" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BeatRunner" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="show-project-imports" value="true" />
+        <option name="autoscroll-all" value="false" />
+        <option name="show-scratches" value="true" />
+        <option name="search-dependencies" value="false" />
+        <option name="show-unreal-project-files" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.50036764" visible="true" weight="0.16155057" />
+      <window_info id="TODO" order="5" sideWeight="0.49963874" side_tool="true" weight="0.15185547" />
+      <window_info id="Bookmarks" order="5" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Unity" order="5" weight="0.15034723" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.12326389" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.32977885" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="9" sideWeight="0.58125" side_tool="true" weight="0.2776466" />
+      <window_info active="true" anchor="right" id="Problems View" order="10" sideWeight="0.41875" visible="true" weight="0.17178276" />
+      <unified_weights bottom="0.15034723" left="0.16155057" right="0.17178276" />
+    </layoutV2>
+    <recentWindows>
+      <value>Problems View</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/UI/RadialMenu/RadialMenuScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <marker date="1717115771262" expanded="true" signature="6:127" ph="..." />
+            <marker date="1717115771262" expanded="true" signature="168:7481" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="218:7479" ph="{...}" />
+            <marker date="1717115771262" expanded="false" signature="1660:4468" ph="Properties" />
+            <marker date="1717115771262" expanded="true" signature="1776:1988" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="1841:1978" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="2061:2708" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="2129:2698" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="2858:3170" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="2921:3160" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="3307:3946" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="3376:3936" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4099:4290" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4163:4280" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4506:4772" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4548:4762" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4802:4885" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="4916:5017" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="5074:6332" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="5365:6255" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="6366:6714" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="6744:6897" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="6926:6967" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="7134:7464" ph="{...}" />
+            <marker date="1717115771262" expanded="true" signature="7177:7387" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

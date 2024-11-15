@@ -1,0 +1,35 @@
+<keymap version="1" name="Visual Studio copy" parent="Visual Studio">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="$Paste">
+    <keyboard-shortcut first-keystroke="shift ctrl v" />
+  </action>
+  <action id="Console.TableResult.CopyAggregatorResult" />
+  <action id="CopyAbsolutePath" />
+  <action id="CopyPaths" />
+  <action id="Editor Copy">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="Editor Paste">
+    <keyboard-shortcut first-keystroke="shift ctrl v" />
+  </action>
+  <action id="EditorCopy">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="EditorPaste">
+    <keyboard-shortcut first-keystroke="shift ctrl v" />
+  </action>
+  <action id="PasteMultiple">
+    <keyboard-shortcut first-keystroke="ctrl alt v" />
+  </action>
+  <action id="RemoteHostView.CopyPaths" />
+  <action id="Terminal.CopySelectedText">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="Terminal.Paste">
+    <keyboard-shortcut first-keystroke="shift ctrl v" />
+  </action>
+  <action id="WelcomeScreen.CopyProjectPath" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction" />
+</keymap>
