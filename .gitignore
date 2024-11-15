@@ -29,12 +29,6 @@
 # Ricing #
 ##########
 
-# Apps
-!/Ricer/
-!/wpaperd/
-!/Dark-Reader-Settings.json
-!/YouTubeEnhancer.json
-
 # KDE
 !/kdeglobals
 !/qt5ct/
@@ -54,8 +48,13 @@
 !/cosmic/
 
 # Misc
+!/Ricer/
+!/Nisualizer/
 !/Backgrounds/
 !/fontconfig/
+!/wpaperd/
+!/Dark-Reader-Settings.json
+!/YouTubeEnhancer.json
 
 
 ################
