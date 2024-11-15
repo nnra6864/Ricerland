@@ -17,6 +17,24 @@
 !/HyprnordLogo.kra
 !/HyprnordLogo.png
 
+
+# Misc
+!/glib-2.0/
+!/xsettingsd/
+!/mimeapps.list
+!/xdg-desktop-portal/
+
+
+##########
+# Ricing #
+##########
+
+# Apps
+!/Ricer/
+!/wpaperd/
+!/Dark-Reader-Settings.json
+!/YouTubeEnhancer.json
+
 # KDE
 !/kdeglobals
 !/qt5ct/
@@ -27,21 +45,17 @@
 !/Nord.colors
 !/kdenliverc
 
-# Cosmic
-!/cosmic/
-
 # GTK
 !/gtk-3.0/
 !/gtk-4.0/
 !/nwg-look/
 
+# Cosmic
+!/cosmic/
+
 # Misc
 !/Backgrounds/
 !/fontconfig/
-!/glib-2.0/
-!/xsettingsd/
-!/mimeapps.list
-!/xdg-desktop-portal/
 
 
 ################
@@ -79,11 +93,11 @@
 !/nemo/
 !/caja/
 
-# Ricing
-!/Ricer/
-!/wpaperd/
-!/Dark-Reader-Settings.json
-!/YouTubeEnhancer.json
+# Social
+!/BetterDiscord/
+!/vesktop/
+/vesktop/*
+!/vesktop/settings/
 
 # Misc
 !/.tidal-dl.json
@@ -96,9 +110,3 @@
 !/clapboard/
 !/swaync/
 !/waybar/
-
-# Social
-!/BetterDiscord/
-!/vesktop/
-/vesktop/*
-!/vesktop/settings/
