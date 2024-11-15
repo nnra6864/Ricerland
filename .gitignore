@@ -88,7 +88,6 @@
 # IDE
 !/nvim/
 !/neovide/
-!/JetBrains/
 !/JetBrainsSettings/
 
 # Files
