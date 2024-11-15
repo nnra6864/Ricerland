@@ -30,6 +30,7 @@
 ##########
 
 # KDE
+!/kdedefaults/
 !/kdeglobals
 !/qt5ct/
 !/qt6ct/
@@ -43,6 +44,8 @@
 !/gtk-3.0/
 !/gtk-4.0/
 !/nwg-look/
+!/nwg-drawer/
+!/nwg-dock-hyprland/
 
 # Cosmic
 !/cosmic/
@@ -89,14 +92,16 @@
 !/nvim/
 !/neovide/
 !/JetBrainsSettings/
+!/zed/
 
 # Files
-!/bat/
 !/dolphinrc
 !/ranger/
 !/nautilus/
 !/nemo/
 !/caja/
+!/bat/
+!/viewnior/
 
 # Social
 !/BetterDiscord/

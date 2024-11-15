@@ -1,0 +1,247 @@
+{
+	"theme": {
+		"mode": "dark",
+		"light": "Nord Light",
+		"dark": "ZedRicer"
+	},
+
+	"base_keymap": "JetBrains",
+
+	"features": {
+		"inline_completion_provider": "copilot"
+	},
+
+	//Font
+	"buffer_font_family": "Courier Prime Code",
+	"buffer_font_size": 21,
+	"buffer_font_weight": 400,
+	"buffer_line_height": "comfortable",
+
+	"ui_font_family": "Courier Prime Code",
+	"ui_font_size": 21,
+	"ui_font_weight": 400,
+
+	"unnecessary_code_fade": 0.3,
+	"vim_mode": true,
+	"relative_line_numbers": true,
+	"restore_on_startup": "last_session",
+	"when_closing_with_no_tabs": "platform_default",
+	"current_line_highlight": "all",
+
+	//Completions
+	"show_completions_on_input": true,
+	"show_completion_documentation": true,
+	"auto_signature_help": true,
+	"show_signature_help_after_edits": true,
+
+	//Guides
+	"show_wrap_guides": true,
+	"wrap_guides": [],
+	"show_whitespaces": "all",
+
+	"indent_guides": {
+		"enabled": true,
+		"line_width": 1,
+		"active_line_width": 2,
+		"coloring": "fixed",
+		"background_coloring": "disabled"
+	},
+
+	"scrollbar": {
+		"show": "never"
+	},
+
+	"middle_click_paste": false,
+	"vertical_scroll_margin": 5,
+	"scroll_sensitivity": 1.0,
+	"search_wrap": true,
+	"use_smartcase_search": false,
+
+	"inlay_hints": {
+		"enabled": true,
+		"show_type_hints": true,
+		"show_parameter_hints": true,
+		"show_other_hints": true,
+		"show_background": false,
+		"edit_debounce_ms": 700,
+		"scroll_debounce_ms": 50
+	},
+
+	"project_panel": {
+		"button": true,
+		"default_width": 240,
+		"dock": "left",
+		"file_icons": true,
+		"folder_icons": true,
+		"git_status": true,
+		"indent_size": 20,
+		"auto_reveal_entries": true,
+		"auto_fold_dirs": true,
+		"scrollbar": {
+			"show": null
+		}
+	},
+
+	"outline_panel": {
+		"button": true,
+		"default_width": 300,
+		"dock": "left",
+		"file_icons": true,
+		"folder_icons": true,
+		"git_status": true,
+		"indent_size": 20,
+		"auto_reveal_entries": true,
+		"auto_fold_dirs": true
+	},
+
+	"collaboration_panel": {
+		"button": true,
+		"dock": "left",
+		"default_width": 240
+	},
+
+	"chat_panel": {
+		"button": true,
+		"dock": "right",
+		"default_width": 240
+	},
+
+	"message_editor": {
+		"auto_replace_emoji_shortcode": true
+	},
+
+	"notification_panel": {
+		"button": true,
+		"dock": "right",
+		"default_width": 380
+	},
+
+	"assistant": {
+		"version": "2",
+		"enabled": true,
+		"button": true,
+		"dock": "right",
+		"default_width": 640,
+		"default_height": 320,
+		"default_model": {
+			"provider": "anthropic",
+			"model": "claude-3-5-sonnet-20240620"
+		}
+	},
+
+	"slash_commands": {
+		"docs": {
+			"enabled": false
+		},
+		"project": {
+			"enabled": false
+		}
+	},
+
+	"show_call_status_icon": true,
+	"enable_language_server": true,
+	"linked_edits": true,
+	"language_servers": ["..."],
+
+	"tab_bar": {
+		"show": true,
+		"show_nav_history_buttons": true
+	},
+
+	"tabs": {
+		"git_status": false,
+		"close_position": "right",
+		"file_icons": false
+	},
+
+	"file_finder": {
+		"file_icons": true
+	},
+
+	"remove_trailing_whitespace_on_save": true,
+	"extend_comment_on_newline": true,
+	"ensure_final_newline_on_save": false,
+	"format_on_save": "on",
+	"formatter": "auto",
+	"soft_wrap": "preferred_line_length",
+	"preferred_line_length": 100,
+	"hard_tabs": true,
+	"tab_size": 4,
+
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"auto_update": false,
+	"diagnostics": {
+		"include_warnings": true
+	},
+
+	"file_scan_exclusions": [
+		"**/.git",
+		"**/.svn",
+		"**/.hg",
+		"**/CVS",
+		"**/.DS_Store",
+		"**/Thumbs.db",
+		"**/.classpath",
+		"**/.settings"
+	],
+
+	"git": {
+		"git_gutter": "tracked_files",
+		"inline_blame": {
+			"enabled": true
+		}
+	},
+
+	"inline_completions": {
+		"disabled_globs": [".env"]
+	},
+
+	"journal": {
+		"path": "~",
+		"hour_format": "hour24"
+	},
+
+	"terminal": {
+		"shell": "system",
+		"dock": "bottom",
+		"default_width": 640,
+		"default_height": 320,
+		"working_directory": "current_project_directory",
+		"blinking": "terminal_controlled",
+		"cursor_shape": null,
+		"button": true,
+		"line_height": "comfortable",
+		"detect_venv": {
+			"on": {
+				"directories": [".env", "env", ".venv", "venv"],
+				"activate_script": "default"
+			}
+		},
+		"toolbar": {
+			"title": true
+		}
+	},
+
+	"lsp": {
+		"omnisharp": {
+			"binary": {
+				"path": "/usr/bin/omnisharp",
+				"args": ["optional", "additional", "args", "-lsp"]
+			}
+		}
+	},
+
+	// Vim settings
+	"vim": {
+		"toggle_relative_line_numbers": true,
+		"use_system_clipboard": "never",
+		"use_multiline_find": false,
+		"use_smartcase_find": false,
+		"custom_digraphs": {}
+	},
+
+	"line_indicator_format": "short"
+}
