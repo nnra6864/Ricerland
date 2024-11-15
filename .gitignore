@@ -1,62 +1,104 @@
+#############
+# RICERLAND #
+#############
+
+# Git
 /*
 !/.gitignore
-!/.tidal-dl.json
-!/alacritty.toml
-!/Backgrounds/
-!/bat/
-!/BetterDiscord/
-!/blender/
-!/BlenderNord.xml
-!/btop/
-!/Dark-Reader-Settings.json
-!/cava/
-!/clapboard/
-!/cosmic/
-!/dolphinrc
-!/dunst/
-!/fish/
-!/fontconfig/
-!/foot/
-!/glava/
-!/glib-2.0/
-!/gtk-3.0/
-!/gtk-4.0/
+!/README.md
+
+
+##########
+# System #
+##########
+
+# Hyprland
 !/hypr/
 !/HyprnordLogo.kra
 !/HyprnordLogo.png
-!/JetBrains/
+
+# KDE
 !/kdeglobals
-!/kdenliverc
-!/kitty/
-!/mimeapps.list
-!/mpd/
-!/mpv/
-!/ncmpcpp/
-!/neofetch/
-!/neovide/
-!/Nord.colors
-!/nvim/
-!/nwg-look/
-!/OpenRGB/
-/OpenRGB/logs/
-!/pipewire/
 !/qt5ct/
 !/qt6ct/
 !/qtcurve/
 !/QtProject/
 !/QtProject.conf
-!/README.md
-!/ranger/
-!/Ricer/
-!/rofi/
-!/swaync/
+!/Nord.colors
+!/kdenliverc
+
+# Cosmic
+!/cosmic/
+
+# GTK
+!/gtk-3.0/
+!/gtk-4.0/
+!/nwg-look/
+
+# Misc
+!/Backgrounds/
+!/fontconfig/
+!/glib-2.0/
+!/xsettingsd/
+!/mimeapps.list
+!/xdg-desktop-portal/
+
+
+################
+# Applications #
+################
+
+# Terminals
+!/alacritty.toml
+!/foot/
+!/fish/
+!/kitty/
+
+# CLI
+!/btop/
+!/cava/
+!/dunst/
+!/mpd/
+!/ncmpcpp/
+!/neofetch/
+
+# Tools
+!/blender/
+!/BlenderNord.xml
+!/JetBrains/
+!/neovide/
+!/nvim/
 !/UnityUltraWideLayout.wlt
 !/UnityNord.json
+
+# Files
+!/bat/
+!/dolphinrc
+!/ranger/
+!/nautilus/
+!/nemo/
+!/caja/
+
+# Ricing
+!/Ricer/
+!/wpaperd/
+!/Dark-Reader-Settings.json
+!/YouTubeEnhancer.json
+
+# Misc
+!/.tidal-dl.json
+!/glava/
+!/mpv/
+!/OpenRGB/
+/OpenRGB/logs/
+!/pipewire/
+!/rofi/
+!/clapboard/
+!/swaync/
+!/waybar/
+
+# Social
+!/BetterDiscord/
 !/vesktop/
 /vesktop/*
 !/vesktop/settings/
-!/waybar/
-!/wpaperd/
-!/xdg-desktop-portal/
-!/xsettingsd/
-!/YouTubeEnhancer.json
