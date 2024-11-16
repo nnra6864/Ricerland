@@ -13,6 +13,9 @@ PreviewSize=16
 5120x1440 screen: Window-Maximized=true
 DirHistory[$e]=$HOME/HDD2TB/Games/Universal/OSU/Skins/,$HOME/HDD2TB/Work/Uni/Homework/CS130/
 
+[FoldersPanel]
+LimitFoldersPanelToHome=false
+
 [General]
 Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136
