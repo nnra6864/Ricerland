@@ -1,0 +1,9 @@
+{
+	"General": {
+		"FPS": 60,
+		"Font": "ricer.val.font",
+		"Sensitivity": 0.5,
+		"Background": "ricer.val.bg"
+	}
+}
+

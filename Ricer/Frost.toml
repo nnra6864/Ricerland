@@ -17,7 +17,7 @@ gtk_theme = "OomoxRicer"
 nvim_theme = "nord"
 
 #Font
-font = "Courier Prime Code"
+font = "Cascadia Code NF"
 min_font_size = 10
 small_font_size = 13
 font_size = 15
@@ -159,3 +159,4 @@ Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/Dark-Reader-Settings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
 AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
+Nisualizer = "~/.config/Nisualizer/config.json"
