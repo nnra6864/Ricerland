@@ -17,7 +17,7 @@ gtk_theme = "OomoxRicer"
 nvim_theme = "nord"
 
 #Font
-font = "Cascadia Code NF"
+font = "Courier Prime Code"
 min_font_size = 10
 small_font_size = 13
 font_size = 15

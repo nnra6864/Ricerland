@@ -1,7 +1,7 @@
 {
 	"General": {
 		"FPS": 60,
-		"Font": "Cascadia Code NF",
+		"Font": "Courier Prime Code",
 		"Sensitivity": 0.5,
 		"Background": "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
 	}
