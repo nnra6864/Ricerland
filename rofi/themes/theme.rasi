@@ -1,7 +1,7 @@
 * {
-	background-col: rgba(15, 40, 63, 0.5);
+	background-col: rgba(16, 40, 64, 0.5);
 	background-selected-col: rgba(21, 57, 89, 0.1);
-	text-col: #AAC9E5;
+	text-col: #ACCAE6;
 	text-selected-col: #6699CC;
 	border-col: #6699CC;
 

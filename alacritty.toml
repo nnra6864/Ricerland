@@ -13,32 +13,32 @@ bold_italic = { family = "Courier Prime Code", style = "Bold Italic" }
 size = 17
 
 [colors]
-footer_bar = { foreground = "#AAC9E5", background = "#0F283F" }
+footer_bar = { foreground = "#ACCAE6", background = "#102840" }
 transparent_background_colors = true
 
 [colors.primary]
-foreground = "#AAC9E5"
-background = "#0F283F"
+foreground = "#ACCAE6"
+background = "#102840"
 dim_foreground = "#8EA7BF"
 bright_foreground = "#BDDFFF"
 
 [colors.search]
-matches = { foreground = "#AAC9E5", background = "#0F283F" }
-focused_match = { foreground = "#BDDFFF", background = "#0F283F" }
+matches = { foreground = "#ACCAE6", background = "#102840" }
+focused_match = { foreground = "#BDDFFF", background = "#102840" }
 
 [colors.hints]
-start = { foreground = "#AAC9E5", background = "#0F283F" }
-end = { foreground = "#8EA7BF", background = "#0F283F" }
+start = { foreground = "#ACCAE6", background = "#102840" }
+end = { foreground = "#8EA7BF", background = "#102840" }
 
 [colors.normal]
-black = "#0F283F"
-red = "#11304C"
-green = "#193F66"
-yellow = "#214F7F"
+black = "#102840"
+red = "#13304D"
+green = "#1A4066"
+yellow = "#205080"
 blue = "#266099"
-magenta = "#2D70B2"
+magenta = "#2D70B3"
 cyan = "#6699CC"
-white = "#AAC9E5"
+white = "#ACCAE6"
 
 [colors.bright]
 black = "#153959"
