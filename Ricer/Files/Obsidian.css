@@ -9,7 +9,7 @@
     --button-hover-bg-color:      #ricer.col.button_highlight;
     --button-hover-text-color:    #ricer.col.foreground_highlight;
     --button-bg-color:            #ricer.col.button;
-    --button-text-color:          #ricer.col.button_text;
+    --button-text-color:          #ricer.col.button_foreground;
     --background-primary:         #ricer.col.background;
     --background-primary-alt:     #ricer.col.background;
     --background-secondary:       #ricer.col.background_alt;

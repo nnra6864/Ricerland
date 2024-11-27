@@ -3,7 +3,7 @@ ChangeSelectionColor=false
 
 [Colors:Button]
 BackgroundNormal=ricer.col.button
-ForegroundNormal=ricer.col.button_text
+ForegroundNormal=ricer.col.button_foreground
 
 [Colors:Selection]
 BackgroundNormal=ricer.col.background_highlight
