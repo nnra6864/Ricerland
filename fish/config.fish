@@ -11,6 +11,13 @@ alias nlear='clear; neofetch'
 alias py='python'
 alias timeshit='timeshift'
 
+# ls
+alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions'
+# Detailed ls
+alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions -muU'
+# Link ls
+alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
+
 function monero
     echo "Enter your password:"
     read -s password
@@ -245,6 +252,14 @@ function unload_modules_from
     end
 end
 
+function xdph
+    killall -e xdg-desktop-portal-hyprland
+    killall -e xdg-desktop-portal-wlr
+    killall xdg-desktop-portal
+    /usr/lib/xdg-desktop-portal-hyprland &
+    sleep 2
+    /usr/lib/xdg-desktop-portal &
+end
 
 zoxide init fish | source
 fish_vi_key_bindings

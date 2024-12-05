@@ -520,7 +520,9 @@
             "clickMethod": "Left"
         },
         "VoiceMessages": {
-            "enabled": true
+            "enabled": true,
+            "echoCancellation": true,
+            "noiseSuppression": true
         },
         "VolumeBooster": {
             "enabled": true,
@@ -735,6 +737,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1732509154284
+        "settingsSyncVersion": 1733380833712
     }
 }

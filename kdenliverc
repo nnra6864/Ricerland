@@ -27,7 +27,7 @@ zoom=7
 [Recent Dirs]
 KdenliveClipFolder[$e]=$HOME/Videos/OBS/,$HOME/Videos,$HOME/Documents
 KdenliveFramesFolder[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Editing/Scout_Linux_Gaming!!!,$HOME/Data/Projects/Editing/Nisualizer/Alpha,$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2
+KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Editing/nn/I'm_Comin,$HOME/Data/Projects/Editing/nn/Insaine_Russian_4K,$HOME/Data/Projects/Editing/Scout_Linux_Gaming!!!
 
 [Recent Files]
 File1[$e]=$HOME/Documents/Projects/EdgeShift/EdgeShift.kdenlive
@@ -35,11 +35,15 @@ File2[$e]=$HOME/Data/Projects/Hyprnord/Hyprnord.kdenlive
 File3[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/IS_THIS_NORMAL.kdenlive
 File4[$e]=$HOME/Data/Projects/Editing/Nisualizer/Alpha/NisualizerAlpha.kdenlive
 File5[$e]=$HOME/Data/Projects/Editing/Scout_Linux_Gaming!!!/Scout_Linux_Gaming!!!.kdenlive
+File6[$e]=$HOME/Data/Projects/Editing/nn/Insaine_Russian_4K/Insaine_Russian_4K.kdenlive
+File7[$e]=$HOME/Data/Projects/Editing/nn/I'm_Comin/I'm_Comin.kdenlive
 Name1[$e]=EdgeShift.kdenlive
 Name2[$e]=Hyprnord.kdenlive
 Name3[$e]=IS_THIS_NORMAL.kdenlive
 Name4[$e]=NisualizerAlpha.kdenlive
 Name5[$e]=Scout_Linux_Gaming!!!.kdenlive
+Name6[$e]=Insaine_Russian_4K.kdenlive
+Name7[$e]=I'm_Comin.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -90,12 +94,12 @@ scale_factor=6
 background_alpha=0
 background_color=0,0,0
 dialog_geometry=AdnQywADAAAAAAAAAAAAAAAABEcAAALVAAAAAAAAAAAAAARHAAAC1QAAAAACAAAAFAAAAAAAAAAAAAAABEcAAALV
-font_color=85,255,255
-font_family=Courier Prime Code,-1,190,5,400,0,0,0,0,0,0,1,0,0,0,1
+font_color=255,255,255
+font_family=Comfortaa,-1,100,5,400,0,0,0,0,0,0,1,0,0,0,1
 font_italic=false
-font_outline=0
-font_outline_color=0,0,0
-font_pixel_size=250
+font_outline=100
+font_outline_color=170,85,255
+font_pixel_size=100
 font_underlined=false
 font_weight=400
 rect_background_alpha=255
@@ -106,10 +110,11 @@ rect_line_width=0
 use_grid=false
 
 [UiSettings]
-ColorSchemePath=
+ColorSchemePath=Ricer.colors
 
 [bin]
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAANsAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAA2wAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
+bin_zoom=5
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAVsAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABWwAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAA==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -128,7 +133,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,11,19,18,35,40.428
+lastCacheCheck=2024,12,4,15,19,38.732
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -147,6 +152,8 @@ renderInterp=hyper
 transcodeFriendly=Lossy x264 I frame only (NVidia GPU)
 
 [sdl]
+audio_driver=3
+audiodrivername=pipewire
 blackmagic_output_device=-1
 preferredcomposite=qtblend
 
@@ -165,6 +172,7 @@ whisperDevice=
 trackheight=74
 
 [titles]
+selected_template=OutlineTitle.kdenlivetitle
 titlerAlign=1
 titlerVersion=400
 
@@ -174,12 +182,10 @@ default_profile=/home/nnra/.local/share/kdenlive/profiles/customprofile2
 defaultrescaleheight=720
 defaultrescalewidth=1280
 guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
-monitor_audio=false
 previewScaling=2
-producerslist=decklink,pango,pixbuf,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,qimage,qtext,kdenlivetitle,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,xml,xml-string,xml-nogl,glaxnimate,framebuffer,avformat,avformat-novalidate,blipflash,count,pgm,subtitle,vorbis
+producerslist=decklink,pango,pixbuf,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,ladspa.1416,ladspa.1885,ladspa.1881,ladspa.1047,ladspa.1050,qimage,qtext,kdenlivetitle,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,xml,xml-string,xml-nogl,glaxnimate,framebuffer,avformat,avformat-novalidate,blipflash,count,pgm,subtitle,vorbis
 project_fps=60
 renderProfile=2560x1440@60
-showtitlebars=false
 use_dark_breeze=true
 widgetstyle=qt6ct-style
 
