@@ -1,6 +1,9 @@
 {
-  "FPS": 60,
-  "Font": "Default",
-  "Sensitivity": 0.5,
-  "Background": ""
+	"General": {
+		"FPS": 60,
+		"Font": "Courier Prime Code",
+		"Sensitivity": 0.5,
+		"Background": "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+	}
 }
+
