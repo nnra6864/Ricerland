@@ -17,21 +17,21 @@ gtk_theme = "OomoxRicer"
 nvim_theme = "nord"
 
 #Font
-font = "Courier Prime Code"
-min_font_size = 10
-small_font_size = 13
-font_size = 15
-big_font_size = 17
-max_font_size = 32
+font = "Cascadia Code NF"
+min_font_size = 8
+small_font_size = 11
+font_size = 13
+big_font_size = 15
+max_font_size = 30
 
 #Misc
-terminal = "kitty"
-opacity = 0.85
+terminal = "alacritty"
+opacity = 0.8
 inactive_opacity = 0.9
 outline_size = 2
 rounding = 10
 cursor_size = 32
-cursor_rot = 21
+cursor_rot = -21
 notification_duration = 3
 
 #Color Values
@@ -63,7 +63,7 @@ br_white = "$white.$highlight_hsv"
 
 #Foreground
 foreground = "$white"
-foreground_highlight = "$foreground.$highlight_hsv"
+foreground_highlight = "$blue"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
@@ -116,15 +116,15 @@ link_visited = "$blue"
 #Code
 code_var = "$foreground"
 code_type = "$cyan"
-code_keyword = "$magenta"
+code_keyword = "$cyan"
 code_attribute = "$br_blue"
 
-code_const = "$br_blue"
+code_const = "$blue"
 code_bracket = "$foreground"
-code_operator = "$magenta"
-code_punctuation = "$blue"
+code_operator = "$cyan"
+code_punctuation = "$cyan"
 
-code_str = "$cyan"
+code_str = "$green"
 code_str_literal = "$foreground"
 code_special_char = "$foreground_highlight_alt"
 code_comment = "$foreground_inactive"
@@ -144,19 +144,17 @@ GTKSettings = "~/.local/share/nwg-look/gsettings"
 Dunst = "~/.config/dunst/dunstrc"
 Fonts = "~/.config/fontconfig/fonts.conf"
 Hyprmouse = "~/.config/hypr/hyprmouse.conf"
-QtCol = "~/.config/qt5ct/colors/Ricer.conf"
-QtColors = "~/.config/qt6ct/colors/Ricer.conf"
+QtCol = "~/.config/qt5ct/colors/theme.conf"
+QtColors = "~/.config/qt6ct/colors/theme.conf"
 KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
 Pywalfox = "~/.cache/wal/colors.json"
-KDEColors = "~/.local/share/color-schemes/Ricer.colors"
+Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
 MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/Dark-Reader-Settings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
-AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
-Nisualizer = "~/.config/Nisualizer/config.json"
