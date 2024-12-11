@@ -1,7 +1,8 @@
 {
-  "FPS": 60,
-  "Sensitivity": 0.5,
-  "InputName": "OutputInput",
-  "Font": "Default",
-  "Scene": "Snowstorm"
+	"FPS": 60,
+	"Sensitivity": 0.5,
+	"InputName": "OutputInput",
+	"Font": "",
+	"Scene": "Snowstorm"
 }
+
