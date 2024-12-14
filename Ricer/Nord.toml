@@ -159,4 +159,5 @@ Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/Dark-Reader-Settings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
 AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
+#Nisualizer = "~/.config/Nisualizer/Config.json"
 Nisualizer = "~/.config/Nisualizer/Config.json"
