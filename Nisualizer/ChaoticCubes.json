@@ -11,7 +11,7 @@
     "SpeedRange": { "X": 1.0, "Y": 3.0 },
 
     "Turbulence": {
-      "RotationSpeed": 20.0,
+      "RotationSpeed": 30.0,
       "IntensityRange": { "X": 5.0, "Y": 7.0 },
       "DragRange": { "X": 1.5, "Y": 2.0 },
       "Frequency": 0.5,
