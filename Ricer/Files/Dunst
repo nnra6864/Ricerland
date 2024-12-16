@@ -1,10 +1,10 @@
 [global]
 follow = mouse
 width = (0, 500)
-height = 100
+height = (0, 100)
 notification_limit = 1
 origin = top-center
-offset = 0x10
+offset = (0, 10)
 progress_bar_max_width = 500
 progress_bar_corner_radius = 0
 font = "ricer.val.font ricer.val.font_size"
