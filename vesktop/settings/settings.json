@@ -103,7 +103,7 @@
             "enabled": false
         },
         "ColorSighted": {
-            "enabled": false
+            "enabled": true
         },
         "ConsoleShortcuts": {
             "enabled": false
@@ -194,7 +194,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 7.851892639037511,
+            "zoom": 3.3518928178514367,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -211,7 +211,12 @@
             "enabled": false
         },
         "LoadingQuotes": {
-            "enabled": false
+            "enabled": true,
+            "replaceEvents": true,
+            "enablePluginPresetQuotes": false,
+            "enableDiscordPresetQuotes": false,
+            "additionalQuotes": "nn",
+            "additionalQuotesDelimiter": "|"
         },
         "MemberCount": {
             "enabled": true,
@@ -279,7 +284,7 @@
             "enabled": false
         },
         "NoProfileThemes": {
-            "enabled": false
+            "enabled": true
         },
         "NoRPC": {
             "enabled": false
@@ -391,7 +396,8 @@
             "enabled": false
         },
         "SecretRingToneEnabler": {
-            "enabled": false
+            "enabled": true,
+            "onlySnow": true
         },
         "SendTimestamps": {
             "enabled": false,
@@ -478,7 +484,7 @@
             "showAvatars": true
         },
         "Unindent": {
-            "enabled": false
+            "enabled": true
         },
         "UnsuppressEmbeds": {
             "enabled": true
@@ -693,7 +699,8 @@
             "enabled": false
         },
         "MentionAvatars": {
-            "enabled": false
+            "enabled": true,
+            "showAtSymbol": true
         },
         "YoutubeAdblock": {
             "enabled": true
@@ -705,7 +712,7 @@
             "enabled": false
         },
         "CopyFileContents": {
-            "enabled": false
+            "enabled": true
         },
         "StickerPaste": {
             "enabled": false
@@ -724,7 +731,7 @@
             "enabled": true
         },
         "FixImagesQuality": {
-            "enabled": false
+            "enabled": true
         }
     },
     "notifications": {
@@ -737,6 +744,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1734541562117
+        "settingsSyncVersion": 1734908954770
     }
 }

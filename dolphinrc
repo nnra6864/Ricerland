@@ -8,8 +8,10 @@ PreviewSize=64
 
 [DetailsMode]
 PreviewSize=16
+SidePadding=39
 
 [ExtractDialog]
+2560x1440 screen: Window-Maximized=true
 5120x1440 screen: Window-Maximized=true
 DirHistory[$e]=$HOME/HDD2TB/Games/Universal/OSU/Skins/,$HOME/HDD2TB/Work/Uni/Homework/CS130/
 
