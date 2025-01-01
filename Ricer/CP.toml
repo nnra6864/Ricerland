@@ -9,49 +9,38 @@ space_colors = false
 space_files = true
 
 [Values]
-#Theme
-bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
-icons = "Nordzy-dark"
-cursor = "Bibata-Modern-Ice"
-gtk_theme = "OomoxRicer"
-nvim_theme = "nord"
-
-#Font
+terminal = "alacritty"
+bg = "~/.config/Backgrounds/CatppuccinCityLandscape.png"
 font = "Cascadia Code NF"
 min_font_size = 8
 small_font_size = 11
 font_size = 13
 big_font_size = 15
 max_font_size = 30
-
-#Misc
-terminal = "alacritty"
-opacity = 0.8
-inactive_opacity = 0.9
+icons = "Nordzy-dark"
+cursor = "Nordzy-catppuccin-macchiato-blue"
+cursor_size = 30
 outline_size = 2
 rounding = 10
-cursor_size = 32
-cursor_rot = -21
+gtk_theme = "catppuccin-macchiato-blue-standard+default"
+nvim_theme = "catppuccin-macchiato"
 notification_duration = 3
 
-#Color Values
 highlight_hsv = "h+0.s+0.v+10"
 placeholder_hsv = "h+0.s+0.v-10"
 inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
-#Terminal
-black = "2e3440"
-red = "bf616a"
-green = "a3be8c"
-yellow = "ebcb8b"
-blue = "5e81ac"
-magenta = "b48ead"
-cyan = "81a1c1"
-white = "d8dee9"
+black = "181926"
+red = "ed8796"
+green = "a6da95"
+yellow = "f5a97f"
+blue = "8aadf4"
+magenta = "c6a0f6"
+cyan = "7dc4e4"
+white = "b7bdf8"
 
-#Terminal Bright
 br_black = "$black.$highlight_hsv"
 br_red = "$red.$highlight_hsv"
 br_green = "$green.$highlight_hsv"
@@ -61,77 +50,51 @@ br_magenta = "$magenta.$highlight_hsv"
 br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
-#Foreground
 foreground = "$white"
-foreground_highlight = "$blue"
+foreground_highlight = "$foreground.$highlight_hsv"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
-#Foreground Alternative
-foreground_alt = "$cyan"
+foreground_alt = "$blue"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
 foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
 
-#Background
 background = "$black"
 background_highlight = "$background.$highlight_hsv"
 background_inactive = "$background.$inactive_hsv"
 background_disabled = "$background.$disabled_hsv"
 
-#Background Alternative
-background_alt = "$black"
+background_alt = "$br_black"
 background_highlight_alt = "$background_alt.$highlight_hsv"
 background_inactive_alt = "$background_alt.$inactive_hsv"
 background_disabled_alt = "$background_alt.$disabled_hsv"
 
-#Button Background
 button = "$br_black"
 button_highlight = "$button.$highlight_hsv"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
-#Button Foreground
-button_foreground = "$cyan"
+button_foreground = "$blue"
 button_foreground_highlight = "$button_foreground.$highlight_hsv"
 button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
-#Outline
-outline = "$cyan"
+outline = "$blue"
 outline_alt = "$br_white"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
 
-#Shadow
 shadow = "$black"
 shadow_inactive = "$shadow.$inactive_hsv"
 
-#Link
 link = "$cyan"
 link_visited = "$blue"
 
-#Code
-code_var = "$foreground"
-code_type = "$cyan"
-code_keyword = "$cyan"
-code_attribute = "$br_blue"
-
-code_const = "$blue"
-code_bracket = "$foreground"
-code_operator = "$cyan"
-code_punctuation = "$cyan"
-
-code_str = "$green"
-code_str_literal = "$foreground"
-code_special_char = "$foreground_highlight_alt"
-code_comment = "$foreground_inactive"
-
-#Music Visualizer
 visualizer = "$white"
-visualizer_outline = "$cyan"
+visualizer_outline = "$blue"
 
 [Files]
 Hyprland = "~/.config/hypr/hyprland.conf"
@@ -150,11 +113,3 @@ KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 YTEnhancer = "~/.config/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
-Pywalfox = "~/.cache/wal/colors.json"
-Krita = "~/.local/share/krita/color-schemes/Ricer.colors"
-RicerHub = "~/.config/RicerHub.py"
-MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
-Oomox = "~/.config/OomoxRicer"
-Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
-DarkReader = "~/.config/Dark-Reader-Settings.json"
-Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"

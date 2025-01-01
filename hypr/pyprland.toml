@@ -1,2 +1,5 @@
 [pyprland]
-plugins = ["toggle_special"]
+plugins = [ "toggle_special", "magnify" ]
+
+[magnify]
+duration = 0
