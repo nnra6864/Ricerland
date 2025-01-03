@@ -12,9 +12,10 @@ alias py='python'
 alias timeshit='timeshift'
 
 # paths
+alias cfg='cd ~/.config/'
 alias hypr='cd ~/.config/hypr/; nvim ./'
-alias fsh='cd ~/.config/fish/'
-alias Nisualizer='cd ~/.config/Nisualizer/'
+alias fsh='cd ~/.config/fish/; nvim ./'
+alias nisu='cd ~/.config/Nisualizer/; nvim ./'
 
 # ls
 alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions'

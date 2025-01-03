@@ -60,7 +60,7 @@ PATH=\$(string escape \"\$PATH\") CMD_DURATION=\$CMD_DURATION fish_bind_mode=\$f
 end
 
 function fish_right_prompt
-    set -e _tide_transient || string unescape \"\$$prompt_var[1][4]$bot_right_frame$color_normal\"
+        #set -e _tide_transient || string unescape \"\$$prompt_var[1][4]$bot_right_frame$color_normal\"
 end"
     else
         eval "
@@ -84,7 +84,7 @@ PATH=\$(string escape \"\$PATH\") CMD_DURATION=\$CMD_DURATION fish_bind_mode=\$f
 end
 
 function fish_right_prompt
-    string unescape \"\$$prompt_var[1][4]$bot_right_frame$color_normal\"
+        #string unescape \"\$$prompt_var[1][4]$bot_right_frame$color_normal\"
 end"
     end
 else # one line prompt initialization
@@ -119,7 +119,7 @@ PATH=\$(string escape \"\$PATH\") CMD_DURATION=\$CMD_DURATION fish_bind_mode=\$f
 end
 
 function fish_right_prompt
-    set -e _tide_transient || string unescape \"\$$prompt_var[1][2]$color_normal\"
+        #set -e _tide_transient || string unescape \"\$$prompt_var[1][2]$color_normal\"
 end"
     else
         eval "
@@ -140,7 +140,7 @@ PATH=\$(string escape \"\$PATH\") CMD_DURATION=\$CMD_DURATION fish_bind_mode=\$f
 end
 
 function fish_right_prompt
-    string unescape \"\$$prompt_var[1][2]$color_normal\"
+        #string unescape \"\$$prompt_var[1][2]$color_normal\"
 end"
     end
 end
