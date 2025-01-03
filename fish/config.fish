@@ -11,6 +11,11 @@ alias nlear='clear; neofetch'
 alias py='python'
 alias timeshit='timeshift'
 
+# paths
+alias hypr='cd ~/.config/hypr/; nvim ./'
+alias fsh='cd ~/.config/fish/'
+alias Nisualizer='cd ~/.config/Nisualizer/'
+
 # ls
 alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions'
 # Detailed ls
