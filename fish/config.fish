@@ -16,6 +16,7 @@ alias cfg='cd ~/.config/'
 alias hypr='cd ~/.config/hypr/; nvim ./'
 alias fsh='cd ~/.config/fish/; nvim ./'
 alias nisu='cd ~/.config/Nisualizer/; nvim ./'
+alias ricer='cd ~/.config/Ricer/; nvim ./'
 
 # ls
 alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions'
@@ -53,8 +54,9 @@ function rice
     #Reload Kitty cfg
     kill -SIGUSR1 (pgrep kitty)
 
-    #Generate Oomox theme and update nwg-look
-    /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o OomoxRicer
+    #Generate Oomox theme and icons and update nwg-look
+    /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o Ricer
+    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/OomoxRicer -o Ricer
     nwg-look -a > /dev/null 2>&1 &
     disown
 

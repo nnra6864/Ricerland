@@ -148,7 +148,7 @@ smallestReadableFont=Courier Prime Code,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Courier Prime Code,15,-1,5,50,0,0,0,0,0,Regular
 
 [Icons]
-Theme=Nordzy-dark
+Theme=Ricer
 
 [KDE]
 AnimationDurationFactor=0.500000
