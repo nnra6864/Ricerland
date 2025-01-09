@@ -160,3 +160,4 @@ DarkReader = "~/.config/Dark-Reader-Settings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
 AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
 Telegram = "~/.config/RicerTelegram.tdesktop-theme"
+Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
