@@ -732,6 +732,9 @@
         },
         "FixImagesQuality": {
             "enabled": true
+        },
+        "FullUserInChatbox": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -744,6 +747,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1736369437562
+        "settingsSyncVersion": 1736650422697
     }
 }

@@ -1,0 +1,38 @@
+{
+  "Name": "NowPlaying",
+  "Components": [
+    {
+      "Type": "Canvas",
+      "Data": {
+        "RenderMode": "ScreenSpaceCamera",
+        "PlaneDistance": 5
+      }
+    },
+    {
+      "Type": "CanvasScaler",
+      "Data": {
+        "ScaleMode": "ScaleWithScreenSize",
+        "ReferenceResolution": { "X": 1920, "Y": 1080 },
+        "ScreenMatchMode": "MatchWidthOrHeight",
+        "MatchWidthOrHeight": 0.5
+      }
+    }
+  ],
+  "Children": [
+    {
+      "Name": "Now Playing",
+      "Components": [
+        { "Type": "RectTransform" },
+        {
+          "Type": "Text",
+          "Data": {
+            "Text": "Now Playing<br>{sh(playerctl metadata --all-players --format '{{ status }}|{{ artist }} - {{ title }}' | grep '^Playing' | cut -d'|' -f2- | paste -sd'|' - | sed 's/|/<br>/g'), 1}",
+            "Alignment": "Center",
+            "Wrapping": "NoWrap",
+            "Interactive": true
+          }
+        }
+      ]
+    }
+  ]
+}
