@@ -1,26 +1,26 @@
 {
-  "SpawnRateRange": { "X": 5000, "Y": 30000 },
-  "SpawnRadius": 0.5,
+  "SpawnRateRange": { "X": 500, "Y": 5000},
+  "SpawnRadius": 1.0,
   "LifetimeRange": { "X": 1.0, "Y": 3.0 },
   "SpeedRange": { "X": 1.0, "Y": 3.0 },
 
   "Turbulence": {
-    "RotationSpeed": 30.0,
-    "IntensityRange": { "X": 5.0, "Y": 7.0 },
+    "RotationSpeed": 20.0,
+    "IntensityRange": { "X": 7.0, "Y": 10.0 },
     "DragRange": { "X": 1.5, "Y": 2.0 },
-    "Frequency": 0.5,
-    "Octaves": 4,
-    "Roughness": 0.5,
-    "Lacunarity": 0.25
+    "Frequency": 1.0,
+    "Octaves": 8,
+    "Roughness": 0.9,
+    "Lacunarity": 0.0
   },
 
   "MeshSmoothness": 0.5,
   "MeshMetallic": 1.0,
-  "MeshSize": 0.025,
+  "MeshSize": 0.1,
   "ColorOverLife": {
     "ColorKeys": [
-      { "Color": { "R": 0.0, "G": 0.4, "B": 1.0 }, "Time": 0.25 },
-      { "Color": { "R": 0.3, "G": 0.5, "B": 1.0 }, "Time": 1.0 }
+      { "Color": { "R": 0.1, "G": 0.5, "B": 1.0 }, "Time": 0.25 },
+      { "Color": { "R": 0.25, "G": 0.5, "B": 1.0 }, "Time": 1.0 }
     ]
   }
 }

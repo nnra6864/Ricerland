@@ -1,0 +1,90 @@
+{
+  "Name": "DigitalClock",
+  "Components": [
+    {
+      "Type": "Canvas",
+      "Data": {
+        "RenderMode": "ScreenSpaceCamera",
+        "PlaneDistance": 5
+      }
+    },
+    {
+      "Type": "CanvasScaler",
+      "Data": {
+        "ScaleMode": "ScaleWithScreenSize",
+        "ReferenceResolution": { "X": 1920, "Y": 1080 },
+        "ScreenMatchMode": "MatchWidthOrHeight",
+        "MatchWidthOrHeight": 0.5
+      }
+    }
+  ],
+  "Children": [
+    {
+      "Name": "Clock",
+      "Components": [
+        {
+          "Type": "RectTransform",
+          "Data": { "Size": { "X": 500, "Y": 500 } }
+        },
+        {
+          "Type": "VerticalLayoutGroup",
+          "Data": {
+            "ChildAlignment": "MiddleCenter",
+            "ControlWidth": true, "ControlHeight": true,
+            "ForceExpandWidth": false, "ForceExpandHeight": false
+          }
+        }
+      ],
+      "Children": [
+        {
+          "Name": "Time",
+          "Components": [
+            { "Type": "RectTransform" },
+            {
+              "Type": "Text",
+              "Data": {
+                "Text": "{dt(HH:mm:ss), interval: 1}",
+                "Alignment": "Center",
+                "Wrapping": "NoWrap",
+                "FontSize": 72,
+                "Interactive": true
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Date",
+          "Components": [
+            { "Type": "RectTransform" },
+            {
+              "Type": "Text",
+              "Data": {
+                "Text": "{dt(dd/MM/yyyy), interval: 1}",
+                "Alignment": "Center",
+                "Wrapping": "NoWrap",
+                "FontSize": 52,
+                "Interactive": true
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Day",
+          "Components": [
+            { "Type": "RectTransform" },
+            {
+              "Type": "Text",
+              "Data": {
+                "Text": "{dt(dddd), interval: 1}",
+                "Alignment": "Center",
+                "Wrapping": "NoWrap",
+                "FontSize": 36,
+                "Interactive": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

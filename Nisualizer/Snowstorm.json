@@ -1,5 +1,6 @@
 {
   "Background": "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg",
+  
   "VFX": {
     "SnowLifetime": 20.0,
     "SnowDensityRange": { "X": 50, "Y": 150 },
@@ -7,6 +8,10 @@
     "SnowSpeedRange": { "X": 1.0, "Y": 5.0 },
     "WindSpeed": 1.0,
     "WindStrengthRange": { "X": 10.0, "Y": 50.0 }
-  }
+  },
+
+  "Objects": [
+    { "Source": "Presets/UI/DigitalClock.json" }
+  ]
 }
 
