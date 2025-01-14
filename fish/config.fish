@@ -1,18 +1,11 @@
-if status is-interactive
-    if test (tty) = /dev/tty1
-        if not set -q WAYLAND_DISPLAY
-            dbus-run-session Hyprland -c ~/.config/hypr/hyprland.conf
-        end
-    end
-end
-
+# Aliases
 alias doas='sudo'
 alias nlear='clear; neofetch'
 alias py='python'
 alias timeshit='timeshift'
 alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk --fullscreen'
 
-# paths
+# Paths
 alias cfg='cd ~/.config/'
 alias hypr='cd ~/.config/hypr/; nvim ./'
 alias fsh='cd ~/.config/fish/; nvim ./'
@@ -26,6 +19,7 @@ alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-pe
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
 
+# Starts Monero Wallet GUI
 function monero
     echo "Enter your password:"
     read -s password
@@ -33,6 +27,7 @@ function monero
     exit
 end
 
+# Rices the system with the provided config
 function rice
     #Start the Shifter transition
     python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
@@ -82,10 +77,12 @@ function rice
     kill -SIGUSR1 $pid
 end
 
+# Turns video resolution into 8K
 function 8k
     ffmpeg -i $argv[1] -vf scale=7680:4320 -c:v libx265 -crf 23 -c:a copy $argv[2]
 end
 
+# Opens neovide and moves terminal to the nv workspace(Hyprland only)
 function nv
     set current_window (hyprctl activewindow -j | jq -r .address 2>/dev/null)
     
@@ -105,6 +102,7 @@ function nv
     hyprctl dispatch movetoworkspace "$current_workspace,address:$current_window" >/dev/null 2>&1
 end
 
+# Opens fzf result with nvim
 function nvimf
     set file (fzf --preview="bat --color=always {}")
     if test -n "$file"
@@ -112,6 +110,7 @@ function nvimf
     end
 end
 
+# Opens fzf result with neovide
 function nvf
     set file (fzf --preview="bat --color=always {}")
     if test -n "$file"
@@ -119,6 +118,7 @@ function nvf
     end
 end
 
+# Used to cut shadowplays
 function spc
     read -P "Enter input file path - " input_file
     set input_file (string trim -- $input_file)
@@ -171,14 +171,17 @@ function spc
     end
 end
 
+# Downloads a video from youtube
 function ytdl
     yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
 end
 
+# Downloads audio from youtube
 function ytdla
     yt-dlp -f bestaudio --extract-audio --audio-format mp3 "$argv"
 end
 
+# Turns a file into mp3
 function mp3
     if test (count $argv) -ne 1
         echo "Usage: mp3 <input_file>"
@@ -202,6 +205,7 @@ function mp3
     end
 end
 
+# Combines all input devices into a new one called CombinedInput
 function combine_input
     # Create a new virtual source that other apps can use as input
     set SOURCE_NAME "CombinedInput"
@@ -228,6 +232,7 @@ function combine_input
     echo "You can now select '$SOURCE_NAME' as an input device in your applications"
 end
 
+# Creates a new input and output device that mirrors all the system audio(used for Nisualizer)
 function output_input
     # Create a new virtual source that other apps can use as input
     set SOURCE_NAME "OutputInput"
@@ -249,7 +254,8 @@ function output_input
     end
 end
 
-function unload_modules_from
+# Unloads pactl modules
+function pactl_unload_modules_from
     set start_id $argv[1]
     while true
         # Attempt to unload the current module
@@ -261,6 +267,7 @@ function unload_modules_from
     end
 end
 
+# Restarts the hyprland desktop portal
 function xdph
     killall -e xdg-desktop-portal-hyprland
     killall -e xdg-desktop-portal-wlr
@@ -270,5 +277,29 @@ function xdph
     /usr/lib/xdg-desktop-portal &
 end
 
+# Fish config
 zoxide init fish | source
 fish_vi_key_bindings
+
+# Start a Hyprland session
+if status is-interactive
+    if test (tty) = /dev/tty1
+        if not set -q WAYLAND_DISPLAY
+            # Remove any stale keyring files
+            rm -rf /run/user/1000/keyring/*
+
+            # Start dbus session
+            eval (dbus-launch --sh-syntax)
+
+            # Start gnome-keyring-daemon
+            /usr/bin/gnome-keyring-daemon --start --components=secrets,ssh
+
+            # Setup and combine_input and output_input
+            combine_input
+            output_input
+
+            # Start Hyprland
+            Hyprland
+        end
+    end
+end

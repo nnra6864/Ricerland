@@ -39,7 +39,6 @@
         {
           "Name": "Time",
           "Components": [
-            { "Type": "RectTransform" },
             {
               "Type": "Text",
               "Data": {
@@ -55,7 +54,6 @@
         {
           "Name": "Date",
           "Components": [
-            { "Type": "RectTransform" },
             {
               "Type": "Text",
               "Data": {
@@ -71,7 +69,6 @@
         {
           "Name": "Day",
           "Components": [
-            { "Type": "RectTransform" },
             {
               "Type": "Text",
               "Data": {

@@ -26,7 +26,7 @@
         {
           "Type": "Text",
           "Data": {
-            "Text": "Now Playing<br>{sh(playerctl metadata --all-players --format '{{ status }}|{{ artist }} - {{ title }}' | grep '^Playing' | cut -d'|' -f2- | paste -sd'|' - | sed 's/|/<br>/g'), 1}",
+            "Text": "Now Playing<br>{sh(playerctl metadata --all-players --format '{{ status }}|{{ artist }} - {{ title }}' | grep '^Playing' | cut -d'|' -f2- | paste -sd'|' - | sed 's/|/<br>/g'), interval: 1}",
             "Alignment": "Center",
             "Wrapping": "NoWrap",
             "Interactive": true

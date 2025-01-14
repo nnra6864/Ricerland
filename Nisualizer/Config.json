@@ -1,6 +1,6 @@
 {
 	"FPS": 60,
-	"Sensitivity": 0.75,
+	"Sensitivity": 1,
 	"InputName": "OutputInput",
 	"Font": "",
 	"Scene": "Snowstorm",
