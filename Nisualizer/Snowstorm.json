@@ -11,7 +11,8 @@
   },
 
   "Objects": [
-    { "Source": "Presets/UI/DigitalClock.json" }
+    { "Source": "Presets/UI/DigitalClock.json" },
+    { "Source": "Presets/UI/NowPlaying.json" }
   ]
 }
 

@@ -45,7 +45,7 @@
                 "Text": "{dt(HH:mm:ss), interval: 1}",
                 "Alignment": "Center",
                 "Wrapping": "NoWrap",
-                "FontSize": 72,
+                "FontSize": 96,
                 "Interactive": true
               }
             }
@@ -60,7 +60,22 @@
                 "Text": "{dt(dd/MM/yyyy), interval: 1}",
                 "Alignment": "Center",
                 "Wrapping": "NoWrap",
-                "FontSize": 52,
+                "FontSize": 72,
+                "Interactive": true
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Weather",
+          "Components": [
+            {
+              "Type": "Text",
+              "Data": {
+                "Text": "{sh(curl -s 'wttr.in/?format=%t+%C'), interval: 60}",
+                "Alignment": "Center",
+                "Wrapping": "NoWrap",
+                "FontSize": 48,
                 "Interactive": true
               }
             }

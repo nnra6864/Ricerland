@@ -1,5 +1,5 @@
 {
-  "Name": "NowPlaying",
+  "Name": "Dust",
   "Components": [
     {
       "Type": "Canvas",
@@ -20,24 +20,24 @@
   ],
   "Children": [
     {
-      "Name": "Now Playing",
+      "Name": "Dust",
       "Components": [
         {
           "Type": "RectTransform",
           "Data": {
-            "Size": { "X": 0, "Y": 0 },
             "AnchorsX": { "X": 0, "Y": 0 },
-            "AnchorsY": { "X": 1, "Y": 1 },
-            "Position": { "X": 50, "Y": -50 }
+            "AnchorsY": { "X": 0, "Y": 0 },
+            "Position": { "X": 150, "Y": 50 }
           }
         },
         {
           "Type": "Text",
           "Data": {
-            "Text": "Now Playing:<br>{sh(playerctl metadata --all-players --format '{{ status }}|{{ artist }} - {{ title }}' | grep '^Playing' | cut -d'|' -f2- | paste -sd'|' - | sed 's/|/<br>/g'), interval: 1}",
-            "Alignment": "TopLeft",
+            "Text": "{sh(dust ~/.config), interval: 100}",
+            "Alignment": "BottomLeft",
             "Wrapping": "NoWrap",
-            "FontSize": 24,
+            "Font": "Cascadia Code NF",
+            "FontSize": 16,
             "Interactive": true
           }
         }

@@ -4,3 +4,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/nnra6864/kickstart.nvim
+[submodule "hypr/HyprlandUnityFix"]
+	path = hypr/HyprlandUnityFix
+	url = https://github.com/nnra6864/HyprlandUnityFix
