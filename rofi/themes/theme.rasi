@@ -1,12 +1,13 @@
 * {
 	background-col: rgba(16, 40, 64, 0.5);
 	background-selected-col: rgba(21, 57, 89, 0.1);
+    background-color: transparent;
+    transparency: "real";
+	
+	color: #ACCAE6;
 	text-col: #ACCAE6;
 	text-selected-col: #608FBF;
 	border-col: #608FBF;
-
-    background-color: transparent;
-    transparency: "real";
     highlight: underline bold #6DA1D8;
 }
 
@@ -31,14 +32,15 @@ mainbox {
 }
 
 message {
-    padding: 5;
+    padding: 16px;
+	background-color: @background-col;
+
     border-color: @border-col;
-    border-radius: 10px;
+    border-radius: 0;
     border:  0 2px 2px 2px;
 }
 
 inputbar {
-    color: @text-col;
     padding: 16px;
     background-color: @background-col;
 
