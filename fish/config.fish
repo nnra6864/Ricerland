@@ -1,3 +1,9 @@
+# Customize prompt
+set -g tide_left_prompt_items time os vi_mode pwd git 
+set -g tide_right_prompt_items
+set -g tide_right_prompt_suffix ''
+set -g tide_time_format '%T'
+
 # Aliases
 alias doas='sudo'
 alias nlear='clear; neofetch'

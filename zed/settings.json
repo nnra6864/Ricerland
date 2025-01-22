@@ -85,7 +85,7 @@
 	"outline_panel": {
 		"button": true,
 		"default_width": 300,
-		"dock": "left",
+		"dock": "right",
 		"file_icons": true,
 		"folder_icons": true,
 		"git_status": true,
