@@ -2,12 +2,12 @@
 	background-col: rgba(16, 40, 64, 0.5);
 	background-selected-col: rgba(21, 57, 89, 0.1);
 	text-col: #ACCAE6;
-	text-selected-col: #6699CC;
-	border-col: #6699CC;
+	text-selected-col: #608FBF;
+	border-col: #608FBF;
 
     background-color: transparent;
     transparency: "real";
-    highlight: underline bold #72ACE5;
+    highlight: underline bold #6DA1D8;
 }
 
 window {

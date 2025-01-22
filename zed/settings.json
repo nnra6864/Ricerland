@@ -226,11 +226,11 @@
 	},
 
 	"lsp": {
-		"omnisharp": {
-			"binary": {
-				"path": "/usr/bin/omnisharp",
-				"args": ["optional", "additional", "args", "-lsp"]
-			}
+		"csharp": {
+			"command": "omnisharp",
+			"args": ["-lsp"],
+			"language_id": "csharp",
+			"root_markers": ["*.csproj", "*.sln"]
 		}
 	},
 

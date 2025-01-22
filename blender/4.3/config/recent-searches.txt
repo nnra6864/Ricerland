@@ -1,0 +1,5 @@
+Generate ▸ Subdivision Surface
+Vector Math ▸ Multiply
+Input ▸ Value
+Texture ▸ Noise Texture
+Color Ramp ▸ Fac

@@ -43,12 +43,12 @@ disabled_hsv = "h+0.s-5.v-15"
 [Colors]
 # Terminal
 black = "102840"
-red = "13304d"
-green = "1a4066"
-yellow = "205080"
-blue = "266099"
-magenta = "2d70b3"
-cyan = "6699cc"
+red = "bf3030"
+green = "60bf30"
+yellow = "bfa730"
+blue = "3078bf"
+magenta = "8330bf"
+cyan = "608fbf"
 white = "accae6"
 
 # Terminal Bright
@@ -110,21 +110,21 @@ shadow = "$black"
 shadow_inactive = "$shadow.$inactive_hsv"
 
 # Link
-link = "$cyan"
-link_visited = "$blue"
+link = "$br_cyan"
+link_visited = "$br_blue"
 
 # Code
 code_var = "$foreground"
-code_type = "$cyan"
-code_keyword = "$magenta"
+code_type = "$br_cyan"
+code_keyword = "$br_blue"
 code_attribute = "$br_blue"
 
 code_const = "$br_blue"
 code_bracket = "$foreground"
-code_operator = "$magenta"
-code_punctuation = "$blue"
+code_operator = "$br_cyan"
+code_punctuation = "$br_blue"
 
-code_str = "$cyan"
+code_str = "$br_cyan"
 code_str_literal = "$foreground"
 code_special_char = "$foreground_highlight_alt"
 code_comment = "$foreground_inactive"

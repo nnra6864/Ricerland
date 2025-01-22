@@ -17,9 +17,9 @@ transparency = 100
 background = "#10284001"
 foreground = "#ACCAE6FF"
 highlight = "#BDDFFFFF"
-frame_color = "#6699CCFF"
+frame_color = "#608FBFFF"
 separator_color = frame
-format = "<span color='#6699CCFF'>%s</span>\n%b"
+format = "<span color='#608FBFFF'>%s</span>\n%b"
 icon_corner_radius = 10
 timeout = 3
 show_indicators = no
