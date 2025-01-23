@@ -13,12 +13,12 @@
 
 	//Font
 	"buffer_font_family": "Courier Prime Code",
-	"buffer_font_size": 21,
+	"buffer_font_size": 24,
 	"buffer_font_weight": 400,
 	"buffer_line_height": "comfortable",
 
 	"ui_font_family": "Courier Prime Code",
-	"ui_font_size": 21,
+	"ui_font_size": 24,
 	"ui_font_weight": 400,
 
 	"unnecessary_code_fade": 0.3,

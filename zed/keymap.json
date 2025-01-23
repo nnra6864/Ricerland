@@ -1,23 +1,21 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
 	{
 		"context": "Workspace",
 		"bindings": {
-			// "shift shift": "file_finder::Toggle"
+			"shift": "file_finder::Toggle",
+			"space s f": "file_finder::Toggle",
+			"alt-h": "pane::GoBack",
+			"alt-l": "pane::GoForward"
 		}
 	},
 	{
 		"context": "Editor",
 		"bindings": {
-			// "j k": ["workspace::SendKeystrokes", "escape"],
 			"ctrl-shift-c": "editor::Copy",
-			"ctrl-shift-v": "editor::Paste"
+			"ctrl-shift-v": "editor::Paste",
+			"alt-w": "pane::CloseActiveItem",
+			"ctrl-alt-h": ["workspace::ActivatePaneInDirection", "Left"],
+			"ctrl-alt-l": ["workspace::ActivatePaneInDirection", "Right"]
 		}
 	}
 ]
