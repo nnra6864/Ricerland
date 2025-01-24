@@ -116,17 +116,29 @@
 		"default_width": 380
 	},
 
-	"assistant": {
-		"version": "2",
-		"enabled": true,
-		"button": true,
-		"dock": "right",
-		"default_width": 640,
-		"default_height": 320,
-		"default_model": {
-			"provider": "anthropic",
-			"model": "claude-3-5-sonnet-20240620"
+	"language_models": {
+		"openai": {
+			"version": "1",
+			"available_models": [
+				{
+					"name": "deepseek-coder",
+					"max_tokens": 128000
+				},
+				{
+					"name": "deepseek-chat",
+					"max_tokens": 128000
+				}
+			],
+			"api_url": "https://api.deepseek.com/beta"
 		}
+	},
+
+	"assistant": {
+		"default_model": {
+			"provider": "openai",
+			"model": "deepseek-chat"
+		},
+		"version": "2"
 	},
 
 	"slash_commands": {

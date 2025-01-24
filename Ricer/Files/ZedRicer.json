@@ -39,7 +39,7 @@
 				"icon.accent": "#ricer.col.foreground_highlight",
 				"status_bar.background": "#ricer.col.background_alt",
 				"title_bar.background": "#ricer.col.background_alt",
-				"title_bar.inactive_background": "#ricer.col.background_inactive_alt",
+				"title_bar.inactive_background": "#ricer.col.background_alt",
 				"toolbar.background": "#ricer.col.background_alt",
 				"tab_bar.background": "#ricer.col.background_alt",
 				"tab.inactive_background": "#ricer.col.background_inactive_alt",
