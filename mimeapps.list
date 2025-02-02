@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;dev.zed.Zed.desktop;libreoffice-writer.desktop;org.kde.okteta.desktop;
-application/octet-stream=nvim.desktop;neovide.desktop;org.kde.okteta.desktop;
+application/octet-stream=blender.desktop;nvim.desktop;neovide.desktop;org.kde.okteta.desktop;
 application/pdf=firefox.desktop;krita_pdf.desktop;chromium.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/x-msdownload=wine.desktop;com.usebottles.bottles.desktop;
@@ -19,9 +19,10 @@ text/css=neovide.desktop;nvim.desktop;azuredatastudio.desktop;vim.desktop;codium
 text/csv=codium-wayland.desktop;azuredatastudio.desktop;nvim.desktop;vim.desktop;krita_csv.desktop;codium.desktop;
 text/html=firefox.desktop;
 text/markdown=dev.zed.Zed.desktop;nvim.desktop;vim.desktop;libreoffice-writer.desktop;
-text/plain=dev.zed.Zed.desktop;nvim.desktop;vim.desktop;libreoffice-writer.desktop;
+text/plain=nvim.desktop;dev.zed.Zed.desktop;vim.desktop;libreoffice-writer.desktop;blender.desktop;
 text/x-c++src=neovide.desktop;nvim.desktop;azuredatastudio.desktop;vim.desktop;codium-wayland.desktop;zed.desktop;codium.desktop;
 text/x-csharp=dev.zed.Zed.desktop;nvim.desktop;rider.desktop;vim.desktop;libreoffice-writer.desktop;
+text/x-log=nvim.desktop;dev.zed.Zed.desktop;vim.desktop;libreoffice-writer.desktop;blender.desktop;
 text/x-python=neovide.desktop;nvim.desktop;azuredatastudio.desktop;vim.desktop;codium.desktop;dev.zed.Zed.desktop;codium-wayland.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
 video/quicktime=vlc.desktop;mpv.desktop;skypeforlinux-share.desktop;
@@ -33,7 +34,7 @@ x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
-application/octet-stream=nvim.desktop;
+application/octet-stream=blender.desktop;
 application/pdf=firefox.desktop;
 application/uproject=com.epicgames.UnrealEngineEditor.desktop
 application/vnd.microsoft.portable-executable=wine.desktop;
@@ -59,9 +60,10 @@ text/css=neovide.desktop;
 text/csv=codium-wayland.desktop;
 text/html=firefox.desktop
 text/markdown=dev.zed.Zed.desktop;
-text/plain=dev.zed.Zed.desktop;
+text/plain=nvim.desktop;
 text/x-c++src=neovide.desktop;
 text/x-csharp=dev.zed.Zed.desktop;
+text/x-log=nvim.desktop;
 text/x-python=neovide.desktop;
 video/mp4=vlc.desktop;
 video/quicktime=vlc.desktop;

@@ -10,7 +10,8 @@
 			"ctrl-alt-h": ["workspace::ActivatePaneInDirection", "Left"],
 			"ctrl-alt-left": ["workspace::ActivatePaneInDirection", "Left"],
 			"ctrl-alt-l": ["workspace::ActivatePaneInDirection", "Right"],
-			"ctrl-alt-right": ["workspace::ActivatePaneInDirection", "Right"]
+			"ctrl-alt-right": ["workspace::ActivatePaneInDirection", "Right"],
+			"alt-r": "editor::Rename"
 		}
 	},
 

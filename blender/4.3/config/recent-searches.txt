@@ -1,5 +1,17 @@
-Generate ▸ Subdivision Surface
 Vector Math ▸ Multiply
 Input ▸ Value
+Generate ▸ Decimate
+  Gear.001
+  Gear.002
+Generate ▸ Subdivision Surface
+Generate ▸ Boolean
+
+   QuitButton
 Texture ▸ Noise Texture
+Mapping ▸ Vector
+Map Range ▸ From Min
+Converter ▸ Mix
 Color Ramp ▸ Fac
+Separate XYZ ▸ Vector
+Separate Color ▸ Color
+Invert Color ▸ Fac

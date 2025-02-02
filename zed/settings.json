@@ -135,8 +135,8 @@
 
 	"assistant": {
 		"default_model": {
-			"provider": "openai",
-			"model": "deepseek-chat"
+			"provider": "ollama",
+			"model": "deepseek-r1:7b"
 		},
 		"version": "2"
 	},

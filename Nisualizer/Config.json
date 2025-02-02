@@ -4,6 +4,6 @@
 	"InputName": "OutputInput",
 	"Font": "",
 	"Scene": "Snowstorm",
-	"Shell": "/bin/fish",
+	"Shell": "/bin/nu",
 }
 

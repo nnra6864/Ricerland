@@ -194,7 +194,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 1.8518928774560788,
+            "zoom": 3.726892802950275,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -349,8 +349,12 @@
         },
         "PinDMs": {
             "enabled": true,
-            "dmSectioncollapsed": false,
-            "pinOrder": 0
+            "pinOrder": 0,
+            "dmSectionCollapsed": false,
+            "canCollapseDmSection": false,
+            "userBasedCategoryList": {
+                "576156118519119894": []
+            }
         },
         "PlainFolderIcon": {
             "enabled": false
@@ -735,6 +739,9 @@
         },
         "FullUserInChatbox": {
             "enabled": false
+        },
+        "IrcColors": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -747,6 +754,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1737502569136
+        "settingsSyncVersion": 1738278144061
     }
 }

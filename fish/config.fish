@@ -182,6 +182,17 @@ function ytdl
     yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
 end
 
+# Downloads a video with metadata
+function ytdli
+    # Downloads the video
+    yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --write-info-json --write-thumbnail --write-subs -o "%(title)s/%(title)s.%(ext)s" "$argv"
+
+    # Makes the json human readable
+    for file in **/*.info.json
+        jq . "$file" > temp.json && mv temp.json "$file"
+    end    
+end
+
 # Downloads audio from youtube
 function ytdla
     yt-dlp -f bestaudio --extract-audio --audio-format mp3 "$argv"
