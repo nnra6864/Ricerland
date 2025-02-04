@@ -178,9 +178,6 @@
         "GreetStickerPicker": {
             "enabled": true
         },
-        "HideAttachments": {
-            "enabled": true
-        },
         "iLoveSpam": {
             "enabled": true
         },
@@ -742,6 +739,9 @@
         },
         "IrcColors": {
             "enabled": false
+        },
+        "HideMedia": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -754,6 +754,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1738278144061
+        "settingsSyncVersion": 1738505493212
     }
 }

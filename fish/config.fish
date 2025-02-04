@@ -25,6 +25,13 @@ alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-pe
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
 
+function rename_texture --argument model_name
+    for file in *.png
+        set new_name (echo $file | sed "s/^[^_]*_/$model_name_/; s/_//")
+        mv "$file" "$new_name"
+    end
+end
+
 # Starts Monero Wallet GUI
 function monero
     echo "Enter your password:"

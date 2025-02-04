@@ -136,7 +136,7 @@
 	"assistant": {
 		"default_model": {
 			"provider": "ollama",
-			"model": "deepseek-r1:7b"
+			"model": "qwen2.5:32b"
 		},
 		"version": "2"
 	},
