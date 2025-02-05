@@ -17,17 +17,17 @@
           "type": "time"
         },
         {
-          "background": "#ricer.col.foreground",
+          "background": "#ricer.col.cyan",
           "foreground": "#ricer.col.background",
-          "leading_diamond": "<transparent,#ricer.col.foreground>\ue0b0</>",
+          "leading_diamond": "<transparent,#ricer.col.cyan>\ue0b0</>",
           "style": "diamond",
           "template": " {{ .Icon }} ",
           "trailing_diamond": "\ue0b0",
           "type": "os"
         },
         {
-          "background": "#ricer.col.foreground_alt",
-          "foreground": "#ricer.col.background_alt",
+          "background": "#ricer.col.blue",
+          "foreground": "#ricer.col.background",
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "<transparent>\ue0b1 </>",
@@ -36,17 +36,17 @@
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
-          "leading_diamond": "<transparent,#ricer.col.foreground_alt>\ue0b0</>",
+          "leading_diamond": "<transparent,#ricer.col.blue>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
           "type": "path"
         },
         {
-          "background": "#ricer.col.foreground_highlight",
+          "background": "#ricer.col.foreground",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.br_yellow{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ricer.col.br_magenta{{ end }}",
-            "{{ if gt .Ahead 0 }}#ricer.col.br_green{{ end }}",
-            "{{ if gt .Behind 0 }}#ricer.col.br_cyan{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.yellow{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ricer.col.magenta{{ end }}",
+            "{{ if gt .Ahead 0 }}#ricer.col.green{{ end }}",
+            "{{ if gt .Behind 0 }}#ricer.col.cyan{{ end }}"
           ],
           "foreground": "#ricer.col.background",
           "powerline_symbol": "\ue0b0",
