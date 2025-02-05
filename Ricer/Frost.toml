@@ -135,6 +135,7 @@ visualizer_outline = "$cyan"
 
 [Files]
 Hyprland = "~/.config/hypr/hyprland.conf"
+oh-my-posh = "~/.config/oh-my-posh/Ricer.json"
 Alacritty = "~/.config/alacritty.toml"
 NvimTheme = "~/.config/nvim/lua/theme.lua"
 RofiConfig = "~/.config/rofi/config.rasi"
