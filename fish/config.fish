@@ -43,9 +43,9 @@ end
 # Rices the system with the provided config
 function rice
     #Start the Shifter transition
-    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    set pid $last_pid
-    disown
+    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    #set pid $last_pid
+    #disown
     
     sleep 0.2
 
@@ -64,8 +64,8 @@ function rice
     kill -SIGUSR1 (pgrep kitty)
 
     #Generate Oomox theme and icons and update nwg-look
-    /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o Ricer
-    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/OomoxRicer -o Ricer
+    /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
+    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
     nwg-look -a > /dev/null 2>&1 &
     disown
 
@@ -86,8 +86,8 @@ function rice
 
     #Nlear the console, sleep and kill Shifter
     nlear
-    sleep 1
-    kill -SIGUSR1 $pid
+    #sleep 1
+    #kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K

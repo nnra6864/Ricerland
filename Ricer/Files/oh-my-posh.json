@@ -12,7 +12,7 @@
         },
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} ",
-          "leading_diamond": "<transparent,#ricer.col.foreground>\ue0b0</>",
+          "leading_diamond": "<#ricer.col.foreground,transparent>\ue0b6</>",
           "trailing_diamond": "\ue0b0",
           "type": "time"
         },
@@ -22,26 +22,25 @@
           "leading_diamond": "<transparent,#ricer.col.cyan>\ue0b0</>",
           "style": "diamond",
           "template": " {{ .Icon }} ",
-          "trailing_diamond": "\ue0b0",
+          "trailing_diamond": "<#ricer.col.background>\ue0b1",
           "type": "os"
         },
         {
-          "background": "#ricer.col.blue",
+          "background": "#ricer.col.cyan",
           "foreground": "#ricer.col.background",
           "properties": {
             "folder_icon": "...",
-            "folder_separator_icon": "<transparent>\ue0b1 </>",
+            "folder_separator_icon": "<#ricer.col.background> \ue0b1 </>",
             "home_icon": "\ueb06",
             "style": "agnoster_short"
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
-          "leading_diamond": "<transparent,#ricer.col.blue>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
           "type": "path"
         },
         {
-          "background": "#ricer.col.foreground",
+          "background": "#ricer.col.blue",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.yellow{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ricer.col.magenta{{ end }}",
@@ -63,7 +62,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏠\"}} @ {{.HostName}}",
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"\"}} @ {{.HostName}}",
   "final_space": true,
   "version": 3
 }
