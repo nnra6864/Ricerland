@@ -20,6 +20,7 @@
 
 # Misc
 !/glib-2.0/
+!/hints/
 !/xsettingsd/
 !/mimeapps.list
 !/xdg-desktop-portal/
@@ -72,6 +73,7 @@
 
 # CLI
 !/fish/
+!/nushell/
 !/btop/
 !/htop/
 !/cava/

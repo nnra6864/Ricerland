@@ -1,0 +1,22 @@
+{
+    "hints": {
+        "hint_height": 30,
+        "hint_width_padding": 10,
+        "hint_font_size": 16,
+        "hint_font_face": "Sans",
+        "hint_font_r": 0,
+        "hint_font_g": 0,
+        "hint_font_b": 0,
+        "hint_font_a": 1,
+        "hint_pressed_font_r": 1,
+        "hint_pressed_font_g": 1,
+        "hint_pressed_font_b": 1,
+        "hint_pressed_font_a": 1,
+        "hint_upercase": true,
+        "hint_background_r": 0.25,
+        "hint_background_g": 0.5,
+        "hint_background_b": 0.75,
+        "hint_background_a": 0.75
+    }
+}
+

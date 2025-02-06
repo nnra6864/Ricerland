@@ -32,7 +32,8 @@
             "folder_icon": "...",
             "folder_separator_icon": "<#ricer.col.background> \ue0b1 </>",
             "home_icon": "\ueb06",
-            "style": "agnoster_short"
+            "style": "unique",
+            "max_depth": 1
           },
           "style": "diamond",
           "template": " {{ .Path }} ",

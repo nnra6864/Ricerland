@@ -1,8 +1,8 @@
-# Customize prompt
-set -g tide_left_prompt_items time os vi_mode pwd git 
-set -g tide_right_prompt_items
-set -g tide_right_prompt_suffix ''
-set -g tide_time_format '%T'
+# Customize prompt (Obsolete, using omp now)
+# set -g tide_left_prompt_items time os vi_mode pwd git 
+# set -g tide_right_prompt_items
+# set -g tide_right_prompt_suffix ''
+# set -g tide_time_format '%T'
 
 # Aliases
 alias doas='sudo'
@@ -25,13 +25,6 @@ alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-pe
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
 
-function rename_texture --argument model_name
-    for file in *.png
-        set new_name (echo $file | sed "s/^[^_]*_/$model_name_/; s/_//")
-        mv "$file" "$new_name"
-    end
-end
-
 # Starts Monero Wallet GUI
 function monero
     echo "Enter your password:"
@@ -43,22 +36,14 @@ end
 # Rices the system with the provided config
 function rice
     #Start the Shifter transition
-    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    #set pid $last_pid
-    #disown
+    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    set pid $last_pid
+    disown
     
     sleep 0.2
 
     #Execute Ricer
     python ~/Data/Projects/Ricer/Ricer.py $argv > /dev/null 2>&1
-    
-    #Copy the YT Enhancer cfg
-    cat ~/.config/YouTubeEnhancer.json | wl-copy
-    
-    #Restart GLava
-    #killall glava > /dev/null 2>&1
-    #glava >/dev/null 2>&1 &
-    #disown
 
     #Reload Kitty cfg
     kill -SIGUSR1 (pgrep kitty)
@@ -78,16 +63,13 @@ function rice
     dunst >/dev/null 2>&1 &
     disown
 
-    #Update flatpak env(requires sudo)
-    #sudo flatpak override --env=GTK_THEME=(gsettings get org.gnome.desktop.interface gtk-theme | string trim -c "\'")
-
     #Update Unity Hub(requires sudo)
     #sudo python .config/RicerHub.py /opt/unityhub/
 
     #Nlear the console, sleep and kill Shifter
     nlear
-    #sleep 1
-    #kill -SIGUSR1 $pid
+    sleep 1
+    kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
@@ -327,3 +309,8 @@ if status is-interactive
         end
     end
 end
+
+oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
+
+# Created by `pipx` on 2025-02-06 06:22:34
+set PATH $PATH /home/nnra/.local/bin
