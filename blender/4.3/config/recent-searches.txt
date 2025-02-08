@@ -7,7 +7,6 @@ Generate ▸ Subdivision Surface
 Generate ▸ Boolean
 
    QuitButton
-Texture ▸ Noise Texture
 Mapping ▸ Vector
 Map Range ▸ From Min
 Converter ▸ Mix
@@ -15,3 +14,4 @@ Color Ramp ▸ Fac
 Separate XYZ ▸ Vector
 Separate Color ▸ Color
 Invert Color ▸ Fac
+Texture ▸ Noise Texture

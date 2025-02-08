@@ -72,7 +72,7 @@
             {
               "Type": "Text",
               "Data": {
-                "Text": "{sh(curl -s https://wttr.in/?format=%t+%C), interval: 60}",
+                "Text": "{sh(curl -s https://wttr.in/?format=%t+%C), interval: 300}",
                 "Alignment": "Center",
                 "Wrapping": "NoWrap",
                 "FontSize": 48,
