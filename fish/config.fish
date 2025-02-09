@@ -166,10 +166,10 @@ function spc
     end
 end
 
-# Downloads a video from youtube
-function ytdl
-    yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "$argv"
-end
+# Downloads video
+alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
+# Downloads audio
+alias dla 'yt-dlp -f bestaudio --extract-audio'
 
 # Downloads a video with metadata
 function ytdli
@@ -182,10 +182,6 @@ function ytdli
     end    
 end
 
-# Downloads audio from youtube
-function ytdla
-    yt-dlp -f bestaudio --extract-audio --audio-format mp3 "$argv"
-end
 
 # Turns a file into mp3
 function mp3
