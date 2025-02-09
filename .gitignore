@@ -74,6 +74,7 @@
 # CLI
 !/fish/
 !/nushell/
+!/oh-my-posh/
 !/btop/
 !/htop/
 !/cava/
