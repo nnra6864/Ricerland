@@ -1,6 +1,4 @@
 {
-  "Background": "~/.config/Backgrounds/Frost/MistyFrostEntrance.png",
-  
   "VFX": {
     "SnowLifetime": 20.0,
     "SnowDensityRange": { "X": 50, "Y": 150 },
@@ -11,6 +9,7 @@
   },
 
   "Objects": [
+    { "Source": "Presets/UI/Background.json" },
     { "Source": "Presets/UI/DigitalClock.json" },
     { "Source": "Presets/UI/NowPlaying.json" }
   ]

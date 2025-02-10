@@ -1,0 +1,42 @@
+{
+  "Name": "Background",
+  "Components": [
+    {
+      "Type": "Canvas",
+      "Data": {
+        "RenderMode": "ScreenSpaceCamera",
+        "PlaneDistance": "30"
+      }
+    },
+    {
+      "Type": "CanvasScaler",
+      "Data": {
+        "ScaleMode": "ScaleWithScreenSize",
+        "ReferenceResolution": { "X": 1920, "Y": 1080 },
+        "ScreenMatchMode": "MatchWidthOrHeight",
+        "MatchWidthOrHeight": 0.5
+      }
+    }
+  ],
+  "Children": [
+    {
+      "Name": "BackgroundImage",
+      "Components": [
+        {
+          "Type": "RectTransform",
+          "Data": {
+            "Size": { "X": 0, "Y": 0 },
+            "AnchorsX": { "X": 0, "Y": 1 },
+            "AnchorsY": { "X": 0, "Y": 1 },
+          }
+        },
+        {
+          "Type": "Image",
+          "Data": {
+            "Image": "~/.config/Backgrounds/Frost/SnowyFrostEntrance.png"
+          }
+        }
+      ]
+    }
+  ]
+}
