@@ -1,42 +1,50 @@
-:root {
-    --app-font: "ricer.val.font";
+/* Ricer by nnra */
+/* https://github.com/CapnKitten/Material-Discord */
 
-    --background-col: #ricer.col.background;
+:root {
+	/* Variables */
+	--background-col: #ricer.col.background;
     --background-col-alt: #ricer.col.background_alt;
     --background-highlight: #ricer.col.background_highlight;
     --background-highlight-alt: #ricer.col.background_highlight_alt;
-
 	--text-col: #ricer.col.foreground;
 	--highlight-col: #ricer.col.foreground_highlight;
-    
+	--placeholder-col: #ricer.col.foreground_placeholder;
+	--link-col: #ricer.col.link;
+	--button-text-col: #ricer.col.button_foreground;
     --outline-col: #ricer.col.outline;
     --rounding-big: ricer.val.rounding\px;
     --rounding-small: calc(var(--rounding-big) / 2);
 
-
+	/* App Elements */
+    --app-font: "ricer.val.font";
+	--app-bg: var(--background-col);
     --main-color: var(--background-col);
     --main-alt: var(--background-col-alt);
     --status-picker-color: var(--background-col);
     --sidebar-panel-color: var(--background-col-alt);
+	--chat-color: var(--background-col);
     --tooltip-color: var(--background-col-alt);
     --tooltip-text-color: var(--text-col);
     --tooltip-shadow: var(--background-col-alt);
 
+	/* Accent Elements */
     --accent-lightness: 100%;
     --accent-text-color: var(--background-col);
 
+	/* Message Elements */
     --message-color: var(--background-col-alt);
     --message-color-hover: var(--background-highlight);
     --message-color-alt: var(--background-col-alt);
     --message-radius: var(--rounding-big);
     --media-radius: var(--rounding-big);
     --attachment-color: var(--background-col);
-
     --main-textarea-color: var(--background-col-alt);
     --main-textarea-color-alt: var(--background-col);
     --main-textarea-border: var(--outline-col);
-    --main-textarea-border-radius: var(--rounding-big);
+    --main-textarea-radius: var(--rounding-big);
 
+	/* Popout Menu Elements */
     --popout-color: var(--background-col-alt);
     --popout-color-alt: var(--background-col);
     --popout-header-border: var(--outline-col);
@@ -44,6 +52,7 @@
     --popout-radius: var(--rounding-big);
     --popout-radius-big: var(--rounding-big);
 
+	/* Card Elements */
     --card-color-filled: var(--background-col-alt);
     --card-color-hover: var(--background-highlight-alt);
     --card-color-active: var(--background-col-alt);
@@ -54,17 +63,21 @@
     --card-radius: var(--rounding-big);
     --card-radius-big: var(--rounding-big);
 
+	/* Button Elements */
 	--button-radius: var(--rounding-big);
-	--button-link-text-color: var(--text-col);
+	--button-link-text-color: var(--link-col);
 
-	--switch-knob-color: var(--text-col);
+	/* Slider And Switch Elements */
+	--switch-knob-color: var(--button-text-col);
 	--switch-slider-color: var(--background-col-alt);
 
+	/* Input Elements */
 	--input-color: var(--background-col-alt);
 	--input-color-alt: var(--background-col);
 	--input-border-color: var(--outline-col);
 	--input-text-color: var(--text-col);
-	--input-placeholder-color: var(--text-col);
-
-	--scrollbar-color: var(--outline-col);
+	--input-placeholder-color: var(--placeholder-col);
+	
+	/* Various Elements */
+	--scrollbar-color: var(--button-text-col);
 }
