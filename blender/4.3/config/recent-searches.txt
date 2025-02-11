@@ -15,3 +15,6 @@ Separate XYZ ▸ Vector
 Separate Color ▸ Color
 Invert Color ▸ Fac
 Texture ▸ Noise Texture
+Math ▸ Subtract
+Texture ▸ Image Texture
+   CageBars
