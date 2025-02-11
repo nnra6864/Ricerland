@@ -4,64 +4,64 @@
 :root {
 	/* Variables */
 	--background-col: #ricer.col.background;
-    --background-col-alt: #ricer.col.background_alt;
-    --background-highlight: #ricer.col.background_highlight;
-    --background-highlight-alt: #ricer.col.background_highlight_alt;
+	--background-col-alt: #ricer.col.background_alt;
+	--background-highlight: #ricer.col.background_highlight;
+	--background-highlight-alt: #ricer.col.background_highlight_alt;
 	--text-col: #ricer.col.foreground;
 	--highlight-col: #ricer.col.foreground_highlight;
 	--placeholder-col: #ricer.col.foreground_placeholder;
 	--link-col: #ricer.col.link;
 	--button-text-col: #ricer.col.button_foreground;
-    --outline-col: #ricer.col.outline;
-    --rounding-big: ricer.val.rounding\px;
-    --rounding-small: calc(var(--rounding-big) / 2);
+	--outline-col: #ricer.col.outline;
+	--rounding-big: ricer.val.rounding\px;
+	--rounding-small: calc(var(--rounding-big) / 2);
 
 	/* App Elements */
-    --app-font: "ricer.val.font";
+	--app-font: "ricer.val.font";
 	--app-bg: var(--background-col);
-    --main-color: var(--background-col);
-    --main-alt: var(--background-col-alt);
-    --status-picker-color: var(--background-col);
-    --sidebar-panel-color: var(--background-col-alt);
+	--main-color: var(--background-col);
+	--main-alt: var(--background-col-alt);
+	--status-picker-color: var(--background-col);
+	--sidebar-panel-color: var(--background-col-alt);
 	--chat-color: var(--background-col);
-    --tooltip-color: var(--background-col-alt);
-    --tooltip-text-color: var(--text-col);
-    --tooltip-shadow: var(--background-col-alt);
+	--tooltip-color: var(--background-col-alt);
+	--tooltip-text-color: var(--text-col);
+	--tooltip-shadow: var(--background-col-alt);
 
 	/* Accent Elements */
-    --accent-lightness: 100%;
-    --accent-text-color: var(--background-col);
+	--accent-lightness: 100%;
+	--accent-text-color: var(--background-col);
 
 	/* Message Elements */
-    --message-color: var(--background-col-alt);
-    --message-color-hover: var(--background-highlight);
-    --message-color-alt: var(--background-col-alt);
-    --message-radius: var(--rounding-big);
-    --media-radius: var(--rounding-big);
-    --attachment-color: var(--background-col);
-    --main-textarea-color: var(--background-col-alt);
-    --main-textarea-color-alt: var(--background-col);
-    --main-textarea-border: var(--outline-col);
-    --main-textarea-radius: var(--rounding-big);
+	--message-color: var(--background-col-alt);
+	--message-color-hover: var(--background-highlight);
+	--message-color-alt: var(--background-col-alt);
+	--message-radius: var(--rounding-big);
+	--media-radius: var(--rounding-big);
+	--attachment-color: var(--background-col);
+	--main-textarea-color: var(--background-col-alt);
+	--main-textarea-color-alt: var(--background-col);
+	--main-textarea-border: var(--outline-col);
+	--main-textarea-radius: var(--rounding-big);
 
 	/* Popout Menu Elements */
-    --popout-color: var(--background-col-alt);
-    --popout-color-alt: var(--background-col);
-    --popout-header-border: var(--outline-col);
-    --separator-color: var(--outline-col);
-    --popout-radius: var(--rounding-big);
-    --popout-radius-big: var(--rounding-big);
+	--popout-color: var(--background-col-alt);
+	--popout-color-alt: var(--background-col);
+	--popout-header-border: var(--outline-col);
+	--separator-color: var(--outline-col);
+	--popout-radius: var(--rounding-big);
+	--popout-radius-big: var(--rounding-big);
 
 	/* Card Elements */
-    --card-color-filled: var(--background-col-alt);
-    --card-color-hover: var(--background-highlight-alt);
-    --card-color-active: var(--background-col-alt);
-    --card-color-alt: var(--background-col);
-    --card-color-alt-hover: var(--background-hover);
-    --card-border-color: var(--outline-col);
-    --card-header-text-color: var(--text-col);
-    --card-radius: var(--rounding-big);
-    --card-radius-big: var(--rounding-big);
+	--card-color-filled: var(--background-col-alt);
+	--card-color-hover: var(--background-highlight-alt);
+	--card-color-active: var(--background-col-alt);
+	--card-color-alt: var(--background-col);
+	--card-color-alt-hover: var(--background-hover);
+	--card-border-color: var(--outline-col);
+	--card-header-text-color: var(--text-col);
+	--card-radius: var(--rounding-big);
+	--card-radius-big: var(--rounding-big);
 
 	/* Button Elements */
 	--button-radius: var(--rounding-big);
@@ -77,7 +77,17 @@
 	--input-border-color: var(--outline-col);
 	--input-text-color: var(--text-col);
 	--input-placeholder-color: var(--placeholder-col);
-	
+
 	/* Various Elements */
 	--scrollbar-color: var(--button-text-col);
+}
+
+/* Fixes the bar above friend list(thanks CapnKitten(https://github.com/CapnKitten/Material-Discord/issues/233)) */
+.container__9293f.themed__9293f {
+	background-color: transparent;
+	box-shadow: 0;
+}
+
+.children__9293f:after {
+    display: none;
 }
