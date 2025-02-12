@@ -2,7 +2,7 @@
 	"FPS": 60,
 	"Sensitivity": 0.5,
 	"InputName": "OutputInput",
-	"Font": "",
+	"Font": "Default",
 	"Scene": "Snowstorm",
 	"Shell": "/bin/nu",
 }

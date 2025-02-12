@@ -1,0 +1,79 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+terminal = "alacritty"
+bg = "~/.config/Backgrounds/NordicRuinsInASnowyBlizzard.jpg"
+font = "Cascadia Code NF"
+min_font_size = 8
+small_font_size = 11
+font_size = 13
+big_font_size = 15
+max_font_size = 30
+icons = "Nordzy-dark"
+cursor = "Nordzy-cursors-white"
+cursor_size = 30
+outline_size = 2
+rounding = 10
+gtk_theme = "Nordic-darker-v40"
+nvim_theme = "nord"
+notification_duration = 3
+
+hl_h = "h-10"
+hl_s = "s+25"
+hl_v = "v+25"
+hl_hsv = "h-10.s+25.v+25"
+
+[Colors]
+black = "2e3440"
+red = "bf616a"
+green = "a3be8c"
+yellow = "ebcb8b"
+blue = "5e81ac"
+magenta = "b48ead"
+cyan = "88c0d0"
+white = "d8dee9"
+
+br_black = "3b4252"
+br_red = "d08770"
+br_green = "a3be8c"
+br_yellow = "ebcb8b"
+br_blue = "81a1c1"
+br_magenta = "b48ead"
+br_cyan = "8fbcbb"
+br_white = "eceff4"
+
+text = "$br_white"
+text_highlight = "$br_blue"
+text_inactive = "$white"
+text_placeholder = "$white"
+link = "$cyan"
+link_visited = "$br_cyan"
+
+background = "$black"
+background_alt = "$br_black"
+background_highlight = "$br_black"
+background_highlight_alt = "$black"
+background_inactive = "$br_black"
+background_inactive_alt = "$black"
+
+outline = "$br_blue"
+outline_alt = "$br_white"
+outline_inactive = "$white"
+outline_inactive_alt = "$black"
+
+shadow = "$black"
+shadow_inactive = "$black"
+
+button = "$br_black"
+button_inactive = "$black"
+
+[Files]
+Example = "~/.config/Ricer/Example"

@@ -1,0 +1,175 @@
+/* Zen Ricer */
+/* nnra */
+
+/* Dark mode styles for Zen Browser user content pages */
+@media (prefers-color-scheme: dark) {
+
+  /*-----------------------------------------------------
+    Common Styles for All about: Pages
+    These variables affect every page under the "about:" URL space.
+  -----------------------------------------------------*/
+  @-moz-document url-prefix("about:") {
+    :root {
+      --in-content-page-color: #ricer.col.foreground !important;  /* Main in-content text color */
+      --color-accent-primary: #ricer.col.foreground_highlight !important;  /* Primary accent color (updated from blue) */
+      --color-accent-primary-hover: #ricer.col.foreground_highlight !important;  /* Accent color on hover (updated from br_blue) */
+      --color-accent-primary-active: #ricer.col.foreground_highlight !important;  /* Accent color when active (updated from br_blue) */
+      background-color: #ricer.col.background !important;  /* Overall background color for about pages */
+      --in-content-page-background: #ricer.col.background !important;  /* In-content background variable */
+    }
+  }
+
+  /*-----------------------------------------------------
+    Styles for About: New Tab and About: Home
+    Specific variables and styles for new tab and home pages.
+  -----------------------------------------------------*/
+  @-moz-document url("about:newtab"), url("about:home") {
+
+    :root {
+      --newtab-background-color: #ricer.col.background !important;  /* New tab main background color */
+      --newtab-background-color-secondary: #ricer.col.button !important;  /* Secondary background (e.g., panels) */
+      --newtab-element-hover-color: #ricer.col.button !important;  /* Hover color for interactive elements */
+      --newtab-text-primary-color: #ricer.col.foreground !important;  /* Primary text color on new tab */
+      --newtab-wordmark-color: #ricer.col.foreground !important;  /* Wordmark (logo text) color */
+      --newtab-primary-action-background: #ricer.col.foreground_highlight !important;  /* Primary action button background (updated from blue) */
+    }
+
+    .icon {
+      color: #ricer.col.foreground_highlight !important;  /* Icon color updated from blue to foreground_highlight */
+    }
+
+    .search-wrapper .logo-and-wordmark .logo {
+      background: url("ZenLogo.svg") no-repeat center !important;  /* Logo image for new tab */
+      display: inline-block !important;  /* Ensures logo sizing is respected */
+      height: 82px !important;  /* Logo height */
+      width: 82px !important;   /* Logo width */
+      background-size: 82px !important;  /* Logo scaling size */
+    }
+
+    @media (max-width: 609px) {
+      .search-wrapper .logo-and-wordmark .logo {
+        background-size: 64px !important;  /* Adjusted logo size for smaller screens */
+        height: 64px !important;  /* Adjusted logo height */
+        width: 64px !important;   /* Adjusted logo width */
+      }
+    }
+
+    .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
+      color: #ricer.col.foreground_highlight !important;  /* Card title color on interaction (updated from blue) */
+    }
+
+    .top-site-outer .search-topsite {
+      background-color: #ricer.col.foreground_highlight !important;  /* Top site background updated from blue to foreground_highlight */
+    }
+
+    .compact-cards .card-outer .card-context .card-context-icon.icon-download {
+      fill: #ricer.col.green !important;  /* Download icon color remains green as a semantic indicator */
+    }
+  }
+
+  /*-----------------------------------------------------
+    Styles for About: Preferences
+    Variables and UI styles specific to the preferences pages.
+  -----------------------------------------------------*/
+  @-moz-document url-prefix("about:preferences") {
+    :root {
+      --zen-colors-tertiary: #ricer.col.background !important;  /* Tertiary color for UI elements */
+      --in-content-text-color: #ricer.col.foreground !important;  /* In-content text color */
+      --link-color: #ricer.col.foreground_highlight !important;  /* Link color updated from blue to foreground_highlight */
+      --link-color-hover: #ricer.col.foreground_highlight !important;  /* Link hover color updated from br_blue to foreground_highlight */
+      --zen-colors-primary: #ricer.col.button !important;  /* Primary UI element background (e.g., buttons) */
+      --in-content-box-background: #ricer.col.button !important;  /* Background color for in-content boxes */
+      --zen-primary-color: #ricer.col.foreground_highlight !important;  /* Primary accent for preferences updated from blue */
+    }
+
+    groupbox, moz-card {
+      background: #ricer.col.background !important;  /* Background for group boxes and card elements */
+    }
+
+    button,
+    groupbox menulist {
+      background: #ricer.col.button !important;  /* Button and menulist background color */
+      color: #ricer.col.foreground !important;  /* Button text color */
+    }
+
+    .main-content {
+      background-color: #ricer.col.background !important;  /* Main content area background color */
+    }
+
+    /* Identity color themes for tab and icon representations in preferences */
+    .identity-color-blue {
+      --identity-tab-color: #ricer.col.blue !important;    /* Identity tab color remains blue */
+      --identity-icon-color: #ricer.col.blue !important;     /* Identity icon color remains blue */
+    }
+
+    .identity-color-turquoise {
+      --identity-tab-color: #ricer.col.cyan !important;    /* Identity tab color remains cyan */
+      --identity-icon-color: #ricer.col.cyan !important;     /* Identity icon color remains cyan */
+    }
+
+    .identity-color-green {
+      --identity-tab-color: #ricer.col.green !important;   /* Identity tab color remains green */
+      --identity-icon-color: #ricer.col.green !important;    /* Identity icon color remains green */
+    }
+
+    .identity-color-yellow {
+      --identity-tab-color: #ricer.col.yellow !important;  /* Identity tab color remains yellow */
+      --identity-icon-color: #ricer.col.yellow !important;   /* Identity icon color remains yellow */
+    }
+
+    .identity-color-orange {
+      --identity-tab-color: #ricer.col.br_yellow !important;  /* Identity tab color remains bright yellow/orange */
+      --identity-icon-color: #ricer.col.br_yellow !important;   /* Identity icon color remains bright yellow/orange */
+    }
+
+    .identity-color-red {
+      --identity-tab-color: #ricer.col.red !important;    /* Identity tab color remains red */
+      --identity-icon-color: #ricer.col.red !important;     /* Identity icon color remains red */
+    }
+
+    .identity-color-pink {
+      --identity-tab-color: #ricer.col.br_magenta !important;  /* Identity tab color remains bright magenta */
+      --identity-icon-color: #ricer.col.br_magenta !important;   /* Identity icon color remains bright magenta */
+    }
+
+    .identity-color-purple {
+      --identity-tab-color: #ricer.col.magenta !important;   /* Identity tab color remains magenta/purple */
+      --identity-icon-color: #ricer.col.magenta !important;    /* Identity icon color remains magenta/purple */
+    }
+  }
+
+  /*-----------------------------------------------------
+    Styles for About: Addons
+    Variables affecting the add-ons management page.
+  -----------------------------------------------------*/
+  @-moz-document url-prefix("about:addons") {
+    :root {
+      --zen-dark-color-mix-base: #ricer.col.background !important;  /* Base color for dark theme in add-ons */
+      --background-color-box: #ricer.col.background !important;  /* Background color for boxes in add-ons */
+    }
+  }
+
+  /*-----------------------------------------------------
+    Styles for About: Protections
+    Variables and UI adjustments for the protections (security) page.
+  -----------------------------------------------------*/
+  @-moz-document url-prefix("about:protections") {
+    :root {
+      --zen-primary-color: #ricer.col.background !important;  /* Primary color for protections set to background */
+      --social-color: #ricer.col.magenta !important;  /* Color for social-related indicators */
+      --coockie-color: #ricer.col.cyan !important;  /* Color for cookie-related elements */
+      --fingerprinter-color: #ricer.col.yellow !important;  /* Color for fingerprinting alerts */
+      --cryptominer-color: #ricer.col.foreground_highlight !important;  /* Cryptominer alert color updated from br_blue */
+      --tracker-color: #ricer.col.green !important;  /* Tracker indicator color remains green */
+      --in-content-primary-button-background-hover: #ricer.col.button_highlight !important;  /* Hover background for primary buttons */
+      --in-content-primary-button-text-color-hover: #ricer.col.foreground !important;  /* Hover text color for primary buttons */
+      --in-content-primary-button-background: #ricer.col.button !important;  /* Primary button background color */
+      --in-content-primary-button-text-color: #ricer.col.foreground !important;  /* Primary button text color */
+    }
+
+    .card {
+      background-color: #ricer.col.button !important;  /* Card background color for protections elements */
+    }
+  }
+}
+

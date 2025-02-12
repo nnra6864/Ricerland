@@ -1,0 +1,917 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "urlInstaller": true,
+      "windowPosition": {},
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "t",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1738342908857,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name          Clean YouTube\n@author        0ko (https://userstyles.world/~0ko)\n@description   Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.\n@version       3.3.0\n@license       MIT\n@preprocessor  stylus\n\n@namespace     0ko userstyles\n@homepageURL   https://codeberg.org/0ko/UserStyles#clean-youtube\n@supportURL    https://codeberg.org/0ko/UserStyles/issues\n\n@var checkbox  noShorts               \"No short videos\"               1\n@var checkbox  noVoiceSearch          \"No voice search\"               1\n@var checkbox  noUpload               \"No upload button\"              0\n@var checkbox  lessCrazyAnimations    \"Less crazy button animations\"  1\n@var checkbox  noMemberships          \"No channel memberships\"        1\n\n@var select    noHome_                \"Home:\"                 {\" \":\"_\"}\n@var checkbox  noHomeTags             \"  No top tags\"                 0\n@var checkbox  noHomeDifferent        \"  No New to you\"               1\n@var checkbox  noHomeLatestPosts      \"  No Latest posts\"             0\n@var checkbox  noHomeVideoSurveys     \"  No video Surveys\"            1\n@var checkbox  noHomeJunkSections     \"  No other junk sections\"      1\n\n@var select    noVideo_               \"Video:\"                {\" \":\"_\"}\n@var checkbox  noVideoCornerLogo      \"  No logo in corner\"           1\n@var checkbox  noVideoPlayNext        \"  No Next video button\"        1\n@var checkbox  noVideoClipButton      \"  No Clip button\"              1\n@var checkbox  noVideoWatchNext       \"  No Watch next column (emptiness) OR new bottom grid\" 0\n@var checkbox  noVideoEndscreenVideos \"  No endscreen video suggestions\" 0\n@var checkbox  noVideoSuggestionsTags \"  No tags for Watch next\"      1\n@var checkbox  noVideoVignette        \"  No bottom vignette\"          0\n@var checkbox  noVideoVignetteTop     \"  No top vignette (fullscreen)\" 0\n@var checkbox  noVideoChannelLinks    \"  No channel links (socials) in description\" 1\n\n@var select    noLogo_                \"Logo:\"                 {\" \":\"_\"}\n@var checkbox  noLogoAccent           \"  Monochrome button\"           0\n@var checkbox  noLogoCountryCode      \"  No country code\"             1\n\n@var select    noSidebar_             \"Sidebar:\"              {\" \":\"_\"}\n@var checkbox  noSidebarNewnessDots   \"  No newness dots\"             1\n@var checkbox  noSidebarBloat         \"  No bloat\"                    1\n\n@var checkbox  noSubsTopGap           \"Subscriptions: reduce top gap\" 1\n\n@var checkbox  noSearchUnrelated      \"Search: no unrelated videos\"   1\n\n@var checkbox  noCommentsPaidBg       \"Comments: no paid background\"  1\n\n==/UserStyle== */\n\nimp = !important\n\n@-moz-document domain(\"youtube.com\")\n\n\tif noShorts\n\t\t/* on Main and in Subscriptions (alt: &:has(a[href^=\"/feed/subscriptions/shorts\"])) */\n\t\tytd-rich-shelf-renderer[is-shorts]\n\t\t\tdisplay: none imp\n\n\t\t/* in Search */\n\t\tytd-reel-shelf-renderer /* section */\n\t\t\t&:has(ytm-shorts-lockup-view-model-v2)\n\t\t\t\tdisplay: none imp\n\t\tytd-video-renderer /* video */\n\t\t\t&:has(a#video-title[href^=\"/shorts/\"])\n\t\t\t\tdisplay: none imp\n\n\t\t/* \"Shorts remixing this video\" */\n\t\t#description ytd-reel-shelf-renderer.ytd-structured-description-content-renderer:has(#dismissible)\n\t\t\tdisplay: none imp\n\n\tif noVoiceSearch\n\t\t#voice-search-button.ytd-masthead\n\t\t\tdisplay: none imp\n\n\tif noUpload\n\t\tytd-topbar-menu-button-renderer.ytd-masthead:nth-child(1):has(path[d*=\"3v3H9v\"])\n\t\t\tdisplay: none imp\n\n\tif lessCrazyAnimations\n\t\tytd-segmented-like-dislike-button-renderer\n\t\tsegmented-like-dislike-button-view-model\n\t\t\t.smartimation__border-gradient\n\t\t\t\tdisplay: none\n\t\t\t.smartimation--active-border .smartimation__background\n\t\t\t\topacity: 0\n\t\t\tytd-lottie-player\n\t\t\t\tfilter: saturate(0)\n\n\t\t#subscribe-button\n\t\t\t.animated-action__background-container\n\t\t\t.animated-action__lottie\n\t\t\t.smartimation__border\n\t\t\t\tdisplay: none\n\t\t\tytd-subscribe-button-renderer[animated-action-enabled][subscribed]\n\t\t\t\ttransition: width .1s ease\n\n\t\t/* Remove seekbar gradient */\n\t\t.ytp-play-progress\n\t\t\tbackground: rgb(255, 0, 51) imp\n\n\tif noMemberships\n\t\tytd-item-section-renderer\n\t\t\tytd-recognition-shelf-renderer\n\t\t\t\tdisplay: none\n\n\t/* Homepage */\n\n\tif noHomeTags\n\t\tytd-feed-filter-chip-bar-renderer\n\t\t\tdisplay: none imp\n\t\tytd-rich-grid-renderer #contents.ytd-rich-grid-renderer\n\t\t\tpadding-top: 16px imp\n\n\n\tif noHomeDifferent\n\t\t.ytd-feed-nudge-renderer /* \"Looking for something different?\" */\n\t\tyt-chip-cloud-chip-renderer[chip-style=\"STYLE_REFRESH_TO_NOVEL_CHIP\"]\n\t\t\tdisplay: none imp\n\n\tif noHomeLatestPosts\n\t\t#dismissible\n\t\t.ytd-rich-shelf-renderer\n\t\t.ytd-rich-section-renderer\n\t\t\t&:has(ytd-post-renderer)\n\t\t\t\tdisplay: none imp\n\n\tif noHomeVideoSurveys\n\t\t#dismissible .ytd-inline-survey-renderer\n\t\tytd-popup-container ytd-checkbox-survey-renderer\n\t\t\tdisplay: none imp\n\n\tif noHomeJunkSections\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/playables\"])\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/feed/storefront\"]) /* \"Primetime movies for you\" */\n\t\t\tdisplay: none imp\n\n\n\t/* Video */\n\n\tif noVideoCornerLogo\n\t\t.iv-branding\n\t\t/*branding-img-container ytp-button*/\n\t\t/*branding-img iv-click-target     */\n\t\t/*branding-context-container-outer */\n\t\t\tdisplay: none imp\n\n\tif noVideoPlayNext\n\t\t#ytd-player .ytp-next-button\n\t\t\tdisplay: none imp\n\n\tif noVideoClipButton\n\t\tyt-button-view-model:has(path[d*=\"1-1 1 .45 1 1zm-1 9c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm3.79-7.77L21\"])\n\t\t\tdisplay: none imp\n\n\tif noVideoWatchNext\n\t\tytd-watch-next-secondary-results-renderer\n\t\tytd-watch-grid.ytd-page-manager #bottom-grid\n\t\t\tdisplay: none imp\n\n\tif noVideoEndscreenVideos\n\t\t.ytp-endscreen-content\n\t\t\tdisplay: none imp\n\n\tif noVideoSuggestionsTags\n\t\tytd-watch-next-secondary-results-renderer\n\t\t\tyt-related-chip-cloud-renderer.&\n\t\t\t\tdisplay: none imp\n\t\t\tytd-watch-flexy[default-layout] & ytd-compact-video-renderer:first-child\n\t\t\t\tmargin-top: 0 imp\n\n\tif noVideoVignette\n\t\t.ytp-gradient-bottom\n\t\t\tdisplay: none imp\n\n\tif noVideoVignetteTop\n\t\t.ytp-gradient-top\n\t\t\tdisplay: none imp\n\n\tif noVideoChannelLinks\n\t\tytd-video-description-infocards-section-renderer yt-button-view-model\n\t\t\t/* Patreon, Instagram, Twitter, Discord, Reddit */\n\t\t\t&:has(a[href^=\"https://\"])\n\t\t\t\tdisplay: none imp\n\n\n\t/* Logo */\n\n\tif noLogoAccent\n\t\t#logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) contrast(1.25)\n\t\t[dark] #logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) invert(100%) brightness(1.33)\n\n\tif noLogoCountryCode\n\t\t/* Kind of pointless country code, since the content you see and watch doesn't necessarily depend on it. Imagine every website you visit having a country code in it's logo. */\n\t\t#logo\n\t\tytd-topbar-logo-renderer\n\t\t\t#country-code\n\t\t\t\tdisplay: none\n\n\n\t/* Sidebar */\n\n\tif noSidebarNewnessDots\n\t\t#newness-dot\n\t\t\tdisplay: none imp\n\n\tif noSidebarBloat\n\t\t.tp-yt-app-drawer\n\t\t\t/* 1st block */\n\t\t\ta#endpoint[title=\"Shorts\"]\n\t\t\t/* 2nd block */\n\t\t\ta[href^=\"/feed/clips\"][title]\n\t\t\t/* Explore */\n\t\t\ta[href^=\"/feed/trending\"][title]\n\t\t\ta[href^=\"/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ\"][title]\n\t\t\ta[href^=\"/feed/storefront\"][title]\n\t\t\ta[href^=\"/channel/UC4R8DWoMoI7CAwX8_LjQHig\"][title]\n\t\t\ta[href^=\"/gaming\"][title]\n\t\t\ta[href^=\"/channel/UCEgdi0XIXXZ-qJOFPf4JSKw\"][title]\n\t\t\t/* More from YouTube */\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"Creator Studio\"]\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"YouTube Studio\"]\n\t\t\ta[href^=\"https://music.youtube.com\"][title=\"YouTube Music\"]\n\t\t\ta[href^=\"https://www.youtubekids.com\"][title=\"YouTube Kids\"]\n\t\t\ta[href^=\"https://tv.youtube.com\"][title=\"YouTube TV\"]\n\t\t\t/* Last block */\n\t\t\ta#endpoint[title=\"Send feedback\"]\n\t\t\t/* Footer */\n\t\t\t#guide-links-secondary.ytd-guide-renderer > a[href=\"/new\"] /* \"Test new features\" - premium only */\n\t\t\t#footer.ytd-guide-renderer #copyright\n\t\t\t\tdisplay: none imp\n\n\t\t\t#sections\n\t\t\t\tytd-guide-section-renderer:nth-last-child(2)\n\t\t\t\tytd-guide-section-renderer:nth-last-child(3)\n\t\t\t\t\tdisplay: none\n\n\n\t\t/* Subscriptions */\n\n\t\tif noSubsTopGap\n\t\t\tytd-browse[page-subtype=\"subscriptions\"] .grid-subheader.ytd-shelf-renderer\n\t\t\t\tmargin-top: 0 imp\n\n\n\t\t/* Search */\n\n\t\tif noSearchUnrelated\n\t\t\t.ytd-search ytd-shelf-renderer\n\t\t\t\tdisplay: none imp\n\n\n\t\t/* Comments */\n\n\t\tif noCommentsPaidBg\n\t\t\t#paid-comment-background\n\t\t\t\tdisplay: none imp\n",
+    "updateUrl": "https://userstyles.world/api/style/10175.user.css",
+    "usercssData": {
+      "name": "Clean YouTube",
+      "author": "0ko (https://userstyles.world/~0ko)",
+      "description": "Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.",
+      "version": "3.3.0",
+      "license": "MIT",
+      "preprocessor": "stylus",
+      "namespace": "0ko userstyles",
+      "homepageURL": "https://codeberg.org/0ko/UserStyles#clean-youtube",
+      "supportURL": "https://codeberg.org/0ko/UserStyles/issues",
+      "vars": {
+        "noShorts": {
+          "type": "checkbox",
+          "label": "No short videos",
+          "name": "noShorts",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVoiceSearch": {
+          "type": "checkbox",
+          "label": "No voice search",
+          "name": "noVoiceSearch",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noUpload": {
+          "type": "checkbox",
+          "label": "No upload button",
+          "name": "noUpload",
+          "value": "0",
+          "default": "0",
+          "options": null
+        },
+        "lessCrazyAnimations": {
+          "type": "checkbox",
+          "label": "Less crazy button animations",
+          "name": "lessCrazyAnimations",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noMemberships": {
+          "type": "checkbox",
+          "label": "No channel memberships",
+          "name": "noMemberships",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noHome_": {
+          "type": "select",
+          "label": "Home:",
+          "name": "noHome_",
+          "value": null,
+          "default": " ",
+          "options": [
+            {
+              "name": " ",
+              "label": " ",
+              "value": "_"
+            }
+          ]
+        },
+        "noHomeTags": {
+          "type": "checkbox",
+          "label": "  No top tags",
+          "name": "noHomeTags",
+          "value": "1",
+          "default": "0",
+          "options": null
+        },
+        "noHomeDifferent": {
+          "type": "checkbox",
+          "label": "  No New to you",
+          "name": "noHomeDifferent",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noHomeLatestPosts": {
+          "type": "checkbox",
+          "label": "  No Latest posts",
+          "name": "noHomeLatestPosts",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noHomeVideoSurveys": {
+          "type": "checkbox",
+          "label": "  No video Surveys",
+          "name": "noHomeVideoSurveys",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noHomeJunkSections": {
+          "type": "checkbox",
+          "label": "  No other junk sections",
+          "name": "noHomeJunkSections",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVideo_": {
+          "type": "select",
+          "label": "Video:",
+          "name": "noVideo_",
+          "value": null,
+          "default": " ",
+          "options": [
+            {
+              "name": " ",
+              "label": " ",
+              "value": "_"
+            }
+          ]
+        },
+        "noVideoCornerLogo": {
+          "type": "checkbox",
+          "label": "  No logo in corner",
+          "name": "noVideoCornerLogo",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVideoPlayNext": {
+          "type": "checkbox",
+          "label": "  No Next video button",
+          "name": "noVideoPlayNext",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVideoClipButton": {
+          "type": "checkbox",
+          "label": "  No Clip button",
+          "name": "noVideoClipButton",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVideoWatchNext": {
+          "type": "checkbox",
+          "label": "  No Watch next column (emptiness) OR new bottom grid",
+          "name": "noVideoWatchNext",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noVideoEndscreenVideos": {
+          "type": "checkbox",
+          "label": "  No endscreen video suggestions",
+          "name": "noVideoEndscreenVideos",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noVideoSuggestionsTags": {
+          "type": "checkbox",
+          "label": "  No tags for Watch next",
+          "name": "noVideoSuggestionsTags",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noVideoVignette": {
+          "type": "checkbox",
+          "label": "  No bottom vignette",
+          "name": "noVideoVignette",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noVideoVignetteTop": {
+          "type": "checkbox",
+          "label": "  No top vignette (fullscreen)",
+          "name": "noVideoVignetteTop",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noVideoChannelLinks": {
+          "type": "checkbox",
+          "label": "  No channel links (socials) in description",
+          "name": "noVideoChannelLinks",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noLogo_": {
+          "type": "select",
+          "label": "Logo:",
+          "name": "noLogo_",
+          "value": null,
+          "default": " ",
+          "options": [
+            {
+              "name": " ",
+              "label": " ",
+              "value": "_"
+            }
+          ]
+        },
+        "noLogoAccent": {
+          "type": "checkbox",
+          "label": "  Monochrome button",
+          "name": "noLogoAccent",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "noLogoCountryCode": {
+          "type": "checkbox",
+          "label": "  No country code",
+          "name": "noLogoCountryCode",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noSidebar_": {
+          "type": "select",
+          "label": "Sidebar:",
+          "name": "noSidebar_",
+          "value": null,
+          "default": " ",
+          "options": [
+            {
+              "name": " ",
+              "label": " ",
+              "value": "_"
+            }
+          ]
+        },
+        "noSidebarNewnessDots": {
+          "type": "checkbox",
+          "label": "  No newness dots",
+          "name": "noSidebarNewnessDots",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noSidebarBloat": {
+          "type": "checkbox",
+          "label": "  No bloat",
+          "name": "noSidebarBloat",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noSubsTopGap": {
+          "type": "checkbox",
+          "label": "Subscriptions: reduce top gap",
+          "name": "noSubsTopGap",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noSearchUnrelated": {
+          "type": "checkbox",
+          "label": "Search: no unrelated videos",
+          "name": "noSearchUnrelated",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "noCommentsPaidBg": {
+          "type": "checkbox",
+          "label": "Comments: no paid background",
+          "name": "noCommentsPaidBg",
+          "value": null,
+          "default": "1",
+          "options": null
+        }
+      }
+    },
+    "author": "0ko (https://userstyles.world/~0ko)",
+    "description": "Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.",
+    "url": "https://codeberg.org/0ko/UserStyles#clean-youtube",
+    "name": "Clean YouTube",
+    "originalDigest": "a8b0f642bcf1abb5f6ee5ba798e3fc208f5881f0",
+    "_id": "02d1e817-d254-4ae4-aa31-a6e9cf3cf896",
+    "_rev": 1738343153298,
+    "id": 1,
+    "installationUrl": "https://userstyles.world/style/10175"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738343269927,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Youtube White Progress Bar \n@namespace      github.com/openstyles/stylus\n@version        1.0.1\n@description    A new userstyle\n@author         Me\n==/UserStyle== */\n\n@-moz-document domain(\"youtube.com\") {\n    \n    :root {\n      --first-color: #eee;\n      --second-color: #1e1e1e;\n      \n    }\n\n    /* Code takken from https://userstyles.org/styles/95280 */\n  /* scrubber button */\n  .html5-scrubber-button:hover,\n  .ytp-chrome-controls .ytp-button[aria-pressed]::after,\n  .ytp-scrubber-button:hover,\n  .html5-video-player:not(.ytp-color-party) .ytp-swatch-background-color,\n  .ytp-swatch-background-color-secondary {\n    background: var(--first-color) !important;\n  }\n  /* progress bar */\n  .html5-video-player:not(.ytp-color-party) .html5-play-progress,\n  .html5-video-player:not(.ytp-color-party) .ytp-play-progress {\n    background: var(--first-color) !important;\n  }\n  .ytp-volume-slider-track,\n  .ytp-volume-slider-handle:before {\n    \n    z-index: -117;\n  }\n  .ytp-settings-button.ytp-hd-quality-badge::after,\n  .ytp-settings-button.ytp-4k-quality-badge::after,\n  .ytp-settings-button.ytp-5k-quality-badge::after,\n  .ytp-settings-button.ytp-8k-quality-badge::after,\n  .ytp-settings-button.ytp-3d-badge::after {\n    background-color: var(--second-color) !important;\n  }\n  .ytp-swatch-color-white {\n  color: var(--first-color) !important;\n}\n  .ytp-swatch-color {\n    color: var(--first-color) !important;\n  }\n  .ytp-menuitem[aria-checked=\"true\"] .ytp-menuitem-toggle-checkbox {\n    background-color: var(--first-color) !important;\n  }\n  .ytp-chrome-controls .ytp-button.ytp-youtube-button:hover:not([aria-disabled=\"true\"]):not([disabled]) .ytp-svg-fill-logo-tube-lozenge {\n    fill: var(--first-color) !important;\n  }\n  .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg,\n  .ytp-large-play-button.ytp-touch-device .ytp-large-play-button-bg {\n    fill: var(--first-color) !important;\n  }\n  .ytp-large-play-button.ytp-button.ytp-red2:hover,\n  .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button.ytp-button.ytp-red2 {\n    /*background-image: url(https://github.com/RaitaroH/YouTube-DeepDark/raw/master/YT_Images/large_play_button_hover_ringo-vfl7vEehF.png) !important;*/\n    background-image: url(https://s.ytimg.com/yts/img/large_play_button_ringo-vfljWXIdx.png) !important;\n    filter: invert(100%) brightness(300%);\n  }\n  .resume-playback-progress-bar {\n    background: var(--first-color) !important;\n  }\n\n   .ytp-live-badge[disabled]::before {\n\tbackground: var(--first-color) !important;\n   }\n    \n    /*Mobile YT*/\n    .progress-bar-played {\n\tbackground-color: var(--first-color) !important;\n\t}\n\t\n\t.progress-bar-playhead-dot {\n\tbackground-color: var(--first-color) !important;\n\t\t}\t\n\n    \n    \n    \n    \n}",
+    "updateUrl": "https://userstyles.world/api/style/11203.user.css",
+    "usercssData": {
+      "name": "Youtube White Progress Bar",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.1",
+      "description": "A new userstyle",
+      "author": "Me"
+    },
+    "author": "Me",
+    "description": "A new userstyle",
+    "name": "Youtube White Progress Bar",
+    "originalDigest": "1dfc351e995101978ec431faaf40b046ce92d105",
+    "_id": "82734bc6-d0a8-4f4d-bfee-0dbbc740db66",
+    "_rev": 1738343269927,
+    "id": 3,
+    "url": "https://userstyles.world/style/11203",
+    "installationUrl": "https://userstyles.world/style/11203"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738343354059,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           `Repositories Grid For GitHub\n@author         sapondanaisriwan <sapondanaisriwan@gmail.com> (https://github.com/sapondanaisriwan)\n@description    If you want to submit a bug or request a feature please report via github issue. Since I receive so many emails, I can't reply to them all.\n@namespace      https://userstyles.world/user/sapondanaisriwan\n@homepageURL    https://github.com/sapondanaisriwan/Repositories-Grid-For-GitHub\n@supportURL     https://github.com/sapondanaisriwan/Repositories-Grid-For-GitHub/issues\n@version        1.0.2\n@license        MIT\n@preprocessor   stylus\n\n@var select starNewDesign         \"⭐ Star New Design\" [\"Enabled\", \"Disabled\"]\n@var checkbox hideStarText        \"  💬 Hide Text\" 1\n@var checkbox dropDownMenu        \"  ⬇️ Hide Drop Down Menu\" 0\n\n@var select resTap                \"📚 Respasatories Tap\" [\"Enabled\", \"Disabled\"]\n@var checkbox fullDescription     \"  💬 Full Description\" 0\n@var checkbox resNoDescription    \"  💬 Placeholder 'No Description'\" 0\n@var checkbox showRepository      \"  📗 Show Repository Icon\" 1\n\n@var checkbox hideForked          \"  🍴 Hide Forked Text\" 0\n@var checkbox hideTopics          \"  🌍 Hide Topics\" 1\n@var checkbox hideHelp\t          \"  🆘 Hide Help Wanted\" 1\n@var checkbox hideLicense\t      \"  🪪 Hide License\" 1\n\n@var select starsTap              \"⭐ Stars Tap\" [\"Enabled\", \"Disabled\"]\n@var checkbox stNoDescription     \"  💬 Placeholder 'No Description'\" 0\n@var checkbox stHideSponsors      \"  💵 Hide Sponsors\" 1\n@var checkbox stHideAuthor        \"  🖊️ Hide Author\" 1\n\n@var select searchPage          \"🔎 Search Page\" [\"Enabled\", \"Disabled\"]\n@var checkbox spHideSponsors      \"  💵 Hide Sponsors\" 1\n@var checkbox spHideTopics        \"  🌍 Hide Topics\" 1\n@var checkbox spHideUpdate        \"  💬 Hide Update Text\" 1\n@var checkbox spfullDescription   \"  💬 Full Description\" 1\n@var checkbox spHideHelp\t      \"  🆘 Hide Help Wanted\" 1\n\n==/UserStyle== */\n@-moz-document regexp(\"https?://github?.com(/.*)?\") {\n    /* Variables */\n    i=!important;\n    t=!transparent;\n\n    :root {\n        --repository-icon: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAN1JREFUOE/tk8ENwjAMRb9BcKUbABN0BDICo7RHSiuCWsIx2QBGYARWYIOyARwBqUYJFFWiFC5IHMglUmw/O9824X7iVIuCaAVgUL413LmKg6G1U+kUZToHyAPxGgUODcECRCMVBy62AjAM5rlKQtlUQZRqCaLZH/C7GsD13/tgkFDfRuAIZvMG8K1BSvUWRH0741FmuFqFLXeS6jG1Wj4zCwLE0xek1N6pDbFMwk0dIMqM1ad3A/NexaFbuscuVDNaAIF3zhXkl9nqtKkHLLTpXuCW6tyBVNMweCXsFd/SnxH+P3j+AAAAAElFTkSuQmCC\")\n    }\n\n    gridTemplate() {\n        display: grid;\n        grid-template-columns: repeat(2, 1fr);\n        gap: 16px;\n    }\n\n    description() {\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n\n    noDescription() {\n        content: \"No description provided\"\n        color: var(--fgColor-muted, var(--color-fg-muted)) i;\n        font-style: italic;\n    }\n    \n    itemCard() {\n        padding: 16px i;\n        background-color: var(--color-canvas-default);\n        border-color: var(--color-border-default);\n        border-radius: var(--primer-borderRadius-medium, 6px);\n        border-style: solid;\n        border-width: var(--primer-borderWidth-thin, 1px);\n    }\n\n    if (starsTap==\"Enabled\") {\n        #user-starred-repos .mt-5 {\n            position: relative;\n            max-width: 100% i;\n\n            .col-lg-12 {\n                gridTemplate();\n                margin-top: 90px;\n\n                .py-4 {\n                    itemCard();\n                    if (stNoDescription) {\n                        > div:nth-child(3):not(:has(p[itemprop=\"description\"]))::before {\n                            noDescription()\n                        }\n                    }\n                }\n\n                p[itemprop=\"description\"] {\n                    width: 100%;\n                }\n                \n                > .position-relative {\n                    top: 0;\n                    position: absolute i;\n                    width: 100% i;\n                }\n\n                if starNewDesign {\n                    form > button > span {\n                        display: none i if hideStarText;\n                    }\n\n                    .mr-2 {\n                        margin-right: 0 i;\n                    }\n\n                    .BtnGroup-parent:first-child .BtnGroup-item {\n                        border-right-width: 1px;\n                        border-top-right-radius: 6px;\n                        border-bottom-right-radius: 6px;\n                    }\n\n                    details[id^=\"details-user-list\"] {\n                        display: none i if dropDownMenu;\n                    }\n                }\n\n                a[href^=\"/sponsors/\"] {\n                    display: none i if stHideSponsors;\n                }\n\n                span.text-normal {\n                    display: none i if stHideAuthor;\n                }\n            }\n        }\n    }\n\n    if (searchPage==\"Enabled\") {\n        /* Search  */\n        ul.repo-list {\n            gridTemplate();\n            margin-top: 16px;\n\n            * {\n                min-width: 0 i;\n            }\n\n            > li.py-4 {\n                itemCard();\n\n                p.mb-1 {\n                    if (not spfullDescription) {\n                        description()\n                    }\n                }\n\n                div.mr-3:has( > relative-time) {\n                    display: none if spHideUpdate;\n                }\n\n                div.d-flex > div.d-flex.flex-items-center.flex-justify-end.flex-shrink-0.flex-auto {\n                    display: none i if spHideSponsors;\n                }\n                \n                a[href^=\"/topics/\"] {\n                    display: none i if spHideTopics;\n                }\n\n                a[href*=\"issue\"] {\n                    display: none if spHideHelp;\n                }\n            }\n        }\n    }\n\n    if (resTap==\"Enabled\") {\n\n        /* Repositories tap */\n        #user-repositories-list > ul {\n            gridTemplate();\n            margin-top: 16px;\n\n            > li.py-4 {\n                itemCard();\n\n                min-width: 0;\n                padding: 16px i;\n                position: relative;\n\n                > .d-inline-block {\n\n                    /* Repository's name */\n                    div.d-inline-block.mb-1 {\n\n                        > h3 {\n                            font-size: 14px;\n                            if showRepository {\n                                &::before {\n                                    display: inline-block i;\n                                    position: relative;\n                                    top: 3px;\n                                    margin-right: 4px;\n                                    width: 16px;\n                                    height: 16px;\n                                    content: var(--repository-icon);\n                                }\n                            }\n                        }\n\n                        > span {\n                            display: none if hideForked;\n                        }\n                    }\n\n                    /* Description */\n                    p.col-9 {\n                        margin-bottom: 0 i;\n\n                        width: 100%;\n\n                        if (not fullDescription) {\n                            description()\n                        }\n                    }\n                    \n                    if (resNoDescription) {\n                        > div:nth-child(2):not(:has(p[itemprop=\"description\"]))::before {\n                            noDescription()\n                        }\n                    }\n                    \n                    /* Hide Topics */\n                    > .topics-row-container {\n                        display: none i if hideTopics;\n                    }\n\n                    /* Bottom descriptions  */\n                    div.f6.color-fg-muted.mt-2 {\n                        > span:not(.ml-0) {\n                            display: none i if hideLicense;\n                        }\n\n                        a[href*=\"issue\"] {\n                            display: none if hideHelp;\n                        }\n                    }\n                }\n\n                > .col-2 {\n                    display: contents i;\n\n                    .starring-container .unstarred, .starring-container.on .starred {\n                        margin-left: 0;\n                    }\n\n                    .starring-container {\n                        position: absolute;\n                        right: 16px;\n\n                        if (starNewDesign==\"Enabled\") {\n\n                            if dropDownMenu {\n                                .BtnGroup-parent .BtnGroup-item {\n                                    border-right-width: 1px;\n                                    border-top-right-radius: 6px;\n                                    border-bottom-right-radius: 6px;\n                                }\n\n                                details {\n                                    display: none i;\n                                }\n                            }\n\n                            if hideStarText {\n                                form > button > span {\n                                    display: none i;\n                                }\n\n                                .btn-sm .octicon,\n                                .starred .starred-button-icon {\n                                    margin-right: 0 i;\n                                }\n                            }\n                        }\n                    }\n                }\n\n                .col-lg-9 {\n                    width: 100%;\n                }\n\n                .col-9,\n                .f6 {\n                    font-size: 12px i;\n                }\n\n                /* Remove graph */\n                div.text-right.hide-lg.hide-md.hide-sm.hide-xs.flex-self-end,\n                div.text-right.hide-lg.hide-md.hide-sm.hide-xs.flex-self-end.mt-2 {\n                    display: none i;\n                }\n            }\n        }\n    }\n}",
+    "updateUrl": "https://userstyles.world/api/style/9152.user.css",
+    "usercssData": {
+      "name": "`Repositories Grid For GitHub",
+      "author": "sapondanaisriwan <sapondanaisriwan@gmail.com> (https://github.com/sapondanaisriwan)",
+      "description": "If you want to submit a bug or request a feature please report via github issue. Since I receive so many emails, I can't reply to them all.",
+      "namespace": "https://userstyles.world/user/sapondanaisriwan",
+      "homepageURL": "https://github.com/sapondanaisriwan/Repositories-Grid-For-GitHub",
+      "supportURL": "https://github.com/sapondanaisriwan/Repositories-Grid-For-GitHub/issues",
+      "version": "1.0.2",
+      "license": "MIT",
+      "preprocessor": "stylus",
+      "vars": {
+        "starNewDesign": {
+          "type": "select",
+          "label": "⭐ Star New Design",
+          "name": "starNewDesign",
+          "value": null,
+          "default": "Enabled",
+          "options": [
+            {
+              "name": "Enabled",
+              "label": "Enabled",
+              "value": "Enabled"
+            },
+            {
+              "name": "Disabled",
+              "label": "Disabled",
+              "value": "Disabled"
+            }
+          ]
+        },
+        "hideStarText": {
+          "type": "checkbox",
+          "label": "  💬 Hide Text",
+          "name": "hideStarText",
+          "value": "1",
+          "default": "1",
+          "options": null
+        },
+        "dropDownMenu": {
+          "type": "checkbox",
+          "label": "  ⬇️ Hide Drop Down Menu",
+          "name": "dropDownMenu",
+          "value": "0",
+          "default": "0",
+          "options": null
+        },
+        "resTap": {
+          "type": "select",
+          "label": "📚 Respasatories Tap",
+          "name": "resTap",
+          "value": null,
+          "default": "Enabled",
+          "options": [
+            {
+              "name": "Enabled",
+              "label": "Enabled",
+              "value": "Enabled"
+            },
+            {
+              "name": "Disabled",
+              "label": "Disabled",
+              "value": "Disabled"
+            }
+          ]
+        },
+        "fullDescription": {
+          "type": "checkbox",
+          "label": "  💬 Full Description",
+          "name": "fullDescription",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "resNoDescription": {
+          "type": "checkbox",
+          "label": "  💬 Placeholder 'No Description'",
+          "name": "resNoDescription",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "showRepository": {
+          "type": "checkbox",
+          "label": "  📗 Show Repository Icon",
+          "name": "showRepository",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "hideForked": {
+          "type": "checkbox",
+          "label": "  🍴 Hide Forked Text",
+          "name": "hideForked",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "hideTopics": {
+          "type": "checkbox",
+          "label": "  🌍 Hide Topics",
+          "name": "hideTopics",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "hideHelp": {
+          "type": "checkbox",
+          "label": "  🆘 Hide Help Wanted",
+          "name": "hideHelp",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "hideLicense": {
+          "type": "checkbox",
+          "label": "  🪪 Hide License",
+          "name": "hideLicense",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "starsTap": {
+          "type": "select",
+          "label": "⭐ Stars Tap",
+          "name": "starsTap",
+          "value": null,
+          "default": "Enabled",
+          "options": [
+            {
+              "name": "Enabled",
+              "label": "Enabled",
+              "value": "Enabled"
+            },
+            {
+              "name": "Disabled",
+              "label": "Disabled",
+              "value": "Disabled"
+            }
+          ]
+        },
+        "stNoDescription": {
+          "type": "checkbox",
+          "label": "  💬 Placeholder 'No Description'",
+          "name": "stNoDescription",
+          "value": null,
+          "default": "0",
+          "options": null
+        },
+        "stHideSponsors": {
+          "type": "checkbox",
+          "label": "  💵 Hide Sponsors",
+          "name": "stHideSponsors",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "stHideAuthor": {
+          "type": "checkbox",
+          "label": "  🖊️ Hide Author",
+          "name": "stHideAuthor",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "searchPage": {
+          "type": "select",
+          "label": "🔎 Search Page",
+          "name": "searchPage",
+          "value": null,
+          "default": "Enabled",
+          "options": [
+            {
+              "name": "Enabled",
+              "label": "Enabled",
+              "value": "Enabled"
+            },
+            {
+              "name": "Disabled",
+              "label": "Disabled",
+              "value": "Disabled"
+            }
+          ]
+        },
+        "spHideSponsors": {
+          "type": "checkbox",
+          "label": "  💵 Hide Sponsors",
+          "name": "spHideSponsors",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "spHideTopics": {
+          "type": "checkbox",
+          "label": "  🌍 Hide Topics",
+          "name": "spHideTopics",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "spHideUpdate": {
+          "type": "checkbox",
+          "label": "  💬 Hide Update Text",
+          "name": "spHideUpdate",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "spfullDescription": {
+          "type": "checkbox",
+          "label": "  💬 Full Description",
+          "name": "spfullDescription",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
+        "spHideHelp": {
+          "type": "checkbox",
+          "label": "  🆘 Hide Help Wanted",
+          "name": "spHideHelp",
+          "value": null,
+          "default": "1",
+          "options": null
+        }
+      }
+    },
+    "author": "sapondanaisriwan <sapondanaisriwan@gmail.com> (https://github.com/sapondanaisriwan)",
+    "description": "If you want to submit a bug or request a feature please report via github issue. Since I receive so many emails, I can't reply to them all.",
+    "url": "https://github.com/sapondanaisriwan/Repositories-Grid-For-GitHub",
+    "name": "`Repositories Grid For GitHub",
+    "originalDigest": "8de70317b0403de838e67baac7788295517ad9da",
+    "_id": "33e37afa-5104-46c3-a1a2-db09f5d93302",
+    "_rev": 1738344050988,
+    "id": 5,
+    "installationUrl": "https://userstyles.world/style/9152"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738343377624,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         GitHub Custom Contributions\n@namespace    userstyles.world/user/vednoc\n@description  Set custom colors for GitHub contributions.\n@author       vednoc <vednoc@pm.me> (https://github.com/vednoc)\n@version      0.1.0\n@license      MIT\n@preprocessor stylus\n@var select theme \"Color theme\" [\n    \"0:Default theme\",\n    \"1:Halloween\",\n    \"2:Winter Solstice\",\n    \"3:Custom theme*\",\n]\n@var color level1 \"Level 1 color\" #440e3b\n@var color level2 \"Level 2 color\" #860075\n@var color level3 \"Level 3 color\" #bc30d0\n@var color level4 \"Level 4 color\" #d78ce6\n==/UserStyle== */\n\nbg() { background-color: arguments }\nt = transparent\ni = !important\n\n@-moz-document domain('github.com') {\n    if theme > 0 {\n        if theme == 1 {\n            l1 = #631c03\n            l2 = #bd561d\n            l3 = #fa7a18\n            l4 = #fddf68\n        } else if theme == 2 {\n            l1 = #0A3069\n            l2 = #0969DA\n            l3 = #54AEFF\n            l4 = #B6E3FF\n        } else {\n            l1 = level1\n            l2 = level2\n            l3 = level3\n            l4 = level4\n        }\n\n        .ContributionCalendar-day {\n            &[data-level='1'] { bg: l1 i; fill: l1 i }\n            &[data-level='2'] { bg: l2 i; fill: l2 i }\n            &[data-level='3'] { bg: l3 i; fill: l3 i }\n            &[data-level='4'] { bg: l4 i; fill: l4 i }\n        }\n\n        .activity-overview {\n            &-box [fill='#40c463'],\n            &-box [fill='#ffc501'] {\n                fill:   l2 i\n                stroke: l2 i\n            }\n\n            &-axis,\n            &-point {\n                fill:   l4 i\n                stroke: l3 i\n            }\n        }\n\n        .Progress-item {\n            &[style*=\"#216e39\"] { bg: l1 i }\n            &[style*=\"#30a14e\"] { bg: l2 i }\n            &[style*=\"#40c463\"] { bg: l3 i }\n            &[style*=\"#9be9a8\"] { bg: l4 i }\n        }\n    }\n}\n",
+    "updateUrl": "https://userstyles.world/api/style/8905.user.css",
+    "usercssData": {
+      "name": "GitHub Custom Contributions",
+      "namespace": "userstyles.world/user/vednoc",
+      "description": "Set custom colors for GitHub contributions.",
+      "author": "vednoc <vednoc@pm.me> (https://github.com/vednoc)",
+      "version": "0.1.0",
+      "license": "MIT",
+      "preprocessor": "stylus",
+      "vars": {
+        "theme": {
+          "type": "select",
+          "label": "Color theme",
+          "name": "theme",
+          "value": null,
+          "default": "3",
+          "options": [
+            {
+              "name": "0",
+              "label": "Default theme",
+              "value": "0"
+            },
+            {
+              "name": "1",
+              "label": "Halloween",
+              "value": "1"
+            },
+            {
+              "name": "2",
+              "label": "Winter Solstice",
+              "value": "2"
+            },
+            {
+              "name": "3",
+              "label": "Custom theme",
+              "value": "3"
+            }
+          ]
+        },
+        "level1": {
+          "type": "color",
+          "label": "Level 1 color",
+          "name": "level1",
+          "value": "#3078bf",
+          "default": "#440e3b",
+          "options": null
+        },
+        "level2": {
+          "type": "color",
+          "label": "Level 2 color",
+          "name": "level2",
+          "value": "#4c92d9",
+          "default": "#860075",
+          "options": null
+        },
+        "level3": {
+          "type": "color",
+          "label": "Level 3 color",
+          "name": "level3",
+          "value": "#6db0f2",
+          "default": "#bc30d0",
+          "options": null
+        },
+        "level4": {
+          "type": "color",
+          "label": "Level 4 color",
+          "name": "level4",
+          "value": "#bfdfff",
+          "default": "#d78ce6",
+          "options": null
+        }
+      }
+    },
+    "author": "vednoc <vednoc@pm.me> (https://github.com/vednoc)",
+    "description": "Set custom colors for GitHub contributions.",
+    "name": "GitHub Custom Contributions",
+    "originalDigest": "3caedb6717cb6e08f56d8913fffdcce27d5841d6",
+    "_id": "8a5538db-7a17-4a05-a080-7df52764df83",
+    "_rev": 1738344015723,
+    "id": 8,
+    "url": "https://userstyles.world/style/8905",
+    "installationUrl": "https://userstyles.world/style/8905"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738343405531,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         GitHub Code Wrap\n@version      1.1.0\n@description  Userstyle to wrap long code lines on GitHub\n@namespace    StylishThemes\n@author       StylishThemes\n@homepageURL  https://github.com/StylishThemes/GitHub-code-wrap\n@supportURL   https://github.com/StylishThemes/GitHub-code-wrap/issues\n@license      CC-BY-SA-4.0\n@preprocessor uso\n==/UserStyle== */\n@-moz-document domain(\"github.com\"), domain(\"gist.github.com\") {\n  .blob-code-inner, .markdown-body pre > code, .markdown-body .highlight > pre {\n    white-space: pre-wrap !important;\n    overflow-wrap: anywhere !important;\n  }\n  /* GitHub Bug: Enable wrapping of long code lines */\n  body:not(.nowrap) .blob-code-inner,\n  body:not(.nowrap) .markdown-body pre > code,\n  body:not(.nowrap) .markdown-body .highlight > pre {\n    white-space: pre-wrap !important;\n    overflow-wrap: anywhere !important;\n    display: block !important;\n    word-break: break-all !important;\n  }\n  body:not(.nowrap) td.blob-code-inner {\n    display: table-cell !important;\n  }\n}\n",
+    "updateUrl": "https://userstyles.world/api/style/23.user.css",
+    "usercssData": {
+      "name": "GitHub Code Wrap",
+      "version": "1.1.0",
+      "description": "Userstyle to wrap long code lines on GitHub",
+      "namespace": "StylishThemes",
+      "author": "StylishThemes",
+      "homepageURL": "https://github.com/StylishThemes/GitHub-code-wrap",
+      "supportURL": "https://github.com/StylishThemes/GitHub-code-wrap/issues",
+      "license": "CC-BY-SA-4.0",
+      "preprocessor": "uso"
+    },
+    "author": "StylishThemes",
+    "description": "Userstyle to wrap long code lines on GitHub",
+    "url": "https://github.com/StylishThemes/GitHub-code-wrap",
+    "name": "GitHub Code Wrap",
+    "originalDigest": "07f0e748595d5316ae16c023bf3849be1428b17e",
+    "_id": "2484bc71-ea21-4c8d-800b-2d9c92fe688b",
+    "_rev": 1738343471920,
+    "id": 12,
+    "installationUrl": "https://userstyles.world/style/23"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738343444757,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           GitHub Actions WideScreen \n@namespace      github.com/openstyles/stylus\n@version        1.0.2\n@description    GitHub Actions wide screen and properly alligned columns.\n@author         akaine\n==/UserStyle== */\n\n@-moz-document regexp(\"https://github.com/.*/actions(\\\\?.*)?\") {\n    .container-xl {\n        max-width: 100% !important;\n    }\n    \n    .d-table.col-12 > div:first-child {\n        width: 100%;\n    }\n    \n    .d-table.col-12 div.text-right {\n        margin-left: 10px;\n    }\n    \n    .d-table.col-12 div.d-none .d-md-block {\n        width: 130px;\n    }\n\n    [title=\"Start time\"] {\n        white-space: nowrap;\n    }\n    \n}",
+    "updateUrl": "https://userstyles.world/api/style/5871.user.css",
+    "usercssData": {
+      "name": "GitHub Actions WideScreen",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.2",
+      "description": "GitHub Actions wide screen and properly alligned columns.",
+      "author": "akaine"
+    },
+    "author": "akaine",
+    "description": "GitHub Actions wide screen and properly alligned columns.",
+    "name": "GitHub Actions WideScreen",
+    "originalDigest": "f1690807a5158048641c5b6e4175124eea51899d",
+    "_id": "2fd20931-94cd-4116-a335-7ae0477e3af6",
+    "_rev": 1738343444757,
+    "id": 16,
+    "url": "https://userstyles.world/style/5871",
+    "installationUrl": "https://userstyles.world/style/5871"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738344230927,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name         github-monday\n@author       Karl_255\n@namespace    github.com/Karl255\n@version      1.0.4\n@description  Changes the GitHub contribution graph's first day of week on user profiles to Monday instead of Sunday.\n@homepageURL  https://github.com/Karl255/UserCSS-Styles\n@supportURL   https://github.com/Karl255/UserCSS-Styles/issues\n@license      unlicense\n@preprocessor default\n==/UserStyle== */\n\n@-moz-document domain(\"github.com\") {\n\t/* when the activity overview is enabled the grid rects are 10px * 10px (3px spacing) */\n\t.ContributionCalendar-grid[style*=\"border-spacing: 3px\"] {\n\t\t--dist: 13px;\n\t}\n\n\t/* but when it's disabled, they're 11px * 11px (4px spacing) */\n\t.ContributionCalendar-grid[style*=\"border-spacing: 4px\"] {\n\t\t--dist: 15px;\n\t}\n\n\t/* all days up a little */\n\t.ContributionCalendar-grid tbody tr {\n\t\ttransform: translateY(calc(var(--dist) * -1));\n\t}\n\n\t/* all sundays all the way down */\n\t.ContributionCalendar-grid tbody tr:first-child {\n\t\ttransform: translateY(calc(var(--dist) * 6));\n\t}\n\n\t/* hide first sunday (otherwise it'll be outside the box) */\n\t.ContributionCalendar-grid tbody tr:first-child .ContributionCalendar-label + * {\n\t\tdisplay: none;\n\t}\n\n\t/* show sunday text */\n\t.ContributionCalendar-grid tbody tr:first-child .ContributionCalendar-label span:last-child  {\n\t\tclip-path: unset !important;\n\t}\n}\n",
+    "updateUrl": "https://userstyles.world/api/style/400.user.css",
+    "usercssData": {
+      "name": "github-monday",
+      "author": "Karl_255",
+      "namespace": "github.com/Karl255",
+      "version": "1.0.4",
+      "description": "Changes the GitHub contribution graph's first day of week on user profiles to Monday instead of Sunday.",
+      "homepageURL": "https://github.com/Karl255/UserCSS-Styles",
+      "supportURL": "https://github.com/Karl255/UserCSS-Styles/issues",
+      "license": "unlicense",
+      "preprocessor": "default"
+    },
+    "author": "Karl_255",
+    "description": "Changes the GitHub contribution graph's first day of week on user profiles to Monday instead of Sunday.",
+    "url": "https://github.com/Karl255/UserCSS-Styles",
+    "name": "github-monday",
+    "originalDigest": "02a25549ed1704ad3a0ca01175a371c5a374cb68",
+    "_id": "88560c8b-1e6c-4872-b94e-55dccfe5289f",
+    "_rev": 1738344230929,
+    "id": 17,
+    "installationUrl": "https://userstyles.world/style/400"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738344864481,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Better Whatsapp\n@namespace      Jamir-boop\n@version        0.0.5\n@description    Ultimate privacy and various UI adjustments\n@author         Jamir-boop\n@preprocessor   stylus\n\n==/UserStyle== */\n\nblurrContent(applyGrays)\n\ttransition: .2s ease!important\n\tif applyGrays\n\t\tfilter: blur(10px) grayscale(1) !important\n\telse\n\t\tfilter: blur(5px) !important\n\t&:hover\n\t\tfilter: blur(0px) grayscale(0) !important\n\t\n\n@-moz-document domain(\"web.whatsapp.com\")\n\t// margin fix\n\tdiv[id=\"app\"] > div > div[tabindex=\"-1\"]\n\t\t  width 100% !important\n\t\t  max-width 100% !important\n\t\t  height 100% !important\n\t\t  max-height 100% !important\n\t\t  position absolute\n\t\t  top 0 !important\n\t\t  left 0 !important\n\n\t// Blurr feature\n\t// Blurr chat list\n\tdiv[aria-label=\"Chat list\"] > div // normal\n\tdiv.false div[tabindex=\"-1\"] div[style *= \"z-index\"] // archived\n\tdiv[id=\"app\"] div[style *= \"z-index\"] // search results\n\t\tblurrContent(0)\n\t\n\t// Blurr media in chat\n\t[class *= 'message-'] [style *= 'height']\n\t\timg:not([src*='/pp?']):not([class*='emoji'])\n\t\t\tblurrContent(1)\n\t[class *= 'message-']\n\t\t[style *= \"data:image\"]\n\t\t\tblurrContent(1)\n\t[class *= 'message-'] [style *= \"background-image: url\"]\n\t\tblurrContent(1)\n\t\t\n\t// Blurr media in chat info (right panel) and image open\n\t[aria-label=\" Image\"]\n\t\tblurrContent(1)\n\t\t\n\t// Blurr contact numbers\n\t.three > div:nth-of-type(5)\n\t\t[class *= 'selectable-text'] span\n\t\t\tblurrContent(1)\n",
+    "updateUrl": "https://userstyles.world/api/style/15428.user.css",
+    "usercssData": {
+      "name": "Better Whatsapp",
+      "namespace": "Jamir-boop",
+      "version": "0.0.5",
+      "description": "Ultimate privacy and various UI adjustments",
+      "author": "Jamir-boop",
+      "preprocessor": "stylus"
+    },
+    "author": "Jamir-boop",
+    "description": "Ultimate privacy and various UI adjustments",
+    "name": "Better Whatsapp",
+    "originalDigest": "0082cdde3b7f0ca03f5c4855edf14dae78828e8c",
+    "_id": "e47bac8e-a958-4eb4-b43b-c4e1b7632ac6",
+    "_rev": 1738344864482,
+    "id": 49,
+    "url": "https://userstyles.world/style/15428",
+    "installationUrl": "https://userstyles.world/style/15428"
+  },
+  {
+    "enabled": true,
+    "installDate": 1738344906433,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           Frameless WhatsApp\n@namespace      github.com/openstyles/stylus\n@version        1.0.1\n@description    Make WhatsApp Web take up the entire available space on larger screens.\n@author         Abraham Murciano\n==/UserStyle== */\n\n@-moz-document domain(\"web.whatsapp.com\") {\n    div#app ._aigs {\n        max-width: 100%;\n        width: 100%;\n        height: 100%;\n        top: 0;\n    }\n}",
+    "updateUrl": "https://userstyles.world/api/style/19033.user.css",
+    "usercssData": {
+      "name": "Frameless WhatsApp",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.1",
+      "description": "Make WhatsApp Web take up the entire available space on larger screens.",
+      "author": "Abraham Murciano"
+    },
+    "author": "Abraham Murciano",
+    "description": "Make WhatsApp Web take up the entire available space on larger screens.",
+    "name": "Frameless WhatsApp",
+    "originalDigest": "45e920034de5224ffb21fcfb10084fc87aa9ae05",
+    "_id": "a9027a76-87f1-4f32-9b97-8c4a0bb1ebe6",
+    "_rev": 1738344906433,
+    "id": 55,
+    "url": "https://userstyles.world/style/19033",
+    "installationUrl": "https://userstyles.world/style/19033"
+  }
+]

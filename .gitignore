@@ -58,8 +58,6 @@
 !/fontconfig/
 !/wpaperd/
 !/ags/
-!/Dark-Reader-Settings.json
-!/YouTubeEnhancer.json
 
 
 ################
@@ -82,6 +80,10 @@
 !/mpd/
 !/ncmpcpp/
 !/neofetch/
+
+# Browsers
+!/BrowserExtensions/
+!/ZenBrowser/
 
 # Unity
 !/UnityUltraWideLayout.wlt

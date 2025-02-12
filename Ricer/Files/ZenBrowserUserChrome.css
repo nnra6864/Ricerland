@@ -1,0 +1,176 @@
+/* Zen Ricer */
+/* nnra */
+
+/* Dark mode styles for Zen Browser (based on Firefox) */
+@media (prefers-color-scheme: dark) {
+
+  /*-----------------------------------------------------
+    :root – Custom Properties for Zen Browser UI Styling
+    Organized by UI Section for clarity
+  -----------------------------------------------------*/
+  :root {
+    /*-----------------------------------------------------
+      Primary UI Elements
+      Defines the main color scheme for primary interface components
+    -----------------------------------------------------*/
+    --zen-primary-color: #ricer.col.foreground !important;         /* Main foreground color for text and icons */
+    --zen-colors-primary: #ricer.col.button !important;              /* Primary color for buttons and actionable elements */
+    --zen-colors-secondary: #ricer.col.button !important;            /* Secondary color for alternative actions */
+    --zen-colors-tertiary: #ricer.col.background !important;         /* Tertiary color for less prominent UI areas */
+    --zen-colors-border: #ricer.col.outline !important;              /* Color used for borders and outlines */
+
+    /*-----------------------------------------------------
+      Toolbar & Icon Colors
+      Defines colors specifically for toolbar elements and icons
+    -----------------------------------------------------*/
+    --toolbar-field-color: #ricer.col.foreground !important;               /* Toolbar input text color */
+    --toolbar-field-focus-color: #ricer.col.foreground_highlight !important; /* Toolbar input text color when focused */
+    --toolbar-color: #ricer.col.foreground !important;                     /* General toolbar text color */
+    --toolbarbutton-icon-fill: #ricer.col.foreground !important;           /* Fill color for icons in toolbar buttons */
+    --lwt-text-color: #ricer.col.foreground !important;                    /* Lightweight theme text color in toolbars */
+    --tab-selected-textcolor: #ricer.col.foreground_highlight !important;  /* Active/selected tab text color updated to foreground_highlight */
+
+    /*-----------------------------------------------------
+      New Tab, Sidebar & Panel Colors
+      Colors for new tab page texts, sidebars, and panel elements
+    -----------------------------------------------------*/
+    --newtab-text-primary-color: #ricer.col.foreground !important;         /* Primary text color on the new tab page */
+    --arrowpanel-color: #ricer.col.foreground !important;                  /* Text color for arrow panels */
+    --arrowpanel-background: #ricer.col.background !important;             /* Background color for arrow panels */
+    --sidebar-text-color: #ricer.col.foreground !important;                /* Text color for sidebar elements */
+    --lwt-sidebar-text-color: #ricer.col.foreground !important;            /* Text color for lightweight theme sidebar */
+    --lwt-sidebar-background-color: #ricer.col.background !important;      /* Background color for lightweight theme sidebar */
+
+    /*-----------------------------------------------------
+      Background Colors for Toolbars & Main Browser
+      Defines background colors for toolbars, new tab page, and the main browser window
+    -----------------------------------------------------*/
+    --toolbar-bgcolor: #ricer.col.button !important;             /* Background color for the toolbar */
+    --newtab-background-color: #ricer.col.background !important;  /* Background color for the new tab page */
+    --zen-themed-toolbar-bg: #ricer.col.background !important;    /* Background color for the Zen-themed toolbar */
+    --zen-main-browser-background: #ricer.col.background !important; /* Main browser background color */
+  }
+
+  /*-----------------------------------------------------
+    Permissions Icon
+    Styles the icon that indicates granted permissions
+  -----------------------------------------------------*/
+  #permissions-granted-icon {
+    color: #ricer.col.background !important;  /* Sets the icon color to match the background for contrast */
+  }
+
+  /*-----------------------------------------------------
+    Sidebar – Places Tree
+    Styles the background of the sidebar places tree
+  -----------------------------------------------------*/
+  .sidebar-placesTree {
+    background-color: #ricer.col.background !important; /* Applies the background color for consistency */
+  }
+
+  /*-----------------------------------------------------
+    Zen Workspaces Button
+    Styles the background for the Zen workspaces button
+  -----------------------------------------------------*/
+  #zen-workspaces-button {
+    background-color: #ricer.col.background !important; /* Sets the button background to the main background color */
+  }
+
+  /*-----------------------------------------------------
+    Tabs Toolbar
+    Styles the background for the tab toolbar area
+  -----------------------------------------------------*/
+  #TabsToolbar {
+    background-color: #ricer.col.background !important; /* Matches the background color of the tabs toolbar with the overall theme */
+  }
+
+  /*-----------------------------------------------------
+    URL Bar Background
+    Styles the background for the URL bar element
+  -----------------------------------------------------*/
+  #urlbar-background {
+    background-color: #ricer.col.background !important; /* Applies the themed background color to the URL bar */
+  }
+
+  /*-----------------------------------------------------
+    Content Shortcuts
+    Styles for the shortcut buttons or links within content areas
+  -----------------------------------------------------*/
+  .content-shortcuts {
+    background-color: #ricer.col.background !important;             /* Sets the background color of shortcut elements */
+    border-color: #ricer.col.foreground_highlight !important;         /* Uses foreground_highlight for the border instead of a fixed blue */
+  }
+
+  /*-----------------------------------------------------
+    URL Bar View – URL Text
+    Styles the color of URL text within the URL bar view
+  -----------------------------------------------------*/
+  .urlbarView-url {
+    color: #ricer.col.foreground_highlight !important; /* Changed from blue to foreground_highlight for better consistency */
+  }
+
+  /*-----------------------------------------------------
+    Zen Edit Bookmark Panel Favicon Container
+    Styles the background of the favicon container in the bookmark edit panel
+  -----------------------------------------------------*/
+  #zenEditBookmarkPanelFaviconContainer {
+    background: #ricer.col.background !important; /* Matches the background to ensure visual harmony */
+  }
+
+  /*-----------------------------------------------------
+    Toolbar Button States
+    Applies styles for active/open toolbar buttons when not disabled
+  -----------------------------------------------------*/
+  toolbar .toolbarbutton-1 {
+    &:not([disabled]) {
+      &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
+        fill: #ricer.col.background; /* Changes the fill color for icons/text when the button is active/open */
+      }
+    }
+  }
+
+  /*-----------------------------------------------------
+    Identity Color Themes
+    Defines theme colors for tab and icon identities based on different color classes
+    Fixed color names retained here as they represent distinct identity hues.
+  -----------------------------------------------------*/
+  .identity-color-blue {
+    --identity-tab-color: #ricer.col.blue !important;   /* Sets tab color to blue */
+    --identity-icon-color: #ricer.col.blue !important;    /* Sets icon color to blue */
+  }
+
+  .identity-color-turquoise {
+    --identity-tab-color: #ricer.col.cyan !important;     /* Sets tab color to turquoise (cyan) */
+    --identity-icon-color: #ricer.col.cyan !important;      /* Sets icon color to turquoise (cyan) */
+  }
+
+  .identity-color-green {
+    --identity-tab-color: #ricer.col.green !important;    /* Sets tab color to green */
+    --identity-icon-color: #ricer.col.green !important;     /* Sets icon color to green */
+  }
+
+  .identity-color-yellow {
+    --identity-tab-color: #ricer.col.yellow !important;   /* Sets tab color to yellow */
+    --identity-icon-color: #ricer.col.yellow !important;    /* Sets icon color to yellow */
+  }
+
+  .identity-color-orange {
+    --identity-tab-color: #ricer.col.br_yellow !important; /* Sets tab color to a bright yellow/orange */
+    --identity-icon-color: #ricer.col.br_yellow !important;  /* Sets icon color to a bright yellow/orange */
+  }
+
+  .identity-color-red {
+    --identity-tab-color: #ricer.col.red !important;      /* Sets tab color to red */
+    --identity-icon-color: #ricer.col.red !important;       /* Sets icon color to red */
+  }
+
+  .identity-color-pink {
+    --identity-tab-color: #ricer.col.br_magenta !important; /* Sets tab color to bright magenta (pink) */
+    --identity-icon-color: #ricer.col.br_magenta !important;  /* Sets icon color to bright magenta (pink) */
+  }
+
+  .identity-color-purple {
+    --identity-tab-color: #ricer.col.magenta !important;    /* Sets tab color to purple (magenta) */
+    --identity-icon-color: #ricer.col.magenta !important;     /* Sets icon color to purple (magenta) */
+  }
+}
+
