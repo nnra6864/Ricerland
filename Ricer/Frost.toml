@@ -162,4 +162,5 @@ DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
 AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
 Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
+HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
 #Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end

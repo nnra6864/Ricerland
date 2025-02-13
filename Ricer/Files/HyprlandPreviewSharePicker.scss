@@ -1,0 +1,163 @@
+/* nnra6864+GPT */
+/* Ricer theme for https://github.com/WhySoBad/hyprland-preview-share-picker */
+
+$bg: #ricer.col.background;
+$fg: #ricer.col.foreground;
+$fgHighlight: #ricer.col.foreground_highlight;
+$button: #ricer.col.button;
+$buttonHighlight: #ricer.col.button_highlight;
+$outline: #ricer.col.outline;
+$outlineHighlight: #ricer.col.outline_alt;
+$shadow: #ricer.col.shadow;
+$rounding: ricer.val.rounding;
+$font: ricer.val.font;
+$fontSize: ricer.val.font_size;
+$outline_size: ricer.val.outline_size;
+
+window, box, notebook, stack, viewport, scrolledwindow {
+  background-color: $bg;
+}
+
+/*-----------------------------------------------------
+  Window Container
+  The outermost container for the share picker window.
+  Dimensions are taken from the share picker config.
+-----------------------------------------------------*/
+.window {
+  width: 1000px;
+  height: 500px;
+  background: $bg;
+  color: $fg;
+  border-radius: #{$rounding}px;
+  overflow: hidden;
+}
+
+/*-----------------------------------------------------
+  Notebook Container
+  Holds the different pages/tabs of the picker.
+-----------------------------------------------------*/
+.notebook {
+  background: $bg;
+  border: #{$outline_size}px solid $outline;
+  border-radius: #{$rounding}px;
+  padding: 10px;
+}
+
+/*-----------------------------------------------------
+  Tab Label Styling
+  Each tab label in the notebook header.
+-----------------------------------------------------*/
+.tab-label {
+  color: $fg;
+  background: $button;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: #{$rounding}px;
+  cursor: pointer;
+
+  &:hover {
+    background: $buttonHighlight;
+  }
+
+  &.active {
+    background: $fgHighlight;
+    color: $bg;
+  }
+}
+
+/*-----------------------------------------------------
+  Notebook Page Styling
+  Each page container within the notebook.
+-----------------------------------------------------*/
+.page {
+  background: $bg;
+  padding: 15px;
+  border-radius: #{$rounding}px;
+}
+
+/*-----------------------------------------------------
+  Image Card Styling
+  Cards that display an image and a label.
+-----------------------------------------------------*/
+.card {
+  background: $bg;
+  border: #{$outline_size}px solid $outline;
+  border-radius: #{$rounding}px;
+  padding: 10px;
+  margin: 10px;
+  transition: transform 0.2s, border-color 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+    border-color: $outlineHighlight;
+  }
+}
+
+/*-----------------------------------------------------
+  Image Card Loading State
+  Style for cards where the image is still loading.
+-----------------------------------------------------*/
+.card-loading {
+  background: $bg;
+  border: #{$outline_size}px dashed $outline;
+  border-radius: #{$rounding}px;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*-----------------------------------------------------
+  Image Styling
+  Styles the image within the card.
+-----------------------------------------------------*/
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: #{$rounding}px;
+}
+
+/*-----------------------------------------------------
+  Image Label Styling
+  Text label displayed under each image.
+-----------------------------------------------------*/
+.image-label {
+  color: $fg;
+  font-family: $font;
+  font-size: #{$fontSize}px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*-----------------------------------------------------
+  Region Selection Button
+  Button for launching region selection.
+-----------------------------------------------------*/
+.region-button {
+  background: $button;
+  color: $fg;
+  border: #{$outline_size}px solid $outline;
+  border-radius: #{$rounding}px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: $buttonHighlight;
+  }
+}
+
+/*-----------------------------------------------------
+  Restore Button Styling
+  Button for session or token restore.
+-----------------------------------------------------*/
+.restore-button {
+  background: $button;
+  color: $fg;
+  border: #{$outline_size}px solid $outline;
+  border-radius: #{$rounding}px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: $buttonHighlight;
+  }
+}
+
