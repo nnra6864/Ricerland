@@ -33,7 +33,8 @@
         {
           "Type": "Image",
           "Data": {
-            "Image": "~/.config/Backgrounds/Frost/FrostedPalace.png"
+            "Image": "~/.config/Backgrounds/Frost/FrostedPalace.png",
+            "ScalingMode": "EnvelopeParent"
           }
         }
       ]
