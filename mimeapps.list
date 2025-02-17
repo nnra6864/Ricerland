@@ -85,6 +85,7 @@ x-scheme-handler/tg=userapp-Kotatogram Desktop-QM88Y2.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/ror2mm=r2modman.desktop
+x-scheme-handler/discord=vesktop.desktop
 
 [Removed Associations]
 text/x-csharp=azuredatastudio.desktop;
