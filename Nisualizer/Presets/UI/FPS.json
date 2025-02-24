@@ -1,0 +1,47 @@
+{
+  "Name": "FPS",
+  "Components": [
+    {
+      "Type": "Canvas",
+      "Data": {
+        "RenderMode": "ScreenSpaceCamera",
+        "PlaneDistance": 5
+      }
+    },
+    {
+      "Type": "CanvasScaler",
+      "Data": {
+        "ScaleMode": "ScaleWithScreenSize",
+        "ReferenceResolution": { "X": 1920, "Y": 1080 },
+        "ScreenMatchMode": "MatchWidthOrHeight",
+        "MatchWidthOrHeight": 0.5
+      }
+    }
+  ],
+  "Children": [
+    {
+      "Name": "FPS",
+      "Components": [
+        {
+          "Type": "RectTransform",
+          "Data": {
+            "Size": { "X": 0, "Y": 0 },
+            "AnchorsX": { "X": 0, "Y": 0 },
+            "AnchorsY": { "X": 1, "Y": 1 },
+            "Position": { "X": 50, "Y": -50 }
+          }
+        },
+        {
+          "Type": "Text",
+          "Data": {
+            "Text": "FPS: {fps(), interval: 0.25}",
+            "Alignment": "TopLeft",
+            "Wrapping": "NoWrap",
+            "FontSize": 24,
+            "Interactive": true
+          }
+        }
+      ]
+    }
+  ]
+}

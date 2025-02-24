@@ -9,14 +9,14 @@ space_colors = false
 space_files = true
 
 [Values]
-#Theme
+# Theme
 bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
-icons = "Nordzy-dark"
+icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
-gtk_theme = "OomoxRicer"
+gtk_theme = "Ricer"
 nvim_theme = "nord"
 
-#Font
+# Font
 font = "Courier Prime Code"
 min_font_size = 10
 small_font_size = 13
@@ -24,7 +24,7 @@ font_size = 15
 big_font_size = 17
 max_font_size = 32
 
-#Misc
+# Misc
 terminal = "kitty"
 opacity = 0.85
 inactive_opacity = 0.9
@@ -34,24 +34,24 @@ cursor_size = 32
 cursor_rot = 21
 notification_duration = 3
 
-#Color Values
+# Color Values
 highlight_hsv = "h+0.s+0.v+10"
 placeholder_hsv = "h+0.s+0.v-10"
 inactive_hsv = "h+0.s+0.v-15"
 disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
-#Terminal
+# Terminal
 black = "2e3440"
 red = "bf616a"
 green = "a3be8c"
 yellow = "ebcb8b"
-blue = "5e81ac"
+blue = "81a1c1"
 magenta = "b48ead"
-cyan = "81a1c1"
-white = "d8dee9"
+cyan = "88c0d0"
+white = "eceff4"
 
-#Terminal Bright
+# Terminal Bright
 br_black = "$black.$highlight_hsv"
 br_red = "$red.$highlight_hsv"
 br_green = "$green.$highlight_hsv"
@@ -61,70 +61,70 @@ br_magenta = "$magenta.$highlight_hsv"
 br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
-#Foreground
+# Foreground
 foreground = "$white"
 foreground_highlight = "$foreground.$highlight_hsv"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
-#Foreground Alternative
+# Foreground Alternative
 foreground_alt = "$cyan"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
 foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
 
-#Background
+# Background
 background = "$black"
 background_highlight = "$background.$highlight_hsv"
 background_inactive = "$background.$inactive_hsv"
 background_disabled = "$background.$disabled_hsv"
 
-#Background Alternative
+# Background Alternative
 background_alt = "$black"
 background_highlight_alt = "$background_alt.$highlight_hsv"
 background_inactive_alt = "$background_alt.$inactive_hsv"
 background_disabled_alt = "$background_alt.$disabled_hsv"
 
-#Button Background
+# Button Background
 button = "$br_black"
 button_highlight = "$button.$highlight_hsv"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
-#Button Foreground
+# Button Foreground
 button_foreground = "$cyan"
 button_foreground_highlight = "$button_foreground.$highlight_hsv"
 button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
-#Outline
+# Outline
 outline = "$cyan"
 outline_alt = "$br_white"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
 
-#Shadow
+# Shadow
 shadow = "$black"
 shadow_inactive = "$shadow.$inactive_hsv"
 
-#Link
-link = "$cyan"
-link_visited = "$blue"
+# Link
+link = "$br_cyan"
+link_visited = "$br_blue"
 
-#Code
+# Code
 code_var = "$foreground"
-code_type = "$cyan"
-code_keyword = "$magenta"
+code_type = "$br_cyan"
+code_keyword = "$br_blue"
 code_attribute = "$br_blue"
 
 code_const = "$br_blue"
 code_bracket = "$foreground"
-code_operator = "$magenta"
-code_punctuation = "$blue"
+code_operator = "$br_cyan"
+code_punctuation = "$br_blue"
 
-code_str = "$cyan"
+code_str = "$br_cyan"
 code_str_literal = "$foreground"
 code_special_char = "$foreground_highlight_alt"
 code_comment = "$foreground_inactive"
@@ -134,28 +134,6 @@ visualizer = "$white"
 visualizer_outline = "$cyan"
 
 [Files]
-Hyprland = "~/.config/hypr/hyprland.conf"
-Alacritty = "~/.config/alacritty.toml"
-NvimTheme = "~/.config/nvim/lua/theme.lua"
-RofiConfig = "~/.config/rofi/config.rasi"
-RofiTheme = "~/.config/rofi/themes/theme.rasi"
-GLavaRadial = "~/.config/glava/radial.glsl"
-GTKSettings = "~/.local/share/nwg-look/gsettings"
-Dunst = "~/.config/dunst/dunstrc"
-Fonts = "~/.config/fontconfig/fonts.conf"
-Hyprmouse = "~/.config/hypr/hyprmouse.conf"
-QtCol = "~/.config/qt5ct/colors/Ricer.conf"
-QtColors = "~/.config/qt6ct/colors/Ricer.conf"
-KDEGlobals = "~/.config/kdeglobals"
-FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
-YTEnhancer = "~/.config/YouTubeEnhancer.json"
-Kitty = "~/.config/kitty/kitty.conf"
-Pywalfox = "~/.cache/wal/colors.json"
-KDEColors = "~/.local/share/color-schemes/Ricer.colors"
-RicerHub = "~/.config/RicerHub.py"
-MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
-Oomox = "~/.config/OomoxRicer"
-Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
-DarkReader = "~/.config/Dark-Reader-Settings.json"
-Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
-AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
+ZenBrowserLogo = "~/.config/ZenBrowser/ZenLogo.svg"
+ZenBrowserUserChrome = "~/.config/ZenBrowser/userChrome.css"
+ZenBrowserUserContent = "~/.config/ZenBrowser/userContent.css"

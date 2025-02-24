@@ -1,7 +1,7 @@
 {
 	"FPS": 60,
-	"Sensitivity": 0.5,
-	"InputName": "OutputInput",
+	"BufferSize": 64,
+	"Sensitivity": 3,
 	"Font": "Default",
 	"Scene": "Snowstorm",
 	"Shell": "/bin/nu",

@@ -298,7 +298,7 @@ if status is-interactive
 
             # Setup and combine_input and output_input
             combine_input
-            output_input
+            # output_input
 
             # Start Hyprland
             Hyprland
