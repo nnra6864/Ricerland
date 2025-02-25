@@ -1,17 +1,16 @@
 {
-  "SpawnRateRange": { "X": 2000, "Y": 10000 },
+  "SpawnRateRange": { "X": 500, "Y": 5000},
   "SpawnRadius": 1.0,
   "LifetimeRange": { "X": 1.0, "Y": 3.0 },
   "SpeedRange": { "X": 1.0, "Y": 3.0 },
 
   "Turbulence": {
-    "ShiftSpeed": { "X": 0.001, "Y": 0.001, "Z": 0.001 },
-    "RotationSpeed": { "X": 30, "Y": 25, "Z": 20 },
-    "IntensityRange": { "X": 5.0, "Y": 7.0 },
+    "RotationSpeed": 20.0,
+    "IntensityRange": { "X": 7.0, "Y": 10.0 },
     "DragRange": { "X": 1.5, "Y": 2.0 },
     "Frequency": 1.0,
     "Octaves": 8,
-    "Roughness": 0.75,
+    "Roughness": 0.9,
     "Lacunarity": 0.0
   },
 
