@@ -1,3 +1,4 @@
+/home/nnra/Downloads/Sting-Sword.blend
 /home/nnra/Data/Projects/Unity/GameJam/Files/Blender/Arena.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/Enemy.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/MainMenu.blend
@@ -17,4 +18,3 @@
 /home/nnra/HDD2TB/Work/3D/Blender/Unity/untitled.blend
 /home/nnra/HDD2TB/Work/3D/Blender/Unity/Saves/Speedsters Platformer/Unity Sword.blend
 /home/nnra/HDD2TB/Work/3D/Blender/Unity/Saves/Speedsters Platformer/Sword.blend
-/home/nnra/HDD2TB/Work/3D/Blender/Unity/Saves/Speedsters Platformer/Medkit.blend

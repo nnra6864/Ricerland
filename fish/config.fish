@@ -4,6 +4,9 @@
 # set -g tide_right_prompt_suffix ''
 # set -g tide_time_format '%T'
 
+# Perforce Morph
+set -Ux P4IGNORE .p4ignore
+
 # Aliases
 alias doas='sudo'
 alias nlear='clear; neofetch'
