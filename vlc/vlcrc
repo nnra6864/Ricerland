@@ -2623,7 +2623,7 @@ qt-privacy-ask=0
 #alsa-audio-channels=6
 
 # Software gain (float)
-#alsa-gain=1.000000
+alsa-gain=0.064000
 
 [mpegvideo] # MPEG-I/II video packetizer
 
@@ -3828,7 +3828,7 @@ transform-type=vflip
 audio-time-stretch=0
 
 # Audio output module (string)
-aout=any
+aout=alsa
 
 # Media role (string)
 #role=video
@@ -3840,7 +3840,7 @@ aout=any
 #audio-visual=none
 
 # Audio resampler (string)
-#audio-resampler=
+audio-resampler=any
 
 # Enable video (boolean)
 #video=1
@@ -3969,7 +3969,7 @@ aout=any
 vout=gl
 
 # Video filter module (string)
-video-filter=transform:magnify
+#video-filter=
 
 # Video splitter module (string)
 #video-splitter=
@@ -4239,7 +4239,7 @@ video-filter=transform:magnify
 #packetizer=
 
 # VoD server module (string)
-#vod-server=
+vod-server=any
 
 # Use a plugins cache (boolean)
 #plugins-cache=1
