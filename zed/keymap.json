@@ -7,10 +7,10 @@
 			"alt-left": "pane::GoBack",
 			"alt-l": "pane::GoForward",
 			"alt-right": "pane::GoForward",
-			"ctrl-alt-h": ["workspace::ActivatePaneInDirection", "Left"],
-			"ctrl-alt-left": ["workspace::ActivatePaneInDirection", "Left"],
-			"ctrl-alt-l": ["workspace::ActivatePaneInDirection", "Right"],
-			"ctrl-alt-right": ["workspace::ActivatePaneInDirection", "Right"],
+			"ctrl-alt-h": "workspace::ActivatePaneLeft",
+			"ctrl-alt-left": "workspace::ActivatePaneLeft",
+			"ctrl-alt-l": "workspace::ActivatePaneRight",
+			"ctrl-alt-right": "workspace::ActivatePaneRight",
 			"alt-r": "editor::Rename"
 		}
 	},
@@ -29,10 +29,10 @@
 			"ctrl-shift-c": "editor::Copy",
 			"ctrl-shift-v": "editor::Paste",
 			"alt-w": "pane::CloseActiveItem",
-			"ctrl-alt-h": ["workspace::ActivatePaneInDirection", "Left"],
-			"ctrl-alt-left": ["workspace::ActivatePaneInDirection", "Left"],
-			"ctrl-alt-l": ["workspace::ActivatePaneInDirection", "Right"],
-			"ctrl-alt-right": ["workspace::ActivatePaneInDirection", "Right"]
+			"ctrl-alt-h": "workspace::ActivatePaneLeft",
+			"ctrl-alt-left": "workspace::ActivatePaneLeft",
+			"ctrl-alt-l": "workspace::ActivatePaneRight",
+			"ctrl-alt-right": "workspace::ActivatePaneRight"
 		}
 	}
 ]
