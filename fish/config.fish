@@ -40,14 +40,14 @@ end
 # Rices the system with the provided config
 function rice
     #Start the Shifter transition
-    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    set pid $last_pid
-    disown
-    
-    sleep 0.2
+    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    #set pid $last_pid
+    #disown
+    #
+    #sleep 0.2
 
     #Execute Ricer
-    python ~/Data/Projects/Ricer/Ricer.py $argv > /dev/null 2>&1
+    python ~/Data/Projects/Ricer/Ricer.py $argv # > /dev/null 2>&1
 
     #Reload Kitty cfg
     kill -SIGUSR1 (pgrep kitty)
@@ -72,8 +72,8 @@ function rice
 
     #Nlear the console, sleep and kill Shifter
     nlear
-    sleep 1
-    kill -SIGUSR1 $pid
+    #sleep 1
+    #kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
