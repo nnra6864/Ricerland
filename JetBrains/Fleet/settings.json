@@ -1,0 +1,10 @@
+{
+    "theme": "Ricer",
+    "zoomLevel": 1.5,
+    "vimEmulationEnabled": true,
+    "editor.fontFamily": "Courier Prime Code",
+    "editor.fontSize": 13.0,
+    "editor.softWrapEnabled": true,
+    "editor.lineNumbers": "Relative",
+    "fus.sendAllowed": false
+}

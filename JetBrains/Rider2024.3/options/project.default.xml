@@ -1,0 +1,38 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="MaterialThemeProjectNewConfig">
+        <option name="metadata">
+          <MTProjectMetadataState>
+            <option name="userId" value="-535b86c5:192a7efc94f:-7fff" />
+          </MTProjectMetadataState>
+        </option>
+      </component>
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#"
+  }
+}]]></component>
+      <component name="VcsDirectoryMappings" defaultProject="true" />
+      <component name="WindowStateProjectService">
+        <state x="1277" y="141" width="985" height="757" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1743194423659">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1277" y="141" width="985" height="757" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.5120.1440" timestamp="1743194423659" />
+        <state x="1270" y="439" width="1299" height="632" key="Edit.Enum members" timestamp="1743194295688">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1270" y="439" width="1299" height="632" key="Edit.Enum members/0.0.5120.1440" timestamp="1743194295688" />
+        <state x="1992" y="300" width="1125" height="809" key="Rider.NewProjectDialog.Size" timestamp="1741704791123">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1992" y="300" width="1125" height="809" key="Rider.NewProjectDialog.Size/0.0.5120.1440" timestamp="1741704791123" />
+        <state x="1329" y="267" key="SettingsEditor" timestamp="1743194410870">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1329" y="267" key="SettingsEditor/0.0.5120.1440" timestamp="1743194410870" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

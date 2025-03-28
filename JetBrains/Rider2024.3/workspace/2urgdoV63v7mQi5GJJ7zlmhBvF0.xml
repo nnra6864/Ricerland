@@ -1,0 +1,644 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="td" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="wqomb7ycc6uh" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 41,
+      "lastUsed": 1743194130318
+    },
+    "ShaderLab": {
+      "usageCount": 2,
+      "lastUsed": 1743053384953
+    },
+    "AsmDef": {
+      "usageCount": 1,
+      "lastUsed": 1743193989482
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Skycraft/_Client/AdvanceTillFalse.cs",
+    "/home/nnra/Data/Projects/Unity/td/Packages/com.jbooth.microverse/Scripts/Stamps/CopyPasteStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/LinesDB.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/UnityEngine/Timeline/TrackAsset.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Optional.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ActivationClipStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/AudioClipStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ClipStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/TrackReferenceType.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/ActivationTrackStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/AudioTrackStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackReferenceType.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/StampPropertyAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMaker.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMakerEditorView.cs"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.td/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="41" lastUsage="1743194130318" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="1" lastUsage="1743193989482" />
+    </language>
+    <language id="ShaderLab">
+      <summary usageCount="2" lastUsage="1743053384955" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="0.9" version="1" />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Skycraft" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Skycraft" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="_Client" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Track" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="UnityEngine" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="UnityEngine" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Timeline" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="UnityEngine" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Timeline" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TrackAsset.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-project-names" value="true" />
+        <option name="show-tilde-folders" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+        <option name="show-project-imports" value="true" />
+        <option name="autoscroll-all" value="false" />
+        <option name="show-scratches" value="true" />
+        <option name="search-dependencies" value="false" />
+        <option name="show-unreal-project-files" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="RiderPerAppToolWindowOpenedTWKeeper">
+    <option name="map">
+      <map>
+        <entry key="AIAssistant">
+          <value>
+            <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="Assembly Explorer">
+          <value>
+            <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+          </value>
+        </entry>
+        <entry key="Bookmarks">
+          <value>
+            <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+          </value>
+        </entry>
+        <entry key="Build">
+          <value>
+            <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+          </value>
+        </entry>
+        <entry key="Codeium Chat">
+          <value>
+            <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+          </value>
+        </entry>
+        <entry key="Commit">
+          <value>
+            <window_info id="Commit" order="0" weight="0.2597135" />
+          </value>
+        </entry>
+        <entry key="Coverage">
+          <value>
+            <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+          </value>
+        </entry>
+        <entry key="Database Changes">
+          <value>
+            <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Debug">
+          <value>
+            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+          </value>
+        </entry>
+        <entry key="Dynamic Program Analysis">
+          <value>
+            <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="ErrorToolWindow">
+          <value>
+            <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
+          </value>
+        </entry>
+        <entry key="File Transfer">
+          <value>
+            <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Find">
+          <value>
+            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
+          </value>
+        </entry>
+        <entry key="Gradle">
+          <value>
+            <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Hierarchy">
+          <value>
+            <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+          </value>
+        </entry>
+        <entry key="IL">
+          <value>
+            <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="IL Viewer">
+          <value>
+            <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+          </value>
+        </entry>
+        <entry key="Learn">
+          <value>
+            <window_info id="Learn" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Maven">
+          <value>
+            <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Merge Requests">
+          <value>
+            <window_info id="Merge Requests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Monitoring">
+          <value>
+            <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.22713894" />
+          </value>
+        </entry>
+        <entry key="Notifications">
+          <value>
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
+          </value>
+        </entry>
+        <entry key="NuGet">
+          <value>
+            <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
+          </value>
+        </entry>
+        <entry key="Problems">
+          <value>
+            <window_info anchor="bottom" id="Problems" order="1" />
+          </value>
+        </entry>
+        <entry key="Problems View">
+          <value>
+            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.18769622" />
+          </value>
+        </entry>
+        <entry key="Project">
+          <value>
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.27619702" />
+          </value>
+        </entry>
+        <entry key="Pull Requests">
+          <value>
+            <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Run">
+          <value>
+            <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+          </value>
+        </entry>
+        <entry key="Services">
+          <value>
+            <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="Space Code Reviews">
+          <value>
+            <window_info id="Space Code Reviews" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Structure">
+          <value>
+            <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+          </value>
+        </entry>
+        <entry key="TODO">
+          <value>
+            <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.22713894" />
+          </value>
+        </entry>
+        <entry key="Terminal">
+          <value>
+            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+          </value>
+        </entry>
+        <entry key="Test Coverage">
+          <value>
+            <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Tests">
+          <value>
+            <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="TypeScript">
+          <value>
+            <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unit Tests">
+          <value>
+            <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unity">
+          <value>
+            <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="UnrealBuildTool">
+          <value>
+            <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+          </value>
+        </entry>
+        <entry key="Version Control">
+          <value>
+            <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="documentation.v2">
+          <value>
+            <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+          </value>
+        </entry>
+        <entry key="dotMemory">
+          <value>
+            <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="dotTrace Profiler">
+          <value>
+            <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7779000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+    </todo-panel>
+    <option name="selectedScope" value="All Places" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Space Code Reviews" show_stripe_button="false" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="Commit" order="0" weight="0.2597135" />
+      <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.27619702" />
+      <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+      <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+      <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.18769622" />
+      <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+      <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+      <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+      <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.22713894" />
+      <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+      <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+      <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
+      <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.22713894" />
+      <unified_weights bottom="0.22775424" left="0.27619702" right="0.22713894" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="648" height="556" key="SwitcherDM" timestamp="1743105784436">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="648" height="556" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1743105784436" />
+    <state x="1718" y="10" width="1900" height="1368" key="search.everywhere.popup" timestamp="1743140629017">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="859" y="321" width="950" height="1057" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1743104781381" />
+    <state x="1718" y="10" width="1900" height="1368" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1743140629017" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Skycraft/_Client/AdvanceTillFalse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/AN_Water.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Packages/com.jbooth.microverse/Scripts/Stamps/CopyPasteStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3187">
+          <caret line="479" column="10" selection-start-line="479" selection-start-column="10" selection-end-line="479" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Packages/com.jbooth.microverse/Scripts/Editor/CopyPasteStampEditor.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/UI/InGame/LevelUp/UiLevelUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1233">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Dialog/LinesDB.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/AudioClipStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <folding>
+            <marker date="1743193805427" expanded="true" signature="6:60" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ActivationClipStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1743193798668" expanded="true" signature="6:60" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ClipStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1743193870425" expanded="true" signature="6:273" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/TrackReferenceType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Keys/PrimaryKey.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Keys/SecondaryKey.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/ActivationTrackStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1743193910478" expanded="true" signature="6:89" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/AudioTrackStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1743193914747" expanded="true" signature="6:89" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackReferenceType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1743193952444" expanded="true" signature="6:211" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Optional.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1743193770365" expanded="true" signature="6:42" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/StampPropertyAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMaker.asmdef">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMaker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1743194121348" expanded="true" signature="6:438" ph="..." />
+            <marker date="1743194121348" expanded="true" signature="5483:8138" ph="Track" />
+            <marker date="1743194121348" expanded="true" signature="8142:9880" ph="Clip" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMakerEditorView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1267">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <marker date="1743194127882" expanded="true" signature="6:185" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/UnityEngine/Timeline/TrackAsset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

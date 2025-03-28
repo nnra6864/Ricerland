@@ -1,0 +1,550 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Katana" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="7a9jet0wzf7z" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ShopUIScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ExplosionManagerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PlaySceneManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="587">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <folding>
+                <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"DynamicDOF.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 47,
+      "lastUsed": 1740666784233
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.Katana/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="47" lastUsage="1740666784233" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="0.9" version="1" />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Fruits" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Shop" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-project-names" value="true" />
+        <option name="show-tilde-folders" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Katana" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Katana" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="show-project-imports" value="true" />
+        <option name="autoscroll-all" value="false" />
+        <option name="show-scratches" value="true" />
+        <option name="search-dependencies" value="false" />
+        <option name="show-unreal-project-files" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="RiderPerAppToolWindowOpenedTWKeeper">
+    <option name="map">
+      <map>
+        <entry key="AIAssistant">
+          <value>
+            <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="Assembly Explorer">
+          <value>
+            <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+          </value>
+        </entry>
+        <entry key="Bookmarks">
+          <value>
+            <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+          </value>
+        </entry>
+        <entry key="Build">
+          <value>
+            <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+          </value>
+        </entry>
+        <entry key="Codeium Chat">
+          <value>
+            <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+          </value>
+        </entry>
+        <entry key="Commit">
+          <value>
+            <window_info id="Commit" order="0" weight="0.2597135" />
+          </value>
+        </entry>
+        <entry key="Coverage">
+          <value>
+            <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+          </value>
+        </entry>
+        <entry key="Database Changes">
+          <value>
+            <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Debug">
+          <value>
+            <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+          </value>
+        </entry>
+        <entry key="Dynamic Program Analysis">
+          <value>
+            <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="ErrorToolWindow">
+          <value>
+            <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
+          </value>
+        </entry>
+        <entry key="File Transfer">
+          <value>
+            <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Find">
+          <value>
+            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+          </value>
+        </entry>
+        <entry key="Gradle">
+          <value>
+            <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Hierarchy">
+          <value>
+            <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+          </value>
+        </entry>
+        <entry key="IL">
+          <value>
+            <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="IL Viewer">
+          <value>
+            <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+          </value>
+        </entry>
+        <entry key="Learn">
+          <value>
+            <window_info id="Learn" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Maven">
+          <value>
+            <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Merge Requests">
+          <value>
+            <window_info id="Merge Requests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Monitoring">
+          <value>
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+          </value>
+        </entry>
+        <entry key="Notifications">
+          <value>
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
+          </value>
+        </entry>
+        <entry key="NuGet">
+          <value>
+            <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
+          </value>
+        </entry>
+        <entry key="Problems">
+          <value>
+            <window_info anchor="bottom" id="Problems" order="1" />
+          </value>
+        </entry>
+        <entry key="Problems View">
+          <value>
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.053865775" />
+          </value>
+        </entry>
+        <entry key="Project">
+          <value>
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+          </value>
+        </entry>
+        <entry key="Pull Requests">
+          <value>
+            <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Run">
+          <value>
+            <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+          </value>
+        </entry>
+        <entry key="Services">
+          <value>
+            <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="Space Code Reviews">
+          <value>
+            <window_info id="Space Code Reviews" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Structure">
+          <value>
+            <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+          </value>
+        </entry>
+        <entry key="TODO">
+          <value>
+            <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+          </value>
+        </entry>
+        <entry key="Terminal">
+          <value>
+            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+          </value>
+        </entry>
+        <entry key="Test Coverage">
+          <value>
+            <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Tests">
+          <value>
+            <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="TypeScript">
+          <value>
+            <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unit Tests">
+          <value>
+            <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unity">
+          <value>
+            <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="UnrealBuildTool">
+          <value>
+            <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+          </value>
+        </entry>
+        <entry key="Version Control">
+          <value>
+            <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="documentation.v2">
+          <value>
+            <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="dotMemory">
+          <value>
+            <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="dotTrace Profiler">
+          <value>
+            <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="42436000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Space Code Reviews" show_stripe_button="false" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="Commit" order="0" weight="0.2597135" />
+      <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+      <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+      <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+      <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.053865775" />
+      <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+      <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+      <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+      <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+      <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+      <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
+      <unified_weights bottom="0.06461865" left="0.15335557" right="0.053865775" />
+    </layoutV2>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2219" y="372" key="RiderGenerateDialog" timestamp="1739891879462">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2219" y="372" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1739891879462" />
+    <state x="2140" y="338" key="run.anything.popup" timestamp="1739891071920">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1739891071920" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/CameraManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/BombScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

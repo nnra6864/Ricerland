@@ -1,0 +1,1271 @@
+{
+  "meta": {
+    "theme.name": "Ricer",
+    "theme.kind": "Dark",
+    "theme.version": 0
+  },
+  "colors": {
+    "text.primary": "#ACCAE6",
+    "text.secondary": "#8EA7BF",
+    "text.tertiary": "#97ACBF",
+    "text.dangerous": "#BF3030",
+    "text.disabled": "#97ACBF",
+    "text.bright": "#BDDFFF",
+    "text.ai": "#ACCAE6",
+    
+    "background.primary": "#102840",
+    "background.secondary": "#102840",
+    "border": "#608FBF",
+    "border.focused": "#BDDFFF",
+    "focusOutline": "#608FBF",
+    
+    "banner.text": "#ACCAE6",
+    "banner.background.info": "#3078BF",
+    "banner.background.dangerous": "#BF3030",
+    "banner.background.warning": "#BFA730",
+    "banner.background.positive": "#60BF30",
+    "banner.background.ai": "#102840",
+    "banner.border.info": "#3078BF",
+    "banner.border.dangerous": "#BF3030",
+    "banner.border.warning": "#BFA730",
+    "banner.border.positive": "#60BF30",
+    "banner.border.ai": "#608FBF",
+    "banner.secondary.background.error": "#BF3030",
+    "banner.inline.background": "#102840",
+    "banner.inline.border": "#608FBF",
+    "banner.inline.text": "#ACCAE6",
+    
+    "button.dangerous.background.default": "#BF3030",
+    "button.dangerous.background.disabled": "#0E2132",
+    "button.dangerous.background.hovered": "#D83636",
+    "button.dangerous.background.pressed": "#D83636",
+    "button.dangerous.border.default": "#BF3030",
+    "button.dangerous.border.disabled": "#0E2132",
+    "button.dangerous.border.hovered": "#D83636",
+    "button.dangerous.border.pressed": "#D83636",
+    "button.dangerous.focusBorder": "#D83636",
+    "button.dangerous.focusOutline": "#608FBF",
+    "button.dangerous.separator.default": "#BF3030",
+    "button.dangerous.separator.disabled": "#0E2132",
+    "button.dangerous.split.focusOutline": "#608FBF",
+    "button.dangerous.text.default": "#ACCAE6",
+    "button.dangerous.text.disabled": "#97ACBF",
+    "button.dangerous.text.hovered": "#BDDFFF",
+    "button.dangerous.text.pressed": "#BDDFFF",
+    "button.dangerous.text.hint": "#8EA7BF",
+    
+    "button.positive.background.default": "#60BF30",
+    "button.positive.background.disabled": "#0E2132",
+    "button.positive.background.hovered": "#6DD836",
+    "button.positive.background.pressed": "#6DD836",
+    "button.positive.border.default": "#60BF30",
+    "button.positive.border.disabled": "#0E2132",
+    "button.positive.border.hovered": "#6DD836",
+    "button.positive.border.pressed": "#6DD836",
+    "button.positive.focusBorder": "#6DD836",
+    "button.positive.focusOutline": "#608FBF",
+    "button.positive.separator.default": "#60BF30",
+    "button.positive.separator.disabled": "#0E2132",
+    "button.positive.split.focusOutline": "#608FBF",
+    "button.positive.text.default": "#ACCAE6",
+    "button.positive.text.disabled": "#97ACBF",
+    "button.positive.text.hovered": "#BDDFFF",
+    "button.positive.text.pressed": "#BDDFFF",
+    "button.positive.text.hint": "#8EA7BF",
+    
+    "button.primary.background.default": "#153959",
+    "button.primary.background.disabled": "#0E2132",
+    "button.primary.background.hovered": "#1A4872",
+    "button.primary.background.pressed": "#1A4872",
+    "button.primary.border.default": "#608FBF",
+    "button.primary.border.disabled": "#202F3F",
+    "button.primary.border.hovered": "#BDDFFF",
+    "button.primary.border.pressed": "#BDDFFF",
+    "button.primary.focusBorder": "#BDDFFF",
+    "button.primary.focusOutline": "#608FBF",
+    "button.primary.separator.default": "#608FBF",
+    "button.primary.separator.disabled": "#202F3F",
+    "button.primary.split.focusOutline": "#608FBF",
+    "button.primary.text.default": "#608FBF",
+    "button.primary.text.disabled": "#557699",
+    "button.primary.text.hovered": "#6DA1D8",
+    "button.primary.text.pressed": "#6DA1D8",
+    "button.primary.text.hint": "#4D7299",
+    
+    "button.secondary.background.default": "#102840",
+    "button.secondary.background.disabled": "#071019",
+    "button.secondary.background.hovered": "#153959",
+    "button.secondary.background.pressed": "#153959",
+    "button.secondary.border.default": "#608FBF",
+    "button.secondary.border.disabled": "#202F3F",
+    "button.secondary.border.hovered": "#BDDFFF",
+    "button.secondary.border.pressed": "#BDDFFF",
+    "button.secondary.focusBorder": "#BDDFFF",
+    "button.secondary.focusOutline": "#608FBF",
+    "button.secondary.separator.default": "#608FBF",
+    "button.secondary.separator.disabled": "#202F3F",
+    "button.secondary.split.focusOutline": "#608FBF",
+    "button.secondary.text.default": "#ACCAE6",
+    "button.secondary.text.disabled": "#97ACBF",
+    "button.secondary.text.hovered": "#BDDFFF",
+    "button.secondary.text.pressed": "#BDDFFF",
+    "button.secondary.text.hint": "#8EA7BF",
+    
+    "button.warning.background.default": "#BFA730",
+    "button.warning.background.disabled": "#0E2132",
+    "button.warning.background.hovered": "#D8BB36",
+    "button.warning.background.pressed": "#D8BB36",
+    "button.warning.border.default": "#BFA730",
+    "button.warning.border.disabled": "#0E2132",
+    "button.warning.border.hovered": "#D8BB36",
+    "button.warning.border.pressed": "#D8BB36",
+    "button.warning.focusBorder": "#D8BB36",
+    "button.warning.focusOutline": "#608FBF",
+    "button.warning.separator.default": "#BFA730",
+    "button.warning.separator.disabled": "#0E2132",
+    "button.warning.split.focusOutline": "#608FBF",
+    "button.warning.text.default": "#ACCAE6",
+    "button.warning.text.disabled": "#97ACBF",
+    "button.warning.text.hovered": "#BDDFFF",
+    "button.warning.text.pressed": "#BDDFFF",
+    "button.warning.text.hint": "#8EA7BF",
+    
+    "button.ai.background.default": "#153959",
+    "button.ai.background.disabled": "#0E2132",
+    "button.ai.background.hovered": "#1A4872",
+    "button.ai.background.pressed": "#1A4872",
+    "button.ai.border.default": "#608FBF",
+    "button.ai.border.disabled": "#202F3F",
+    "button.ai.border.hovered": "#BDDFFF",
+    "button.ai.border.pressed": "#BDDFFF",
+    "button.ai.focusBorder": "#BDDFFF",
+    "button.ai.focusOutline": "#608FBF",
+    "button.ai.separator.default": "#608FBF",
+    "button.ai.separator.disabled": "#202F3F",
+    "button.ai.split.focusOutline": "#608FBF",
+    "button.ai.text.default": "#ACCAE6",
+    "button.ai.text.disabled": "#97ACBF",
+    "button.ai.text.hovered": "#BDDFFF",
+    "button.ai.text.pressed": "#BDDFFF",
+    "button.ai.text.hint": "#8EA7BF",
+    
+    "checkbox.icon.default": "#ACCAE6",
+    "checkbox.icon.disabled": "#97ACBF",
+    "checkbox.text.default": "#ACCAE6",
+    "checkbox.text.disabled": "#97ACBF",
+    "checkbox.off.background.default": "#102840",
+    "checkbox.off.background.disabled": "#071019",
+    "checkbox.off.background.hovered": "#153959",
+    "checkbox.off.border.default": "#608FBF",
+    "checkbox.off.border.disabled": "#202F3F",
+    "checkbox.off.border.hovered": "#BDDFFF",
+    "checkbox.off.focusBorder": "#BDDFFF",
+    "checkbox.off.focusOutline": "#608FBF",
+    "checkbox.on.background.default": "#153959",
+    "checkbox.on.background.disabled": "#0E2132",
+    "checkbox.on.background.hovered": "#1A4872",
+    "checkbox.on.border.default": "#608FBF",
+    "checkbox.on.border.disabled": "#202F3F",
+    "checkbox.on.border.hovered": "#BDDFFF",
+    "checkbox.on.focusBorder": "#BDDFFF",
+    "checkbox.on.focusOutline": "#608FBF",
+    
+    "combobox.arrowButton.background.default": "#153959",
+    "combobox.arrowButton.background.disabled": "#0E2132",
+    "combobox.background.default": "#102840",
+    "combobox.background.disabled": "#071019",
+    "combobox.background.hovered": "#153959",
+    "combobox.background.error": "#BF3030",
+    "combobox.border.default": "#608FBF",
+    "combobox.border.disabled": "#202F3F",
+    "combobox.border.hovered": "#BDDFFF",
+    "combobox.border.error": "#BF3030",
+    "combobox.focusBorder.default": "#BDDFFF",
+    "combobox.focusBorder.error": "#BF3030",
+    "combobox.focusOutline.default": "#608FBF",
+    "combobox.focusOutline.error": "#608FBF",
+    "combobox.text.default": "#ACCAE6",
+    "combobox.text.disabled": "#97ACBF",
+    "combobox.text.hovered": "#BDDFFF",
+    "combobox.text.error": "#BF3030",
+    
+    "completion.match.background": "#153959",
+    "completion.match.text": "#BDDFFF",
+    
+    "dragAndDrop.background": "#102840",
+    "dragAndDrop.border.default": "#608FBF",
+    "dragAndDrop.border.highlight": "#BDDFFF",
+    
+    "dropdown.background.default": "#102840",
+    "dropdown.background.disabled": "#071019",
+    "dropdown.background.hovered": "#153959",
+    "dropdown.background.error": "#BF3030",
+    "dropdown.border.default": "#608FBF",
+    "dropdown.border.disabled": "#202F3F",
+    "dropdown.border.hovered": "#BDDFFF",
+    "dropdown.border.error": "#BF3030",
+    "dropdown.focusBorder.default": "#BDDFFF",
+    "dropdown.focusBorder.error": "#BF3030",
+    "dropdown.focusOutline.default": "#608FBF",
+    "dropdown.focusOutline.error": "#608FBF",
+    "dropdown.text.default": "#ACCAE6",
+    "dropdown.text.disabled": "#97ACBF",
+    "dropdown.text.hovered": "#BDDFFF",
+    "dropdown.text.error": "#BF3030",
+    
+    "editor.caret.background": "#102840",
+    "editor.caret.border": "#608FBF",
+    "editor.currentLine.background.default": "#102840",
+    "editor.currentLine.background.focused": "#153959",
+    "editor.currentLine.scrollbarMark": "#608FBF",
+    "editor.foldedMark.background": "#102840",
+    "editor.foldedMark.text": "#ACCAE6",
+    "editor.foldIndicator.background.hovered": "#153959",
+    "editor.foldIndicator.icon.default": "#ACCAE6",
+    "editor.foldIndicator.icon.hovered": "#BDDFFF",
+    "editor.gitDiff.background.added": "#60BF30",
+    "editor.gitDiff.background.blame": "#3078BF",
+    "editor.gitDiff.background.conflict": "#BF3030",
+    "editor.gitDiff.background.deleted": "#BF3030",
+    "editor.gitDiff.background.modified": "#BFA730",
+    "editor.gitDiff.text.added": "#6DD836",
+    "editor.gitDiff.text.conflict": "#D83636",
+    "editor.gitDiff.text.deleted": "#D83636",
+    "editor.gitDiff.text.modified": "#D8BB36",
+    "editor.interline.background": "#102840",
+    "editor.interline.text.default": "#ACCAE6",
+    "editor.interline.text.hovered": "#BDDFFF",
+    "editor.interline.separator": "#608FBF",
+    "editor.interline.match.background": "#153959",
+    "editor.interline.match.text": "#608FBF",
+    "editor.interline.match.background.secondary": "#1A4872",
+    "editor.interline.match.text.secondary": "#6DA1D8",
+    "editor.interline.preview.background": "#102840",
+    "editor.interline.preview.border": "#608FBF",
+    "editor.lineNumber.current": "#BDDFFF",
+    "editor.lineNumber.default": "#ACCAE6",
+    "editor.postline.background.error": "#BF3030",
+    "editor.postline.background.info": "#3078BF",
+    "editor.postline.background.unused": "#102840",
+    "editor.postline.background.warning": "#BFA730",
+    "editor.postline.background.weakWarning": "#BFA730",
+    "editor.renamePostline.background": "#102840",
+    "editor.renamePostline.border": "#608FBF",
+    "editor.renamePostline.description.text": "#ACCAE6",
+    "editor.renamePostline.usages.text": "#BDDFFF",
+    "editor.selectableFoldedMark.background.default": "#102840",
+    "editor.selectableFoldedMark.background.focused": "#153959",
+    "editor.selectableFoldedMark.border.default": "#608FBF",
+    "editor.selectableFoldedMark.border.focused": "#BDDFFF",
+    "editor.selectableFoldedMark.text.default": "#ACCAE6",
+    "editor.selectableFoldedMark.text.focused": "#BDDFFF",
+    "editor.text": "#ACCAE6",
+    "editor.whitespaceIndicator": "#8EA7BF",
+    
+    "ghostButton.off.background.default": "#102840",
+    "ghostButton.off.background.disabled": "#071019",
+    "ghostButton.off.background.hovered": "#153959",
+    "ghostButton.off.background.pressed": "#153959",
+    "ghostButton.off.border.default": "#608FBF",
+    "ghostButton.off.border.disabled": "#202F3F",
+    "ghostButton.off.border.hovered": "#BDDFFF",
+    "ghostButton.off.border.pressed": "#BDDFFF",
+    "ghostButton.off.focusBorder": "#BDDFFF",
+    "ghostButton.off.focusOutline": "#608FBF",
+    "ghostButton.off.text.default": "#ACCAE6",
+    "ghostButton.off.text.disabled": "#97ACBF",
+    "ghostButton.off.text.hovered": "#BDDFFF",
+    "ghostButton.off.text.pressed": "#BDDFFF",
+    "ghostButton.on.background.default": "#153959",
+    "ghostButton.on.background.disabled": "#0E2132",
+    "ghostButton.on.background.hovered": "#1A4872",
+    "ghostButton.on.background.pressed": "#1A4872",
+    "ghostButton.on.border.default": "#608FBF",
+    "ghostButton.on.border.disabled": "#202F3F",
+    "ghostButton.on.border.hovered": "#BDDFFF",
+    "ghostButton.on.border.pressed": "#BDDFFF",
+    "ghostButton.on.focusBorder": "#BDDFFF",
+    "ghostButton.on.focusOutline": "#608FBF",
+    "ghostButton.on.text.default": "#608FBF",
+    "ghostButton.on.text.disabled": "#557699",
+    "ghostButton.on.text.hovered": "#6DA1D8",
+    "ghostButton.on.text.pressed": "#6DA1D8",
+    
+    "gitBranchTag.local.background": "#102840",
+    "gitBranchTag.local.border": "#608FBF",
+    "gitBranchTag.local.text": "#ACCAE6",
+    "gitBranchTag.remote.background": "#153959",
+    "gitBranchTag.remote.border": "#608FBF",
+    "gitBranchTag.remote.text": "#608FBF",
+    
+    "icon.background.blue": "#3078BF",
+    "icon.background.green": "#60BF30",
+    "icon.background.yellow": "#BFA730",
+    "icon.background.red": "#BF3030",
+    "icon.background.cyan": "#608FBF",
+    
+    "inputField.background.default": "#102840",
+    "inputField.background.hovered": "#153959",
+    "inputField.background.disabled": "#071019",
+    "inputField.background.error": "#BF3030",
+    "inputField.border.default": "#608FBF",
+    "inputField.border.hovered": "#BDDFFF",
+    "inputField.border.disabled": "#202F3F",
+    "inputField.border.error": "#BF3030",
+    "inputField.caret.default": "#ACCAE6",
+    "inputField.caret.error": "#BF3030",
+    "inputField.focusBorder.default": "#BDDFFF",
+    "inputField.focusBorder.error": "#BF3030",
+    "inputField.focusOutline.default": "#608FBF",
+    "inputField.focusOutline.error": "#608FBF",
+    "inputField.hint.default": "#8EA7BF",
+    "inputField.hint.hovered": "#BDDFFF",
+    "inputField.hint.disabled": "#97ACBF",
+    "inputField.hint.error": "#BF3030",
+    "inputField.selectionBackground.default": "#153959",
+    "inputField.selectionBackground.error": "#BF3030",
+    "inputField.text.default": "#ACCAE6",
+    "inputField.text.hovered": "#BDDFFF",
+    "inputField.text.disabled": "#97ACBF", 
+    "inputField.text.error": "#BF3030",
+    "inputField.ai.focusBorder.default": "#BDDFFF",
+    "inputField.ai.focusOutline.default": "#608FBF",
+    
+    "island.background": "#102840",
+    
+    "layout.error": "#BF3030",
+    
+    "link.focusOutline": "#608FBF",
+    "link.text.default": "#6DA1D8",
+    "link.text.disabled": "#97ACBF",
+    "link.underline": "#6DA1D8",
+    "link.ai.focusOutline": "#608FBF",
+    "link.ai.text.default": "#6DA1D8",
+    "link.ai.text.disabled": "#97ACBF",
+    "link.ai.underline": "#6DA1D8",
+    
+    "listItem.background.default": "#102840",
+    "listItem.background.focused": "#153959",
+    "listItem.background.hovered": "#153959",
+    "listItem.background.selected": "#153959",
+    "listItem.background.dnd": "#153959",
+    "listItem.border.default": "#608FBF",
+    "listItem.border.focused": "#BDDFFF",
+    "listItem.border.hovered": "#BDDFFF",
+    "listItem.border.selected": "#BDDFFF",
+    "listItem.focusBorder": "#BDDFFF",
+    "listItem.text.default": "#ACCAE6",
+    "listItem.text.focused": "#BDDFFF",
+    "listItem.text.hovered": "#BDDFFF",
+    "listItem.text.secondary": "#8EA7BF",
+    "listItem.text.selected": "#608FBF",
+    
+    "smartMode.background.enabled": "#102840",
+    "smartMode.background.error": "#BF3030",
+    "smartMode.border.loading": "#3078BF",
+    
+    "notification.background.default": "#102840",
+    "notification.background.unread": "#153959",
+    "notification.text.primary": "#ACCAE6",
+    "notification.text.secondary": "#8EA7BF",
+    "notification.separator": "#608FBF",
+    "notification.moreButton.background.default": "#153959",
+    "notification.moreButton.background.hovered": "#1A4872",
+    "notification.moreButton.background.pressed": "#1A4872",
+
+    "parameterInfo.match.text": "#ricer.col.",
+
+    "pillButton.background.default": "#ricer.col.",
+    "pillButton.background.disabled": "#ricer.col.",
+    "pillButton.background.hovered": "#ricer.col.",
+    "pillButton.background.pressed": "#ricer.col.",
+    "pillButton.border.default": "#ricer.col.",
+    "pillButton.border.disabled": "#ricer.col.",
+    "pillButton.border.hovered": "#ricer.col.",
+    "pillButton.border.pressed": "#ricer.col.",
+    "pillButton.focusBorder": "#ricer.col.",
+    "pillButton.focusOutline": "#ricer.col.",
+    "pillButton.text.default": "#ricer.col.",
+    "pillButton.text.disabled": "#ricer.col.",
+    "pillButton.text.hovered": "#ricer.col.",
+    "pillButton.text.pressed": "#ricer.col.",
+
+    "popup.background": "#ricer.col.",
+    "popup.border": "#ricer.col.",
+    "popup.text": "#ricer.col.",
+    "popup.separator": "#ricer.col.",
+    "popup.footer.background": "#ricer.col.",
+    "popup.footer.text": "#ricer.col.",
+    "popup.closeIcon.default": "#ricer.col.",
+    "popup.closeIcon.hovered": "#ricer.col.",
+    "popup.closeIcon.pressed": "#ricer.col.",
+    "popup.editor.background": "#ricer.col.",
+    "popup.editor.border": "#ricer.col.",
+    "popup.goto.background": "#ricer.col.",
+
+    "problemsWidget.tag.error.background.default": "#ricer.col.",
+    "problemsWidget.tag.error.background.hovered": "#ricer.col.",
+    "problemsWidget.tag.error.background.pressed": "#ricer.col.",
+    "problemsWidget.tag.error.text.default": "#ricer.col.",
+    "problemsWidget.tag.error.text.hovered": "#ricer.col.",
+    "problemsWidget.tag.error.text.pressed": "#ricer.col.",
+    "problemsWidget.tag.warning.background.default": "#ricer.col.",
+    "problemsWidget.tag.warning.background.hovered": "#ricer.col.",
+    "problemsWidget.tag.warning.background.pressed": "#ricer.col.",
+    "problemsWidget.tag.warning.text.default": "#ricer.col.",
+    "problemsWidget.tag.warning.text.hovered": "#ricer.col.",
+    "problemsWidget.tag.warning.text.pressed": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.background.default": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.background.hovered": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.background.pressed": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.text.default": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.text.hovered": "#ricer.col.",
+    "problemsWidget.tag.weakWarning.text.pressed": "#ricer.col.",
+    "problemsWidget.tag.success.background": "#ricer.col.",
+    "problemsWidget.tag.success.foreground": "#ricer.col.",
+    "problemsWidget.card.text.primary": "#ricer.col.",
+    "problemsWidget.card.text.secondary": "#ricer.col.",
+    "problemsWidget.card.expanded.error.border": "#ricer.col.",
+    "problemsWidget.card.expanded.error.background": "#ricer.col.",
+    "problemsWidget.card.expanded.warning.border": "#ricer.col.",
+    "problemsWidget.card.expanded.warning.background": "#ricer.col.",
+    "problemsWidget.card.expanded.weakWarning.border": "#ricer.col.",
+    "problemsWidget.card.expanded.weakWarning.background": "#ricer.col.",
+
+    "progressSpinner.foreground": "#ricer.col.",
+
+    "progressBar.determinate.background": "#ricer.col.",
+    "progressBar.determinate.foreground": "#ricer.col.",
+    "progressBar.indeterminate.foreground": "#ricer.col.",
+    "progressBar.indeterminate.foregroundAccent": "#ricer.col.",
+
+    "progressInline.foreground": "#ricer.col.",
+
+    "remote.userColor.background.eight": "#ricer.col.",
+    "remote.userColor.background.five": "#ricer.col.",
+    "remote.userColor.background.four": "#ricer.col.",
+    "remote.userColor.background.nine": "#ricer.col.",
+    "remote.userColor.background.one": "#ricer.col.",
+    "remote.userColor.background.seven": "#ricer.col.",
+    "remote.userColor.background.six": "#ricer.col.",
+    "remote.userColor.background.ten": "#ricer.col.",
+    "remote.userColor.background.three": "#ricer.col.",
+    "remote.userColor.background.two": "#ricer.col.",
+
+    "remoteWorkspaceStatusLabel.background.docker": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.background.space": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.background.ssh": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.background.wsl": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.text.docker": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.text.space": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.text.ssh": "#ricer.col.",
+    "remoteWorkspaceStatusLabel.text.wsl": "#ricer.col.",
+
+    "scrollbar.thumb.default": "#ricer.col.",
+    "scrollbar.thumb.hovered": "#ricer.col.",
+    "scrollbar.thumb.pressed": "#ricer.col.",
+    "scrollbar.track.default": "#ricer.col.",
+    "scrollbar.track.hovered": "#ricer.col.",
+    "scrollbar.track.pressed": "#ricer.col.",
+
+    "search.match.background": "#ricer.col.",
+    "search.match.text": "#ricer.col.",
+    "search.counter.background": "#ricer.col.",
+
+    "separator.default": "#ricer.col.",
+    "separator.hovered": "#ricer.col.",
+
+    "highlight.resize.border.center.hovered": "#ricer.col.",
+    "highlight.resize.border.edge.hovered": "#ricer.col.",
+    "highlight.resize.border.center.pressed": "#ricer.col.",
+    "highlight.resize.border.edge.pressed": "#ricer.col.",
+
+    "settings.modified.indicator": "#ricer.col.",
+    "settings.background.highlighted": "#ricer.col.",
+
+    "shadow.background.large": "#ricer.col.",
+    "shadow.background.medium": "#ricer.col.",
+    "shadow.background.small": "#ricer.col.",
+    "shadow.border": "#ricer.col.",
+
+    "shortcut.text": "#ricer.col.",
+    "shortcut.background": "#ricer.col.",
+
+    "statusBar.text.default": "#ricer.col.",
+    "statusBar.text.hovered": "#ricer.col.",
+    "statusBar.text.pressed": "#ricer.col.",
+
+    "survey.button.background.default": "#ricer.col.",
+    "survey.button.background.hovered": "#ricer.col.",
+    "survey.button.border.default": "#ricer.col.",
+    "survey.button.border.hovered": "#ricer.col.",
+    "survey.button.focusBorder": "#ricer.col.",
+    "survey.button.focusOutline": "#ricer.col.",
+    "survey.button.text.default": "#ricer.col.",#
+    "survey.button.text.hovered": "#ricer.col.",
+
+    "tab.background.default": "#ricer.col.",
+    "tab.background.hovered": "#ricer.col.",
+    "tab.background.selected": "#ricer.col.",
+    "tab.background.selectedFocused": "#ricer.col.",
+    "tab.background.dragAndDrop": "#ricer.col.",
+    "tab.border.default": "#ricer.col.",
+    "tab.border.hovered": "#ricer.col.",
+    "tab.border.selected": "#ricer.col.",
+    "tab.border.selectedFocused": "#ricer.col.",
+    "tab.border.dragAndDrop": "#ricer.col.",
+    "tab.focusOutline.dragAndDrop": "#ricer.col.",
+    "tab.text.default": "#ricer.col.",
+    "tab.text.hovered": "#ricer.col.",
+    "tab.text.selected": "#ricer.col.",
+    "tab.text.selectedFocused": "#ricer.col.",
+    "tab.closeIcon.default": "#ricer.col.",
+    "tab.closeIcon.hovered": "#ricer.col.",
+    "tab.closeIcon.pressed": "#ricer.col.",
+    "tab.hint.default": "#ricer.col.",
+    "tab.hint.hovered": "#ricer.col.",
+    "tab.hint.selected": "#ricer.col.",
+
+    "terminal.ansiColors.background.ansiBlack": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBlue": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightBlack": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightBlue": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightCyan": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightGreen": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightMagenta": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightRed": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightWhite": "#ricer.col.",
+    "terminal.ansiColors.background.ansiBrightYellow": "#ricer.col.",
+    "terminal.ansiColors.background.ansiCyan": "#ricer.col.",
+    "terminal.ansiColors.background.ansiGreen": "#ricer.col.",
+    "terminal.ansiColors.background.ansiMagenta": "#ricer.col.",
+    "terminal.ansiColors.background.ansiRed": "#ricer.col.",
+    "terminal.ansiColors.background.ansiWhite": "#ricer.col.",
+    "terminal.ansiColors.background.ansiYellow": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBlack": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBlue": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightBlack": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightBlue": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightCyan": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightGreen": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightMagenta": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightRed": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightWhite": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiBrightYellow": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiCyan": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiGreen": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiMagenta": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiRed": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiWhite": "#ricer.col.",
+    "terminal.ansiColors.foreground.ansiYellow": "#ricer.col.",
+
+    "tileButton.off.background.default": "#ricer.col.",
+    "tileButton.off.background.disabled": "#ricer.col.",
+    "tileButton.off.background.hovered": "#ricer.col.",
+    "tileButton.off.background.pressed": "#ricer.col.",
+    "tileButton.off.border.default": "#ricer.col.",
+    "tileButton.off.border.disabled": "#ricer.col.",
+    "tileButton.off.border.hovered": "#ricer.col.",
+    "tileButton.off.border.pressed": "#ricer.col.",
+    "tileButton.off.focusBorder": "#ricer.col.",
+    "tileButton.off.focusOutline": "#ricer.col.",
+    "tileButton.off.text.default": "#ricer.col.",
+    "tileButton.off.text.disabled": "#ricer.col.",
+    "tileButton.off.text.hovered": "#ricer.col.",
+    "tileButton.off.text.pressed": "#ricer.col.",
+    "tileButton.off.text.shortcut.default": "#ricer.col.",
+    "tileButton.off.text.shortcut.disabled": "#ricer.col.",
+    "tileButton.on.background.default": "#ricer.col.",
+    "tileButton.on.background.disabled": "#ricer.col.",
+    "tileButton.on.background.hovered": "#ricer.col.",
+    "tileButton.on.background.pressed": "#ricer.col.",
+    "tileButton.on.border.default": "#ricer.col.",
+    "tileButton.on.border.disabled": "#ricer.col.",
+    "tileButton.on.border.hovered": "#ricer.col.",
+    "tileButton.on.border.pressed": "#ricer.col.",
+    "tileButton.on.focusBorder": "#ricer.col.",
+    "tileButton.on.focusOutline": "#ricer.col.",
+    "tileButton.on.text.default": "#ricer.col.",
+    "tileButton.on.text.disabled": "#ricer.col.",
+    "tileButton.on.text.hovered": "#ricer.col.",
+    "tileButton.on.text.pressed": "#ricer.col.",
+    "tileButton.on.text.shortcut.default": "#ricer.col.",
+    "tileButton.on.text.shortcut.disabled": "#ricer.col.",
+
+    "toast.background": "#ricer.col.",
+    "toast.border": "#ricer.col.",
+    "toast.text": "#ricer.col.",
+
+    "toggleButton.off.background.default": "#ricer.col.",
+    "toggleButton.off.background.disabled": "#ricer.col.",
+    "toggleButton.off.background.hovered": "#ricer.col.",
+    "toggleButton.off.background.pressed": "#ricer.col.",
+    "toggleButton.off.border.default": "#ricer.col.",
+    "toggleButton.off.border.disabled": "#ricer.col.",
+    "toggleButton.off.border.hovered": "#ricer.col.",
+    "toggleButton.off.border.pressed": "#ricer.col.",
+    "toggleButton.off.focusBorder": "#ricer.col.",
+    "toggleButton.off.focusOutline": "#ricer.col.",
+    "toggleButton.off.text.default": "#ricer.col.",
+    "toggleButton.off.text.disabled": "#ricer.col.",
+    "toggleButton.off.text.hovered": "#ricer.col.",
+    "toggleButton.off.text.pressed": "#ricer.col.",
+    "toggleButton.off.text.hint": "#ricer.col.",
+    "toggleButton.on.background.default": "#ricer.col.",
+    "toggleButton.on.background.disabled": "#ricer.col.",
+    "toggleButton.on.background.hovered": "#ricer.col.",
+    "toggleButton.on.background.pressed": "#ricer.col.",
+    "toggleButton.on.border.default": "#ricer.col.",
+    "toggleButton.on.border.disabled": "#ricer.col.",
+    "toggleButton.on.border.hovered": "#ricer.col.",
+    "toggleButton.on.border.pressed": "#ricer.col.",
+    "toggleButton.on.focusBorder": "#ricer.col.",
+    "toggleButton.on.focusOutline": "#ricer.col.",
+    "toggleButton.on.text.default": "#ricer.col.",
+    "toggleButton.on.text.disabled": "#ricer.col.",
+    "toggleButton.on.text.hovered": "#ricer.col.",
+    "toggleButton.on.text.pressed": "#ricer.col.",
+    "toggleButton.on.text.hint": "#ricer.col.",
+
+    "tooltip.text.primary": "#ricer.col.",
+    "tooltip.text.secondary": "#ricer.col.",
+    "tooltip.text.tertiary": "#ricer.col.",
+    "tooltip.background": "#ricer.col.",
+    "tooltip.border": "#ricer.col.",
+    "tooltip.error.text": "#ricer.col.",
+    "tooltip.error.background": "#ricer.col.",
+    "tooltip.error.border": "#ricer.col.",
+
+    "tree.focusBorder": "#ricer.col.",
+    "tree.compactFolder.selector.default": "#ricer.col.",
+    "tree.compactFolder.selector.focused": "#ricer.col.",
+    "tree.compactFolder.separator": "#ricer.col.",
+
+    "ai.attachment.background.default": "#ricer.col.",
+    "ai.error.border": "#ricer.col.",
+    "ai.warning.border": "#ricer.col.",
+    "ai.error.background": "#ricer.col.",
+    "ai.warning.background": "#ricer.col.",
+    "ai.snippet.border": "#ricer.col.",
+    "ai.snippet.editor.background": "#ricer.col.",
+    "ai.snippet.header.background": "#ricer.col.",
+    "ai.icon.background": "#ricer.col.",
+    "ai.icon.background.secondary": "#ricer.col.",
+    "ai.user.icon.background": "#ricer.col.",
+    "ai.user.icon.background.secondary": "#ricer.col.",
+    "ai.user.icon.text": "#ricer.col.",
+    "ai.thread.background.default": "#ricer.col.",
+    "ai.thread.background.hovered": "#ricer.col.",
+    "ai.thread.agent.running.background": "#ricer.col.",
+    "ai.thread.agent.error.background": "#ricer.col.",
+    "ai.thread.agent.finished.background": "#ricer.col.",
+
+    "vim.recordingTag.background": "#ricer.col.",
+    "vim.recordingTag.border": "#ricer.col.",
+    "vim.recordingTag.text": "#ricer.col.",
+    "vim.mode.cmdLine.background": "#ricer.col.",
+    "vim.mode.cmdLine.border": "#ricer.col.",
+    "vim.mode.cmdLine.text": "#ricer.col.",
+    "vim.mode.insert.background": "#ricer.col.",
+    "vim.mode.insert.border": "#ricer.col.",
+    "vim.mode.insert.text": "#ricer.col.",
+    "vim.mode.normal.background": "#ricer.col.",
+    "vim.mode.normal.border": "#ricer.col.",
+    "vim.mode.normal.text": "#ricer.col.",
+    "vim.mode.replace.background": "#ricer.col.",
+    "vim.mode.replace.border": "#ricer.col.",
+    "vim.mode.replace.text": "#ricer.col.",
+    "vim.mode.select.background": "#ricer.col.",
+    "vim.mode.select.border": "#ricer.col.",
+    "vim.mode.select.text": "#ricer.col.",
+    "vim.mode.visual.background": "#ricer.col.",
+    "vim.mode.visual.border": "#ricer.col.",
+    "vim.mode.visual.text": "#ricer.col."
+  },
+  "textAttributes": {
+    "editor.text.scheme": {
+        "foregroundColor": "#ricer.col."
+    },
+    "editor.text.composable": {
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+    "editor.selection": {
+        "backgroundColor": "#ricer.col."
+    },
+    "editor.selection.focused": {
+        "backgroundColor": "#ricer.col."
+    },
+    "editor.search.results": {
+        "backgroundColor": "#ricer.col.",
+        "scrollbarMarkColor": "#ricer.col."
+    },
+    "editor.rename.entries": {
+        "backgroundColor": "#ricer.col."
+    },
+    "editor.rename.current": {
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "editor.brace.match": {
+        "backgroundColor": "#ricer.col."
+    },
+    "comment": {
+        "foregroundColor": "#ricer.col."
+    },
+    "comment.doc": {
+        "foregroundColor": "#ricer.col."
+    },
+    "comment.doc.tag": {
+        "foregroundColor": "#ricer.col."
+    },
+    "comment.doc.value": {
+        "foregroundColor": "#ricer.col."
+    },
+    "comment.todo": {
+        "foregroundColor": "#ricer.col."
+    },
+    "link": {},
+    "link.always.visible": {
+        "textDecoration": {}
+    },
+    "link.hovered": {
+        "foregroundColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+
+    "error.hovered": {
+        "backgroundColor": "#ricer.col."
+    },
+    "keyword": {
+        "foregroundColor": "#ricer.col."
+    },
+    "keyword.typeModifier": {
+        "foregroundColor": "#ricer.col."
+    },
+    "metadata": {
+        "foregroundColor": "#ricer.col."
+    },
+    "number": {
+        "foregroundColor": "#ricer.col."
+    },
+    "boolean": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.binary": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.escape": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.escape.unicode": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.escape.alternative": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.formatItem": {
+        "foregroundColor": "#ricer.col."
+    },
+    "string.regexp": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.this": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.this.mutable": {
+        "foregroundColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+    "identifier.underCaret": {
+        "backgroundColor": "#ricer.col.",
+        "scrollbarMarkColor": "#ricer.col."
+    },
+    "identifier.constant": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.constant.predefined": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.variable": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.variable.mutable": {
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+    "identifier.parameter": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.parameter.js": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.function.declaration": {
+        "foregroundColor": "#ricer.col.",
+        "fontWeight": "SEMI_BOLD"
+    },
+    "identifier.function.declaration.js": {
+        "foregroundColor": "#ricer.col.",
+        "fontWeight": "SEMI_BOLD"
+    },
+    "identifier.function.call": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.function.call.package": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.function.call.composable": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.method.static": {
+        "foregroundColor": "#ricer.col.",
+        "fontStyle": "ITALIC"
+    },
+    "identifier.type": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.field": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.field.static": {
+        "foregroundColor": "#ricer.col.",
+        "fontStyle": "ITALIC"
+    },
+    "identifier.interface": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.type.class": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.type.enum": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.type.struct": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.type.valueType": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.typeParameter": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.namedArgument": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.other": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "attributeName.html": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "attributeValue.html": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "entityReference.html": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "tag.html": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "tagName.html": {
+        "foregroundColor": "#ricer.col."
+    },
+    "tagName.custom.html": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "attributeName.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "hex.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "identifier.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.function.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.variable.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "interpolation.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "identifier.variable.php": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "property.php": {
+        "foregroundColor": "#ricer.col."
+    },
+    "property.static.php": {
+        "foregroundColor": "#ricer.col.",
+        "fontStyle": "ITALIC"
+    },
+
+    "generic.php": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "jsCodeDelimiter.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "jsCodeInjection.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "key.json": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "keyword.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "keyword.extend.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "keyword.global.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "keyword.important.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "mixin.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "number.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "number.unit.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "propertyName.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "propertyValue.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "punctuation.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "selector.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "selector.id.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "selector.class.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "selector.pseudo.css": {
+        "foregroundColor": "#ricer.col."
+    },
+    "selector.tag.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "string.css": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "url.css": {
+        "foregroundColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+
+    "attribute.cpp": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "markup.heading": {
+        "foregroundColor": "#ricer.col.",
+        "fontWeight": "BOLD"
+    },
+    "markup.bold": {
+        "fontWeight": "BOLD"
+    },
+    "markup.italic": {
+        "fontStyle": "ITALIC"
+    },
+    "markup.code.block": {
+        "foregroundColor": "#ricer.col."
+    },
+    "markup.href": {
+        "foregroundColor": "#ricer.col.",
+        "fontStyle": "ITALIC",
+        "textDecoration": {}
+    },
+    "punctuation": {
+        "foregroundColor": "#ricer.col."
+    },
+    "punctuation.operator": {
+        "foregroundColor": "#ricer.col."
+    },
+    "snippet": {
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "snippet.selected": {
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+
+    "debug.currentFrame": {
+        "backgroundColor": "#ricer.col."
+    },
+
+    "diff.added": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.added.word": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.added.withBorder": {
+        "backgroundColor": "#ricer.col.",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.added.resolved": {
+        "backgroundColor": "Transparent",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.added.empty": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.deleted": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.deleted.word": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.deleted.withBorder": {
+        "backgroundColor": "#ricer.col.",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.deleted.resolved": {
+        "backgroundColor": "Transparent",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.deleted.empty": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.modified": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.modified.word": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.modified.withBorder": {
+        "backgroundColor": "#ricer.col.",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.modified.resolved": {
+        "backgroundColor": "Transparent",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.modified.original": {
+        "backgroundColor": "#ricer.col."
+    },
+    "diff.conflict.withBorder": {
+        "backgroundColor": "#ricer.col.",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+    "diff.conflict.resolved": {
+        "backgroundColor": "Transparent",
+        "border": {
+            "color": "#ricer.col."
+        }
+    },
+
+    "refactoring.modified.code": {
+        "backgroundColor": "#ricer.col."
+    },
+
+    "problem.error": {
+        "scrollbarMarkColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col.",
+            "thickness": 2.0
+        }
+    },
+    "problem.error.badCharacter": {
+        "scrollbarMarkColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col.",
+            "thickness": 2.0
+        }
+    },
+    "problem.warning": {
+        "scrollbarMarkColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col.",
+            "thickness": 2.0
+        }
+    },
+    "problem.warning.weak": {
+        "scrollbarMarkColor": "#ricer.col.",
+        "textDecoration": {
+            "color": "#ricer.col.",
+            "thickness": 2.0
+        }
+    },
+    "problem.deprecated": {
+        "textDecoration": {
+            "color": "#ricer.col.",
+            "type": "LINE_THROUGH"
+        }
+    },
+    "problem.info": {
+        "textDecoration": {
+            "color": "#ricer.col."
+        }
+    },
+    "problem.unknown": {},
+    "problem.unused": {
+        "foregroundColor": "#ricer.col."
+    },
+    "transparent": {},
+
+    "comment.buildConstraint.go": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "identifier.methodReceiver.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.package.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.typeDeclaration.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.typeReference.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.variable.shadowing.go": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "metadata.structTag.arbitraryText.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "metadata.structTag.key.go": {
+        "foregroundColor": "#ricer.col."
+    },
+    "metadata.structTag.value.go": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "identifier.anchor.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.alias.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "punctuation.operator.merge.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "schema.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "key.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "value.yaml": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "ai.generated": {
+        "backgroundColor": "#ricer.col."
+    },
+
+    "target.match": {
+        "backgroundColor": "#ricer.col."
+    },
+    "target.match.word": {
+        "foregroundColor": "#ricer.col.",
+        "backgroundColor": "#ricer.col."
+    },
+
+    "identifier.dependency.scope.amper": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.dependency.annotator.amper": {
+        "foregroundColor": "#ricer.col."
+    },
+    "identifier.dependency.add.amper": {
+        "foregroundColor": "#ricer.col."
+    },
+
+    "editor.indentGuide": {
+        "foregroundColor": "#ricer.col.",
+        "textDecoration": {
+            "style": "DASHED"
+        }
+    },
+    "editor.indentGuide.current": {
+        "foregroundColor": "#ricer.col.",
+        "textDecoration": {
+            "style": "DASHED"
+        }
+    },
+    "editor.indentGuide.declaration": {
+        "foregroundColor": "#ricer.col."
+    },
+    "editor.indentGuide.declaration.current": {
+        "foregroundColor": "#ricer.col."
+    }
+  },
+}
+

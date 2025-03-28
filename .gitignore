@@ -97,6 +97,7 @@
 # IDE
 !/nvim/
 !/neovide/
+!/JetBrains/
 !/JetBrainsSettings/
 !/zed/
 
