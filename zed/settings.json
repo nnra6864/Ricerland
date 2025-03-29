@@ -101,7 +101,7 @@
 	},
 
 	"chat_panel": {
-		"button": true,
+		"button":"always",
 		"dock": "right",
 		"default_width": 240
 	},
@@ -170,10 +170,10 @@
 		"file_icons": true
 	},
 
-	"remove_trailing_whitespace_on_save": false,
+	"remove_trailing_whitespace_on_save": true,
 	"extend_comment_on_newline": true,
 	"ensure_final_newline_on_save": false,
-	"format_on_save": "off",
+	"format_on_save": "on",
 	"formatter": "auto",
 	"soft_wrap": "preferred_line_length",
 	"preferred_line_length": 100,
