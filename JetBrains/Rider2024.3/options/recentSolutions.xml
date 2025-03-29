@@ -343,10 +343,26 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/WorldTimeline.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="WorldTimeline – ~/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/UnityEngine/Timeline/TrackAsset.cs" projectWorkspaceId="2uAwgWlxBkGllvHNoXmMPuWbeR3">
+              <option name="activationTimestamp" value="1743219643883" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-243.25659.34" />
+              <option name="buildTimestamp" value="1740615480000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1743219645917" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="td" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
-              <option name="activationTimestamp" value="1743194193753" />
+            <RecentProjectMetaInfo frameTitle="td" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+              <option name="activationTimestamp" value="1743229552313" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
               <option name="buildTimestamp" value="1740615480000" />
@@ -355,28 +371,12 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743193601703" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/WorldTimeline.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="WorldTimeline" opened="true" projectWorkspaceId="2uAwgWlxBkGllvHNoXmMPuWbeR3">
-              <option name="activationTimestamp" value="1743195708521" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-243.25659.34" />
-              <option name="buildTimestamp" value="1740615480000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="4" />
-              </option>
-              <frame x="1287" y="12" width="1266" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743195541994" />
+              <option name="projectOpenTimestamp" value="1743229513074" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/WorldTimeline.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/td/td.sln" />
   </component>
 </application>

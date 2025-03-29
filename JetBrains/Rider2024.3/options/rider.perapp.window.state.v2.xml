@@ -36,7 +36,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.4972354,
+          "weight": 0.19103217,
           "sideWeight": 0.5394052
         },
         {
@@ -217,7 +217,7 @@
           "id": "Problems View",
           "order": 6,
           "anchor": "RIGHT",
-          "weight": 0.18769622,
+          "weight": 0.14856356,
           "sideWeight": 0.49330854
         },
         {
@@ -254,7 +254,7 @@
           "order": 10,
           "anchor": "RIGHT",
           "isVisible": true,
-          "weight": 0.40955767
+          "weight": 0.2614796
         },
         {
           "id": "IL",
@@ -281,15 +281,15 @@
           "order": 13,
           "anchor": "RIGHT",
           "isVisible": true,
-          "weight": 0.40955767,
+          "weight": 0.2614796,
           "isSplit": true
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.4972354,
+        "left": 0.19103217,
         "bottom": 0.22775424,
-        "right": 0.40955767
+        "right": 0.2614796
       }
     }
   }

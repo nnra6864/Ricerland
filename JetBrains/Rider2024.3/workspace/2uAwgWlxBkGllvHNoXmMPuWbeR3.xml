@@ -7,20 +7,31 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="wqomb7ycc6uh" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+    <leaf ideFingerprint="267i08tjshmm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnityEngine/Timeline/TrackAsset.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="152">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;TrackAsset.cs&quot;,&quot;foregroundColor&quot;:-1249292,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}</tab>
+      </file>
+    </leaf>
   </component>
-  <component name="FileTypeUsageLocalSummary">{
-  &quot;data&quot;: {
-    &quot;C#&quot;: {
-      &quot;usageCount&quot;: 372,
-      &quot;lastUsed&quot;: 1743193471920
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 374,
+      "lastUsed": 1743219646024
     },
-    &quot;EditorConfig&quot;: {
-      &quot;usageCount&quot;: 7,
-      &quot;lastUsed&quot;: 1742655400723
+    "EditorConfig": {
+      "usageCount": 7,
+      "lastUsed": 1742655400723
     }
   }
-}</component>
+}]]></component>
   <component name="FindInProjectRecents">
     <replaceStrings>
       <replace />
@@ -84,7 +95,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="372" lastUsage="1743193471920" />
+      <summary usageCount="374" lastUsage="1743219646026" />
     </language>
     <language id="EditorConfig">
       <summary usageCount="7" lastUsage="1742655400723" />
@@ -109,33 +120,6 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Clip" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Keys" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Track" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="UnityEngine" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
@@ -154,6 +138,10 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="UnityEngine" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Timeline" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TrackAsset.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -300,7 +288,7 @@
         </entry>
         <entry key="Monitoring">
           <value>
-            <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.40955767" />
+            <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.06583595" />
           </value>
         </entry>
         <entry key="Notifications">
@@ -320,12 +308,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.18769622" />
+            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.14856356" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.4972354" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.3374215" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -355,7 +343,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.40955767" />
+            <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.06583595" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -422,7 +410,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259344000" />
+    <option name="totallyTimeSpent" value="260413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -438,7 +426,7 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.4972354" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.3374215" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -468,20 +456,17 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.18769622" />
+      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.14856356" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
-      <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.40955767" />
+      <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.06583595" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.40955767" />
-      <unified_weights bottom="0.22775424" left="0.4972354" right="0.40955767" />
+      <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.06583595" />
+      <unified_weights bottom="0.22775424" left="0.3374215" right="0.06583595" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="1572" y="526" width="685" height="357" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1743195558516">
@@ -806,17 +791,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnityEngine/Timeline/TrackAsset.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimelineMaker/Optional.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnityEngine/Timeline/TrackAsset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
