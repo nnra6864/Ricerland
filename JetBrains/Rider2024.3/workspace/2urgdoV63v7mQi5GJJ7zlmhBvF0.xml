@@ -7,13 +7,47 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="267i08tjshmm" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+    <leaf ideFingerprint="267i08tjshmm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <folding>
+                <marker date="1743485773904" expanded="true" signature="4492:6927" ph="Track" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"TimelineMaker.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="780">
+              <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"TrackStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ClipStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+    </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 169,
-      "lastUsed": 1743229513185
+      "usageCount": 191,
+      "lastUsed": 1743488241504
     },
     "ShaderLab": {
       "usageCount": 2,
@@ -67,9 +101,9 @@
     &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/UnityEngine/Timeline/TrackAsset.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Optional.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs&quot;
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -81,7 +115,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="169" lastUsage="1743229513187" />
+      <summary usageCount="191" lastUsage="1743488241504" />
     </language>
     <language id="JSON">
       <summary usageCount="3" lastUsage="1743218608694" />
@@ -142,10 +176,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TrackReferenceType.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -278,7 +308,7 @@
         </entry>
         <entry key="Monitoring">
           <value>
-            <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.2614796" />
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Notifications">
@@ -298,7 +328,7 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.14856356" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Project">
@@ -333,7 +363,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.2614796" />
+            <window_info anchor="right" id="TODO" order="13" sideWeight="0.50669146" side_tool="true" visible="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -394,8 +424,13 @@
       </map>
     </option>
   </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Attach to Unity Editor.Attach to Unity Editor" />
+    </history>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23307000" />
+    <option name="totallyTimeSpent" value="31691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -441,27 +476,140 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" weight="0.14856356" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
-      <window_info anchor="right" id="Monitoring" order="10" visible="true" weight="0.2614796" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" side_tool="true" visible="true" weight="0.2614796" />
+      <window_info anchor="right" id="TODO" order="13" sideWeight="0.50669146" side_tool="true" visible="true" weight="0.2614796" />
       <unified_weights bottom="0.22775424" left="0.19103217" right="0.2614796" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
+    <state width="5014" height="282" key="GridCell.Tab.0.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.0.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.0.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.0.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.0.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.0.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.0.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.0.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.1.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.1.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.1.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.1.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.1.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.1.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.1.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.1.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.2.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.2.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.2.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.2.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.2.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.2.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.2.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.2.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.3.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.3.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.3.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.3.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.3.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.3.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.3.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.3.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.4.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.4.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.4.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.4.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.4.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.4.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.4.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.4.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.5.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.5.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.5.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.5.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.5.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.5.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.5.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.5.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.6.bottom" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.6.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.6.center" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.6.center/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.6.left" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.6.left/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
+    <state width="5014" height="282" key="GridCell.Tab.6.right" timestamp="1743483516787">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="282" key="GridCell.Tab.6.right/0.0.5120.1440@0.0.5120.1440" timestamp="1743483516787" />
     <state x="1969" y="267" width="1622" height="1060" key="SettingsEditor" timestamp="1743225380334">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1969" y="267" width="1622" height="1060" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1743225380334" />
-    <state width="648" height="556" key="SwitcherDM" timestamp="1743105784436">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1296" height="556" key="SwitcherDM" timestamp="1743488004176">
+      <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="648" height="556" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1743105784436" />
+    <state width="1296" height="556" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1743488004176" />
     <state x="2140" y="338" key="run.anything.popup" timestamp="1743220849189">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -563,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/StampPropertyAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMakerEditorView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -592,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4281">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -616,16 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <marker date="1743226941547" expanded="false" signature="6:272" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
@@ -636,10 +760,41 @@
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TrackReferenceType.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/StampPropertyAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/UI/AetherBarSync.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5320">
-          <caret line="276" selection-start-line="276" selection-end-line="276" />
+        <state>
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <marker date="1743485773904" expanded="true" signature="4492:6927" ph="Track" />
+          </folding>
         </state>
       </provider>
     </entry>

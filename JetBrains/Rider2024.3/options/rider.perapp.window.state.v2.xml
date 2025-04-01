@@ -217,7 +217,9 @@
           "id": "Problems View",
           "order": 6,
           "anchor": "RIGHT",
-          "weight": 0.14856356,
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.2614796,
           "sideWeight": 0.49330854
         },
         {
@@ -253,7 +255,6 @@
           "id": "Monitoring",
           "order": 10,
           "anchor": "RIGHT",
-          "isVisible": true,
           "weight": 0.2614796
         },
         {
@@ -282,6 +283,7 @@
           "anchor": "RIGHT",
           "isVisible": true,
           "weight": 0.2614796,
+          "sideWeight": 0.50669146,
           "isSplit": true
         }
       ],

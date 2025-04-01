@@ -7,26 +7,39 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="30vr9uocuogcw" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
+    <leaf ideFingerprint="267i08tjshmm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="38">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+              <folding>
+                <marker date="1741343103496" expanded="true" signature="6:158" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SystemFont.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"SystemFont.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file current-in-tab="true">
+      <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DisplayManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="380">
-              <caret line="9" column="8" selection-start-line="9" selection-end-line="28" />
+            <state relative-caret-position="317">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"DisplayManager.cs","foregroundColor":-4234902,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManagerScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="494">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"FontManagerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManagerScript.cs">
@@ -54,7 +67,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="587">
+            <state>
               <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
             </state>
           </provider>
@@ -76,8 +89,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 1158,
-      "lastUsed": 1741385671011
+      "usageCount": 1165,
+      "lastUsed": 1743266861506
     },
     "JSON": {
       "usageCount": 16,
@@ -175,7 +188,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="1158" lastUsage="1741385671011" />
+      <summary usageCount="1165" lastUsage="1743266861506" />
     </language>
     <language id="JSON">
       <summary usageCount="16" lastUsage="1735455210732" />
@@ -359,7 +372,7 @@
         </entry>
         <entry key="Debug">
           <value>
-            <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
           </value>
         </entry>
         <entry key="Dynamic Program Analysis">
@@ -384,7 +397,7 @@
         </entry>
         <entry key="Find">
           <value>
-            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Gradle">
@@ -424,7 +437,7 @@
         </entry>
         <entry key="Monitoring">
           <value>
-            <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Notifications">
@@ -444,12 +457,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.19672292" />
+            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.26702088" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -479,7 +492,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+            <window_info anchor="right" id="TODO" order="13" side_tool="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -524,7 +537,7 @@
         </entry>
         <entry key="documentation.v2">
           <value>
-            <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+            <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
           </value>
         </entry>
         <entry key="dotMemory">
@@ -546,7 +559,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643360000" />
+    <option name="totallyTimeSpent" value="645276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -562,7 +575,7 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -576,15 +589,14 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
-      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
-      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
       <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
@@ -593,15 +605,16 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.19672292" />
+      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.26702088" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
-      <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
-      <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+      <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <unified_weights bottom="0.06461865" left="0.15335557" right="0.19672292" />
+      <window_info anchor="right" id="TODO" order="13" side_tool="true" weight="0.2614796" />
+      <unified_weights bottom="0.22775424" left="0.19103217" right="0.26702088" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
@@ -745,22 +758,14 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="758" height="584" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1739497352506" />
-    <state x="1966" y="383" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1733848123468">
-      <screen x="0" y="0" width="5120" height="1440" />
-    </state>
-    <state x="1966" y="383" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.5120.1440@0.0.5120.1440" timestamp="1733848123468" />
-    <state x="2121" y="387" width="875" height="663" key="recent.locations.popup" timestamp="1733848121661">
-      <screen x="0" y="0" width="5120" height="1440" />
-    </state>
-    <state x="2121" y="387" width="875" height="663" key="recent.locations.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1733848121661" />
     <state x="1540" y="338" key="run.anything.popup" timestamp="1739421659851">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1540" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1739421659851" />
-    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup" timestamp="1740523525975">
+    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup" timestamp="1743266866869">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1740523525975" />
+    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1743266866869" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/SystemAudioMonitor/AudioMonitorManager.cs">
@@ -1074,13 +1079,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManagerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/StartupManager.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/LaunchOnStartup.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -1099,17 +1097,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowLayer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1120,17 +1118,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DisplayManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
+        <state relative-caret-position="317">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DisplayManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManagerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="9" column="8" selection-start-line="9" selection-end-line="28" />
+        <state relative-caret-position="494">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding>
+            <marker date="1741343103496" expanded="true" signature="6:158" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

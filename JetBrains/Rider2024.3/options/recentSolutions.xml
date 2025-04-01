@@ -329,8 +329,8 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Nisualizer – DisplayManager.cs" projectWorkspaceId="2q1M50SoKyREM3P6dGoQmQZQc6p">
-              <option name="activationTimestamp" value="1741388808375" />
+            <RecentProjectMetaInfo frameTitle="Nisualizer – SystemFont.cs" projectWorkspaceId="2q1M50SoKyREM3P6dGoQmQZQc6p">
+              <option name="activationTimestamp" value="1743268578175" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
               <option name="buildTimestamp" value="1740615480000" />
@@ -339,14 +339,14 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1741385670996" />
+              <option name="projectOpenTimestamp" value="1743266661462" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/WorldTimeline.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="WorldTimeline – ~/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/UnityEngine/Timeline/TrackAsset.cs" projectWorkspaceId="2uAwgWlxBkGllvHNoXmMPuWbeR3">
-              <option name="activationTimestamp" value="1743219643883" />
+            <RecentProjectMetaInfo frameTitle="WorldTimeline – ~/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/TimelineMaker/TimelineMaker.cs" projectWorkspaceId="2uAwgWlxBkGllvHNoXmMPuWbeR3">
+              <option name="activationTimestamp" value="1743466229462" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
               <option name="buildTimestamp" value="1740615480000" />
@@ -355,14 +355,14 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743219645917" />
+              <option name="projectOpenTimestamp" value="1743465791014" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="td" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
-              <option name="activationTimestamp" value="1743229552313" />
+            <RecentProjectMetaInfo frameTitle="td – ~/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+              <option name="activationTimestamp" value="1743488782293" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
               <option name="buildTimestamp" value="1740615480000" />
@@ -371,7 +371,7 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743229513074" />
+              <option name="projectOpenTimestamp" value="1743488241364" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
