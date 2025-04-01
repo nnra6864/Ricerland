@@ -7,15 +7,12 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="267i08tjshmm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="2aslin8f53xfs" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="38">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-              <folding>
-                <marker date="1741343103496" expanded="true" signature="6:158" ph="..." />
-              </folding>
+            <state relative-caret-position="820">
+              <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -24,7 +21,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DisplayManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="317">
+            <state>
               <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
@@ -34,7 +31,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManagerScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="494">
+            <state>
               <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
             </state>
           </provider>
@@ -89,16 +86,16 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 1165,
-      "lastUsed": 1743266861506
+      "usageCount": 1277,
+      "lastUsed": 1743497200626
     },
     "JSON": {
       "usageCount": 16,
       "lastUsed": 1735455210732
     },
     "textmate": {
-      "usageCount": 1,
-      "lastUsed": 1734107378453
+      "usageCount": 15,
+      "lastUsed": 1743497200734
     },
     "UnityYaml": {
       "usageCount": 4,
@@ -126,7 +123,6 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">{
   &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/SystemAudioMonitor/Windows/MMDeviceEnumerator.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/SystemAudioMonitor/Windows/MMDeviceCollection.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/SystemAudioMonitor/Windows/MMDevice.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/SystemAudioMonitor/AudioMonitorManager.cs&quot;,
@@ -171,12 +167,13 @@
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManagerScript.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowLayer.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/GeneralConfigData.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManagerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManagerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs&quot;
+    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs&quot;,
+    &quot;/home/nnra/.ideavimrc&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -188,7 +185,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="1165" lastUsage="1743266861506" />
+      <summary usageCount="1277" lastUsage="1743497200626" />
     </language>
     <language id="JSON">
       <summary usageCount="16" lastUsage="1735455210732" />
@@ -206,7 +203,7 @@
       <summary usageCount="4" lastUsage="1735455214362" />
     </language>
     <language id="textmate">
-      <summary usageCount="1" lastUsage="1734107378453" />
+      <summary usageCount="15" lastUsage="1743497200734" />
     </language>
   </component>
   <component name="ProjectView">
@@ -288,9 +285,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="WindowManager.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -457,7 +451,7 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.26702088" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Project">
@@ -492,12 +486,12 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" side_tool="true" weight="0.2614796" />
+            <window_info anchor="right" id="TODO" order="13" sideWeight="0.50669146" side_tool="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Terminal">
           <value>
-            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Test Coverage">
@@ -558,8 +552,18 @@
       <element setting="Attach to Unity Editor.Attach to Unity Editor" />
     </history>
   </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local">
+        <shellCommand>
+          <arg value="/bin/fish" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="645276000" />
+    <option name="totallyTimeSpent" value="648201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -604,8 +608,8 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info anchor="right" id="Problems View" order="6" sideWeight="0.49330854" visible="true" weight="0.26702088" />
+      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -613,8 +617,8 @@
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" side_tool="true" weight="0.2614796" />
-      <unified_weights bottom="0.22775424" left="0.19103217" right="0.26702088" />
+      <window_info anchor="right" id="TODO" order="13" sideWeight="0.50669146" side_tool="true" weight="0.2614796" />
+      <unified_weights bottom="0.22775424" left="0.19103217" right="0.2614796" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
@@ -622,6 +626,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2122" y="282" width="1623" height="1060" key="#Plugins/0.0.5120.1440@0.0.5120.1440" timestamp="1738478119709" />
+    <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1743494159032">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1743494159032" />
     <state x="2035" y="363" width="1040" height="683" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1738510155869">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -750,10 +758,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2801" y="301" width="857" height="751" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1740243168363" />
-    <state x="1216" y="65" width="2799" height="1154" key="SettingsEditor" timestamp="1740346485712">
+    <state x="2087" y="161" width="2799" height="1154" key="SettingsEditor" timestamp="1743497252513">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="1216" y="65" width="2799" height="1154" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1740346485712" />
+    <state x="2087" y="161" width="2799" height="1154" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1743497252513" />
     <state width="758" height="584" key="SwitcherDM" timestamp="1739497352506">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -762,19 +770,12 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1540" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1739421659851" />
-    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup" timestamp="1743266866869">
+    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup" timestamp="1743494915297">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1743266866869" />
+    <state x="2139" y="321" width="952" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1743494915297" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/SystemAudioMonitor/AudioMonitorManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/SystemAudioMonitor/WindowsAudioMonitor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1087,23 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManagerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="156" column="79" selection-start-line="156" selection-start-column="79" selection-end-line="156" selection-end-column="79" />
-          <folding>
-            <marker date="1741348817227" expanded="false" signature="4540:5463" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowLayer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1118,27 +1102,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/WindowManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="179" column="39" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DisplayManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
+        <state>
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManagerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state>
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManagerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="156" column="79" selection-start-line="156" selection-start-column="79" selection-end-line="156" selection-end-column="79" />
+          <folding>
+            <marker date="1741348817227" expanded="false" signature="4540:5463" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.ideavimrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-          <folding>
-            <marker date="1741343103496" expanded="true" signature="6:158" ph="..." />
-          </folding>
+        <state relative-caret-position="820">
+          <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
         </state>
       </provider>
     </entry>

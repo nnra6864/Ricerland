@@ -2,12 +2,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">Y3Vtc2hvdA==</entry>
-        <entry encoding="base64">Y2Fu</entry>
-        <entry encoding="base64">YXR0YWNr</entry>
-        <entry encoding="base64">ZGFtYWdlb3U=</entry>
-        <entry encoding="base64">ZGFtYWdl</entry>
-        <entry encoding="base64">b25jb2w=</entry>
         <entry encoding="base64">T25Db2w=</entry>
         <entry encoding="base64">UmVhZE9ubHk=</entry>
         <entry encoding="base64">Z2FtZW1hbmFnZXI=</entry>
@@ -47,17 +41,19 @@
         <entry encoding="base64">XC9cL1wv</entry>
         <entry encoding="base64">UmVmZXJlbmNlVHlwZQ==</entry>
         <entry encoding="base64">U2Vjb25kYXJ5</entry>
-        <entry encoding="base64" />
         <entry encoding="base64">S2V5</entry>
         <entry encoding="base64">UmVzZXQ=</entry>
         <entry encoding="base64">YWJzdHJhY3Q=</entry>
         <entry encoding="base64">dHJhY2s=</entry>
+        <entry encoding="base64">dHI=</entry>
+        <entry encoding="base64">cw==</entry>
+        <entry encoding="base64">ZWNobyBtYXBsZWFkZXI=</entry>
+        <entry encoding="base64">dHJ1ZQ==</entry>
+        <entry encoding="base64">Pw==</entry>
+        <entry encoding="base64">Zm9u</entry>
+        <entry encoding="base64" />
       </history-search>
       <history-cmd>
-        <entry encoding="base64">Lnc=</entry>
-        <entry encoding="base64">ODg=</entry>
-        <entry encoding="base64">Nzc=</entry>
-        <entry encoding="base64">Nzg=</entry>
         <entry encoding="base64">NjQ=</entry>
         <entry encoding="base64">MjU=</entry>
         <entry encoding="base64">MzU=</entry>
@@ -99,11 +95,15 @@
         <entry encoding="base64">MjE2</entry>
         <entry encoding="base64">cQ==</entry>
         <entry encoding="base64">ODY=</entry>
-        <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">MTUx</entry>
         <entry encoding="base64">OTU=</entry>
         <entry encoding="base64" />
+        <entry encoding="base64">ZWNobyBtYXBsZWFkZXI=</entry>
+        <entry encoding="base64">bGV0IG1hcGxlYWRlcg==</entry>
+        <entry encoding="base64">OmFjdGlvbiBJZGVhVmltLlJlbG9hZFZpbVJjLnJlbG9hZA==</entry>
         <entry encoding="base64">dw==</entry>
+        <entry encoding="base64">YWN0aW9uIElkZWFWaW0uUmVsb2FkVmltUmMucmVsb2Fk</entry>
+        <entry encoding="base64">d3E=</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -1724,26 +1724,6 @@
       <jump line="0" column="0" filename="$USER_HOME$/Data/UnrealEngine/Default.uprojectdirs" protocol="file" />
     </project>
     <project id="Nisualizer-40a33c22">
-      <jump line="89" column="16" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="39" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="11" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="14" column="7" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="126" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" protocol="file" />
-      <jump line="209" column="6" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" protocol="file" />
-      <jump line="26" column="33" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="87" column="32" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="176" column="1" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="25" column="32" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="17" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="22" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="18" column="57" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="231" column="1" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="28" column="24" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="23" column="4" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="13" column="26" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="8" column="1" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
-      <jump line="98" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManagerScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/LaunchOnStartup.cs" protocol="file" />
       <jump line="6" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
       <jump line="20" column="52" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
@@ -1751,7 +1731,6 @@
       <jump line="44" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManagerScript.cs" protocol="file" />
       <jump line="139" column="42" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
       <jump line="289" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
-      <jump line="128" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
       <jump line="154" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
       <jump line="147" column="16" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
@@ -1822,8 +1801,29 @@
       <jump line="175" column="40" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" protocol="file" />
       <jump line="179" column="39" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" protocol="file" />
       <jump line="26" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs" protocol="file" />
-      <jump line="9" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs" protocol="file" />
       <jump line="17" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManagerScript.cs" protocol="file" />
+      <jump line="57" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="71" column="24" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="113" column="45" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="105" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="111" column="45" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="9" column="8" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs" protocol="file" />
+      <jump line="1" column="31" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="112" column="45" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="108" column="16" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="104" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="117" column="23" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="110" column="58" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="119" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="120" column="12" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="3" column="13" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="131" column="0" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="4" column="24" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="128" column="56" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="130" column="50" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
+      <jump line="133" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" protocol="file" />
     </project>
     <project id="Nisualizer-c5573ef">
       <jump line="3" column="13" filename="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveParticleSystemScript.cs" protocol="file" />
@@ -2420,9 +2420,6 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Timeline/TrackBindingManager.cs" timestamp="1743220886099">
-        <mark key="&quot;" line="40" column="26" />
-      </file>
       <file name="/Immediate Window" timestamp="1743483516790">
         <mark key="&quot;" line="0" column="0" />
       </file>
@@ -2432,8 +2429,13 @@
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/GeneralConfigData.cs" timestamp="1743266860578">
         <mark key="&quot;" line="10" column="34" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" timestamp="1743266866873">
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" timestamp="1743496937996">
         <mark key="&quot;" line="14" column="34" />
+        <mark key="'" line="128" column="71" />
+        <mark key="[" line="128" column="56" />
+        <mark key="]" line="128" column="56" />
+        <mark key="^" line="128" column="56" />
+        <mark key="." line="128" column="55" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Optional.cs" timestamp="1743227190479">
         <mark key="&quot;" line="4" column="21" />
@@ -2444,14 +2446,6 @@
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TrackReferenceType.cs" timestamp="1743229186081">
         <mark key="&quot;" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TM/TimelineMaker.cs" timestamp="1743220941052">
-        <mark key="&quot;" line="188" column="4" />
-        <mark key="'" line="273" column="16" />
-        <mark key="[" line="215" column="51" />
-        <mark key="]" line="216" column="52" />
-        <mark key="." line="216" column="51" />
-        <mark key="^" line="216" column="52" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs" timestamp="1743226034519">
         <mark key="&quot;" line="11" column="0" />
@@ -2472,11 +2466,16 @@
         <mark key="^" line="24" column="4" />
         <mark key="." line="24" column="3" />
       </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs" timestamp="1743494915302">
+        <mark key="&quot;" line="5" column="31" />
+        <mark key="[" line="9" column="8" />
+        <mark key="]" line="9" column="8" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/UI/AetherBarSync.cs" timestamp="1743482940023">
         <mark key="&quot;" line="8" column="9" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TM/ClipStamp/ActivationClipStamp.cs" timestamp="1743220927407">
-        <mark key="&quot;" line="11" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" timestamp="1743494444313">
+        <mark key="&quot;" line="7" column="30" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs" timestamp="1743227160494">
         <mark key="&quot;" line="7" column="27" />
@@ -2492,6 +2491,12 @@
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/StampPropertyAttribute.cs" timestamp="1743480503042">
         <mark key="&quot;" line="4" column="6" />
+      </file>
+      <file name="$USER_HOME$/.ideavimrc" timestamp="1743497228250">
+        <mark key="&quot;" line="4" column="0" />
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManagerScript.cs" timestamp="1743266866595">
         <mark key="&quot;" line="9" column="34" />
@@ -2519,57 +2524,66 @@
         <text encoding="base64">KDBmLmRiaUJWVBsnJ2RmXygwaQgb</text>
       </register>
       <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgdmFyIGNsaXBzID0gdGltZWxpbmVNYWtlci5jbGlwU3RhbXBzLldoZXJlKHggPT4geC50cmFja1N0YW1wID09IHRoaXMpLlRvQXJyYXkoKTsKICAgICAgZm9yICh2YXIgaSA9IGNsaXBzLkxlbmd0aCAtIDE7IGkgPj0gMDsgaS0tKSBjbGlwc1tpXS5TeW5jQXNzZXRzKCk7Cg==</text>
+        <text encoding="base64">CnNldCB3aGljaC1rZXkKc2V0IG5vdGltZW91dApsZXQgZzpXaGljaEtleV9TaG93VmltQWN0aW9ucyA9ICJ0cnVlIgo=</text>
+      </register>
+      <register name="*" type="CHARACTER_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
+      </register>
+      <register name="+" type="CHARACTER_WISE">
+        <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">cHVibGlj</text>
+        <text encoding="base64">Zg==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">ICA=</text>
+        <text encoding="base64" />
       </register>
       <register name="/" type="CHARACTER_WISE">
-        <text encoding="base64">dHJhY2s=</text>
+        <text encoding="base64">Zm9u</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgIHRpbWVsaW5lTWFrZXIuU2V0RGlydHkoKTsK</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIHN5c3RlbUZvbnREaXIgPSBQYXRoLkNvbWJpbmUoRW52aXJvbm1lbnQuR2V0Rm9sZGVyUGF0aChFbnZpcm9ubWVudC5TcGVjaWFsRm9sZGVyLkZvbnRzKSk7Cg==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgdmFyIGNsaXBzID0gdGltZWxpbmVNYWtlci5jbGlwU3RhbXBzLldoZXJlKHggPT4geC50cmFja1N0YW1wID09IHRoaXMpLlRvQXJyYXkoKTsKICAgICAgZm9yICh2YXIgaSA9IGNsaXBzLkxlbmd0aCAtIDE7IGkgPj0gMDsgaS0tKSBjbGlwc1tpXS5TeW5jQXNzZXRzKCk7Cg==</text>
+        <text encoding="base64">CnNldCB3aGljaC1rZXkKc2V0IG5vdGltZW91dApsZXQgZzpXaGljaEtleV9TaG93VmltQWN0aW9ucyA9ICJ0cnVlIgo=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">c2V0IHRpbWVvdXRsZW49NTAwMAo=</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">CiAgcHJpdmF0ZSB2b2lkIE9uQ2xpcENoYW5nZWQoKSB7CiAgICBDbGlwID0gY2xpcDsKICAgIFN5bmNBc3NldHMoKTsKICB9Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJvY2Vzcy5XYWl0Rm9yRXhpdCgpOwo=</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">CiAgcHJpdmF0ZSB2b2lkIE9uQ2xpcENoYW5nZWQoKSB7CiAgICBDbGlwID0gY2xpcDsKICAgIFN5bmNBc3NldHMoKTsKICB9Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">CiAgW1NlcmlhbGl6ZUZpZWxkXSBwdWJsaWMgVHJhY2tSZWZlcmVuY2VUeXBlIHRyYWNrUmVmZXJlbmNlVHlwZTsK</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJvY2Vzcy5XYWl0Rm9yRXhpdCgpOwo=</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">CiAgW1NlcmlhbGl6ZUZpZWxkXSBwcml2YXRlIGJvb2wgY29udHJvbE5hbWU7Cg==</text>
+        <text encoding="base64">UGx1ZyAnZWFzeW1vdGlvbi92aW0tZWFzeW1vdGlvbicK</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">CiAgW1NlcmlhbGl6ZUZpZWxkLCBIb3Jpem9udGFsR3JvdXAoIlRhcmdldCIsIDIwKSwgSGlkZUxhYmVsXQogIHByb3RlY3RlZCBib29sIGNvbnRyb2xUYXJnZXQ7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy8gRGVmaW5lIHRoZSBwcm9jZXNzIHRvIGZpbmQgYSBmb250IGJ5IG5hbWUK</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">dw==</text>
+        <text encoding="base64">d3E=</text>
+      </register>
+      <register name="z" type="CHARACTER_WISE">
+        <text encoding="base64" />
       </register>
     </registers>
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search encoding="base64">dHJhY2s=</last-search>
+      <last-search encoding="base64">Zm9u</last-search>
       <last-offset encoding="base64" />
-      <last-pattern encoding="base64">dHJhY2s=</last-pattern>
+      <last-pattern encoding="base64">Zm9u</last-pattern>
       <last-dir encoding="base64">MQ==</last-dir>
       <show-last encoding="base64">ZmFsc2U=</show-last>
     </search>
