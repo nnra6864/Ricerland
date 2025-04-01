@@ -101,7 +101,7 @@
 	},
 
 	"chat_panel": {
-		"button":"always",
+		"button": "always",
 		"dock": "right",
 		"default_width": 240
 	},
@@ -177,7 +177,7 @@
 	"formatter": "auto",
 	"soft_wrap": "preferred_line_length",
 	"preferred_line_length": 100,
-	"hard_tabs": true,
+	"hard_tabs": false,
 	"tab_size": 4,
 
 	"telemetry": {
