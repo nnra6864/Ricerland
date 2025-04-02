@@ -2,15 +2,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">T25Db2w=</entry>
-        <entry encoding="base64">UmVhZE9ubHk=</entry>
-        <entry encoding="base64">Z2FtZW1hbmFnZXI=</entry>
-        <entry encoding="base64">R2FtZU1hbmFnZXI=</entry>
-        <entry encoding="base64">QnVmZmVy</entry>
-        <entry encoding="base64">XDwoXD4=</entry>
-        <entry encoding="base64">XDxGaWVsZE9mZnNldFw+</entry>
-        <entry encoding="base64">U3RhcnQ=</entry>
-        <entry encoding="base64">SGFuZGxl</entry>
         <entry encoding="base64">SFdORF9CT1RUT00=</entry>
         <entry encoding="base64">U1dQX05PTU9WRQ==</entry>
         <entry encoding="base64">UGxhdGZvcm0=</entry>
@@ -42,9 +33,7 @@
         <entry encoding="base64">UmVmZXJlbmNlVHlwZQ==</entry>
         <entry encoding="base64">U2Vjb25kYXJ5</entry>
         <entry encoding="base64">S2V5</entry>
-        <entry encoding="base64">UmVzZXQ=</entry>
         <entry encoding="base64">YWJzdHJhY3Q=</entry>
-        <entry encoding="base64">dHJhY2s=</entry>
         <entry encoding="base64">dHI=</entry>
         <entry encoding="base64">cw==</entry>
         <entry encoding="base64">ZWNobyBtYXBsZWFkZXI=</entry>
@@ -52,6 +41,17 @@
         <entry encoding="base64">Pw==</entry>
         <entry encoding="base64">Zm9u</entry>
         <entry encoding="base64" />
+        <entry encoding="base64">cHJpdmF0ZQ==</entry>
+        <entry encoding="base64">W1NlcmlhbGl6ZUZpZWxkXSBwdWJsaWM=</entry>
+        <entry encoding="base64">dHJhY2s=</entry>
+        <entry encoding="base64">cmVnaXN0ZXI=</entry>
+        <entry encoding="base64">dGltZWxpbmVNYWtlcg==</entry>
+        <entry encoding="base64">UmVzZXQ=</entry>
+        <entry encoding="base64">VW5yZWc=</entry>
+        <entry encoding="base64">UmVtb3Zl</entry>
+        <entry encoding="base64">cHJldmk=</entry>
+        <entry encoding="base64">UmVnaXN0ZXI=</entry>
+        <entry encoding="base64">VW5yZWdpc3Rlcg==</entry>
       </history-search>
       <history-cmd>
         <entry encoding="base64">NjQ=</entry>
@@ -101,9 +101,9 @@
         <entry encoding="base64">ZWNobyBtYXBsZWFkZXI=</entry>
         <entry encoding="base64">bGV0IG1hcGxlYWRlcg==</entry>
         <entry encoding="base64">OmFjdGlvbiBJZGVhVmltLlJlbG9hZFZpbVJjLnJlbG9hZA==</entry>
-        <entry encoding="base64">dw==</entry>
         <entry encoding="base64">YWN0aW9uIElkZWFWaW0uUmVsb2FkVmltUmMucmVsb2Fk</entry>
         <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -2315,106 +2315,106 @@
       <jump line="249" column="4" filename="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/TimelineMaker/TimelineMaker.cs" protocol="file" />
     </project>
     <project id="td-175a6cf9">
-      <jump line="101" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="108" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="114" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="119" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="224" column="1" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="53" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="49" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="45" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="40" column="41" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="35" column="40" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="63" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="18" column="43" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="62" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="144" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="146" column="56" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="151" column="102" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="191" column="52" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="209" column="30" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="211" column="51" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="73" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="124" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="93" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="79" column="21" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="76" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="189" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="168" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="170" column="67" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="171" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="217" column="44" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="243" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="150" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="36" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="31" column="3" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="23" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="94" column="5" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="111" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="110" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="20" column="30" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="16" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="36" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="44" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="45" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="41" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="43" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="48" column="10" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="33" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="55" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="58" column="9" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="109" column="102" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="80" column="24" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="64" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="142" column="29" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="59" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="39" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="41" column="72" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="37" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="23" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="71" column="17" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="72" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="38" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="70" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="74" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="82" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="84" column="51" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="86" column="30" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="87" column="26" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="150" column="24" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="145" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="163" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="168" column="5" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="173" column="5" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="184" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="178" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="160" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="158" column="27" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="156" column="5" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="149" column="14" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="148" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="157" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="133" column="11" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="126" column="8" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="129" column="12" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="121" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="120" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="115" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="42" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="43" column="1" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="35" column="21" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="21" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="29" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="24" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="38" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="33" column="5" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="28" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="27" column="13" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="32" column="14" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="20" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="39" column="35" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="30" column="12" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="31" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="48" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="53" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="61" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="64" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="70" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="83" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="144" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="148" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="151" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="157" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="163" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="170" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="173" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="209" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="36" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="44" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="55" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="60" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="65" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="71" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="76" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="81" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="133" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="139" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="35" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="67" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="77" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="89" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="90" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="91" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="93" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="100" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="111" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="116" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="23" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="182" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="56" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="57" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="26" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="191" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="137" column="3" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="236" column="53" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="129" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="62" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="65" column="45" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="71" column="39" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="72" column="44" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="73" column="42" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="78" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="176" column="40" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="96" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="102" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="61" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="86" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="97" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="103" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="127" column="11" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="122" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="95" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="68" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="67" column="7" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="38" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="172" column="20" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="30" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="20" column="36" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="135" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="134" column="37" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="91" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="99" column="41" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="143" column="61" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="19" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="29" column="3" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="21" column="19" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="131" column="14" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="112" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="106" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="26" column="11" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="123" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="24" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="174" column="7" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="42" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="92" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="97" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="135" column="38" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="31" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="46" column="17" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="22" column="3" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="25" column="6" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="24" column="51" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="51" column="26" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="28" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="26" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="30" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="27" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="37" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
+      <jump line="114" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="27" column="16" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="29" column="6" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
     </project>
   </component>
   <component name="VimMarksSettings">
@@ -2450,13 +2450,14 @@
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs" timestamp="1743226034519">
         <mark key="&quot;" line="11" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" timestamp="1743487515635">
+      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" timestamp="1743560031358">
         <mark key="&quot;" line="15" column="31" />
-        <mark key="'" line="15" column="7" />
-        <mark key="[" line="162" column="89" />
-        <mark key="]" line="153" column="14" />
-        <mark key="^" line="153" column="14" />
-        <mark key="." line="153" column="13" />
+        <mark key="'" line="184" column="7" />
+        <mark key="[" line="26" column="0" />
+        <mark key="m" line="44" column="8" />
+        <mark key="]" line="26" column="85" />
+        <mark key="." line="26" column="0" />
+        <mark key="^" line="34" column="3" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs" timestamp="1743227202956">
         <mark key="&quot;" line="21" column="0" />
@@ -2501,20 +2502,20 @@
       <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManagerScript.cs" timestamp="1743266866595">
         <mark key="&quot;" line="9" column="34" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" timestamp="1743485325372">
-        <mark key="'" line="170" column="67" />
-        <mark key="[" line="243" column="16" />
-        <mark key="]" line="243" column="16" />
-        <mark key="." line="243" column="17" />
-        <mark key="^" line="189" column="3" />
+      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" timestamp="1743557552131">
+        <mark key="'" line="26" column="4" />
+        <mark key="[" line="236" column="0" />
+        <mark key="]" line="236" column="0" />
+        <mark key="." line="236" column="0" />
+        <mark key="^" line="37" column="2" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" timestamp="1743488226107">
+      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" timestamp="1743559768269">
         <mark key="&quot;" line="13" column="32" />
-        <mark key="'" line="59" column="0" />
-        <mark key="[" line="31" column="0" />
-        <mark key="]" line="31" column="0" />
-        <mark key="^" line="29" column="6" />
-        <mark key="." line="31" column="0" />
+        <mark key="'" line="143" column="38" />
+        <mark key="[" line="35" column="0" />
+        <mark key="]" line="35" column="0" />
+        <mark key="." line="35" column="0" />
+        <mark key="^" line="28" column="15" />
       </file>
     </localmarks>
   </component>
@@ -2524,7 +2525,7 @@
         <text encoding="base64">KDBmLmRiaUJWVBsnJ2RmXygwaQgb</text>
       </register>
       <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">CnNldCB3aGljaC1rZXkKc2V0IG5vdGltZW91dApsZXQgZzpXaGljaEtleV9TaG93VmltQWN0aW9ucyA9ICJ0cnVlIgo=</text>
+        <text encoding="base64">ICAgICAgRGVidWcuTG9nRXJyb3IoIkNhbid0IGNoYW5nZSBUaW1lbGluZU1ha2VyIHdoZW4gdXNpbmcgVFJBQ0tfU1RBTVAgcmVmZXJlbmNlLiIpOwo=</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2533,46 +2534,46 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">Zg==</text>
+        <text encoding="base64">Lg==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64" />
+        <text encoding="base64">fQ==</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
-        <text encoding="base64">Zm9u</text>
+        <text encoding="base64">VW5yZWdpc3Rlcg==</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIHN5c3RlbUZvbnREaXIgPSBQYXRoLkNvbWJpbmUoRW52aXJvbm1lbnQuR2V0Rm9sZGVyUGF0aChFbnZpcm9ubWVudC5TcGVjaWFsRm9sZGVyLkZvbnRzKSk7Cg==</text>
+        <text encoding="base64">ICAgIFJlZ2lzdGVyKCk7CiAgICBTeW5jQXNzZXRzKCk7Cg==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">CnNldCB3aGljaC1rZXkKc2V0IG5vdGltZW91dApsZXQgZzpXaGljaEtleV9TaG93VmltQWN0aW9ucyA9ICJ0cnVlIgo=</text>
+        <text encoding="base64">ICAgICAgRGVidWcuTG9nRXJyb3IoIkNhbid0IGNoYW5nZSBUaW1lbGluZU1ha2VyIHdoZW4gdXNpbmcgVFJBQ0tfU1RBTVAgcmVmZXJlbmNlLiIpOwo=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">c2V0IHRpbWVvdXRsZW49NTAwMAo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
+        <text encoding="base64">ICAgIHByZXZpb3VzVGltZWxpbmVNYWtlcj8uVW5yZWdpc3RlckNsaXAodGhpcyk7CiAgICBwcmV2aW91c1RpbWVsaW5lTWFrZXIgPSB0aW1lbGluZU1ha2VyOwo=</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
+        <text encoding="base64">ICAgICAgcmV0dXJuOwo=</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgcHJvY2Vzcy5XYWl0Rm9yRXhpdCgpOwo=</text>
+        <text encoding="base64">ICAgICAgRGVidWcuTG9nRXJyb3IoKTsK</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
+        <text encoding="base64">ICAgIAo=</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgcHJvY2Vzcy5XYWl0Rm9yRXhpdCgpOwo=</text>
+        <text encoding="base64">ICAgIGlmIChwcmV2aW91c1RpbWVsaW5lTWFrZXIgIT0gbnVsbCkK</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">UGx1ZyAnZWFzeW1vdGlvbi92aW0tZWFzeW1vdGlvbicK</text>
+        <text encoding="base64">ICAgIC8vIFVzaW5nIHByZXZpb3VzVGltZWxpbmVNYWtlciBhcyBpdCdzIGFsd2F5cyAK</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgLy8gRGVmaW5lIHRoZSBwcm9jZXNzIHRvIGZpbmQgYSBmb250IGJ5IG5hbWUK</text>
+        <text encoding="base64">ICAgIGlmIChwcmV2aW91c1RpbWVsaW5lTWFrZXIgPT0gbnVsbCkgcmV0dXJuOwo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">d3E=</text>
+        <text encoding="base64">dw==</text>
       </register>
       <register name="z" type="CHARACTER_WISE">
         <text encoding="base64" />
@@ -2581,9 +2582,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search encoding="base64">Zm9u</last-search>
+      <last-search encoding="base64">VW5yZWdpc3Rlcg==</last-search>
       <last-offset encoding="base64" />
-      <last-pattern encoding="base64">Zm9u</last-pattern>
+      <last-pattern encoding="base64">VW5yZWdpc3Rlcg==</last-pattern>
       <last-dir encoding="base64">MQ==</last-dir>
       <show-last encoding="base64">ZmFsc2U=</show-last>
     </search>

@@ -343,22 +343,6 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="td – ~/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
-              <option name="activationTimestamp" value="1743488782293" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-243.25659.34" />
-              <option name="buildTimestamp" value="1740615480000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="5" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743488241364" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
           <value>
             <RecentProjectMetaInfo frameTitle="Nisualizer – SystemFont.cs" projectWorkspaceId="2q1M50SoKyREM3P6dGoQmQZQc6p">
@@ -375,8 +359,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="td – ClipStamp.cs" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+              <option name="activationTimestamp" value="1743560680273" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-243.25659.34" />
+              <option name="buildTimestamp" value="1740615480000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1743556145640" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/td/td.sln" />
   </component>
 </application>

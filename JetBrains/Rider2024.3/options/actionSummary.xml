@@ -13,7 +13,7 @@
       <i c="11" l="1742398276177" />
     </e>
     <e n="$Redo">
-      <i c="474" l="1742934172051" />
+      <i c="476" l="1743559699641" />
     </e>
     <e n="$SelectAll">
       <i c="23" l="1742217529475" />
@@ -106,10 +106,10 @@
       <i c="13" l="1743218560170" />
     </e>
     <e n="EditorBackSpace">
-      <i c="33128" l="1743497026893" />
+      <i c="33195" l="1743560025940" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="13893" l="1743487896272" />
+      <i c="13933" l="1743559966398" />
     </e>
     <e n="EditorChooseLookupItemDot">
       <i c="6" l="1739498850513" />
@@ -121,7 +121,7 @@
       <i c="1" l="1714805071275" />
     </e>
     <e n="EditorCopy">
-      <i c="865" l="1743487993811" />
+      <i c="866" l="1743559605026" />
     </e>
     <e n="EditorCut">
       <i c="1" l="1724158650430" />
@@ -130,22 +130,22 @@
       <i c="159" l="1741869862502" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="13607" l="1743494495198" />
+      <i c="13634" l="1743559680434" />
     </e>
     <e n="EditorDown">
-      <i c="31183" l="1743497026410" />
+      <i c="31239" l="1743560020124" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
     </e>
     <e n="EditorEnter">
-      <i c="13604" l="1743497174137" />
+      <i c="13643" l="1743560019348" />
     </e>
     <e n="EditorEscape">
       <i c="14319" l="1743496711075" />
     </e>
     <e n="EditorLeft">
-      <i c="285" l="1743224868039" />
+      <i c="286" l="1743558323342" />
     </e>
     <e n="EditorLeftWithSelection">
       <i c="118" l="1742404022450" />
@@ -193,7 +193,7 @@
       <i c="29" l="1742600688549" />
     </e>
     <e n="EditorRight">
-      <i c="3016" l="1743487897641" />
+      <i c="3030" l="1743559555219" />
     </e>
     <e n="EditorRightWithSelection">
       <i c="86" l="1743484923094" />
@@ -214,7 +214,7 @@
       <i c="4" l="1742349310828" />
     </e>
     <e n="EditorTab">
-      <i c="575" l="1743488001597" />
+      <i c="578" l="1743558136771" />
     </e>
     <e n="EditorTabsEntryPoint">
       <i c="2" l="1743024863634" />
@@ -229,7 +229,7 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="23466" l="1743497173661" />
+      <i c="23488" l="1743560023828" />
     </e>
     <e n="ExpandCollapseToggleAction">
       <i c="3" l="1738473939563" />
@@ -304,7 +304,7 @@
       <i c="1" l="1731680705557" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="2533" l="1743485301409" />
+      <i c="2538" l="1743559962931" />
     </e>
     <e n="InspectOnProjectModelAction">
       <i c="1" l="1743216658683" />
@@ -346,7 +346,7 @@
       <i c="1" l="1731227762790" />
     </e>
     <e n="NextTemplateVariable">
-      <i c="143" l="1743105331121" />
+      <i c="144" l="1743559725106" />
     </e>
     <e n="OpenExceptionSettings">
       <i c="1" l="1733848122600" />
@@ -370,7 +370,7 @@
       <i c="1" l="1742602397393" />
     </e>
     <e n="ReSharperGotoImplementation">
-      <i c="1" l="1734637113532" />
+      <i c="2" l="1743558159460" />
     </e>
     <e n="ReSharperGotoNextErrorInSolution">
       <i c="3" l="1743482937310" />
@@ -388,7 +388,7 @@
       <i c="24" l="1742588787005" />
     </e>
     <e n="RenameElement">
-      <i c="889" l="1743485304362" />
+      <i c="899" l="1743559723209" />
     </e>
     <e n="Replace">
       <i c="1" l="1723710046396" />
@@ -418,7 +418,7 @@
       <i c="17" l="1743220848627" />
     </e>
     <e n="SaveAll">
-      <i c="7524" l="1743497228236" />
+      <i c="7547" l="1743560033277" />
     </e>
     <e n="SearchEverywhere">
       <i c="111" l="1743494914454" />
@@ -433,7 +433,7 @@
       <i c="1" l="1743195565807" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="4042" l="1743494479134" />
+      <i c="4056" l="1743559540137" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -463,7 +463,7 @@
       <i c="124" l="1742300749600" />
     </e>
     <e n="Synchronize">
-      <i c="1" l="1743215120270" />
+      <i c="28" l="1743560036971" />
     </e>
     <e n="TabList">
       <i c="10" l="1743225368891" />
@@ -607,7 +607,7 @@
       <i c="12" l="1743193441460" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="257691" l="1743497228228" />
+      <i c="258995" l="1743560033275" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="109" l="1742300749733" />
@@ -643,7 +643,7 @@
       <i c="68" l="1743488004175" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="126" l="1743497192633" />
+      <i c="127" l="1743560682358" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="38" l="1743220343722" />
@@ -664,7 +664,7 @@
       <i c="105" l="1743494970950" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="35" l="1743483477394" />
+      <i c="46" l="1743558437520" />
     </e>
     <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
       <i c="26" l="1743219631211" />
@@ -706,10 +706,10 @@
       <i c="18" l="1731650202977" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectNextAction">
-      <i c="648" l="1743494697110" />
+      <i c="664" l="1743558855911" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectPreviousAction">
-      <i c="673" l="1743496689627" />
+      <i c="687" l="1743558874006" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
       <i c="19" l="1742927391788" />
@@ -718,7 +718,7 @@
       <i c="1" l="1716930488561" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="677" l="1743485304354" />
+      <i c="688" l="1743559723204" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAsyncBackendDelegatingActionPromoter$DumbAwareActionWrapper">
       <i c="33" l="1726166352633" />

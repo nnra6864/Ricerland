@@ -281,8 +281,9 @@
           "id": "TODO",
           "order": 13,
           "anchor": "RIGHT",
+          "isVisible": true,
           "weight": 0.2614796,
-          "sideWeight": 0.50669146,
+          "sideWeight": 0.5698885,
           "isSplit": true
         }
       ],
