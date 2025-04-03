@@ -106,7 +106,7 @@
       <i c="13" l="1743218560170" />
     </e>
     <e n="EditorBackSpace">
-      <i c="33195" l="1743560025940" />
+      <i c="33202" l="1743671712997" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="13933" l="1743559966398" />
@@ -130,16 +130,16 @@
       <i c="159" l="1741869862502" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="13634" l="1743559680434" />
+      <i c="13635" l="1743671637797" />
     </e>
     <e n="EditorDown">
-      <i c="31239" l="1743560020124" />
+      <i c="31262" l="1743671712629" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
     </e>
     <e n="EditorEnter">
-      <i c="13643" l="1743560019348" />
+      <i c="13654" l="1743671711126" />
     </e>
     <e n="EditorEscape">
       <i c="14319" l="1743496711075" />
@@ -229,7 +229,7 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="23488" l="1743560023828" />
+      <i c="23496" l="1743671713717" />
     </e>
     <e n="ExpandCollapseToggleAction">
       <i c="3" l="1738473939563" />
@@ -418,7 +418,7 @@
       <i c="17" l="1743220848627" />
     </e>
     <e n="SaveAll">
-      <i c="7547" l="1743560033277" />
+      <i c="7553" l="1743672036210" />
     </e>
     <e n="SearchEverywhere">
       <i c="111" l="1743494914454" />
@@ -433,7 +433,7 @@
       <i c="1" l="1743195565807" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="4056" l="1743559540137" />
+      <i c="4057" l="1743671131954" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -463,7 +463,7 @@
       <i c="124" l="1742300749600" />
     </e>
     <e n="Synchronize">
-      <i c="28" l="1743560036971" />
+      <i c="29" l="1743671950830" />
     </e>
     <e n="TabList">
       <i c="10" l="1743225368891" />
@@ -607,7 +607,7 @@
       <i c="12" l="1743193441460" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="258995" l="1743560033275" />
+      <i c="259364" l="1743672036203" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="109" l="1742300749733" />
@@ -706,10 +706,10 @@
       <i c="18" l="1731650202977" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectNextAction">
-      <i c="664" l="1743558855911" />
+      <i c="674" l="1743672009030" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectPreviousAction">
-      <i c="687" l="1743558874006" />
+      <i c="700" l="1743672031582" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
       <i c="19" l="1742927391788" />

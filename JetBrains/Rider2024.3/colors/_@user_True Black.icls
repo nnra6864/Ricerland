@@ -88,18 +88,18 @@
         <option name="FOREGROUND" value="c8c8c8" />
       </value>
     </option>
-    <option name="DEFAULT_FUNCTION_CALL" baseAttributes="" />
-    <option name="DEFAULT_FUNCTION_DECLARATION" baseAttributes="" />
-    <option name="DEFAULT_GLOBAL_VARIABLE" baseAttributes="" />
-    <option name="DEFAULT_HIGHLIGHTED_REFERENCE" baseAttributes="" />
+    <option name="DEFAULT_FUNCTION_CALL" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_FUNCTION_DECLARATION" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_GLOBAL_VARIABLE" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_HIGHLIGHTED_REFERENCE" baseAttributes="DEFAULT_STRING" />
     <option name="DEFAULT_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="ffffff" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="" />
-    <option name="DEFAULT_INTERFACE_NAME" baseAttributes="" />
+    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_INTERFACE_NAME" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="ff0000" />
@@ -112,24 +112,24 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="DEFAULT_LABEL" baseAttributes="" />
+    <option name="DEFAULT_LABEL" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="DEFAULT_LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="808080" />
       </value>
     </option>
-    <option name="DEFAULT_LOCAL_VARIABLE" baseAttributes="" />
+    <option name="DEFAULT_LOCAL_VARIABLE" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="DEFAULT_NUMBER">
       <value>
         <option name="FOREGROUND" value="32ffc8" />
       </value>
     </option>
-    <option name="DEFAULT_PARAMETER" baseAttributes="" />
-    <option name="DEFAULT_PREDEFINED_SYMBOL" baseAttributes="" />
-    <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="" />
-    <option name="DEFAULT_REASSIGNED_PARAMETER" baseAttributes="" />
-    <option name="DEFAULT_STATIC_FIELD" baseAttributes="" />
-    <option name="DEFAULT_STATIC_METHOD" baseAttributes="" />
+    <option name="DEFAULT_PARAMETER" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_PREDEFINED_SYMBOL" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="DEFAULT_REASSIGNED_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="DEFAULT_STATIC_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="DEFAULT_STRING">
       <value>
         <option name="FOREGROUND" value="c8ff32" />

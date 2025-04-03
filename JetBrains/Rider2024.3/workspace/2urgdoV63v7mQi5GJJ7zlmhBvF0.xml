@@ -8,13 +8,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf ideFingerprint="3fzpokraqv4e2" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
+      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="270">
-              <caret line="236" column="53" selection-start-line="236" selection-start-column="53" selection-end-line="236" selection-end-column="53" />
+            <state relative-caret-position="405">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
               <folding>
-                <marker date="1743557976907" expanded="true" signature="4420:6842" ph="Track" />
+                <marker date="1743671950878" expanded="true" signature="4470:6832" ph="Track" />
+                <marker date="1743671950878" expanded="true" signature="6836:8205" ph="Clip" />
               </folding>
             </state>
           </provider>
@@ -24,18 +25,18 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="945">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="630">
+              <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"TrackStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file current-in-tab="true">
+      <file>
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="855">
-              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+            <state relative-caret-position="945">
+              <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -46,8 +47,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 194,
-      "lastUsed": 1743556145795
+      "usageCount": 197,
+      "lastUsed": 1743671015098
     },
     "ShaderLab": {
       "usageCount": 2,
@@ -101,9 +102,9 @@
     "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/UnityEngine/Timeline/TrackAsset.cs",
     "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs",
     "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Optional.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs",
     "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs"
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs",
+    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -115,7 +116,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="194" lastUsage="1743556145795" />
+      <summary usageCount="197" lastUsage="1743671015098" />
     </language>
     <language id="JSON">
       <summary usageCount="3" lastUsage="1743218608694" />
@@ -430,7 +431,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36225000" />
+    <option name="totallyTimeSpent" value="37417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -778,27 +779,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="236" column="53" selection-start-line="236" selection-start-column="53" selection-end-line="236" selection-end-column="53" />
-          <folding>
-            <marker date="1743557976907" expanded="true" signature="4420:6842" ph="Track" />
-          </folding>
+        <state relative-caret-position="945">
+          <caret line="119" column="2" selection-start-line="119" selection-start-column="2" selection-end-line="119" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="630">
+          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="405">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <marker date="1743671950878" expanded="true" signature="4470:6832" ph="Track" />
+            <marker date="1743671950878" expanded="true" signature="6836:8205" ph="Clip" />
+          </folding>
         </state>
       </provider>
     </entry>
