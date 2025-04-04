@@ -311,22 +311,6 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
-              <option name="activationTimestamp" value="1740678122873" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-243.24978.27" />
-              <option name="buildTimestamp" value="1738865820000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1740666784120" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/WorldTimeline.sln">
           <value>
             <RecentProjectMetaInfo frameTitle="WorldTimeline – ~/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/TimelineMaker/TimelineMaker.cs" projectWorkspaceId="2uAwgWlxBkGllvHNoXmMPuWbeR3">
@@ -361,8 +345,8 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="td – TimelineMaker.cs" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
-              <option name="activationTimestamp" value="1743672207175" />
+            <RecentProjectMetaInfo frameTitle="td" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+              <option name="activationTimestamp" value="1743681605862" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
               <option name="buildTimestamp" value="1740615480000" />
@@ -371,12 +355,28 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1743671015011" />
+              <option name="projectOpenTimestamp" value="1743680666473" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" opened="true" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
+              <option name="activationTimestamp" value="1743700255498" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-243.25659.34" />
+              <option name="buildTimestamp" value="1740615480000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1743697107599" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/td/td.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln" />
   </component>
 </application>

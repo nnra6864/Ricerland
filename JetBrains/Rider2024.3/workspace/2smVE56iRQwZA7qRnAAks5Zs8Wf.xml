@@ -7,7 +7,7 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="7a9jet0wzf7z" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="3fzpokraqv4e2" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
           <provider editor-type-id="text-editor" selected="true">
@@ -57,7 +57,7 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="587">
+            <state relative-caret-position="435">
               <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
@@ -72,8 +72,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 47,
-      "lastUsed": 1740666784233
+      "usageCount": 52,
+      "lastUsed": 1743697107660
     }
   }
 }]]></component>
@@ -102,7 +102,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="47" lastUsage="1740666784233" />
+      <summary usageCount="52" lastUsage="1743697107660" />
     </language>
   </component>
   <component name="ProjectView">
@@ -231,7 +231,7 @@
         </entry>
         <entry key="Debug">
           <value>
-            <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
           </value>
         </entry>
         <entry key="Dynamic Program Analysis">
@@ -256,7 +256,7 @@
         </entry>
         <entry key="Find">
           <value>
-            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Gradle">
@@ -296,7 +296,7 @@
         </entry>
         <entry key="Monitoring">
           <value>
-            <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Notifications">
@@ -316,12 +316,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.053865775" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -351,12 +351,12 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Terminal">
           <value>
-            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
           </value>
         </entry>
         <entry key="Test Coverage">
@@ -396,7 +396,7 @@
         </entry>
         <entry key="documentation.v2">
           <value>
-            <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+            <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
           </value>
         </entry>
         <entry key="dotMemory">
@@ -413,7 +413,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42436000" />
+    <option name="totallyTimeSpent" value="44207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -428,7 +428,7 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15335557" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -442,15 +442,14 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.06461865" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
-      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
-      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
       <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
@@ -458,16 +457,17 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.49107808" visible="true" weight="0.053865775" />
+      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
-      <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
-      <window_info anchor="right" id="TODO" order="12" sideWeight="0.5089219" side_tool="true" weight="0.17258635" />
+      <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <unified_weights bottom="0.06461865" left="0.15335557" right="0.053865775" />
+      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+      <unified_weights bottom="0.22775424" left="0.19103217" right="0.2614796" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
@@ -502,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -516,6 +509,13 @@
           <folding>
             <element signature="e#0#100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -529,20 +529,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
+        <state relative-caret-position="435">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
