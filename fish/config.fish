@@ -71,7 +71,7 @@ function rice
     #sudo python .config/RicerHub.py /opt/unityhub/
 
     #Nlear the console, sleep and kill Shifter
-    nlear
+    #nlear
     #sleep 1
     #kill -SIGUSR1 $pid
 end

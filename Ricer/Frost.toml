@@ -26,8 +26,6 @@ max_font_size = 32
 
 # Misc
 terminal = "kitty"
-opacity = 0.85
-inactive_opacity = 0.9
 outline_size = 2
 rounding = 10
 roundingPower = 4
@@ -64,6 +62,11 @@ br_blue = "$blue.$highlight_hsv"
 br_magenta = "$magenta.$highlight_hsv"
 br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
+
+# Opacity
+opacity = "rgb(0, 0, 0, 0.85)"
+opacity_inactive = "rgb(0, 0, 0, 0.9)"
+opacity_cs16 = "rgb(0, 0, 0, 0.5)"
 
 # Foreground
 foreground = "$white"
@@ -164,7 +167,11 @@ Oomox = "~/.config/OomoxRicer"
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
-AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
+AdwSteamGtk = [
+    "~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css",
+    "rgb",
+]
 Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
 HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
-Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
+#Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
+CS16 = "/home/nnra/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"

@@ -1,0 +1,76 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+# Theme
+bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+font = "Courier Prime Code"
+min_font_size = 10
+small_font_size = 13
+font_size = 15
+big_font_size = 17
+max_font_size = 32
+
+# Color Values
+highlight_hsv = "h+0.s+0.v+10"
+placeholder_hsv = "h+0.s+0.v-10"
+inactive_hsv = "h+0.s+0.v-15"
+disabled_hsv = "h+0.s-5.v-15"
+
+[Colors]
+# Opacity
+opacity_cs16 = "rgb(0, 0, 0, 1.0)"
+
+# Foreground
+foreground = "#160ca8"
+foreground_highlight = "$foreground.$highlight_hsv"
+foreground_placeholder = "$foreground.$placeholder_hsv"
+foreground_inactive = "$foreground.$inactive_hsv"
+foreground_disabled = "$foreground.$disabled_hsv"
+
+# Foreground Alternative
+foreground_alt = "#160ca8"
+foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
+foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
+foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
+foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
+
+# Background
+background = "#97e619"
+background_highlight = "$background.$highlight_hsv"
+background_inactive = "$background.$inactive_hsv"
+background_disabled = "$background.$disabled_hsv"
+
+# Background Alternative
+background_alt = "#97e619"
+background_highlight_alt = "$background_alt.$highlight_hsv"
+background_inactive_alt = "$background_alt.$inactive_hsv"
+background_disabled_alt = "$background_alt.$disabled_hsv"
+
+# Button Background
+button = "#97e619"
+button_highlight = "$button.$highlight_hsv"
+button_inactive = "$button.$inactive_hsv"
+button_disabled = "$button.$disabled_hsv"
+
+# Button Foreground
+button_foreground = "#160ca8"
+button_foreground_highlight = "$button_foreground.$highlight_hsv"
+button_foreground_inactive = "$button_foreground.$inactive_hsv"
+button_foreground_disabled = "$button_foreground.$disabled_hsv"
+
+# Outline
+outline = "#000000"
+outline_alt = "#FFFFFF"
+outline_inactive = "$outline.v-50"
+outline_inactive_alt = "$outline_alt.v-50"
+
+[Files]
+CS16 = "/home/nnra/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
