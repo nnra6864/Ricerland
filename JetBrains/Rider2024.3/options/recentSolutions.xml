@@ -361,7 +361,7 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="td – CinemachineTrackStamp.cs" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+            <RecentProjectMetaInfo frameTitle="td – CinemachineTrackStamp.cs" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
               <option name="activationTimestamp" value="1744017601873" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-243.25659.34" />
@@ -375,8 +375,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Ricer – App.axaml" opened="true" projectWorkspaceId="2vR5HCyyuMwtbzRr5nkxVGGi2oa">
+              <option name="activationTimestamp" value="1744095605993" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-243.25659.34" />
+              <option name="buildTimestamp" value="1740615480000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1744095138142" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/td/td.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.sln" />
   </component>
 </application>

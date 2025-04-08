@@ -26,10 +26,10 @@
     <size key="GridCell.Tab.5.center.0.0.5120.1440" width="5030" height="287" />
     <size key="GridCell.Tab.5.right.0.0.5120.1440" width="5030" height="287" />
     <size key="GridCell.Tab.5.bottom.0.0.5120.1440" width="5030" height="287" />
-    <size key="GridCell.Tab.0.left.0.0.5120.1440@120dpi" width="5014" height="282" />
-    <size key="GridCell.Tab.0.center.0.0.5120.1440@120dpi" width="5014" height="282" />
-    <size key="GridCell.Tab.0.right.0.0.5120.1440@120dpi" width="5014" height="282" />
-    <size key="GridCell.Tab.0.bottom.0.0.5120.1440@120dpi" width="5014" height="282" />
+    <size key="GridCell.Tab.0.left.0.0.5120.1440@120dpi" width="5014" height="273" />
+    <size key="GridCell.Tab.0.center.0.0.5120.1440@120dpi" width="5014" height="273" />
+    <size key="GridCell.Tab.0.right.0.0.5120.1440@120dpi" width="5014" height="273" />
+    <size key="GridCell.Tab.0.bottom.0.0.5120.1440@120dpi" width="5014" height="273" />
     <size key="GridCell.Tab.1.left.0.0.5120.1440@120dpi" width="5014" height="282" />
     <size key="GridCell.Tab.1.center.0.0.5120.1440@120dpi" width="5014" height="282" />
     <size key="GridCell.Tab.1.right.0.0.5120.1440@120dpi" width="5014" height="282" />
@@ -71,10 +71,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="490" height="143" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1743484979942" />
-    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN" timestamp="1744015865424">
+    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN" timestamp="1744095134872">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1280" y="716" width="2536" height="1416" key="WELCOME_SCREEN/0.0.2560.1440" timestamp="1743864168238" />
-    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1744015865424" />
+    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1744095134872" />
   </component>
 </application>

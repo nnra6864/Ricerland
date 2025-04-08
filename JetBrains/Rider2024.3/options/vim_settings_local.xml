@@ -2416,6 +2416,20 @@
       <jump line="35" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="20" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
     </project>
+    <project id="Ricer-b301b3bd">
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml" protocol="file" />
+      <jump line="7" column="23" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="7" column="23" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml" protocol="file" />
+      <jump line="5" column="31" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml" protocol="file" />
+      <jump line="10" column="1" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="2" column="11" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="2" column="10" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="8" column="29" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
+      <jump line="9" column="4" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
@@ -2428,8 +2442,9 @@
         <mark key="." line="21" column="24" />
         <mark key="^" line="21" column="25" />
       </file>
-      <file name="/Immediate Window" timestamp="1743483516790">
-        <mark key="&quot;" line="0" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml" timestamp="1744095121350">
+        <mark key="&quot;" line="5" column="31" />
+        <mark key="[" line="5" column="17" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Library/PackageCache/com.unity.timeline@c58b4ee65782/Runtime/Activation/CinemachineTrack.cs" timestamp="1743746665411">
         <mark key="&quot;" line="13" column="33" />
@@ -2482,16 +2497,8 @@
         <mark key="." line="18" column="21" />
         <mark key="^" line="18" column="25" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/DisplayManager.cs" timestamp="1743494915302">
-        <mark key="&quot;" line="5" column="31" />
-        <mark key="[" line="9" column="8" />
-        <mark key="]" line="9" column="8" />
-      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Entities/Nature/Unsorted/Animated Plant/Assets/Other/Shaders/UVTiling.shadersubgraph" timestamp="1743834479735">
         <mark key="&quot;" line="794" column="0" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/WindowManager.cs" timestamp="1743494444313">
-        <mark key="&quot;" line="7" column="30" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" timestamp="1744017537853">
         <mark key="[" line="10" column="0" />
@@ -2511,6 +2518,12 @@
         <mark key="[" line="4" column="0" />
         <mark key="]" line="4" column="0" />
         <mark key="." line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" timestamp="1744095155751">
+        <mark key="[" line="2" column="10" />
+        <mark key="]" line="2" column="17" />
+        <mark key="^" line="2" column="17" />
+        <mark key="." line="2" column="16" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Entities/Unit.cs" timestamp="1743834548606">
         <mark key="&quot;" line="8" column="16" />
@@ -2556,7 +2569,7 @@
         <text encoding="base64">cHJpdmF0ZSA=</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64" />
+        <text encoding="base64">UmljZXIu</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">U2V0RGly</text>

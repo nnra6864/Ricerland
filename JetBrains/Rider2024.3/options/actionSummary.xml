@@ -109,7 +109,7 @@
       <i c="13" l="1743218560170" />
     </e>
     <e n="EditorBackSpace">
-      <i c="33409" l="1744016728084" />
+      <i c="33411" l="1744095117958" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="14047" l="1744016701563" />
@@ -133,10 +133,10 @@
       <i c="159" l="1741869862502" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="13805" l="1744016695819" />
+      <i c="13809" l="1744095161317" />
     </e>
     <e n="EditorDown">
-      <i c="31500" l="1744016701996" />
+      <i c="31501" l="1744095116476" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
@@ -156,11 +156,14 @@
     <e n="EditorLineEnd">
       <i c="37" l="1742880357826" />
     </e>
+    <e n="EditorLineEndWithSelection">
+      <i c="1" l="1744094927864" />
+    </e>
     <e n="EditorLineStart">
       <i c="10" l="1743681051090" />
     </e>
     <e n="EditorLineStartWithSelection">
-      <i c="1" l="1738478432537" />
+      <i c="2" l="1744094921916" />
     </e>
     <e n="EditorLookupUp">
       <i c="3" l="1733916895302" />
@@ -196,7 +199,7 @@
       <i c="29" l="1742600688549" />
     </e>
     <e n="EditorRight">
-      <i c="3054" l="1744016094205" />
+      <i c="3055" l="1744095155577" />
     </e>
     <e n="EditorRightWithSelection">
       <i c="86" l="1743484923094" />
@@ -232,7 +235,7 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="23621" l="1744016434794" />
+      <i c="23622" l="1744095117001" />
     </e>
     <e n="ExpandCollapseToggleAction">
       <i c="3" l="1738473939563" />
@@ -391,7 +394,7 @@
       <i c="24" l="1742588787005" />
     </e>
     <e n="RenameElement">
-      <i c="908" l="1743746295084" />
+      <i c="910" l="1744095159526" />
     </e>
     <e n="Replace">
       <i c="1" l="1723710046396" />
@@ -406,7 +409,7 @@
       <i c="37" l="1742926902598" />
     </e>
     <e n="RiderNewSolution">
-      <i c="4" l="1741704789045" />
+      <i c="5" l="1744094623546" />
     </e>
     <e n="RiderNuGetInstallPackageAction">
       <i c="1" l="1734101200054" />
@@ -416,6 +419,9 @@
     </e>
     <e n="RiderOpenSolution">
       <i c="29" l="1743219668448" />
+    </e>
+    <e n="Run">
+      <i c="2" l="1744095267379" />
     </e>
     <e n="RunAnything">
       <i c="17" l="1743220848627" />
@@ -427,7 +433,7 @@
       <i c="114" l="1743834478001" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="191" l="1743497229443" />
+      <i c="192" l="1744094960302" />
     </e>
     <e n="SettingsLayersDialogToolbar.AddLayer">
       <i c="1" l="1742318969304" />
@@ -436,7 +442,7 @@
       <i c="1" l="1743195565807" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="4096" l="1744017532608" />
+      <i c="4099" l="1744095156608" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -535,7 +541,7 @@
       <i c="1" l="1723516037314" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="24" l="1743497231063" />
+      <i c="25" l="1744094962921" />
     </e>
     <e n="WelcomeScreen.RemoveSelected">
       <i c="13" l="1743219628712" />
@@ -610,7 +616,7 @@
       <i c="12" l="1743193441460" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="261866" l="1744017560960" />
+      <i c="261874" l="1744095156327" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
       <i c="109" l="1742300749733" />
@@ -646,7 +652,7 @@
       <i c="68" l="1743488004175" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="131" l="1743876340569" />
+      <i c="132" l="1744095605908" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="38" l="1743220343722" />
@@ -721,7 +727,7 @@
       <i c="1" l="1716930488561" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="698" l="1743746295081" />
+      <i c="700" l="1744095159492" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAsyncBackendDelegatingActionPromoter$DumbAwareActionWrapper">
       <i c="33" l="1726166352633" />
@@ -761,6 +767,9 @@
     </e>
     <e n="de.liebki.aihelperplugin.EnhanceCodeWithVariantsAction">
       <i c="4" l="1738478548697" />
+    </e>
+    <e n="xaml.splitEditor.editorActions.EditorAndPreviewAction">
+      <i c="1" l="1744095185207" />
     </e>
   </component>
 </application>

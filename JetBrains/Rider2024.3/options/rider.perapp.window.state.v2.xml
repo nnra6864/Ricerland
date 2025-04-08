@@ -141,7 +141,8 @@
           "id": "Run",
           "order": 7,
           "anchor": "BOTTOM",
-          "weight": 0.33015537
+          "isVisible": true,
+          "weight": 0.2213983
         },
         {
           "id": "NuGet",
@@ -219,7 +220,7 @@
           "isActiveOnStart": true,
           "isVisible": true,
           "weight": 0.14805731,
-          "sideWeight": 0.43011153
+          "sideWeight": 0.42974806
         },
         {
           "id": "Codeium Chat",
@@ -282,7 +283,7 @@
           "anchor": "RIGHT",
           "isVisible": true,
           "weight": 0.14805731,
-          "sideWeight": 0.5698885,
+          "sideWeight": 0.57025194,
           "isSplit": true
         }
       ],
