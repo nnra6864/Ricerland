@@ -2,14 +2,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">dGFyZ2V0LkdldFR5cGU=</entry>
-        <entry encoding="base64">TGF0ZQ==</entry>
-        <entry encoding="base64">R2V0VHJh</entry>
-        <entry encoding="base64">T25DbA==</entry>
-        <entry encoding="base64">T25UcmFjaw==</entry>
-        <entry encoding="base64">UmVmcmVzaA==</entry>
-        <entry encoding="base64">Y2xpcFN0YW1w</entry>
-        <entry encoding="base64">R2l6bW8=</entry>
         <entry encoding="base64">T25EcmF3</entry>
         <entry encoding="base64">VWk=</entry>
         <entry encoding="base64">UmVmZXJlbmNlVHlwZQ==</entry>
@@ -52,9 +44,16 @@
         <entry encoding="base64">QmluZGluZw==</entry>
         <entry encoding="base64">U2V0RGlydHk=</entry>
         <entry encoding="base64">U2V0RGly</entry>
+        <entry encoding="base64">QXdha2U=</entry>
+        <entry encoding="base64">cGl4ZWxTaXpl</entry>
+        <entry encoding="base64">aW52ZXJ0</entry>
+        <entry encoding="base64">SW52ZXJ0</entry>
+        <entry encoding="base64">SW5pdGlhbGl6ZQ==</entry>
+        <entry encoding="base64">aW5pdA==</entry>
+        <entry encoding="base64">dm91bWU=</entry>
+        <entry encoding="base64">Vm91bWU=</entry>
       </history-search>
       <history-cmd>
-        <entry encoding="base64">MjA=</entry>
         <entry encoding="base64">Vw==</entry>
         <entry encoding="base64">JzwsJz53</entry>
         <entry encoding="base64">NDc=</entry>
@@ -84,7 +83,6 @@
         <entry encoding="base64">MTI4</entry>
         <entry encoding="base64">MjM=</entry>
         <entry encoding="base64">MTgw</entry>
-        <entry encoding="base64">MTY2</entry>
         <entry encoding="base64">MTI1</entry>
         <entry encoding="base64">NTg=</entry>
         <entry encoding="base64">MjE2</entry>
@@ -99,10 +97,12 @@
         <entry encoding="base64">TGF0ZVVwZGF0ZQ==</entry>
         <entry encoding="base64">MTEz</entry>
         <entry encoding="base64">MTE1</entry>
-        <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">MTM3</entry>
         <entry encoding="base64">cQ==</entry>
+        <entry encoding="base64">NTc=</entry>
         <entry encoding="base64" />
+        <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64">MTY2</entry>
         <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
@@ -2087,106 +2087,106 @@
       <jump line="43" column="33" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
-      <jump line="14" column="30" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="38" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="45" column="20" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="37" column="16" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="46" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="52" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="47" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="15" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="50" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="41" column="68" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="59" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="20" column="57" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="21" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="9" column="56" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="16" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="17" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="40" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="43" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="48" column="95" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="24" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="62" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="76" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="92" column="42" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="86" column="46" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="42" column="83" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="77" column="10" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="30" column="31" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="39" column="34" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="84" column="46" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="73" column="37" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="90" column="68" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="12" column="52" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="13" column="46" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="10" column="54" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="25" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="28" column="22" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="27" column="32" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="29" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="33" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="32" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="31" column="19" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="51" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="49" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="63" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="36" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="57" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="53" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="54" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="61" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="5" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="9" column="51" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="41" column="74" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="44" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="52" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="67" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="72" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="88" column="4" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="1" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="9" column="52" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs" protocol="file" />
-      <jump line="13" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs" protocol="file" />
-      <jump line="85" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs" protocol="file" />
-      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraManager.cs" protocol="file" />
-      <jump line="27" column="39" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraManager.cs" protocol="file" />
-      <jump line="36" column="36" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs" protocol="file" />
-      <jump line="11" column="56" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
-      <jump line="30" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="22" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="23" column="5" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="16" column="10" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="27" column="47" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="109" column="29" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperWindow.cs" protocol="file" />
+      <jump line="35" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="32" column="1" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="18" column="139" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="67" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="51" column="89" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="57" column="139" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" protocol="file" />
+      <jump line="115" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapper.cs" protocol="file" />
       <jump line="74" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="69" column="65" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="70" column="41" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="63" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="39" column="33" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="29" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="27" column="49" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="20" column="47" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="35" column="27" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="45" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="48" column="37" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="19" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="41" column="21" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="44" column="51" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="16" column="67" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="68" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="75" column="39" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="57" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="56" column="54" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="54" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="53" column="80" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="60" column="38" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="67" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="42" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="50" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="51" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="21" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="59" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
-      <jump line="17" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
+      <jump line="27" column="30" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
+      <jump line="25" column="40" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" protocol="file" />
+      <jump line="85" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs" protocol="file" />
+      <jump line="43" column="36" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="48" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="19" column="31" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="10" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="41" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="125" column="4" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="97" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="85" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="100" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="60" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="62" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="89" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="63" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="103" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="64" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="61" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="58" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="59" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="110" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="109" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="127" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="128" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="34" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="129" column="4" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="48" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="23" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="55" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="73" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="57" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="39" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="123" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="37" column="18" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="40" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="17" column="16" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="19" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
+      <jump line="71" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
+      <jump line="75" column="79" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
+      <jump line="73" column="81" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
+      <jump line="12" column="14" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader" protocol="file" />
+      <jump line="163" column="1" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader" protocol="file" />
+      <jump line="111" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader" protocol="file" />
+      <jump line="14" column="25" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="163" column="1" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="150" column="34" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="51" column="41" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="53" column="53" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="31" column="14" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute" protocol="file" />
+      <jump line="163" column="1" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute" protocol="file" />
+      <jump line="147" column="34" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="161" column="14" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="168" column="3" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="166" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="165" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="164" column="25" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" protocol="file" />
+      <jump line="123" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="104" column="31" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="8" column="4" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="103" column="36" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="2467" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="11" column="16" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="250" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="424" column="38" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="550" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="741" column="38" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="847" column="23" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="2468" column="103" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="1144" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl" protocol="file" />
+      <jump line="179" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl" protocol="file" />
+      <jump line="68" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
+      <jump line="38" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="79" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
     </project>
     <project id="opensurf-8dd232f9">
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/opensurf/README.md" protocol="file" />
@@ -2315,16 +2315,6 @@
       <jump line="249" column="4" filename="$USER_HOME$/Data/Projects/Unity/WorldTimeline/WorldTimeline/Assets/Scripts/TimelineMaker/TimelineMaker.cs" protocol="file" />
     </project>
     <project id="td-175a6cf9">
-      <jump line="72" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="16" column="21" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="19" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/AudioTrackStamp.cs" protocol="file" />
-      <jump line="17" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/ActivationTrackStamp.cs" protocol="file" />
-      <jump line="78" column="36" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="73" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="75" column="43" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
-      <jump line="18" column="37" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs" protocol="file" />
-      <jump line="18" column="22" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/ActivationTrackStamp.cs" protocol="file" />
-      <jump line="18" column="21" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/AudioTrackStamp.cs" protocol="file" />
       <jump line="56" column="45" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="74" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
       <jump line="80" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
@@ -2352,8 +2342,6 @@
       <jump line="168" column="21" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="162" column="31" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="169" column="39" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="171" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="167" column="23" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="13" column="38" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
       <jump line="121" column="20" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
       <jump line="132" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" protocol="file" />
@@ -2393,13 +2381,11 @@
       <jump line="44" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="63" column="8" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
       <jump line="65" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
-      <jump line="64" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
       <jump line="28" column="4" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="33" column="43" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="19" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs" protocol="file" />
       <jump line="185" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="165" column="6" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
-      <jump line="164" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
       <jump line="31" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="23" column="38" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="24" column="31" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
@@ -2415,6 +2401,20 @@
       <jump line="19" column="27" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="35" column="25" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
       <jump line="20" column="2" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs" protocol="file" />
+      <jump line="158" column="43" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="159" column="27" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="161" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="164" column="23" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="166" column="15" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="167" column="6" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="171" column="36" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" protocol="file" />
+      <jump line="64" column="28" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="76" column="51" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="77" column="48" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs" protocol="file" />
+      <jump line="13" column="71" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs" protocol="file" />
+      <jump line="14" column="36" filename="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs" protocol="file" />
     </project>
     <project id="Ricer-b301b3bd">
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
@@ -2430,124 +2430,205 @@
       <jump line="8" column="29" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
       <jump line="9" column="4" filename="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Core/MainWindow.axaml.cs" protocol="file" />
     </project>
+    <project id="Ricer-b452c6b1">
+      <jump line="53" column="14" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="45" column="25" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="51" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="50" column="52" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="52" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="56" column="81" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="55" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="57" column="16" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="22" column="16" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="23" column="13" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="30" column="58" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="26" column="50" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="27" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="38" column="9" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="44" column="9" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="73" column="13" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="76" column="9" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="32" column="25" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="49" column="13" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="43" column="27" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="45" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="69" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="42" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="80" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="88" column="29" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="9" column="7" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="44" column="23" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="7" column="43" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="89" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="81" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="76" column="30" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="71" column="27" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="64" column="30" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="59" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="74" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="96" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="87" column="14" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="36" column="4" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tabs.cs" protocol="file" />
+      <jump line="91" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="30" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="22" column="47" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="35" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="2" column="21" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/ColoredTab.cs" protocol="file" />
+      <jump line="29" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tabs.cs" protocol="file" />
+      <jump line="2" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tabs.cs" protocol="file" />
+      <jump line="12" column="7" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/Tabs/Tab.cs" protocol="file" />
+      <jump line="5" column="16" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="4" column="18" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="100" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="10" column="4" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="1" column="23" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="17" column="37" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="65" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="146" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="16" column="44" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="190" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="17" column="20" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/ColorPicker/ColorPickerScript.cs" protocol="file" />
+      <jump line="61" column="8" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="47" column="31" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="46" column="7" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="9" column="13" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="12" column="13" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="11" column="39" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="30" column="20" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="43" column="7" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="50" column="43" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="7" column="36" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="28" column="14" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="51" column="28" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="45" column="29" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="48" column="28" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="42" column="30" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="34" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="8" column="4" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="36" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="37" column="12" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="39" column="11" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="41" column="33" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="56" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="13" column="17" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="52" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="38" column="11" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="54" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="40" column="59" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="102" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="19" column="11" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="6" column="55" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="2" column="5" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="119" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="59" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="49" column="50" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="85" column="1" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="33" column="16" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="53" column="23" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="60" column="15" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="63" column="88" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+      <jump line="55" column="51" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Timeline/TrackManager.cs" timestamp="1743760313706">
-        <mark key="&quot;" line="19" column="13" />
-        <mark key="'" line="19" column="13" />
-        <mark key="[" line="21" column="24" />
-        <mark key="]" line="21" column="25" />
-        <mark key="." line="21" column="24" />
-        <mark key="^" line="21" column="25" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" timestamp="1744717432878">
+        <mark key="[" line="67" column="9" />
+        <mark key="]" line="68" column="0" />
+        <mark key="^" line="68" column="0" />
+        <mark key="." line="68" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml" timestamp="1744095121350">
-        <mark key="&quot;" line="5" column="31" />
-        <mark key="[" line="5" column="17" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute" timestamp="1744727942326">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="147" column="34" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Library/PackageCache/com.unity.timeline@c58b4ee65782/Runtime/Activation/CinemachineTrack.cs" timestamp="1743746665411">
-        <mark key="&quot;" line="13" column="33" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" timestamp="1744728323546">
+        <mark key="&quot;" line="164" column="25" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" timestamp="1743496937996">
-        <mark key="&quot;" line="14" column="34" />
-        <mark key="'" line="128" column="71" />
-        <mark key="[" line="128" column="56" />
-        <mark key="]" line="128" column="56" />
-        <mark key="^" line="128" column="56" />
-        <mark key="." line="128" column="55" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs" timestamp="1744716430194">
+        <mark key="&quot;" line="74" column="8" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Dynaref/DynarefCinemachineTargetInjector.cs" timestamp="1743746658317">
-        <mark key="&quot;" line="12" column="45" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperWindow.cs" timestamp="1744642719704">
+        <mark key="&quot;" line="109" column="29" />
+        <mark key="[" line="109" column="29" />
+        <mark key="]" line="109" column="30" />
+        <mark key="." line="109" column="29" />
+        <mark key="^" line="109" column="30" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs" timestamp="1744017557747">
-        <mark key="&quot;" line="17" column="37" />
-        <mark key="[" line="15" column="2" />
-        <mark key="]" line="15" column="2" />
-        <mark key="." line="15" column="2" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/ChannelMapping.cs" timestamp="1744642719235">
+        <mark key="&quot;" line="9" column="1" />
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="9" column="1" />
+        <mark key="]" line="8" column="5" />
+        <mark key="." line="2" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/ActivationTrackStamp.cs" timestamp="1743793047490">
-        <mark key="&quot;" line="18" column="22" />
-        <mark key="'" line="21" column="54" />
-        <mark key="[" line="18" column="21" />
-        <mark key="]" line="18" column="21" />
-        <mark key="." line="18" column="21" />
-        <mark key="^" line="18" column="36" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md" timestamp="1744642716660">
+        <mark key="&quot;" line="57" column="139" />
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="30" column="25" />
+        <mark key="]" line="30" column="25" />
+        <mark key="." line="30" column="26" />
+        <mark key="^" line="25" column="32" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" timestamp="1744009813407">
-        <mark key="&quot;" line="14" column="31" />
-        <mark key="'" line="152" column="2" />
-        <mark key="[" line="165" column="0" />
-        <mark key="m" line="44" column="8" />
-        <mark key="]" line="165" column="0" />
-        <mark key="." line="165" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader" timestamp="1744727503014">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="111" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs" timestamp="1743760235424">
-        <mark key="&quot;" line="10" column="5" />
-        <mark key="'" line="7" column="45" />
-        <mark key="[" line="9" column="64" />
-        <mark key="]" line="9" column="79" />
-        <mark key="." line="9" column="78" />
-        <mark key="^" line="9" column="79" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs" timestamp="1744716429818">
+        <mark key="&quot;" line="43" column="36" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/AudioTrackStamp.cs" timestamp="1743793046727">
-        <mark key="&quot;" line="18" column="21" />
-        <mark key="[" line="18" column="21" />
-        <mark key="]" line="18" column="21" />
-        <mark key="." line="18" column="21" />
-        <mark key="^" line="18" column="25" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1744736745083">
+        <mark key="[" line="92" column="0" />
+        <mark key="]" line="92" column="0" />
+        <mark key="." line="92" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Entities/Nature/Unsorted/Animated Plant/Assets/Other/Shaders/UVTiling.shadersubgraph" timestamp="1743834479735">
-        <mark key="&quot;" line="794" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" timestamp="1744716430027">
+        <mark key="&quot;" line="11" column="56" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs" timestamp="1744017537853">
-        <mark key="[" line="10" column="0" />
-        <mark key="]" line="10" column="0" />
-        <mark key="." line="10" column="0" />
-        <mark key="^" line="34" column="26" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader" timestamp="1744731419667">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="1144" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyActivationTrack.cs" timestamp="1743760063174">
-        <mark key="&quot;" line="16" column="0" />
-        <mark key="[" line="9" column="51" />
-        <mark key="]" line="16" column="0" />
-        <mark key="^" line="16" column="0" />
-        <mark key="." line="16" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs" timestamp="1744716429751">
+        <mark key="&quot;" line="14" column="8" />
       </file>
-      <file name="$USER_HOME$/.ideavimrc" timestamp="1743497228250">
-        <mark key="&quot;" line="4" column="0" />
-        <mark key="[" line="4" column="0" />
-        <mark key="]" line="4" column="0" />
-        <mark key="." line="4" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureMapping.cs" timestamp="1744642718032">
+        <mark key="&quot;" line="12" column="8" />
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="12" column="9" />
+        <mark key="^" line="12" column="9" />
+        <mark key="." line="12" column="8" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Vez/BinarySearch/Ricer/Ricer.Core/MainWindow.axaml.cs" timestamp="1744095155751">
-        <mark key="[" line="2" column="10" />
-        <mark key="]" line="2" column="17" />
-        <mark key="^" line="2" column="17" />
-        <mark key="." line="2" column="16" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" timestamp="1744727706653">
+        <mark key="&quot;" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Entities/Unit.cs" timestamp="1743834548606">
-        <mark key="&quot;" line="8" column="16" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperContextMenu.cs" timestamp="1744590273012">
+        <mark key="&quot;" line="22" column="48" />
+        <mark key="[" line="16" column="63" />
+        <mark key="]" line="17" column="49" />
+        <mark key="^" line="17" column="49" />
+        <mark key="." line="17" column="48" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" timestamp="1744009567785">
-        <mark key="&quot;" line="136" column="8" />
-        <mark key="'" line="59" column="32" />
-        <mark key="[" line="64" column="0" />
-        <mark key="]" line="64" column="0" />
-        <mark key="." line="64" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapper.cs" timestamp="1744642717334">
+        <mark key="&quot;" line="115" column="12" />
+        <mark key="'" line="143" column="0" />
+        <mark key="[" line="113" column="46" />
+        <mark key="]" line="113" column="54" />
+        <mark key="." line="113" column="53" />
+        <mark key="^" line="113" column="54" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyAnimationTrack.cs" timestamp="1743760730350">
-        <mark key="&quot;" line="8" column="35" />
-        <mark key="[" line="8" column="35" />
-        <mark key="]" line="8" column="49" />
-        <mark key="." line="8" column="48" />
-        <mark key="^" line="8" column="49" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl" timestamp="1744731469802">
+        <mark key="&quot;" line="179" column="15" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" timestamp="1743869631365">
-        <mark key="&quot;" line="74" column="2" />
-        <mark key="'" line="112" column="2" />
-        <mark key="[" line="135" column="0" />
-        <mark key="]" line="135" column="0" />
-        <mark key="." line="135" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs" timestamp="1744563066507">
+        <mark key="&quot;" line="64" column="28" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs" timestamp="1744563065927">
+        <mark key="&quot;" line="110" column="0" />
       </file>
     </localmarks>
   </component>
@@ -2556,8 +2637,8 @@
       <register name="a" type="CHARACTER_WISE">
         <text encoding="base64">L0NpbmVtYWNoaW5lDWR3aUFjdGl2CAgICAhBY3RpdmF0aW9uVHJhY2sb</text>
       </register>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">cHJpdmF0ZSA=</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIERlYnVnLkxvZyhfcGVyc3BlY3RpdmUpOwo=</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2566,43 +2647,43 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">cHJpdmF0ZSA=</text>
+        <text encoding="base64">TWFwcGluZw==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">UmljZXIu</text>
+        <text encoding="base64" />
       </register>
       <register name="/" type="CHARACTER_WISE">
-        <text encoding="base64">U2V0RGly</text>
+        <text encoding="base64">Vm91bWU=</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgdmFyIHRhcmdldFBvcyA9IHRyYWNraW5nVGFyZ2V0LnZhbHVlLnBvc2l0aW9uICsgcG9zaXRpb24udmFsdWU7Cg==</text>
+        <text encoding="base64">YEFkZCBNYXBwaW5nYCBhZGRzIGEgbmV3IG1hcHBpbmcuPGJyLz4K</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIERlYnVnLkxvZyhfcGVyc3BlY3RpdmUpOwo=</text>
       </register>
       <register name="2" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="3" type="BLOCK_WISE">
-        <text encoding="base64">cHJpdmF0ZSAKcHJpdmF0ZSAKcHJpdmF0ZSAKcHJpdmF0ZSA=</text>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAKICAgICAgICAjcmVnaW9uIERPRgogICAgICAgIAogICAgICAgIHB1YmxpYyB2b2lkIENoYW5nZURPRihib29sIHVzZURPRikgPT4gVXNlRE9GID0gdXNlRE9GOwogICAgICAgIAogICAgICAgIHByaXZhdGUgYm9vbCBfdXNlRE9GOwogICAgICAgIHB1YmxpYyBib29sIFVzZURPRgogICAgICAgIHsKICAgICAgICAgICAgZ2V0ID0+IF91c2VET0Y7CiAgICAgICAgICAgIHByaXZhdGUgc2V0CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGlmIChfdXNlRE9GID09IHZhbHVlKSByZXR1cm47CiAgICAgICAgICAgICAgICBfdXNlRE9GID0gdmFsdWU7CiAgICAgICAgICAgICAgICBpZiAoX21lbnVET0ZQcm9maWxlICE9IG51bGwgJiYgX2RvZlByb2ZpbGUuVHJ5R2V0KG91dCBEZXB0aE9mRmllbGQgZG9mKSkgZG9mLmFjdGl2ZSA9IF91c2VET0Y7CiAgICAgICAgICAgICAgICBpZiAoX21lbnVET0ZQcm9maWxlICE9IG51bGwgJiYgX21lbnVET0ZQcm9maWxlLlRyeUdldChvdXQgRGVwdGhPZkZpZWxkIG1lbnVET0YpKSBtZW51RE9GLmFjdGl2ZSA9IF91c2VET0Y7CiAgICAgICAgICAgICAgICBQbGF5ZXJQcmVmcy5TZXRJbnQoIlVzZURPRiIsIFVzZURPRiA/IDEgOiAwKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICAjZW5kcmVnaW9uCgogICAgICAgICNyZWdpb24gTW90aW9uQmx1cgogICAgICAgIAogICAgICAgIHB1YmxpYyB2b2lkIENoYW5nZU1vdGlvbkJsdXIoZmxvYXQgbWIpID0+IE1vdGlvbkJsdXIgPSBtYjsKICAgICAgICAKICAgICAgICBwcml2YXRlIGZsb2F0IF9tb3Rpb25CbHVyOwogICAgICAgIHB1YmxpYyBmbG9hdCBNb3Rpb25CbHVyCiAgICAgICAgewogICAgICAgICAgICBnZXQgPT4gX21vdGlvbkJsdXI7CiAgICAgICAgICAgIHByaXZhdGUgc2V0CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGlmIChNYXRoZi5BcHByb3hpbWF0ZWx5KF9tb3Rpb25CbHVyLCB2YWx1ZSkpIHJldHVybjsKICAgICAgICAgICAgICAgIF9tb3Rpb25CbHVyID0gdmFsdWU7CiAgICAgICAgICAgICAgICBpZiAoX21vdGlvbkJsdXJQcm9maWxlICE9IG51bGwgJiYgX21vdGlvbkJsdXJQcm9maWxlLlRyeUdldChvdXQgTW90aW9uQmx1ciBtYikpIG1iLmludGVuc2l0eS52YWx1ZSA9IF9tb3Rpb25CbHVyOwogICAgICAgICAgICAgICAgUGxheWVyUHJlZnMuU2V0RmxvYXQoIk1vdGlvbkJsdXIiLCB2YWx1ZSk7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgCiAgICAgICAgI2VuZHJlZ2lvbgoKICAgICAgICAjcmVnaW9uIFBlcnNwZWN0aXZlCgogICAgICAgIHB1YmxpYyB2b2lkIENoYW5nZVBlcnNwZWN0aXZlKGludCBwKSA9PiBQZXJzcGVjdGl2ZSA9IChQZXJzcGVjdGl2ZSlwOwogICAgICAgIAogICAgICAgIHByaXZhdGUgUGVyc3BlY3RpdmUgX3BlcnNwZWN0aXZlOwogICAgICAgIHB1YmxpYyBQZXJzcGVjdGl2ZSBQZXJzcGVjdGl2ZSAKICAgICAgICB7CiAgICAgICAgICAgIGdldCA9PiBfcGVyc3BlY3RpdmU7CiAgICAgICAgICAgIHNldAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBpZiAoX3BlcnNwZWN0aXZlID09IHZhbHVlKSByZXR1cm47CiAgICAgICAgICAgICAgICBfcGVyc3BlY3RpdmUgPSB2YWx1ZTsKICAgICAgICAgICAgICAgIFBsYXllclByZWZzLlNldFN0cmluZygiUGVyc3BlY3RpdmUiLCBfcGVyc3BlY3RpdmUuVG9TdHJpbmcoKSk7CiAgICAgICAgICAgICAgICBEZWJ1Zy5Mb2coX3BlcnNwZWN0aXZlKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICAKICAgICAgICAjZW5kcmVnaW9uCiAgICAgICAgCiAgICAgICAgI3JlZ2lvbiBWb2x1bWUKICAgICAgICAKICAgICAgICBwcml2YXRlIGZsb2F0IEdldFZvbHVtZShmbG9hdCB0KSA9PiBNYXRoZi5MZXJwKC04MCwgMCwgdCk7CiAgICAgICAgcHVibGljIHZvaWQgQ2hhbmdlTWFzdGVyVm9sdW1lKGZsb2F0IHZvbCkgPT4gTWFzdGVyVm9sdW1lID0gdm9sOwogICAgICAgIHB1YmxpYyB2b2lkIENoYW5nZVNGWFZvbHVtZShmbG9hdCB2b2wpID0+IFNGWFZvbHVtZSA9IHZvbDsKICAgICAgICBwdWJsaWMgdm9pZCBDaGFuZ2VNdXNpY1ZvbHVtZShmbG9hdCB2b2wpID0+IE11c2ljVm9sdW1lID0gdm9sOwogICAgICAgIAogICAgICAgIHByaXZhdGUgZmxvYXQgX21hc3RlclZvbHVtZTsKICAgICAgICBwdWJsaWMgZmxvYXQgTWFzdGVyVm9sdW1lCiAgICAgICAgewogICAgICAgICAgICBnZXQgPT4gX21hc3RlclZvbHVtZTsKICAgICAgICAgICAgcHJpdmF0ZSBzZXQKICAgICAgICAgICAgewogICAgICAgICAgICAgICAgaWYgKE1hdGhmLkFwcHJveGltYXRlbHkoX21hc3RlclZvbHVtZSwgdmFsdWUpKSByZXR1cm47CiAgICAgICAgICAgICAgICBfbWFzdGVyVm9sdW1lID0gdmFsdWU7CiAgICAgICAgICAgICAgICBfbWFzdGVyLmF1ZGlvTWl4ZXIuU2V0RmxvYXQoIk1hc3RlclZvbHVtZSIsIEdldFZvbHVtZSh2YWx1ZSkpOwogICAgICAgICAgICAgICAgUGxheWVyUHJlZnMuU2V0RmxvYXQoIk1hc3RlclZvbHVtZSIsIHZhbHVlKTsKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgcHJpdmF0ZSBmbG9hdCBfc2Z4Vm9sdW1lOwogICAgICAgIHB1YmxpYyBmbG9hdCBTRlhWb2x1bWUKICAgICAgICB7CiAgICAgICAgICAgIGdldCA9PiBfc2Z4Vm9sdW1lOwogICAgICAgICAgICBwcml2YXRlIHNldAogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICBpZiAoTWF0aGYuQXBwcm94aW1hdGVseShfc2Z4Vm9sdW1lLCB2YWx1ZSkpIHJldHVybjsKICAgICAgICAgICAgICAgIF9zZnhWb2x1bWUgPSB2YWx1ZTsKICAgICAgICAgICAgICAgIF9zZnguYXVkaW9NaXhlci5TZXRGbG9hdCgiU0ZYVm9sdW1lIiwgR2V0Vm9sdW1lKHZhbHVlKSk7CiAgICAgICAgICAgICAgICBQbGF5ZXJQcmVmcy5TZXRGbG9hdCgiU0ZYVm9sdW1lIiwgdmFsdWUpOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICBwcml2YXRlIGZsb2F0IF9tdXNpY1ZvbHVtZTsKICAgICAgICBwdWJsaWMgZmxvYXQgTXVzaWNWb2x1bWUKICAgICAgICB7CiAgICAgICAgICAgIGdldCA9PiBfbXVzaWNWb2x1bWU7CiAgICAgICAgICAgIHByaXZhdGUgc2V0CiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIGlmIChNYXRoZi5BcHByb3hpbWF0ZWx5KF9tdXNpY1ZvbHVtZSwgdmFsdWUpKSByZXR1cm47CiAgICAgICAgICAgICAgICBfbXVzaWNWb2x1bWUgPSB2YWx1ZTsKICAgICAgICAgICAgICAgIF9tdXNpYy5hdWRpb01peGVyLlNldEZsb2F0KCJNdXNpY1ZvbHVtZSIsIEdldFZvbHVtZSh2YWx1ZSkpOwogICAgICAgICAgICAgICAgUGxheWVyUHJlZnMuU2V0RmxvYXQoIk11c2ljVm9sdW1lIiwgdmFsdWUpOwogICAgICAgICAgICB9CiAgICAgICAgfQoKICAgICAgICAjZW5kcmVnaW9uCg==</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAjZW5kcmVnaW9uCg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAKCg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgdmFyIHRhcmdldFBvcyA9IHRyYWNraW5nVGFyZ2V0LnZhbHVlLnBvc2l0aW9uICsgcG9zaXRpb24udmFsdWU7CiAgICAgIGlmIChwb3NpdGlvbi51c2VWYWx1ZSAmJiB2Q2FtLnRyYW5zZm9ybS5wb3NpdGlvbiAhPSB0YXJnZXRQb3MpIHsKICAgICAgICBDaW5lbWFjaGluZUNsaXAuVmlydHVhbENhbWVyYS5SZXNvbHZlKHRpbWVsaW5lTWFrZXIuZGlyZWN0b3IpLnRyYW5zZm9ybS5wb3NpdGlvbiA9IHRhcmdldFBvczsKICAgICAgICBoYXNDaGFuZ2VkID0gdHJ1ZTsKICAgICAgfQo=</text>
+        <text encoding="base64">ICAgICAgICBwdWJsaWMgdm9pZCBDaGFuZ2VQZXJzcGVjdGl2ZShpbnQgcCkgPT4gUGVyc3BlY3RpdmUgPSAoUGVyc3BlY3RpdmUpcDsK</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBEZWJ1Zy5Mb2coIkhlcmUiKTsK</text>
+        <text encoding="base64">ICAgICAgICBwdWJsaWMgdm9pZCBDaGFuZ2VNb3Rpb25CbHVyKGZsb2F0IG1iKSA9PiBNb3Rpb25CbHVyID0gbWI7Cg==</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBEZWJ1Zy5Mb2coIkhlcmUiKTsK</text>
+        <text encoding="base64">ICAgICAgICBwdWJsaWMgdm9pZCBDaGFuZ2VET0YoYm9vbCB1c2VET0YpID0+IFVzZURPRiA9IHVzZURPRjsK</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBEZWJ1Zy5Mb2coIkhlcmUiKTsK</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">dw==</text>
@@ -2614,9 +2695,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search encoding="base64">U2V0RGly</last-search>
+      <last-search encoding="base64">Vm91bWU=</last-search>
       <last-offset encoding="base64" />
-      <last-pattern encoding="base64">U2V0RGly</last-pattern>
+      <last-pattern encoding="base64">Vm91bWU=</last-pattern>
       <last-dir encoding="base64">MQ==</last-dir>
       <show-last encoding="base64">ZmFsc2U=</show-last>
     </search>

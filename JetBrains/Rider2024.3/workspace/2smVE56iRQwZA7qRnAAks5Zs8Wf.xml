@@ -7,25 +7,32 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="3fzpokraqv4e2" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="31ccgxjbvcvqt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
           <provider editor-type-id="text-editor" selected="true">
             <state>
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#100#0" expanded="true" />
-              </folding>
+              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ShopUIScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"PlaySceneManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PlayerMovementScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
           <provider editor-type-id="text-editor" selected="true">
             <state>
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding>
                 <element signature="e#0#136#0" expanded="true" />
               </folding>
@@ -35,64 +42,90 @@
         <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+            <state relative-caret-position="315">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ExplosionManagerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"PlaySceneManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"SettingsManager.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="435">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="675">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
-                <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
+                <marker date="1744717434795" expanded="true" signature="6:178" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"DynamicDOF.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"SettingsMenu.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 52,
-      "lastUsed": 1743697107660
+      "usageCount": 127,
+      "lastUsed": 1744724938526
+    },
+    "ShaderLab": {
+      "usageCount": 5,
+      "lastUsed": 1744728350823
+    },
+    "Markdown": {
+      "usageCount": 2,
+      "lastUsed": 1744642086442
+    },
+    "HLSL": {
+      "usageCount": 2,
+      "lastUsed": 1744731419512
     }
   }
 }]]></component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Voume</find>
+    </findStrings>
     <replaceStrings>
       <replace />
+      <replace>Volume</replace>
     </replaceStrings>
   </component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/ARMtoMAS.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/InvertColors.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/InvertColor.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/ChannelPacker/Editor/ChannelPacker.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/TextureCreator.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/ChannelPacker/Editor/ChannelPackerPreset.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/TextureRemapper.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/TextureRemapper/TextureRemapper.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperContextMenu.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/ChannelMapping.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureMapping.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperWindow.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapper.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -102,7 +135,16 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="52" lastUsage="1743697107660" />
+      <summary usageCount="127" lastUsage="1744724938526" />
+    </language>
+    <language id="C++">
+      <summary usageCount="2" lastUsage="1744731419512" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="2" lastUsage="1744642086442" />
+    </language>
+    <language id="ShaderLab">
+      <summary usageCount="5" lastUsage="1744728350823" />
     </language>
   </component>
   <component name="ProjectView">
@@ -131,6 +173,12 @@
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="Fruits" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="KatanaMovement" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -256,7 +304,7 @@
         </entry>
         <entry key="Find">
           <value>
-            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
+            <window_info anchor="bottom" id="Find" order="7" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Gradle">
@@ -316,12 +364,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14805731" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.20888934" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -331,7 +379,7 @@
         </entry>
         <entry key="Run">
           <value>
-            <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+            <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Services">
@@ -351,7 +399,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14805731" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -376,7 +424,7 @@
         </entry>
         <entry key="Unit Tests">
           <value>
-            <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+            <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Unity">
@@ -413,7 +461,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44207000" />
+    <option name="totallyTimeSpent" value="106752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -428,7 +476,7 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.19103217" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.20888934" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -436,7 +484,6 @@
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
       <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
@@ -446,9 +493,10 @@
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
-      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.2213983" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.2213983" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
@@ -458,7 +506,7 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.2614796" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14805731" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -466,8 +514,8 @@
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <unified_weights bottom="0.22775424" left="0.19103217" right="0.2614796" />
+      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14805731" />
+      <unified_weights bottom="0.2213983" left="0.20888934" right="0.14805731" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
@@ -475,19 +523,16 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2219" y="372" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1739891879462" />
+    <state width="800" height="338" key="ShowBookmarks" timestamp="1744593207984">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="800" height="338" key="ShowBookmarks/0.0.5120.1440@0.0.5120.1440" timestamp="1744593207984" />
     <state x="2140" y="338" key="run.anything.popup" timestamp="1739891071920">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1739891071920" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/CameraManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -499,6 +544,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Shaders/Lit.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22581" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/ARMtoMAS.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/InvertColor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/ChannelPacker/Editor/ChannelPackerPreset.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/TextureRemapper.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/ChannelPacker/Editor/ChannelPacker.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/TextureRemapper/TextureRemapper.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperContextMenu.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/ChannelMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/TextureMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperWindow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3712">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/README.md" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/TextureRemapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -515,33 +626,70 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding>
             <element signature="e#0#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera/DynamicDOF.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="-810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7965" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.compute">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="164" column="25" lean-forward="true" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/VolumetricFogShader.shader">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4095">
+          <caret line="179" column="15" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
           <folding>
-            <marker date="1740672152820" expanded="true" signature="6:162" ph="..." />
+            <marker date="1744717434795" expanded="true" signature="6:178" ph="..." />
           </folding>
         </state>
       </provider>

@@ -30,7 +30,7 @@ ColorManagement/UseSystemMonitorProfile=false
 ConvertToImageColorSpaceOnImport=false
 CreateBackupFile=false
 CurrentWorkspace=Ultrawide
-ExportConfiguration-image/jpeg=<!DOCTYPE params>\n<params>\n <param name="baseline" type="internal">true</param>\n <param name="exif" type="internal">true</param>\n <param name="filters" type="string"><![CDATA[]]></param>\n <param name="forceSRGB" type="internal">false</param>\n <param name="iptc" type="internal">true</param>\n <param name="optimize" type="internal">true</param>\n <param name="progressive" type="internal">false</param>\n <param name="quality" type="internal">100</param>\n <param name="saveProfile" type="internal">true</param>\n <param name="smoothing" type="internal">0</param>\n <param name="storeAuthor" type="internal">false</param>\n <param name="storeMetaData" type="internal">false</param>\n <param name="subsampling" type="internal">0</param>\n <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" r="1" space="sRGB-elle-V2-g10.icc" g="1"/>\n</color>\n]]></param>\n <param name="xmp" type="internal">true</param>\n</params>\n
+ExportConfiguration-image/jpeg=<!DOCTYPE params>\n<params>\n <param type="internal" name="baseline">true</param>\n <param type="internal" name="exif">true</param>\n <param type="string" name="filters"><![CDATA[]]></param>\n <param type="internal" name="forceSRGB">false</param>\n <param type="internal" name="iptc">true</param>\n <param type="internal" name="optimize">true</param>\n <param type="internal" name="progressive">false</param>\n <param type="internal" name="quality">100</param>\n <param type="internal" name="saveProfile">true</param>\n <param type="internal" name="smoothing">0</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="internal" name="subsampling">0</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB space="sRGB-elle-V2-g10.icc" r="1" b="1" g="1"/>\n</color>\n]]></param>\n <param type="internal" name="xmp">true</param>\n</params>\n
 ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param name="alpha" type="internal">true</param>\n <param name="compression" type="internal">9</param>\n <param name="downsample" type="internal">false</param>\n <param name="forceSRGB" type="internal">true</param>\n <param name="indexed" type="internal">false</param>\n <param name="interlaced" type="internal">false</param>\n <param name="saveAsHDR" type="internal">false</param>\n <param name="saveSRGBProfile" type="internal">false</param>\n <param name="storeAuthor" type="internal">false</param>\n <param name="storeMetaData" type="internal">false</param>\n <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB space="sRGB-elle-V2-g10.icc" b="1" g="1" r="1"/>\n</color>\n]]></param>\n</params>\n
 FilterSelector/LastUsedFilter=gaussian blur
 GamutMasks.viewMode=0
@@ -48,8 +48,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" g="1" r="1" b="1"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB space="sRGB-elle-V2-g10.icc" g="0" r="0" b="0"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" r="1" b="1" g="1"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" r="0" b="0" g="0"/>\n</LastForeGroundColor>\n
 LastPreset=b) Basic-5 Size Opacity
 LastPreset_-1=b) Basic-5 Size Opacity
 LineSmoothingDelayDistance=50
@@ -297,7 +297,7 @@ zoomSteps=2
 [File Dialogs]
 DontUseNativeFileDialog=true
 OpenDocument=/home/nnra/Data/Projects/Unity/Nisualizer/Media
-SaveAs=/home/nnra/Documents
+SaveAs=/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/Mountain/Snow
 savenodeasimage=/home/nnra/Data/Projects/Unity/SpaceConqueror/SpaceConqueror/Assets/Images
 
 [GenericGradientEditor]
@@ -703,9 +703,10 @@ File20[$e]=$HOME/HDD2TB/Work/Images/Unity/UI/Rounded Elements.psb
 File21[$e]=$HOME/.config/ZenBrowser/ZenLogo.svg
 File22[$e]=$HOME/Data/Projects/Unity/Nisualizer/Media/Nisualizer.kra
 File23[$e]=$HOME/Data/Projects/Unity/GoodKatana/Files/Krita/ExplosionParticle.kra
-File24[$e]=$HOME/Data/Projects/Unity/Nisualizer/Media/AlphaThumbnail.kra
-File25[$e]=$HOME/HDD2TB/Backups/Realme7Pro/Syncthing_01.10.2024/Camera/Camera/IMG20250313053555.jpg
-File26[$e]=$HOME/HDD2TB/Backups/Realme7Pro/Syncthing_01.10.2024/Camera/Camera/IMG20250315172712.jpg
+File24[$e]=$HOME/HDD2TB/Backups/Realme7Pro/Syncthing_01.10.2024/Camera/Camera/IMG20250313053555.jpg
+File25[$e]=$HOME/Data/Projects/Unity/Nisualizer/Media/AlphaThumbnail.kra
+File26[$e]=$HOME/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/Mountain/Snow/SnowAO.jpg
+File27[$e]=$HOME/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/Mountain/Snow/SnowMAS.jpg
 File3[$e]=$HOME/HDD2TB/Work/Game Development/Unity/Unity Projects/ChronoScape/Project/Photoshop/Bolt.psb
 File4[$e]=$HOME/Data/Projects/Unity/SpaceConqueror/Krita/Icons.kra
 File5[$e]=$HOME/HDD2TB/Work/Uni/Homework/AD185/Render.png
@@ -729,9 +730,10 @@ Name20=Rounded Elements.psb
 Name21=ZenLogo.svg
 Name22=Nisualizer.kra
 Name23=ExplosionParticle.kra
-Name24=AlphaThumbnail.kra
-Name25=IMG20250313053555.jpg
-Name26=IMG20250315172712.jpg
+Name24=IMG20250313053555.jpg
+Name25=AlphaThumbnail.kra
+Name26=SnowAO.jpg
+Name27=SnowMAS.jpg
 Name3=Bolt.psb
 Name4=Icons.kra
 Name5=Render.png

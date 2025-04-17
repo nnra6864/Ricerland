@@ -1,0 +1,7 @@
+[Bookmarks]
+[Recent]
+/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Models/MainMenu/
+/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/SettingsBoard/
+/home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/
+/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/ItemBoard/
+/home/nnra/Downloads/theme-eclipse-v1.1.0/

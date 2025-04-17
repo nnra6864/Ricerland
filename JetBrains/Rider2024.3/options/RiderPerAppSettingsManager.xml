@@ -5,6 +5,7 @@
         <option value="Bookmarks" />
         <option value="IL Viewer" />
         <option value="TODO" />
+        <option value="Unit Tests" />
       </set>
     </option>
     <option name="toolWindowsPerApp" value="true" />

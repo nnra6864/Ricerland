@@ -1,0 +1,36 @@
+Mask (BoardFrameNormal)
+Color (Normal Map)
+   Render Result
+ 0 Viewer Node
+   ItemFrameDiffuse
+   ItemFramNormal
+   ItemFrameMetallic
+   ItemFrameRougness
+Principled BSDF ▸ Metallic
+Brightness/Contrast ▸ Color
+FrameDetails
+Converter ▸ Vector Math
+Converter ▸ Mix
+Material Output ▸ Surface
+Reroute
+Add Shader ▸ Shader
+Color ▸ Mix Color
+Converter ▸ Separate Color
+Combine Color ▸ Red
+Combine XYZ ▸ X
+Vector ▸ Mapping
+ 0 Material
+ 0 Board
+   ItemBoardMetallic
+Converter ▸ Combine Color
+Map Range ▸ Value
+Transparent BSDF ▸ Color
+Principled BSDF ▸ Alpha
+   ItemBoardDiffuse.001
+   ItemBoardDiffuse
+Gamma ▸ Color
+Board
+Frame
+Texture ▸ Image Texture
+   Board
+   Frame

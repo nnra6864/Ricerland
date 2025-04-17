@@ -79,11 +79,6 @@
           "isShowStripeButton": false
         },
         {
-          "id": "Unit Tests",
-          "anchor": "BOTTOM",
-          "isShowStripeButton": false
-        },
-        {
           "id": "File Transfer",
           "anchor": "BOTTOM",
           "isShowStripeButton": false
@@ -138,10 +133,15 @@
           "weight": 0.22563559
         },
         {
+          "id": "Unit Tests",
+          "order": 7,
+          "anchor": "BOTTOM",
+          "weight": 0.2213983
+        },
+        {
           "id": "Run",
           "order": 7,
           "anchor": "BOTTOM",
-          "isVisible": true,
           "weight": 0.2213983
         },
         {
@@ -220,7 +220,7 @@
           "isActiveOnStart": true,
           "isVisible": true,
           "weight": 0.14805731,
-          "sideWeight": 0.42974806
+          "sideWeight": 0.43011153
         },
         {
           "id": "Codeium Chat",
@@ -281,9 +281,8 @@
           "id": "TODO",
           "order": 13,
           "anchor": "RIGHT",
-          "isVisible": true,
           "weight": 0.14805731,
-          "sideWeight": 0.57025194,
+          "sideWeight": 0.5698885,
           "isSplit": true
         }
       ],

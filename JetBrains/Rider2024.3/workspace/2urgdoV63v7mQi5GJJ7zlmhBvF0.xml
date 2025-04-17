@@ -7,52 +7,22 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="3fzpokraqv4e2" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="31ccgxjbvcvqt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+            <state relative-caret-position="720">
+              <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"ClipStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="585">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"CinemachineTrackStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="900">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"CinemachineClipStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"TrackStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+            <state relative-caret-position="315">
+              <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
               <folding>
                 <marker date="1744009574983" expanded="true" signature="4497:6918" ph="Track" />
                 <marker date="1744009574983" expanded="true" signature="6922:8355" ph="Clip" />
@@ -62,13 +32,23 @@
         </entry>
         <tab><![CDATA[{"tabTitle":"TimelineMaker.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="585">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"AudioClipStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 258,
-      "lastUsed": 1744015876036
+      "usageCount": 265,
+      "lastUsed": 1744563136702
     },
     "ShaderLab": {
       "usageCount": 2,
@@ -89,49 +69,49 @@
   }
 }]]></component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Skycraft/_Client/AdvanceTillFalse.cs",
-    "/home/nnra/Data/Projects/Unity/td/Packages/com.jbooth.microverse/Scripts/Stamps/CopyPasteStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/LinesDB.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/TrackReferenceType.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackReferenceType.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/StampPropertyAttribute.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMaker.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMakerEditorView.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/AudioClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/AudioTrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/ActivationTrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Optional.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ActivationClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/UnityEngine/Timeline/TrackAsset.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/TrackReferenceType.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackReferenceType.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Optional.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/Clip/ClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/Scripts/TimelineMaker/TimelineMaker.asmdef",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/TimelineMaker.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/TrackStamp/TrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/ClipStamp/ClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/UnityEngine/Timeline/TrackAsset.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Optional.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyActivationTrack.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyAnimationTrack.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Timeline/TrackManager.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/ActivationTrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/AudioTrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs",
-    "/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Skycraft/_Client/AdvanceTillFalse.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Packages/com.jbooth.microverse/Scripts/Stamps/CopyPasteStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/LinesDB.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/TrackReferenceType.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackReferenceType.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/StampPropertyAttribute.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMaker.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/TimelineMakerEditorView.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/AudioClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/AudioTrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/ActivationTrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Track/TrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Optional.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker/Clip/ActivationClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/UnityEngine/Timeline/TrackAsset.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/TrackReferenceType.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackReferenceType.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Optional.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/Clip/ClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/Scripts/TimelineMaker/TimelineMaker.asmdef&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/TimelineMaker.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/TrackStamp/TrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/ClipStamp/ClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TM/UnityEngine/Timeline/TrackAsset.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/TrackAssetExt.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Optional.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyActivationTrack.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Dialog/Timeline Extensions/MyAnimationTrack.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ActivationClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/Timeline/TrackManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/ActivationTrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/AudioTrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/TrackStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -141,7 +121,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="258" lastUsage="1744015876036" />
+      <summary usageCount="265" lastUsage="1744563136702" />
     </language>
     <language id="JSON">
       <summary usageCount="3" lastUsage="1743218608694" />
@@ -205,8 +185,8 @@
               <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="Tools" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="TimelineMaker" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Track" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="CinemachineTrackStamp.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Clip" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="AudioClipStamp.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -374,7 +354,7 @@
         </entry>
         <entry key="Run">
           <value>
-            <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+            <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Services">
@@ -419,7 +399,7 @@
         </entry>
         <entry key="Unit Tests">
           <value>
-            <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+            <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Unity">
@@ -461,7 +441,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60899000" />
+    <option name="totallyTimeSpent" value="61329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -485,7 +465,6 @@
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
       <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
@@ -495,7 +474,8 @@
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.33015537" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.2213983" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
@@ -518,6 +498,9 @@
       <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" visible="true" weight="0.14805731" />
       <unified_weights bottom="0.2213983" left="0.20888934" right="0.14805731" />
     </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state width="5014" height="282" key="GridCell.Tab.0.bottom" timestamp="1743483516787">
@@ -748,9 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Optional.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -843,28 +823,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/CinemachineClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
+        <state>
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="164" column="25" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-          <folding>
-            <marker date="1744009574983" expanded="true" signature="4497:6918" ph="Track" />
-            <marker date="1744009574983" expanded="true" signature="6922:8355" ph="Clip" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,10 +844,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Track/CinemachineTrackStamp.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="171" column="36" lean-forward="true" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+          <folding>
+            <marker date="1744009574983" expanded="true" signature="4497:6918" ph="Track" />
+            <marker date="1744009574983" expanded="true" signature="6922:8355" ph="Clip" />
+          </folding>
         </state>
       </provider>
     </entry>
