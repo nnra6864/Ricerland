@@ -31,6 +31,6 @@ Principled BSDF ▸ Alpha
 Gamma ▸ Color
 Board
 Frame
-Texture ▸ Image Texture
    Board
    Frame
+Texture ▸ Image Texture

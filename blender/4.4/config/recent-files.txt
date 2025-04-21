@@ -1,2 +1,3 @@
+/home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/Cannon.blend
 /home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/ItemBoard.blend
 /home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/SettingsBoard.blend
