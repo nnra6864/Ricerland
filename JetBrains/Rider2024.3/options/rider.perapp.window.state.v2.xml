@@ -219,7 +219,7 @@
           "anchor": "RIGHT",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.14805731,
+          "weight": 0.22772762,
           "sideWeight": 0.43011153
         },
         {
@@ -290,7 +290,7 @@
         "top": 0.33,
         "left": 0.20888934,
         "bottom": 0.2213983,
-        "right": 0.14805731
+        "right": 0.22772762
       }
     }
   }

@@ -10,7 +10,7 @@
     <property name="pluginId">com.arcticicestudio.nord.jetbrains</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
-  <option name="EDITOR_FONT_SIZE" value="36" />
+  <option name="EDITOR_FONT_SIZE" value="44" />
   <option name="EDITOR_FONT_NAME" value="Courier Prime Code" />
   <option name="EDITOR_LIGATURES" value="true" />
 </scheme>

@@ -9,91 +9,240 @@
   <component name="FileEditorManager">
     <leaf ideFingerprint="31ccgxjbvcvqt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"PlaySceneManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="526">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"PlayerMovementScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="315">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"SettingsManager.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="675">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-              <folding>
-                <marker date="1744717434795" expanded="true" signature="6:178" ph="..." />
-              </folding>
+            <state relative-caret-position="4510">
+              <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SettingsMenu.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"Raymarch.hlsl","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,107,10,35,114,101,115,104,97,114,112,101,114,47,80,115,105,83,121,109,98,111,108,115,47,83,104,97,100,101,114,72,108,115,108,46,115,118,103,18,41,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,83,121,109,98,111,108,115,47,83,104,97,100,101,114,72,108,115,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-40,-106,-128,-74,-4,-1,-1,-1,-1,1,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 127,
-      "lastUsed": 1744724938526
+      "usageCount": 138,
+      "lastUsed": 1745295148813
     },
     "ShaderLab": {
-      "usageCount": 5,
-      "lastUsed": 1744728350823
+      "usageCount": 9,
+      "lastUsed": 1745295286221
     },
     "Markdown": {
       "usageCount": 2,
       "lastUsed": 1744642086442
     },
     "HLSL": {
-      "usageCount": 2,
-      "lastUsed": 1744731419512
+      "usageCount": 4,
+      "lastUsed": 1745285422733
     }
   }
 }]]></component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Voume</find>
+      <find>// Improved hash for smooth 3D value noise
+float Hash(float3 p)
+{
+	p = frac(p * 0.3183099 + float3(0.71, 0.113, 0.419));
+	p *= 17.0;
+	return frac(p.x * p.y * p.z * (p.x + p.y + p.z));
+}
+
+float Noise3D(float3 p)
+{
+	float3 i = floor(p);
+	float3 f = frac(p);
+
+	float3 u = f * f * (3.0 - 2.0 * f); // smoothstep interpolation
+
+	float n000 = Hash(i + float3(0, 0, 0));
+	float n100 = Hash(i + float3(1, 0, 0));
+	float n010 = Hash(i + float3(0, 1, 0));
+	float n110 = Hash(i + float3(1, 1, 0));
+	float n001 = Hash(i + float3(0, 0, 1));
+	float n101 = Hash(i + float3(1, 0, 1));
+	float n011 = Hash(i + float3(0, 1, 1));
+	float n111 = Hash(i + float3(1, 1, 1));
+
+	float nx00 = lerp(n000, n100, u.x);
+	float nx10 = lerp(n010, n110, u.x);
+	float nx01 = lerp(n001, n101, u.x);
+	float nx11 = lerp(n011, n111, u.x);
+
+	float nxy0 = lerp(nx00, nx10, u.y);
+	float nxy1 = lerp(nx01, nx11, u.y);
+
+	return lerp(nxy0, nxy1, u.z);
+}
+
+// Final raymarching function with noise controls
+void Raymarch_float(
+	float3 RayOrigin,
+	float3 RayDirection,
+	float NumSteps,
+	float StepSize,
+	float DensityScale,
+	float4 Sphere,
+	float NoiseScale,
+	float3 NoiseOffset,
+	float2 NoiseRemap,
+	float NoisePower,
+	out float Result
+)
+{
+	float density = 0;
+
+	for (int i = 0; i &lt; (int)NumSteps; i++)
+	{
+		RayOrigin += RayDirection * StepSize;
+
+		float sphereDist = distance(RayOrigin, Sphere.xyz);
+
+		if (sphereDist &lt; Sphere.w)
+		{
+			float3 samplePos = RayOrigin * NoiseScale + NoiseOffset;
+			float noise = Noise3D(samplePos);
+
+			// Remap noise from [0,1] → [min,max]
+			noise = lerp(NoiseRemap.x, NoiseRemap.y, noise);
+
+			// Optional shaping of density
+			noise = pow(noise, NoisePower);
+
+			density += noise * 0.1;
+		}
+	}
+
+	Result = density * DensityScale;
+}
+// Improved hash for smooth 3D value noise
+float Hash(float3 p)
+{
+    p = frac(p * 0.3183099 + float3(0.71, 0.113, 0.419));
+    p *= 17.0;
+    return frac(p.x * p.y * p.z * (p.x + p.y + p.z));
+}
+
+float Noise3D(float3 p)
+{
+    float3 i = floor(p);
+    float3 f = frac(p);
+
+    float3 u = f * f * (3.0 - 2.0 * f); // smoothstep interpolation
+
+    float n000 = Hash(i + float3(0, 0, 0));
+    float n100 = Hash(i + float3(1, 0, 0));
+    float n010 = Hash(i + float3(0, 1, 0));
+    float n110 = Hash(i + float3(1, 1, 0));
+    float n001 = Hash(i + float3(0, 0, 1));
+    float n101 = Hash(i + float3(1, 0, 1));
+    float n011 = Hash(i + float3(0, 1, 1));
+    float n111 = Hash(i + float3(1, 1, 1));
+
+    float nx00 = lerp(n000, n100, u.x);
+    float nx10 = lerp(n010, n110, u.x);
+    float nx01 = lerp(n001, n101, u.x);
+    float nx11 = lerp(n011, n111, u.x);
+
+    float nxy0 = lerp(nx00, nx10, u.y);
+    float nxy1 = lerp(nx01, nx11, u.y);
+
+    return lerp(nxy0, nxy1, u.z);
+}
+
+// Domain warping function to help reduce visual cutoffs
+float3 DomainWarp(float3 p, float3 offset)
+{
+    // Sample the noise at a different frequency and use it to warp the domain
+    float3 warpPos = p * 0.5 + offset;
+    float warp = Noise3D(warpPos) * 2.0 - 1.0;
+    return p + warp * 0.15; // Subtle warping to avoid hard cutoffs
+}
+
+// Final raymarching function with opposite noise movement
+void Raymarch_float(
+    float3 RayOrigin,
+    float3 RayDirection,
+    float NumSteps,
+    float StepSize,
+    float DensityScale,
+    float4 Sphere,
+    float NoiseScale,
+    float3 NoiseOffset,
+    float2 NoiseRemap,
+    float NoisePower,
+    out float Result
+)
+{
+    float density = 0;
+    float stepWeight = 1.0 / max(1.0, NumSteps * 0.5); // Weight for each step, adjusted for performance
+    
+    for (int i = 0; i &lt; (int)NumSteps; i++)
+    {
+        RayOrigin += RayDirection * StepSize;
+
+        float sphereDist = distance(RayOrigin, Sphere.xyz);
+
+        if (sphereDist &lt; Sphere.w)
+        {
+            // Direction 1: Original noise
+            float3 samplePos1 = DomainWarp(RayOrigin * NoiseScale, NoiseOffset);
+            float noise1 = Noise3D(samplePos1);
+            
+            // Direction 2: Opposite direction noise - invert the offset
+            float3 samplePos2 = DomainWarp(RayOrigin * NoiseScale, -NoiseOffset);
+            float noise2 = Noise3D(samplePos2);
+            
+            // Blend the two noise patterns - using a seamless blend
+            float blendFactor = sin(_Time.y * 0.2) * 0.5 + 0.5; // Subtle time-based blending
+            float noise = lerp(noise1, noise2, blendFactor);
+            
+            // Add a second octave to reduce visible tiling artifacts
+            float3 detailPos = DomainWarp(RayOrigin * NoiseScale * 2.5, NoiseOffset * 1.7);
+            float detailNoise = Noise3D(detailPos) * 0.4;
+            noise = saturate(noise + detailNoise);
+            
+            // Remap noise from [0,1] → [min,max]
+            noise = lerp(NoiseRemap.x, NoiseRemap.y, noise);
+
+            // Optional shaping of density with smoothing to reduce cutoffs
+            noise = pow(noise, NoisePower);
+            
+            // Apply falloff near sphere edge to reduce cutoff artifacts
+            float edgeFade = 1.0 - smoothstep(Sphere.w * 0.8, Sphere.w, sphereDist);
+            noise *= edgeFade;
+            
+            density += noise * stepWeight;
+        }
+    }
+
+    Result = density * DensityScale;
+}</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>Volume</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Assets/NnUtils/Shaders</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isCustomScope" value="true" />
+    <option name="customScopeName" value="Solution" />
   </component>
   <component name="IdeDocumentHistory"><![CDATA[{
   "changedPaths": [
@@ -123,7 +272,17 @@
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs"
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Misc.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.compute",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.hlsl",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -135,16 +294,16 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="127" lastUsage="1744724938526" />
+      <summary usageCount="138" lastUsage="1745295148813" />
     </language>
     <language id="C++">
-      <summary usageCount="2" lastUsage="1744731419512" />
+      <summary usageCount="4" lastUsage="1745285422733" />
     </language>
     <language id="Markdown">
       <summary usageCount="2" lastUsage="1744642086442" />
     </language>
     <language id="ShaderLab">
-      <summary usageCount="5" lastUsage="1744728350823" />
+      <summary usageCount="9" lastUsage="1745295286221" />
     </language>
   </component>
   <component name="ProjectView">
@@ -156,6 +315,17 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Shaders" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -194,12 +364,7 @@
               <item name="Shop" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
-          <select>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-            </path>
-          </select>
+          <select />
         </subPane>
         <option name="show-project-names" value="true" />
         <option name="show-tilde-folders" value="true" />
@@ -364,7 +529,7 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14805731" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.22772762" />
           </value>
         </entry>
         <entry key="Project">
@@ -461,7 +626,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106752000" />
+    <option name="totallyTimeSpent" value="131683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -506,7 +671,7 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14805731" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.22772762" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -515,8 +680,11 @@
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14805731" />
-      <unified_weights bottom="0.2213983" left="0.20888934" right="0.14805731" />
+      <unified_weights bottom="0.2213983" left="0.20888934" right="0.22772762" />
     </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="2219" y="372" key="RiderGenerateDialog" timestamp="1739891879462">
@@ -527,6 +695,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="800" height="338" key="ShowBookmarks/0.0.5120.1440@0.0.5120.1440" timestamp="1744593207984" />
+    <state x="2071" y="147" width="1158" height="1098" key="find.popup" timestamp="1745288334146">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2071" y="147" width="1158" height="1098" key="find.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745288334146" />
     <state x="2140" y="338" key="run.anything.popup" timestamp="1739891071920">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -623,53 +795,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7965" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.compute">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="164" column="25" lean-forward="true" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/VolumetricFogShader.shader">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.shader" />
+    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.compute" />
+    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/VolumetricFogShader.shader" />
     <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4095">
@@ -677,10 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/PlaySceneManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state>
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -691,6 +821,92 @@
           <folding>
             <marker date="1744717434795" expanded="true" signature="6:178" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <marker date="1744716719321" expanded="true" signature="6:136" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding>
+            <marker date="1745272662209" expanded="true" signature="6:101" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="145" column="8" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.compute">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.shader">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4510">
+          <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
         </state>
       </provider>
     </entry>
