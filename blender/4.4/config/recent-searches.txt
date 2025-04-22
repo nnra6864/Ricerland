@@ -34,3 +34,4 @@ Frame
    Board
    Frame
 Texture ▸ Image Texture
+Generate ▸ Subdivision Surface
