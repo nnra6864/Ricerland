@@ -7,34 +7,57 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="31ccgxjbvcvqt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="1je605bwm0z56" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="526">
-              <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+            <state>
+              <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"PlayerMovementScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/ShaderOccluder.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="4510">
-              <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
+            <state relative-caret-position="545">
+              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"Raymarch.hlsl","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,107,10,35,114,101,115,104,97,114,112,101,114,47,80,115,105,83,121,109,98,111,108,115,47,83,104,97,100,101,114,72,108,115,108,46,115,118,103,18,41,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,83,121,109,98,111,108,115,47,83,104,97,100,101,114,72,108,115,108,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-40,-106,-128,-74,-4,-1,-1,-1,-1,1,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"ShaderOccluder.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/ScreenshotGameView.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="770">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ScreenshotGameView.cs","foregroundColor":-4234902,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.dgreenheck.openfracture/Runtime/Scripts/Slicers/PlaneSlicer.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PlaneSlicer.cs","foregroundColor":-11774358,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 138,
-      "lastUsed": 1745295148813
+      "usageCount": 154,
+      "lastUsed": 1745448621244
     },
     "ShaderLab": {
       "usageCount": 9,
@@ -45,8 +68,8 @@
       "lastUsed": 1744642086442
     },
     "HLSL": {
-      "usageCount": 4,
-      "lastUsed": 1745285422733
+      "usageCount": 5,
+      "lastUsed": 1745345066586
     }
   }
 }]]></component>
@@ -275,14 +298,16 @@ void Raymarch_float(
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Misc.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.shader",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.compute",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.hlsl",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader"
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/ShaderOccluder.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/ScreenshotGameView.cs"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -294,10 +319,10 @@ void Raymarch_float(
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="138" lastUsage="1745295148813" />
+      <summary usageCount="154" lastUsage="1745448621244" />
     </language>
     <language id="C++">
-      <summary usageCount="4" lastUsage="1745285422733" />
+      <summary usageCount="5" lastUsage="1745345066588" />
     </language>
     <language id="Markdown">
       <summary usageCount="2" lastUsage="1744642086442" />
@@ -320,6 +345,12 @@ void Raymarch_float(
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -364,7 +395,15 @@ void Raymarch_float(
               <item name="Shop" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
-          <select />
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="ScreenshotGameView.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </select>
         </subPane>
         <option name="show-project-names" value="true" />
         <option name="show-tilde-folders" value="true" />
@@ -529,12 +568,12 @@ void Raymarch_float(
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.22772762" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14413264" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.20888934" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -564,7 +603,7 @@ void Raymarch_float(
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14805731" />
+            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14413264" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -626,7 +665,7 @@ void Raymarch_float(
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131683000" />
+    <option name="totallyTimeSpent" value="144512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -641,7 +680,7 @@ void Raymarch_float(
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.20888934" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -671,7 +710,7 @@ void Raymarch_float(
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.22772762" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14413264" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -679,8 +718,8 @@ void Raymarch_float(
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14805731" />
-      <unified_weights bottom="0.2213983" left="0.20888934" right="0.22772762" />
+      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" weight="0.14413264" />
+      <unified_weights bottom="0.2213983" left="0.15453297" right="0.14413264" />
     </layoutV2>
     <recentWindows>
       <value>Project</value>
@@ -858,55 +897,47 @@ void Raymarch_float(
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.compute">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.compute" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+        <state relative-caret-position="398">
+          <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.shader">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/ShaderOccluder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.dgreenheck.openfracture/Runtime/Scripts/Slicers/PlaneSlicer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        <state>
+          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/ScreenshotGameView.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4510">
-          <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
+        <state relative-caret-position="770">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
         </state>
       </provider>
     </entry>

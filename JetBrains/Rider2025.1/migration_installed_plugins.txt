@@ -1,0 +1,2 @@
+avalonia-rider
+com.jetbrains.space

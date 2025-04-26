@@ -160,7 +160,8 @@
             "hyperLinkText": "{{NAME}}",
             "useHyperLinks": true,
             "disableEmbedPermissionCheck": false,
-            "stickerSize": 160
+            "stickerSize": 160,
+            "useEmojiHyperLinks": true
         },
         "FakeProfileThemes": {
             "enabled": true,
@@ -1402,6 +1403,12 @@
         },
         "EquicordHelper": {
             "enabled": true
+        },
+        "CopyStickerLinks": {
+            "enabled": false
+        },
+        "NoOnboarding": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1414,7 +1421,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1744934499512
+        "settingsSyncVersion": 1745675944161
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
