@@ -1409,6 +1409,9 @@
         },
         "NoOnboarding": {
             "enabled": false
+        },
+        "ToastNotifications": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1421,7 +1424,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1745675944161
+        "settingsSyncVersion": 1745954899508
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

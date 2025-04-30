@@ -6,25 +6,73 @@
       </GroupState>
     </option>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="LOCAL" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+      </path>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="REMOTE" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+      </path>
+      <path>
+        <item name="ROOT" type="4b1c433e:BranchNodeDescriptor$Root" />
+        <item name="REMOTE" type="7ab31ef7:BranchNodeDescriptor$TopLevelGroup" />
+        <item name="REMOTE:origin" type="9a375a70:BranchNodeDescriptor$RemoteGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="32mfl36b0kn7" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSceneManager.cs">
+    <leaf ideFingerprint="1x1hq6slmcqwd" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="605">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="680">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ColosseumSceneManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"CannonScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeDrawer.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ArtificeDrawer.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ValidateInputAttribute.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="605">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 229,
-      "lastUsed": 1745694351237
+      "usageCount": 319,
+      "lastUsed": 1746002670469
     },
     "ShaderLab": {
       "usageCount": 9,
@@ -41,6 +89,14 @@
     "WebPreview": {
       "usageCount": 1,
       "lastUsed": 1745538126427
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 3,
+      "lastUsed": 1745827450740
+    },
+    "EditorConfig": {
+      "usageCount": 1,
+      "lastUsed": 1745938962416
     }
   }
 }]]></component>
@@ -239,62 +295,75 @@ void Raymarch_float(
     <option name="isCustomScope" value="true" />
     <option name="customScopeName" value="Solution" />
   </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="98a275ee:GitBranchType$RECENT" />
+      </path>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="6e158aa5:GitBranchType$LOCAL" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/TextureCreator.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/ChannelPacker/Editor/ChannelPackerPreset.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/TextureRemapper.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/TextureRemapper/TextureRemapper.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperContextMenu.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/ChannelMapping.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureMapping.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperWindow.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/TextureRemapper.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/README.md&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/FogShader.compute&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/VolumetricFogShader.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Misc.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.compute&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.hlsl&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/ShaderOccluder.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/ScreenshotGameView.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/IHittable.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ISliceable.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraHandlerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/DynamicDOF.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/Perspective.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/DecalFade.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ScoreScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/FruitScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Items/Item.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Items/ItemManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/TimeScale/TimeScaleManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.hlsl",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/ShaderOccluder.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/ScreenshotGameView.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/IHittable.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ISliceable.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerMovementScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/KatanaMovement/PlayerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/PlayerCamera/CameraHandlerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/Perspective.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/DecalFade.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Items/Item.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Items/ItemManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/TimeScale/TimeScaleManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/PlaySceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/EditorShortcuts.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/MultiObjectRename.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/NnScriptTemplate.txt",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/ChannelMapping.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureMapping.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapper.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Editor/SceneSwitcher.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/DynamicDOF.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/GameManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ScoreScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/SettingsManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/BombScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/FruitScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/PlayerScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.abzorba.artificetoolkit/Runtime/CustomAttributes/RequiredAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarElements/ToolbarFPSSlider.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarExtender.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/.editorconfig",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/ValidateInputAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/ArtificeDrawer.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -304,16 +373,22 @@ void Raymarch_float(
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="229" lastUsage="1745694351239" />
+      <summary usageCount="319" lastUsage="1746002670469" />
     </language>
     <language id="C++">
       <summary usageCount="5" lastUsage="1745345066588" />
+    </language>
+    <language id="EditorConfig">
+      <summary usageCount="1" lastUsage="1745938962416" />
     </language>
     <language id="Markdown">
       <summary usageCount="2" lastUsage="1744642086442" />
     </language>
     <language id="ShaderLab">
       <summary usageCount="9" lastUsage="1745295286221" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="3" lastUsage="1745827450740" />
     </language>
   </component>
   <component name="ProjectView">
@@ -329,59 +404,34 @@ void Raymarch_float(
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="NnUtils" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Artifice_CustomAttributeDrawers" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Shop" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Camera" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="TimeScale" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Artifice_CustomAttributeDrawers" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="CustomAttributeDrawer_Validators" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="ColosseumSceneManager.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -548,12 +598,12 @@ void Raymarch_float(
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.25363028" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.009948321" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.1370683" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -623,7 +673,7 @@ void Raymarch_float(
         </entry>
         <entry key="Version Control">
           <value>
-            <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+            <window_info anchor="bottom" id="Version Control" order="0" weight="0.13665254" />
           </value>
         </entry>
         <entry key="documentation.v2">
@@ -645,7 +695,7 @@ void Raymarch_float(
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210982000" />
+    <option name="totallyTimeSpent" value="263515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -660,7 +710,7 @@ void Raymarch_float(
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.1370683" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="4" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -670,7 +720,7 @@ void Raymarch_float(
       <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.13665254" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
       <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
@@ -690,7 +740,7 @@ void Raymarch_float(
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.25363028" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.009948321" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -699,27 +749,45 @@ void Raymarch_float(
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.5698885" side_tool="true" weight="0.14413264" />
-      <unified_weights bottom="0.16701978" left="0.15453297" right="0.25363028" />
+      <unified_weights bottom="0.13665254" left="0.1370683" right="0.009948321" />
     </layoutV2>
     <recentWindows>
-      <value>Project</value>
       <value>Problems View</value>
-      <value>Notifications</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2122" y="282" key="#Inspection_Severity" timestamp="1745939073934">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2122" y="282" key="#Inspection_Severity/0.0.5120.1440@0.0.5120.1440" timestamp="1745939073934" />
     <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1745694326635">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1745694326635" />
-    <state x="2219" y="372" key="RiderGenerateDialog" timestamp="1739891879462">
+    <state x="2295" y="436" key="FileChooserDialogImpl" timestamp="1745938962321">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2219" y="372" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1739891879462" />
+    <state x="2295" y="436" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1745938962321" />
+    <state x="2072" y="440" key="MultipleFileMergeDialog" timestamp="1745830058263">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2072" y="440" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1745830058263" />
+    <state x="2219" y="372" key="RiderGenerateDialog" timestamp="1745838748153">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2219" y="372" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1745838748153" />
+    <state x="1130" y="61" width="2533" height="1338" key="SettingsEditor" timestamp="1745938876677">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="1130" y="61" width="2533" height="1338" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1745938876677" />
     <state width="800" height="338" key="ShowBookmarks" timestamp="1744593207984">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="800" height="338" key="ShowBookmarks/0.0.5120.1440@0.0.5120.1440" timestamp="1744593207984" />
+    <state width="996" height="668" key="SwitcherDM" timestamp="1746009759255">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="996" height="668" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1746009759255" />
     <state x="2071" y="147" width="1158" height="1098" key="find.popup" timestamp="1745288334146">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -728,321 +796,260 @@ void Raymarch_float(
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745660769685" />
-    <state x="2139" y="321" width="968" height="1057" key="search.everywhere.popup" timestamp="1745647633928">
+    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup" timestamp="1745947845529">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="968" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745647633928" />
+    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745947845529" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/TextureRemapperContextMenu.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/README.md" />
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.shader" />
-    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-CustomFunction-7dfe589a830147c3a1d79d4b9b473826.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/FogShader.compute" />
-    <entry file="file://$PROJECT_DIR$/Temp/GeneratedFromGraph-FogShader-RM(CustomFunction)-7dfe589a830147c3a1d79d4b9b473826.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/VolumetricFogShader.shader" />
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.jimmycushnie.noisynodes/NoiseShader/HLSL/ClassicNoise3D.hlsl">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4095">
-          <caret line="179" column="15" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="16" />
+        <state relative-caret-position="-10100">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.compute" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Shaders/Raymarch.hlsl">
+    <entry file="file://$PROJECT_DIR$/Assets/NnScript" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/ARMtoMAS.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/InvertColor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/MultiObjectRename.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/ScreenshotGameView.cs" />
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.dgreenheck.openfracture/Runtime/Scripts/Slicers/PlaneSlicer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Materials/Fog/ShaderOccluder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DeathScreen.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-365">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
-            <marker date="1738936849788" expanded="true" signature="6:53" ph="..." />
+            <marker date="1745827431644" expanded="true" signature="6:37" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DecalFade.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/ReadOnlyDrawer.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/NewScriptTemplate.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <marker date="1745654416716" expanded="true" signature="6:106" ph="..." />
-          </folding>
+        <state relative-caret-position="55">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DynamicDOF.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1705">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="110">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ISliceable.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureMapping.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="110">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/ChannelMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/SceneSwitcher.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ScoreScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        <state relative-caret-position="605">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ScoreScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/DynamicDOF.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1745654811310" expanded="true" signature="6:105" ph="..." />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSceneManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="495">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
-            <marker date="1745659179070" expanded="true" signature="3393:4000" ph="Perspective" />
+            <marker date="1745857654656" expanded="false" signature="6:137" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/BombScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de80aed0bd3646409e8bfb15c101f005e2000/b9/f4097eec/Attribute.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2180">
-          <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+        <state relative-caret-position="-4820">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Runtime/CustomAttributes/CustomAttribute.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2365">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        <state relative-caret-position="110">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/FruitScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/Item.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <marker date="1745663257543" expanded="true" signature="6:32" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/ItemManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <marker date="1745663300510" expanded="true" signature="6:85" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding>
-            <marker date="1745663960076" expanded="true" signature="6:92" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="55">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <marker date="1745664245282" expanded="true" signature="6:221" ph="..." />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/Perspective.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="55">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuButton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12575">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeScale/TimeScaleKey.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1738936849789" expanded="true" signature="6:36" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeScale/TimeScaleKeys.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <marker date="1738936849789" expanded="true" signature="6:47" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeScale/TimeScaleManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <marker date="1745664617670" expanded="true" signature="6:67" ph="..." />
-          </folding>
+        <state relative-caret-position="55">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="55">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding>
-            <marker date="1745667964704" expanded="true" signature="6:127" ph="..." />
+            <marker date="1745857654658" expanded="true" signature="6:26" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework.performance/Runtime/Attributes/RequiredMemberAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Runtime/CustomAttributes/ValidatorAttribute.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Runtime/CustomAttributes/RequiredAttribute.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_RequiredAttribute.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Editor/Artifice_ArtificeListView/Artifice_VisualElement_AbstractListView.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_ListElementNameAttribute/Artifice_CustomAttributeDrawer_ListElementNameAttribute.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.abzorba.artificetoolkit/Runtime/CustomAttributes/ListElementNameAttribute.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/Setting/CustomToolbarSetting.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarElements/ToolbarFPSSlider.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarStyles.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/CustomToolbarInitializer.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarCallback.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar/Editor/CustomToolbar/Scripts/ToolbarExtender.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/EditorShortcuts.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state>
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_Utilities.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1497">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="350">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/ChannelMapping.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="org.editorconfig.configmanagement.editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureMapping.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeInspector.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/ColorUtils.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="679">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
-            <marker date="1739894219177" expanded="true" signature="6:46" ph="..." />
+            <marker date="1745942919624" expanded="true" signature="6:213" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/NashSet.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <marker date="1739894219177" expanded="true" signature="6:47" ph="..." />
-          </folding>
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeDrawer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state>
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSceneManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>

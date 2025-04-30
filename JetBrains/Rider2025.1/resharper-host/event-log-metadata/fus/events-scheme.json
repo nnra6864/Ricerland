@@ -121,6 +121,20 @@
       }
     }
   }, {
+    "id" : "ai.assistant.grazie.pro.state",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "3"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:settings.writing.style|settings.auto.fix|settings.processing}" ],
+      "event_data" : {
+        "enabled" : [ "{enum#boolean}" ],
+        "style" : [ "{enum:INFORMAL|UNSPECIFIED|PUBLIC|FORMAL|ACADEMIC|GOOGLEDEVELOPERDOCUMENTATION|MICROSOFT|JETBRAINSDOCUMENTATION}" ],
+        "type" : [ "{enum:LOCAL|CLOUD}" ]
+      }
+    }
+  }, {
     "id" : "ai.assistant.inline.prompt",
     "builds" : [ ],
     "versions" : [ {
@@ -6746,16 +6760,17 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "cell_kind" : [ "{enum:CODE|MARKDOWN|SQL}" ],
         "cell_ordinal" : [ "{regexp#integer}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
-        "interaction_kind" : [ "{enum:NEW|EDIT|FIX|EXPLAIN_ABOVE}" ],
+        "interaction_kind" : [ "{enum:NEW|EDIT|FIX|EXPLAIN_ABOVE}", "{enum:ORIGINAL_UPDATED}" ],
         "popup_element_number" : [ "{regexp#integer}" ],
         "score" : [ "{enum:YES|NO}" ],
         "state" : [ "{enum:SUCCEED|ERROR|CANCEL|NOT_AUTHENTICATED}" ]
       },
       "enums" : {
-        "__event_id" : [ "autopilot.generation.accept", "autopilot.generation.accept.and.run", "autopilot.generation.start", "autopilot.score", "autopilot.select.suggestion", "autopilot.ask.suggestions", "autopilot.generation.regenerate", "autopilot.generation.stop", "autopilot.specify.user.prompt", "autopilot.started", "autopilot.initial.user.prompt", "autopilot.finished" ]
+        "__event_id" : [ "autopilot.generation.accept", "autopilot.generation.accept.and.run", "autopilot.generation.start", "autopilot.score", "autopilot.select.suggestion", "autopilot.ask.suggestions", "autopilot.generation.regenerate", "autopilot.generation.stop", "autopilot.specify.user.prompt", "autopilot.started", "autopilot.initial.user.prompt", "autopilot.finished", "autopilot.generation.run.generated.cells", "autopilot.original.updated.stop", "autopilot.fix.cell.accept.all", "autopilot.edit.cell.accept.all", "autopilot.original.updated.cancel", "autopilot.many.cells.generation.stop", "autopilot.edit.cell.cancel", "autopilot.edit.cell.run", "autopilot.fix.cell.discard.all", "autopilot.original.updated.finish", "autopilot.many.cells.generation.run", "autopilot.many.cells.generation.discard.all", "autopilot.many.cells.generation.discard.change", "autopilot.original.updated.discard.all", "autopilot.edit.cell.finish", "autopilot.fix.cell.prompts.history.select", "autopilot.many.cells.generation.cancel", "autopilot.fix.cell.regenerate", "autopilot.many.cells.generation.specify", "autopilot.generation.interaction.finish", "autopilot.edit.cell.discard.change", "autopilot.many.cells.prompts.history.select", "autopilot.fix.cell.cancel", "autopilot.many.cells.generation.finish", "autopilot.edit.cell.specify", "autopilot.many.cells.generation.regenerate", "autopilot.edit.cell.regenerate", "autopilot.original.updated.run", "autopilot.original.updated.prompts.history.click", "autopilot.many.cells.prompts.history.click", "autopilot.original.updated.accept.all", "autopilot.fix.cell.specify", "autopilot.fix.cell.stop", "autopilot.fix.cell.run", "autopilot.edit.cell.prompts.history.select", "autopilot.edit.cell.stop", "autopilot.fix.cell.finish", "autopilot.fix.cell.prompts.history.click", "autopilot.original.updated.prompts.history.select", "autopilot.original.updated.specify", "autopilot.edit.cell.discard.all", "autopilot.edit.cell.prompts.history.click", "autopilot.many.cells.generation.accept.all", "autopilot.original.updated.discard.change", "autopilot.fix.cell.discard.change" ]
       }
     }
   }, {
@@ -8661,6 +8676,37 @@
       "event_data" : {
         "rainbowOnByDefault" : [ "{enum#boolean}" ],
         "rainbowOnLanguageIDs" : [ "{util#lang}" ]
+      }
+    }
+  }, {
+    "id" : "rdct.editor.synchronization.events",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "action_id" : [ "{enum:git4idea.rebase.abort|git4idea.rebase.continue|git4idea.rebase.retry|git4idea.rebase.resolve|git4idea.rebase.stage.and.retry|git.gpg.agent.configuration.success.manual.action|git.gpg.agent.configuration.propose.manual.action|git.gpg.agent.configuration.propose.suggestion.manual.action|git.gpg.agent.configuration.propose.configure.action|git.gpg.agent.configuration.propose.suggestion.configure.action}", "{util#action}" ],
+        "cancelled_requests" : [ "{regexp#integer}" ],
+        "column_change" : [ "{regexp#integer}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
+        "file_type" : [ "{util#file_type}" ],
+        "is_initial_change" : [ "{enum#boolean}" ],
+        "line_change" : [ "{regexp#integer}" ],
+        "offset_change" : [ "{regexp#integer}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "rebase_session_type" : [ "{enum:RESPONSE_HANDLING|BACKEND_CHANGE|RECOVERY|RETRY|OTHER}" ],
+        "recovery_reason" : [ "{util#class_name}" ],
+        "redone_requests" : [ "{regexp#integer}" ],
+        "request_type" : [ "{util#class_name}" ],
+        "response" : [ "{enum:SUCCESS|FAILURE|RETRY|UNKNOWN}" ],
+        "undone_requests" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "request.completed", "rebase", "recovery", "request.in.queue.duration", "too.many.request.completed", "primary.caret.moved", "conflict", "too.many.request.in.queue.duration" ]
       }
     }
   }, {
@@ -13545,5 +13591,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5716"
+  "version" : "5732"
 }

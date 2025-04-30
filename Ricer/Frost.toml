@@ -165,6 +165,7 @@ KDEColors = "~/.local/share/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
 MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
+Oomox16 = "~/.config/oomox/base16/templates/Ricer.yaml"
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"

@@ -36,7 +36,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.15453297,
+          "weight": 0.1370683,
           "sideWeight": 0.5394052
         },
         {
@@ -92,7 +92,7 @@
           "id": "Version Control",
           "order": 0,
           "anchor": "BOTTOM",
-          "weight": 0.22563559
+          "weight": 0.13665254
         },
         {
           "id": "Problems",
@@ -219,7 +219,7 @@
           "anchor": "RIGHT",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.25363028,
+          "weight": 0.009948321,
           "sideWeight": 0.43011153
         },
         {
@@ -288,9 +288,9 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.15453297,
-        "bottom": 0.16701978,
-        "right": 0.25363028
+        "left": 0.1370683,
+        "bottom": 0.13665254,
+        "right": 0.009948321
       }
     }
   }
