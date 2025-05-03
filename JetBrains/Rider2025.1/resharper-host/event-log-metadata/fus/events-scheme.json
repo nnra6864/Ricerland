@@ -288,6 +288,19 @@
       }
     }
   }, {
+    "id" : "bazel.project.statistics",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "0"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:count.targets|count.files}" ],
+      "event_data" : {
+        "count.files" : [ "{regexp#integer}" ],
+        "count_targets" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "bigdatatools.connections",
     "builds" : [ ],
     "versions" : [ {
@@ -6663,16 +6676,19 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "action_name" : [ "{enum:Offline mode Enable|Offline mode Disable|Set up models|Focused|Balanced|Creative|Enable for Project|Disable for Project|Disable Permanently|Settings|Install Junie}" ],
-        "current_plan" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}" ],
+        "button_name" : [ "{enum:Lets Go|Upgrade|Refresh}" ],
+        "current_plan" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}", "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
+        "new_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
         "notification_action" : [ "{enum:Close(x)|Upgrade now|Upgrade to Pro}" ],
         "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}" ],
         "plan_type" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
-        "plugin_version" : [ "{util#plugin_version}" ]
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "previous_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ]
       },
       "enums" : {
-        "__event_id" : [ "hub.notifications.type.trial.action.clicked", "hub.notifications.quota.shown", "hub.current.aia.plan.displayed", "hub.notifications.quota.action.clicked", "hub.notifications.type.trial.shown", "hub.notifications.type.pro.action.clicked", "hub.actions.clicked", "hub.notifications.type.pro.shown", "plan.changed" ]
+        "__event_id" : [ "hub.notifications.type.trial.action.clicked", "hub.notifications.quota.shown", "hub.current.aia.plan.displayed", "hub.notifications.quota.action.clicked", "hub.notifications.type.trial.shown", "hub.notifications.type.pro.action.clicked", "hub.actions.clicked", "hub.notifications.type.pro.shown", "plan.changed", "hub.icon.clicked", "button.clicked" ]
       }
     }
   }, {
@@ -11061,6 +11077,27 @@
       "event_id" : [ "{enum:shell.execute.command|shell.test.run.command|shell.test.command}" ]
     }
   }, {
+    "id" : "scala.sbt.state",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:sbt.project.settings}" ],
+      "event_data" : {
+        "enable_debug_sbt_shell" : [ "{enum#boolean}" ],
+        "prefer_scala2" : [ "{enum#boolean}" ],
+        "resolve_classifiers" : [ "{enum#boolean}" ],
+        "resolve_sbt_classifiers" : [ "{enum#boolean}" ],
+        "sbt_version" : [ "{regexp#version}" ],
+        "sbt_version_major" : [ "{regexp#version}" ],
+        "separate_prod_and_test_sources" : [ "{enum#boolean}" ],
+        "use_sbt_shell_for_build" : [ "{enum#boolean}" ],
+        "use_sbt_shell_for_import" : [ "{enum#boolean}" ],
+        "use_separate_compiler_output_paths" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "search.everywhere.filters",
     "builds" : [ ],
     "versions" : [ {
@@ -13591,5 +13628,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5732"
+  "version" : "5742"
 }

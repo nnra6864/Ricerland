@@ -29,17 +29,27 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="680">
-              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            <state relative-caret-position="550">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"CannonScript.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ValidationTest.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="808">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ValidationTest.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeDrawer.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
+            <state relative-caret-position="165">
               <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
             </state>
           </provider>
@@ -47,32 +57,32 @@
         <tab><![CDATA[{"tabTitle":"ArtificeDrawer.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"ValidateInputAttribute.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="605">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="55">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_Utilities.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1248">
+              <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Artifice_Utilities.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 319,
-      "lastUsed": 1746002670469
+      "usageCount": 342,
+      "lastUsed": 1746284021069
     },
     "ShaderLab": {
       "usageCount": 9,
@@ -311,9 +321,6 @@ void Raymarch_float(
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory"><![CDATA[{
   "changedPaths": [
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Raymarch.hlsl",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFog.shader",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/Fog/VolumetricFogRendererFeature.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFogRendererFeature.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Shaders/VolumetricFog/VolumetricFog.shader",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/Fog/ShaderOccluder.cs",
@@ -361,7 +368,10 @@ void Raymarch_float(
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/ArtificeDrawer.cs",
     "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
-    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs"
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_Utilities.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -373,7 +383,7 @@ void Raymarch_float(
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="319" lastUsage="1746002670469" />
+      <summary usageCount="342" lastUsage="1746284021069" />
     </language>
     <language id="C++">
       <summary usageCount="5" lastUsage="1745345066588" />
@@ -427,11 +437,27 @@ void Raymarch_float(
               <item name="Artifice_CustomAttributeDrawers" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="CustomAttributeDrawer_Validators" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Artifice_Validator" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="artificetoolkit" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Artifice_Validator" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Artifice_Validator.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -598,7 +624,7 @@ void Raymarch_float(
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.009948321" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14118916" />
           </value>
         </entry>
         <entry key="Project">
@@ -695,7 +721,7 @@ void Raymarch_float(
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263515000" />
+    <option name="totallyTimeSpent" value="283482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -740,7 +766,7 @@ void Raymarch_float(
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.009948321" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14118916" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
@@ -749,10 +775,10 @@ void Raymarch_float(
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.5698885" side_tool="true" weight="0.14413264" />
-      <unified_weights bottom="0.13665254" left="0.1370683" right="0.009948321" />
+      <unified_weights bottom="0.13665254" left="0.1370683" right="0.14118916" />
     </layoutV2>
     <recentWindows>
-      <value>Problems View</value>
+      <value>Project</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -772,14 +798,14 @@ void Raymarch_float(
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2072" y="440" key="MultipleFileMergeDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1745830058263" />
-    <state x="2219" y="372" key="RiderGenerateDialog" timestamp="1745838748153">
+    <state x="2219" y="372" width="550" height="796" key="RiderGenerateDialog" timestamp="1746264200362">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2219" y="372" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1745838748153" />
-    <state x="1130" y="61" width="2533" height="1338" key="SettingsEditor" timestamp="1745938876677">
+    <state x="2219" y="372" width="550" height="796" key="RiderGenerateDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1746264200362" />
+    <state x="1012" y="52" width="2826" height="1353" key="SettingsEditor" timestamp="1746283922119">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="1130" y="61" width="2533" height="1338" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1745938876677" />
+    <state x="1012" y="52" width="2826" height="1353" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1746283922119" />
     <state width="800" height="338" key="ShowBookmarks" timestamp="1744593207984">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
@@ -796,20 +822,12 @@ void Raymarch_float(
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745660769685" />
-    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup" timestamp="1745947845529">
+    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup" timestamp="1746284020996">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1745947845529" />
+    <state x="2139" y="321" width="970" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1746284020996" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10100">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnScript" />
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/ARMtoMAS.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/InvertColor.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/MultiObjectRename.cs">
@@ -1005,13 +1023,6 @@ void Raymarch_float(
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_Utilities.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="org.editorconfig.configmanagement.editor" />
     </entry>
@@ -1025,31 +1036,54 @@ void Raymarch_float(
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_Utilities.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="1248">
+          <caret line="249" column="9" selection-start-line="249" selection-start-column="9" selection-end-line="249" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeDrawer.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_Validator/Artifice_Validator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <marker date="1745937056710" expanded="true" signature="6:314" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        <state relative-caret-position="550">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="55">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/artificetoolkit/Editor/ArtificeDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ValidationTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
