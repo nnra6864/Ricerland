@@ -183,9 +183,8 @@ function ytdli
     # Makes the json human readable
     for file in **/*.info.json
         jq . "$file" > temp.json && mv temp.json "$file"
-    end    
+    end
 end
-
 
 # Turns a file into mp3
 function mp3
