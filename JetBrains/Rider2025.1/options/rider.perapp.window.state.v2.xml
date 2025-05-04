@@ -184,6 +184,7 @@
           "id": "AIAssistant",
           "order": 1,
           "anchor": "RIGHT",
+          "isVisible": true,
           "isShowStripeButton": false,
           "weight": 0.25029433
         },
@@ -220,7 +221,7 @@
           "isActiveOnStart": true,
           "isVisible": true,
           "weight": 0.14118916,
-          "sideWeight": 0.43011153
+          "sideWeight": 0.43000746
         },
         {
           "id": "Codeium Chat",
@@ -281,8 +282,9 @@
           "id": "TODO",
           "order": 14,
           "anchor": "RIGHT",
-          "weight": 0.14413264,
-          "sideWeight": 0.5698885,
+          "isVisible": true,
+          "weight": 0.14118916,
+          "sideWeight": 0.5695684,
           "isSplit": true
         }
       ],

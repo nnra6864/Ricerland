@@ -7,8 +7,8 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="1je605bwm0z56" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
+    <leaf ideFingerprint="1x1hq6slmcqwd" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
             <state>
@@ -19,20 +19,10 @@
         <tab><![CDATA[{"tabTitle":"ClipStamp.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="673">
-              <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"TimelineMaker.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Dialog/LinesDB.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="797">
-              <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-end-line="67" />
+            <state>
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -42,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
             <state>
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -53,8 +43,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 269,
-      "lastUsed": 1745448304757
+      "usageCount": 277,
+      "lastUsed": 1746318239140
     },
     "ShaderLab": {
       "usageCount": 2,
@@ -131,7 +121,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="269" lastUsage="1745448304757" />
+      <summary usageCount="277" lastUsage="1746318239140" />
     </language>
     <language id="C++">
       <summary usageCount="1" lastUsage="1745448290406" />
@@ -195,8 +185,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="_Import" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Dialog" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -219,12 +207,12 @@
       <map>
         <entry key="AIAssistant">
           <value>
-            <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+            <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" visible="true" weight="0.25029433" />
           </value>
         </entry>
         <entry key="Assembly Explorer">
           <value>
-            <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+            <window_info id="Assembly Explorer" order="4" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
           </value>
         </entry>
         <entry key="Bookmarks">
@@ -279,7 +267,7 @@
         </entry>
         <entry key="ErrorToolWindow">
           <value>
-            <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
+            <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
           </value>
         </entry>
         <entry key="File Transfer">
@@ -289,7 +277,7 @@
         </entry>
         <entry key="Find">
           <value>
-            <window_info anchor="bottom" id="Find" order="7" weight="0.2213983" />
+            <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.16701978" />
           </value>
         </entry>
         <entry key="Gradle">
@@ -299,7 +287,7 @@
         </entry>
         <entry key="Hierarchy">
           <value>
-            <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+            <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
           </value>
         </entry>
         <entry key="IL">
@@ -334,12 +322,12 @@
         </entry>
         <entry key="Notifications">
           <value>
-            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.25363028" />
           </value>
         </entry>
         <entry key="NuGet">
           <value>
-            <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
+            <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
           </value>
         </entry>
         <entry key="Problems">
@@ -349,12 +337,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14413264" />
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43000746" visible="true" weight="0.14118916" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.1370683" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -364,7 +352,7 @@
         </entry>
         <entry key="Run">
           <value>
-            <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
+            <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
           </value>
         </entry>
         <entry key="Services">
@@ -384,7 +372,7 @@
         </entry>
         <entry key="TODO">
           <value>
-            <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" visible="true" weight="0.14413264" />
+            <window_info anchor="right" id="TODO" order="14" sideWeight="0.5695684" side_tool="true" visible="true" weight="0.14118916" />
           </value>
         </entry>
         <entry key="Terminal">
@@ -424,7 +412,7 @@
         </entry>
         <entry key="Version Control">
           <value>
-            <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+            <window_info anchor="bottom" id="Version Control" order="0" weight="0.13665254" />
           </value>
         </entry>
         <entry key="documentation.v2">
@@ -451,7 +439,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61644000" />
+    <option name="totallyTimeSpent" value="62148000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -467,9 +455,9 @@
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
       <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.15453297" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.5394052" visible="true" weight="0.1370683" />
       <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
-      <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+      <window_info id="Assembly Explorer" order="4" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
@@ -477,7 +465,7 @@
       <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
       <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.13665254" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
       <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
@@ -485,32 +473,29 @@
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
       <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.2213983" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3117938" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.2213983" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
+      <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.16701978" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
-      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.10547488" />
-      <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.25029433" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.25363028" />
+      <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" visible="true" weight="0.25029433" />
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Terminal" order="5" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
-      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43011153" visible="true" weight="0.14413264" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.43000746" visible="true" weight="0.14118916" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
-      <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+      <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
-      <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
-      <window_info anchor="right" id="TODO" order="13" sideWeight="0.5698885" side_tool="true" visible="true" weight="0.14413264" />
-      <unified_weights bottom="0.2213983" left="0.15453297" right="0.14413264" />
+      <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
+      <window_info anchor="right" id="TODO" order="14" sideWeight="0.5695684" side_tool="true" visible="true" weight="0.14118916" />
+      <unified_weights bottom="0.13665254" left="0.1370683" right="0.14118916" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state width="5014" height="282" key="GridCell.Tab.0.bottom" timestamp="1743483516787">
@@ -847,10 +832,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Plugins/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/LinesA.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1243" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Dialog/LinesDB.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
@@ -858,25 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Plugins/SimulationStack/ProceduralUIElements/UIElements-Shaders/CodeBlock/LinesA.cginc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1243" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/Dialog/LinesDB.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-end-line="67" />
         </state>
       </provider>
     </entry>
