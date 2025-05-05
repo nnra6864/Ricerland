@@ -369,10 +369,10 @@
             "enabled": true,
             "colorMobileIndicator": true,
             "list": true,
-            "badges": true,
             "messages": true,
             "showBots": false,
-            "ConsoleIcon": "equicord"
+            "ConsoleIcon": "equicord",
+            "profiles": true
         },
         "PreviewMessage": {
             "enabled": true
@@ -1406,7 +1406,8 @@
             "enabled": true
         },
         "EquicordHelper": {
-            "enabled": true
+            "enabled": true,
+            "hideClanBadges": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1422,6 +1423,9 @@
         },
         "SplitLargeMessages": {
             "enabled": false
+        },
+        "NicknameIconsAPI": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -1434,7 +1438,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1746309169284
+        "settingsSyncVersion": 1746388713708
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
