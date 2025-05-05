@@ -11,7 +11,7 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
+            <state relative-caret-position="434">
               <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
             </state>
           </provider>
@@ -43,8 +43,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 277,
-      "lastUsed": 1746318239140
+      "usageCount": 280,
+      "lastUsed": 1746439516403
     },
     "ShaderLab": {
       "usageCount": 2,
@@ -121,7 +121,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="277" lastUsage="1746318239140" />
+      <summary usageCount="280" lastUsage="1746439516403" />
     </language>
     <language id="C++">
       <summary usageCount="1" lastUsage="1745448290406" />
@@ -439,7 +439,7 @@
     </history>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62148000" />
+    <option name="totallyTimeSpent" value="62165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -837,6 +837,13 @@
         <state relative-caret-position="-1243" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/AudioClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -851,16 +858,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/TimelineMaker.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="434">
           <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
         </state>
       </provider>

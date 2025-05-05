@@ -359,26 +359,10 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana – Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
-              <option name="activationTimestamp" value="1746317028955" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-251.23774.437" />
-              <option name="buildTimestamp" value="1744650540000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1746305759780" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/td/td.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="td – ClipStamp.cs" opened="true" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
-              <option name="activationTimestamp" value="1746318235349" />
+            <RecentProjectMetaInfo frameTitle="td – ~/Data/Projects/Unity/td/Assets/_Import/Tools/TimelineMaker/Clip/ClipStamp.cs" projectWorkspaceId="2urgdoV63v7mQi5GJJ7zlmhBvF0">
+              <option name="activationTimestamp" value="1746439531307" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-251.23774.437" />
               <option name="buildTimestamp" value="1744650540000" />
@@ -387,12 +371,28 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1746318239077" />
+              <option name="projectOpenTimestamp" value="1746439516530" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – ValidationTest.cs" opened="true" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
+              <option name="activationTimestamp" value="1746440513465" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.23774.437" />
+              <option name="buildTimestamp" value="1744650540000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1746439775070" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/td/td.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln" />
   </component>
 </application>

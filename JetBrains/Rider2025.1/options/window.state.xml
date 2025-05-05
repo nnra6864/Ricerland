@@ -69,14 +69,14 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1358" y="185" width="1783" height="1197" key="FileChooserDialogImpl/0.0.5120.1440" timestamp="1743219673012" />
-    <state width="463" height="199" key="ShowUsagesActions.dimensionServiceKey" timestamp="1745559979758">
+    <state width="463" height="143" key="ShowUsagesActions.dimensionServiceKey" timestamp="1746440030286">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state width="463" height="199" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1745559979758" />
-    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN" timestamp="1746318232504">
+    <state width="463" height="143" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1746440030286" />
+    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN" timestamp="1746439770615">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1280" y="720" width="2558" height="1438" key="WELCOME_SCREEN/0.0.2560.1440" timestamp="1746098462010" />
-    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1746318232504" />
+    <state x="2560" y="720" width="5096" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1746439770615" />
   </component>
 </application>
