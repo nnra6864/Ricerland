@@ -1,6 +1,17 @@
 /* Zen Ricer */
 /* nnra */
 
+/* Removes browser padding */
+#zen-tabbox-wrapper
+{
+  margin: 0 !important;
+}
+
+.browserSidebarContainer
+{
+  margin: 0 !important;
+}
+
 /* Dark mode styles for Zen Browser (based on Firefox) */
 @media (prefers-color-scheme: dark) {
 
