@@ -610,6 +610,59 @@
       }
     }
   }, {
+    "id" : "cidr.debugger.lldb",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:internal.perf.stats|pdb.reading.times}" ],
+      "event_data" : {
+        "EnumLineEntriesPDBFileAndLine_Clone_ms" : [ "{regexp#integer}" ],
+        "EnumLineEntriesPDBFileAndLine_GetNext_ms" : [ "{regexp#integer}" ],
+        "EnumLineEntriesPDBSequential_Clone_ms" : [ "{regexp#integer}" ],
+        "EnumLineEntriesPDBSequential_GetNext_ms" : [ "{regexp#integer}" ],
+        "LineTablePDB_AppendLineEntriesForFile_ms" : [ "{regexp#integer}" ],
+        "LineTablePDB_FindLineEntriesByFileAndLine_ms" : [ "{regexp#integer}" ],
+        "LineTablePDB_FindLineEntriesFromAddress_ms" : [ "{regexp#integer}" ],
+        "LineTablePDB_FindLineEntryByAddress_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_AddSymbolsWithName_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_CalculateAbilities_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_CompleteType_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindFunctions_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindGlobalVariables_3_args_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindGlobalVariables_4_args_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindNamespace_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindTypesByRegex_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindTypes_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_FindVTableInfos_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetDeclContextContainingUID_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetDeclContextForUID_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetDeclForUID_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetExternalName_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetNumCompileUnits_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetOffsetToBase_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetPdbFileName_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetTypeList_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_GetTypes_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_InitializeObject_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseBlocksRecursive_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseCompileUnitAtIndex_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseDeclsForContext_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseFunctions_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseLanguage_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseLineTable_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseSupportFiles_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseTypes_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ParseVariablesForContext_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ResolveSymbolContext_3_args_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ResolveSymbolContext_5_args_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ResolveSymbolForAddress_ms" : [ "{regexp#integer}" ],
+        "SymbolFilePDB_ResolveTypeUID_ms" : [ "{regexp#integer}" ],
+        "duration_ms" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "cloud.tools",
     "builds" : [ ],
     "versions" : [ {
@@ -2181,7 +2234,7 @@
       "event_data" : {
         "application_type" : [ "{enum:Standalone|Dotnet|IIS|IISExpress|WindowsService|WCFService|WinRT|ExternalProcess|Mono|Unity|MAUI}" ],
         "coverage_analysis" : [ "{enum#boolean}" ],
-        "feature" : [ "{enum:UnitTestAnalysis|ApplicationAnalysis|SnapshotImport|SnapshotImportViaFileAssociation|SnapshotExport|UnityPlugin|StatusBar|ContinuousTesting|DocumentSummary|CodeVision|HighlightingGutter|CoverageTree|HotSpots|ReverseCoveragePopup|Navigation|Reporting|OptionPages|FilterEditor}", "{enum:UnitTestAnalysis|ApplicationAnalysis|SnapshotImport|SnapshotExport|StatusBar|DocumentSummary|CodeVision|GutterMark|CoverageTree|HotSpots|ReverseCoveragePopup|Navigation|Reporting}" ],
+        "feature" : [ "{enum:UnitTestAnalysis|ApplicationAnalysis|SnapshotImport|SnapshotImportViaFileAssociation|SnapshotExport|UnityPlugin|StatusBar|ContinuousTesting|DocumentSummary|CodeVision|HighlightingGutter|CoverageTree|HotSpots|ReverseCoveragePopup|Navigation|Reporting|OptionPages|FilterEditor}" ],
         "has_assembly_filters" : [ "{enum#boolean}" ],
         "has_class_filters" : [ "{enum#boolean}" ],
         "has_method_filters" : [ "{enum#boolean}" ],
@@ -6301,7 +6354,7 @@
         "score" : [ "{enum:YES|NO}" ],
         "show_diff_applied_immediately" : [ "{enum#boolean}" ],
         "snippet_length" : [ "{regexp#integer}" ],
-        "source_action" : [ "{enum:UNKNOWN|NEW_CHAT_ON_START|NEW_CHAT|NEW_POPUP_CHAT|NEW_CHAT_FROM_EDITOR|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|FIX_CODE_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|BUILD_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|GENERATE_CODE_INPLACE|GENERATE_CODE_INLINE_PROMPT|GENERATE_UNIT_TESTS|NAME_SUGGESTION|EXTRACT_COMPONENT|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|WRITE_DOCUMENTATION|EXPLAIN_REGEXP|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION|PYTHON_EXPLAIN_DATA_FRAME|PYTHON_GENERATE_VISUALIZATIONS|PYTHON_ADD_TYPE_ANNOTATIONS|PYTHON_CONVERT_LOOP_TO_COMPREHENSION|GRAPH_BUILDER_GENERATE_VISUALIZATIONS|GENERATE_JUPYTER_FILE_CONTENT|KOTLIN_EXPLAIN_DATA_FRAME|KOTLIN_GENERATE_VISUALIZATIONS|GENERATE_API_REQUEST_EXAMPLE|GOTO_CHAT|MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}" ],
+        "source_action" : [ "{enum:UNKNOWN|NEW_CHAT_ON_START|NEW_CHAT|NEW_POPUP_CHAT|NEW_CHAT_FROM_EDITOR|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|FIX_CODE_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|BUILD_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|GENERATE_CODE_INPLACE|GENERATE_CODE_INLINE_PROMPT|GENERATE_UNIT_TESTS|NAME_SUGGESTION|EXTRACT_COMPONENT|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|WRITE_DOCUMENTATION|EXPLAIN_REGEXP|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION|PYTHON_EXPLAIN_DATA_FRAME|PYTHON_GENERATE_VISUALIZATIONS|PYTHON_ADD_TYPE_ANNOTATIONS|PYTHON_CONVERT_LOOP_TO_COMPREHENSION|GRAPH_BUILDER_GENERATE_VISUALIZATIONS|GENERATE_JUPYTER_FILE_CONTENT|KOTLIN_EXPLAIN_DATA_FRAME|KOTLIN_GENERATE_VISUALIZATIONS|GENERATE_API_REQUEST_EXAMPLE|GOTO_CHAT|MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}" ],
         "specify_count" : [ "{regexp#integer}" ],
         "state" : [ "{enum:SUCCEED|ERROR|CANCEL|NOT_AUTHENTICATED}" ],
         "succeed" : [ "{enum#boolean}" ],
@@ -6475,7 +6528,7 @@
         "selected_chat_mode" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}" ],
         "selection_length" : [ "{regexp#integer}" ],
         "source" : [ "{enum:CHAT_LOGIN_BUTTON|CHAT_RETRY_BUTTON|CHAT_WAIT_LIST|SETTINGS_PAGE|SETTINGS_PAGE_WAIT_LIST|NOTIFICATION|FULL_LINE}", "{enum:STATUS_BAR_LOGIN_BUTTON}" ],
-        "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
+        "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
         "start_time" : [ "{regexp#integer}" ],
         "status" : [ "{regexp#integer}" ],
         "third_party_provider_id" : [ "{enum:ollama|lmstudio}" ],
@@ -6813,7 +6866,7 @@
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "result_length" : [ "{regexp#float}" ],
-        "source_action" : [ "{enum:UNKNOWN|NEW_CHAT|NEW_POPUP_CHAT|NEW_CHAT_FROM_EDITOR|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|FIX_CODE_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|BUILD_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|NAME_SUGGESTION|EXTRACT_COMPONENT|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|WRITE_DOCUMENTATION|EXPLAIN_REGEXP|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION|PYTHON_EXPLAIN_DATA_FRAME|PYTHON_GENERATE_VISUALIZATIONS|PYTHON_ADD_TYPE_ANNOTATIONS|PYTHON_CONVERT_LOOP_TO_COMPREHENSION|GRAPH_BUILDER_GENERATE_VISUALIZATIONS|GENERATE_JUPYTER_FILE_CONTENT|KOTLIN_EXPLAIN_DATA_FRAME|KOTLIN_GENERATE_VISUALIZATIONS|GENERATE_API_REQUEST_EXAMPLE}", "{enum:NEW_CHAT_ON_START|GENERATE_CODE_INLINE_PROMPT|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}" ]
+        "source_action" : [ "{enum:UNKNOWN|NEW_CHAT|NEW_POPUP_CHAT|NEW_CHAT_FROM_EDITOR|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|FIX_CODE_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|BUILD_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|NAME_SUGGESTION|EXTRACT_COMPONENT|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|WRITE_DOCUMENTATION|EXPLAIN_REGEXP|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION|PYTHON_EXPLAIN_DATA_FRAME|PYTHON_GENERATE_VISUALIZATIONS|PYTHON_ADD_TYPE_ANNOTATIONS|PYTHON_CONVERT_LOOP_TO_COMPREHENSION|GRAPH_BUILDER_GENERATE_VISUALIZATIONS|GENERATE_JUPYTER_FILE_CONTENT|KOTLIN_EXPLAIN_DATA_FRAME|KOTLIN_GENERATE_VISUALIZATIONS|GENERATE_API_REQUEST_EXAMPLE}", "{enum:NEW_CHAT_ON_START|GENERATE_CODE_INLINE_PROMPT|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}" ]
       }
     },
     "anonymized_fields" : [ {
@@ -12606,7 +12659,7 @@
       "event_data" : {
         "diff_place" : [ "{enum:Default|ChangesView|VcsLogView|VcsFileHistoryView|CommitDialog|Merge|TestsFiledAssertions}" ],
         "enabled" : [ "{enum#boolean}" ],
-        "value" : [ "{enum:TOP|BOTTOM|HIDDEN}", "{regexp#integer}", "{enum:DEFAULT|TRIM_WHITESPACES|IGNORE_WHITESPACES|IGNORE_WHITESPACES_CHUNKS|FORMATTING}", "{enum:INSPECTIONS|ADVANCED|SIMPLE}", "{enum:BY_LINE|BY_WORD|BY_WORD_SPLIT|BY_CHAR|DO_NOT_HIGHLIGHT}" ]
+        "value" : [ "{enum:TOP|BOTTOM|HIDDEN}", "{regexp#integer}", "{enum:DEFAULT|TRIM_WHITESPACES|IGNORE_WHITESPACES|IGNORE_WHITESPACES_CHUNKS|FORMATTING}", "{enum:IGNORE_LANGUAGE_SPECIFIC_CHANGES}", "{enum:INSPECTIONS|ADVANCED|SIMPLE}", "{enum:BY_LINE|BY_WORD|BY_WORD_SPLIT|BY_CHAR|DO_NOT_HIGHLIGHT}" ]
       },
       "enums" : {
         "__event_id" : [ "show.breadcrumbs", "use.external.diff.by.default", "show.indent.lines", "use.unified.diff", "iterate.next.file", "use.soft.wraps", "context.range", "ignore.policy", "show.line.numbers", "collapse.unchanged", "show.white.spaces", "enable.read.lock", "use.external.diff", "show.warnings.policy", "merge.enable.lst.markers", "aligned.changes", "sync.scroll", "merge.apply.non.conflicted", "use.external.merge", "highlight.policy", "enable.external.diff.tools", "merge.resolve.import.conflicts" ]
@@ -12632,7 +12685,7 @@
         "diff_place" : [ "Default", "ChangesView", "VcsLogView", "CommitDialog", "TestsFiledAssertions", "Merge", "DirDiff", "External", "unknown" ],
         "diff_tool" : [ "Side-by-side_viewer", "Binary_file_viewer", "Unified_viewer", "Error_viewer", "Patch_content_viewer", "Apply_patch_somehow", "Data_Diff_Viewer", "Database_Schema_Diff_Viewer", "Directory_viewer", "SVN_properties_viewer", "Jupyter_side-by-side_viewer", "Unified", "Split" ],
         "highlight_policy" : [ "BY_LINE", "BY_WORD", "BY_WORD_SPLIT", "BY_CHAR", "DO_NOT_HIGHLIGHT" ],
-        "ignore_policy" : [ "DEFAULT", "TRIM_WHITESPACES", "IGNORE_WHITESPACES", "IGNORE_WHITESPACES_CHUNKS", "FORMATTING" ]
+        "ignore_policy" : [ "DEFAULT", "TRIM_WHITESPACES", "IGNORE_WHITESPACES", "IGNORE_WHITESPACES_CHUNKS", "FORMATTING", "IGNORE_LANGUAGE_SPECIFIC_CHANGES" ]
       }
     }
   }, {
@@ -13628,5 +13681,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5742"
+  "version" : "5750"
 }

@@ -24,20 +24,13 @@
           "weight": 0.2597135
         },
         {
-          "id": "Structure",
-          "order": 1,
-          "weight": 0.095214844,
-          "sideWeight": 0.49963874,
-          "isSplit": true
-        },
-        {
           "id": "Project",
           "order": 2,
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.1370683,
-          "sideWeight": 0.5394052
+          "weight": 0.2434262,
+          "sideWeight": 0.51935965
         },
         {
           "id": "Bookmarks",
@@ -92,7 +85,8 @@
           "id": "Version Control",
           "order": 0,
           "anchor": "BOTTOM",
-          "weight": 0.13665254
+          "weight": 0.24329096,
+          "sideWeight": 0.5000997
         },
         {
           "id": "Problems",
@@ -140,19 +134,19 @@
         },
         {
           "id": "Run",
-          "order": 8,
+          "order": 9,
           "anchor": "BOTTOM",
           "weight": 0.2213983
         },
         {
           "id": "NuGet",
-          "order": 9,
+          "order": 10,
           "anchor": "BOTTOM",
           "weight": 0.3117938
         },
         {
           "id": "Find",
-          "order": 10,
+          "order": 11,
           "anchor": "BOTTOM",
           "isShowStripeButton": false,
           "weight": 0.16701978
@@ -214,15 +208,6 @@
           "isSplit": true
         },
         {
-          "id": "Problems View",
-          "order": 6,
-          "anchor": "RIGHT",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.14118916,
-          "sideWeight": 0.43000746
-        },
-        {
           "id": "Codeium Chat",
           "order": 7,
           "anchor": "RIGHT",
@@ -282,15 +267,33 @@
           "order": 14,
           "anchor": "RIGHT",
           "weight": 0.14118916,
-          "sideWeight": 0.5695684,
+          "sideWeight": 0.56999254,
+          "isSplit": true
+        },
+        {
+          "id": "Structure",
+          "order": 15,
+          "anchor": "RIGHT",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.24322999,
+          "sideWeight": 0.48064035
+        },
+        {
+          "id": "Problems View",
+          "order": 16,
+          "anchor": "RIGHT",
+          "isVisible": true,
+          "weight": 0.24322999,
+          "sideWeight": 0.51935965,
           "isSplit": true
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.1370683,
-        "bottom": 0.13665254,
-        "right": 0.14118916
+        "left": 0.2434262,
+        "bottom": 0.24329096,
+        "right": 0.24322999
       }
     }
   }

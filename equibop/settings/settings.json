@@ -497,7 +497,10 @@
         "Translate": {
             "enabled": true,
             "autoTranslate": false,
-            "showChatBarButton": true
+            "showChatBarButton": true,
+            "service": "google",
+            "receivedInput": "auto",
+            "receivedOutput": "en"
         },
         "TypingIndicator": {
             "enabled": false,
@@ -1426,6 +1429,12 @@
         },
         "NicknameIconsAPI": {
             "enabled": true
+        },
+        "AutoJump": {
+            "enabled": false
+        },
+        "SpotifyActivityToggle": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1438,7 +1447,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1746388713708
+        "settingsSyncVersion": 1746658800473
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
