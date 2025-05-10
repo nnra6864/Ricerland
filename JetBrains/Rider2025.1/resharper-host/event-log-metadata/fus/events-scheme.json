@@ -5224,8 +5224,8 @@
         "enabled" : [ "{enum#boolean}" ],
         "enabled_globally" : [ "{enum#boolean}" ],
         "lang" : [ "{util#lang}" ],
-        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}" ],
-        "option_id" : [ "{enum#__option_id}", "{enum:ruby.parameter.name.reflected.in.method.name|kotlin.values.ranges}", "{enum:js.only.show.names.for.literal.args|ts.param.hints.show.names.for.literal.args|vuejs.show.names.for.literal.args|angular.show.names.for.literal.args}" ],
+        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}", "{enum:rust.implicit.hints}" ],
+        "option_id" : [ "{enum#__option_id}", "{enum:ruby.parameter.name.reflected.in.method.name|kotlin.values.ranges}", "{enum:js.only.show.names.for.literal.args|ts.param.hints.show.names.for.literal.args|vuejs.show.names.for.literal.args|angular.show.names.for.literal.args}", "{enum:derefs_if_borrowed|mutable_borrows|immutable_borrows}" ],
         "option_value" : [ "{enum#boolean}" ]
       },
       "enums" : {
@@ -13681,5 +13681,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5750"
+  "version" : "5755"
 }
