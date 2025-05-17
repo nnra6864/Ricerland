@@ -33,7 +33,7 @@
         {
           "Type": "Image",
           "Data": {
-            "Image": "~/.config/Backgrounds/Frost/FrostedPalace.png",
+            "Image": "~/.config/Backgrounds/Eclipse/BlackCity.jpg",
             "ScalingMode": "EnvelopeParent"
           }
         }

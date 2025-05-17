@@ -17,16 +17,16 @@
           "type": "time"
         },
         {
-          "background": "#ricer.col.cyan",
+          "background": "#ricer.col.blue",
           "foreground": "#ricer.col.background",
-          "leading_diamond": "<transparent,#ricer.col.cyan>\ue0b0</>",
+          "leading_diamond": "<transparent,#ricer.col.blue>\ue0b0</>",
           "style": "diamond",
           "template": " {{ .Icon }} ",
           "trailing_diamond": "<#ricer.col.background>\ue0b1",
           "type": "os"
         },
         {
-          "background": "#ricer.col.cyan",
+          "background": "#ricer.col.blue",
           "foreground": "#ricer.col.background",
           "properties": {
             "folder_icon": "...",
@@ -46,7 +46,7 @@
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.yellow{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ricer.col.magenta{{ end }}",
             "{{ if gt .Ahead 0 }}#ricer.col.green{{ end }}",
-            "{{ if gt .Behind 0 }}#ricer.col.cyan{{ end }}"
+            "{{ if gt .Behind 0 }}#ricer.col.blue{{ end }}"
           ],
           "foreground": "#ricer.col.background",
           "powerline_symbol": "\ue0b0",

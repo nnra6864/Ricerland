@@ -8,86 +8,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf ideFingerprint="1x1hq6slmcqwd" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="7320">
-              <caret line="192" column="94" selection-start-line="192" selection-start-column="94" selection-end-line="192" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"WeaponScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SurfController/PlayerLogic.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponHolderScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-177">
-              <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
+            <state relative-caret-position="-377">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"PlayerLogic.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/HealthScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="120">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"HealthScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/KillFeed/KillFeed.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="40">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"KillFeed.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/KillFeed/KillFeedItem.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="440">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"KillFeedItem.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/World/Bouncepad.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="343">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-              <folding>
-                <marker date="1746888848773" expanded="true" signature="6:35" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"Bouncepad.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="880">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"GameManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"WeaponHolderScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 13,
-      "lastUsed": 1746889090436
+      "usageCount": 21,
+      "lastUsed": 1746926212988
     },
     "Markdown": {
       "usageCount": 1,
@@ -123,7 +60,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="13" lastUsage="1746889090436" />
+      <summary usageCount="21" lastUsage="1746926212988" />
     </language>
     <language id="Markdown">
       <summary usageCount="1" lastUsage="1746828837950" />
@@ -314,7 +251,7 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.51935965" side_tool="true" visible="true" weight="0.24107143" />
+            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.51897323" side_tool="true" visible="true" weight="0.24107143" />
           </value>
         </entry>
         <entry key="Project">
@@ -411,7 +348,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19838000" />
+    <option name="totallyTimeSpent" value="20169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -464,12 +401,9 @@
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="13" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
       <window_info active="true" anchor="right" id="Structure" order="14" sideWeight="0.48064035" visible="true" weight="0.24107143" />
-      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.51935965" side_tool="true" visible="true" weight="0.24107143" />
+      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.51897323" side_tool="true" visible="true" weight="0.24107143" />
       <unified_weights bottom="0.16701978" left="0.13196625" right="0.24107143" />
     </layoutV2>
-    <recentWindows>
-      <value>Find</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="1899" y="282" key="SettingsEditor" timestamp="1746833084404">
@@ -480,10 +414,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1746838749363" />
-    <state x="2139" y="321" width="956" height="1057" key="search.everywhere.popup" timestamp="1746831240793">
+    <state x="2139" y="321" width="956" height="1057" key="search.everywhere.popup" timestamp="1746926212874">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="956" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1746831240793" />
+    <state x="2139" y="321" width="956" height="1057" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1746926212874" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md" />
@@ -494,10 +428,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/HealthScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="120">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SurfController/PlayerLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="246" selection-start-line="246" selection-end-line="246" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="192" column="94" selection-start-line="192" selection-start-column="94" selection-end-line="192" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -508,34 +456,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/HealthScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7320">
-          <caret line="192" column="94" selection-start-line="192" selection-start-column="94" selection-end-line="192" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/World/Bouncepad.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
           <folding>
-            <marker date="1746888848773" expanded="true" signature="6:35" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SurfController/PlayerLogic.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="246" lean-forward="true" selection-start-line="246" selection-end-line="246" />
+        <state relative-caret-position="920">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponHolderScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>

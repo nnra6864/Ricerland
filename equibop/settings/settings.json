@@ -203,7 +203,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 1.3749999850988393,
+            "zoom": 2.124999955296518,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -951,9 +951,6 @@
         "DontFilterMe": {
             "enabled": true
         },
-        "EmojiDumper": {
-            "enabled": false
-        },
         "Encryptcord": {
             "enabled": false
         },
@@ -1435,6 +1432,9 @@
         },
         "SpotifyActivityToggle": {
             "enabled": false
+        },
+        "GuildPickerDumper": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1447,7 +1447,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1746658800473
+        "settingsSyncVersion": 1747161749920
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

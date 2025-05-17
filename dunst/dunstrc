@@ -14,12 +14,12 @@ mouse_left_click = do_action, close_current
 mouse_middle_click = close_current
 mouse_right_click = context
 transparency = 100
-background = "#10284001"
-foreground = "#ACCAE6FF"
-highlight = "#BDDFFFFF"
-frame_color = "#608FBFFF"
+background = "#08080801"
+foreground = "#B2B2B2FF"
+highlight = "#CBCBCBFF"
+frame_color = "#B2B2B2FF"
 separator_color = frame
-format = "<span color='#608FBFFF'>%s</span>\n%b"
+format = "<span color='#CBCBCBFF'>%s</span>\n%b"
 icon_corner_radius = 10
 timeout = 3
 show_indicators = no

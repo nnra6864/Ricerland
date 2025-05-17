@@ -743,6 +743,9 @@
         },
         "HideMedia": {
             "enabled": true
+        },
+        "DisableDeepLinks": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -755,7 +758,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1743198339208
+        "settingsSyncVersion": 1747399835404
     },
     "eagerPatches": false
 }

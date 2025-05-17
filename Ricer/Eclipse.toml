@@ -46,14 +46,14 @@ disabled_hsv = "h+0.s-5.v-15"
 
 [Colors]
 # Terminal
-black = "102840"
-red = "bf3030"
-green = "60bf30"
-yellow = "bfa730"
-blue = "3078bf"
-magenta = "8330bf"
-cyan = "608fbf"
-white = "accae6"
+black = "080808"
+red = "990000"
+green = "00990d"
+yellow = "998000"
+blue = "006699"
+magenta = "990099"
+cyan = "008099"
+white = "999999"
 
 # Terminal Bright
 br_black = "$black.$highlight_hsv"
@@ -66,19 +66,19 @@ br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
 # Opacity
-opacity = "rgb(0, 0, 0, 0.85)"
-opacity_inactive = "rgb(0, 0, 0, 0.75)"
-opacity_cs16 = "rgb(0, 0, 0, 0.5)"
+opacity = "rgb(0, 0, 0, 0.9)"
+opacity_inactive = "rgb(0, 0, 0, 0.8)"
+opacity_cs16 = "rgb(0, 0, 0, 1.0)"
 
 # Foreground
-foreground = "$white"
+foreground = "$br_white"
 foreground_highlight = "$foreground.$highlight_hsv"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
 # Foreground Alternative
-foreground_alt = "$cyan"
+foreground_alt = "$br_white.$highlight_hsv"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
@@ -103,14 +103,14 @@ button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
 # Button Foreground
-button_foreground = "$cyan"
+button_foreground = "$white"
 button_foreground_highlight = "$button_foreground.$highlight_hsv"
 button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
 # Outline
-outline = "$cyan"
-outline_alt = "$br_white"
+outline = "$br_white"
+outline_alt = "$white"
 outline_inactive = "$outline.v-50"
 outline_inactive_alt = "$outline_alt.v-50"
 
@@ -126,21 +126,21 @@ link_visited = "$br_blue"
 code_var = "$foreground"
 code_type = "$br_cyan"
 code_keyword = "$br_blue"
-code_attribute = "$br_blue"
+code_attribute = "$br_cyan"
 
 code_const = "$br_blue"
 code_bracket = "$foreground"
-code_operator = "$br_cyan"
+code_operator = "$br_blue"
 code_punctuation = "$br_blue"
 
-code_str = "$br_cyan"
-code_str_literal = "$foreground"
+code_str = "$br_green"
+code_str_literal = "$br_blue"
 code_special_char = "$foreground_highlight_alt"
 code_comment = "$foreground_inactive"
 
 #Music Visualizer
 visualizer = "$white"
-visualizer_outline = "$cyan"
+visualizer_outline = "$blue"
 
 [Files]
 oh-my-posh = "~/.config/oh-my-posh/Ricer.json"

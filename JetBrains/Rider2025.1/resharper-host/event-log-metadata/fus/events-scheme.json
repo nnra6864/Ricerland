@@ -470,6 +470,21 @@
       }
     }
   }, {
+    "id" : "build.gradle.project.repositories",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:repository}" ],
+      "event_data" : {
+        "file_repositories_count" : [ "{regexp#integer}" ],
+        "ivy_repositories_count" : [ "{regexp#integer}" ],
+        "maven_repositories_count" : [ "{regexp#integer}" ],
+        "other_repositories_count" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "build.jps",
     "builds" : [ ],
     "versions" : [ {
@@ -6732,8 +6747,8 @@
         "button_name" : [ "{enum:Lets Go|Upgrade|Refresh}" ],
         "current_plan" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}", "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
         "new_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
-        "notification_action" : [ "{enum:Close(x)|Upgrade now|Upgrade to Pro}" ],
-        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}" ],
+        "notification_action" : [ "{enum:Close(x)|Upgrade now|Renew now|Upgrade to Pro}" ],
+        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}", "{enum:Business expires in 5 days|Business expired}", "{enum:Business trial expires in 5 days|Business trial expired}" ],
         "plan_type" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -6741,7 +6756,7 @@
         "previous_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ]
       },
       "enums" : {
-        "__event_id" : [ "hub.notifications.type.trial.action.clicked", "hub.notifications.quota.shown", "hub.current.aia.plan.displayed", "hub.notifications.quota.action.clicked", "hub.notifications.type.trial.shown", "hub.notifications.type.pro.action.clicked", "hub.actions.clicked", "hub.notifications.type.pro.shown", "plan.changed", "hub.icon.clicked", "button.clicked" ]
+        "__event_id" : [ "hub.notifications.type.trial.action.clicked", "hub.notifications.quota.shown", "hub.current.aia.plan.displayed", "hub.notifications.quota.action.clicked", "hub.notifications.type.trial.shown", "hub.notifications.type.pro.action.clicked", "hub.actions.clicked", "hub.notifications.type.pro.shown", "plan.changed", "hub.icon.clicked", "button.clicked", "hub.notifications.type.business.shown", "hub.notifications.type.business.action.clicked", "hub.notifications.type.business.trial.action.clicked", "hub.notifications.type.business.trial.shown" ]
       }
     }
   }, {
@@ -6988,7 +7003,7 @@
       "event_id" : [ "{enum:third.party.available.llm.profiles|third.party.ai.providers.enabled}" ],
       "event_data" : {
         "profileIds" : [ "{enum:llama3.2:latest|llama3.2:1b|llama3.2:3b|llama3.1:latest|llama3.1:8b|llama3.1:70b|gemma2:latest|gemma2:2b|gemma2:9b|gemma2:27b|qwen2.5:latest|qwen2.5:3b|qwen2.5:7b|qwen2.5:14b|qwen2.5:32b}" ],
-        "providerIds" : [ "{enum:ollama}", "{enum:lmstudio}" ]
+        "providerIds" : [ "{enum:ollama}", "{enum:lmstudio}", "{enum:liteLLM|llama.cpp}" ]
       }
     }
   }, {
@@ -11628,6 +11643,20 @@
       }
     }
   }, {
+    "id" : "spring.debugger.db.connections",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:connection.failed|connection.succeeded|data.source.added|data.source.saved}" ],
+      "event_data" : {
+        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}" ],
+        "error_code" : [ "{regexp#integer}" ],
+        "sql_state" : [ "{regexp:[0-9A-Z ]{5}}" ]
+      }
+    }
+  }, {
     "id" : "spring.debugger.evaluator.usages",
     "builds" : [ ],
     "versions" : [ {
@@ -11838,6 +11867,20 @@
         "enabled" : [ "{regexp#integer}", "{enum#boolean}" ],
         "total" : [ "{regexp#integer}" ],
         "value" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "sys.properties.file",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:locations}" ],
+      "event_data" : {
+        "custom" : [ "{enum#boolean}" ],
+        "explicit" : [ "{enum#boolean}" ],
+        "user_home" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -12777,7 +12820,7 @@
         "ide_activity_id" : [ "{regexp#integer}" ],
         "is_default" : [ "{enum#boolean}" ],
         "method" : [ "{enum:MERGE|SQUASH|REBASE}" ],
-        "operation" : [ "{enum:Unknown|RestGetServerMetadata|RestGetAuthenticatedUser|RestGetAvatar|RestGetImage|RestGetRemoteWorkflowFile|RestGetRemoteActionsFile|RestGetRepository|RestGetRepositoryByUrl|RestGetRepositoriesForUser|RestGetRepositoriesForOrganization|RestGetOrganizations|RestGetContents|RestGetContent|RestGetBranches|RestGetTags|RestGetRefComparison|RestGetCommitDiffFiles|RestGetCommitDiff|RestGetForks|RestGetRepositoryAssignees|RestGetRepositoryLabels|RestGetRepositoryCollaborators|RestGetIssue|RestGetIssues|RestGetIssueComment|RestGetPullRequests|RestGetPullRequestListETag|RestGetPullRequestDiffFiles|RestGetGist|RestGetEmojiMap|RestGetEmojiImage|RestCreateRepository|RestCreateRepositoryInOrganization|RestCreateFork|RestCreateIssue|RestCreateIssueComment|RestCreateGist|RestDeleteRepository|RestDeleteRepositoryByUrl|RestDeleteGist|RestUpdateIssueState|RestUpdateIssueAssignees|RestUpdateIssueLabels|RestUpdatePullRequest|RestAddCollaboratorToRepository|RestAddReviewerToPullRequest|RestRemoveReviewerFromPullRequest|RestMergePullRequest|RestSquashMergePullRequest|RestRebaseMergePullRequest|RestSearchIssues|GraphQLGetUser|GraphQLGetTeamsForOrganization|GraphQLGetRepository|GraphQLGetPullRequestTemplates|GraphQLGetBranchProtectionRules|GraphQLGetPullRequestId|GraphQLGetPullRequest|GraphQLGetMergeabilityData|GraphQLGetReviewThreads|GraphQLGetPullRequestCommits|GraphQLGetPullRequestFiles|GraphQLGetPullRequestTimelineItems|GraphQLGetPendingReviews|GraphQLGetCommitStatuses|GraphQLGetCommitStatusContexts|GraphQLCreatePullRequest|GraphQLCreateReview|GraphQLCreateReviewCommentOnLine|GraphQLCreateReviewComment|GraphQLCreateReviewThread|GraphQLDeleteIssueComment|GraphQLDeleteReview|GraphQLDeleteReviewComment|GraphQLUpdateIssueComment|GraphQLUpdatePullRequest|GraphQLUpdateReview|GraphQLUpdateReviewComment|GraphQLAddReactionToComment|GraphQLRemoveReactionFromComment|GraphQLMarkPullRequestReadyForReview|GraphQLMarkFileAsViewed|GraphQLUnmarkFileAsViewed|GraphQLResolveReviewThread|GraphQLUnresolveReviewThread|GraphQLSearchPullRequests|GraphQLSubmitReview}" ],
+        "operation" : [ "{enum:Unknown|RestGetServerMetadata|RestGetAuthenticatedUser|RestGetAvatar|RestGetImage|RestGetRemoteWorkflowFile|RestGetRemoteActionsFile|RestGetRepository|RestGetRepositoryByUrl|RestGetRepositoriesForUser|RestGetRepositoriesForOrganization|RestGetOrganizations|RestGetContents|RestGetContent|RestGetBranches|RestGetTags|RestGetRefComparison|RestGetCommitDiffFiles|RestGetCommitDiff|RestGetForks|RestGetRepositoryAssignees|RestGetRepositoryLabels|RestGetRepositoryCollaborators|RestGetIssue|RestGetIssues|RestGetIssueComment|RestGetPullRequests|RestGetPullRequestListETag|RestGetPullRequestDiffFiles|RestGetGist|RestGetEmojiMap|RestGetEmojiImage|RestCreateRepository|RestCreateRepositoryInOrganization|RestCreateFork|RestCreateIssue|RestCreateIssueComment|RestCreateGist|RestDeleteRepository|RestDeleteRepositoryByUrl|RestDeleteGist|RestUpdateIssueState|RestUpdateIssueAssignees|RestUpdateIssueLabels|RestUpdatePullRequest|RestAddCollaboratorToRepository|RestAddReviewerToPullRequest|RestRemoveReviewerFromPullRequest|RestMergePullRequest|RestSquashMergePullRequest|RestRebaseMergePullRequest|RestSearchIssues|GraphQLGetUser|GraphQLGetTeamsForOrganization|GraphQLGetRepository|GraphQLGetPullRequestTemplates|GraphQLGetBranchProtectionRules|GraphQLGetPullRequestId|GraphQLGetPullRequest|GraphQLGetMergeabilityData|GraphQLGetReviewThreads|GraphQLGetPullRequestCommits|GraphQLGetPullRequestFiles|GraphQLGetPullRequestTimelineItems|GraphQLGetPendingReviews|GraphQLGetCommitStatuses|GraphQLGetCommitStatusContexts|GraphQLCreatePullRequest|GraphQLCreateReview|GraphQLCreateReviewCommentOnLine|GraphQLCreateReviewComment|GraphQLCreateReviewThread|GraphQLDeleteIssueComment|GraphQLDeleteReview|GraphQLDeleteReviewComment|GraphQLUpdateIssueComment|GraphQLUpdatePullRequest|GraphQLUpdateReview|GraphQLUpdateReviewComment|GraphQLAddReactionToComment|GraphQLRemoveReactionFromComment|GraphQLMarkPullRequestReadyForReview|GraphQLMarkFileAsViewed|GraphQLUnmarkFileAsViewed|GraphQLResolveReviewThread|GraphQLUnresolveReviewThread|GraphQLSearchPullRequests|GraphQLSubmitReview}", "{enum:GraphQLPullRequestsMetrics}" ],
         "rates_remaining" : [ "{regexp#integer}" ],
         "rates_resource" : [ "{enum:Core|Search|CodeSearch|GraphQL|IntegrationManifest|DependencySnapshots|CodeScanningUpload|ActionsRunnerRegistration|SourceImport|Collaborators|Unknown}" ],
         "rates_used" : [ "{regexp#integer}" ],
@@ -12985,11 +13028,13 @@
       "event_data" : {
         "aiResolved" : [ "{regexp#integer}" ],
         "autoResolvable" : [ "{regexp#integer}" ],
+        "autoResolvableWithSemantics" : [ "{regexp#integer}" ],
         "changes" : [ "{regexp#integer}" ],
         "conflicts" : [ "{regexp#integer}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "edited" : [ "{regexp#integer}" ],
         "editedAfterAi" : [ "{regexp#integer}" ],
+        "fileLanguage" : [ "{util#lang}" ],
         "result" : [ "{enum:SUCCESS|CANCELED}" ],
         "rolledBackAfterAi" : [ "{regexp#integer}" ],
         "source" : [ "{enum:DIALOG_BUTTON|NOTIFICATION|DIALOG_CLOSING}" ],
@@ -13681,5 +13726,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5755"
+  "version" : "5770"
 }

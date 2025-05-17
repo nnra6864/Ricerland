@@ -13,42 +13,42 @@ bold_italic = { family = "Courier Prime Code", style = "Bold Italic" }
 size = 17
 
 [colors]
-footer_bar = { foreground = "#ACCAE6", background = "#102840" }
+footer_bar = { foreground = "#B2B2B2", background = "#080808" }
 transparent_background_colors = true
 
 [colors.primary]
-foreground = "#ACCAE6"
-background = "#102840"
-dim_foreground = "#8EA7BF"
-bright_foreground = "#BDDFFF"
+foreground = "#B2B2B2"
+background = "#080808"
+dim_foreground = "#8C8C8C"
+bright_foreground = "#CBCBCB"
 
 [colors.search]
-matches = { foreground = "#ACCAE6", background = "#102840" }
-focused_match = { foreground = "#BDDFFF", background = "#102840" }
+matches = { foreground = "#B2B2B2", background = "#080808" }
+focused_match = { foreground = "#CBCBCB", background = "#080808" }
 
 [colors.hints]
-start = { foreground = "#ACCAE6", background = "#102840" }
-end = { foreground = "#8EA7BF", background = "#102840" }
+start = { foreground = "#B2B2B2", background = "#080808" }
+end = { foreground = "#8C8C8C", background = "#080808" }
 
 [colors.normal]
-black = "#102840"
-red = "#BF3030"
-green = "#60BF30"
-yellow = "#BFA730"
-blue = "#3078BF"
-magenta = "#8330BF"
-cyan = "#608FBF"
-white = "#ACCAE6"
+black = "#080808"
+red = "#990000"
+green = "#00990D"
+yellow = "#998000"
+blue = "#006699"
+magenta = "#990099"
+cyan = "#008099"
+white = "#999999"
 
 [colors.bright]
-black = "#153959"
-red = "#D83636"
-green = "#6DD836"
-yellow = "#D8BB36"
-blue = "#3687D8"
-magenta = "#9336D8"
-cyan = "#6DA1D8"
-white = "#BDDFFF"
+black = "#212121"
+red = "#B20000"
+green = "#00B20E"
+yellow = "#B29400"
+blue = "#0077B2"
+magenta = "#B200B2"
+cyan = "#0094B2"
+white = "#B2B2B2"
 
 [cursor]
 style = { shape = "Beam", blinking = "Off" }

@@ -29,7 +29,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.13196625,
+          "weight": 0.31287703,
           "sideWeight": 0.51935965
         },
         {
@@ -85,7 +85,7 @@
           "id": "Version Control",
           "order": 0,
           "anchor": "BOTTOM",
-          "weight": 0.24329096,
+          "weight": 0.15713277,
           "sideWeight": 0.5000997
         },
         {
@@ -171,8 +171,8 @@
           "id": "Notifications",
           "order": 0,
           "anchor": "RIGHT",
-          "weight": 0.25363028,
-          "sideWeight": 0.50036764
+          "weight": 0.24576938,
+          "sideWeight": 0.5003788
         },
         {
           "id": "AIAssistant",
@@ -274,26 +274,24 @@
           "id": "Structure",
           "order": 14,
           "anchor": "RIGHT",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.24107143,
-          "sideWeight": 0.48064035
+          "weight": 0.24576938,
+          "sideWeight": 0.4806818
         },
         {
           "id": "Problems View",
           "order": 15,
           "anchor": "RIGHT",
           "isVisible": true,
-          "weight": 0.24107143,
-          "sideWeight": 0.51935965,
+          "weight": 0.29060325,
+          "sideWeight": 0.4996212,
           "isSplit": true
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.13196625,
-        "bottom": 0.16701978,
-        "right": 0.24107143
+        "left": 0.31287703,
+        "bottom": 0.15713277,
+        "right": 0.29060325
       }
     }
   }

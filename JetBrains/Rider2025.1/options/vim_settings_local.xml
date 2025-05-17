@@ -98,12 +98,12 @@
         <entry encoding="base64">NTc=</entry>
         <entry encoding="base64">MTY2</entry>
         <entry encoding="base64">JzwsJz53</entry>
-        <entry encoding="base64">cSE=</entry>
         <entry encoding="base64">MTg2</entry>
         <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">cQ==</entry>
         <entry encoding="base64" />
         <entry encoding="base64">dw==</entry>
+        <entry encoding="base64">cSE=</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -2087,106 +2087,106 @@
       <jump line="43" column="33" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/PlayerCamera/DynamicDOF.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
-      <jump line="554" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="533" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="541" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="543" column="53" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="537" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="614" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="625" column="10" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="557" column="21" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="611" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="590" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="599" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="604" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="609" column="38" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="592" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="591" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="597" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="584" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="605" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="607" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="603" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="606" column="77" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="566" column="34" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="572" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="574" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="588" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="608" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="573" column="72" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="583" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="610" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="565" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="585" column="61" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="523" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="530" column="45" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="79" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="472" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="4" column="92" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
-      <jump line="477" column="77" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="178" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="38" column="80" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="183" column="22" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="8" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="142" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="192" column="56" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="188" column="56" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="187" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="481" column="49" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
+      <jump line="479" column="48" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
+      <jump line="478" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
       <jump line="482" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
+      <jump line="169" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_Utilities.cs" protocol="file" />
+      <jump line="8" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
+      <jump line="188" column="31" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="104" column="37" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="85" column="72" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="91" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="92" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="102" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="101" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="36" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="33" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="42" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="46" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="82" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="71" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="48" column="39" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="29" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="39" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="47" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="56" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="72" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="83" column="53" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="86" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="92" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="93" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="99" column="19" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="107" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="118" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="126" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="131" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="133" column="14" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="182" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="171" column="20" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="172" column="20" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="179" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="170" column="16" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="181" column="16" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="169" column="19" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="184" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="196" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="197" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="215" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
+      <jump line="18" column="31" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_Validator_BASE.cs" protocol="file" />
       <jump line="51" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_VisualElements/Artifice_VisualElement_InfoBox/Artifice_VisualElement_InfoBox.cs" protocol="file" />
-      <jump line="171" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_Utilities.cs" protocol="file" />
-      <jump line="197" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="291" column="25" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="330" column="20" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="334" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="20" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="186" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="67" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="27" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="28" column="25" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="35" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="31" column="58" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="99" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="96" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="283" column="30" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="305" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="30" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="33" column="41" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="29" column="11" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="36" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="32" column="45" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" protocol="file" />
-      <jump line="422" column="33" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="462" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="534" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="518" column="118" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="525" column="156" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="532" column="111" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="517" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="526" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="531" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="516" column="40" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="491" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="494" column="40" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="17" column="38" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="317" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="224" column="49" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="469" column="43" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="524" column="40" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="499" column="36" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="495" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="489" column="21" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="493" column="20" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="498" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="502" column="21" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="504" column="30" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="509" column="95" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="512" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="513" column="27" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="487" column="15" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="475" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
-      <jump line="36" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
-      <jump line="184" column="37" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="34" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_Validator_BASE.cs" protocol="file" />
+      <jump line="43" column="54" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_Validator_BASE.cs" protocol="file" />
+      <jump line="98" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="20" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="16" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="15" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="14" column="76" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="13" column="76" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="12" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="11" column="75" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="142" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="8" column="4" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="563" column="8" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" protocol="file" />
+      <jump line="35" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="3" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="34" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="88" column="98" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="94" column="83" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="93" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="89" column="9" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="90" column="47" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="205" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="117" column="17" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="115" column="39" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="109" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="96" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="114" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="99" column="24" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" protocol="file" />
+      <jump line="44" column="54" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="22" column="47" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="6" column="21" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ISliceable.cs" protocol="file" />
+      <jump line="37" column="58" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="102" column="35" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="109" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="107" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="108" column="51" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="101" column="42" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="99" column="34" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="122" column="33" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="128" column="42" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="139" column="48" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="148" column="50" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="39" column="58" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="46" column="7" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="71" column="26" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="81" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="86" column="13" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/ColorUtils.cs" protocol="file" />
+      <jump line="12" column="19" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs" protocol="file" />
+      <jump line="153" column="12" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
     </project>
     <project id="opensurf-8dd232f9">
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/opensurf/README.md" protocol="file" />
@@ -2533,7 +2533,6 @@
       <jump line="55" column="51" filename="$USER_HOME$/Data/Projects/Unity/Ricer/Ricer/Assets/NnUtils/Shaders/Squircle.shader" protocol="file" />
     </project>
     <project id="Vector-Zero-8c6b7b59">
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScript.cs" protocol="file" />
       <jump line="137" column="17" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScript.cs" protocol="file" />
       <jump line="153" column="32" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedManager.cs" protocol="file" />
@@ -2615,123 +2614,115 @@
       <jump line="33" column="51" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
       <jump line="93" column="72" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
       <jump line="91" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
-      <jump line="14" column="8" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
       <jump line="2" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeed.cs" protocol="file" />
       <jump line="9" column="20" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeed.cs" protocol="file" />
       <jump line="53" column="51" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
       <jump line="35" column="51" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
       <jump line="34" column="4" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
       <jump line="52" column="81" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
-      <jump line="3" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
       <jump line="9" column="17" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
       <jump line="192" column="94" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScript.cs" protocol="file" />
-      <jump line="1" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeed.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/World/Bouncepad.cs" protocol="file" />
-      <jump line="56" column="27" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/World/Bouncepad.cs" protocol="file" />
       <jump line="269" column="30" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
       <jump line="193" column="12" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
       <jump line="267" column="75" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
       <jump line="259" column="25" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
       <jump line="285" column="12" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
+      <jump line="246" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeed.cs" protocol="file" />
+      <jump line="14" column="8" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
+      <jump line="56" column="27" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/World/Bouncepad.cs" protocol="file" />
     </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Core/GameManager.cs" timestamp="1746832060549">
-        <mark key="&quot;" line="3" column="24" />
-        <mark key="[" line="24" column="48" />
-        <mark key="]" line="24" column="65" />
-        <mark key="^" line="24" column="65" />
-        <mark key="." line="24" column="64" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Core/GameManager.cs" timestamp="1746926210263">
+        <mark key="&quot;" line="24" column="37" />
+        <mark key="[" line="22" column="48" />
+        <mark key="]" line="22" column="65" />
+        <mark key="^" line="22" column="65" />
+        <mark key="." line="22" column="64" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedManager.cs" timestamp="1746830593336">
-        <mark key="[" line="8" column="12" />
-        <mark key="]" line="6" column="0" />
-        <mark key="." line="6" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/Easings.cs" timestamp="1747404246620">
+        <mark key="&quot;" line="4" column="31" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeed.cs" timestamp="1746845793967">
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="1" column="0" />
-        <mark key="." line="1" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" timestamp="1747073227758">
+        <mark key="&quot;" line="215" column="15" />
+        <mark key="'" line="234" column="25" />
+        <mark key="[" line="237" column="1" />
+        <mark key="]" line="237" column="1" />
+        <mark key="^" line="237" column="1" />
+        <mark key="." line="237" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/GameLogic.cs" timestamp="1746829306658">
-        <mark key="&quot;" line="10" column="26" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/ColorUtils.cs" timestamp="1747407916727">
+        <mark key="&quot;" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" timestamp="1746842769786">
-        <mark key="'" line="104" column="0" />
-        <mark key="[" line="96" column="75" />
-        <mark key="]" line="95" column="54" />
-        <mark key="." line="95" column="53" />
-        <mark key="^" line="95" column="54" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_VisualElements/Artifice_VisualElement_InfoBox/Artifice_VisualElement_InfoBox.cs" timestamp="1747070201366">
+        <mark key="&quot;" line="51" column="12" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_ValidateInputAttribute.cs" timestamp="1746717192700">
-        <mark key="&quot;" line="12" column="61" />
-        <mark key="'" line="237" column="25" />
-        <mark key="[" line="32" column="45" />
-        <mark key="]" line="32" column="45" />
-        <mark key="." line="32" column="45" />
-        <mark key="^" line="32" column="55" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/UI/InteractiveImageScript.cs" timestamp="1747404255334">
+        <mark key="&quot;" line="10" column="39" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScriptObj.cs" timestamp="1746829006081">
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Fruits/CannonScript.cs" timestamp="1747407918069">
+        <mark key="&quot;" line="153" column="12" />
+        <mark key="[" line="153" column="0" />
+        <mark key="]" line="153" column="0" />
+        <mark key="." line="153" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" timestamp="1747137909313">
+        <mark key="&quot;" line="3" column="17" />
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="107" column="0" />
+        <mark key="]" line="115" column="85" />
+        <mark key="^" line="205" column="1" />
+        <mark key="." line="107" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextUtils/Scripts/InteractiveText/DynamicText.cs" timestamp="1747404239101">
+        <mark key="&quot;" line="8" column="30" />
+      </file>
+      <file name="/" timestamp="1747407894631">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Scripts/TimeManager.cs" timestamp="1747407911909">
+        <mark key="&quot;" line="86" column="13" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_Utilities.cs" timestamp="1747073227764">
+        <mark key="&quot;" line="169" column="8" />
+        <mark key="[" line="169" column="0" />
+        <mark key="]" line="169" column="0" />
+        <mark key="." line="169" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs" timestamp="1747451010760">
+        <mark key="&quot;" line="12" column="19" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" timestamp="1747070195193">
+        <mark key="&quot;" line="563" column="8" />
+        <mark key="'" line="224" column="49" />
+        <mark key="[" line="563" column="9" />
+        <mark key="]" line="563" column="9" />
+        <mark key="^" line="563" column="9" />
+        <mark key="." line="563" column="8" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Core/ISliceable.cs" timestamp="1747404269532">
         <mark key="&quot;" line="6" column="21" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Mirror/Examples/TopDownShooter/Scripts/PlayerTopDown.cs" timestamp="1746829013174">
-        <mark key="&quot;" line="137" column="18" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_CustomAttributeDrawers/CustomAttributeDrawer_Validators/Artifice_CustomAttributeDrawer_Validator_BASE.cs" timestamp="1747073227750">
+        <mark key="&quot;" line="43" column="54" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Player/HealthScript.cs" timestamp="1746845360603">
-        <mark key="[" line="52" column="59" />
-        <mark key="]" line="52" column="82" />
-        <mark key="." line="52" column="81" />
-        <mark key="^" line="52" column="82" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" timestamp="1747404261650">
+        <mark key="&quot;" line="139" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/ValidationTest.cs" timestamp="1746720585929">
-        <mark key="&quot;" line="32" column="31" />
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="188" column="57" />
-        <mark key="]" line="188" column="57" />
-        <mark key="^" line="188" column="57" />
-        <mark key="." line="188" column="56" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1747404238253">
+        <mark key="&quot;" line="12" column="31" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Mirror/Transports/KCP/kcp2k/kcp/Kcp.cs" timestamp="1746828999178">
-        <mark key="&quot;" line="7" column="20" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" timestamp="1747073227771">
+        <mark key="&quot;" line="8" column="28" />
+        <mark key="[" line="34" column="1" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Mirror/Examples/_Common/Controllers/TankController/TankTurretBase.cs" timestamp="1746829305696">
-        <mark key="&quot;" line="32" column="32" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Core/MenuManager.cs" timestamp="1746829307136">
-        <mark key="&quot;" line="5" column="42" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/README.md" timestamp="1746829007643">
-        <mark key="&quot;" line="0" column="1" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Editor/Artifice_SerializedPropertyExtensions.cs" timestamp="1746719710520">
-        <mark key="&quot;" line="15" column="61" />
-        <mark key="'" line="224" column="49" />
-        <mark key="]" line="487" column="16" />
-        <mark key="^" line="487" column="16" />
-        <mark key="." line="487" column="15" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs" timestamp="1746715261028">
-        <mark key="&quot;" line="8" column="38" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/Weapon/WeaponScript.cs" timestamp="1746845378410">
-        <mark key="&quot;" line="137" column="22" />
-        <mark key="'" line="26" column="22" />
-        <mark key="[" line="192" column="73" />
-        <mark key="]" line="192" column="95" />
-        <mark key="^" line="192" column="95" />
-        <mark key="." line="192" column="94" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/com.rlabrecque.steamworks.net/Runtime/autogen/isteamuserstats.cs" timestamp="1746829001009">
-        <mark key="&quot;" line="342" column="57" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/SurfController/PlayerLogic.cs" timestamp="1746889297984">
-        <mark key="&quot;" line="285" column="22" />
-        <mark key="'" line="193" column="12" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/DamageIndicator.cs" timestamp="1746829002700">
-        <mark key="&quot;" line="6" column="28" />
+      <file name="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/Scripts/Items/ItemManager.cs" timestamp="1747404250491">
+        <mark key="&quot;" line="7" column="28" />
       </file>
     </localmarks>
   </component>
@@ -2741,7 +2732,7 @@
         <text encoding="base64">KDBpIBs=</text>
       </register>
       <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgUmFuZG9tID0gVW5pdHlFbmdpbmUuUmFuZG9tOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2750,10 +2741,10 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">VXBkYXRlIGluZm8gY29udGVudCBzaXplIGZpdHRlcg==</text>
+        <text encoding="base64">LA==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">LCBQbGF5ZXJNYW5hZ2VyLkluc3RhbmNlLlVzZXJuYW1l</text>
+        <text encoding="base64">ZWFzc3Rh</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">Ym91bmNlcGFk</text>
@@ -2762,34 +2753,34 @@
         <text encoding="base64">ICAgICAgICAgICAgTGF5b3V0UmVidWlsZGVyLkZvcmNlUmVidWlsZExheW91dEltbWVkaWF0ZShfa2lsbGVyVGV4dC5yZWN0VHJhbnNmb3JtKTsK</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgUmFuZG9tID0gVW5pdHlFbmdpbmUuUmFuZG9tOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIAo=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgcHJpdmF0ZSB2b2lkIFVwZGF0ZSgpCiAgICAgICAgewogICAgICAgICAgICBpZiAoSW5wdXQuR2V0S2V5RG93bihLZXlDb2RlLkspKQogICAgICAgICAgICAgICAgRGlzcGxheUtpbGwoX25hbWVzW1JhbmRvbS5SYW5nZSgwLCBfbmFtZXMuTGVuZ3RoIC0gMSldLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgX25hbWVzW1JhbmRvbS5SYW5nZSgwLCBfbmFtZXMuTGVuZ3RoIC0gMSldKTsKICAgICAgICB9Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGZpCg==</text>
       </register>
-      <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBwcml2YXRlIHN0cmluZ1tdIF9uYW1lcyA9CiAgICAgICAgewogICAgICAgICAgICAiS3ViYW5hbmEiLAogICAgICAgICAgICAiRWxkcmVqa28iLAogICAgICAgICAgICAiVHJvd2UiLAogICAgICAgICAgICAiRGFsZXIiLAogICAgICAgICAgICAibm5yYSIKICAgICAgICB9OwoK</text>
+      <register name="3" type="CHARACTER_WISE">
+        <text encoding="base64">LAogICAgICAgICBWYWxpZGF0ZUlucHV0KG5hbWVvZihfcHJvamVjdGlsZXNWYWxpZGF0aW9uKSwgIkNhbm5vbiBtdXN0IGhhdmUgYXQgbGVhc3QgMSBQcm9qZWN0aWxlIik=</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAvLyBUT0RPOiBSZXBsYWNlIHdpdGggdGhlIGFjdHVhbCBhdHRhY2tlciBuYW1lCg==</text>
+        <text encoding="base64">CiAgICAgICAgW0ZvbGRvdXRHcm91cCgiR2VuZXJhbCIpLCBTZXJpYWxpemVGaWVsZCwKICAgICAgICAgVmFsaWRhdGVJbnB1dChuYW1lb2YoTGlzdEFmZmVjdGluZ0ZpZWxkVmFsaWRhdGlvbikpXQogICAgICAgIHByaXZhdGUgVHJhbnNmb3JtIF9maWVsZEFmZmVjdGVkQnlMaXN0OwoKICAgICAgICBbRm9sZG91dEdyb3VwKCJHZW5lcmFsIiksIFNlcmlhbGl6ZUZpZWxkXQogICAgICAgIHByaXZhdGUgTGlzdDxUcmFuc2Zvcm0+IF9saXN0QWZmZWN0aW5nRmllbGQ7CgogICAgICAgIHByaXZhdGUgYm9vbCBMaXN0QWZmZWN0aW5nRmllbGRWYWxpZGF0aW9uKCkgPT4gX2xpc3RBZmZlY3RpbmdGaWVsZC5Db3VudCA+IDA7Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAvLyBUT0RPOiBSZXBsYWNlIHdpdGggdGhlIGFjdHVhbCB2aWN0aW0gbmFtZQo=</text>
+        <text encoding="base64">ICAgICAgICAKICAgICAgICAjcmVnaW9uIFJlZmxlY3Rpb24KCiAgICAgICAgI2VuZHJlZ2lvbgo=</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgIC8vIFRPRE86IEltcGxlbWVudCBEYW1hZ2VJbmZvIGluc3RlYWQgb2YganVzdCBoZWFsdGggZm9yIGtpbGxmZWVkIGV0Yy4K</text>
+        <text encoding="base64">ICAgICAgICAKICAgICAgICAjcmVnaW9uIFJlZmxlY3Rpb24KCiAgICAgICAgI2VuZHJlZ2lvbgo=</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIGkgPSAwOwo=</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgX2tpbGxGZWVkTGlzdCA9IChSZWN0VHJhbnNmb3JtKXRyYW5zZm9ybS5wYXJlbnQ7Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy9vYmplY3QgZmllbGRPYmplY3QgICAgID0gcHJvcGVydHkuc2VyaWFsaXplZE9iamVjdC50YXJnZXRPYmplY3Q7Cg==</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgcHJpdmF0ZSBSZWN0VHJhbnNmb3JtIF9raWxsRmVlZExpc3Q7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgLy92YXIgZmllbGRJbmZvID0gZmllbGRPYmplY3RUeXBlLkdldEZpZWxkKGZpZWxkTmFtZSwKICAgICAgICAgICAgLy8gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEJpbmRpbmdGbGFncy5JbnN0YW5jZSB8IEJpbmRpbmdGbGFncy5QdWJsaWMgfAogICAgICAgICAgICAvLyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQmluZGluZ0ZsYWdzLk5vblB1YmxpYyk7Cg==</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">dw==</text>
+        <text encoding="base64">cSE=</text>
       </register>
       <register name="z" type="CHARACTER_WISE">
         <text encoding="base64" />

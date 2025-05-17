@@ -58,7 +58,7 @@
     <size key="find.popup.0.0.5120.1440@120dpi" width="1158" height="1098" />
   </component>
   <component name="WindowManager">
-    <frame x="12" y="12" width="5096" height="1416" />
+    <frame x="861" y="12" width="4247" height="1416" />
   </component>
   <component name="WindowStateApplicationService">
     <state x="3493" y="565" width="688" height="309" key="APPLICATION_WIDE_STORE_#rider.projectView.actions.properties.EditPropertiesDialogFolder" timestamp="1743218562823">
@@ -69,14 +69,14 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1358" y="185" width="1783" height="1197" key="FileChooserDialogImpl/0.0.5120.1440" timestamp="1746828831265" />
-    <state width="463" height="143" key="ShowUsagesActions.dimensionServiceKey" timestamp="1746440030286">
+    <state width="463" height="339" key="ShowUsagesActions.dimensionServiceKey" timestamp="1747061309312">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state width="463" height="143" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1746440030286" />
-    <state x="1282" y="720" width="2541" height="1416" key="WELCOME_SCREEN" timestamp="1746828832503">
+    <state width="463" height="339" key="ShowUsagesActions.dimensionServiceKey/0.0.5120.1440" timestamp="1747061309312" />
+    <state x="2942" y="720" width="4343" height="1416" key="WELCOME_SCREEN" timestamp="1747451627681">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1280" y="720" width="2558" height="1438" key="WELCOME_SCREEN/0.0.2560.1440" timestamp="1746098462010" />
-    <state x="1282" y="720" width="2541" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1746828832503" />
+    <state x="2942" y="720" width="4343" height="1416" key="WELCOME_SCREEN/0.0.5120.1440" timestamp="1747451627681" />
   </component>
 </application>

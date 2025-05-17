@@ -375,26 +375,10 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana – ValidationTest.cs" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
-              <option name="activationTimestamp" value="1746720690546" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-251.23774.437" />
-              <option name="buildTimestamp" value="1744650540000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1746714688220" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Vector-Zero.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Vector-Zero – PlayerLogic.cs" opened="true" projectWorkspaceId="2wsSY4C9GECPdr8KzarHwmp5e1D">
-              <option name="activationTimestamp" value="1746890375798" />
+            <RecentProjectMetaInfo frameTitle="Vector-Zero – WeaponHolderScript.cs" projectWorkspaceId="2wsSY4C9GECPdr8KzarHwmp5e1D">
+              <option name="activationTimestamp" value="1746926536522" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-251.23774.437" />
               <option name="buildTimestamp" value="1744650540000" />
@@ -403,12 +387,28 @@
               </option>
               <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1746889088808" />
+              <option name="projectOpenTimestamp" value="1746926206797" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – CannonScript.cs" opened="true" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
+              <option name="activationTimestamp" value="1747451828871" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.23774.437" />
+              <option name="buildTimestamp" value="1744650540000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="861" y="12" width="4247" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1747451630660" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Vector-Zero.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln" />
   </component>
 </application>

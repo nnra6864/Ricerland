@@ -1,6 +1,6 @@
 <application>
   <component name="LafManager">
-    <laf themeId="1324eea6-b737-4305-8a73-14af69073eae" />
+    <laf themeId="ae7a917c-04b2-4468-bdd8-6ddd4c43f879" />
     <lafs-to-previous-schemes>
       <laf-to-scheme laf="03a46e74-b73d-475c-a97a-758ca600f2c2" scheme="_@user_Night Owl (Material)" />
       <laf-to-scheme laf="ExperimentalLight" scheme="Atom One Dark (Material)" />
