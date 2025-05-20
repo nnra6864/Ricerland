@@ -170,6 +170,67 @@ function spc
     end
 end
 
+function to_intermediate -d "Transcodes a single MKV file to AV1+FLAC intermediate format"
+    if test (count $argv) -ne 1
+        echo "Usage: to_av1_flac <input_file.mkv>"
+        return 1
+    end
+
+    set -l input_file "$argv[1]"
+
+    if not test -f "$input_file"
+        echo "Error: Input file '$input_file' not found."
+        return 1
+    end
+
+    set -l input_dir (dirname "$input_file")
+    set -l input_base (basename "$input_file" .mkv)
+    set -l output_base "$input_base"_intermediate
+    set -l output_file "$input_dir/$output_base.mkv"
+
+    echo ""
+    echo "Processing: $input_file"
+    echo "Output: $output_file"
+
+    if [ "$input_file" = "$output_file" ]
+        echo "Error: Input and output file paths are the same. Skipping to prevent overwriting source."
+        return 1
+    end
+
+    ffmpeg -i "$input_file" -map 0:v:0 -map 0:a -c:v libsvtav1 -crf 18 -c:a flac "$output_file"
+
+    if [ "$status" -ne 0 ]
+        echo "Error transcoding $input_file (FFmpeg exit status: $status)"
+        return $status
+    else
+        echo "Successfully transcoded $input_file"
+        return 0
+    end
+end
+
+function dir_to_intermediate -d "Transcodes all MKV files in a directory (recursively) to AV1+FLAC"
+    set -l target_dir (count $argv > /dev/null; and echo $argv[1]; or echo .)
+
+    if not test -d "$target_dir"
+        echo "Error: '$target_dir' is not a valid directory."
+        return 1
+    end
+
+    for file in (find $target_dir -type f -iname '*.mkv')
+        to_av1_flac "$file"
+    end
+end
+
+function cleanup_intermediate_dir -d "Deletes all the original files and removes _intermediate from names"
+    for file in (find . -type f -not -name '*_intermediate.*')
+        rm "$file"
+    end
+    for file in (find . -type f -name '*_intermediate.*')
+        mv "$file" (string replace '_intermediate' '' "$file")
+    end
+end
+
+
 # Downloads video
 alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
 # Downloads audio
