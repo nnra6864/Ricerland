@@ -189,10 +189,12 @@ function spc
 
     # Process the file with ffmpeg
     ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
+
+    # Print info
     echo ""
     echo "Finished processing the file:"
-    echo "Input:   '$input_file'"
-    echo "Output:  '$output_file'"
+    echo "Input:   '$input_file' ("(du -h "$input_file" | cut -f1)")"
+    echo "Output:  '$output_file' ("(du -h "$output_file" | cut -f1)")"
     echo "Start:   '$start_time'"
     echo "End:     '$end_time'"
     echo "Quality: '$cqp_quality'"
