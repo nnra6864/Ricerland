@@ -119,28 +119,31 @@ end
 
 # Used to cut shadowplays
 function spc
-    set space_replacement "_"
+    # Set to " " if you want to keep the spaces
+    set default_space_replacement "_"
+
+    # Appended to output name if extension is not found
     set default_ext ".mkv"
 
     # Get the input file and its duration
-    read -P "Enter input file path - " input_file
+    read -P "Input file path - " input_file
     set input_file (string trim -- "$input_file")
     set input_file_name (basename "$input_file")
     set duration (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
     set duration (date -u -d "1970-01-01 $duration seconds" +%H:%M:%S)
 
     # Get and set output name
-    read -P "Enter output file path(Default: $input_file_name) - " output_file
+    read -P "Output file path(Default: $input_file_name) - " output_file
     if test -z "$output_file"
         set output_file "$input_file_name"
     end
 
     # Replace spaces in the name with the space replacement
-    set replace_spaces "y"
-    read -P "Replace spaces with $space_replacement? (Y/n): " replace_spaces
-    if test -z "$replace_spaces" -o (string lower -- "$replace_spaces") = "y"
-        set output_file (string replace -a ' ' "$space_replacement" -- "$output_file")
+    read -P "Space replacement character(Default: '$default_space_replacement') - " space_replacement
+    if test -z "$space_replacement"
+        set space_replacement "$default_space_replacement"
     end
+    set output_file (string replace -a ' ' "$space_replacement" -- "$output_file")
 
     # Add the default extension if one is not found
     set file_ext (string match -r '\.[^.]+$' -- "$output_file")
@@ -168,11 +171,11 @@ function spc
     end
 
     # Get and parse the start time
-    read -P "Enter start time (format: HH:MM:SS, Default: 0) - " start_time
+    read -P "Start time (format: HH:MM:SS, Default: 0) - " start_time
     set start_time (parse_time "$start_time" "00:00:00")
 
     # Get and parse the end time
-    read -P "Enter end time (format: HH:MM:SS, Default: $duration) - " end_time
+    read -P "End time (format: HH:MM:SS, Default: $duration) - " end_time
     set end_time (parse_time "$end_time" "$duration")
 
     # Get the CQP quality
