@@ -119,54 +119,80 @@ end
 
 # Used to cut shadowplays
 function spc
+    set space_replacement "_"
+    set default_ext ".mkv"
+
+    # Get the input file and its duration
     read -P "Enter input file path - " input_file
-    set input_file (string trim -- $input_file)
-    set input_file_name (basename $input_file)
-    set duration (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $input_file)
+    set input_file (string trim -- "$input_file")
+    set input_file_name (basename "$input_file")
+    set duration (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
     set duration (date -u -d "1970-01-01 $duration seconds" +%H:%M:%S)
-    
+
+    # Get and set output name
     read -P "Enter output file path(Default: $input_file_name) - " output_file
-    if test -z $output_file
-        set output_file $input_file_name
+    if test -z "$output_file"
+        set output_file "$input_file_name"
     end
-    
+
+    # Replace spaces in the name with the space replacement
+    set replace_spaces "y"
+    read -P "Replace spaces with $space_replacement? (Y/n): " replace_spaces
+    if test -z "$replace_spaces" -o (string lower -- "$replace_spaces") = "y"
+        set output_file (string replace -a ' ' "$space_replacement" -- "$output_file")
+    end
+
+    # Add the default extension if one is not found
+    set file_ext (string match -r '\.[^.]+$' -- "$output_file")
+    if test -z "$file_ext"
+        set output_file "$output_file$default_ext"
+    end
+
+    # Parse time
     function parse_time
-        set input $argv[1]
-        set default $argv[2]
-        if test -z $input
-            echo $default
+        set input "$argv[1]"
+        set default "$argv[2]"
+        if test -z "$input"
+            echo "$default"
         else
-            set parts (string split ':' $input)
+            set parts (string split ':' "$input")
             switch (count $parts)
                 case 1
-                    printf "%02d:%02d:%02d" 0 0 $parts[1]
+                    printf "%02d:%02d:%02d" 0 0 "$parts[1]"
                 case 2
-                    printf "%02d:%02d:%02d" 0 $parts[1] $parts[2]
+                    printf "%02d:%02d:%02d" 0 "$parts[1]" "$parts[2]"
                 case 3
-                    printf "%02d:%02d:%02d" $parts[1] $parts[2] $parts[3]
+                    printf "%02d:%02d:%02d" "$parts[1]" "$parts[2]" "$parts[3]"
             end
         end
     end
-    
+
+    # Get and parse the start time
     read -P "Enter start time (format: HH:MM:SS, Default: 0) - " start_time
-    set start_time (parse_time $start_time "00:00:00")
-    
+    set start_time (parse_time "$start_time" "00:00:00")
+
+    # Get and parse the end time
     read -P "Enter end time (format: HH:MM:SS, Default: $duration) - " end_time
-    set end_time (parse_time $end_time $duration)
-    
+    set end_time (parse_time "$end_time" "$duration")
+
+    # Get the CQP quality
     read -P "CQP(Default: 20) - " cqp_quality
-    if test -z $cqp_quality
+    if test -z "$cqp_quality"
         set cqp_quality 20
     end
-    
+
+    # Get the audio track count
     set audio_count (ffmpeg -i "$input_file" 2>&1 | grep "Stream #" | grep -c "Audio")
-    
-    ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq $cqp_quality -c:a copy -map 0 "$output_file"
-    
-    set delete_original "y"
+
+    # Process the file with ffmpeg
+    ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
+
+    # Delete the original file
+    set delete_original "n"
     read -P "Delete original? (y/N): " delete_original
-    if test "$delete_original" = "y"
-        rm -rf $input_file
+    if test (string lower -- "$delete_original") = "y"
+        rm -rf "$input_file"
+        echo "Deleted the original file"
     end
 end
 
