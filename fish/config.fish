@@ -190,12 +190,12 @@ function spc
     # Process the file with ffmpeg
     ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
 
-    # Delete the original file
-    set delete_original "n"
-    read -P "Delete original? (y/N): " delete_original
-    if test (string lower -- "$delete_original") = "y"
-        rm -rf "$input_file"
-        echo "Deleted the original file"
+    # Trash the original file
+    set trash_original "y"
+    read -P "Trash original? (Y/n): " trash_original
+    if test -z "$trash_original" -o (string lower -- "$trash_original") = "y"
+        trash "$input_file"
+        echo "Trashed the original file"
     end
 end
 
