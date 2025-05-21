@@ -189,6 +189,14 @@ function spc
 
     # Process the file with ffmpeg
     ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
+    echo ""
+    echo "Finished processing the file:"
+    echo "Input:   '$input_file'"
+    echo "Output:  '$output_file'"
+    echo "Start:   '$start_time'"
+    echo "End:     '$end_time'"
+    echo "Quality: '$cqp_quality'"
+    echo ""
 
     # Trash the original file
     set trash_original "y"
