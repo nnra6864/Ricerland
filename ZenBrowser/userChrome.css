@@ -11,6 +11,11 @@
   margin: 0 !important;
 }
 
+/* Removes the workspaces tab */
+vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
+  display: none !important;
+}
+
 /* Dark mode styles for Zen Browser (based on Firefox) */
 @media (prefers-color-scheme: dark) {
 
