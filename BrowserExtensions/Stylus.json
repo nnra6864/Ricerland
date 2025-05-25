@@ -117,13 +117,13 @@
         "code": ""
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name          Clean YouTube\n@author        0ko (https://userstyles.world/~0ko)\n@description   Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.\n@version       3.3.0\n@license       MIT\n@preprocessor  stylus\n\n@namespace     0ko userstyles\n@homepageURL   https://codeberg.org/0ko/UserStyles#clean-youtube\n@supportURL    https://codeberg.org/0ko/UserStyles/issues\n\n@var checkbox  noShorts               \"No short videos\"               1\n@var checkbox  noVoiceSearch          \"No voice search\"               1\n@var checkbox  noUpload               \"No upload button\"              0\n@var checkbox  lessCrazyAnimations    \"Less crazy button animations\"  1\n@var checkbox  noMemberships          \"No channel memberships\"        1\n\n@var select    noHome_                \"Home:\"                 {\" \":\"_\"}\n@var checkbox  noHomeTags             \"  No top tags\"                 0\n@var checkbox  noHomeDifferent        \"  No New to you\"               1\n@var checkbox  noHomeLatestPosts      \"  No Latest posts\"             0\n@var checkbox  noHomeVideoSurveys     \"  No video Surveys\"            1\n@var checkbox  noHomeJunkSections     \"  No other junk sections\"      1\n\n@var select    noVideo_               \"Video:\"                {\" \":\"_\"}\n@var checkbox  noVideoCornerLogo      \"  No logo in corner\"           1\n@var checkbox  noVideoPlayNext        \"  No Next video button\"        1\n@var checkbox  noVideoClipButton      \"  No Clip button\"              1\n@var checkbox  noVideoWatchNext       \"  No Watch next column (emptiness) OR new bottom grid\" 0\n@var checkbox  noVideoEndscreenVideos \"  No endscreen video suggestions\" 0\n@var checkbox  noVideoSuggestionsTags \"  No tags for Watch next\"      1\n@var checkbox  noVideoVignette        \"  No bottom vignette\"          0\n@var checkbox  noVideoVignetteTop     \"  No top vignette (fullscreen)\" 0\n@var checkbox  noVideoChannelLinks    \"  No channel links (socials) in description\" 1\n\n@var select    noLogo_                \"Logo:\"                 {\" \":\"_\"}\n@var checkbox  noLogoAccent           \"  Monochrome button\"           0\n@var checkbox  noLogoCountryCode      \"  No country code\"             1\n\n@var select    noSidebar_             \"Sidebar:\"              {\" \":\"_\"}\n@var checkbox  noSidebarNewnessDots   \"  No newness dots\"             1\n@var checkbox  noSidebarBloat         \"  No bloat\"                    1\n\n@var checkbox  noSubsTopGap           \"Subscriptions: reduce top gap\" 1\n\n@var checkbox  noSearchUnrelated      \"Search: no unrelated videos\"   1\n\n@var checkbox  noCommentsPaidBg       \"Comments: no paid background\"  1\n\n==/UserStyle== */\n\nimp = !important\n\n@-moz-document domain(\"youtube.com\")\n\n\tif noShorts\n\t\t/* on Main and in Subscriptions (alt: &:has(a[href^=\"/feed/subscriptions/shorts\"])) */\n\t\tytd-rich-shelf-renderer[is-shorts]\n\t\t\tdisplay: none imp\n\n\t\t/* in Search */\n\t\tytd-reel-shelf-renderer /* section */\n\t\t\t&:has(ytm-shorts-lockup-view-model-v2)\n\t\t\t\tdisplay: none imp\n\t\tytd-video-renderer /* video */\n\t\t\t&:has(a#video-title[href^=\"/shorts/\"])\n\t\t\t\tdisplay: none imp\n\n\t\t/* \"Shorts remixing this video\" */\n\t\t#description ytd-reel-shelf-renderer.ytd-structured-description-content-renderer:has(#dismissible)\n\t\t\tdisplay: none imp\n\n\tif noVoiceSearch\n\t\t#voice-search-button.ytd-masthead\n\t\t\tdisplay: none imp\n\n\tif noUpload\n\t\tytd-topbar-menu-button-renderer.ytd-masthead:nth-child(1):has(path[d*=\"3v3H9v\"])\n\t\t\tdisplay: none imp\n\n\tif lessCrazyAnimations\n\t\tytd-segmented-like-dislike-button-renderer\n\t\tsegmented-like-dislike-button-view-model\n\t\t\t.smartimation__border-gradient\n\t\t\t\tdisplay: none\n\t\t\t.smartimation--active-border .smartimation__background\n\t\t\t\topacity: 0\n\t\t\tytd-lottie-player\n\t\t\t\tfilter: saturate(0)\n\n\t\t#subscribe-button\n\t\t\t.animated-action__background-container\n\t\t\t.animated-action__lottie\n\t\t\t.smartimation__border\n\t\t\t\tdisplay: none\n\t\t\tytd-subscribe-button-renderer[animated-action-enabled][subscribed]\n\t\t\t\ttransition: width .1s ease\n\n\t\t/* Remove seekbar gradient */\n\t\t.ytp-play-progress\n\t\t\tbackground: rgb(255, 0, 51) imp\n\n\tif noMemberships\n\t\tytd-item-section-renderer\n\t\t\tytd-recognition-shelf-renderer\n\t\t\t\tdisplay: none\n\n\t/* Homepage */\n\n\tif noHomeTags\n\t\tytd-feed-filter-chip-bar-renderer\n\t\t\tdisplay: none imp\n\t\tytd-rich-grid-renderer #contents.ytd-rich-grid-renderer\n\t\t\tpadding-top: 16px imp\n\n\n\tif noHomeDifferent\n\t\t.ytd-feed-nudge-renderer /* \"Looking for something different?\" */\n\t\tyt-chip-cloud-chip-renderer[chip-style=\"STYLE_REFRESH_TO_NOVEL_CHIP\"]\n\t\t\tdisplay: none imp\n\n\tif noHomeLatestPosts\n\t\t#dismissible\n\t\t.ytd-rich-shelf-renderer\n\t\t.ytd-rich-section-renderer\n\t\t\t&:has(ytd-post-renderer)\n\t\t\t\tdisplay: none imp\n\n\tif noHomeVideoSurveys\n\t\t#dismissible .ytd-inline-survey-renderer\n\t\tytd-popup-container ytd-checkbox-survey-renderer\n\t\t\tdisplay: none imp\n\n\tif noHomeJunkSections\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/playables\"])\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/feed/storefront\"]) /* \"Primetime movies for you\" */\n\t\t\tdisplay: none imp\n\n\n\t/* Video */\n\n\tif noVideoCornerLogo\n\t\t.iv-branding\n\t\t/*branding-img-container ytp-button*/\n\t\t/*branding-img iv-click-target     */\n\t\t/*branding-context-container-outer */\n\t\t\tdisplay: none imp\n\n\tif noVideoPlayNext\n\t\t#ytd-player .ytp-next-button\n\t\t\tdisplay: none imp\n\n\tif noVideoClipButton\n\t\tyt-button-view-model:has(path[d*=\"1-1 1 .45 1 1zm-1 9c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm3.79-7.77L21\"])\n\t\t\tdisplay: none imp\n\n\tif noVideoWatchNext\n\t\tytd-watch-next-secondary-results-renderer\n\t\tytd-watch-grid.ytd-page-manager #bottom-grid\n\t\t\tdisplay: none imp\n\n\tif noVideoEndscreenVideos\n\t\t.ytp-endscreen-content\n\t\t\tdisplay: none imp\n\n\tif noVideoSuggestionsTags\n\t\tytd-watch-next-secondary-results-renderer\n\t\t\tyt-related-chip-cloud-renderer.&\n\t\t\t\tdisplay: none imp\n\t\t\tytd-watch-flexy[default-layout] & ytd-compact-video-renderer:first-child\n\t\t\t\tmargin-top: 0 imp\n\n\tif noVideoVignette\n\t\t.ytp-gradient-bottom\n\t\t\tdisplay: none imp\n\n\tif noVideoVignetteTop\n\t\t.ytp-gradient-top\n\t\t\tdisplay: none imp\n\n\tif noVideoChannelLinks\n\t\tytd-video-description-infocards-section-renderer yt-button-view-model\n\t\t\t/* Patreon, Instagram, Twitter, Discord, Reddit */\n\t\t\t&:has(a[href^=\"https://\"])\n\t\t\t\tdisplay: none imp\n\n\n\t/* Logo */\n\n\tif noLogoAccent\n\t\t#logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) contrast(1.25)\n\t\t[dark] #logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) invert(100%) brightness(1.33)\n\n\tif noLogoCountryCode\n\t\t/* Kind of pointless country code, since the content you see and watch doesn't necessarily depend on it. Imagine every website you visit having a country code in it's logo. */\n\t\t#logo\n\t\tytd-topbar-logo-renderer\n\t\t\t#country-code\n\t\t\t\tdisplay: none\n\n\n\t/* Sidebar */\n\n\tif noSidebarNewnessDots\n\t\t#newness-dot\n\t\t\tdisplay: none imp\n\n\tif noSidebarBloat\n\t\t.tp-yt-app-drawer\n\t\t\t/* 1st block */\n\t\t\ta#endpoint[title=\"Shorts\"]\n\t\t\t/* 2nd block */\n\t\t\ta[href^=\"/feed/clips\"][title]\n\t\t\t/* Explore */\n\t\t\ta[href^=\"/feed/trending\"][title]\n\t\t\ta[href^=\"/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ\"][title]\n\t\t\ta[href^=\"/feed/storefront\"][title]\n\t\t\ta[href^=\"/channel/UC4R8DWoMoI7CAwX8_LjQHig\"][title]\n\t\t\ta[href^=\"/gaming\"][title]\n\t\t\ta[href^=\"/channel/UCEgdi0XIXXZ-qJOFPf4JSKw\"][title]\n\t\t\t/* More from YouTube */\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"Creator Studio\"]\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"YouTube Studio\"]\n\t\t\ta[href^=\"https://music.youtube.com\"][title=\"YouTube Music\"]\n\t\t\ta[href^=\"https://www.youtubekids.com\"][title=\"YouTube Kids\"]\n\t\t\ta[href^=\"https://tv.youtube.com\"][title=\"YouTube TV\"]\n\t\t\t/* Last block */\n\t\t\ta#endpoint[title=\"Send feedback\"]\n\t\t\t/* Footer */\n\t\t\t#guide-links-secondary.ytd-guide-renderer > a[href=\"/new\"] /* \"Test new features\" - premium only */\n\t\t\t#footer.ytd-guide-renderer #copyright\n\t\t\t\tdisplay: none imp\n\n\t\t\t#sections\n\t\t\t\tytd-guide-section-renderer:nth-last-child(2)\n\t\t\t\tytd-guide-section-renderer:nth-last-child(3)\n\t\t\t\t\tdisplay: none\n\n\n\t\t/* Subscriptions */\n\n\t\tif noSubsTopGap\n\t\t\tytd-browse[page-subtype=\"subscriptions\"] .grid-subheader.ytd-shelf-renderer\n\t\t\t\tmargin-top: 0 imp\n\n\n\t\t/* Search */\n\n\t\tif noSearchUnrelated\n\t\t\t.ytd-search ytd-shelf-renderer\n\t\t\t\tdisplay: none imp\n\n\n\t\t/* Comments */\n\n\t\tif noCommentsPaidBg\n\t\t\t#paid-comment-background\n\t\t\t\tdisplay: none imp\n",
+    "sourceCode": "/* ==UserStyle==\n@name          Clean YouTube\n@author        0ko (https://userstyles.world/~0ko)\n@description   Simplificator and debloater for YouTube with focus on minimizing breaking.\n@version       3.4.2\n@license       MIT\n@preprocessor  stylus\n\n@namespace     0ko userstyles\n@homepageURL   https://codeberg.org/0ko/UserStyles#clean-youtube\n@supportURL    https://codeberg.org/0ko/UserStyles/issues\n\n@var checkbox  noShorts               \"No short videos\"               1\n@var checkbox  noVoiceSearch          \"No voice search\"               1\n@var checkbox  noUpload               \"No upload button\"              0\n@var checkbox  lessCrazyAnimations    \"Less crazy button animations\"  1\n@var checkbox  noMemberships          \"No channel memberships\"        1\n\n@var select    noHome_                \"Home:\"                 {\" \":\"_\"}\n@var checkbox  noHomeTags             \"  No top tags\"                 0\n@var checkbox  noHomeDifferent        \"  No New to you\"               1\n@var checkbox  noHomeLatestPosts      \"  No Latest posts\"             0\n@var checkbox  noHomeVideoSurveys     \"  No video Surveys\"            1\n@var checkbox  noHomeJunkSections     \"  No other junk sections\"      1\n\n@var select    noVideo_               \"Video:\"                {\" \":\"_\"}\n@var checkbox  noVideoCornerLogo      \"  No logo in corner\"           1\n@var checkbox  noVideoPlayNext        \"  No Next video button\"        1\n@var checkbox  noVideoClipButton      \"  No Clip button\"              1\n@var checkbox  noVideoWatchNext       \"  No Watch next column (emptiness) OR new bottom grid\" 0\n@var checkbox  noVideoEndscreenVideos \"  No endscreen video suggestions\" 0\n@var checkbox  noVideoSuggestionsTags \"  No tags for Watch next\"      1\n@var checkbox  noVideoVignette        \"  No bottom vignette\"          0\n@var checkbox  noVideoVignetteTop     \"  No top vignette (fullscreen)\" 0\n@var checkbox  noVideoChannelLinks    \"  No channel links (socials) in description\" 1\n@var checkbox  noVideoFundraising     \"  No fundraising\"              1\n\n@var select    noLogo_                \"Logo:\"                 {\" \":\"_\"}\n@var checkbox  noLogoAccent           \"  Monochrome button\"           0\n@var checkbox  noLogoCountryCode      \"  No country code\"             1\n\n@var select    noSidebar_             \"Sidebar:\"              {\" \":\"_\"}\n@var checkbox  noSidebarNewnessDots   \"  No newness dots\"             1\n@var checkbox  noSidebarBloat         \"  No bloat\"                    1\n\n@var checkbox  noSubsTopGap           \"Subscriptions: reduce top gap\" 1\n\n@var checkbox  noSearchUnrelated      \"Search: no unrelated videos\"   1\n\n@var checkbox  noCommentsPaidBg       \"Comments: no paid background\"  1\n\n==/UserStyle== */\n\nimp = !important\n\n@-moz-document domain(\"youtube.com\")\n\n\tif noShorts\n\t\t/* on Main and in Subscriptions (alt: &:has(a[href^=\"/feed/subscriptions/shorts\"])) */\n\t\tytd-rich-shelf-renderer[is-shorts]\n\t\t\tdisplay: none imp\n\n\t\t/* in Search */\n\t\tytd-reel-shelf-renderer /* section */\n\t\t\t&:has(ytm-shorts-lockup-view-model-v2)\n\t\t\t\tdisplay: none imp\n\t\tytd-video-renderer /* video */\n\t\t\t&:has(a#video-title[href^=\"/shorts/\"])\n\t\t\t\tdisplay: none imp\n\n\t\t/* \"Shorts remixing this video\" */\n\t\t#description ytd-reel-shelf-renderer.ytd-structured-description-content-renderer:has(#dismissible)\n\t\t\tdisplay: none imp\n\n\tif noVoiceSearch\n\t\t#voice-search-button.ytd-masthead\n\t\t\tdisplay: none imp\n\n\tif noUpload\n\t\t#masthead #end #buttons button:has(path[d$=\"1h8V3h1v8h8v1z\"])\n\t\t\tdisplay: none imp\n\n\tif lessCrazyAnimations\n\t\tytd-segmented-like-dislike-button-renderer\n\t\tsegmented-like-dislike-button-view-model\n\t\t\t.smartimation__border-gradient\n\t\t\t\tdisplay: none\n\t\t\t.smartimation--active-border .smartimation__background\n\t\t\t\topacity: 0\n\t\t\tytd-lottie-player\n\t\t\t\tfilter: saturate(0)\n\n\t\t#subscribe-button\n\t\t\t.animated-action__background-container\n\t\t\t.animated-action__lottie\n\t\t\t.smartimation__border\n\t\t\t\tdisplay: none\n\t\t\tytd-subscribe-button-renderer[animated-action-enabled][subscribed]\n\t\t\t\ttransition: width .1s ease\n\n\t\t/* Remove seekbar gradient */\n\t\t.ytp-play-progress\n\t\t\tbackground: rgb(255, 0, 51) imp\n\n\tif noMemberships\n\t\tytd-item-section-renderer\n\t\t\tytd-recognition-shelf-renderer\n\t\t\t\tdisplay: none\n\n\t/* Homepage */\n\n\tif noHomeTags\n\t\tytd-feed-filter-chip-bar-renderer\n\t\t\tdisplay: none imp\n\t\tytd-rich-grid-renderer #contents.ytd-rich-grid-renderer\n\t\t\tpadding-top: 16px imp\n\n\n\tif noHomeDifferent\n\t\t.ytd-feed-nudge-renderer /* \"Looking for something different?\" */\n\t\tyt-chip-cloud-chip-renderer[chip-style=\"STYLE_REFRESH_TO_NOVEL_CHIP\"]\n\t\t\tdisplay: none imp\n\n\tif noHomeLatestPosts\n\t\t#dismissible\n\t\t.ytd-rich-shelf-renderer\n\t\t.ytd-rich-section-renderer\n\t\t\t&:has(ytd-post-renderer)\n\t\t\t\tdisplay: none imp\n\n\tif noHomeVideoSurveys\n\t\t#dismissible .ytd-inline-survey-renderer\n\t\tytd-popup-container ytd-checkbox-survey-renderer\n\t\t\tdisplay: none imp\n\n\tif noHomeJunkSections\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/playables\"])\n\t\t.ytd-rich-shelf-renderer:has(a[href=\"/feed/storefront\"]) /* \"Primetime movies for you\" */\n\t\t\tdisplay: none imp\n\n\n\t/* Video */\n\n\tif noVideoCornerLogo\n\t\t.iv-branding\n\t\t/*branding-img-container ytp-button*/\n\t\t/*branding-img iv-click-target     */\n\t\t/*branding-context-container-outer */\n\t\t\tdisplay: none imp\n\n\tif noVideoPlayNext\n\t\t#ytd-player .ytp-next-button\n\t\t\tdisplay: none imp\n\n\tif noVideoClipButton\n\t\tyt-button-view-model:has(path[d*=\"1-1 1 .45 1 1zm-1 9c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm3.79-7.77L21\"])\n\t\t\tdisplay: none imp\n\n\tif noVideoWatchNext\n\t\tytd-watch-next-secondary-results-renderer\n\t\tytd-watch-grid.ytd-page-manager #bottom-grid\n\t\t\tdisplay: none imp\n\n\tif noVideoEndscreenVideos\n\t\t#movie_player\n\t\t\t.ytp-ce-channel\n\t\t\t.ytp-ce-video\n\t\t\t\tdisplay: none imp\n\t\t.ytp-endscreen-content\n\t\t\tdisplay: none imp\n\n\tif noVideoSuggestionsTags\n\t\tytd-watch-next-secondary-results-renderer\n\t\t\tyt-related-chip-cloud-renderer.&\n\t\t\t\tdisplay: none imp\n\t\t\tytd-watch-flexy[default-layout] & ytd-compact-video-renderer:first-child\n\t\t\t\tmargin-top: 0 imp\n\n\tif noVideoVignette\n\t\t.ytp-gradient-bottom\n\t\t\tdisplay: none imp\n\n\tif noVideoVignetteTop\n\t\t.ytp-gradient-top\n\t\t\tdisplay: none imp\n\n\tif noVideoChannelLinks\n\t\tytd-video-description-infocards-section-renderer yt-button-view-model\n\t\t\t/* Patreon, Instagram, Twitter, Discord, Reddit */\n\t\t\t&:has(a[href^=\"https://\"])\n\t\t\t\tdisplay: none imp\n\n\tif noVideoFundraising\n\t\t#donation-shelf\n\t\tytd-badge-supported-renderer.ytd-watch-metadata\n\t\t\tdisplay: none imp\n\n\n\t/* Logo */\n\n\tif noLogoAccent\n\t\t#logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) contrast(1.25)\n\t\t[dark] #logo svg g:first-child:not(g g)\n\t\t\t\tfilter: grayscale(100%) invert(100%) brightness(1.33)\n\n\tif noLogoCountryCode\n\t\t/* Kind of pointless country code, since the content you see and watch doesn't necessarily depend on it. Imagine every website you visit having a country code in it's logo. */\n\t\t#logo\n\t\tytd-topbar-logo-renderer\n\t\t\t#country-code\n\t\t\t\tdisplay: none\n\n\n\t/* Sidebar */\n\n\tif noSidebarNewnessDots\n\t\t#newness-dot\n\t\t\tdisplay: none imp\n\n\tif noSidebarBloat\n\t\t.tp-yt-app-drawer\n\t\t\t/* 1st block */\n\t\t\ta#endpoint[title=\"Shorts\"]\n\t\t\t/* 2nd block */\n\t\t\ta[href^=\"/feed/clips\"][title]\n\t\t\t/* Explore */\n\t\t\ta[href^=\"/feed/trending\"][title]\n\t\t\ta[href^=\"/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ\"][title]\n\t\t\ta[href^=\"/feed/storefront\"][title]\n\t\t\ta[href^=\"/channel/UC4R8DWoMoI7CAwX8_LjQHig\"][title]\n\t\t\ta[href^=\"/gaming\"][title]\n\t\t\ta[href^=\"/channel/UCEgdi0XIXXZ-qJOFPf4JSKw\"][title]\n\t\t\t/* More from YouTube */\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"Creator Studio\"]\n\t\t\ta[href^=\"https://studio.youtube.com\"][title=\"YouTube Studio\"]\n\t\t\ta[href^=\"https://music.youtube.com\"][title=\"YouTube Music\"]\n\t\t\ta[href^=\"https://www.youtubekids.com\"][title=\"YouTube Kids\"]\n\t\t\ta[href^=\"https://tv.youtube.com\"][title=\"YouTube TV\"]\n\t\t\t/* Last block */\n\t\t\ta#endpoint[title=\"Send feedback\"]\n\t\t\t/* Footer */\n\t\t\t#guide-links-secondary.ytd-guide-renderer > a[href=\"/new\"] /* \"Test new features\" - premium only */\n\t\t\t#footer.ytd-guide-renderer #copyright\n\t\t\t\tdisplay: none imp\n\n\t\t\t#sections\n\t\t\t\tytd-guide-section-renderer:nth-last-child(2)\n\t\t\t\tytd-guide-section-renderer:nth-last-child(3)\n\t\t\t\t\tdisplay: none\n\n\n\t\t/* Subscriptions */\n\n\t\tif noSubsTopGap\n\t\t\tytd-browse[page-subtype=\"subscriptions\"] .grid-subheader.ytd-shelf-renderer\n\t\t\t\tmargin-top: 0 imp\n\n\n\t\t/* Search */\n\n\t\tif noSearchUnrelated\n\t\t\t.ytd-search ytd-shelf-renderer\n\t\t\t\tdisplay: none imp\n\n\n\t\t/* Comments */\n\n\t\tif noCommentsPaidBg\n\t\t\t#paid-comment-background\n\t\t\t\tdisplay: none imp\n",
     "updateUrl": "https://userstyles.world/api/style/10175.user.css",
     "usercssData": {
       "name": "Clean YouTube",
       "author": "0ko (https://userstyles.world/~0ko)",
-      "description": "Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.",
-      "version": "3.3.0",
+      "description": "Simplificator and debloater for YouTube with focus on minimizing breaking.",
+      "version": "3.4.2",
       "license": "MIT",
       "preprocessor": "stylus",
       "namespace": "0ko userstyles",
@@ -310,6 +310,14 @@
           "default": "1",
           "options": null
         },
+        "noVideoFundraising": {
+          "type": "checkbox",
+          "label": "  No fundraising",
+          "name": "noVideoFundraising",
+          "value": null,
+          "default": "1",
+          "options": null
+        },
         "noLogo_": {
           "type": "select",
           "label": "Logo:",
@@ -397,14 +405,15 @@
       }
     },
     "author": "0ko (https://userstyles.world/~0ko)",
-    "description": "Simplificator and debloater for YouTube aimed at minimizing breaking. Formerly known as Enhancements for YouTube.",
+    "description": "Simplificator and debloater for YouTube with focus on minimizing breaking.",
     "url": "https://codeberg.org/0ko/UserStyles#clean-youtube",
     "name": "Clean YouTube",
-    "originalDigest": "a8b0f642bcf1abb5f6ee5ba798e3fc208f5881f0",
+    "originalDigest": "60c9d8c902891f710c5c9bef492439791508e548",
     "_id": "02d1e817-d254-4ae4-aa31-a6e9cf3cf896",
-    "_rev": 1738343153298,
+    "_rev": 1748178512150,
     "id": 1,
-    "installationUrl": "https://userstyles.world/style/10175"
+    "installationUrl": "https://userstyles.world/style/10175",
+    "updateDate": 1744563093203
   },
   {
     "enabled": true,
@@ -428,13 +437,13 @@
     "name": "Youtube White Progress Bar",
     "originalDigest": "1dfc351e995101978ec431faaf40b046ce92d105",
     "_id": "82734bc6-d0a8-4f4d-bfee-0dbbc740db66",
-    "_rev": 1738343269927,
+    "_rev": 1739226871883,
     "id": 3,
     "url": "https://userstyles.world/style/11203",
     "installationUrl": "https://userstyles.world/style/11203"
   },
   {
-    "enabled": true,
+    "enabled": false,
     "installDate": 1738343354059,
     "sections": [
       {
@@ -674,7 +683,7 @@
     "name": "`Repositories Grid For GitHub",
     "originalDigest": "8de70317b0403de838e67baac7788295517ad9da",
     "_id": "33e37afa-5104-46c3-a1a2-db09f5d93302",
-    "_rev": 1738344050988,
+    "_rev": 1743660116366,
     "id": 5,
     "installationUrl": "https://userstyles.world/style/9152"
   },
@@ -765,7 +774,7 @@
     "name": "GitHub Custom Contributions",
     "originalDigest": "3caedb6717cb6e08f56d8913fffdcce27d5841d6",
     "_id": "8a5538db-7a17-4a05-a080-7df52764df83",
-    "_rev": 1738344015723,
+    "_rev": 1739226871902,
     "id": 8,
     "url": "https://userstyles.world/style/8905",
     "installationUrl": "https://userstyles.world/style/8905"
@@ -797,7 +806,7 @@
     "name": "GitHub Code Wrap",
     "originalDigest": "07f0e748595d5316ae16c023bf3849be1428b17e",
     "_id": "2484bc71-ea21-4c8d-800b-2d9c92fe688b",
-    "_rev": 1738343471920,
+    "_rev": 1739226871909,
     "id": 12,
     "installationUrl": "https://userstyles.world/style/23"
   },
@@ -823,7 +832,7 @@
     "name": "GitHub Actions WideScreen",
     "originalDigest": "f1690807a5158048641c5b6e4175124eea51899d",
     "_id": "2fd20931-94cd-4116-a335-7ae0477e3af6",
-    "_rev": 1738343444757,
+    "_rev": 1739226871911,
     "id": 16,
     "url": "https://userstyles.world/style/5871",
     "installationUrl": "https://userstyles.world/style/5871"
@@ -855,7 +864,7 @@
     "name": "github-monday",
     "originalDigest": "02a25549ed1704ad3a0ca01175a371c5a374cb68",
     "_id": "88560c8b-1e6c-4872-b94e-55dccfe5289f",
-    "_rev": 1738344230929,
+    "_rev": 1739226871912,
     "id": 17,
     "installationUrl": "https://userstyles.world/style/400"
   },
@@ -867,25 +876,36 @@
         "code": ""
       }
     ],
-    "sourceCode": "/* ==UserStyle==\n@name           Better Whatsapp\n@namespace      Jamir-boop\n@version        0.0.5\n@description    Ultimate privacy and various UI adjustments\n@author         Jamir-boop\n@preprocessor   stylus\n\n==/UserStyle== */\n\nblurrContent(applyGrays)\n\ttransition: .2s ease!important\n\tif applyGrays\n\t\tfilter: blur(10px) grayscale(1) !important\n\telse\n\t\tfilter: blur(5px) !important\n\t&:hover\n\t\tfilter: blur(0px) grayscale(0) !important\n\t\n\n@-moz-document domain(\"web.whatsapp.com\")\n\t// margin fix\n\tdiv[id=\"app\"] > div > div[tabindex=\"-1\"]\n\t\t  width 100% !important\n\t\t  max-width 100% !important\n\t\t  height 100% !important\n\t\t  max-height 100% !important\n\t\t  position absolute\n\t\t  top 0 !important\n\t\t  left 0 !important\n\n\t// Blurr feature\n\t// Blurr chat list\n\tdiv[aria-label=\"Chat list\"] > div // normal\n\tdiv.false div[tabindex=\"-1\"] div[style *= \"z-index\"] // archived\n\tdiv[id=\"app\"] div[style *= \"z-index\"] // search results\n\t\tblurrContent(0)\n\t\n\t// Blurr media in chat\n\t[class *= 'message-'] [style *= 'height']\n\t\timg:not([src*='/pp?']):not([class*='emoji'])\n\t\t\tblurrContent(1)\n\t[class *= 'message-']\n\t\t[style *= \"data:image\"]\n\t\t\tblurrContent(1)\n\t[class *= 'message-'] [style *= \"background-image: url\"]\n\t\tblurrContent(1)\n\t\t\n\t// Blurr media in chat info (right panel) and image open\n\t[aria-label=\" Image\"]\n\t\tblurrContent(1)\n\t\t\n\t// Blurr contact numbers\n\t.three > div:nth-of-type(5)\n\t\t[class *= 'selectable-text'] span\n\t\t\tblurrContent(1)\n",
+    "sourceCode": "/* ==UserStyle==\n@name           Better Whatsapp\n@namespace      Jamir-boop\n@version        0.1.5\n@description    Ultimate privacy and various UI adjustments\n@author         Jamir-boop\n@preprocessor   stylus\n\n@var checkbox fullscreen \"fullscreen\" 0\n\n==/UserStyle== */\n\nblurrContent(applyGrays)\n\ttransition: .2s ease!important\n\tif applyGrays\n\t\tfilter: blur(10px) grayscale(1) !important\n\telse\n\t\tfilter: blur(5px) !important\n\t&:hover\n\t\tfilter: blur(0px) grayscale(0) !important\n\t\n\n@-moz-document domain(\"web.whatsapp.com\")\n\t// margin fix\n\tdiv[id=\"app\"] > div > div[tabindex=\"-1\"]\n\t\twidth 100% !important\n\t\tmax-width 100% !important\n\t\theight 100% !important\n\t\tmax-height 100% !important\n\t\tposition absolute\n\t\ttop 0 !important\n\t\tleft 0 !important\n\t\n\t// full width and heigth\n\tif fullscreen\n\t\t#app > div > div:not(#wa-popover-bucket, #expressions-panel-container) > div\n\t\t\ttop: revert\n\t\t\twidth: 100%\n\t\t\tmax-width: revert\n\t\t\theight: 100%\n\t\t\n\t// Blurr feature\n\t// Blurr chat list\n\tdiv[aria-label=\"Chat list\"] > div // normal\n\tdiv.false div[tabindex=\"-1\"] div[style *= \"z-index\"] // archived\n\tdiv[id=\"app\"] div[style *= \"z-index\"]:not(div#expressions-panel-container div) // search results\n\t\tblurrContent(0)\n\t\n\t// Blurr media in chat\n\t[class *= 'message-'] [style *= 'height']\n\t\timg:not([src*='/pp?']):not([class*='emoji'])\n\t\t\tblurrContent(1)\n\t[class *= 'message-']\n\t\t[style *= \"data:image\"]\n\t\t\tblurrContent(1)\n\t[class *= 'message-'] [style *= \"background-image: url\"]\n\t\tblurrContent(1)\n\t\n\t// Blurr stickers\n\t[class*='message-'] img[src^=\"blob:\"]:not([class*=\"emoji\"]):not([src*='/pp?']):not([style*=\"display: none;\"]):not([style*=\"display: block;\"])[draggable=\"false\"],img[style*=\"display: none;\"], img[style*=\"display: block;\"],[class*='message-'] g[clip-path*=\"url\"], canvas[class][style*=\"display: block;\"]\n\t\tblurrContent(1)\n\t\t\n\t// Blurr media in chat info (right panel) and image open\n\t[aria-label=\" Image\"]\n\t[aria-label=\" Gif\"]\n\t[aria-label=\"replied Gif\"]\n\t[aria-label=\"replied Image\"]\n\t[aria-label=\" Video\"]\t\n\t\tblurrContent(1)\n\t\t\n\t// Blurr contact numbers\n\t.three > div:nth-of-type(5)\n\t\t[class *= 'selectable-text'] span\n\t\t\tblurrContent(1)\n",
     "updateUrl": "https://userstyles.world/api/style/15428.user.css",
     "usercssData": {
       "name": "Better Whatsapp",
       "namespace": "Jamir-boop",
-      "version": "0.0.5",
+      "version": "0.1.5",
       "description": "Ultimate privacy and various UI adjustments",
       "author": "Jamir-boop",
-      "preprocessor": "stylus"
+      "preprocessor": "stylus",
+      "vars": {
+        "fullscreen": {
+          "type": "checkbox",
+          "label": "fullscreen",
+          "name": "fullscreen",
+          "value": null,
+          "default": "0",
+          "options": null
+        }
+      }
     },
     "author": "Jamir-boop",
     "description": "Ultimate privacy and various UI adjustments",
     "name": "Better Whatsapp",
-    "originalDigest": "0082cdde3b7f0ca03f5c4855edf14dae78828e8c",
+    "originalDigest": "673f397c090b127e54ee91ff9e6c92ce88cdd1d3",
     "_id": "e47bac8e-a958-4eb4-b43b-c4e1b7632ac6",
-    "_rev": 1738344864482,
+    "_rev": 1747631338507,
     "id": 49,
     "url": "https://userstyles.world/style/15428",
-    "installationUrl": "https://userstyles.world/style/15428"
+    "installationUrl": "https://userstyles.world/style/15428",
+    "updateDate": 1747631338439
   },
   {
     "enabled": true,
@@ -909,9 +929,36 @@
     "name": "Frameless WhatsApp",
     "originalDigest": "45e920034de5224ffb21fcfb10084fc87aa9ae05",
     "_id": "a9027a76-87f1-4f32-9b97-8c4a0bb1ebe6",
-    "_rev": 1738344906433,
+    "_rev": 1739226871920,
     "id": 55,
     "url": "https://userstyles.world/style/19033",
     "installationUrl": "https://userstyles.world/style/19033"
+  },
+  {
+    "enabled": false,
+    "installDate": 1747200022261,
+    "sections": [
+      {
+        "code": ""
+      }
+    ],
+    "sourceCode": "/* ==UserStyle==\n@name           academy.hackthebox.com - Apr 2024\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         ik\n\n==/UserStyle== */\n@-moz-document domain(\"academy.hackthebox.com\") {\n    html {\n        \n\n        \n        body{\n            color:white;\n         \n    \n        }\n   \n\n        \n          filter: sepia(20%) invert(100%) hue-rotate(200deg) contrast(100%) saturate(350%) brightness(120%);\n    \n        background-color:#ffffffb3; \n    }\n\n  \n\n      \n\n}\n    \n        \n    \n   \n",
+    "updateUrl": "https://userstyles.world/api/style/17588.user.css",
+    "usercssData": {
+      "name": "academy.hackthebox.com - Apr 2024",
+      "namespace": "github.com/openstyles/stylus",
+      "version": "1.0.0",
+      "description": "A new userstyle",
+      "author": "ik"
+    },
+    "author": "ik",
+    "description": "A new userstyle",
+    "name": "academy.hackthebox.com - Apr 2024",
+    "originalDigest": "0eb52c5a7f39115a0e5f971980faeac6b715929d",
+    "_id": "864ecc12-ffc7-4162-b8d6-391e84d6edc9",
+    "_rev": 1747200044437,
+    "url": "https://userstyles.world/style/17588",
+    "installationUrl": "https://userstyles.world/style/17588",
+    "id": 56
   }
 ]
