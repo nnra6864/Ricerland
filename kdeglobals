@@ -175,6 +175,9 @@ Sort reversed=false
 Speedbar Width=144
 View Style=Detail
 
+[KShortcutsDialog Settings]
+Dialog Size=2298,1283
+
 [PreviewSettings]
 MaximumRemoteSize=0
 
