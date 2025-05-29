@@ -138,9 +138,6 @@
             "enabled": true,
             "baseUrl": "https://decor.fieryflames.dev"
         },
-        "EmoteCloner": {
-            "enabled": true
-        },
         "Experiments": {
             "enabled": true,
             "toolbarDevMenu": false
@@ -265,9 +262,6 @@
             "enabled": true
         },
         "MoreKaomoji": {
-            "enabled": false
-        },
-        "MoreUserTags": {
             "enabled": false
         },
         "Moyai": {
@@ -1435,6 +1429,12 @@
         },
         "GuildPickerDumper": {
             "enabled": false
+        },
+        "ExpressionCloner": {
+            "enabled": true
+        },
+        "ExpandedUserTags": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1447,7 +1447,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1747161749920
+        "settingsSyncVersion": 1748519514135
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
