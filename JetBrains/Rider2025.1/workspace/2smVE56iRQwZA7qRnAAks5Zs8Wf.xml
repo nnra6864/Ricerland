@@ -25,24 +25,13 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="1z6pwiq3kl9e5" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1272">
-              <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"CannonScript.cs","foregroundColor":-4473925,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-    </leaf>
+    <leaf ideFingerprint="11bxe96727br4" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 419,
-      "lastUsed": 1747451650132
+      "usageCount": 421,
+      "lastUsed": 1748695946519
     },
     "ShaderLab": {
       "usageCount": 9,
@@ -343,7 +332,7 @@ void Raymarch_float(
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="419" lastUsage="1747451650133" />
+      <summary usageCount="421" lastUsage="1748695946521" />
     </language>
     <language id="C++">
       <summary usageCount="5" lastUsage="1745345066588" />
@@ -376,20 +365,11 @@ void Raymarch_float(
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Fruits" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Fruits" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="CannonScript.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -556,12 +536,12 @@ void Raymarch_float(
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.29060325" />
+            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.29052198" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.31287703" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.23852041" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -653,7 +633,7 @@ void Raymarch_float(
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348140000" />
+    <option name="totallyTimeSpent" value="348781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -667,7 +647,7 @@ void Raymarch_float(
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.31287703" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.23852041" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -706,12 +686,9 @@ void Raymarch_float(
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="13" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
       <window_info anchor="right" id="Structure" order="14" sideWeight="0.4806818" weight="0.24576938" />
-      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.29060325" />
-      <unified_weights bottom="0.15713277" left="0.31287703" right="0.29060325" />
+      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.29052198" />
+      <unified_weights bottom="0.15713277" left="0.23852041" right="0.29052198" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="2117" y="267" width="2075" height="1083" key="#C#" timestamp="1746526261856">
@@ -964,8 +941,8 @@ void Raymarch_float(
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="12" />
+        <state relative-caret-position="455">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>

@@ -50,13 +50,13 @@
 		"convertshorts":false,
 		"customcolors":
 		{
-			"--main-color":"#CBCBCB",
-			"--main-background":"#080808",
-			"--second-background":"#080808",
-			"--hover-background":"#212121",
-			"--main-text":"#B2B2B2",
-			"--dimmer-text":"#8C8C8C",
-			"--shadow":"#080808"
+			"--main-color":"#BDDFFF",
+			"--main-background":"#102840",
+			"--second-background":"#102840",
+			"--hover-background":"#153959",
+			"--main-text":"#ACCAE6",
+			"--dimmer-text":"#8EA7BF",
+			"--shadow":"#102840"
 		},
 		"customcssrules":"",
 		"customscript":"",

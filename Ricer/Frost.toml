@@ -47,12 +47,12 @@ disabled_hsv = "h+0.s-5.v-15"
 [Colors]
 # Terminal
 black = "102840"
-red = "bf3030"
-green = "60bf30"
-yellow = "bfa730"
-blue = "3078bf"
-magenta = "8330bf"
-cyan = "608fbf"
+red = "13304d"
+green = "1a4066"
+yellow = "205080"
+blue = "266099"
+magenta = "2d70b3"
+cyan = "6699cc"
 white = "accae6"
 
 # Terminal Bright
@@ -138,7 +138,7 @@ code_str_literal = "$foreground"
 code_special_char = "$foreground_highlight_alt"
 code_comment = "$foreground_inactive"
 
-#Music Visualizer
+# Music Visualizer
 visualizer = "$white"
 visualizer_outline = "$cyan"
 
@@ -165,7 +165,8 @@ YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
 KDEColors = "~/.local/share/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
-MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
+MaterialDisc = "~/.config/vesktop/settings/quickCss.css"
+MaterialDiscord = "~/.config/equibop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"

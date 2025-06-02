@@ -38,15 +38,15 @@
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
           <value>
-            <ConfigurationInfo>
-              <option name="activeConfiguration" value="Debug" />
-              <option name="activePlatform" value="Any CPU" />
-            </ConfigurationInfo>
+            <ConfigurationInfo />
           </value>
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
           <value>
-            <ConfigurationInfo />
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Debug" />
+              <option name="activePlatform" value="Any CPU" />
+            </ConfigurationInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">

@@ -1,0 +1,183 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+# Theme
+bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+icons = "Ricer"
+cursor = "Bibata-Modern-Ice"
+gtk_theme = "Ricer"
+nvim_theme = "nord"
+
+# Font
+font = "Courier Prime Code"
+min_font_size = 10
+small_font_size = 13
+font_size = 15
+big_font_size = 17
+max_font_size = 32
+
+# Misc
+terminal = "kitty"
+outline_size = 2
+rounding = 10
+roundingPower = 4
+gapsIn = 5
+gapsOut = 10
+blur = "true"
+blurSize = 10
+blurPasses = 3
+cursor_size = 32
+cursor_rot = 21
+notification_duration = 3
+
+# Color Values
+highlight_hsv = "h+0.s+0.v+10"
+placeholder_hsv = "h+0.s+0.v-10"
+inactive_hsv = "h+0.s+0.v-15"
+disabled_hsv = "h+0.s-5.v-15"
+
+[Colors]
+# Terminal
+black = "0b1014"
+red = "990000"
+green = "00990d"
+yellow = "998000"
+blue = "006699"
+magenta = "990099"
+cyan = "008099"
+white = "999999"
+
+# Terminal Bright
+br_black = "$black.$highlight_hsv"
+br_red = "$red.$highlight_hsv"
+br_green = "$green.$highlight_hsv"
+br_yellow = "$yellow.$highlight_hsv"
+br_blue = "$blue.$highlight_hsv"
+br_magenta = "$magenta.$highlight_hsv"
+br_cyan = "$cyan.$highlight_hsv"
+br_white = "$white.$highlight_hsv"
+
+# Opacity
+opacity = "rgb(0, 0, 0, 0.9)"
+opacity_inactive = "rgb(0, 0, 0, 0.8)"
+opacity_cs16 = "rgb(0, 0, 0, 1.0)"
+
+# Foreground
+foreground = "$br_white"
+foreground_highlight = "$foreground.$highlight_hsv"
+foreground_placeholder = "$foreground.$placeholder_hsv"
+foreground_inactive = "$foreground.$inactive_hsv"
+foreground_disabled = "$foreground.$disabled_hsv"
+
+# Foreground Alternative
+foreground_alt = "$br_white.$highlight_hsv"
+foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
+foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
+foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
+foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
+
+# Background
+background = "$black"
+background_highlight = "$background.$highlight_hsv"
+background_inactive = "$background.$inactive_hsv"
+background_disabled = "$background.$disabled_hsv"
+
+# Background Alternative
+background_alt = "$black"
+background_highlight_alt = "$background_alt.$highlight_hsv"
+background_inactive_alt = "$background_alt.$inactive_hsv"
+background_disabled_alt = "$background_alt.$disabled_hsv"
+
+# Button Background
+button = "$br_black"
+button_highlight = "$button.$highlight_hsv"
+button_inactive = "$button.$inactive_hsv"
+button_disabled = "$button.$disabled_hsv"
+
+# Button Foreground
+button_foreground = "$white"
+button_foreground_highlight = "$button_foreground.$highlight_hsv"
+button_foreground_inactive = "$button_foreground.$inactive_hsv"
+button_foreground_disabled = "$button_foreground.$disabled_hsv"
+
+# Outline
+outline = "$br_white"
+outline_alt = "$white"
+outline_inactive = "$outline.v-50"
+outline_inactive_alt = "$outline_alt.v-50"
+
+# Shadow
+shadow = "$black"
+shadow_inactive = "$shadow.$inactive_hsv"
+
+# Link
+link = "$br_cyan"
+link_visited = "$br_blue"
+
+# Code
+code_var = "$foreground"
+code_type = "$br_cyan"
+code_keyword = "$br_blue"
+code_attribute = "$br_cyan"
+
+code_const = "$br_blue"
+code_bracket = "$foreground"
+code_operator = "$br_blue"
+code_punctuation = "$br_blue"
+
+code_str = "$br_green"
+code_str_literal = "$br_blue"
+code_special_char = "$foreground_highlight_alt"
+code_comment = "$foreground_inactive"
+
+#Music Visualizer
+visualizer = "$white"
+visualizer_outline = "$blue"
+
+[Files]
+oh-my-posh = "~/.config/oh-my-posh/Ricer.json"
+Alacritty = "~/.config/alacritty.toml"
+NvimTheme = "~/.config/nvim/lua/theme.lua"
+Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
+RofiConfig = "~/.config/rofi/config.rasi"
+RofiTheme = "~/.config/rofi/themes/theme.rasi"
+GLavaRadial = "~/.config/glava/radial.glsl"
+GTKSettings = "~/.local/share/nwg-look/gsettings"
+Dunst = "~/.config/dunst/dunstrc"
+Fonts = "~/.config/fontconfig/fonts.conf"
+Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = "~/.config/qt5ct/colors/Ricer.conf"
+QtColors = "~/.config/qt6ct/colors/Ricer.conf"
+KDEGlobals = "~/.config/kdeglobals"
+FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
+ZenBrowserLogo = "~/.config/ZenBrowser/ZenLogo.svg"
+ZenBrowserUserChrome = "~/.config/ZenBrowser/userChrome.css"
+ZenBrowserUserContent = "~/.config/ZenBrowser/userContent.css"
+YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
+Kitty = "~/.config/kitty/kitty.conf"
+KDEColors = "~/.local/share/color-schemes/Ricer.colors"
+RicerHub = "~/.config/RicerHub.py"
+MaterialDisc = "~/.config/vesktop/settings/quickCss.css"
+MaterialDiscord = "~/.config/equibop/settings/quickCss.css"
+Oomox = "~/.config/OomoxRicer"
+Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
+DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
+Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
+AdwSteamGtk = [
+    "~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css",
+    "rgb",
+]
+Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
+HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
+Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
+CS16 = "/home/nnra/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
+CS2_Fonts = "/home/nnra/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/fonts.conf"
+CS2_42-Repl-Global = "/home/nnra/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/core/panorama/fonts/conf.d/42-repl-global.conf"

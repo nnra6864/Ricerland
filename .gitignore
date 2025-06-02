@@ -104,6 +104,9 @@
 !/JetBrainsSettings/
 !/zed/
 
+# Games
+!/CS2/
+
 # Files
 !/dolphinrc
 !/ranger/

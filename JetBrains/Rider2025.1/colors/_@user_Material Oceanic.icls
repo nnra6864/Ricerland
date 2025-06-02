@@ -27,6 +27,5 @@
   <colors>
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="80CBC4" />
     <option name="FILESTATUS_OBSOLETE" value="FFCB6B" />
-    <option name="FILESTATUS_SUPPRESSED" value="616161" />
   </colors>
 </scheme>

@@ -26,10 +26,14 @@ max_font_size = 32
 
 # Misc
 terminal = "kitty"
-opacity = 0.85
-inactive_opacity = 0.9
 outline_size = 2
 rounding = 10
+roundingPower = 4
+gapsIn = 5
+gapsOut = 10
+blur = "true"
+blurSize = 10
+blurPasses = 3
 cursor_size = 32
 cursor_rot = 21
 notification_duration = 3
@@ -43,12 +47,12 @@ disabled_hsv = "h+0.s-5.v-15"
 [Colors]
 # Terminal
 black = "102840"
-red = "13304d"
-green = "1a4066"
-yellow = "205080"
-blue = "266099"
-magenta = "2d70b3"
-cyan = "6699cc"
+red = "bf3030"
+green = "60bf30"
+yellow = "bfa730"
+blue = "3078bf"
+magenta = "8330bf"
+cyan = "608fbf"
 white = "accae6"
 
 # Terminal Bright
@@ -60,6 +64,11 @@ br_blue = "$blue.$highlight_hsv"
 br_magenta = "$magenta.$highlight_hsv"
 br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
+
+# Opacity
+opacity = "rgb(0, 0, 0, 0.85)"
+opacity_inactive = "rgb(0, 0, 0, 0.75)"
+opacity_cs16 = "rgb(0, 0, 0, 0.5)"
 
 # Foreground
 foreground = "$white"
@@ -134,9 +143,10 @@ visualizer = "$white"
 visualizer_outline = "$cyan"
 
 [Files]
-Hyprland = "~/.config/hypr/hyprland.conf"
+oh-my-posh = "~/.config/oh-my-posh/Ricer.json"
 Alacritty = "~/.config/alacritty.toml"
 NvimTheme = "~/.config/nvim/lua/theme.lua"
+Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
 RofiConfig = "~/.config/rofi/config.rasi"
 RofiTheme = "~/.config/rofi/themes/theme.rasi"
 GLavaRadial = "~/.config/glava/radial.glsl"
@@ -148,16 +158,25 @@ QtCol = "~/.config/qt5ct/colors/Ricer.conf"
 QtColors = "~/.config/qt6ct/colors/Ricer.conf"
 KDEGlobals = "~/.config/kdeglobals"
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
-YTEnhancer = "~/.config/YouTubeEnhancer.json"
+ZenBrowserLogo = "~/.config/ZenBrowser/ZenLogo.svg"
+ZenBrowserUserChrome = "~/.config/ZenBrowser/userChrome.css"
+ZenBrowserUserContent = "~/.config/ZenBrowser/userContent.css"
+YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
-Pywalfox = "~/.cache/wal/colors.json"
 KDEColors = "~/.local/share/color-schemes/Ricer.colors"
 RicerHub = "~/.config/RicerHub.py"
 MaterialDiscord = "~/.config/vesktop/settings/quickCss.css"
 Oomox = "~/.config/OomoxRicer"
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
-DarkReader = "~/.config/Dark-Reader-Settings.json"
+DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
-AdwSteamGtk = ["~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css", "rgb"]
-Telegram = "~/.config/RicerTelegram.tdesktop-theme"
+AdwSteamGtk = [
+    "~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css",
+    "rgb",
+]
 Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
+HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
+Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
+CS16 = "/home/nnra/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
+CS2_Fonts = "/home/nnra/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/fonts.conf"
+CS2_42-Repl-Global = "/home/nnra/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/core/panorama/fonts/conf.d/42-repl-global.conf"

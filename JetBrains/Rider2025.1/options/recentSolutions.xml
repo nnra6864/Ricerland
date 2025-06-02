@@ -263,38 +263,6 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana" projectWorkspaceId="2sA4syaUd6XpKpNjhpTAdwoiXQk">
-              <option name="activationTimestamp" value="1738304847555" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-243.22562.250" />
-              <option name="buildTimestamp" value="1734959700000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="2541" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1738290068431" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Escapeon – PlayerAimScript.cs" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
-              <option name="activationTimestamp" value="1738543628236" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-243.23654.126" />
-              <option name="buildTimestamp" value="1737343980000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="8" />
-              </option>
-              <frame x="12" y="12" width="5096" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1738542848168" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/opensurf/opensurf.sln">
           <value>
             <RecentProjectMetaInfo frameTitle="opensurf – ~/Data/Projects/Unity/opensurf/Assets/Editor/Modding/MapBuildTool.cs" projectWorkspaceId="2tYezT3wGqJPtuqprNYQFXiDnsA">
@@ -391,24 +359,40 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln">
+        <entry key="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Escapeon.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Katana – CannonScript.cs" opened="true" projectWorkspaceId="2smVE56iRQwZA7qRnAAks5Zs8Wf">
-              <option name="activationTimestamp" value="1747451828871" />
+            <RecentProjectMetaInfo frameTitle="Escapeon – PlayerAimScript.cs" projectWorkspaceId="2makcJiJBhHqMZ03K8kNTUvEvy4">
+              <option name="activationTimestamp" value="1748828290180" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-251.23774.437" />
-              <option name="buildTimestamp" value="1744650540000" />
+              <option name="build" value="RD-251.25410.119" />
+              <option name="buildTimestamp" value="1746614880000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="1411" y="12" width="3697" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1748828153601" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – Easings.cs" opened="true" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
+              <option name="activationTimestamp" value="1748832027889" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.25410.119" />
+              <option name="buildTimestamp" value="1746614880000" />
               <option name="colorInfo">
                 <RecentProjectColorInfo associatedIndex="2" />
               </option>
-              <frame x="861" y="12" width="4247" height="1416" />
+              <frame x="1260" y="12" width="3848" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1747451630660" />
+              <option name="projectOpenTimestamp" value="1748828325109" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Katana.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln" />
   </component>
 </application>

@@ -1153,7 +1153,8 @@
             "whitelistedIds": "",
             "blacklistedIds": "",
             "imageCacheDir": "/home/nnra/.config/equibop/MessageLoggerData/savedImages",
-            "logsDir": "/home/nnra/.config/equibop/MessageLoggerData"
+            "logsDir": "/home/nnra/.config/equibop/MessageLoggerData",
+            "ignoreWebhooks": false
         },
         "MessageTranslate": {
             "enabled": false
@@ -1435,6 +1436,24 @@
         },
         "ExpandedUserTags": {
             "enabled": false
+        },
+        "BypassPinPrompt": {
+            "enabled": false
+        },
+        "CustomFolderIcons": {
+            "enabled": false
+        },
+        "FastDeleteChannels": {
+            "enabled": false
+        },
+        "Ingtoninator": {
+            "enabled": false
+        },
+        "Soggy": {
+            "enabled": false
+        },
+        "WallpaperFree": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1447,7 +1466,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1748519514135
+        "settingsSyncVersion": 1748874118287
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

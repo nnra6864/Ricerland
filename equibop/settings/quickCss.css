@@ -1,18 +1,18 @@
 /* Ricer by nnra */
 /* https://github.com/CapnKitten/Material-Discord */
 
-:root {
+.theme-dark {
 	/* Variables */
-	--background-col: #080808;
-	--background-col-alt: #080808;
-	--background-highlight: #212121;
-	--background-highlight-alt: #212121;
-	--text-col: #B2B2B2;
-	--highlight-col: #CBCBCB;
-	--placeholder-col: #999999;
-	--link-col: #0094B2;
-	--button-text-col: #999999;
-	--outline-col: #B2B2B2;
+	--background-col: #102840;
+	--background-col-alt: #102840;
+	--background-highlight: #153959;
+	--background-highlight-alt: #153959;
+	--text-col: #ACCAE6;
+	--highlight-col: #BDDFFF;
+	--placeholder-col: #97B3CC;
+	--link-col: #72ACE5;
+	--button-text-col: #6699CC;
+	--outline-col: #6699CC;
 	--rounding-big: 10px;
 	--rounding-small: calc(var(--rounding-big) / 2);
 

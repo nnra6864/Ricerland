@@ -25,6 +25,13 @@
     <option name="EDITOR_FONT_SIZE" value="13" />
   </console-font>
   <colors>
-    <option name="FILESTATUS_OBSOLETE" value="ffcb6b" />
+    <option name="Adaptive.accent" value="73ACE6" />
+    <option name="Adaptive.background" value="102840" />
+    <option name="Adaptive.button" value="102840" />
+    <option name="Adaptive.contrast" value="102840" />
+    <option name="Adaptive.disabled" value="8FA8BF" />
+    <option name="Adaptive.excluded" value="102840" />
+    <option name="Adaptive.foreground" value="102840" />
+    <option name="FILESTATUS_OBSOLETE" value="FFCB6B" />
   </colors>
 </scheme>

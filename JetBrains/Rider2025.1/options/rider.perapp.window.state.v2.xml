@@ -12,6 +12,10 @@
           "isShowStripeButton": false
         },
         {
+          "id": "Backup and Sync History",
+          "isShowStripeButton": false
+        },
+        {
           "id": "Pull Requests"
         },
         {
@@ -29,7 +33,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.31287703,
+          "weight": 0.34848487,
           "sideWeight": 0.51935965
         },
         {
@@ -149,7 +153,12 @@
           "order": 10,
           "anchor": "BOTTOM",
           "isShowStripeButton": false,
-          "weight": 0.16701978
+          "weight": 0.10346045
+        },
+        {
+          "id": "RoslynVisualizer",
+          "anchor": "RIGHT",
+          "isShowStripeButton": false
         },
         {
           "id": "Endpoints",
@@ -171,7 +180,7 @@
           "id": "Notifications",
           "order": 0,
           "anchor": "RIGHT",
-          "weight": 0.24576938,
+          "weight": 0.09004678,
           "sideWeight": 0.5003788
         },
         {
@@ -282,16 +291,16 @@
           "order": 15,
           "anchor": "RIGHT",
           "isVisible": true,
-          "weight": 0.29060325,
+          "weight": 0.09004678,
           "sideWeight": 0.4996212,
           "isSplit": true
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.31287703,
-        "bottom": 0.15713277,
-        "right": 0.29060325
+        "left": 0.34848487,
+        "bottom": 0.10346045,
+        "right": 0.09004678
       }
     }
   }

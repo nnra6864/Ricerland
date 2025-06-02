@@ -245,6 +245,15 @@
       }
     }
   }, {
+    "id" : "auto.trial.license.request",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "3"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:error|success|fail}" ]
+    }
+  }, {
     "id" : "automated.edit.prediction",
     "builds" : [ ],
     "versions" : [ {
@@ -1091,6 +1100,21 @@
       },
       "enums" : {
         "__event_id" : [ "no.provider", "custom", "builtin.java", "builtin.sql", "expanded" ]
+      }
+    }
+  }, {
+    "id" : "compose.resources",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:action.invoked}" ],
+      "event_data" : {
+        "action_type" : [ "{enum:NAVIGATE|RENAME|FIND_USAGES}" ],
+        "element_count" : [ "{regexp#integer}" ],
+        "resource_base_type" : [ "{enum:STRING|FILE}" ],
+        "resource_type" : [ "{enum:drawable|string|string-array|plurals|font}" ]
       }
     }
   }, {
@@ -2396,6 +2420,7 @@
         "EventsSectionSize" : [ "{regexp#integer}" ],
         "KernelSectionSize" : [ "{regexp#integer}" ],
         "OnAllocationTick" : [ "{regexp#integer}" ],
+        "OnAspBeforeEvent" : [ "{regexp#integer}" ],
         "OnAspNetCoreAfterControllerActionMethod" : [ "{regexp#integer}" ],
         "OnAspNetCoreAfterHandlerMethod" : [ "{regexp#integer}" ],
         "OnAspNetCoreAfterViewComponent" : [ "{regexp#integer}" ],
@@ -2403,7 +2428,12 @@
         "OnAspNetCoreBeforeHandlerMethod" : [ "{regexp#integer}" ],
         "OnAspNetCoreBeforeViewComponent" : [ "{regexp#integer}" ],
         "OnCSwitch" : [ "{regexp#integer}" ],
+        "OnCommandDataReaderDisposing" : [ "{regexp#integer}" ],
+        "OnCommandExecuted" : [ "{regexp#integer}" ],
+        "OnCommandExecuting" : [ "{regexp#integer}" ],
         "OnCompleteRundown" : [ "{regexp#integer}" ],
+        "OnConnectionClosed" : [ "{regexp#integer}" ],
+        "OnConnectionOpened" : [ "{regexp#integer}" ],
         "OnCounterRateValuePublished" : [ "{regexp#integer}" ],
         "OnDebugExceptionProcessingStart" : [ "{regexp#integer}" ],
         "OnDebugExceptionProcessingStop" : [ "{regexp#integer}" ],
@@ -2425,6 +2455,7 @@
         "OnGcStop" : [ "{regexp#integer}" ],
         "OnHistogramValuePublished" : [ "{regexp#integer}" ],
         "OnInitRundown" : [ "{regexp#integer}" ],
+        "OnInputProcessDelay" : [ "{regexp#integer}" ],
         "OnMeanEventCounter" : [ "{regexp#integer}" ],
         "OnMessageCheckDelay" : [ "{regexp#integer}" ],
         "OnMethodLoad" : [ "{regexp#integer}" ],
@@ -2445,6 +2476,30 @@
         "RundownSectionSize" : [ "{regexp#integer}" ],
         "RuntimeDataSectionSize" : [ "{regexp#integer}" ],
         "RuntimeMetadataSectionSize" : [ "{regexp#integer}" ],
+        "SectionSizeCountersEvents" : [ "{regexp#integer}" ],
+        "SectionSizeDebuggerWorkerEvents" : [ "{regexp#integer}" ],
+        "SectionSizeDiagnosticSourceParsedEvents" : [ "{regexp#integer}" ],
+        "SectionSizeETWManagedFunction" : [ "{regexp#integer}" ],
+        "SectionSizeETWManagedFunctionData" : [ "{regexp#integer}" ],
+        "SectionSizeETWManagedFunctionResolveData" : [ "{regexp#integer}" ],
+        "SectionSizeETWManagedModule" : [ "{regexp#integer}" ],
+        "SectionSizeETWModuleData" : [ "{regexp#integer}" ],
+        "SectionSizeETWNativeModule" : [ "{regexp#integer}" ],
+        "SectionSizeETWNativeModuleResolveData" : [ "{regexp#integer}" ],
+        "SectionSizeEnvironment" : [ "{regexp#integer}" ],
+        "SectionSizeEventPipeSequencePoints" : [ "{regexp#integer}" ],
+        "SectionSizeInputDelays" : [ "{regexp#integer}" ],
+        "SectionSizeKernelCallStacks" : [ "{regexp#integer}" ],
+        "SectionSizeKernelPerfInfo" : [ "{regexp#integer}" ],
+        "SectionSizeKernelThread" : [ "{regexp#integer}" ],
+        "SectionSizeModulePath" : [ "{regexp#integer}" ],
+        "SectionSizeMonoEvents" : [ "{regexp#integer}" ],
+        "SectionSizeNetRundownProvider" : [ "{regexp#integer}" ],
+        "SectionSizeProfilerSessionData" : [ "{regexp#integer}" ],
+        "SectionSizeSectionHeaders" : [ "{regexp#integer}" ],
+        "SectionSizeSystemDiagnosticsMetrics" : [ "{regexp#integer}" ],
+        "SectionSizeUnresolvedCallTree" : [ "{regexp#integer}" ],
+        "SnapshotSizeTotalReady" : [ "{regexp#integer}" ],
         "activity_id" : [ "{regexp#integer}" ],
         "async_ms" : [ "{regexp#integer}" ],
         "cause" : [ "{regexp#integer}" ],
@@ -2455,7 +2510,7 @@
         "loading_ms" : [ "{regexp#integer}" ],
         "mode" : [ "{enum:Start|Attach|AttachMonitoring|VS}" ],
         "outdating_ms" : [ "{regexp#integer}" ],
-        "reason" : [ "{regexp#integer}", "{enum:MonitoringOnly|ProcessFilter|ProcessingScopeFailure}", "{enum:ChildProcess|NoRunMonitoring|NoDebugMonitoring}", "{enum:Unknown|Lifetime|DpaMode|Profiler|NothingToCollect|Redirect|NoCollector|VsConfigurationNotFound|ProcessNotStarted|DebuggerDispatch|RdCallFault}", "{enum:DpaDisabled|Mono}" ],
+        "reason" : [ "{regexp#integer}", "{enum:MonitoringOnly|ProcessFilter|ProcessingScopeFailure}", "{enum:ChildProcess|NoRunMonitoring|NoDebugMonitoring}", "{regexp:-?\\d+(\\+)?}", "{enum:Unknown|Lifetime|DpaMode|Profiler|NothingToCollect|Redirect|NoCollector|VsConfigurationNotFound|ProcessNotStarted|DebuggerDispatch|RdCallFault}", "{enum:DpaDisabled|Mono}", "{enum:NoVsRunConfigurationFound|RdCallFault|DpaMode}" ],
         "thread_ms" : [ "{regexp#integer}" ],
         "threshold_value" : [ "{regexp#integer}" ],
         "type" : [ "{enum:Run|Debug}", "{enum:Local|External}" ]
@@ -3726,7 +3781,7 @@
     "id" : "event.log",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "20"
+      "from" : "1"
     } ],
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
@@ -4363,7 +4418,7 @@
         "local_branches" : [ "{regexp#integer}" ],
         "max_local_branches" : [ "{regexp#integer}" ],
         "multiple_root" : [ "{enum#boolean}" ],
-        "name" : [ "{enum:.fleet|.idea|.project|.settings|.vscode}" ],
+        "name" : [ "{enum:.fleet|.idea|.project|.settings|.vscode}", "{enum:.air}" ],
         "recent_checkout_branches" : [ "{regexp#integer}" ],
         "remote_bitbucket" : [ "{regexp#integer}" ],
         "remote_bitbucket_custom" : [ "{regexp#integer}" ],
@@ -4579,8 +4634,10 @@
         "context_length" : [ "{regexp#integer}" ],
         "count" : [ "{regexp#integer}" ],
         "duration_ms" : [ "{regexp#integer}" ],
-        "from" : [ "{enum#language_abbreviated}" ],
+        "from" : [ "{enum#language_abbreviated}", "{enum:Informal|Unspecified|Public|Formal|GoogleDeveloperDocumentation|Microsoft|JetBrainsDocumentation}", "{enum:Always|Moderate}" ],
+        "id" : [ "{enum:grazie.extension}" ],
         "language" : [ "{enum#language_abbreviated}" ],
+        "name" : [ "{enum:Login|EnableCloud}" ],
         "origin" : [ "{enum:Bundled.Yaml|Grazie.RuleEngine|Grazie.MLEC|LanguageTool}" ],
         "prefix_ends_with_whitespace" : [ "{enum#boolean}" ],
         "prefix_length" : [ "{regexp#integer}" ],
@@ -4595,12 +4652,12 @@
         "source" : [ "{enum:Popup|Inline}" ],
         "src_word_count" : [ "{regexp#integer}" ],
         "suggestion_count" : [ "{regexp#integer}" ],
-        "to" : [ "{enum#language_abbreviated}" ],
+        "to" : [ "{enum#language_abbreviated}", "{enum:Informal|Unspecified|Public|Formal|GoogleDeveloperDocumentation|Microsoft|JetBrainsDocumentation}", "{enum:Always|Moderate}" ],
         "translation_word_count" : [ "{regexp#integer}" ],
         "word_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "completion.shown", "completion.accepted", "definition.shown", "enable.suggested.rule.applied", "definition.requested", "auto.fix.undone", "enable.suggested.rule.undone", "auto.fix.applied", "completion.requested", "completion.interacted", "rephrase.requested", "rephrase.shown.empty", "rephrase.rejected", "rephrase.applied", "translate.requested", "translate.replaced" ],
+        "__event_id" : [ "completion.shown", "completion.accepted", "definition.shown", "enable.suggested.rule.applied", "definition.requested", "auto.fix.undone", "enable.suggested.rule.undone", "auto.fix.applied", "completion.requested", "completion.interacted", "rephrase.requested", "rephrase.shown.empty", "rephrase.rejected", "rephrase.applied", "translate.requested", "translate.replaced", "status.bar.widget.popup.writing.style.changed", "status.bar.widget.popup.shown", "status.bar.widget.popup.completion.profile.changed", "status.bar.widget.popup.notification.shown", "status.bar.widget.popup.button.clicked", "status.bar.widget.popup.notification.closed" ],
         "language_abbreviated" : [ "zh", "ja", "en", "fr", "de", "nl", "it", "pl", "pt", "ro", "sk", "es", "ast", "br", "ca", "da", "eo", "gl", "ga", "sl", "sv", "tl", "el", "km", "ta", "ar", "fa", "ru", "uk", "be", "ko", "unknown" ]
       }
     }
@@ -5239,7 +5296,7 @@
         "enabled" : [ "{enum#boolean}" ],
         "enabled_globally" : [ "{enum#boolean}" ],
         "lang" : [ "{util#lang}" ],
-        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}", "{enum:rust.implicit.hints}" ],
+        "model" : [ "{enum#__model}", "{enum:sql.column.names.inlay.hints}", "{enum:spring.boot.generate.starters.gradle.kts|spring.boot.generate.starters.maven|spring.boot.generate.starters.gradle|python.dataframe.inlay.hints}", "{enum:rename}", "{enum:component.usage}", "{enum:cron.inlay}", "{enum:python.web.structure}", "{enum:change.signature}", "{enum:quarkus.edit.extensions.gradle|qs.edit.extensions.maven}", "{enum:quarkus.edit.extensions.gradle.kts}", "{enum:quarkus.edit.extensions.maven}", "{enum:go.implement.interface|vgo.update.dependencies}", "{enum:ktor.add.plugins.gradle|ktor.add.plugins.gradle.kts|ktor.add.plugins.maven}", "{enum:SpringPropertiesVisionProvider}", "{enum:spring.config.codevision}", "{enum:chain-method.hints|rust.type.hints|rust.value.range.exclusive.hints}", "{enum:GoAddMethodToInterfaceCodeVisionProvider}", "{enum:rust.implicit.hints}", "{enum:spring.boot.data.aot.method.query}" ],
         "option_id" : [ "{enum#__option_id}", "{enum:ruby.parameter.name.reflected.in.method.name|kotlin.values.ranges}", "{enum:js.only.show.names.for.literal.args|ts.param.hints.show.names.for.literal.args|vuejs.show.names.for.literal.args|angular.show.names.for.literal.args}", "{enum:derefs_if_borrowed|mutable_borrows|immutable_borrows}" ],
         "option_value" : [ "{enum#boolean}" ]
       },
@@ -5560,6 +5617,30 @@
         "numberOfLoadedScripts" : [ "{regexp#integer}" ],
         "numberOfLoadedScriptsWithSourceMap" : [ "{regexp#integer}" ],
         "vmType" : [ "{enum:Browser|Node|Unknown}" ]
+      }
+    }
+  }, {
+    "id" : "javascript.project.configuration",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:configuration}" ],
+      "event_data" : {
+        "first_scanning_done" : [ "{enum#boolean}" ],
+        "is_git_root_above" : [ "{enum#boolean}" ],
+        "is_monorepo" : [ "{enum#boolean}" ],
+        "is_package_json_above" : [ "{enum#boolean}" ],
+        "is_subpackage_opened" : [ "{enum#boolean}" ],
+        "lerna_json" : [ "{enum#boolean}" ],
+        "monorepo_type" : [ "{enum:none|npm-workspaces|Yarn-workspaces|pnpm-workspaces|bun-workspaces|unknown-workspaces}" ],
+        "nx_json" : [ "{enum#boolean}" ],
+        "packages_count" : [ "{regexp#integer}" ],
+        "roots_count" : [ "{regexp#integer}" ],
+        "rush_json" : [ "{enum#boolean}" ],
+        "total_package_json_files" : [ "{regexp#integer}" ],
+        "turbo_json" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -6400,7 +6481,7 @@
       "event_data" : {
         "prompt_init_size_chars" : [ "{regexp#integer}" ],
         "prompt_limit_tokens" : [ "{regexp#integer}" ],
-        "prompt_source" : [ "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|CODE_DEPENDENCY_COLLECTOR|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|FILE_SIZE_EXCEEDED_CHAT_INTENTION_CANDIDATE|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:IMAGE_CODE_TITLE_TASK}", "{enum:REQUEST_REQUIRED_CLASSES_TASK}", "{enum:CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK}", "{enum:CHAT_CONTEXT_TRIMMING}", "{enum:FOLDER_SIZE_EXCEEDED_TO_BE_ATTACHMENT}", "{enum:SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK}", "{enum:COMMIT_MESSAGE_COMPLETION}" ],
+        "prompt_source" : [ "{enum:TOKENIZE_USER_INPUT_TASK|CLASSIFY_USERS_PROMPT_ID_TASK|CLASSIFY_CONTEXT_ITEM_PROMPT_ID_TASK|SIMPLIFY_AND_DECOMPOSE_REQUEST_TASK|MAKE_WEB_SEARCH_REQUEST_TASK|SUMMARIZE_WEB_SEARCH_RAW_CONTENT_TASK|SUMMARIZE_CONTEXT_ITEM_TASK|COMMIT_TASK_CHAT_BUILDER|LLM_BASE_COMMIT_MESSAGE|LOCAL_CHANGES_ENDPOINT|SLIDING_WINDOW|SLIDING_WINDOW_MESSAGES_WITHIN_TOK_LIMIT|VCS_ENDPOINT|ABSTRACT_CHAT_ACTION_ON_DATA_FRAME_ACTION|ABSTRACT_CHAT_INTENTION|CHAT_INTENTION_TASK|JUPYTER_CREATE_CHAT_AND_SEND_MESSAGE|PY_GENERATE_CHARTS_FOR_DATAFRAME_TASK|JUPYTER_BUILD_CHAT|DESCRIPTION_ENSURE_SOFT_TOKENS_LIMIT|WRITE_DOCUMENTATION_CODE_SNIPPET|FUNCTION_RESPONSE_TOKEN_LIMIT|LLM_COMMIT_MESSAGE_ACTION|LLM_REWORD_COMMIT_ACTION|CODE_DEPENDENCY_COLLECTOR|FILE_SIZE_EXCEEDED_WITHOUT_SUMMARIZATION|FILE_SIZE_EXCEEDED_TO_BE_ATTACHMENT|FILE_SIZE_EXCEEDED_CHAT_INTENTION_CANDIDATE|WRITE_DOCUMENTATION_EXAMPLE_DECLARATION_SIZE|WRITE_DOCUMENTATION_EXAMPLE_DOCUMENTATION_SIZE|CLASSIFY_CHAT_TASK|EDITOR_MODIFICATION_PROMPT_BUILDER_DEFAULT|EDITOR_MODIFICATION_PROMPT_BUILDER_FILE_INFORMATION|GENERATE_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_COMMIT_SUMMARY_TASK_USER|GENERATE_COMMIT_SUMMARY_TASK_COMMIT_MESSAGE|GENERATE_USER_COMMIT_SUMMARY_TASK_SYSTEM|GENERATE_USER_COMMIT_SUMMARY_TASK_USER|SHELVE_TITLE_TASK|LLM_GENERATE_MICROSERVICES_EXAMPLE_ACTION|JUPYTER_DATA_RETRIEVER_CODE|JUPYTER_DATA_RETRIEVER_OUTPUT|GO_CODE_CONTEXT|GO_NAME_SUGGESTION_CONTEXT|VGO_CODE_CONTEXT|GO_TESTS_PROMPT_GENERATOR|PYTHON_FUNCTION_FULL_CONTEXT_FUNCTION_TEXT|PYTHON_FUNCTION_FULL_CONTEXT_CLASS_TEXT|PYTHON_CLASS_SIGNATURE|PYTHON_DECLARATIONS_FOR_DEPENDENCY_VARIABLES|PYTHON_CODE_CONTEXT_USAGES|PYTHON_TEST_PROMPT_BUILD_CLASS_DESCRIPTION|PYTHON_JUPYTER_TEXT_ENDPOINT|JVM_STACKTRACE_CONTEXT_PROVIDER}", "{enum:IMAGE_CODE_TITLE_TASK}", "{enum:REQUEST_REQUIRED_CLASSES_TASK}", "{enum:CLASSIFY_CONTEXT_ITEMS_PROMPT_ID_TASK}", "{enum:CHAT_CONTEXT_TRIMMING}", "{enum:FOLDER_SIZE_EXCEEDED_TO_BE_ATTACHMENT}", "{enum:SIMPLIFY_AND_DECOMPOSE_REQUEST_WITH_HISTORY_TASK}", "{enum:COMMIT_MESSAGE_COMPLETION}", "{enum:AUTOMATICALLY_ATTACHED_FILE_CONTEXT|CURRENT_FILE_CONTEXT_ATTACHMENT|MANUALLY_ATTACHED_FILE_CONTEXT}" ],
         "prompt_trim_with_code_attachments" : [ "{enum#boolean}" ],
         "prompt_trunc_size_chars" : [ "{regexp#integer}" ]
       }
@@ -6540,13 +6621,15 @@
         "removed_lines_count" : [ "{regexp#integer}" ],
         "response_length" : [ "{regexp#integer}" ],
         "result" : [ "{enum:SUCCEED|WAIT_LIST|FAILED|EXCEPTION}" ],
+        "search_invocation_source" : [ "{enum:CTRL_F|ACTION_IN_MENU|UNKNOWN}" ],
+        "search_occurrences_number" : [ "{regexp#integer}" ],
         "selected_chat_mode" : [ "{enum:WEB_SEARCH|CODEBASE|CODE_GENERATION|AGENT|CHAT}", "{enum:DATA_WRANGLER}" ],
         "selection_length" : [ "{regexp#integer}" ],
         "source" : [ "{enum:CHAT_LOGIN_BUTTON|CHAT_RETRY_BUTTON|CHAT_WAIT_LIST|SETTINGS_PAGE|SETTINGS_PAGE_WAIT_LIST|NOTIFICATION|FULL_LINE}", "{enum:STATUS_BAR_LOGIN_BUTTON}" ],
         "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
         "start_time" : [ "{regexp#integer}" ],
         "status" : [ "{regexp#integer}" ],
-        "third_party_provider_id" : [ "{enum:ollama|lmstudio}" ],
+        "third_party_provider_id" : [ "{enum:ollama|lmstudio}", "{enum:liteLLM|llama.cpp}", "{enum:OpenAI}" ],
         "tree_action" : [ "{enum:EXPAND|COLLAPSE}" ],
         "uiContextPickerContentKind" : [ "{enum:Editor|Structure|Local change list|Changes|AI Assistant|AI Assistant|VCS|Problems|Security Analysis|Vulnerable Dependencies|Project View|Navigation Bar|Database Toolbar|Console Output|Build Output|Terminal}" ],
         "unknown_labels" : [ "{regexp#integer}" ],
@@ -6555,19 +6638,13 @@
       },
       "enums" : {
         "__error" : [ "GrazieAuthorizationException", "RequestTimeout", "AIAssistantForbiddenException", "TokenLimitExceededException", "ClassNotFoundException" ],
-        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked" ],
+        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened" ],
         "__level" : [ "OSRegistry", "JvmFlag", "JBA", "Allowed", "UserSetting" ]
       }
     },
     "anonymized_fields" : [ {
       "event" : "message.received",
       "fields" : [ "message_id", "user_message_id", "chat_session_id" ]
-    }, {
-      "event" : "message.sent",
-      "fields" : [ "message_id", "chat_session_id" ]
-    }, {
-      "event" : "chat.web.search.command.added.with.button",
-      "fields" : [ "chat_session_id" ]
     }, {
       "event" : "edit.user.message.cancelled",
       "fields" : [ "message_id", "chat_session_id" ]
@@ -6578,47 +6655,20 @@
       "event" : "edit.user.message.started",
       "fields" : [ "message_id", "chat_session_id" ]
     }, {
-      "event" : "edit.mode.suggestion.discarded.changes",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "assistant.chat.summary.sent",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "send.with.rag.pipeline.duration",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "function.called",
+      "event" : "chat.search.closed",
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "message.receiving.cancelled",
       "fields" : [ "message_id", "user_message_id", "chat_session_id" ]
     }, {
-      "event" : "function.name.leaked",
-      "fields" : [ "chat_session_id", "message_id" ]
-    }, {
-      "event" : "edit.mode.suggestion.accepted.all",
-      "fields" : [ "chat_session_id" ]
-    }, {
       "event" : "chat.labels",
       "fields" : [ "chat_session_id", "message_id" ]
-    }, {
-      "event" : "ai.generated.action.button.clicked",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "edit.mode.suggestion.accepted.changes",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "chat.from.history.opened",
-      "fields" : [ "chat_session_id" ]
     }, {
       "event" : "code.snippet.file.created",
       "fields" : [ "chat_session_id", "message_id" ]
     }, {
       "event" : "message.reacted",
       "fields" : [ "message_id", "chat_session_id" ]
-    }, {
-      "event" : "send.with.rag.canceled",
-      "fields" : [ "chat_session_id" ]
     }, {
       "event" : "new.chat.created",
       "fields" : [ "chat_session_id" ]
@@ -6629,20 +6679,8 @@
       "event" : "edit.user.message.cancelled.with.mouse",
       "fields" : [ "chat_session_id" ]
     }, {
-      "event" : "edit.mode.suggestion.discarded.all",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "code.copied",
-      "fields" : [ "message_id", "chat_session_id" ]
-    }, {
       "event" : "user.message.enriched",
       "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "chat.copy",
-      "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "edit.mode.suggestion.discarded.patch",
-      "fields" : [ "message_id", "chat_session_id" ]
     }, {
       "event" : "codebase.toggle.value.changed",
       "fields" : [ "chat_session_id" ]
@@ -6650,14 +6688,8 @@
       "event" : "edit.mode.suggestion.generated",
       "fields" : [ "message_id", "chat_session_id" ]
     }, {
-      "event" : "edit.mode.suggestion.accepted.patch",
-      "fields" : [ "message_id", "chat_session_id" ]
-    }, {
       "event" : "send.button.clicked",
       "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "code.snippet.inserted.at.caret",
-      "fields" : [ "message_id", "chat_session_id" ]
     }, {
       "event" : "reference.start.char.used",
       "fields" : [ "chat_session_id", "message_id" ]
@@ -6668,9 +6700,6 @@
       "event" : "text.copied",
       "fields" : [ "chat_session_id", "message_id" ]
     }, {
-      "event" : "edit.mode.suggestion.open.file",
-      "fields" : [ "message_id", "chat_session_id" ]
-    }, {
       "event" : "edit.mode.changes.tree.label.clicked",
       "fields" : [ "chat_session_id" ]
     }, {
@@ -6680,29 +6709,95 @@
       "event" : "edit.mode.suggestion.open.diff",
       "fields" : [ "message_id", "chat_session_id" ]
     }, {
+      "event" : "text.inserted",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "send.with.rag.timeout.exceeded",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "edit.usage.message.finished",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "chat.search.previous.occurrence.clicked",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "message.sent",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "chat.web.search.command.added.with.button",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.discarded.changes",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "assistant.chat.summary.sent",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "send.with.rag.pipeline.duration",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "chat.search.opened",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "function.called",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "function.name.leaked",
+      "fields" : [ "chat_session_id", "message_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.accepted.all",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "ai.generated.action.button.clicked",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.accepted.changes",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "chat.from.history.opened",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "send.with.rag.canceled",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.discarded.all",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "code.copied",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "chat.copy",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.discarded.patch",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.accepted.patch",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "code.snippet.inserted.at.caret",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "edit.mode.suggestion.open.file",
+      "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "chat.search.next.occurrence.clicked",
+      "fields" : [ "chat_session_id" ]
+    }, {
       "event" : "chat.web.search.called",
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "send.with.rag.button.clicked",
       "fields" : [ "chat_session_id" ]
     }, {
-      "event" : "text.inserted",
-      "fields" : [ "chat_session_id" ]
-    }, {
       "event" : "message.regenerate",
       "fields" : [ "chat_session_id", "message_id" ]
-    }, {
-      "event" : "send.with.rag.timeout.exceeded",
-      "fields" : [ "chat_session_id" ]
     }, {
       "event" : "alias.sent",
       "fields" : [ "chat_session_id", "message_id" ]
     }, {
       "event" : "user.intent",
       "fields" : [ "chat_session_id" ]
-    }, {
-      "event" : "edit.usage.message.finished",
-      "fields" : [ "message_id", "chat_session_id" ]
     } ]
   }, {
     "id" : "llm.code.generation.promo",
@@ -7003,7 +7098,7 @@
       "event_id" : [ "{enum:third.party.available.llm.profiles|third.party.ai.providers.enabled}" ],
       "event_data" : {
         "profileIds" : [ "{enum:llama3.2:latest|llama3.2:1b|llama3.2:3b|llama3.1:latest|llama3.1:8b|llama3.1:70b|gemma2:latest|gemma2:2b|gemma2:9b|gemma2:27b|qwen2.5:latest|qwen2.5:3b|qwen2.5:7b|qwen2.5:14b|qwen2.5:32b}" ],
-        "providerIds" : [ "{enum:ollama}", "{enum:lmstudio}", "{enum:liteLLM|llama.cpp}" ]
+        "providerIds" : [ "{enum:ollama}", "{enum:lmstudio}", "{enum:liteLLM|llama.cpp}", "{enum:OpenAI}" ]
       }
     }
   }, {
@@ -7751,7 +7846,7 @@
       },
       "enums" : {
         "__event_id" : [ "action.invoked", "balloon.collapsed", "balloon.expanded", "closed.by.user", "event.log.balloon.shown", "hyperlink.clicked", "logged", "settings.clicked", "shown" ],
-        "notification_id" : [ "ignored.to.exclude.synchronization.notification", "externally.added.files.notification", "project.configuration.files.added.notification", "manage.ignore.files.notification", "github.missing.default.account", "github.pull.request.cannot.set.tracking.branch", "github.clone.unable.to.create.destination.dir", "github.clone.unable.to.find.destination", "github.open.in.browser.file.is.not.under.repo", "github.open.in.browser.cannot.get.last.revision", "github.rebase.success", "github.gist.cannot.create", "github.pull.request.cannot.load.branches", "github.pull.request.cannot.collect.additional.data", "github.pull.request.cannot.load.forks", "github.pull.request.failed.to.add.remote", "github.pull.request.push.failed", "github.pull.request.creation.error", "github.pull.request.cannot.collect.diff.data", "github.pull.request.cannot.find.repo", "github.pull.request.created", "github.pull.request.cannot.process.remote", "github.pull.request.no.current.branch", "github.rebase.cannot.validate.upstream.remote", "github.rebase.upstream.is.own.repo", "github.rebase.cannot.get.user.info", "github.rebase.cannot.retrieve.upstream.info", "github.rebase.cannot.configure.upstream.remote", "github.rebase.repo.not.found", "github.rebase.cannot.load.repo.info", "github.rebase.repo.is.not.a.fork", "github.share.cannot.find.git.repo", "github.share.cannot.create.repo", "github.share.project.successfully.shared", "github.share.empty.repo.created", "github.share.project.created.init.commit.failed", "github.share.init.push.failed", "github.gist.created", "github.git.repo.init.error", "unknown", "hg.update.unresolved.conflicts.error", "git.merge.local.changes.detected", "vcs.patch.apply.rollback.failed", "hg.qrefresh.error", "git.revert.abort.failed", "git.fetch.success", "git.branch.operation.success", "git.pull.failed", "hg.merge.warning", "vcs.commit.finished.with.warnings", "vcs.shelve.successful", "git.merge.reset.error", "git.stage.commit.successful", "git.clone.unable.to.create.destination.dir", "git.rebase.cannot.continue", "vcs.commit.canceled", "git.branch.rename.rollback.success", "hg.merge.error", "hg.rebase.error", "git.update.no.tracked.branch.error", "git.rebase.update.project.error", "hg.tag.creation.error", "git.local.changes.not.restored", "hg.clone.destination.error", "vcs.shelve.failed", "hg.merging.with.ancestor.skipped", "vcs.patch.apply.aborted", "hg.pushed.successfully", "git.remote.branch.deletion.success", "hg.repository.created", "git.tag.created", "hg.qpop.completed.with.errors", "git.branch.operation.error", "hg.compare.with.branch.error", "git.fetch.error", "hg.nothing.to.push", "git.rebase.cannot.abort", "hg.unsupported.extensions", "vcs.patch.partially.applied", "git.branches.update.successful", "hg.exception.during.merge.commit", "git.init.failed", "git.rebase.not.allowed", "hg.qfold.error", "hg.qfinish.error", "git.merge.abort.success", "git.init.error", "git.rebase.commit.edit.undo.error.repo.changed", "git.reset.failed", "git.update.detached.head.error", "git.create.branch.rollback.successful", "git.branch.checkout.failed", "git.delete.branch.on.merge", "vcs.root.added", "git.stash.failed", "vcs.patch.copied.to.clipboard", "git.merge.abort.failed", "vcs.could.not.compare.with.branch", "git.reset.successful", "git.branch.creation.failed", "git.branch.deletion.rollback.error", "hg.graft.continue.error", "hg.merge.exception", "git.rebase.abort.succeeded", "hg.debugancestor.error", "hg.log.command.execution.error", "hg.unable.to.run.executable", "hg.bookmark.error", "git.rebase.commit.edit.undo.error", "git.unstash.with.unresolved.conflicts", "git.unstash.failed", "hg.qgoto.error", "hg.clone.error", "git.clone.failed", "git.rebase.abort.failed", "hg.remote.auth.error", "vcs.uncommitted.changes.saving.error", "git.update.nothing.to.update", "git.merge.rollback.error", "hg.qnew.error", "git.checkout.success", "git.update.error", "git.cannot.resolve.conflict", "git.unstash.with.conflicts", "space.sharing.not.finished", "hg.rebase.continue.error", "git.checkout.rollback.error", "git.reset.partially.failed", "git.remote.branch.deletion.error", "hg.qrename.error", "hg.unsupported.version", "hg.repo.creation.error", "space.git.repo.init.error", "git.tag.remote.deletion.error", "hg.push.error", "vcs.cherry.pick.error", "git.repository.created", "vcs.roots.invalid", "git.stash.local.changes.detected", "git.could.not.compare.with.branch", "git.rebase.not.started", "space.project.shared.successfully", "vcs.compare.failed", "vcs.patch.apply.success.applied", "hg.qdelete.error", "hg.branch.creation.error", "git.cherry.pick.abort.failed", "git.rebase.rollback.failed", "git.merge.error", "vcs.patch.apply.cannot.find.patch.file", "git.rebase.commit.edit.undo.error.protected.branch", "git.rebase.successful", "vcs.commit.failed", "git.could.not.load.changes.of.commit", "git.unresolved.conflicts", "vcs.patch.apply.new.files.error", "hg.rebase.abort.error", "git.revert.abort.success", "git.stage.commit.error", "git.tag.not.created", "git.create.branch.rollback.error", "git.fix.tracked.not.on.branch", "vcs.shelve.deletion.undo", "hg.tag.creation.failed", "git.tag.deletion.rollback.error", "hg.update.error", "vcs.roots.registered", "hg.status.command.error", "hg.qimport.error", "vcs.patch.apply.not.patch.type.file", "vcs.commit.finished", "git.could.not.save.uncommitted.changes", "hg.rename.failed", "git.branch.rename.rollback.failed", "git.cherry.pick.abort.success", "hg.qpop.error", "git.conflict.resolving.error", "git.merge.failed", "hg.pull.error", "git.unstash.patch.applied", "hg.bookmark.name.is.empty", "hg.pull.auth.required", "git.rebase.abort", "vcs.patch.already.applied", "git.checkout.new.branch.operation.rollback.error", "hg4idea.changesets.error", "vcs.patch.creation.failed", "hg.graft.error", "hg.qpush.error", "git.checkout.new.branch.operation.rollback.successful", "github.rebase.remote.origin.not.found", "github.rebase.account.not.found", "github.rebase.multi.repo.not.supported", "rebase.error.failed.to.match.gh.repo", "git.branch.set.upstream.failed", "git.log.could.not.load.changes.of.commit", "vcs.project.partially.updated", "vcs.shelf.undo.delete", "vcs.branch.operations.are.executed.on.all.roots", "git.rebase.collect.updated.changes.error", "git.push.not.supported", "vcs.inactive.ranges.damaged", "git.commit.cancelled", "git.fetch.result", "git.tag.remote.deletion.success", "git.fetch.cancelled", "git.fetch.details", "git.project.updated", "git.all.files.are.up.to.date", "git.fetch.result.error", "git.project.partially.updated", "git.push.result", "git.branch.deleted", "git.tag.restored", "git.files.updated.after.merge", "vcs.project.update.finished", "git.tag.deleted", "git.commit.edit.success", "space.other", "gradle.jvm.invalid", "gradle.jvm.configured", "gradle.configuration.error", "sh.update.shellcheck.error", "sh.update.shellcheck.success", "sh.update.formatter.success", "sh.install.formatter.error", "sh.update.formatter.error", "sh.install.formatter", "sh.update.shellcheck", "sh.update.formatter", "sh.install.formatter.success", "git.bad.executable", "git.init.stage.failed", "git.rebase.failed", "diff.external.too.many.selected", "ignored.to.exclude.not.found", "git.rebase.stopped.for.editing", "vcs.cannot.load.annotations", "untracked.files.overwritten", "diff.external.cant.load.changes", "vcs.obsolete.plugin.unbundled", "vcs.suggested.plugin.install.failed", "diff.merge.intenral.error", "git.rebase.stopped.due.to.conflicts", "vcs.commit.checks.failed", "git.tags.loading.failed", "vcs.commit.checks.only.failed", "vcs.add.unversioned.error", "vcs.post.commit.checks.failed", "grazie.pro.advertisement", "git.open.in.browser.error", "git.ignore.file.generation.error", "review.branch.checkout.failed", "space.merge.request.creation.failed", "space.merge.request.created", "space.git.repo.foldernotfound", "git.stage.operation.error", "vcs.log.navigation.error", "vcs.log.commit.not.found", "file.history.load.details.error", "vcs.log.fatal.error", "vcs.log.not.available", "git.stash.non.empty.index.detected", "git.stash.successful", "space.review.create", "gitlab.merge.request.create", "github.pull.request.create", "maven.workspace.first.import.notification", "maven.wrapper.file.not.found.notification", "maven.workspace.external.storage.notification", "maven.wrapper.downloading.error.notification", "project.structure.automatically.detected.notification.id", "build.script.found.notification.id", "maven.wrapper.information.notification", "maven.wrapper.empty.url.notification", "github.pull.request.branch.update.failed", "lvcs.storage.corrupted", "lvcs.label.created", "git.update.force.pushed.branch.success", "git.update.force.pushed.branch.not.all.cherry.picked", "PrepareIntrospectionDiagnostic.finished", "DiagnosticRefreshAction.finished", "DumpToDdlDataSourceAction.no.db.data.source", "SaveLobAsAction.structure.changed", "SaveLobAsAction.error", "DatabaseModelLoader.single.db.mode.required", "DetailsSyncHelper.sync.required", "database.undo.is.impossible", "git.apply.changes.conflicts", "CopyDdlFromDbAction.error", "CliNotificationManagerBase.dump.finished", "DataSourceUtil.generic.notification", "PasswordExpirationConnectionInterceptor.successful", "CancelProgressAuditor.too.long", "DataSourceConfigurable.storage.move.failed", "CliNotificationManagerBase.restore.finished", "SchemaScripts.generation.finished", "DatabaseEditorHelper.Auditor.print", "DatabaseConfigFileWatcher.found", "RevertFix.failed", "DumpToDdlDataSourceAction.dump.error", "ImportHead.import.finished", "ImportHead.import.failed", "git.apply.changes.success", "DumpToDdlDataSourceAction.no.introspected.schemas", "DbSrcValidator.introspection.suggested", "ImportAction.error", "HandleErrorTask.cant.access", "git.apply.changes.local.changes.detected", "SaveLobAsAction.finished", "ScriptFileLayoutPanel.finished", "DumpToDdlDataSourceAction.no.objects", "DbSrcValidator.stale.pruned", "SaveLobAsAction.failed", "RemoteConsoleProcessSupport.before.task.cycle.prevented", "UseMyFix.failed", "SessionLogger.query.finished", "MergeFix.failed", "SqlAddExternalRelationIntention.stored", "DatabaseEditorHelper.Auditor.warn", "OutdatedCheck.failed", "ScriptFileLayoutPanel.error", "git.apply.changes.error", "DumpToDdlDataSourceAction.no.ddl.data.source", "db.import.failed", "DbSrcValidator.regeneration.suggested", "MsPlanModelBuilder.unable.to.find.table", "DumpToDdlDataSourceAction.failed.to.create.layout", "DataSourceConfigurable.set.default.dialect", "DatabaseEditorHelper.Auditor.error", "git.gpg.agent.configuration.propose", "git.gpg.agent.configuration.success", "git.gpg.agent.configuration.propose.suggestion", "git.gpg.agent.configuration.error", "git.unshallow.success", "invalid.rust.std.lib.source", "could.not.reach.crates.io", "install.target.error", "org.rust.database.plugin.suggestion", "visual.studio.installer", "project.not.found", "target.is.not.installed", "rustfmt.not.installed", "rust.version.not.supported", "component.not.available", "bad.answer.from.crates.io", "rustfmt.error", "defmap.rebuilt", "running.tests.with.sudo", "rustup.not.available", "cannot.load.rustc.for.debugger", "rustup.update.finished", "rustfmt.enabled.by.default", "file.was.shared.on.playground", "crate.is.not.installed", "feedback.form.prompted", "failure.to.share.on.playground", "failed.to.create.mod", "install.component.error", "command.not.available", "git.commit.modal.deprecation" ]
+        "notification_id" : [ "ignored.to.exclude.synchronization.notification", "externally.added.files.notification", "project.configuration.files.added.notification", "manage.ignore.files.notification", "github.missing.default.account", "github.pull.request.cannot.set.tracking.branch", "github.clone.unable.to.create.destination.dir", "github.clone.unable.to.find.destination", "github.open.in.browser.file.is.not.under.repo", "github.open.in.browser.cannot.get.last.revision", "github.rebase.success", "github.gist.cannot.create", "github.pull.request.cannot.load.branches", "github.pull.request.cannot.collect.additional.data", "github.pull.request.cannot.load.forks", "github.pull.request.failed.to.add.remote", "github.pull.request.push.failed", "github.pull.request.creation.error", "github.pull.request.cannot.collect.diff.data", "github.pull.request.cannot.find.repo", "github.pull.request.created", "github.pull.request.cannot.process.remote", "github.pull.request.no.current.branch", "github.rebase.cannot.validate.upstream.remote", "github.rebase.upstream.is.own.repo", "github.rebase.cannot.get.user.info", "github.rebase.cannot.retrieve.upstream.info", "github.rebase.cannot.configure.upstream.remote", "github.rebase.repo.not.found", "github.rebase.cannot.load.repo.info", "github.rebase.repo.is.not.a.fork", "github.share.cannot.find.git.repo", "github.share.cannot.create.repo", "github.share.project.successfully.shared", "github.share.empty.repo.created", "github.share.project.created.init.commit.failed", "github.share.init.push.failed", "github.gist.created", "github.git.repo.init.error", "unknown", "hg.update.unresolved.conflicts.error", "git.merge.local.changes.detected", "vcs.patch.apply.rollback.failed", "hg.qrefresh.error", "git.revert.abort.failed", "git.fetch.success", "git.branch.operation.success", "git.pull.failed", "hg.merge.warning", "vcs.commit.finished.with.warnings", "vcs.shelve.successful", "git.merge.reset.error", "git.stage.commit.successful", "git.clone.unable.to.create.destination.dir", "git.rebase.cannot.continue", "vcs.commit.canceled", "git.branch.rename.rollback.success", "hg.merge.error", "hg.rebase.error", "git.update.no.tracked.branch.error", "git.rebase.update.project.error", "hg.tag.creation.error", "git.local.changes.not.restored", "hg.clone.destination.error", "vcs.shelve.failed", "hg.merging.with.ancestor.skipped", "vcs.patch.apply.aborted", "hg.pushed.successfully", "git.remote.branch.deletion.success", "hg.repository.created", "git.tag.created", "hg.qpop.completed.with.errors", "git.branch.operation.error", "hg.compare.with.branch.error", "git.fetch.error", "hg.nothing.to.push", "git.rebase.cannot.abort", "hg.unsupported.extensions", "vcs.patch.partially.applied", "git.branches.update.successful", "hg.exception.during.merge.commit", "git.init.failed", "git.rebase.not.allowed", "hg.qfold.error", "hg.qfinish.error", "git.merge.abort.success", "git.init.error", "git.rebase.commit.edit.undo.error.repo.changed", "git.reset.failed", "git.update.detached.head.error", "git.create.branch.rollback.successful", "git.branch.checkout.failed", "git.delete.branch.on.merge", "vcs.root.added", "git.stash.failed", "vcs.patch.copied.to.clipboard", "git.merge.abort.failed", "vcs.could.not.compare.with.branch", "git.reset.successful", "git.branch.creation.failed", "git.branch.deletion.rollback.error", "hg.graft.continue.error", "hg.merge.exception", "git.rebase.abort.succeeded", "hg.debugancestor.error", "hg.log.command.execution.error", "hg.unable.to.run.executable", "hg.bookmark.error", "git.rebase.commit.edit.undo.error", "git.unstash.with.unresolved.conflicts", "git.unstash.failed", "hg.qgoto.error", "hg.clone.error", "git.clone.failed", "git.rebase.abort.failed", "hg.remote.auth.error", "vcs.uncommitted.changes.saving.error", "git.update.nothing.to.update", "git.merge.rollback.error", "hg.qnew.error", "git.checkout.success", "git.update.error", "git.cannot.resolve.conflict", "git.unstash.with.conflicts", "space.sharing.not.finished", "hg.rebase.continue.error", "git.checkout.rollback.error", "git.reset.partially.failed", "git.remote.branch.deletion.error", "hg.qrename.error", "hg.unsupported.version", "hg.repo.creation.error", "space.git.repo.init.error", "git.tag.remote.deletion.error", "hg.push.error", "vcs.cherry.pick.error", "git.repository.created", "vcs.roots.invalid", "git.stash.local.changes.detected", "git.could.not.compare.with.branch", "git.rebase.not.started", "space.project.shared.successfully", "vcs.compare.failed", "vcs.patch.apply.success.applied", "hg.qdelete.error", "hg.branch.creation.error", "git.cherry.pick.abort.failed", "git.rebase.rollback.failed", "git.merge.error", "vcs.patch.apply.cannot.find.patch.file", "git.rebase.commit.edit.undo.error.protected.branch", "git.rebase.successful", "vcs.commit.failed", "git.could.not.load.changes.of.commit", "git.unresolved.conflicts", "vcs.patch.apply.new.files.error", "hg.rebase.abort.error", "git.revert.abort.success", "git.stage.commit.error", "git.tag.not.created", "git.create.branch.rollback.error", "git.fix.tracked.not.on.branch", "vcs.shelve.deletion.undo", "hg.tag.creation.failed", "git.tag.deletion.rollback.error", "hg.update.error", "vcs.roots.registered", "hg.status.command.error", "hg.qimport.error", "vcs.patch.apply.not.patch.type.file", "vcs.commit.finished", "git.could.not.save.uncommitted.changes", "hg.rename.failed", "git.branch.rename.rollback.failed", "git.cherry.pick.abort.success", "hg.qpop.error", "git.conflict.resolving.error", "git.merge.failed", "hg.pull.error", "git.unstash.patch.applied", "hg.bookmark.name.is.empty", "hg.pull.auth.required", "git.rebase.abort", "vcs.patch.already.applied", "git.checkout.new.branch.operation.rollback.error", "hg4idea.changesets.error", "vcs.patch.creation.failed", "hg.graft.error", "hg.qpush.error", "git.checkout.new.branch.operation.rollback.successful", "github.rebase.remote.origin.not.found", "github.rebase.account.not.found", "github.rebase.multi.repo.not.supported", "rebase.error.failed.to.match.gh.repo", "git.branch.set.upstream.failed", "git.log.could.not.load.changes.of.commit", "vcs.project.partially.updated", "vcs.shelf.undo.delete", "vcs.branch.operations.are.executed.on.all.roots", "git.rebase.collect.updated.changes.error", "git.push.not.supported", "vcs.inactive.ranges.damaged", "git.commit.cancelled", "git.fetch.result", "git.tag.remote.deletion.success", "git.fetch.cancelled", "git.fetch.details", "git.project.updated", "git.all.files.are.up.to.date", "git.fetch.result.error", "git.project.partially.updated", "git.push.result", "git.branch.deleted", "git.tag.restored", "git.files.updated.after.merge", "vcs.project.update.finished", "git.tag.deleted", "git.commit.edit.success", "space.other", "gradle.jvm.invalid", "gradle.jvm.configured", "gradle.configuration.error", "sh.update.shellcheck.error", "sh.update.shellcheck.success", "sh.update.formatter.success", "sh.install.formatter.error", "sh.update.formatter.error", "sh.install.formatter", "sh.update.shellcheck", "sh.update.formatter", "sh.install.formatter.success", "git.bad.executable", "git.init.stage.failed", "git.rebase.failed", "diff.external.too.many.selected", "ignored.to.exclude.not.found", "git.rebase.stopped.for.editing", "vcs.cannot.load.annotations", "untracked.files.overwritten", "diff.external.cant.load.changes", "vcs.obsolete.plugin.unbundled", "vcs.suggested.plugin.install.failed", "diff.merge.intenral.error", "git.rebase.stopped.due.to.conflicts", "vcs.commit.checks.failed", "git.tags.loading.failed", "vcs.commit.checks.only.failed", "vcs.add.unversioned.error", "vcs.post.commit.checks.failed", "grazie.pro.advertisement", "git.open.in.browser.error", "git.ignore.file.generation.error", "review.branch.checkout.failed", "space.merge.request.creation.failed", "space.merge.request.created", "space.git.repo.foldernotfound", "git.stage.operation.error", "vcs.log.navigation.error", "vcs.log.commit.not.found", "file.history.load.details.error", "vcs.log.fatal.error", "vcs.log.not.available", "git.stash.non.empty.index.detected", "git.stash.successful", "space.review.create", "gitlab.merge.request.create", "github.pull.request.create", "maven.workspace.first.import.notification", "maven.wrapper.file.not.found.notification", "maven.workspace.external.storage.notification", "maven.wrapper.downloading.error.notification", "project.structure.automatically.detected.notification.id", "build.script.found.notification.id", "maven.wrapper.information.notification", "maven.wrapper.empty.url.notification", "github.pull.request.branch.update.failed", "lvcs.storage.corrupted", "lvcs.label.created", "git.update.force.pushed.branch.success", "git.update.force.pushed.branch.not.all.cherry.picked", "PrepareIntrospectionDiagnostic.finished", "DiagnosticRefreshAction.finished", "DumpToDdlDataSourceAction.no.db.data.source", "SaveLobAsAction.structure.changed", "SaveLobAsAction.error", "DatabaseModelLoader.single.db.mode.required", "DetailsSyncHelper.sync.required", "database.undo.is.impossible", "git.apply.changes.conflicts", "CopyDdlFromDbAction.error", "CliNotificationManagerBase.dump.finished", "DataSourceUtil.generic.notification", "PasswordExpirationConnectionInterceptor.successful", "CancelProgressAuditor.too.long", "DataSourceConfigurable.storage.move.failed", "CliNotificationManagerBase.restore.finished", "SchemaScripts.generation.finished", "DatabaseEditorHelper.Auditor.print", "DatabaseConfigFileWatcher.found", "RevertFix.failed", "DumpToDdlDataSourceAction.dump.error", "ImportHead.import.finished", "ImportHead.import.failed", "git.apply.changes.success", "DumpToDdlDataSourceAction.no.introspected.schemas", "DbSrcValidator.introspection.suggested", "ImportAction.error", "HandleErrorTask.cant.access", "git.apply.changes.local.changes.detected", "SaveLobAsAction.finished", "ScriptFileLayoutPanel.finished", "DumpToDdlDataSourceAction.no.objects", "DbSrcValidator.stale.pruned", "SaveLobAsAction.failed", "RemoteConsoleProcessSupport.before.task.cycle.prevented", "UseMyFix.failed", "SessionLogger.query.finished", "MergeFix.failed", "SqlAddExternalRelationIntention.stored", "DatabaseEditorHelper.Auditor.warn", "OutdatedCheck.failed", "ScriptFileLayoutPanel.error", "git.apply.changes.error", "DumpToDdlDataSourceAction.no.ddl.data.source", "db.import.failed", "DbSrcValidator.regeneration.suggested", "MsPlanModelBuilder.unable.to.find.table", "DumpToDdlDataSourceAction.failed.to.create.layout", "DataSourceConfigurable.set.default.dialect", "DatabaseEditorHelper.Auditor.error", "git.gpg.agent.configuration.propose", "git.gpg.agent.configuration.success", "git.gpg.agent.configuration.propose.suggestion", "git.gpg.agent.configuration.error", "git.unshallow.success", "invalid.rust.std.lib.source", "could.not.reach.crates.io", "install.target.error", "org.rust.database.plugin.suggestion", "visual.studio.installer", "project.not.found", "target.is.not.installed", "rustfmt.not.installed", "rust.version.not.supported", "component.not.available", "bad.answer.from.crates.io", "rustfmt.error", "defmap.rebuilt", "running.tests.with.sudo", "rustup.not.available", "cannot.load.rustc.for.debugger", "rustup.update.finished", "rustfmt.enabled.by.default", "file.was.shared.on.playground", "crate.is.not.installed", "feedback.form.prompted", "failure.to.share.on.playground", "failed.to.create.mod", "install.component.error", "command.not.available", "git.commit.modal.deprecation", "vcs.git.repo.init.error", "vcs.share.cannot.find.git.repo", "vcs.share.init.push.failed", "vcs.share.cannot.create.repo", "vcs.share.project.successfully.shared", "vcs.share.project.created.init.commit.failed", "vcs.share.empty.repo.created" ]
       }
     }
   }, {
@@ -7865,6 +7960,15 @@
         "during_indexing" : [ "{enum#boolean}" ],
         "gc_time_ms" : [ "{regexp#integer}" ],
         "heap_size_gigabytes" : [ "{regexp#integer}" ],
+        "invocation_events_count" : [ "{regexp#integer}" ],
+        "invocation_execution_p50_us" : [ "{regexp#integer}" ],
+        "invocation_execution_p95_to_p50" : [ "{regexp#float}" ],
+        "invocation_execution_p99_to_p50" : [ "{regexp#float}" ],
+        "invocation_execution_total_ms" : [ "{regexp#integer}" ],
+        "invocation_waiting_p50_us" : [ "{regexp#integer}" ],
+        "invocation_waiting_p95_to_p50" : [ "{regexp#float}" ],
+        "invocation_waiting_p99_to_p50" : [ "{regexp#float}" ],
+        "invocation_waiting_total_ms" : [ "{regexp#integer}" ],
         "issue_id" : [ "{regexp:[A-Z]{2,7}-\\d{1,6}}" ],
         "lang" : [ "{util#lang}" ],
         "last_action_id" : [ "{enum:git4idea.rebase.abort|git4idea.rebase.continue|git4idea.rebase.retry|git4idea.rebase.resolve|git4idea.rebase.stage.and.retry|git.gpg.agent.configuration.success.manual.action|git.gpg.agent.configuration.propose.manual.action|git.gpg.agent.configuration.propose.suggestion.manual.action|git.gpg.agent.configuration.propose.configure.action|git.gpg.agent.configuration.propose.suggestion.configure.action}", "{util#action}" ],
@@ -7880,6 +7984,15 @@
         "project_count" : [ "{regexp#integer}" ],
         "ram_minus_file_mappings" : [ "{regexp#integer}" ],
         "ram_plus_swap_minus_file_mappings" : [ "{regexp#integer}" ],
+        "reading_lock_events_count" : [ "{regexp#integer}" ],
+        "reading_lock_execution_ms" : [ "{regexp#integer}" ],
+        "reading_lock_execution_p50_us" : [ "{regexp#integer}" ],
+        "reading_lock_execution_p95_to_p50" : [ "{regexp#float}" ],
+        "reading_lock_execution_p99_to_p50" : [ "{regexp#float}" ],
+        "reading_lock_waiting_ms" : [ "{regexp#integer}" ],
+        "reading_lock_waiting_p50_us" : [ "{regexp#integer}" ],
+        "reading_lock_waiting_p95_to_p50" : [ "{regexp#float}" ],
+        "reading_lock_waiting_p99_to_p50" : [ "{regexp#float}" ],
         "safepoints_count" : [ "{regexp#integer}" ],
         "samples" : [ "{regexp#integer}" ],
         "swap_load" : [ "{regexp#integer}" ],
@@ -7887,10 +8000,25 @@
         "time_at_safepoint_ms" : [ "{regexp#integer}" ],
         "time_to_safepoint_ms" : [ "{regexp#integer}" ],
         "type" : [ "{enum:HEAP|MIN_HEAP|METASPACE|DIRECT_BUFFERS|CODE_CACHE}" ],
+        "ui_execution_events_count" : [ "{regexp#integer}" ],
+        "ui_execution_p50_us" : [ "{regexp#integer}" ],
+        "ui_execution_p95_to_p50" : [ "{regexp#float}" ],
+        "ui_execution_p99_to_p50" : [ "{regexp#float}" ],
+        "ui_execution_total_ms" : [ "{regexp#integer}" ],
+        "window_length_ms" : [ "{regexp#integer}" ],
+        "write_lock_events_count" : [ "{regexp#integer}" ],
+        "write_lock_execution_ms" : [ "{regexp#integer}" ],
+        "write_lock_execution_p50_us" : [ "{regexp#integer}" ],
+        "write_lock_execution_p95_to_p50" : [ "{regexp#float}" ],
+        "write_lock_execution_p99_to_p50" : [ "{regexp#float}" ],
+        "write_lock_waiting_ms" : [ "{regexp#integer}" ],
+        "write_lock_waiting_p50_us" : [ "{regexp#integer}" ],
+        "write_lock_waiting_p95_to_p50" : [ "{regexp#float}" ],
+        "write_lock_waiting_p99_to_p50" : [ "{regexp#float}" ],
         "xmx" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "ui.latency", "ui.lagging", "heartbeat", "popup.latency", "mainmenu.latency", "responsiveness", "low.memory", "heartbeat.memory", "slow.operation.issues" ]
+        "__event_id" : [ "ui.latency", "ui.lagging", "heartbeat", "popup.latency", "mainmenu.latency", "responsiveness", "low.memory", "heartbeat.memory", "slow.operation.issues", "ui.responsiveness" ]
       }
     }
   }, {
@@ -11643,6 +11771,23 @@
       }
     }
   }, {
+    "id" : "spring.core",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:bean.created.by.generate.action|bean.created.by.new.action|bean.created.from.unresolved.postfix}" ],
+      "event_data" : {
+        "bean_type" : [ "{enum:Component|Spring Boot Test|REST Controller|Bean|Controller|Service|Repository|Configuration|Controller Advice|Configuration Properties|Application}" ],
+        "file_template" : [ "{enum:Spring Component.java|Spring Component.kt|Spring Boot Test.java|Spring Boot Test.kt|Spring REST Controller.java|Spring REST Controller.kt|Spring Controller.java|Spring Controller.kt|Spring Service.java|Spring Service.kt|Spring Repository.java|Spring Repository.kt|Spring Configuration.java|Spring Configuration.kt|Spring Controller Advice.java|Spring Controller Advice.kt|Spring Configuration Properties.java|Spring Configuration Properties.kt|Spring Application.java|Spring Application.kt}" ],
+        "lang" : [ "{util#lang}" ],
+        "live_template" : [ "{enum:Spring Java/component|Spring Kotlin/component|Spring MVC/restController|Spring MVC Kotlin/restController|Spring Java/bean|Spring Kotlin/bean|Spring MVC Java/controller|Spring MVC Kotlin/controller|Spring Java/service|Spring Kotlin/service|Spring Java/repository|Spring Kotlin/repository|Spring Java/configuration|Spring Kotlin/configuration|Spring Java/configProperties|Spring Kotlin/configProperties}" ],
+        "new_bean_container" : [ "{enum:file|directory|test_directory}" ],
+        "new_bean_source" : [ "{enum:postfix|quickfix}" ]
+      }
+    }
+  }, {
     "id" : "spring.debugger.db.connections",
     "builds" : [ ],
     "versions" : [ {
@@ -12006,14 +12151,30 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:local.exec|terminal.command.executed|terminal.command.finished}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "command" : [ "{enum:<relative path>|<absolute path>|<empty>|<whitespaces>|ksh|doctl|blockdev|puppetserver|gcloud-sdk|postman|pick|tee|twint|redis-cli|mesosphere|eksctl|nova|cdb|hashicorp-vault|cdf|abrt-action-notify|liquidctl|groot|cproto|cdk|gunicorn|ldapmodify|rosrun|xdg-open|base32|wing|nats-server|xsltproc|kubevela|terraform-lsp|trellis|xrandr|unrar|hubble|typeorm|openebs|terragrunt|connect|mdfind|jarsigner|pluto|cfn|i3blocks|j|n|prettier|q|r|containerd-shim|parquet-tools|adduser|bash-completion|rojo|w|debootstrap|scrollphat|kwok|arch|bibtex|appman|hexo|ansible-lint|kubens|conan|lttng|xinput|ncal|tig|hashpump|semver|pigz|ncat|export|gpg|rome|abrt-action-analyze-backtrace|jcmd|ocamlopt|chezmoi|ccal|pax|check|bitrise|eval|brunch|quickmail|ccat|devspace|abrt-action-analyze-oops|zabbix-cli|minio|mkdocs|nodejs|caffeine|prop-types|pbcopy|prisma|tkn|conda|gkrellm|simplehttp2server|bochs|abrt-applet|geoserver|diff-so-fancy|vroom|twine|git-flow|pdb|ecryptfs|argo|orc-tools|service|coffee|tetragon|awsume|splash|copypath|xclip|ocrmypdf|atlas|systeminfo|argocd|inotifywait|ansible-vault|nces|agrippa|peg|xprop|dscl|powerman|sass|flow|aws-vault|umount|clj|unalias|linuxdeployqt|clp|ros2|cls|angular|deja-dup|install|ncdu|lightning-cli|tns|caffeinate|clilol|cmd|gum|zsh-autosuggestions|remix|nmcli|wait|groff|jsdoc|a2ensite|clojure|ping|cdk8s|pip3|oh-my-posh|vcpkg|goto|scully|top|rails|scriptreplay|tor|cadvisor|opkg-install|cni|gvm|json-server|tempo-cli|quilt|spinnaker|alacritty|xxd|calibre|flickity|homebrew|agave|mdls|sha1sum|php|cog|codesign|diff3|oh-my-zsh|ocamlc|xenserver|col|procs|backupninja|coq|debugfs|steward|s6-svstat|base64|ip6tables|cot|mocha|unexpand|liquibase|gleam|dotslash|pip|dhcpdump|flyway|xmodmap|airflow|less|ulimit|emctl|gyb|werf|zapier|kubevirt|irssi|jhat|locate|tsc|llvm-objdump|tsh|ccls|dprint|lcc|pkg|automake|tracepath|combinepdf|pm2|heroku|tsx|flux|chmod|floor|mftrace|mblaze|custodian|dmesg|whence|plantuml|cry|ldd|s6-svscan|kinit|ops-manager|pipx|tty|csh|taskkill|ply|sketch|wall|lame|degit|realpath|aapt|kubefwd|cfn_nag|hostname|sfdx|whereis|cfn-lint|ntop|let|svokit|cargo|arm-none-eabi-gcc|graphcdn|sapphire|ctr|amazon-ssm-agent|tracert|vmware|taskmgr|bamboo|ignite-cli|mpack|groovy|molecule|ctop|mosquitto_pub|memcached|cut|pod|lualatex|harfbuzz|screenshot|trackball|lbzip2|ansible|clay|celery|networkctl|kops|encrypt|sidekiq|markdown|pow|cvm|kitchen|lesspipe|abrt-action-analyze-ccpp|istioctl|jconsole|nats-streaming-server|ettercap|cvs|karma|think|coffeescript|daemonize|apt-key|jackd|northflank|imgur-screenshot|librarian|asyncapi|install-sh|yat|phpunit|perlbrew|kool|charm|watch|sassc|abrt-action-generate-core-backtrace|bison|cpio|rustc|unittest|source|tilt|ncurses|netsh|dos2unix|logstash|openfaas-cli|knot-resolver|ndisasm|bashdb|homey|code-insiders|stencil|openfortivpn|openconnect|espanso|last|aisleriot|lastpass|rosbag|pro|lrun|smimesign|vmctl|cmocka|pathping|jsonlint|shopt|speedtest-cli|gtk-launch|snaplet|linode-cli|nixops|httpstat|readlink|exuberant-ctags|libinput|aria2c|wifi-password|erlang|gphoto2|erlc|sbcl|hcp|attrib|buildah|autoexpect|yed|keybase|perl|prometheus|platformio|hyperfine|encfs|start|bash-it|tmux|pushd|goproxy|hadolint|watson|time|app-builder|editcap|ovs-vsctl|sha256sum|dirname|three|redis|python3|mmls|truncate|flatpak|trap|kpack|add-apt-repository|twiggy|openapi|mergemachine|iperf|multivault|fish_config|vue-cli|localstack|light|mirrord|tfmigrate|jenkins-cli|kubescape|tccutil|ldapdelete|pwd|zsh-completions|rsnapshot|dotnet|bmon|log|gcloud|cobalt|seesaw|ngrok|unzip|fuse|openjdk|arduino|concourse|cavif|ecryptfs-recover-private|clion|jfsck|ledger|asciidoctor|glTF-SDK|clif|proj|sshd|wrangler|litecli|capacitor|fluentd|kubesec|pbench|stepzen|cbconsole|garden|gpgkey2ssh|apt-get|mkfifo|quick|compact|circleci|cucumber|trex|medusa|clean-css|drush|g++-multilib|datadog-agent|hasura|figlet|ammonite|wezterm|playwright|appium-doctor|zulip|netplan|dagit|xargs|gatsby|ccze|format|ipatool|tree|blkid|history|done|copyfile|pause|podman-compose|languagetool|dnsmasq|qmake|dbt|espctl|lsd|dnscrypt-proxy|gtop|shutdown|soap|critical|dcd|vtex|asar|virt-manager|xfsprogs|cloc|opa-envoy|ykman|bunyan|cwebp|alias|chage|theia|proof-general|ipadm|gopherjs|debug|ddd|pytest|git-profile|juju|regtest|chef|clear|banner|sysdig-cli-scanner|clean|fbset|create-next-app|mdoclint|dotenv|arkade|dateseq|glab|git-extras|lua|dhcpstarv|travis|kubeseal|openid-connect|globus|beep|tsuru|stack|xvfb|hb-service|ethtool|quarkus|ufw|abrt-action-analyze-python|del|intellij|elm-json|elastic-agent|luz|beadm|ffplay|dex|telnet|asdf|railway|badblocks|atlantis|lvm|pass|pyenv|savelogs|netcat-traditional|route|defaults|jshint|softwareupdate|ftrace|sftp|opkg-cl|gomobile|rgrep|xcodebuild|berkshelf|semgrep|hop|cpphs|pnpm|minu|rustup|mint|spark|lxc|lxd|oculus|cdbs|pocketbase|netcat|tail|dehydrated|lz4|serverless|staff|wsdd|usermod|genymotion|gometalinter|espeak|ganache-cli|rsync|wireguard-tools|pylint|timidity|fuzz|dig|autossh|jmap|abrt-action-analyze-vmcore|kafkacat|dir|spark-submit|arm-none-eabi-size|linuxdeploy|shfmt|vault|info|dolphin|test|samtools|flatcar-installer|netstat|graph|linkerd-top|pnpx|rancher-desktop|locust|arangosh|qrcode|ecs-cli|entr|osc-cli|title|bjarne|mavintegration|yum|cilium|mpg123|redshift|cppcheck|solr|gpg-connect-agent|dcat|connect-proxy|just|apt-mark|scantailor|poetry|prince|doskey|critest|appium|lscpu|solc|babl|mkinitcpio|start-storybook|xauth|reflex|hub|s6-tcpserver|defaultbrowser|googler|copilot|egrep|bridgecrew|convert|kitten|s4cmd|sstp-client|editorconfig|pgrep|dnf|gauge|python|qtcreator|meld|xcopy|genkernel|choosenim|brew|ghci|explorer|dog|react-native|lftp|akonadictl|glances|credo|awscli|nuke|file|chsh|idevicesyslog|dash-cli|i3status|man|map|mas|midnight-commander|steadybit|logrotate|asmc|crictl|sockit|sops|torch|bless|gatling|lazydocker|tangram|helmfile|cmatrix|socat|scaffold|lolcat|otel|podman-remote|firectl|okta|beanstalkd|emoji|golangci-lint|mail|serve|chkdsk|fastlane|blade|pkill|linkerd|gtable|find|host|hashcat|klist|podman|nginx|create-remix|pulumi|winrm|sort|lsof|nomad|pbpaste|trash|blitz|astro|task|mdp|wscat|ansible-pull|bt-monitor|sitecake|glow|mdv|apktool|sw_vers|libuv|linklint|derek|openjdk-jre|galera_new_cluster|tmutil|ora2pg|repeat|vampire|vpnc|k3sup|dtm|aliyun|make|rushx|broot|step-ca|nohup|kctl|pg_restore|kotlin|stern|ruby|uptime|nix-env|bake|bulk-extractor|curl|pymol|osqueryi|dynatrace|supervisord|tfsec|virtctl|dcli|loki|cf-cli|whatis|git-crypt|orbit|nmap|jinfo|solidity|netctl|bcmath|taskctl|xdg-mime|ebtables|regex|metasploit|passwd|a2enmod|llvm-strings|dwm|saron|fasttext|openscad|scan|depstar|global|masscan|update-alternatives|jmeter|jupyter|mermaid|buildctl|mknod|man-db|eiffel|sumocli|free|mix|stat|qri|milpa|msmtp|ruff|fish|amazon-efs-utils|babel|kustomize|open|agent|x11vnc|nvidia-docker|qemu|fail2ban|shellenv|rustfmt|tesseract|dumpcap|zed|mysql|create-video|android-tools|crane|cradle|pwsh|kubectx|daemon|gource|mlr|dropbox|kubectl|minicom|heroku-cli|mongo|gulp|mmc|class-dump|newman|ranger|digiKam|opkg|ldapadd|nuxi|mmv|ionic|authchanger|glusterfs|iex|hbase|git-subrepo|mask|protoc|supervisorctl|lstat|iconv|sceptre|scdl|gcsfuse|nerdctl|sublist3r|iftop|abigen|apt-cache|taplo|mongoimport|minikube|bash|neovim|step|growingio|certbot|osascript|mob|abrt-cli|monit|okteto|svtplay-dl|enable|pmset|dctl|zig|mpd|zip|mpc|xcodeproj|gedit|cloudflare|pacman|os-prober|appstreamcli|nuxt|spectrum|trivy|tizonia|kubebuilder|openstack|comms|abduco|kudo|wget|preset|iio|jruby|eslint|fortio|ncrack|oath-toolkit|dfu-util|eas|megacli|gifsicle|syncthing-cli|chaos-mesh|kubecfg|uuidgen|faas-cli|ansible-inventory|shellcheck|cfssl|nginx-debug|psql|mlflow|nocorrect|dmitool|quasar|bokeh|dnstracer|nativescript|speedtest|wmctrl|aliases|float|mailx|symfony|ecj|nifi|afplay|space|p10k|mavproxy|unison-fsmonitor|softu2f|unshare|autojump|minectl|slapd|dfu-programmer|gmailctl|edb|laravel|ver|berks|maven|msfconsole|qutebrowser|pageres|uncrustify|pssh|ts-node|cloudsql-proxy|lighttpd|chaoskube|jstat|dscacheutil|kube-score|vectr|findmnt|circuitbreaker|brotli|openhab-cli|bdf2psf|buildozer|aggregate|suitecloud|pandoc|paper|whois|clojurescript|htop|abrt-action-analyze-c|urxvt|augeas|fortune|mongocli|mvn|pdfgrep|dircolors|bikeshed|mongorestore|chisel|nmon|rush|swiftlint|command|k0s|colordiff|zlib|aptly|ssh-keygen|bpftrace|weave|chartmuseum|g++|popd|calicoctl|epubcheck|cvs2git|neat|near|nvcc|vim|kibana|packer|diffpdf|polarion|dconf|zshrc|browsertime|guake|volta|obxprop|opkg-key|shasum|k3d|stow|nativefier|k3s|skaffold|zsh|sleep|promtool|arm-linux-gnueabihf-gcc|irb|do-release-upgrade|aws-okta|lpass|cisco|lsblk|kdoctor|ghcup|fasd|terramate|signify|csvkit|memtester|opkg-update|concurrency|cypress|drawio|jenv|fast|libtool|flips|haproxy|emerge|ipconfig|tmuxinator|basenc|fleet|gsettings|iso|foreman|logcat|turbo|ack|create-web3-frontend|apachectl|asm2wasm|spring|stty|act|riak|reg|duck|shred|tfswitch|addr2line|mongoexport|adb|artillery|gibo|swift|itk|xattr|chown|cmus|elm|e2fsck|adr|js-beautify|users|flink|gmic|cryptsetup|overmind|ninja|port|obfsproxy|noglob|datafusion|http|meshery|onboardbase|spring-boot|github-desktop|tofu|exec|xcodes|anchore|solana|ifconfig|paste|stivale|fluent-bit|macpass|torsocks|byobu|vagrant|xsel|nsenter|nvim|airspec|cipher|jake|rich|rick|cobaltstrike|env|jest|bce-command|neofetch|flyctl|tuist|kubecolor|aircrack-ng|micro|visudo|ddosify|age|ionice|backup|c++|colima|k9s|slim|sanity|xcrun|truffle|bzip2|terragrunt-infra|fisher|bitwarden|qodana|eject|cookiecutter|slack|xkill|ddev|numfmt|unarchiver|palera1n|doxygen|nhost|aglio|script|exit|rlwrap|valet|knative|abrt-action-analyze-xorg|nvidia-smi|ibus|openshift|login|rke|pacman-key|rspec|django-admin|aftman|can-utils|resty|erb|ncl|ncm|ncp|rkt|nco|blade-cli|kubeshark|clockdiff|chruby|ncu|vapor|zoxide|poweroff|aspell|gzip|ttfautohint|balena|sharp|elastic-apm|csvsql|esc|mamba|cmake|s3cmd|atop|babel-traverse|mosquitto_sub|mysqlimport|envsubst|etcd|git-tfs|git-cliff|vue|cfn-nag|jabba|odin|screen|pdfinfo|imagemagick|mode|eventcreate|assoc|llvm-ar|ffmpeg|net|mdadm|arm-none-eabi-objcopy|cryfs|touch|yadm|datree|kubetail|rosbuild|minetest|basename|capistrano|flightplan|nickle|uniq|mock|zellij|cdktf|iptables|elixir|kubeverify|fsck|ansible-galaxy|zipcloak|kitty|gopls|hcloud|grunt|cairo-dock|updatedb|ctrun|cloudflared|ltsp|ros|expr|imapfilter|spark-shell|expo|magento|neon|ant|flagger|msgfmt|dockviz|goctl|rpm|bettercap|openshift-install|vscode|vagrant_cloud|cacert|bibtool|terrascan|until|xcode-select|shift|wt.exe|echo|hwinfo|jad|exa|java|cordova|slush|bpytop|mpstat|graphviz|abrt-harvest-vmcore|subl|nix|lctl|apk|exo|claudia|apport-cli|cdargs|rtorrent|apt|ssh-add|iperf3|subst|openresty|mount|gitea|toilet|matplotlib|deployctl|telepresence|snakemake|kcadm|bloaty|yalc|lazygit|smtpd|launchctl|checkinstall|arc|envoy|filezilla|mojo|watchman|modprobe|where|ark|nala|sudo|arp|linuxbrew|strace|black|jdb|meteor|exiftool|nest|tailscale|bower|brightnessctl|ccache|gradle|calm|claws-mail|argo-rollouts|calc|xorriso|asr|hyperspace|hugo|nano|run|openapi-generator-cli|turbot|atc|stripe|create-react-app|dust|glib-genmarshal|cron|octave|rosdep|buildkite-agent|rvm|jsrun|openjdk-java|croc|camo|drone|camp|mdbook|flutter|consul|crow|dockerd|ltrace|bolt|migrate|next|gitleaks|import|binwalk|yapf|android|remotion|rbenv|cosmic-ray|faas-idler|mftutil|now|opennebula-cli|mkfs|ffprobe|hadoop|factor|waf|abrt-retrace-client|rack|grep|geoiplookup|gitk|npm|grex|slurm|mysqlpump|what|awk|npx|cloudctl|aws|pkgutil|yank|play|yard|llvm-nm|fping|gdbserver|rollup|git-secret|logout|mackup|crush|powershell|electron|ssh-keyscan|mikro-orm|galen|nrm|fbi|trunk|jjs|datamash|zappa|civicrm|ansible-doc|nats|stardog|mosh|azcopy|guard|repo|apport-unpack|gmusicbrowser|gometalinter.v2|bosh|kafkactl|julia|datadog|aptitude|sendmail|amass|spacevim|caprover|jshell|stress|grip|makecert|tornado|ibmcloud|keda|more|prezto|cosign|esptool|kill|redis-server|run-parts|elm-format|exercism|codium|pidgin|rebar|corkscrew|eleventy|parted|ttyrec|pscale|yarn|php-fpm|goimports|pidcat|tinkerbell|jmc|clinfo|krb5|cfn-validate|cloud-nuke|facter|bazel|sha512sum|webpack|fzf-tmux|trash-cli|plex|hyper|mergerfs|ksync|rain|kindctl|restic|nvm|kind|tracee|abrt-action-save-package-data|tfenv|opencpu|chef-run|epmd|lerna|vimr|clusterctl|gparted|httpie|nslookup|alpine|git-svn|kubebench|abrt-action-trim-files|ssh-agent|who|sqlite3|shortcuts|captain|flake8|libguestfs|highlight|rscript|parallel|expo-cli|fsharp|airstrike|doppler|simctl|iputils|sam|sonobuoy|rest|move|yamllint|mongosh|autotune|saw|unix2dos|abrt-server|oclock|puppet|fastapi|nyc|zsh-history-substring-search|build-storybook|nccopy|rake|glslangValidator|unbound|nym|virsh|fig|ipfs|rclone|deltacopy|fin|cmdtest|tanzu|killall|robot|scc|bat|draft|pagekite|mkdir|prowl|swagger-typescript-api|scp|ab|ac|cicada|lynx|ag|scw|antlr|diff|maigret|elif|sdb|ar|fastx-toolkit|fold|as|at|gitlab-runner|envchain|az|gron|tasklist|rackspace-cli|bc|bcd|be|bce|bg|cxxtestgen|bch|jsp|pacaur|anyenv|bcp|drain|smee|br|javadoc|bt|hardhat|sed|vela|vite|xfs_repair|firecracker|selenium|bw|renice|seq|tailwindcss|cc|cd|cf|set|systemd|vimdiff|ci|jobs|column|kswitch|midori|mpeg123|krew|firebase|cp|goreleaser|fly|ccrypt|cv|ecspresso|cloudfoundry|create-t3-app|decipher|sdiff|dc|dd|dockerd-rootless|encode|venv|df|javac|kclean|dompdf|sonar-scanner|duplicity|pgbench|pdfunite|sequelize|do|bshed|fastboot|fmt|tunnelblick|javap|eclim|du|enlighter|browserify|dx|dy|cypher-shell|thanos|eb|ed|which|bfg|cscope|etcdctl|fnm|containerd|polaris|scrub|protofmt|pdftk|emulator|knife|ldapsearch|appwrite|ex|gnuplot|xml_grep|emojify|meroxa|networkmanager|ddclient|fd|cursor|sencha|fg|bashrc|winlogbeat|d++|conftest|for|timeout|checkov|multipass|automysqlbackup|otool|brigade|yarnpkg|exabgp|gh|kris|six|fuser|ingress-nginx|go|plop|i3|mgnl|gs|gt|pngcrush|gw|sphinx|wrk|gitpod|fastqc|publish|inflect|cssnano|prompt|tunnel|hg|httpy|obs|openldap|ipmitool|jstatd|bit|grpcui|ipod|ovs-dpctl|mbuffer|hx|git-annex|elasticsearch|multitail|snapcraft|else|ecryptfs-migrate-home|drag|https|id|join|ncpdp|powertop|if|darkstat|gawk|ocaml|ip|supabase|audacity|index|csdx|k6|bsdtar|httpd|batctl|smit|tldr|chalice|ipmi|logoff|sln|grafana|kubecost|jspm|s6-supervise|cqlsh|sls|jf|template|cfngin|iptraf|jq|js|amplify|vale|astronomer|json_pp|gpgconf|dirb|bundle|munin|encore|callgrind|kali|km|mlocate|ftp|kn|appscale|knex|composer|jflex|mlton|ks|jlink|fastly|clang|cprehash|mercurial|ansible-playbook|lf|lg|kale|tazpkg|zpool|nix-shell|ll|ln|sqlfluff|lp|ls|notepad|pre-commit|a2query|arp-scan|while|unset|swagger|edge|pgcli|split|crossplane|mc|md|pprof|abrt-xorg|mg|fvm|mintty|btop|porter|gprof|xbacklight|gltfjsx|mt|iterm|dirs|mv|syncthing|manpath|expand|nc|nylas|ne|ng|plug|assimp|ni|nl|whoami|np|code|nr|ns|apt-add-repository|coda|nu|box|nx|postcss|head|oc|mailsy|od|wifi-menu|dive|iso-mount|cripple|dhclient|astyle|direnv|op|clair|src|pypy|gpg-agent|argo-workflows|clerk|st2|fgrep|ganglia|netlify-cli|pp|portainer|dockle|ps|airtime-analyzer|babel-node|delta|ssh|py|rmdir|corepack|nixos-rebuild|shellexpand|kcadm.sh|rootlesskit|fzf|cssmin|sst|abrt-watch-log|asciinema|vmstat|sta|github|stf|uname|redwood|streamlit|tanka|stl|then|deno|esbuild|collectd|devcontainer-cli|cftp|node|rd|rg|xterm|bundler|plink|rancher|rm|twilio|rs|cfn-tail|omf|swiftc|codeceptjs|nextflow|catimg|sc|sd|osslsigncode|sf|sg|sh|sk|sl|gai.conf|omz|postgres|kex|sshfs|ss|surreal|svc|su|github-cli|spotify|svn|nuget|rustdoc|tb|pkg-config|ovftool|gomplate|dirbsearch|splunk|bun|bup|tp|swc|tr|deta|clairctl|dmidecode|tx|encscript|ua|twofactor|fswatch|swt|kawa|kubeconform|vitest|opa|clamscan|wuzz|bwa|verif|cliff-jumper|thin|picocom|pathchk|autopoint|ops|vi|forge|tflint|clangd|vr|knox|cabal-install|cocoapods|tccli|systemctl|devd|keycloak|hivemind|xfsdump|mdspell|install-name-tool|ubuntu-advantage|oci-cli|create-react-native-app|ctrlp|wc|wd|newrelic|docker|fdisk|limactl|coreutils|meson|skaffold-run|dracut|gap|wp|zenity|mysqladmin|pg_dump|vpnkit|wt|asymptote|caesarcipher|jolokia|glib-compile-schemas|ncmatrix|orc|csso|open-vm-tools|dopewars|parca|vercel|skaffold-debug|xc|nssm|pipenv|sips|babel-plugin|projj|appium-inspector|uget|argus|ditto|fakeroot|golint|forego|goleft|osc|leanote|yomo|mcedit|selecta|xz|keytool|scrot|dotenv-vault|cython|gcc|cloudmonkey|react|yc|ajenti|ansible-config|cheerio|type|helm|backstop|gadmin-samba|dapr|gcp|atomicparsley|xed|yo|apt-cdrom|yq|microk8s|filebeat|rncli|netdata|elm-review|create-nx-workspace|yolo|wifi|antibody|gdb|emcc|gdc|xev|apollo|emacs|pdfjam|readelf|plenv|suexec|clang++|perltidy|bicep|sigil|sysctl|choco|jstack|lparstat|wakeonlan|typos|cygpath|autovenv|fabric|openssl|chef-client|ticktick|mdocml|crypttool|rpmbuild|unison|flac|sysbench|pycodestyle|aurora|gem|imgur-uploader|cabal|dart|geckodriver|ghost|scontrol|virtualbox|ctags|argoproj|copy|dhcping|phpunit-watcher|linkerd-viz|tokei|msbuild|firewall-cmd|leaf|expect|help|kns|lpstat|catalina|xcodegen|date|celestia-node|firefox|harbor|oculus-debug-tool|docker-compose|browser-sync|corral|md5sum|tac|terraform-docs|wasm-pack|valgrind|microstack|onefetch|ghc|tar|crontab|pachctl|obs-cli|ghk|kpt|zsh-syntax-highlighting|mkisofs|dataplane|ghq|wasm-bindgen|networkQuality|ghz|velero|terraform|dash|smbclient|macchanger|nodemon|tuna|angband|scala|traceroute|autorest|cal|postman-cli|git|cap|car|flex|cat|nopaste|dvips|lima|swagger-cli|vsce|xmlstarlet|akamai|ndk-build|tfnotify|gjs|netlify|cpanm|git-lfs|doorkeeper|vultr-cli|consul-template|ghostscript|snap}" ],
+        "counterpart" : [ "{util#terminal_focus}" ],
+        "duration_90_ms" : [ "{regexp#integer}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
         "execution_time" : [ "{regexp#integer}" ],
         "exit_code" : [ "{regexp#integer}" ],
+        "hyperlink_info_class" : [ "{util#class_name}" ],
+        "opening_way" : [ "{enum:OPEN_TOOLWINDOW|OPEN_NEW_TAB|START_NEW_PREDEFINED_SESSION|SWITCH_ENGINE|SPLIT_TOOLWINDOW}" ],
         "os-version" : [ "{regexp#version}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "second_largest_duration_ms" : [ "{regexp#integer}" ],
         "shell" : [ "{enum:unspecified|other|activate|anaconda3|ash|bash|bbsh|cexec|cmd|cmder|cmder_shell|csh|cygwin|dash|es|eshell|fish|fsh|git|git-bash|git-cmd|hamilton|init|ion|ksh|miniconda3|mksh|msys2_shell|nushell|powershell|pwsh|rc|scsh|sh|tcsh|ubuntu|ubuntu1804|wsl|xonsh|zsh}" ],
-        "subCommand" : [ "{enum:start|restart|--status-all|status|stop|-n|-c|-t|db:migrate|new|c|s|repair|baseline|migrate|validate|info|clean|install|suspend|create|reconcile|bootstrap|logs|export|get|rustc|search|build|bench|miri|fetch|vendor|report|install|uninstall|init|test|verify-project|remove|doc|metadata|add|tree|version|generate-lockfile|pkgid|check|run|clean|help|fmt|new|fix|locale-project|rustdoc|update|int|wlan|advfirewall|ef|watch|publish|tool|restore|test|new|build|clean|run|test|install|run|-avz|--delete|-e|any|mx|+short|-s|-an|-i|info|upgrade|doctor|commands|uninstall|edit|config|list|search|update|install|create|-sL|ifconfig.me|--data|-I|notebook|top|describe|logs|get|version|delete|port-forward|create|apply|exec|scale|build|lint|watch|compress|serve|clean|deploy|debug|test|service|dashboard|addons|delete|--ignore-path|--ext|--fix|--debug|--cache|deploy|invoke|up|remove|new|console|fix|build|validate|inspect|/renew|/release|/all|/flushdns|test|make|reactor|eth0|deploy|status|logs|scale|secrets|monitor|launch|startapp|migrate|createsuperuser|collectstatic|startproject|runserver|makemigrations|mix|iex|install|test|build|run|clean|publish|init|run:android|start|upgrade|run:ios|eject|build:ios|build:android|update|prebuild|install|set_trace|help|set_param|list_param|-f|-p|assemble|bootRun|build|test|eclipse|check|--daemon|clean|buildship|wrapper|tasks|run|dependencies|init|install|create|doctor|pub|test|build|analyze|format|upgrade|install|run|--color|-i|-r|test|install|run|test|install|run|set|fsi|dotnet|-r|-P|run|node|debug|test|compile|accounts|deploy|verify|-i|database:get|init|login|serve|emulators:start|deploy|hosting:disable|functions:log|logout|firestore:indexes|actions|issue|pr|repo|doc|fmt|test|vet|get|run|build|tool|clean|fix|sum|version|env|generate|global|depends|search|run-script|bump|self-update|completion|install|validate|licenses|create-project|dump-autoload|list|audit|update|exec|suggests|help|check-platform-reqs|remove|diagnose|config|init|prohibits|require|clear-cache|show|status|outdated|reinstall|-t|-i|-p|lint|run|bundle|test|upgrade|doc|compile|install|info|cache|fmt|build|watch|serve|bundle|checkout|commit|update|status|restart|start|enable|status|push|swarm|login|compose|logs|images|pull|stop|ps|run|inspect|build|exec|info|repo|uninstall|install|upgrade|start|status|stop|enable|disable|kubectl|-w|-a|list|update|push|install|uninstall|build|test|run|pub|down|up|-cvf|-xvf|-tvf|state|fmt|init|destroy|graph|providers|plan|validate|apply|help|lfs|restore|mv|revert|apply|diff|blame|svn|reset|log|push|difftool|switch|rm|cherry|init|shortlog|branch|reflog|bisect|gui|fetch|version|gc|archive|grep|checkout|cherry-pick|merge|mergetool|pull|show|clean|clone|stash|worktree|remote|fsck|repack|format-patch|describe|ls-tree|tag|request-pull|ls-files|whatchanged|add|submodule|bundle|prune|show-ref|replace|status|ls-remote|config|rebase|am|filter-branch|annotate|commit}" ]
+        "subCommand" : [ "{enum:start|restart|--status-all|status|stop|-n|-c|-t|db:migrate|new|c|s|repair|baseline|migrate|validate|info|clean|install|suspend|create|reconcile|bootstrap|logs|export|get|rustc|search|build|bench|miri|fetch|vendor|report|install|uninstall|init|test|verify-project|remove|doc|metadata|add|tree|version|generate-lockfile|pkgid|check|run|clean|help|fmt|new|fix|locale-project|rustdoc|update|int|wlan|advfirewall|ef|watch|publish|tool|restore|test|new|build|clean|run|test|install|run|-avz|--delete|-e|any|mx|+short|-s|-an|-i|info|upgrade|doctor|commands|uninstall|edit|config|list|search|update|install|create|-sL|ifconfig.me|--data|-I|notebook|top|describe|logs|get|version|delete|port-forward|create|apply|exec|scale|build|lint|watch|compress|serve|clean|deploy|debug|test|service|dashboard|addons|delete|--ignore-path|--ext|--fix|--debug|--cache|deploy|invoke|up|remove|new|console|fix|build|validate|inspect|/renew|/release|/all|/flushdns|test|make|reactor|eth0|deploy|status|logs|scale|secrets|monitor|launch|startapp|migrate|createsuperuser|collectstatic|startproject|runserver|makemigrations|mix|iex|install|test|build|run|clean|publish|init|run:android|start|upgrade|run:ios|eject|build:ios|build:android|update|prebuild|install|set_trace|help|set_param|list_param|-f|-p|assemble|bootRun|build|test|eclipse|check|--daemon|clean|buildship|wrapper|tasks|run|dependencies|init|install|create|doctor|pub|test|build|analyze|format|upgrade|install|run|--color|-i|-r|test|install|run|test|install|run|set|fsi|dotnet|-r|-P|run|node|debug|test|compile|accounts|deploy|verify|-i|database:get|init|login|serve|emulators:start|deploy|hosting:disable|functions:log|logout|firestore:indexes|actions|issue|pr|repo|doc|fmt|test|vet|get|run|build|tool|clean|fix|sum|version|env|generate|global|depends|search|run-script|bump|self-update|completion|install|validate|licenses|create-project|dump-autoload|list|audit|update|exec|suggests|help|check-platform-reqs|remove|diagnose|config|init|prohibits|require|clear-cache|show|status|outdated|reinstall|-t|-i|-p|lint|run|bundle|test|upgrade|doc|compile|install|info|cache|fmt|build|watch|serve|bundle|checkout|commit|update|status|restart|start|enable|status|push|swarm|login|compose|logs|images|pull|stop|ps|run|inspect|build|exec|info|repo|uninstall|install|upgrade|start|status|stop|enable|disable|kubectl|-w|-a|list|update|push|install|uninstall|build|test|run|pub|down|up|-cvf|-xvf|-tvf|state|fmt|init|destroy|graph|providers|plan|validate|apply|help|lfs|restore|mv|revert|apply|diff|blame|svn|reset|log|push|difftool|switch|rm|cherry|init|shortlog|branch|reflog|bisect|gui|fetch|version|gc|archive|grep|checkout|cherry-pick|merge|mergetool|pull|show|clean|clone|stash|worktree|remote|fsck|repack|format-patch|describe|ls-tree|tag|request-pull|ls-files|whatchanged|add|submodule|bundle|prune|show-ref|replace|status|ls-remote|config|rebase|am|filter-branch|annotate|commit}" ],
+        "tab_count" : [ "{regexp#integer}" ],
+        "text_length_90" : [ "{regexp#integer}" ],
+        "third_largest_duration_ms" : [ "{regexp#integer}" ],
+        "total_duration_ms" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "local.exec", "terminal.command.executed", "terminal.command.finished", "backend.typing.latency", "frontend.document.update.latency", "backend.document.update.latency", "frontend.output.latency", "backend.output.latency", "backend.text.buffer.collection.latency", "frontend.typing.latency", "hyperlink.followed", "startup.cursor.showing.latency", "focus.gained", "focus.lost", "session.restored", "tab.opened", "startup.shell.starting.latency", "startup.first.output.latency" ]
       }
     }
   }, {
@@ -12243,7 +12404,8 @@
     "id" : "trial.license.request",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "2"
+      "from" : "2",
+      "to" : "3"
     } ],
     "rules" : {
       "event_id" : [ "{enum:error|success|fail}" ]
@@ -12797,6 +12959,21 @@
       }
     }
   }, {
+    "id" : "vcs.github.project",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "value" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "pr.statistics.open.assignee", "pr.statistics.open", "pr.statistics.all", "pr.statistics.open.reviewer", "pr.statistics.open.reviewed", "pr.statistics.open.author" ]
+      }
+    }
+  }, {
     "id" : "vcs.github.pullrequest.counters",
     "builds" : [ ],
     "versions" : [ {
@@ -12889,13 +13066,28 @@
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
-        "query" : [ "{enum:GET_CURRENT_USER|GET_MERGE_REQUEST|GET_MERGE_REQUEST_DISCUSSIONS|GET_PROJECT_LABELS|GET_PROJECT_MEMBERS|TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|CREATE_NOTE|CREATE_DIFF_NOTE|CREATE_REPLY_NOTE|UPDATE_NOTE|DESTROY_NOTE|MERGE_REQUEST_ACCEPT|MERGE_REQUEST_SET_DRAFT|MERGE_REQUEST_SET_REVIEWERS|MERGE_REQUEST_UPDATE}", "{enum:MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:CREATE_SNIPPET|UPDATE_SNIPPET_BLOB|GET_MEMBER_PROJECTS}", "{enum:FIND_MERGE_REQUESTS}", "{enum:GET_METADATA}", "{enum:MERGE_REQUEST_CREATE|GET_PROJECT_REPOSITORY}", "{enum:GET_PROJECT_WORK_ITEMS}", "{enum:GET_MERGE_REQUEST_COMMITS}", "{enum:AWARD_EMOJI_TOGGLE}", "{enum:GET_PROJECT}", "{enum:GET_MEMBER_PROJECTS_FOR_CLONE|GET_MEMBER_PROJECTS_FOR_SNIPPETS}" ],
-        "request_name" : [ "{enum:REST_GET_CURRENT_USER|REST_GET_PROJECT_USERS|REST_GET_COMMIT|REST_GET_COMMIT_DIFF|REST_GET_MERGE_REQUEST_DIFF|REST_GET_MERGE_REQUEST_CHANGES|REST_DELETE_DRAFT_NOTE|REST_GET_DRAFT_NOTES|REST_SUBMIT_DRAFT_NOTES|REST_SUBMIT_SINGLE_DRAFT_NOTE|REST_CREATE_DRAFT_NOTE|REST_UPDATE_DRAFT_NOTE|REST_GET_MERGE_REQUESTS|REST_APPROVE_MERGE_REQUEST|REST_UNAPPROVE_MERGE_REQUEST|REST_REBASE_MERGE_REQUEST|REST_PUT_MERGE_REQUEST_REVIEWERS|REST_GET_MERGE_REQUEST_COMMITS|REST_GET_MERGE_REQUEST_STATE_EVENTS|REST_GET_MERGE_REQUEST_LABEL_EVENTS|REST_GET_MERGE_REQUEST_MILESTONE_EVENTS|GQL_GET_METADATA|GQL_GET_CURRENT_USER|GQL_GET_MERGE_REQUEST|GQL_FIND_MERGE_REQUEST|GQL_GET_MERGE_REQUEST_DISCUSSIONS|GQL_GET_PROJECT_LABELS|GQL_GET_PROJECT_REPOSITORY|GQL_GET_MEMBER_PROJECTS|GQL_TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|GQL_CREATE_NOTE|GQL_CREATE_DIFF_NOTE|GQL_CREATE_REPLY_NOTE|GQL_CREATE_SNIPPET|GQL_UPDATE_NOTE|GQL_UPDATE_SNIPPET_BLOB|GQL_DESTROY_NOTE|GQL_MERGE_REQUEST_ACCEPT|GQL_MERGE_REQUEST_CREATE|GQL_MERGE_REQUEST_SET_DRAFT|GQL_MERGE_REQUEST_SET_REVIEWERS|GQL_MERGE_REQUEST_UPDATE|GQL_MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:REST_GET_PROJECT_NAMESPACE}", "{enum:GQL_GET_PROJECT_WORK_ITEMS}", "{enum:GQL_GET_MERGE_REQUEST_COMMITS}", "{enum:GQL_AWARD_EMOJI_TOGGLE}", "{enum:GQL_GET_PROJECT}", "{enum:GQL_GET_MEMBER_PROJECTS_FOR_SNIPPETS|GQL_GET_MEMBER_PROJECTS_FOR_CLONE}" ],
+        "query" : [ "{enum:GET_CURRENT_USER|GET_MERGE_REQUEST|GET_MERGE_REQUEST_DISCUSSIONS|GET_PROJECT_LABELS|GET_PROJECT_MEMBERS|TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|CREATE_NOTE|CREATE_DIFF_NOTE|CREATE_REPLY_NOTE|UPDATE_NOTE|DESTROY_NOTE|MERGE_REQUEST_ACCEPT|MERGE_REQUEST_SET_DRAFT|MERGE_REQUEST_SET_REVIEWERS|MERGE_REQUEST_UPDATE}", "{enum:MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:CREATE_SNIPPET|UPDATE_SNIPPET_BLOB|GET_MEMBER_PROJECTS}", "{enum:FIND_MERGE_REQUESTS}", "{enum:GET_METADATA}", "{enum:MERGE_REQUEST_CREATE|GET_PROJECT_REPOSITORY}", "{enum:GET_PROJECT_WORK_ITEMS}", "{enum:GET_MERGE_REQUEST_COMMITS}", "{enum:AWARD_EMOJI_TOGGLE}", "{enum:GET_PROJECT}", "{enum:GET_MEMBER_PROJECTS_FOR_CLONE|GET_MEMBER_PROJECTS_FOR_SNIPPETS}", "{enum:GET_MERGE_REQUEST_METRICS|GET_PROJECT_IS_FORKED}", "{enum:GET_MEMBER_NAMESPACES_OLD|GET_MEMBER_NAMESPACES}" ],
+        "request_name" : [ "{enum:REST_GET_CURRENT_USER|REST_GET_PROJECT_USERS|REST_GET_COMMIT|REST_GET_COMMIT_DIFF|REST_GET_MERGE_REQUEST_DIFF|REST_GET_MERGE_REQUEST_CHANGES|REST_DELETE_DRAFT_NOTE|REST_GET_DRAFT_NOTES|REST_SUBMIT_DRAFT_NOTES|REST_SUBMIT_SINGLE_DRAFT_NOTE|REST_CREATE_DRAFT_NOTE|REST_UPDATE_DRAFT_NOTE|REST_GET_MERGE_REQUESTS|REST_APPROVE_MERGE_REQUEST|REST_UNAPPROVE_MERGE_REQUEST|REST_REBASE_MERGE_REQUEST|REST_PUT_MERGE_REQUEST_REVIEWERS|REST_GET_MERGE_REQUEST_COMMITS|REST_GET_MERGE_REQUEST_STATE_EVENTS|REST_GET_MERGE_REQUEST_LABEL_EVENTS|REST_GET_MERGE_REQUEST_MILESTONE_EVENTS|GQL_GET_METADATA|GQL_GET_CURRENT_USER|GQL_GET_MERGE_REQUEST|GQL_FIND_MERGE_REQUEST|GQL_GET_MERGE_REQUEST_DISCUSSIONS|GQL_GET_PROJECT_LABELS|GQL_GET_PROJECT_REPOSITORY|GQL_GET_MEMBER_PROJECTS|GQL_TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|GQL_CREATE_NOTE|GQL_CREATE_DIFF_NOTE|GQL_CREATE_REPLY_NOTE|GQL_CREATE_SNIPPET|GQL_UPDATE_NOTE|GQL_UPDATE_SNIPPET_BLOB|GQL_DESTROY_NOTE|GQL_MERGE_REQUEST_ACCEPT|GQL_MERGE_REQUEST_CREATE|GQL_MERGE_REQUEST_SET_DRAFT|GQL_MERGE_REQUEST_SET_REVIEWERS|GQL_MERGE_REQUEST_UPDATE|GQL_MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:REST_GET_PROJECT_NAMESPACE}", "{enum:GQL_GET_PROJECT_WORK_ITEMS}", "{enum:GQL_GET_MERGE_REQUEST_COMMITS}", "{enum:GQL_AWARD_EMOJI_TOGGLE}", "{enum:GQL_GET_PROJECT}", "{enum:GQL_GET_MEMBER_PROJECTS_FOR_SNIPPETS|GQL_GET_MEMBER_PROJECTS_FOR_CLONE}", "{enum:GQL_GET_MERGE_REQUEST_METRICS|GQL_GET_PROJECT_IS_FORKED|REST_GET_PROJECT_IS_FORKED}", "{enum:GQL_GET_MEMBER_NAMESPACES_OLD|GQL_GET_MEMBER_NAMESPACES|REST_CREATE_PROJECT}" ],
         "tab_type" : [ "{enum:CREATION|DETAILS|LIST|SELECTOR}" ],
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
         "__event_id" : [ "mergerequests.toolwindow.login.opened", "mergerequests.list.filters.applied", "mergerequests.details.opened", "mergerequests.list.opened", "mergerequests.diff.opened", "mergerequests.action.performed", "api.gql.model.error.occurred", "api.server.error.occurred", "api.json.deserialization.error.occurred", "api.server.version-fetched", "snippets.action.performed", "toolwindow.tab.opened", "mergerequests.creation.failed", "mergerequests.creation.started", "toolwindow.tab.closed", "mergerequests.creation.branches.changed", "mergerequests.creation.succeeded", "mergerequests.creation.reviewer.adjusted" ]
+      }
+    }
+  }, {
+    "id" : "vcs.gitlab.project",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "value" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "mr.statistics.open", "mr.statistics.open.author", "mr.statistics.open.reviewer", "mr.statistics.all", "mr.statistics.open.assignee" ]
       }
     }
   }, {
@@ -13726,5 +13918,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5770"
+  "version" : "5815"
 }
