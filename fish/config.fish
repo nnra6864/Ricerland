@@ -126,6 +126,18 @@ function spc
     # Appended to output name if extension is not found
     set default_ext ".mkv"
 
+    type -q ffmpeg
+    or begin
+        echo "Error: ffmpeg not found" >&2
+        return 1
+    end
+
+    type -q trash
+    or begin
+        echo "Error: trash CLI not found" >&2
+        return 1
+    end
+
     # Get the input file and its duration
     read -P "Input file path - " input_file
     set input_file (string trim -- "$input_file")
@@ -162,15 +174,15 @@ function spc
             # Handle different input formats
             if string match -qr '^\d+(\.\d+)?$' "$input"
                 # Just seconds (e.g., "30.250")
-                printf "%02d:%02d:%06.3f" 0 0 "$input"
+                printf "%02d:%02d:%09.6f" 0 0 "$input"
             else if string match -qr '^\d+:\d+(\.\d+)?$' "$input"
                 # MM:SS or MM:SS.mmm format
                 set parts (string split ':' "$input")
-                printf "%02d:%02d:%06.3f" 0 "$parts[1]" "$parts[2]"
+                printf "%02d:%02d:%09.6f" 0 "$parts[1]" "$parts[2]"
             else if string match -qr '^\d+:\d+:\d+(\.\d+)?$' "$input"
                 # HH:MM:SS or HH:MM:SS.mmm format
                 set parts (string split ':' "$input")
-                printf "%02d:%02d:%06.3f" "$parts[1]" "$parts[2]" "$parts[3]"
+                printf "%02d:%02d:%09.6f" "$parts[1]" "$parts[2]" "$parts[3]"
             else
                 echo "$default"
             end
