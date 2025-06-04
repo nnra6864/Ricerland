@@ -203,9 +203,6 @@ function spc
         set cqp_quality 20
     end
 
-    # Get the audio track count
-    set audio_count (ffmpeg -i "$input_file" 2>&1 | grep "Stream #" | grep -c "Audio")
-
     # Process the file with ffmpeg
     ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
 
