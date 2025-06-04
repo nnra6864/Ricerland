@@ -130,8 +130,8 @@ function spc
     read -P "Input file path - " input_file
     set input_file (string trim -- "$input_file")
     set input_file_name (basename "$input_file")
-    set duration (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
-    set duration (date -u -d "1970-01-01 $duration seconds" +%H:%M:%S)
+    set duration_seconds (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
+    set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
 
     # Get and set output name
     read -P "Output file path(Default: $input_file_name) - " output_file
@@ -159,24 +159,30 @@ function spc
         if test -z "$input"
             echo "$default"
         else
-            set parts (string split ':' "$input")
-            switch (count $parts)
-                case 1
-                    printf "%02d:%02d:%02d" 0 0 "$parts[1]"
-                case 2
-                    printf "%02d:%02d:%02d" 0 "$parts[1]" "$parts[2]"
-                case 3
-                    printf "%02d:%02d:%02d" "$parts[1]" "$parts[2]" "$parts[3]"
+            # Handle different input formats
+            if string match -qr '^\d+(\.\d+)?$' "$input"
+                # Just seconds (e.g., "30.250")
+                printf "%02d:%02d:%06.3f" 0 0 "$input"
+            else if string match -qr '^\d+:\d+(\.\d+)?$' "$input"
+                # MM:SS or MM:SS.mmm format
+                set parts (string split ':' "$input")
+                printf "%02d:%02d:%06.3f" 0 "$parts[1]" "$parts[2]"
+            else if string match -qr '^\d+:\d+:\d+(\.\d+)?$' "$input"
+                # HH:MM:SS or HH:MM:SS.mmm format
+                set parts (string split ':' "$input")
+                printf "%02d:%02d:%06.3f" "$parts[1]" "$parts[2]" "$parts[3]"
+            else
+                echo "$default"
             end
         end
     end
 
     # Get and parse the start time
-    read -P "Start time (format: HH:MM:SS, Default: 0) - " start_time
+    read -P "Start time (format: HH:MM:SS.MS, Default: 0) - " start_time
     set start_time (parse_time "$start_time" "00:00:00")
 
     # Get and parse the end time
-    read -P "End time (format: HH:MM:SS, Default: $duration) - " end_time
+    read -P "End time (format: HH:MM:SS.MS, Default: $duration) - " end_time
     set end_time (parse_time "$end_time" "$duration")
 
     # Get the CQP quality
