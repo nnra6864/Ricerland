@@ -147,6 +147,7 @@ function spc
     set default_output "$base_name Remuxed$extension"
     set duration_seconds (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
     set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
+    set modified_date (stat -c "%y" $input_file | cut -d'.' -f1 | sed 's/ /T/')
 
     # Get and set output name
     read -P "Output file path(Default: $default_output) - " output_file
@@ -210,7 +211,9 @@ function spc
     ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" \
     -c:v hevc_nvenc -preset p7 -profile:v main10 -rc vbr -cq "$cqp_quality" -b:v 0 \
     -spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass 2 \
-    -c:a copy -map 0 "$output_file"
+    -c:a copy -map 0 \
+    -metadata creation_time="$modified_date" \
+    "$output_file"
 
     # Print info
     echo ""
