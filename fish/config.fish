@@ -142,13 +142,16 @@ function spc
     read -P "Input file path - " input_file
     set input_file (string trim -- "$input_file")
     set input_file_name (basename "$input_file")
+    set base_name (string replace -r '\.[^.]*$' '' (basename "$input_file"))
+    set extension (string match -r '\.[^.]*$' (basename "$input_file"))
+    set default_output "$base_name Remuxed$extension"
     set duration_seconds (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
     set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
 
     # Get and set output name
-    read -P "Output file path(Default: $input_file_name) - " output_file
+    read -P "Output file path(Default: $default_output) - " output_file
     if test -z "$output_file"
-        set output_file "$input_file_name"
+        set output_file "$default_output"
     end
 
     # Replace spaces in the name with the space replacement
@@ -204,7 +207,10 @@ function spc
     end
 
     # Process the file with ffmpeg
-    ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" -c:v hevc_nvenc -rc vbr -cq "$cqp_quality" -c:a copy -map 0 "$output_file"
+    ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" \
+    -c:v hevc_nvenc -preset p7 -profile:v main10 -rc vbr -cq "$cqp_quality" -b:v 0 \
+    -spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass 2 \
+    -c:a copy -map 0 "$output_file"
 
     # Print info
     echo ""
@@ -284,7 +290,6 @@ function cleanup_intermediate_dir -d "Deletes all the original files and removes
         mv "$file" (string replace '_intermediate' '' "$file")
     end
 end
-
 
 # Downloads video
 alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
