@@ -215,6 +215,14 @@ function spc
     -metadata creation_time="$modified_date" \
     "$output_file"
 
+    # Return if ffmpeg failed
+    if [ "$status" -ne 0 ]
+        echo ""
+        notify-send "SPC" "Remuxing failed: $status"
+        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+        return $status
+    end
+
     # Print info
     echo ""
     echo "Finished processing the file:"
@@ -224,6 +232,10 @@ function spc
     echo "End:     '$end_time'"
     echo "Quality: '$cqp_quality'"
     echo ""
+
+    # Send the notification
+    notify-send "SPC" "Remuxing finished"
+    paplay /usr/share/sounds/freedesktop/stereo/bell.oga
 
     # Trash the original file
     set trash_original "y"
