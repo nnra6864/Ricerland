@@ -235,7 +235,7 @@ function spc
 
     # Send the notification
     notify-send "SPC" "Remuxing finished"
-    paplay /usr/share/sounds/freedesktop/stereo/bell.oga
+    paplay /usr/share/sounds/freedesktop/stereo/message.oga
 
     # Trash the original file
     set trash_original "y"
