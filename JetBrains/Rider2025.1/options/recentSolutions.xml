@@ -375,19 +375,35 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/SmoothSceneCamera.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="SmoothSceneCamera" projectWorkspaceId="2y78KxYRchv7RZi3etcbdbTtOub">
+              <option name="activationTimestamp" value="1749174496657" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.25410.119" />
+              <option name="buildTimestamp" value="1746614880000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="12" y="12" width="5096" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1749174480371" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Katana – Easings.cs" opened="true" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
-              <option name="activationTimestamp" value="1748832027889" />
+            <RecentProjectMetaInfo frameTitle="Katana – ShopItemScript.cs" opened="true" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
+              <option name="activationTimestamp" value="1749198002631" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-251.25410.119" />
               <option name="buildTimestamp" value="1746614880000" />
               <option name="colorInfo">
                 <RecentProjectColorInfo associatedIndex="2" />
               </option>
-              <frame x="1260" y="12" width="3848" height="1416" />
+              <frame x="12" y="12" width="5096" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1748828325109" />
+              <option name="projectOpenTimestamp" value="1749197986054" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

@@ -13,7 +13,7 @@
       <i c="13" l="1743789958391" />
     </e>
     <e n="$Redo">
-      <i c="526" l="1748752494792" />
+      <i c="529" l="1749187403877" />
     </e>
     <e n="$SelectAll">
       <i c="28" l="1748831154701" />
@@ -118,7 +118,7 @@
       <i c="13" l="1743218560170" />
     </e>
     <e n="EditorBackSpace">
-      <i c="38276" l="1748831869888" />
+      <i c="38290" l="1749187286661" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="15340" l="1748752356701" />
@@ -145,7 +145,7 @@
       <i c="16330" l="1748830493258" />
     </e>
     <e n="EditorDown">
-      <i c="36304" l="1748752647488" />
+      <i c="36322" l="1749175300163" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
@@ -196,7 +196,7 @@
       <i c="10" l="1748709650517" />
     </e>
     <e n="EditorPaste">
-      <i c="747" l="1748719119583" />
+      <i c="748" l="1749181980470" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="5" l="1745829649836" />
@@ -244,7 +244,7 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="27303" l="1748752645679" />
+      <i c="27305" l="1749175295860" />
     </e>
     <e n="ExpandCollapseToggleAction">
       <i c="3" l="1738473939563" />
@@ -268,7 +268,7 @@
       <i c="4" l="1731654074258" />
     </e>
     <e n="FileChooser.Refresh">
-      <i c="4" l="1737885240084" />
+      <i c="5" l="1749174185835" />
     </e>
     <e n="FileChooser.ShowHidden">
       <i c="2" l="1745938958672" />
@@ -493,7 +493,7 @@
       <i c="1" l="1734101190998" />
     </e>
     <e n="RiderOpenSolution">
-      <i c="32" l="1748696959933" />
+      <i c="33" l="1749174175534" />
     </e>
     <e n="RiderUnitTestFocusExplorerAction">
       <i c="7" l="1745271233986" />
@@ -505,13 +505,13 @@
       <i c="20" l="1746838746977" />
     </e>
     <e n="SaveAll">
-      <i c="8621" l="1748756303140" />
+      <i c="8631" l="1749187431673" />
     </e>
     <e n="SearchEverywhere">
-      <i c="150" l="1748828707638" />
+      <i c="151" l="1749187262066" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="278" l="1748831647761" />
+      <i c="279" l="1749176147607" />
     </e>
     <e n="SettingsLayersDialogToolbar.AddLayer">
       <i c="1" l="1742318969304" />
@@ -526,7 +526,7 @@
       <i c="1" l="1744593207115" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="5071" l="1748751087895" />
+      <i c="5076" l="1749186996053" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -535,7 +535,7 @@
       <i c="1" l="1733859546491" />
     </e>
     <e n="ShowSettings">
-      <i c="178" l="1748831650983" />
+      <i c="179" l="1749176151841" />
     </e>
     <e n="ShowUmlDiagramPopup">
       <i c="3" l="1747137631674" />
@@ -559,7 +559,7 @@
       <i c="124" l="1742300749600" />
     </e>
     <e n="Synchronize">
-      <i c="856" l="1748756303758" />
+      <i c="859" l="1749182059164" />
     </e>
     <e n="TabList">
       <i c="12" l="1746832761020" />
@@ -718,7 +718,7 @@
       <i c="17" l="1748697666637" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="313617" l="1748758055655" />
+      <i c="313694" l="1749187431668" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="1" l="1748828144880" />
@@ -754,16 +754,16 @@
       <i c="2" l="1733848145777" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="373" l="1748831928225" />
+      <i c="374" l="1749187265403" />
     </e>
     <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
       <i c="72" l="1746009759255" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="160" l="1748828296759" />
+      <i c="161" l="1749174502008" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
-      <i c="49" l="1747407449760" />
+      <i c="50" l="1749176181789" />
     </e>
     <e n="com.intellij.openapi.updateSettings.impl.UpdateSettingsEntryPointActionProvider$2">
       <i c="1" l="1737885914627" />
@@ -829,10 +829,10 @@
       <i c="19" l="1748828116856" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectNextAction">
-      <i c="832" l="1748711960570" />
+      <i c="834" l="1749182052740" />
     </e>
     <e n="com.intellij.ui.tabs.impl.JBTabsImpl$SelectPreviousAction">
-      <i c="890" l="1748711960147" />
+      <i c="891" l="1749179540054" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
       <i c="19" l="1742927391788" />

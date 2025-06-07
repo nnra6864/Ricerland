@@ -99,10 +99,10 @@
         <entry encoding="base64">cSE=</entry>
         <entry encoding="base64" />
         <entry encoding="base64">cQ==</entry>
-        <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">Njc=</entry>
         <entry encoding="base64">OTY=</entry>
         <entry encoding="base64">OTM=</entry>
+        <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
@@ -1985,14 +1985,6 @@
       <jump line="7" column="26" filename="$USER_HOME$/Data/Projects/Unity/GameJam/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
     </project>
     <project id="Katana-bcde37f2">
-      <jump line="48" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="57" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="59" column="74" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="9" column="5" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="7" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="8" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="16" column="48" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="67" column="76" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
       <jump line="14" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
       <jump line="37" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
       <jump line="3" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
@@ -2073,7 +2065,6 @@
       <jump line="65" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
       <jump line="63" column="47" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
       <jump line="64" column="49" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="38" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
       <jump line="7" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
       <jump line="2" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
@@ -2085,6 +2076,15 @@
       <jump line="57" column="2" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
       <jump line="62" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
       <jump line="118" column="40" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
+      <jump line="38" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="34" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="57" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="1" column="86" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs" protocol="file" />
+      <jump line="30" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
+      <jump line="6" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="12" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
       <jump line="8" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
@@ -2634,6 +2634,9 @@
       <jump line="14" column="8" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/UI/KillFeed/KillFeedItem.cs" protocol="file" />
       <jump line="56" column="27" filename="$USER_HOME$/Data/Projects/Unity/Vector-Zero/Assets/Scripts/World/Bouncepad.cs" protocol="file" />
     </project>
+    <project id="SmoothSceneCamera-e12c55cf">
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
@@ -2644,8 +2647,12 @@
         <mark key="^" line="70" column="48" />
         <mark key="." line="70" column="47" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" timestamp="1748719437218">
-        <mark key="&quot;" line="9" column="29" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" timestamp="1749182027814">
+        <mark key="&quot;" line="30" column="57" />
+        <mark key="[" line="32" column="9" />
+        <mark key="]" line="34" column="0" />
+        <mark key="^" line="34" column="0" />
+        <mark key="." line="34" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" timestamp="1748744985890">
         <mark key="'" line="0" column="0" />
@@ -2659,9 +2666,6 @@
         <mark key="]" line="36" column="16" />
         <mark key="^" line="36" column="16" />
         <mark key="." line="36" column="15" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1748702751164">
-        <mark key="&quot;" line="14" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs" timestamp="1748703554438">
         <mark key="&quot;" line="13" column="7" />
@@ -2683,6 +2687,13 @@
         <mark key="^" line="18" column="94" />
         <mark key="." line="18" column="93" />
       </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs" timestamp="1749187263137">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="[" line="1" column="24" />
+        <mark key="]" line="1" column="31" />
+        <mark key="." line="1" column="30" />
+        <mark key="^" line="1" column="31" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/EasingsObsolete.cs" timestamp="1748711906115">
         <mark key="&quot;" line="5" column="4" />
       </file>
@@ -2690,9 +2701,12 @@
         <mark key="&quot;" line="64" column="49" />
         <mark key="'" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1748702754304">
-        <mark key="&quot;" line="187" column="57" />
-        <mark key="[" line="29" column="73" />
+      <file name="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" timestamp="1749174249169">
+        <mark key="&quot;" line="36" column="62" />
+        <mark key="[" line="22" column="60" />
+        <mark key="]" line="36" column="63" />
+        <mark key="^" line="36" column="63" />
+        <mark key="." line="36" column="62" />
       </file>
       <file name="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66954b2df4d34d0bb43a9270bb3f13d79b8e00/18/23298079/SceneView.cs" timestamp="1748832010405">
         <mark key="&quot;" line="2651" column="49" />
@@ -2724,21 +2738,21 @@
         <mark key="^" line="15" column="27" />
         <mark key="." line="15" column="26" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs" timestamp="1748702802157">
-        <mark key="&quot;" line="5" column="4" />
-        <mark key="[" line="4" column="31" />
-        <mark key="]" line="4" column="39" />
-        <mark key="^" line="4" column="39" />
-        <mark key="." line="4" column="38" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1749187263980">
+        <mark key="&quot;" line="11" column="32" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" timestamp="1748758715040">
         <mark key="&quot;" line="48" column="34" />
       </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1749187288021">
+        <mark key="&quot;" line="12" column="31" />
+        <mark key="[" line="92" column="85" />
+        <mark key="]" line="92" column="89" />
+        <mark key="^" line="92" column="89" />
+        <mark key="." line="92" column="88" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs" timestamp="1748758495552">
         <mark key="&quot;" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs" timestamp="1748702743679">
-        <mark key="&quot;" line="35" column="0" />
       </file>
     </localmarks>
   </component>
@@ -2747,8 +2761,8 @@
       <register name="a" type="CHARACTER_WISE">
         <text encoding="base64">ZGkoaWZsb2F0IHZhbHVlLCBmbG9hdCBzdGFydCA9IDAsIGZsb2F0IGVuZCA9IDEb</text>
       </register>
-      <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkJlZ2luSG9yaXpvbnRhbCgpOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUlMYXlvdXQuQmVnaW5WZXJ0aWNhbCgpOwo=</text>
+      <register name="&quot;" type="CHARACTER_WISE">
+        <text encoding="base64">TXlBcHA=</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2757,10 +2771,10 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">Kw==</text>
+        <text encoding="base64">TXlBcHA=</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">IHRoZQ==</text>
+        <text encoding="base64">IF8gKiAy</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">Tm5VdGlscw==</text>
@@ -2769,31 +2783,31 @@
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsID0gMTsK</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkJlZ2luSG9yaXpvbnRhbCgpOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUlMYXlvdXQuQmVnaW5WZXJ0aWNhbCgpOwo=</text>
+        <text encoding="base64">dXNpbmcgVW5pdHlFbmdpbmU7CgpwdWJsaWMgY2xhc3MgQXNzZW1ibHlBdHRyaWJ1dGVzCnsKICAgIAp9Cg==</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKDEpOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkJlZ2luSG9yaXpvbnRhbCgpOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUlMYXlvdXQuQmVnaW5WZXJ0aWNhbCgpOwo=</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKDEpOwo=</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsID0gb3JpZ2luYWxJbmRlbnQ7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKCk7Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG9yaWdpbmFsSW5kZW50ID0gRWRpdG9yR1VJLmluZGVudExldmVsOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkuaW5kZW50TGV2ZWwgPSAxOwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsID0gb3JpZ2luYWxJbmRlbnQ7Cg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsLS07Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG9yaWdpbmFsSW5kZW50ID0gRWRpdG9yR1VJLmluZGVudExldmVsOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkuaW5kZW50TGV2ZWwgPSAxOwo=</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsLS07Cg==</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkluZAo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkK</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgW1NldHRpbmdzUHJvdmlkZXJdCiAgICAgICAgcHVibGljIHN0YXRpYyBTZXR0aW5nc1Byb3ZpZGVyIENyZWF0ZU15UHJlZmVyZW5jZXNQcm92aWRlcigpCiAgICAgICAgewogICAgICAgICAgICB2YXIgcHJvdmlkZXIgPQogICAgICAgICAgICAgICAgbmV3IFNldHRpbmdzUHJvdmlkZXIoIlByZWZlcmVuY2VzL05uVXRpbHMvU21vb3RoIFNjZW5lIENhbWVyYSIsIFNldHRpbmdzU2NvcGUuVXNlcikKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBsYWJlbCA9ICJTbW9vdGggU2NlbmUgQ2FtZXJhIiwKICAgICAgICAgICAgICAgICAgICBndWlIYW5kbGVyID0gXyA9PgogICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLkJlZ2luQ2hhbmdlQ2hlY2soKTsKCiAgICAgICAgICAgICAgICAgICAgICAgIHZhciB1c2VTbW9vdGhab29tID0gRWRpdG9yR1VJTGF5b3V0LlRvZ2dsZSgiU21vb3RoIFpvb20iLCBVc2VTbW9vdGhab29tKTsKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHpvb21BbW91bnQgPSBFZGl0b3JHVUlMYXlvdXQuRmxvYXRGaWVsZCgiWm9vbSBBbW91bnQiLCBab29tQW1vdW50KTsKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHpvb21EaXN0YW5jZVBvd2VyID0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVkaXRvckdVSUxheW91dC5GbG9hdEZpZWxkKCJab29tIFBvd2VyIiwgWm9vbURpc3RhbmNlUG93ZXIpOwogICAgICAgICAgICAgICAgICAgICAgICB2YXIgem9vbUR1cmF0aW9uID0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVkaXRvckdVSUxheW91dC5GbG9hdEZpZWxkKCJab29tIER1cmF0aW9uIiwgWm9vbUR1cmF0aW9uKTsKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHpvb21FYXNpbmcgPSAoRWFzaW5ncy5UeXBlKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkVudW1Qb3B1cCgiWm9vbSBFYXNpbmciLCBab29tRWFzaW5nKTsKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG5lYXJab29tTGltaXQgPQogICAgICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkZsb2F0RmllbGQoIk5lYXIgWm9vbSBMaW1pdCIsIE5lYXJab29tTGltaXQpOwoKICAgICAgICAgICAgICAgICAgICAgICAgaWYgKEVkaXRvckdVSS5FbmRDaGFuZ2VDaGVjaygpKQogICAgICAgICAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBVc2VTbW9vdGhab29tID0gdXNlU21vb3RoWm9vbTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFpvb21BbW91bnQgPSB6b29tQW1vdW50OwogICAgICAgICAgICAgICAgICAgICAgICAgICAgWm9vbURpc3RhbmNlUG93ZXIgPSB6b29tRGlzdGFuY2VQb3dlcjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFpvb21EdXJhdGlvbiA9IHpvb21EdXJhdGlvbjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFpvb21FYXNpbmcgPSB6b29tRWFzaW5nOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgTmVhclpvb21MaW1pdCA9IG5lYXJab29tTGltaXQ7CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9OwoKICAgICAgICAgICAgcmV0dXJuIHByb3ZpZGVyOwogICAgICAgIH0K</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkluZAo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">dw==</text>

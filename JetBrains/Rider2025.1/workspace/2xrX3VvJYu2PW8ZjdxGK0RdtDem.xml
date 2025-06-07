@@ -7,34 +7,53 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="7bgymz65h3f9" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="297">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"CannonScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="846">
-              <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
+            <state>
               <folding>
-                <element signature="e#0#100#0" expanded="true" />
+                <element signature="e#0#225#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SmoothSceneCamera.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"SettingsManager.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="421">
+              <caret line="92" column="85" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ShopItemScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"CameraManager.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="72">
+            <state>
               <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#0#128#0" expanded="true" />
@@ -47,7 +66,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="711">
+            <state>
               <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
               <folding>
                 <element signature="e#0#256#0" expanded="true" />
@@ -57,23 +76,13 @@
         </entry>
         <tab><![CDATA[{"tabTitle":"Misc.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Easings.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="821">
-              <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"Easings.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 49,
-      "lastUsed": 1748828325235
+      "usageCount": 70,
+      "lastUsed": 1749197986023
     }
   }
 }]]></component>
@@ -101,7 +110,10 @@
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -113,7 +125,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="49" lastUsage="1748828325235" />
+      <summary usageCount="70" lastUsage="1749197986023" />
     </language>
   </component>
   <component name="ProjectView">
@@ -213,17 +225,6 @@
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="TimeScale" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="SmoothSceneCamera" type="daf7a7f:UnityExplorerFileSystemNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="SmoothSceneCamera" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
           <select>
@@ -401,12 +402,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.09004678" />
+            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.168073" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.34848487" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.20319858" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -503,7 +504,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40135000" />
+    <option name="totallyTimeSpent" value="45199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -518,7 +519,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.34848487" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.20319858" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -558,23 +559,19 @@
       <window_info anchor="right" id="ErrorToolWindow" order="12" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="13" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
       <window_info anchor="right" id="Structure" order="14" sideWeight="0.4806818" weight="0.24576938" />
-      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.09004678" />
-      <unified_weights bottom="0.10346045" left="0.34848487" right="0.09004678" />
+      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.4996212" side_tool="true" visible="true" weight="0.168073" />
+      <unified_weights bottom="0.10346045" left="0.20319858" right="0.168073" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-      <value>Notifications</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2306" y="2" width="1888" height="1436" key="SettingsEditor" timestamp="1748831966994">
+    <state x="2284" y="237" width="1910" height="1201" key="SettingsEditor" timestamp="1749176181801">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2306" y="2" width="1888" height="1436" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1748831966994" />
-    <state x="2139" y="321" width="950" height="1056" key="search.everywhere.popup" timestamp="1748828707863">
+    <state x="2284" y="237" width="1910" height="1201" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1749176181801" />
+    <state x="2139" y="321" width="974" height="1056" key="search.everywhere.popup" timestamp="1749187265406">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="950" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1748828707863" />
+    <state x="2139" y="321" width="974" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1749187265406" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/TimeManager.cs">
@@ -623,26 +620,6 @@
           <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <marker date="1748702740815" expanded="true" signature="6:67" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
-          <folding>
-            <marker date="1748702740803" expanded="true" signature="6:185" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="187" column="57" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
-          <folding>
-            <marker date="1748702740820" expanded="true" signature="6:251" ph="..." />
           </folding>
         </state>
       </provider>
@@ -696,9 +673,55 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Easings.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66954b2df4d34d0bb43a9270bb3f13d79b8e00/18/23298079/SceneView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41472">
+          <caret line="2651" column="49" selection-start-line="2651" selection-start-column="49" selection-end-line="2651" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AssemblyAttributes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="92" column="85" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state>
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#0#128#0" expanded="true" />
@@ -706,44 +729,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/CannonScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#100#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
+        <state>
           <caret line="79" column="46" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
           <folding>
             <element signature="e#0#256#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Easings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="118" column="40" selection-start-line="118" selection-start-column="40" selection-end-line="118" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66954b2df4d34d0bb43a9270bb3f13d79b8e00/18/23298079/SceneView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41472">
-          <caret line="2651" column="49" selection-start-line="2651" selection-start-column="49" selection-end-line="2651" selection-end-column="49" />
         </state>
       </provider>
     </entry>

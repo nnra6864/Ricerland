@@ -2623,7 +2623,7 @@ qt-privacy-ask=0
 #alsa-audio-channels=6
 
 # Software gain (float)
-alsa-gain=0.027000
+alsa-gain=0.125000
 
 [mpegvideo] # MPEG-I/II video packetizer
 

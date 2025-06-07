@@ -19,6 +19,7 @@ DirHistory[$e]=$HOME/HDD2TB/Games/Universal/OSU/Skins/,$HOME/HDD2TB/Work/Uni/Hom
 LimitFoldersPanelToHome=false
 
 [General]
+UseTabForSwitchingSplitView=true
 Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136
 
@@ -39,4 +40,4 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=comicbookthumbnail,djvuthumbnail,ebookthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+Plugins=appimagethumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,textthumbnail,gdk-pixbuf-thumbnailer

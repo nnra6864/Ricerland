@@ -41,10 +41,5 @@
         <option name="wizardShown" value="true" />
       </MTMetadataState>
     </option>
-    <option name="themeState">
-      <MTThemeConfigState>
-        <option name="selectedThemeName" value="CUSTOM" />
-      </MTThemeConfigState>
-    </option>
   </component>
 </application>
