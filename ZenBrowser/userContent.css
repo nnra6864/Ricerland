@@ -63,7 +63,7 @@
     }
 
     .compact-cards .card-outer .card-context .card-context-icon.icon-download {
-      fill: #1A4066 !important;  /* Download icon color remains green as a semantic indicator */
+      fill: #60BF30 !important;  /* Download icon color remains green as a semantic indicator */
     }
   }
 
@@ -98,43 +98,43 @@
 
     /* Identity color themes for tab and icon representations in preferences */
     .identity-color-blue {
-      --identity-tab-color: #266099 !important;    /* Identity tab color remains blue */
-      --identity-icon-color: #266099 !important;     /* Identity icon color remains blue */
+      --identity-tab-color: #3078BF !important;    /* Identity tab color remains blue */
+      --identity-icon-color: #3078BF !important;     /* Identity icon color remains blue */
     }
 
     .identity-color-turquoise {
-      --identity-tab-color: #6699CC !important;    /* Identity tab color remains cyan */
-      --identity-icon-color: #6699CC !important;     /* Identity icon color remains cyan */
+      --identity-tab-color: #608FBF !important;    /* Identity tab color remains cyan */
+      --identity-icon-color: #608FBF !important;     /* Identity icon color remains cyan */
     }
 
     .identity-color-green {
-      --identity-tab-color: #1A4066 !important;   /* Identity tab color remains green */
-      --identity-icon-color: #1A4066 !important;    /* Identity icon color remains green */
+      --identity-tab-color: #60BF30 !important;   /* Identity tab color remains green */
+      --identity-icon-color: #60BF30 !important;    /* Identity icon color remains green */
     }
 
     .identity-color-yellow {
-      --identity-tab-color: #205080 !important;  /* Identity tab color remains yellow */
-      --identity-icon-color: #205080 !important;   /* Identity icon color remains yellow */
+      --identity-tab-color: #BFA730 !important;  /* Identity tab color remains yellow */
+      --identity-icon-color: #BFA730 !important;   /* Identity icon color remains yellow */
     }
 
     .identity-color-orange {
-      --identity-tab-color: #275E99 !important;  /* Identity tab color remains bright yellow/orange */
-      --identity-icon-color: #275E99 !important;   /* Identity icon color remains bright yellow/orange */
+      --identity-tab-color: #D8BB36 !important;  /* Identity tab color remains bright yellow/orange */
+      --identity-icon-color: #D8BB36 !important;   /* Identity icon color remains bright yellow/orange */
     }
 
     .identity-color-red {
-      --identity-tab-color: #13304D !important;    /* Identity tab color remains red */
-      --identity-icon-color: #13304D !important;     /* Identity icon color remains red */
+      --identity-tab-color: #BF3030 !important;    /* Identity tab color remains red */
+      --identity-icon-color: #BF3030 !important;     /* Identity icon color remains red */
     }
 
     .identity-color-pink {
-      --identity-tab-color: #3480CB !important;  /* Identity tab color remains bright magenta */
-      --identity-icon-color: #3480CB !important;   /* Identity icon color remains bright magenta */
+      --identity-tab-color: #9336D8 !important;  /* Identity tab color remains bright magenta */
+      --identity-icon-color: #9336D8 !important;   /* Identity icon color remains bright magenta */
     }
 
     .identity-color-purple {
-      --identity-tab-color: #2D70B3 !important;   /* Identity tab color remains magenta/purple */
-      --identity-icon-color: #2D70B3 !important;    /* Identity icon color remains magenta/purple */
+      --identity-tab-color: #8330BF !important;   /* Identity tab color remains magenta/purple */
+      --identity-icon-color: #8330BF !important;    /* Identity icon color remains magenta/purple */
     }
   }
 
@@ -156,11 +156,11 @@
   @-moz-document url-prefix("about:protections") {
     :root {
       --zen-primary-color: #102840 !important;  /* Primary color for protections set to background */
-      --social-color: #2D70B3 !important;  /* Color for social-related indicators */
-      --coockie-color: #6699CC !important;  /* Color for cookie-related elements */
-      --fingerprinter-color: #205080 !important;  /* Color for fingerprinting alerts */
+      --social-color: #8330BF !important;  /* Color for social-related indicators */
+      --coockie-color: #608FBF !important;  /* Color for cookie-related elements */
+      --fingerprinter-color: #BFA730 !important;  /* Color for fingerprinting alerts */
       --cryptominer-color: #BDDFFF !important;  /* Cryptominer alert color updated from br_blue */
-      --tracker-color: #1A4066 !important;  /* Tracker indicator color remains green */
+      --tracker-color: #60BF30 !important;  /* Tracker indicator color remains green */
       --in-content-primary-button-background-hover: #1A4872 !important;  /* Hover background for primary buttons */
       --in-content-primary-button-text-color-hover: #ACCAE6 !important;  /* Hover text color for primary buttons */
       --in-content-primary-button-background: #153959 !important;  /* Primary button background color */

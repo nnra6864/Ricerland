@@ -48,8 +48,8 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="1" g="1" b="1" space="sRGB-elle-V2-g10.icc"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="1" g="1" b="1" space="sRGB-elle-V2-g10.icc"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="1" g="1" space="sRGB-elle-V2-g10.icc" b="1"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="1" g="1" space="sRGB-elle-V2-g10.icc" b="1"/>\n</LastForeGroundColor>\n
 LastPreset=b) Basic-5 Size Opacity
 LastPreset_-1=b) Basic-5 Size Opacity
 LineSmoothingDelayDistance=50

@@ -1455,6 +1455,18 @@
         },
         "WallpaperFree": {
             "enabled": false
+        },
+        "MessageFetchTimer": {
+            "enabled": false
+        },
+        "StreamingCodecDisabler": {
+            "enabled": false
+        },
+        "AudioBookShelfRichPresence": {
+            "enabled": false
+        },
+        "JellyfinRichPresence": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1467,7 +1479,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1749028558972
+        "settingsSyncVersion": 1749496880041
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

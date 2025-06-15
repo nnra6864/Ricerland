@@ -2,15 +2,6 @@
   <component name="VimHistorySettings">
     <history>
       <history-search>
-        <entry encoding="base64">T24=</entry>
-        <entry encoding="base64">VGFyZ2V0</entry>
-        <entry encoding="base64">dGFyZ2V0</entry>
-        <entry encoding="base64">XC9cLw==</entry>
-        <entry encoding="base64">XC9cL1wv</entry>
-        <entry encoding="base64">Y29udHJvbFRhcmdldA==</entry>
-        <entry encoding="base64" />
-        <entry encoding="base64">QmluZGluZw==</entry>
-        <entry encoding="base64">U2V0RGlydHk=</entry>
         <entry encoding="base64">U2V0RGly</entry>
         <entry encoding="base64">QXdha2U=</entry>
         <entry encoding="base64">cGl4ZWxTaXpl</entry>
@@ -52,6 +43,15 @@
         <entry encoding="base64">d2hlZWw=</entry>
         <entry encoding="base64">X3pvb20=</entry>
         <entry encoding="base64">Tm5VdGlscw==</entry>
+        <entry encoding="base64">T25FbmFibGU=</entry>
+        <entry encoding="base64">dW5kbw==</entry>
+        <entry encoding="base64">cmVkbw==</entry>
+        <entry encoding="base64">Q29sb3I=</entry>
+        <entry encoding="base64">Y29sb3I=</entry>
+        <entry encoding="base64">bW92ZQ==</entry>
+        <entry encoding="base64">TW92ZQ==</entry>
+        <entry encoding="base64">TGlzdGVuRm9yRWZmZWN0Q2hhbmdlcw==</entry>
+        <entry encoding="base64">c2xpY2U=</entry>
       </history-search>
       <history-cmd>
         <entry encoding="base64">ODk=</entry>
@@ -97,11 +97,11 @@
         <entry encoding="base64">JzwsJz53</entry>
         <entry encoding="base64">MTg2</entry>
         <entry encoding="base64">cSE=</entry>
-        <entry encoding="base64" />
         <entry encoding="base64">cQ==</entry>
         <entry encoding="base64">Njc=</entry>
         <entry encoding="base64">OTY=</entry>
         <entry encoding="base64">OTM=</entry>
+        <entry encoding="base64" />
         <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">dw==</entry>
       </history-cmd>
@@ -1985,106 +1985,106 @@
       <jump line="7" column="26" filename="$USER_HOME$/Data/Projects/Unity/GameJam/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
     </project>
     <project id="Katana-bcde37f2">
-      <jump line="14" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="37" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="3" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="42" column="51" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="39" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="41" column="23" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="13" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="15" column="64" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="100" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="20" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="31" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="112" column="32" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="116" column="28" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="129" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="32" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="27" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="38" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="131" column="25" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="46" column="38" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="75" column="75" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="95" column="39" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="145" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="52" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="1009" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
-      <jump line="104" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="109" column="34" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="138" column="108" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="44" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="140" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="103" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="90" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="132" column="65" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="29" column="63" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="83" column="31" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="88" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="45" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="51" column="40" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="53" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="61" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="10" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="165" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="130" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="168" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="30" column="66" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="22" column="59" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="36" column="59" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="50" column="66" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="43" column="38" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="71" column="90" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="76" column="31" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="98" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="77" column="51" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="79" column="42" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="80" column="55" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="78" column="70" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="84" column="74" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="47" column="49" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="40" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="33" column="48" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="26" column="53" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="19" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="12" column="49" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="82" column="40" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="73" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="81" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="85" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="89" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="69" column="63" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="184" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="58" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="60" column="49" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="94" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="96" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="66" column="56" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="99" column="55" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="65" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="63" column="47" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="64" column="49" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="7" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="2" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="3" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="74" column="51" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="86" column="83" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="94" column="66" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
-      <jump line="51" column="1" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
-      <jump line="57" column="2" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
-      <jump line="62" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
-      <jump line="118" column="40" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" protocol="file" />
-      <jump line="38" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
-      <jump line="34" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
-      <jump line="57" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="1" column="86" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs" protocol="file" />
-      <jump line="30" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="6" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="12" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="168" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="146" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="116" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
+      <jump line="38" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
+      <jump line="147" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="188" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="209" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
+      <jump line="9" column="54" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
+      <jump line="73" column="42" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
+      <jump line="152" column="86" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="7" column="72" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="11" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="13" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="12" column="62" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="16" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="17" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="22" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="24" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="31" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="63" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs" protocol="file" />
+      <jump line="65" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="10" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs" protocol="file" />
+      <jump line="65" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs" protocol="file" />
+      <jump line="66" column="23" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
+      <jump line="0" column="1" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="2" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="10" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="88" column="20" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="201" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="196" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="227" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="255" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="291" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="197" column="19" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="223" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="251" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="286" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="287" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="323" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="364" column="78" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" protocol="file" />
+      <jump line="6" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="26" column="23" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="30" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="66" column="5" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="31" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="28" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="32" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="36" column="28" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="51" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="53" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="157" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="162" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="197" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="179" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="209" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="221" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="229" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="238" column="39" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="275" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="244" column="42" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="241" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="222" column="28" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="250" column="25" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="219" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="285" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="198" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="165" column="40" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="183" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="200" column="25" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="158" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="202" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="47" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="46" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="27" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="63" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="65" column="5" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="33" column="25" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" protocol="file" />
+      <jump line="6" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="19" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="27" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="33" column="71" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="39" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="29" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="41" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="46" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fracture.cs" protocol="file" />
+      <jump line="74" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/package.json" protocol="file" />
+      <jump line="18" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/package.json" protocol="file" />
+      <jump line="9" column="29" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitFragmentScript.cs" protocol="file" />
+      <jump line="38" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitFragmentScript.cs" protocol="file" />
+      <jump line="1" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
       <jump line="8" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
@@ -2636,133 +2636,160 @@
     </project>
     <project id="SmoothSceneCamera-e12c55cf">
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="36" column="62" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="9" column="4" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="190" column="0" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="11" column="7" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="10" column="23" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="193" column="4" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+    </project>
+    <project id="EasyTextEffect-7ba4a6f9">
+      <jump line="19" column="4" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs" protocol="file" />
+      <jump line="37" column="21" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs" protocol="file" />
+      <jump line="17" column="8" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="18" column="44" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="32" column="62" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs" protocol="file" />
+      <jump line="22" column="5" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="0" column="15" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="1" column="16" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs" protocol="file" />
+      <jump line="3" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs" protocol="file" />
+      <jump line="0" column="15" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs" protocol="file" />
+      <jump line="1" column="16" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs" protocol="file" />
+      <jump line="20" column="5" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/TextEffectEditor.cs" protocol="file" />
+      <jump line="20" column="6" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs" protocol="file" />
+      <jump line="20" column="4" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs" protocol="file" />
+      <jump line="24" column="21" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="40" column="9" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="12" column="51" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="45" column="31" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="41" column="9" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="50" column="47" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="42" column="8" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="20" column="5" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TimeUtil.cs" protocol="file" />
+      <jump line="7" column="17" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs" protocol="file" />
+      <jump line="173" column="20" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="176" column="22" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="178" column="22" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="191" column="12" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="200" column="12" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="148" column="21" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="175" column="12" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
+      <jump line="46" column="30" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="14" column="33" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="43" column="8" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
+      <jump line="44" column="36" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
     </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs" timestamp="1748719437761">
-        <mark key="&quot;" line="16" column="12" />
-        <mark key="]" line="70" column="48" />
-        <mark key="^" line="70" column="48" />
-        <mark key="." line="70" column="47" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Editor/SceneSwitcher.cs" timestamp="1749682318568">
+        <mark key="&quot;" line="17" column="54" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs" timestamp="1749182027814">
-        <mark key="&quot;" line="30" column="57" />
-        <mark key="[" line="32" column="9" />
-        <mark key="]" line="34" column="0" />
-        <mark key="^" line="34" column="0" />
-        <mark key="." line="34" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs" timestamp="1749681954821">
+        <mark key="&quot;" line="69" column="71" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs" timestamp="1748744985890">
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="888" column="0" />
-        <mark key="]" line="1009" column="0" />
-        <mark key="^" line="1009" column="0" />
-        <mark key="." line="1009" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1749682316757">
+        <mark key="&quot;" line="9" column="31" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" timestamp="1748704724157">
-        <mark key="&quot;" line="44" column="44" />
-        <mark key="]" line="36" column="16" />
-        <mark key="^" line="36" column="16" />
-        <mark key="." line="36" column="15" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" timestamp="1749768000687">
+        <mark key="&quot;" line="33" column="25" />
+        <mark key="[" line="48" column="8" />
+        <mark key="]" line="53" column="25" />
+        <mark key="." line="53" column="24" />
+        <mark key="^" line="53" column="25" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs" timestamp="1748703554438">
-        <mark key="&quot;" line="13" column="7" />
-        <mark key="[" line="10" column="18" />
-        <mark key="]" line="12" column="96" />
-        <mark key="^" line="12" column="96" />
-        <mark key="." line="12" column="95" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" timestamp="1749768001607">
+        <mark key="&quot;" line="6" column="4" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+        <mark key="^" line="8" column="8" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" timestamp="1748706663245">
-        <mark key="&quot;" line="102" column="41" />
-        <mark key="]" line="100" column="125" />
-        <mark key="^" line="100" column="125" />
-        <mark key="." line="100" column="124" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" timestamp="1749682315938">
+        <mark key="&quot;" line="13" column="28" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs" timestamp="1748703641333">
-        <mark key="&quot;" line="18" column="93" />
-        <mark key="[" line="16" column="35" />
-        <mark key="]" line="18" column="94" />
-        <mark key="^" line="18" column="94" />
-        <mark key="." line="18" column="93" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitFragmentScript.cs" timestamp="1749909955756">
+        <mark key="&quot;" line="33" column="16" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs" timestamp="1749187263137">
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fracture.cs" timestamp="1749816288103">
         <mark key="&quot;" line="0" column="0" />
-        <mark key="[" line="1" column="24" />
-        <mark key="]" line="1" column="31" />
-        <mark key="." line="1" column="30" />
-        <mark key="^" line="1" column="31" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/EasingsObsolete.cs" timestamp="1748711906115">
-        <mark key="&quot;" line="5" column="4" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" timestamp="1749682712533">
+        <mark key="&quot;" line="9" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" timestamp="1748752630952">
-        <mark key="&quot;" line="64" column="49" />
-        <mark key="'" line="0" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs" timestamp="1749682710875">
+        <mark key="&quot;" line="65" column="11" />
+        <mark key="[" line="60" column="26" />
+        <mark key="]" line="65" column="12" />
+        <mark key="^" line="65" column="12" />
+        <mark key="." line="65" column="11" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" timestamp="1749174249169">
-        <mark key="&quot;" line="36" column="62" />
-        <mark key="[" line="22" column="60" />
-        <mark key="]" line="36" column="63" />
-        <mark key="^" line="36" column="63" />
-        <mark key="." line="36" column="62" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1749682711586">
+        <mark key="&quot;" line="66" column="23" />
       </file>
-      <file name="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66954b2df4d34d0bb43a9270bb3f13d79b8e00/18/23298079/SceneView.cs" timestamp="1748832010405">
-        <mark key="&quot;" line="2651" column="49" />
-        <mark key="'" line="41" column="13" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs" timestamp="1749681968505">
+        <mark key="&quot;" line="11" column="22" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" timestamp="1748755558055">
-        <mark key="[" line="94" column="63" />
-        <mark key="]" line="94" column="67" />
-        <mark key="^" line="94" column="67" />
-        <mark key="." line="94" column="66" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs" timestamp="1749682299788">
+        <mark key="&quot;" line="63" column="31" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs" timestamp="1748711977830">
-        <mark key="&quot;" line="61" column="32" />
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="61" column="32" />
-        <mark key="]" line="61" column="33" />
-        <mark key="^" line="61" column="33" />
-        <mark key="." line="61" column="32" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs" timestamp="1749682304354">
+        <mark key="&quot;" line="9" column="29" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs" timestamp="1748703609455">
-        <mark key="&quot;" line="5" column="0" />
-        <mark key="[" line="5" column="0" />
-        <mark key="]" line="5" column="0" />
-        <mark key="." line="5" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" timestamp="1749768001096">
+        <mark key="&quot;" line="202" column="0" />
+        <mark key="[" line="164" column="5" />
+        <mark key="]" line="158" column="23" />
+        <mark key="." line="158" column="22" />
+        <mark key="^" line="158" column="23" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs" timestamp="1748719437570">
-        <mark key="&quot;" line="8" column="38" />
-        <mark key="]" line="15" column="27" />
-        <mark key="^" line="15" column="27" />
-        <mark key="." line="15" column="26" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" timestamp="1749768274938">
+        <mark key="[" line="9" column="12" />
+        <mark key="]" line="9" column="49" />
+        <mark key="." line="9" column="48" />
+        <mark key="^" line="9" column="49" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1749187263980">
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" timestamp="1749767032477">
+        <mark key="&quot;" line="364" column="78" />
+        <mark key="[" line="197" column="50" />
+        <mark key="]" line="364" column="79" />
+        <mark key="." line="364" column="78" />
+        <mark key="^" line="364" column="79" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs" timestamp="1749822839943">
+        <mark key="&quot;" line="12" column="42" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1749682315175">
         <mark key="&quot;" line="11" column="32" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Assets/Scripts/Player/PlayerAimScript.cs" timestamp="1748758715040">
-        <mark key="&quot;" line="48" column="34" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1749187288021">
-        <mark key="&quot;" line="12" column="31" />
-        <mark key="[" line="92" column="85" />
-        <mark key="]" line="92" column="89" />
-        <mark key="^" line="92" column="89" />
-        <mark key="." line="92" column="88" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Escapeon/Escapeon/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs" timestamp="1748758495552">
-        <mark key="&quot;" line="0" column="0" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/package.json" timestamp="1749822839367">
+        <mark key="&quot;" line="1" column="8" />
       </file>
     </localmarks>
   </component>
   <component name="VimRegisterSettings">
     <registers>
       <register name="a" type="CHARACTER_WISE">
-        <text encoding="base64">ZGkoaWZsb2F0IHZhbHVlLCBmbG9hdCBzdGFydCA9IDAsIGZsb2F0IGVuZCA9IDEb</text>
+        <text encoding="base64">Z2dpDSZpCCNpZiBVTklUWV9FRElUT1IbYRtHYQ0jZW5kaWYbOncN</text>
       </register>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">TXlBcHA=</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgc2xpY2VzLgo=</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2771,43 +2798,43 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">TXlBcHA=</text>
+        <text encoding="base64">dGhyb3cgbmV3IE5vdEltcGxlbWVudGVkRXhjZXB0aW9uKCk7</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">IF8gKiAy</text>
+        <text encoding="base64">ZnJhZ21lbnQgPT4gZnJhZ21lbnRz</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
-        <text encoding="base64">Tm5VdGlscw==</text>
+        <text encoding="base64">c2xpY2U=</text>
       </register>
-      <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsID0gMTsK</text>
+      <register name="0" type="CHARACTER_WISE">
+        <text encoding="base64">LkFkZEN1dEZhY2VWZXJ0ZXgoCiAgICAgICAgICAgICAgICBuZXcoaSAgICAgICAgICsgMSwgaSAgKyAyLCBpICsgMyksCiAgICAgICAgICAgICAgICBuZXcoaSAgICAgICAgICsgNCwgaSAgKyA1LCBpICsgNiksCiAgICAgICAgICAgICAgICBuZXcgVmVjdG9yMyhpICsgNywgaSAgKyA4LCBpICsgOSksCiAgICAgICAgICAgICAgICBuZXcoaSAgICAgICAgICsgMTAsIGkgKyAxMSkKICAgICAgICAgICAgKTs=</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">dXNpbmcgVW5pdHlFbmdpbmU7CgpwdWJsaWMgY2xhc3MgQXNzZW1ibHlBdHRyaWJ1dGVzCnsKICAgIAp9Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgc2xpY2VzLgo=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkJlZ2luSG9yaXpvbnRhbCgpOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUlMYXlvdXQuQmVnaW5WZXJ0aWNhbCgpOwo=</text>
+        <text encoding="base64">CiAgICAgICAgcHJpdmF0ZSB2b2lkIE9uQ29sbGlzaW9uRW50ZXIoQ29sbGlzaW9uIGNvbCkKICAgICAgICB7CiAgICAgICAgICAgIGlmICgoX3BvaW50c01hc2sgJiAxIDw8IGNvbC5nYW1lT2JqZWN0LmxheWVyKSA9PSAwKSByZXR1cm47CiAgICAgICAgICAgIEdldERlc3Ryb3llZChmYWxzZSk7CiAgICAgICAgfQo=</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKDEpOwo=</text>
+        <text encoding="base64">ICAgICAgICB2YXIgZnJhZ21lbnRzID0gQXJyYXkuRW1wdHk8RnJhZ21lbnREYXRhPigpOwo=</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LlNwYWNlKCk7Cg==</text>
+        <text encoding="base64">ICAgICAgICB9Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsID0gb3JpZ2luYWxJbmRlbnQ7Cg==</text>
+        <text encoding="base64">ICAgICAgICB7Cg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgdmFyIG9yaWdpbmFsSW5kZW50ID0gRWRpdG9yR1VJLmluZGVudExldmVsOwogICAgICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkuaW5kZW50TGV2ZWwgPSAxOwo=</text>
+        <text encoding="base64">ICAgICAgICAvLyBJZiB0aGUgZnJhZ21lbnQgcm9vdCBvYmplY3QgaGFzIG5vdCB5ZXQgYmVlbiBjcmVhdGVkLCBjcmVhdGUgaXQgbm93Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJLmluZGVudExldmVsLS07Cg==</text>
+        <text encoding="base64">ICAgICAgICB9Cg==</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFZGl0b3JHVUkK</text>
+        <text encoding="base64">ICAgICAgICBlbHNlCiAgICAgICAgewo=</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgRWRpdG9yR1VJTGF5b3V0LkluZAo=</text>
+        <text encoding="base64">ICAgICAgICB7CiAgICAgICAgfQo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">dw==</text>
@@ -2819,9 +2846,9 @@
   </component>
   <component name="VimSearchSettings">
     <search>
-      <last-search encoding="base64">Tm5VdGlscw==</last-search>
+      <last-search encoding="base64">c2xpY2U=</last-search>
       <last-offset encoding="base64" />
-      <last-pattern encoding="base64">Tm5VdGlscw==</last-pattern>
+      <last-pattern encoding="base64">c2xpY2U=</last-pattern>
       <last-dir encoding="base64">MQ==</last-dir>
       <show-last encoding="base64">ZmFsc2U=</show-last>
     </search>

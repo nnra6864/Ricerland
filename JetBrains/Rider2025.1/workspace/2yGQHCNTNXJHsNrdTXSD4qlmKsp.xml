@@ -2,29 +2,87 @@
   <component name="BookmarksManager">
     <option name="groups">
       <GroupState>
-        <option name="name" value="SmoothSceneCamera" />
+        <option name="name" value="EasyTextEffect" />
       </GroupState>
     </option>
   </component>
   <component name="FileEditorManager">
     <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1104">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
+            <state relative-caret-position="1184">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SmoothSceneCamera.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"InputScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="840">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"MoveEffectEditor.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PerVertexEffectEditor.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="195">
+              <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+              <folding>
+                <marker date="1749671738854" expanded="true" signature="6:351" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"TextEffect.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"RotateEffectEditor.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <folding>
+                <marker date="1749545453658" expanded="true" signature="23:66" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ScaleEffectEditor.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/TextEffectEditor.cs">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"TextEffectEditor.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 2,
-      "lastUsed": 1749451140306
+      "usageCount": 30,
+      "lastUsed": 1749671563672
     }
   }
 }]]></component>
@@ -33,21 +91,26 @@
       <replace />
     </replaceStrings>
   </component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs",
+    "/home/nnra/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
-        <option value="$PROJECT_DIR$/.idea/.idea.SmoothSceneCamera/.idea" />
+        <option value="$PROJECT_DIR$/.idea/.idea.EasyTextEffect/.idea" />
       </set>
     </option>
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="2" lastUsage="1749451140307" />
+      <summary usageCount="30" lastUsage="1749671563672" />
     </language>
   </component>
   <component name="ProjectView">
@@ -63,19 +126,35 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="SmoothSceneCamera" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Easy-Text-Effects-for-Unity" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="SmoothSceneCamera" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Easy-Text-Effects-for-Unity" type="daf7a7f:UnityExplorerFileSystemNode" />
               <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Easy-Text-Effects-for-Unity" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Runtime" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Easy-Text-Effects-for-Unity" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Runtime" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Effects" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Easy-Text-Effects-for-Unity" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Runtime" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="TextEffect.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -87,13 +166,13 @@
           <expand>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="SmoothSceneCamera" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="EasyTextEffect" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="SmoothSceneCamera" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="EasyTextEffect" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </select>
         </subPane>
@@ -282,7 +361,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" weight="0.27207613" />
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.27207613" />
           </value>
         </entry>
         <entry key="TODO">
@@ -349,7 +428,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1777000" />
+    <option name="totallyTimeSpent" value="8213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -394,7 +473,7 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" weight="0.27207613" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.27207613" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
@@ -408,14 +487,91 @@
       <unified_weights bottom="0.10346045" left="0.18220171" right="0.27207613" />
     </layoutV2>
     <recentWindows>
+      <value>Structure</value>
       <value>Project</value>
     </recentWindows>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        <state relative-caret-position="720">
+          <caret line="32" column="62" lean-forward="true" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding>
+            <marker date="1749458076075" expanded="true" signature="6:206" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1749458076076" expanded="true" signature="6:207" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-954" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/TextEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <marker date="1749545453658" expanded="true" signature="23:66" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TimeUtil.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-296" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+          <folding>
+            <marker date="1749671738854" expanded="true" signature="6:351" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1184">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -26,7 +26,7 @@ IntensityEffect=0
 [Colors:Button]
 BackgroundAlternate=#102840
 BackgroundNormal=#102840
-DecorationFocus=#6699CC
+DecorationFocus=#608FBF
 DecorationHover=#BDDFFF
 ForegroundActive=#eceff4
 ForegroundInactive=#d8dee9
@@ -175,11 +175,7 @@ Sort reversed=false
 Speedbar Width=144
 View Style=Detail
 
-[KShortcutsDialog Settings]
-Dialog Size=1602,901
-
 [PreviewSettings]
-EnableRemoteFolderThumbnail=false
 MaximumRemoteSize=0
 
 [WM]

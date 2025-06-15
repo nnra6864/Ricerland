@@ -33,7 +33,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.20319858,
+          "weight": 0.33938384,
           "sideWeight": 0.51935965
         },
         {
@@ -153,7 +153,7 @@
           "order": 10,
           "anchor": "BOTTOM",
           "isShowStripeButton": false,
-          "weight": 0.10346045
+          "weight": 0.68538135
         },
         {
           "id": "RoslynVisualizer",
@@ -209,8 +209,18 @@
           "weight": 0.25
         },
         {
-          "id": "Terminal",
+          "id": "Structure",
           "order": 5,
+          "anchor": "RIGHT",
+          "isActiveOnStart": true,
+          "isVisible": true,
+          "weight": 0.2756083,
+          "sideWeight": 0.47310606,
+          "isSplit": true
+        },
+        {
+          "id": "Terminal",
+          "order": 6,
           "anchor": "RIGHT",
           "weight": 0.2614796,
           "sideWeight": 0.5698885,
@@ -218,7 +228,7 @@
         },
         {
           "id": "Codeium Chat",
-          "order": 6,
+          "order": 7,
           "anchor": "RIGHT",
           "floatingBounds": [
             2727,
@@ -234,32 +244,32 @@
         },
         {
           "id": "Hierarchy",
-          "order": 7,
+          "order": 8,
           "anchor": "RIGHT",
           "weight": 0.25029433
         },
         {
           "id": "IL Viewer",
-          "order": 8,
+          "order": 9,
           "anchor": "RIGHT",
           "weight": 0.25892857,
           "sideWeight": 0.40183824
         },
         {
           "id": "Monitoring",
-          "order": 9,
+          "order": 10,
           "anchor": "RIGHT",
           "weight": 0.2614796
         },
         {
           "id": "IL",
-          "order": 10,
+          "order": 11,
           "anchor": "RIGHT",
           "weight": 0.25029433
         },
         {
           "id": "documentation.v2",
-          "order": 11,
+          "order": 12,
           "anchor": "RIGHT",
           "weight": 0.1886774,
           "sideWeight": 0.50446093,
@@ -267,40 +277,33 @@
         },
         {
           "id": "ErrorToolWindow",
-          "order": 12,
+          "order": 13,
           "anchor": "RIGHT",
           "weight": 0.17651099
         },
         {
           "id": "TODO",
-          "order": 13,
+          "order": 14,
           "anchor": "RIGHT",
           "weight": 0.14118916,
           "sideWeight": 0.56999254,
           "isSplit": true
         },
         {
-          "id": "Structure",
-          "order": 14,
-          "anchor": "RIGHT",
-          "weight": 0.24576938,
-          "sideWeight": 0.4806818
-        },
-        {
           "id": "Problems View",
           "order": 15,
           "anchor": "RIGHT",
+          "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.168073,
-          "sideWeight": 0.4996212,
-          "isSplit": true
+          "weight": 0.2756083,
+          "sideWeight": 0.5268939
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.20319858,
-        "bottom": 0.10346045,
-        "right": 0.168073
+        "left": 0.33938384,
+        "bottom": 0.68538135,
+        "right": 0.2756083
       }
     }
   }

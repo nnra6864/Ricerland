@@ -8,17 +8,17 @@
 	"base_keymap": "JetBrains",
 
 	"features": {
-		"inline_completion_provider": "copilot"
+		"edit_prediction_provider": "copilot"
 	},
 
 	//Font
 	"buffer_font_family": "Courier Prime Code",
-	"buffer_font_size": 24,
+	"buffer_font_size": 32,
 	"buffer_font_weight": 400,
 	"buffer_line_height": "comfortable",
 
 	"ui_font_family": "Courier Prime Code",
-	"ui_font_size": 24,
+	"ui_font_size": 32,
 	"ui_font_weight": 400,
 
 	"unnecessary_code_fade": 0.3,
@@ -101,7 +101,7 @@
 	},
 
 	"chat_panel": {
-		"button": true,
+		"button": "always",
 		"dock": "right",
 		"default_width": 240
 	},
@@ -161,7 +161,7 @@
 	},
 
 	"tabs": {
-		"git_status": false,
+		"git_status": true,
 		"close_position": "right",
 		"file_icons": false
 	},
@@ -207,7 +207,7 @@
 		}
 	},
 
-	"inline_completions": {
+	"edit_predictions": {
 		"disabled_globs": [".env"]
 	},
 

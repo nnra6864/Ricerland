@@ -32,22 +32,22 @@ end = { foreground = "#8EA7BF", background = "#102840" }
 
 [colors.normal]
 black = "#102840"
-red = "#13304D"
-green = "#1A4066"
-yellow = "#205080"
-blue = "#266099"
-magenta = "#2D70B3"
-cyan = "#6699CC"
+red = "#BF3030"
+green = "#60BF30"
+yellow = "#BFA730"
+blue = "#3078BF"
+magenta = "#8330BF"
+cyan = "#608FBF"
 white = "#ACCAE6"
 
 [colors.bright]
 black = "#153959"
-red = "#174066"
-green = "#1F4F7F"
-yellow = "#275E99"
-blue = "#2C71B2"
-magenta = "#3480CB"
-cyan = "#72ACE5"
+red = "#D83636"
+green = "#6DD836"
+yellow = "#D8BB36"
+blue = "#3687D8"
+magenta = "#9336D8"
+cyan = "#6DA1D8"
 white = "#BDDFFF"
 
 [cursor]

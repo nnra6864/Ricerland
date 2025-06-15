@@ -17,16 +17,16 @@
           "type": "time"
         },
         {
-          "background": "#266099",
+          "background": "#3078BF",
           "foreground": "#102840",
-          "leading_diamond": "<transparent,#266099>\ue0b0</>",
+          "leading_diamond": "<transparent,#3078BF>\ue0b0</>",
           "style": "diamond",
           "template": " {{ .Icon }} ",
           "trailing_diamond": "<#102840>\ue0b1",
           "type": "os"
         },
         {
-          "background": "#266099",
+          "background": "#3078BF",
           "foreground": "#102840",
           "properties": {
             "folder_icon": "...",
@@ -41,12 +41,12 @@
           "type": "path"
         },
         {
-          "background": "#266099",
+          "background": "#3078BF",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#205080{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#2D70B3{{ end }}",
-            "{{ if gt .Ahead 0 }}#1A4066{{ end }}",
-            "{{ if gt .Behind 0 }}#266099{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#BFA730{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#8330BF{{ end }}",
+            "{{ if gt .Ahead 0 }}#60BF30{{ end }}",
+            "{{ if gt .Behind 0 }}#3078BF{{ end }}"
           ],
           "foreground": "#102840",
           "powerline_symbol": "\ue0b0",
