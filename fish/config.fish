@@ -414,7 +414,7 @@ function check_remote_dependencies
 end
 
 function rub
-    set dependencies curl wget grep ssh sshpass notify-send paplay pv rsync
+    set dependencies curl wget grep ssh sshpass notify-send paplay pv rsync tee
 
     function find-project-dir
       for dir in */
@@ -441,6 +441,28 @@ function rub
         return 1
     end
     echo "Success"
+    echo ""
+    echo ""
+
+    # Read Unity credentials(required for license)
+    echo "Gathering credentials"
+    set unity_creds_file "$HOME/UnityLicense"
+    if not test -f "$unity_creds_file"
+        echo "Unity credentials file not found: $unity_creds_file"
+        echo "Create file with email on line 1, password on line 2"
+        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+        return 1
+    end
+
+    set unity_email (sed -n '1p' "$unity_creds_file")
+    set unity_password (sed -n '2p' "$unity_creds_file" | sed 's/`/\\`/g')
+
+    if test -z "$unity_email" -o -z "$unity_password"
+        echo "Invalid Unity credentials in $unity_creds_file"
+        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+        return 1
+    end
+    echo "Successful"
     echo ""
     echo ""
 
@@ -508,11 +530,11 @@ function rub
 
     # Gather remote info
     echo "Gathering remote info..."
-    set remote_unity_dir "~/Unity/Hub/Editor/"
-    set remote_projects_dir "~/Projects/Unity/"
-    set remote_project_dir "$remote_projects_dir/$project_name/"
-    set remote_builds_dir "$remote_project_dir/Builds/"
-    set remote_unity_project_dir "$remote_project_dir/$project_name/"
+    set remote_unity_dir "\$HOME/Unity/Hub/Editor/"
+    set remote_projects_dir "\$HOME/Projects/Unity/"
+    set remote_project_dir "$remote_projects_dir$project_name/"
+    set remote_builds_dir "$remote_project_dir""Builds/"
+    set remote_unity_project_dir "$remote_project_dir$project_name/"
     set unity_editor "$remote_unity_dir$unity_version/Editor/Unity"
     echo "Successfully gathered remote info"
     echo ""
@@ -589,7 +611,6 @@ function rub
     end
     echo ""
     echo ""
-    echo ""
 
     # rsync files to the remote machine
     echo "Syncing project..."
@@ -606,13 +627,20 @@ function rub
 
     # Make builds
     echo "Building..."
-    sshpass -p "$remote_pass" ssh "$remote_machine" mkdir -p "$remote_builds_dir"
-    if not sshpass -p "$remote_pass" ssh "$remote_machine" "$unity_editor -batchmode -logfile - -quit -projectPath \"$remote_unity_project_dir\" -executeMethod BuildScript.PerformBuild"
+    set build_result (sshpass -p "$remote_pass" ssh "$remote_machine" \
+        "mkdir -p '$remote_builds_dir' && \
+        \"$unity_editor\" \
+        -batchmode -nographics -quit -log - \
+        -projectPath \"$remote_unity_project_dir\" \
+        -executeMethod BuildScript.Build 2>&1 | tee /dev/stderr")
+
+    if test $status -ne 0
         echo "Unity build failed"
         notify-send --urgency=critical --expire-time=0 "RUB" "Unity build failed"
         paplay /usr/share/sounds/freedesktop/stereo/message.oga
         return 1
     end
+
     echo "Unity build successful"
     echo ""
     echo ""
@@ -620,7 +648,10 @@ function rub
     # rsync builds
     echo "Syncing builds..."
     mkdir -p Builds
-    sshpass -p "$remote_pass" rsync -az --delete "$remote_machine:$remote_builds_dir" "./Builds/"
+    set expanded_remote_builds_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo $remote_builds_dir")
+    echo "$expanded_remote_builds_dir"
+    sshpass -p "$remote_pass" rsync -az --delete \
+        "$remote_machine:$expanded_remote_builds_dir/" "./Builds/"
     echo "Builds synced"
     notify-send --urgency=critical --expire-time=0 "RUB" "Builds complete"
     paplay /usr/share/sounds/freedesktop/stereo/message.oga
