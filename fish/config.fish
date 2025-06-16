@@ -530,8 +530,8 @@ function rub
 
     # Gather remote info
     echo "Gathering remote info..."
-    set remote_unity_dir "\$HOME/Unity/Hub/Editor/"
-    set remote_projects_dir "\$HOME/Projects/Unity/"
+    set remote_unity_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo \$HOME/Unity/Hub/Editor/")
+    set remote_projects_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo \$HOME/Projects/Unity/")
     set remote_project_dir "$remote_projects_dir$project_name/"
     set remote_builds_dir "$remote_project_dir""Builds/"
     set remote_unity_project_dir "$remote_project_dir$project_name/"
@@ -589,8 +589,7 @@ function rub
             echo 'Marking Unity as executable' &&
             chmod +x ~/Unity/Hub/Editor/$unity_version/Editor/Unity &&
             echo 'Marked' &&
-            cd -
-            "
+            cd -"
 
         if test $status -ne 0
             notify-send "RUB" "Failed to install Unity $unity_version on remote machine"
@@ -648,10 +647,9 @@ function rub
     # rsync builds
     echo "Syncing builds..."
     mkdir -p Builds
-    set expanded_remote_builds_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo $remote_builds_dir")
-    echo "$expanded_remote_builds_dir"
+    echo "$remote_builds_dir"
     sshpass -p "$remote_pass" rsync -az --delete \
-        "$remote_machine:$expanded_remote_builds_dir/" "./Builds/"
+        "$remote_machine:$remote_builds_dir/" "./Builds/"
     echo "Builds synced"
     notify-send --urgency=critical --expire-time=0 "RUB" "Builds complete"
     paplay /usr/share/sounds/freedesktop/stereo/message.oga
