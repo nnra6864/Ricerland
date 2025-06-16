@@ -449,28 +449,6 @@ function rub
     echo ""
     echo ""
 
-    # Read Unity credentials(required for license)
-    echo "Gathering credentials"
-    set unity_creds_file "$HOME/UnityLicense"
-    if not test -f "$unity_creds_file"
-        echo "Unity credentials file not found: $unity_creds_file"
-        echo "Create file with email on line 1, password on line 2"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-
-    set unity_email (sed -n '1p' "$unity_creds_file")
-    set unity_password (sed -n '2p' "$unity_creds_file" | sed 's/`/\\`/g')
-
-    if test -z "$unity_email" -o -z "$unity_password"
-        echo "Invalid Unity credentials in $unity_creds_file"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    echo "Successful"
-    echo ""
-    echo ""
-
     # Gather project info
     echo "Gathering project info..."
     set root_dir (pwd)
