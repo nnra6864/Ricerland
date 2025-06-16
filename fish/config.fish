@@ -413,6 +413,11 @@ function check_remote_dependencies
     end
 end
 
+# Unity license must still be manually activated on the build machine
+# You can achieve this by:
+# 1. Opening Unity Hub
+# 2. Navigating to Preferences -> Licenses -> Add -> Get a free personal license
+# This step can't be avoided now thanks to highly competent Unity devs
 function rub
     set dependencies curl wget grep ssh sshpass notify-send paplay pv rsync tee
 
@@ -647,7 +652,6 @@ function rub
     # rsync builds
     echo "Syncing builds..."
     mkdir -p Builds
-    echo "$remote_builds_dir"
     sshpass -p "$remote_pass" rsync -az --delete \
         "$remote_machine:$remote_builds_dir/" "./Builds/"
     echo "Builds synced"
