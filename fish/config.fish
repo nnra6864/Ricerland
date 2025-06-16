@@ -583,7 +583,7 @@ function rub
             echo 'Download complete' &&
             mkdir -p ~/Unity/Hub/Editor/$unity_version &&
             echo 'Extracting Unity-$unity_version.tar.xz...' &&
-            pv Unity-$unity_version.tar.xz | tar --xz -x -C ~/Unity/Hub/Editor/$unity_version &&
+            pv -f Unity-$unity_version.tar.xz | tar --xz -x -C ~/Unity/Hub/Editor/$unity_version &&
             echo 'Extraction complete' &&
             rm -rf 'Unity-$unity_version.tar.xz' &&
             echo 'Marking Unity as executable' &&
