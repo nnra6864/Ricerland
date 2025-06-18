@@ -8,49 +8,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/FruitScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"FruitScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="40">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"SmoothSceneCamera.cs","foregroundColor":-8092412,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#128#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"TextureRemapperWindow.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"ShopItemScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 157,
-      "lastUsed": 1749910052005
+      "usageCount": 161,
+      "lastUsed": 1750108536131
     },
     "Image": {
       "usageCount": 7,
@@ -118,7 +92,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="157" lastUsage="1749910052005" />
+      <summary usageCount="161" lastUsage="1750108536131" />
     </language>
     <language id="JSON">
       <summary usageCount="2" lastUsage="1749822828733" />
@@ -412,7 +386,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80275000" />
+    <option name="totallyTimeSpent" value="80908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -484,14 +458,14 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog/0.0.5120.1440@0.0.5120.1440" timestamp="1749767989252" />
-    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor" timestamp="1749814883333">
+    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor" timestamp="1750108525120">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1749814883333" />
-    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1749822840571">
+    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
+    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1750108536065">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1749822840571" />
+    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750108536065" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs">
@@ -613,13 +587,6 @@
         <state relative-caret-position="-16" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalLightData.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -683,20 +650,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="320">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#0#128#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>

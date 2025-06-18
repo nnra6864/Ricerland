@@ -6,10 +6,10 @@ padding = {x = 10, y = 10}
 opacity = 1
 
 [font]
-normal = { family = "Courier Prime Code", style = "Regular" }
-bold = { family = "Courier Prime Code", style = "Bold" }
-italic = { family = "Courier Prime Code", style = "Italic" }
-bold_italic = { family = "Courier Prime Code", style = "Bold Italic" }
+normal = { family = "Maple Mono NF CN", style = "Regular" }
+bold = { family = "Maple Mono NF CN", style = "Bold" }
+italic = { family = "Maple Mono NF CN", style = "Italic" }
+bold_italic = { family = "Maple Mono NF CN", style = "Bold Italic" }
 size = 17
 
 [colors]

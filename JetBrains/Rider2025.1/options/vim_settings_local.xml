@@ -1985,7 +1985,6 @@
       <jump line="7" column="26" filename="$USER_HOME$/Data/Projects/Unity/GameJam/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
     </project>
     <project id="Katana-bcde37f2">
-      <jump line="168" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
       <jump line="146" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" protocol="file" />
       <jump line="116" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
       <jump line="38" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" protocol="file" />
@@ -2085,6 +2084,7 @@
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitFragmentScript.cs" protocol="file" />
       <jump line="38" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitFragmentScript.cs" protocol="file" />
       <jump line="1" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+      <jump line="8" column="36" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
       <jump line="8" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
@@ -2698,14 +2698,11 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/Editor/SmoothSceneCamera.cs" timestamp="1750108516485">
+        <mark key="&quot;" line="196" column="0" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Editor/SceneSwitcher.cs" timestamp="1749682318568">
         <mark key="&quot;" line="17" column="54" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs" timestamp="1749681954821">
-        <mark key="&quot;" line="69" column="71" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1749682316757">
-        <mark key="&quot;" line="9" column="31" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs" timestamp="1749768000687">
         <mark key="&quot;" line="33" column="25" />
@@ -2714,12 +2711,27 @@
         <mark key="." line="53" column="24" />
         <mark key="^" line="53" column="25" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" timestamp="1749768001607">
-        <mark key="&quot;" line="6" column="4" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" timestamp="1750108528235">
+        <mark key="&quot;" line="5" column="39" />
         <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
         <mark key="^" line="8" column="8" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1749682711586">
+        <mark key="&quot;" line="66" column="23" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs" timestamp="1749822839943">
+        <mark key="&quot;" line="12" column="42" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1750108536067">
+        <mark key="&quot;" line="14" column="12" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1749682316757">
+        <mark key="&quot;" line="9" column="31" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/ColorUtils.cs" timestamp="1750108532977">
+        <mark key="&quot;" line="5" column="11" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" timestamp="1749682315938">
         <mark key="&quot;" line="13" column="28" />
@@ -2729,6 +2741,9 @@
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fracture.cs" timestamp="1749816288103">
         <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" timestamp="1750108517028">
+        <mark key="&quot;" line="13" column="12" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" timestamp="1749682712533">
         <mark key="&quot;" line="9" column="0" />
@@ -2740,18 +2755,6 @@
         <mark key="^" line="65" column="12" />
         <mark key="." line="65" column="11" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1749682711586">
-        <mark key="&quot;" line="66" column="23" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs" timestamp="1749681968505">
-        <mark key="&quot;" line="11" column="22" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs" timestamp="1749682299788">
-        <mark key="&quot;" line="63" column="31" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs" timestamp="1749682304354">
-        <mark key="&quot;" line="9" column="29" />
-      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" timestamp="1749768001096">
         <mark key="&quot;" line="202" column="0" />
         <mark key="[" line="164" column="5" />
@@ -2759,7 +2762,8 @@
         <mark key="." line="158" column="22" />
         <mark key="^" line="158" column="23" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" timestamp="1749768274938">
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs" timestamp="1750108509278">
+        <mark key="&quot;" line="9" column="29" />
         <mark key="[" line="9" column="12" />
         <mark key="]" line="9" column="49" />
         <mark key="." line="9" column="48" />
@@ -2772,11 +2776,8 @@
         <mark key="." line="364" column="78" />
         <mark key="^" line="364" column="79" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs" timestamp="1749822839943">
-        <mark key="&quot;" line="12" column="42" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1749682315175">
-        <mark key="&quot;" line="11" column="32" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs" timestamp="1750108527862">
+        <mark key="&quot;" line="10" column="38" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.smoothscenecamera/package.json" timestamp="1749822839367">
         <mark key="&quot;" line="1" column="8" />

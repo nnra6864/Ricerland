@@ -17,7 +17,7 @@ gtk_theme = "Ricer"
 nvim_theme = "nord"
 
 # Font
-font = "Courier Prime Code"
+font = "Maple Mono NF CN"
 min_font_size = 10
 small_font_size = 13
 font_size = 15

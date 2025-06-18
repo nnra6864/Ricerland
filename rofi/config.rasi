@@ -1,5 +1,5 @@
 configuration {
-    font: "Courier Prime Code 17";
+    font: "Maple Mono NF CN 17";
     line-margin: 10;
 
     display-ssh: "";

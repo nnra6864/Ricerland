@@ -17,7 +17,7 @@
 	--rounding-small: calc(var(--rounding-big) / 2);
 
 	/* App Elements */
-	--app-font: "Courier Prime Code";
+	--app-font: "Maple Mono NF CN";
 	--app-bg: var(--background-col);
 	--main-color: var(--background-col);
 	--main-alt: var(--background-col-alt);
