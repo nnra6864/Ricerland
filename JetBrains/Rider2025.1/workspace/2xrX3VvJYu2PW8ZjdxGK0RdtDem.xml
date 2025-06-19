@@ -11,7 +11,7 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="160">
+            <state relative-caret-position="-2360">
               <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
@@ -23,8 +23,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 161,
-      "lastUsed": 1750108536131
+      "usageCount": 163,
+      "lastUsed": 1750278091933
     },
     "Image": {
       "usageCount": 7,
@@ -92,7 +92,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="161" lastUsage="1750108536131" />
+      <summary usageCount="163" lastUsage="1750278091935" />
     </language>
     <language id="JSON">
       <summary usageCount="2" lastUsage="1749822828733" />
@@ -284,12 +284,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2756083" />
+            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2752853" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.33938384" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17375049" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -319,7 +319,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2756083" />
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2752853" />
           </value>
         </entry>
         <entry key="TODO">
@@ -386,7 +386,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80908000" />
+    <option name="totallyTimeSpent" value="80993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -401,7 +401,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.33938384" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17375049" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -431,7 +431,7 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2756083" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2752853" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
@@ -441,8 +441,8 @@
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
-      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2756083" />
-      <unified_weights bottom="0.68538135" left="0.33938384" right="0.2756083" />
+      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2752853" />
+      <unified_weights bottom="0.68538135" left="0.17375049" right="0.2752853" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
@@ -458,9 +458,10 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog/0.0.5120.1440@0.0.5120.1440" timestamp="1749767989252" />
-    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor" timestamp="1750108525120">
-      <screen x="0" y="0" width="5120" height="1440" />
+    <state x="361" y="174" width="1814" height="1264" key="SettingsEditor" timestamp="1750273765911">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="361" y="174" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1750273765911" />
     <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
     <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1750108536065">
       <screen x="0" y="0" width="5120" height="1440" />
@@ -669,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="-2360">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>

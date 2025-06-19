@@ -10,7 +10,7 @@
     <option name="languageName" value="C#" />
   </component>
   <component name="NotRoamableUiSettings">
-    <option name="fontFace" value="Courier Prime Code" />
+    <option name="fontFace" value="Maple Mono NF CN" />
     <option name="fontSize" value="16.0" />
     <option name="presentationModeIdeScale" value="1.75" />
     <option name="overrideLafFonts" value="true" />
@@ -27,8 +27,8 @@
     "IdeErrorsDialog.LAST_OK_ACTION": "REPORT_AND_CLEAR_ALL",
     "InstalledPluginsSearchHistory": "material\nmate\n/tag:Theme\n/tag:Theme d\n/tag:Theme dark",
     "KEYMAP": "replace\ncollapse\nexpand\nredo\nexpande",
-    "LAST_CALCULATED_COLOR_INDEX_KEY": "1",
-    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "RD-251.23774.437",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "3",
+    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "RD-251.25410.119",
     "MarketplacePluginsSearchHistory": "material theme\nmaterial\nnma\n/tag:\n/tag:Theme cobalt",
     "NextRunPlatformUpdateBuild": "RD-251.26094.147",
     "NextRunPlatformUpdateSelfBuild": "RD-251.25410.119",
@@ -47,7 +47,7 @@
     "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
     "RunOnceActivity.git.modal.commit.toggle": "true",
     "RunOnceActivity.llm.onboarding.window.launcher.v7": "true",
-    "SettingsSearchHistory": "material\nfont\ninclude\nnamespace\nattribute",
+    "SettingsSearchHistory": "font\nmaterial\ninclude\nnamespace\nattribute",
     "TextEditorWithPreview.SplitterProportionKey": "0.7359199",
     "TextEditorWithPreviewLayout": "Editor only",
     "ask.about.ctrl.y.shortcut.v2": "true",
