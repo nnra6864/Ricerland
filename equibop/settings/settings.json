@@ -444,7 +444,8 @@
             "preferFriend": false,
             "memberList": false,
             "voiceChannelList": false,
-            "emojiReactions": false
+            "emojiReactions": false,
+            "showGradient": false
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -1467,6 +1468,12 @@
         },
         "JellyfinRichPresence": {
             "enabled": false
+        },
+        "FriendCloud": {
+            "enabled": false
+        },
+        "TidalEmbeds": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1479,7 +1486,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1749496880041
+        "settingsSyncVersion": 1750349783237
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

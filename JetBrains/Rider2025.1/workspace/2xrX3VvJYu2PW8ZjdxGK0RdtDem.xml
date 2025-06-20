@@ -8,23 +8,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-2360">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="-1716">
+              <folding>
+                <marker date="1748698216426" expanded="true" signature="6:136" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"ShopItemScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"MainMenuManager.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1090">
+              <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+              <folding>
+                <marker date="1750360423805" expanded="true" signature="6:304" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"SettingsMenu.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="622">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <folding>
+                <marker date="1750360230134" expanded="true" signature="6:347" ph="..." />
+                <marker date="1750360230134" expanded="false" signature="4601:5170" ph="Locales" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"SettingsManager.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/LocalizeDropdown.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="-712">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"LocalizeDropdown.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/BuildScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="728">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"BuildScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 163,
-      "lastUsed": 1750278091933
+      "usageCount": 174,
+      "lastUsed": 1750361718952
     },
     "Image": {
       "usageCount": 7,
@@ -42,47 +91,51 @@
     </replaceStrings>
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/TimeManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DecalFade.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/TimeManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DecalFade.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/LocalizeDropdown.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Editor/BuildScript.cs"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -92,7 +145,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="163" lastUsage="1750278091935" />
+      <summary usageCount="174" lastUsage="1750361718952" />
     </language>
     <language id="JSON">
       <summary usageCount="2" lastUsage="1749822828733" />
@@ -108,11 +161,31 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Shop" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
           </expand>
           <select>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="LocalizeDropdown.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -284,12 +357,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2752853" />
+            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.11196379" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17375049" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17926013" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -319,7 +392,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2752853" />
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.11196379" />
           </value>
         </entry>
         <entry key="TODO">
@@ -386,7 +459,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80993000" />
+    <option name="totallyTimeSpent" value="97000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -401,7 +474,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17375049" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17926013" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -431,7 +504,7 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.2752853" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.11196379" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
@@ -441,9 +514,12 @@
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
-      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.2752853" />
-      <unified_weights bottom="0.68538135" left="0.17375049" right="0.2752853" />
+      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.11196379" />
+      <unified_weights bottom="0.68538135" left="0.17926013" right="0.11196379" />
     </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter" timestamp="1749813438030">
@@ -463,47 +539,12 @@
     </state>
     <state x="361" y="174" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1750273765911" />
     <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
-    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1750108536065">
+    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1750366266492">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
-    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750108536065" />
+    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750366266492" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/Tabs/ColoredTab.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
-          <folding>
-            <marker date="1748703641314" expanded="true" signature="6:134" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding>
-            <marker date="1748702388657" expanded="true" signature="6:244" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/EasingsObsolete.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3209">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/SmoothSceneCamera.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Easings.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/66954b2df4d34d0bb43a9270bb3f13d79b8e00/18/23298079/SceneView.cs">
@@ -544,15 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1748698216425" expanded="true" signature="6:225" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -583,11 +615,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/Item.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalLightData.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -668,10 +695,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2360">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="572">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/Item.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1716">
+          <folding>
+            <marker date="1748698216426" expanded="true" signature="6:136" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1090">
+          <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+          <folding>
+            <marker date="1750360423805" expanded="true" signature="6:304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <marker date="1750360230134" expanded="true" signature="6:347" ph="..." />
+            <marker date="1750360230134" expanded="false" signature="4601:5170" ph="Locales" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LocalizeDropdown.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-712">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/BuildScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>

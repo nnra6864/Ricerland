@@ -164,6 +164,26 @@
       }
     }
   }, {
+    "id" : "aiplayground",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "has_system_prompt" : [ "{enum#boolean}" ],
+        "model_count" : [ "{regexp#integer}" ],
+        "parameter" : [ "{enum:TOP_P|MAX_TOKENS|TEMPERATURE}" ],
+        "place" : [ "{enum:TOOL_WINDOW_EMPTY_STATE|TOOL_WINDOW_ACTION|CODE_ENTRY}" ],
+        "provider_id" : [ "{enum:openai|openai_compatible|anthropic|mistral|ollama|aiassistant|deepseek|gemini}" ],
+        "target_type" : [ "{enum:USER|ASSISTANT|SYSTEM}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "chat_created", "message_edited", "toolwindow_opened", "model_removed", "chat_history_cleared", "chat_removed", "message_regenerated", "prompt_parameters_set", "add_provider_dialog_open", "chat_opened", "chat_renamed", "chat_closed", "provider", "prompt_submitted", "model_added", "manage_providers_opened" ]
+      }
+    }
+  }, {
     "id" : "aitoolkit.aiDebugger",
     "builds" : [ ],
     "versions" : [ {
@@ -4200,7 +4220,7 @@
         "dumb" : [ "{enum#boolean}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "file_editor" : [ "{util#class_name}" ],
-        "file_extension" : [ "{util#file_extension}" ],
+        "file_extension" : [ "{util#file_extension}", "{util#file.extension.validation.rule}" ],
         "file_name_pattern" : [ "{util#file_name_pattern}" ],
         "file_path" : [ "{regexp#hash}" ],
         "file_template_name" : [ "{util#file_template_name}" ],
@@ -4648,17 +4668,22 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "cancelled" : [ "{enum#boolean}" ],
+        "domain" : [ "{enum:LITERALS|COMMENTS|DOCUMENTATION|PLAIN_TEXT|COMMIT_MESSAGE}" ],
         "enabled" : [ "{enum#boolean}" ],
         "fixes" : [ "{regexp#count}", "{regexp#integer}" ],
         "id" : [ "{enum#grazie_rule_long_ids}" ],
+        "index" : [ "{regexp#integer}" ],
         "info" : [ "{regexp#fix_info}", "{enum#__info}" ],
+        "lang" : [ "{util#lang}" ],
         "language" : [ "{enum#__language}", "{enum:ko}" ],
+        "natural_language" : [ "{enum:CHINESE|JAPANESE|KOREAN|ENGLISH|FRENCH|GERMAN|DUTCH|ITALIAN|POLISH|PORTUGUESE|ROMANIAN|SLOVAK|SPANISH|ASTURIAN|BRETON|CATALAN|DANISH|ESPERANTO|GALICIAN|IRISH|SLOVENE|SWEDISH|TAGALOG|GREEK|KHMER|TAMIL|ARABIC|PERSIAN|RUSSIAN|UKRAINIAN|BELARUSIAN|UNKNOWN}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
-        "plugin_version" : [ "{util#plugin_version}" ]
+        "plugin_version" : [ "{util#plugin_version}" ],
+        "total" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "language.detected", "typo.found", "quickfix.applied", "language.suggested", "quick.fix.invoked" ],
+        "__event_id" : [ "language.detected", "typo.found", "quickfix.applied", "language.suggested", "quick.fix.invoked", "suggestion.shown", "suggestion.accepted", "exception.added", "settings.updated" ],
         "__info" : [ "add.exception", "rule.settings:unmodified", "rule.settings:canceled", "rule.settings:changes:domains", "accept.suggestion", "rule.settings:changes:rules", "rule.settings:changes:languages", "rule.settings:changes:languages,rules", "rule.settings:changes:languages,domains", "rule.settings:changes:languages,domains,rules", "rule.settings:changes:unclassified", "rule.settings:changes:domains,rules" ],
         "__language" : [ "unknown", "en", "ru", "fr", "de", "pl", "it", "zh", "ja", "uk", "el", "ro", "es", "pt", "sk", "fa", "nl", "km", "ast", "be", "sv", "gl", "eo", "ta", "br", "ar", "tl", "sl", "ga", "da", "ca" ]
       },
@@ -4680,12 +4705,18 @@
         "completion_length" : [ "{regexp#integer}" ],
         "context_length" : [ "{regexp#integer}" ],
         "count" : [ "{regexp#integer}" ],
+        "domain" : [ "{enum:LITERALS|COMMENTS|DOCUMENTATION|PLAIN_TEXT|COMMIT_MESSAGE}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "from" : [ "{enum#language_abbreviated}", "{enum:Informal|Unspecified|Public|Formal|GoogleDeveloperDocumentation|Microsoft|JetBrainsDocumentation}", "{enum:Always|Moderate}" ],
-        "id" : [ "{enum:grazie.extension}" ],
+        "id" : [ "{enum#grazie_rule_long_ids}", "{enum:grazie.extension}" ],
+        "lang" : [ "{util#lang}" ],
         "language" : [ "{enum#language_abbreviated}" ],
         "name" : [ "{enum:Login|EnableCloud}" ],
+        "natural_language" : [ "{enum:CHINESE|JAPANESE|KOREAN|ENGLISH|FRENCH|GERMAN|DUTCH|ITALIAN|POLISH|PORTUGUESE|ROMANIAN|SLOVAK|SPANISH|ASTURIAN|BRETON|CATALAN|DANISH|ESPERANTO|GALICIAN|IRISH|SLOVENE|SWEDISH|TAGALOG|GREEK|KHMER|TAMIL|ARABIC|PERSIAN|RUSSIAN|UKRAINIAN|BELARUSIAN|UNKNOWN}" ],
         "origin" : [ "{enum:Bundled.Yaml|Grazie.RuleEngine|Grazie.MLEC|LanguageTool}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ],
         "prefix_ends_with_whitespace" : [ "{enum#boolean}" ],
         "prefix_length" : [ "{regexp#integer}" ],
         "profile" : [ "{enum:Always|Moderate}" ],
@@ -5970,6 +6001,22 @@
       "event_id" : [ "{enum:used}" ]
     }
   }, {
+    "id" : "jupyter.show.as.image",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:debug.image.view.show.as.image.triggered|debug.image.view.opened}" ],
+      "event_data" : {
+        "action_call_place" : [ "{enum:JupyterDebugButton|JupyterDebugPopup|JupyterVarsButton|JupyterVarsPopup|PydevConsoleButton|PydevConsolePopup|JupyterOutputButton}" ],
+        "height_power" : [ "{regexp#integer}" ],
+        "image_type" : [ "{enum:TYPE_CUSTOM|TYPE_INT_RGB|TYPE_INT_ARGB|TYPE_INT_ARGB_PRE|TYPE_INT_BGR|TYPE_3BYTE_BGR|TYPE_4BYTE_ABGR|TYPE_4BYTE_ABGR_PRE|TYPE_USHORT_565_RGB|TYPE_USHORT_555_RGB|TYPE_BYTE_GRAY|TYPE_USHORT_GRAY|TYPE_BYTE_BINARY|TYPE_BYTE_INDEXED|UNKNOWN_TYPE}" ],
+        "object_type" : [ "{enum:NDArray|EagerTensor|SparseTensor|VariableTensor|TorchTensor|Figure|Image|Other}" ],
+        "width_power" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "jupyter.vcs",
     "builds" : [ ],
     "versions" : [ {
@@ -6275,6 +6322,15 @@
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ]
       }
+    }
+  }, {
+    "id" : "learn.rust.promoter",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:promoter.button.clicked|promoter.shown}" ]
     }
   }, {
     "id" : "leftover.dirs",
@@ -7025,6 +7081,15 @@
       "enums" : {
         "__event_id" : [ "autopilot.generation.accept", "autopilot.generation.accept.and.run", "autopilot.generation.start", "autopilot.score", "autopilot.select.suggestion", "autopilot.ask.suggestions", "autopilot.generation.regenerate", "autopilot.generation.stop", "autopilot.specify.user.prompt", "autopilot.started", "autopilot.initial.user.prompt", "autopilot.finished", "autopilot.generation.run.generated.cells", "autopilot.original.updated.stop", "autopilot.fix.cell.accept.all", "autopilot.edit.cell.accept.all", "autopilot.original.updated.cancel", "autopilot.many.cells.generation.stop", "autopilot.edit.cell.cancel", "autopilot.edit.cell.run", "autopilot.fix.cell.discard.all", "autopilot.original.updated.finish", "autopilot.many.cells.generation.run", "autopilot.many.cells.generation.discard.all", "autopilot.many.cells.generation.discard.change", "autopilot.original.updated.discard.all", "autopilot.edit.cell.finish", "autopilot.fix.cell.prompts.history.select", "autopilot.many.cells.generation.cancel", "autopilot.fix.cell.regenerate", "autopilot.many.cells.generation.specify", "autopilot.generation.interaction.finish", "autopilot.edit.cell.discard.change", "autopilot.many.cells.prompts.history.select", "autopilot.fix.cell.cancel", "autopilot.many.cells.generation.finish", "autopilot.edit.cell.specify", "autopilot.many.cells.generation.regenerate", "autopilot.edit.cell.regenerate", "autopilot.original.updated.run", "autopilot.original.updated.prompts.history.click", "autopilot.many.cells.prompts.history.click", "autopilot.original.updated.accept.all", "autopilot.fix.cell.specify", "autopilot.fix.cell.stop", "autopilot.fix.cell.run", "autopilot.edit.cell.prompts.history.select", "autopilot.edit.cell.stop", "autopilot.fix.cell.finish", "autopilot.fix.cell.prompts.history.click", "autopilot.original.updated.prompts.history.select", "autopilot.original.updated.specify", "autopilot.edit.cell.discard.all", "autopilot.edit.cell.prompts.history.click", "autopilot.many.cells.generation.accept.all", "autopilot.original.updated.discard.change", "autopilot.fix.cell.discard.change" ]
       }
+    }
+  }, {
+    "id" : "llm.jupyter.promotion",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:expired.without.click|first.shown|clicked|aia.plugin.installed}" ]
     }
   }, {
     "id" : "llm.metrics",
@@ -10879,11 +10944,12 @@
       "event_data" : {
         "enabled" : [ "{enum#boolean}" ],
         "is_docs_rs" : [ "{enum#boolean}" ],
+        "legacy_is_used" : [ "{enum#boolean}" ],
         "limit" : [ "{regexp#integer}" ],
         "preference" : [ "{enum:Yes|No|Ask every time}" ]
       },
       "enums" : {
-        "__event_id" : [ "cargo_test_tool_window", "macros_maximum_recursion", "external_doc_url", "convert_json_to_struct", "inline_problem_descriptions" ]
+        "__event_id" : [ "cargo_test_tool_window", "macros_maximum_recursion", "external_doc_url", "convert_json_to_struct", "inline_problem_descriptions", "legacy_color_schemes" ]
       }
     }
   }, {
@@ -11398,6 +11464,25 @@
         "use_sbt_shell_for_build" : [ "{enum#boolean}" ],
         "use_sbt_shell_for_import" : [ "{enum#boolean}" ],
         "use_separate_compiler_output_paths" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "scientific.image.actions",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "binarization_threshold" : [ "{regexp#integer}" ],
+        "channel_index" : [ "{regexp#integer}" ],
+        "image_format" : [ "{enum:png|jpg|jpeg|bmp|svg}" ],
+        "is_normalized" : [ "{enum#boolean}" ],
+        "rotate_angle" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "debug.image.view.restore.original", "debug.image.view.rotate", "debug.image.view.invert.channels", "debug.image.view.binarize", "debug.image.view.grayscale", "debug.image.view.normalize", "debug.image.view.copy", "debug.image.view.channel.selection", "debug.image.view.save", "debug.image.view.reverse" ]
       }
     }
   }, {
@@ -12134,6 +12219,24 @@
         "custom" : [ "{enum#boolean}" ],
         "explicit" : [ "{enum#boolean}" ],
         "user_home" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "system.log",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:external.uploader.launched}" ],
+      "event_data" : {
+        "failed_to_start" : [ "{enum#boolean}" ],
+        "not_enabled_logger_providers" : [ "{enum#boolean}" ],
+        "restart" : [ "{enum#boolean}" ],
+        "running_from_sources" : [ "{enum#boolean}" ],
+        "sending_disabled_for_all_recorders" : [ "{enum#boolean}" ],
+        "sending_onexit_not_enabled" : [ "{enum#boolean}" ],
+        "update_in_progress" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -14026,5 +14129,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5845"
+  "version" : "5862"
 }

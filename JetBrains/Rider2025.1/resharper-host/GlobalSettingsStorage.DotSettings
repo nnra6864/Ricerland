@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/CodeEditing/Unity/AddFormallySerializedAttributeOnRenaming/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeEditing/Unity/SerializedFieldRefactoringSettings/@EntryValue">NeverAdd</s:String>
 	
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=FieldCanBeMadeReadOnly_002ELocal/@EntryIndexedValue">HINT</s:String>
 	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=InconsistentNaming/@EntryIndexedValue">HINT</s:String>
@@ -69,7 +70,7 @@
 	
 	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/UserRules/=f77a00d9_002D7651_002D474d_002Db44c_002De6c166c5c913/@EntryIndexedValue">&lt;Policy&gt;&lt;Descriptor Staticness="Any" AccessRightKinds="Protected" Description="Protected"&gt;&lt;ElementKinds&gt;&lt;Kind Name="ANY_FIELD" /&gt;&lt;Kind Name="UNITY_SERIALISED_FIELD" /&gt;&lt;/ElementKinds&gt;&lt;/Descriptor&gt;&lt;Policy Inspect="True" WarnAboutPrefixesAndSuffixes="False" Prefix="_" Suffix="" Style="aaBb" /&gt;&lt;/Policy&gt;</s:String>
 	<s:Boolean x:Key="/Default/Environment/ExternalSources/Decompiler/DecompilerLegalNoticeAccepted/@EntryValue">True</s:Boolean>
-	<s:Int64 x:Key="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue">1168</s:Int64>
+	<s:Int64 x:Key="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue">1177</s:Int64>
 	<s:Boolean x:Key="/Default/Environment/InlayHints/GeneralInlayHintsOptions/EnableInlayHints/@EntryValue">False</s:Boolean>
 	
 	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpKeepExistingMigration/@EntryIndexedValue">True</s:Boolean>

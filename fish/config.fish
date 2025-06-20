@@ -49,7 +49,7 @@ function rice
     #sleep 0.2
 
     # Remove all the CS2 fonts
-    rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/*
+    rm -rf "~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/*"
 
     #Execute Ricer
     python ~/Data/Projects/Ricer/Ricer.py $argv # > /dev/null 2>&1
