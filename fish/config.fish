@@ -316,7 +316,7 @@ alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
 alias dla 'yt-dlp -f bestaudio --extract-audio'
 
 # Downloads a video with metadata
-function ytdli
+function dlvi
     # Downloads the video
     yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --write-info-json --write-thumbnail --write-subs -o "%(title)s/%(title)s.%(ext)s" "$argv"
 
@@ -731,7 +731,7 @@ if status is-interactive
             /usr/bin/gnome-keyring-daemon --start --components=secrets,ssh
 
             # Setup and combine_input and output_input
-            combine_input
+            # combine_input
             # output_input
 
             # Start Hyprland
