@@ -28,6 +28,11 @@
 !/symbols
 !/blur/
 
+# OBS
+!/obs-studio/
+/obs-studio/*
+!/obs-studio/basic/
+
 
 ##########
 # Ricing #

@@ -9,22 +9,22 @@
   <component name="FileEditorManager">
     <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="572">
-              <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
+            <state relative-caret-position="895">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"BellScript.cs","foregroundColor":-8336444,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 203,
-      "lastUsed": 1750521499089
+      "usageCount": 213,
+      "lastUsed": 1750908867366
     },
     "Image": {
       "usageCount": 7,
@@ -42,57 +42,58 @@
     </replaceStrings>
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/TimeManager.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DecalFade.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/LocalizeDropdown.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Editor/BuildScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/BombScript.cs",
-    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/TimeManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DecalFade.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/LocalizeDropdown.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Editor/BuildScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/BombScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -102,7 +103,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="203" lastUsage="1750521499089" />
+      <summary usageCount="213" lastUsage="1750908867367" />
     </language>
     <language id="JSON">
       <summary usageCount="2" lastUsage="1749822828733" />
@@ -141,7 +142,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </select>
         </subPane>
@@ -313,12 +313,12 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.11195055" />
+            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.23166403" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17925824" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17921925" />
           </value>
         </entry>
         <entry key="Pull Requests">
@@ -348,7 +348,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.11195055" />
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.23166403" />
           </value>
         </entry>
         <entry key="TODO">
@@ -415,7 +415,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104705000" />
+    <option name="totallyTimeSpent" value="109973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -430,7 +430,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17925824" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17921925" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -460,7 +460,7 @@
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.11195055" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.23166403" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
@@ -470,13 +470,9 @@
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
-      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.11195055" />
-      <unified_weights bottom="0.68538135" left="0.17925824" right="0.11195055" />
+      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.23166403" />
+      <unified_weights bottom="0.68538135" left="0.17921925" right="0.23166403" />
     </layoutV2>
-    <recentWindows>
-      <value>Problems View</value>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="WindowStateProjectService">
     <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter" timestamp="1749813438030">
@@ -500,29 +496,13 @@
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state width="746" height="797" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1750464893915" />
-    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup" timestamp="1750521498994">
-      <screen x="0" y="0" width="5120" height="1440" />
+    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup" timestamp="1750811227704">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1750811227704" />
     <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750521498994" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <marker date="1749296435830" expanded="true" signature="6:132" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/TextEffectInstance.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Color.png" />
@@ -699,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/BombScript.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1142">
@@ -715,8 +688,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
+        <state relative-caret-position="206">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
         </state>
       </provider>
     </entry>

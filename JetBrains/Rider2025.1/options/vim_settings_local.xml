@@ -54,7 +54,6 @@
         <entry encoding="base64">UmVm</entry>
       </history-search>
       <history-cmd>
-        <entry encoding="base64">MzY=</entry>
         <entry encoding="base64">NDg=</entry>
         <entry encoding="base64">MTMy</entry>
         <entry encoding="base64">NTE=</entry>
@@ -98,12 +97,13 @@
         <entry encoding="base64">OTY=</entry>
         <entry encoding="base64">OTM=</entry>
         <entry encoding="base64" />
-        <entry encoding="base64">d3E=</entry>
         <entry encoding="base64">Njc=</entry>
         <entry encoding="base64">MTE5</entry>
         <entry encoding="base64">Ig==</entry>
-        <entry encoding="base64">dw==</entry>
         <entry encoding="base64">MjQz</entry>
+        <entry encoding="base64">TA==</entry>
+        <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -1985,95 +1985,13 @@
       <jump line="7" column="26" filename="$USER_HOME$/Data/Projects/Unity/GameJam/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
     </project>
     <project id="Katana-bcde37f2">
-      <jump line="91" column="84" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="96" column="82" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="153" column="29" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="263" column="36" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="262" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="294" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="358" column="29" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="111" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="79" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="249" column="66" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="213" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="212" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="9" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs" protocol="file" />
-      <jump line="4" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs" protocol="file" />
-      <jump line="7" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="62" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="25" column="74" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="155" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="21" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="60" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="79" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="88" column="52" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="130" column="29" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="121" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="80" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="122" column="94" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="138" column="32" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="245" column="48" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="248" column="69" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="344" column="44" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="316" column="51" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="349" column="20" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="355" column="27" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="357" column="19" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="359" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="25" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="62" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="63" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="319" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="251" column="24" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="323" column="27" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="73" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="76" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="152" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="153" column="48" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs" protocol="file" />
-      <jump line="35" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs" protocol="file" />
-      <jump line="252" column="28" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs" protocol="file" />
-      <jump line="62" column="61" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
-      <jump line="35" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="19" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/LocalizeDropdown.cs" protocol="file" />
-      <jump line="104" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
-      <jump line="111" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
-      <jump line="66" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="68" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="181" column="54" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="25" column="64" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="22" column="64" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="27" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="29" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="31" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="18" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="73" column="26" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="74" column="26" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="75" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="119" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="80" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="229" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="201" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="230" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="86" column="52" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="216" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="87" column="53" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="237" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="88" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="255" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="249" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="233" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="232" column="41" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="85" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="82" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="177" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="277" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="81" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="130" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="247" column="90" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="122" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="79" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
@@ -2085,6 +2003,88 @@
       <jump line="113" column="57" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="44" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="118" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="242" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="233" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="232" column="21" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="218" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="231" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="250" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="259" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="200" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="210" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="212" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="215" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="246" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="286" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="285" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="275" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="270" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="269" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="266" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="263" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="262" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="260" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="252" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="249" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="244" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="245" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="243" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="230" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="226" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="222" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="219" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="217" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="205" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="202" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="191" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="189" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="188" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="184" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="181" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="173" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="171" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="169" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="170" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="167" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="158" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="153" column="20" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="152" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="148" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="134" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="130" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="127" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="110" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="107" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="104" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="95" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="92" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="88" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="84" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="80" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="74" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="67" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="62" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="18" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="57" column="5" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="58" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="26" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="33" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="13" column="9" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="15" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="8" column="36" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="23" column="7" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" protocol="file" />
+      <jump line="25" column="58" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="116" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="14" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="13" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" protocol="file" />
+      <jump line="17" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="11" column="15" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="16" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="27" column="30" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="23" column="23" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
+      <jump line="22" column="4" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" protocol="file" />
     </project>
     <project id="Katana-b185bc4f">
       <jump line="8" column="28" filename="$USER_HOME$/Data/Projects/Unity/GoodKatana/Katana/Assets/artificetoolkit/Runtime/CustomAttributes/ValidateInputAttribute.cs" protocol="file" />
@@ -2698,8 +2698,8 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" timestamp="1750468770798">
-        <mark key="&quot;" line="122" column="94" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs" timestamp="1750778634173">
+        <mark key="&quot;" line="14" column="37" />
         <mark key="[" line="122" column="96" />
         <mark key="]" line="122" column="96" />
         <mark key="." line="122" column="95" />
@@ -2735,18 +2735,11 @@
         <mark key="." line="62" column="61" />
         <mark key="^" line="62" column="62" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1750361718137">
-        <mark key="&quot;" line="9" column="31" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs" timestamp="1750108528235">
-        <mark key="&quot;" line="5" column="39" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-        <mark key="^" line="8" column="8" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/ColorUtils.cs" timestamp="1750108532977">
-        <mark key="&quot;" line="5" column="11" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs" timestamp="1750778688571">
+        <mark key="&quot;" line="8" column="4" />
+        <mark key="[" line="8" column="0" />
+        <mark key="]" line="8" column="0" />
+        <mark key="." line="8" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs" timestamp="1750519223741">
         <mark key="&quot;" line="35" column="0" />
@@ -2767,24 +2760,29 @@
         <mark key="]" line="66" column="0" />
         <mark key="." line="66" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1750522124839">
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextUtils/Scripts/SystemFont.cs" timestamp="1750778697744">
+        <mark key="&quot;" line="13" column="12" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1750778633199">
         <mark key="&quot;" line="12" column="29" />
         <mark key="'" line="112" column="57" />
-        <mark key="[" line="120" column="30" />
-        <mark key="]" line="120" column="31" />
-        <mark key="." line="120" column="30" />
-        <mark key="^" line="120" column="31" />
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs" timestamp="1750338860758">
-        <mark key="&quot;" line="0" column="0" />
-        <mark key="'" line="70" column="12" />
-        <mark key="[" line="70" column="0" />
-        <mark key="]" line="70" column="0" />
-        <mark key="." line="70" column="0" />
-        <mark key="^" line="70" column="14" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextUtils/Scripts/InteractiveText/InteractiveTextScript.cs" timestamp="1750778832305">
+        <mark key="&quot;" line="24" column="16" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/TextureRemapper/Editor/TextureRemapperWindow.cs" timestamp="1750108527862">
-        <mark key="&quot;" line="10" column="38" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs" timestamp="1750811362143">
+        <mark key="&quot;" line="7" column="27" />
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="24" column="13" />
+        <mark key="]" line="24" column="18" />
+        <mark key="." line="24" column="17" />
+        <mark key="^" line="24" column="18" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs" timestamp="1750778696965">
+        <mark key="&quot;" line="9" column="12" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" timestamp="1750519393885">
         <mark key="&quot;" line="14" column="32" />
@@ -2805,9 +2803,13 @@
         <mark key="^" line="153" column="49" />
         <mark key="." line="153" column="48" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1750519685876">
-        <mark key="&quot;" line="15" column="31" />
-        <mark key="^" line="137" column="26" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1750778820148">
+        <mark key="&quot;" line="13" column="4" />
+        <mark key="'" line="115" column="43" />
+        <mark key="[" line="13" column="0" />
+        <mark key="]" line="13" column="0" />
+        <mark key="^" line="44" column="59" />
+        <mark key="." line="13" column="0" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs" timestamp="1750465648411">
         <mark key="&quot;" line="5" column="22" />
@@ -2822,8 +2824,8 @@
       <register name="a" type="CHARACTER_WISE">
         <text encoding="base64">Z2dpDSZpCCNpZiBVTklUWV9FRElUT1IbYRtHYQ0jZW5kaWYbOncN</text>
       </register>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">UmVmLmFjdGlvbi4=</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgX2F1Cg==</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2832,46 +2834,46 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">UmVmLmFjdGlvbi4=</text>
+        <text encoding="base64">cHJpdmF0ZQ==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">Lg==</text>
+        <text encoding="base64">cmluZ0E=</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">UmVm</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgX2ZsaXBBY3Rpb24gPSBJbnB1dFN5c3RlbS5hY3Rpb25zLkZpbmRBY3Rpb24oIkZsaXAiKTsK</text>
+        <text encoding="base64">ICAgICAgICBbRm9sZG91dEdyb3VwKCJUZXN0IildCg==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBbRm9sZG91dEdyb3VwKCJDb21wb25lbnRzL0lucHV0IiksIFNlcmlhbGl6ZUZpZWxkLCBSZXF1aXJlZF0K</text>
+        <text encoding="base64">ICAgICAgICAgICAgX2F1Cg==</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
-      </register>
-      <register name="3" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgW0ZvbGRvdXRHcm91cCgiQ29tcG9uZW50cy9JbnB1dCIpLCBCdXR0b25dCiAgICAgICAgcHJpdmF0ZSB2b2lkIFJlc2V0SW5wdXRGdW5jdGlvbnMoKQogICAgICAgIHsKICAgICAgICAgICAgSW5wdXRBY3Rpb25SZWZlcmVuY2UgR2V0SW5wdXRBY3Rpb25SZWZlcmVuY2Uoc3RyaW5nIGFjdGlvbikgPT4KICAgICAgICAgICAgICAgIElucHV0QWN0aW9uUmVmZXJlbmNlLkNyZWF0ZShJbnB1dFN5c3RlbS5hY3Rpb25zLkZpbmRBY3Rpb24oYWN0aW9uKSk7CiAgICAgICAgICAgIAogICAgICAgICAgICBfZGFzaEFjdGlvblJlZiA9IEdldElucHV0QWN0aW9uUmVmZXJlbmNlKCJEYXNoIik7CiAgICAgICAgICAgIF9kb2RnZUFjdGlvblJlZiA9IEdldElucHV0QWN0aW9uUmVmZXJlbmNlKCJEb2RnZSIpOwogICAgICAgICAgICBfZmxpcEFjdGlvblJlZiA9IEdldElucHV0QWN0aW9uUmVmZXJlbmNlKCJGbGlwIik7CiAgICAgICAgICAgIF9wZXJzcGVjdGl2ZUFjdGlvblJlZiA9IEdldElucHV0QWN0aW9uUmVmZXJlbmNlKCJQZXJzcGVjdGl2ZSIpOwogICAgICAgIH0K</text>
-      </register>
-      <register name="4" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgcHJpdmF0ZSB2b2lkIEluaXRpYWxpemVJbnB1dEFjdGlvbnMoKQogICAgICAgIHsKICAgICAgICAgICAgCiAgICAgICAgfQo=</text>
-      </register>
-      <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIERlYnVnLkxvZygkIkRlc3Ryb3lpbmc6IHtmcmFnLm5hbWV9Iik7Cg==</text>
-      </register>
-      <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICBwcml2YXRlIHZvaWQgVW5pbml0aWFsaXplSW5wdXRzKCkKICAgICAgICB7CiAgICAgICAgICAgIF9kYXNoQWN0aW9uUmVmLmFjdGlvbi5wZXJmb3JtZWQgKz0gXyA9PiBEYXNoKCk7CiAgICAgICAgICAgIF9kb2RnZUFjdGlvblJlZi5hY3Rpb24ucGVyZm9ybWVkICs9IF8gPT4gRG9kZ2UoKTsKICAgICAgICAgICAgX2ZsaXBBY3Rpb25SZWYuYWN0aW9uLnBlcmZvcm1lZCArPSBfID0+IEZsaXAoKTsKICAgICAgICAgICAgX3BlcnNwZWN0aXZlQWN0aW9uUmVmLmFjdGlvbi5wZXJmb3JtZWQgKz0gXyA9PiBDaGFuZ2VQZXJzcGVjdGl2ZSgpOwogICAgICAgIH0K</text>
-      </register>
-      <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
-      </register>
-      <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgKENvbG9zc2V1bVNjZW5lTWFuYWdlci5JbnN0YW5jZS5Jc0RlYWQpIHJldHVybjsK</text>
-      </register>
-      <register name="9" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
       </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">CiAgICB9Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBbRm9sZG91dEdyb3VwKCJUZXN0IildCiAgICAgICAgW0J1dHRvbl0KICAgICAgICBwdWJsaWMgdm9pZCBUZXN0Vm9pZCgpCiAgICAgICAgewogICAgICAgICAgICBEZWJ1Zy5Mb2coIkhlbGxvIik7CiAgICAgICAgfQo=</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">ICAgIC8vIFRPRE86IEFkZCBDaGlsZEdhbWVPYmplY3RzT25seSBhdHRyaWJ1dGUgdG8gZmllbGRzIHdoZW4gZml4ZWQK</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgIC8vIFRPRE86IEFkZCBidXR0b25zIHRvIGEgZm9sZG91dCB3aGVuIGZpeGVkCg==</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAjcmVnaW9uIEVkaXRvcgo=</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAjZW5kcmVnaW9uCg==</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICAgICAgX2FuaW1hdG9yLkdldE5leHRBbmltYXRvckNsaXBJbmZvKCJSaW5nIik7Cg==</text>
+      </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">MjQz</text>
+        <text encoding="base64">dw==</text>
       </register>
       <register name="z" type="CHARACTER_WISE">
         <text encoding="base64" />
