@@ -2,7 +2,7 @@
 	"FPS": 60,
 	"BufferSize": 64,
 	"Sensitivity": 2,
-	"Font": "Maple Mono NF CN",
+	"Font": "Default",
 	"Scene": "Snowstorm",
 	"Shell": "/bin/nu",
 }
