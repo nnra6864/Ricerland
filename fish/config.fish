@@ -60,6 +60,7 @@ function rice
     #Generate Oomox theme and icons and update nwg-look
     /opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
     /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
+    rm -rf ~/.gtkrc-2.0 2>&1 &
     nwg-look -a > /dev/null 2>&1 &
     disown
 
@@ -711,6 +712,117 @@ function xdph
     /usr/lib/xdg-desktop-portal-hyprland &
     sleep 2
     /usr/lib/xdg-desktop-portal &
+end
+
+function track_app_usage
+    set save_dir ~/TimeTracking
+    mkdir -p $save_dir
+
+    set interval 10
+
+    while true
+        sleep $interval
+
+        set initial_class (hyprctl activewindow -j | jq -r '.initialClass // empty' 2>/dev/null)
+
+        if test -n "$initial_class"
+            set save_file "$save_dir/$initial_class"
+            if test -f $save_file
+                set seconds (cat $save_file)
+            else
+                set seconds 0
+            end
+            set seconds (math $seconds + 10)
+            echo $seconds > $save_file
+        end
+    end
+end
+
+function get_app_usage
+    set time_dir ~/TimeTracking
+
+    if not test -d $time_dir
+        echo "TimeTracking directory not found"
+        return 1
+    end
+
+    # If no arguments, show all apps sorted by usage time
+    if test (count $argv) -eq 0
+        set apps
+        set times
+
+        # Collect all apps and their times
+        for file in $time_dir/*
+            if test -f $file
+                set app (basename $file)
+                set total_seconds (math --scale=0 (cat $file) 2>/dev/null || echo 0)
+                set apps $apps $app
+                set times $times $total_seconds
+            end
+        end
+
+        if test (count $apps) -eq 0
+            echo "No time tracking data found"
+            return 1
+        end
+
+        # Create pairs and sort by time (descending)
+        set pairs
+        for i in (seq (count $apps))
+            set pairs $pairs "$times[$i]:$apps[$i]"
+        end
+
+        # Sort by time (descending) and display
+        for pair in (printf '%s\n' $pairs | sort -nr -t: -k1)
+            set time_seconds (string split -m1 ':' $pair)[1]
+            set app_name (string split -m1 ':' $pair)[2]
+
+            set days (math --scale=0 "$time_seconds / 86400")
+            set hours (math --scale=0 "($time_seconds % 86400) / 3600")
+            set minutes (math --scale=0 "($time_seconds % 3600) / 60")
+            set seconds (math --scale=0 "$time_seconds % 60")
+
+            if test $days -gt 0
+                printf "%-20s %dd %02d:%02d:%02d\n" $app_name $days $hours $minutes $seconds
+            else
+                printf "%-20s %02d:%02d:%02d\n" $app_name $hours $minutes $seconds
+            end
+        end
+
+        return 0
+    end
+
+    if test (count $argv) -ne 1
+        echo "Usage: get_time [AppName]"
+        echo "       get_time        (show all apps sorted by usage time)"
+        return 1
+    end
+
+    set app $argv[1]
+    set save_file $time_dir/$app
+
+    if not test -f $save_file
+        echo "No data for $app"
+        return 1
+    end
+
+    set file_content (cat $save_file 2>/dev/null | string trim)
+    if test -z "$file_content"
+        set total_seconds 0
+    else
+        set total_seconds (math --scale=0 $file_content 2>/dev/null || echo 0)
+    end
+
+    set days (math --scale=0 "$total_seconds / 86400")
+    set hours (math --scale=0 "($total_seconds % 86400) / 3600")
+    set minutes (math --scale=0 "($total_seconds % 3600) / 60")
+    set seconds (math --scale=0 "$total_seconds % 60")
+
+    if test $days -gt 0
+        printf "%dd %02d:%02d:%02d\n" $days $hours $minutes $seconds
+    else
+        printf "%02d:%02d:%02d\n" $hours $minutes $seconds
+    end
 end
 
 # Fish config
