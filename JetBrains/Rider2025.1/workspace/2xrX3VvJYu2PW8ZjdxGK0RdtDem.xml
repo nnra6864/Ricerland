@@ -7,24 +7,54 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="l5ph98j64xgl" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManagerItem.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="895">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="812">
+              <caret line="80" column="49" lean-forward="true" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"BellScript.cs","foregroundColor":-8336444,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"AudioManagerItem.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"AudioManager.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioItem.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="82">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"AudioItem.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioResourceItem.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="-369">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"AudioResourceItem.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 213,
-      "lastUsed": 1750908867366
+      "usageCount": 386,
+      "lastUsed": 1751300992400
     },
     "Image": {
       "usageCount": 7,
@@ -42,58 +72,61 @@
     </replaceStrings>
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/TimeManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DecalFade.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/DynamicDOF.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/TimeScale/TimeScaleKey.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/UI/Slideshow/SlideshowTransition.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/Components/UI/Image/ConfigSlideshowTransition.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Tabs/ColoredTab.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Modules/Easings/Easings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/SmoothSceneCamera.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/CannonScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/AssemblyAttributes.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSceneManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/OpenFracture/Runtime/Scripts/Slice.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/FruitScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/LocalizeDropdown.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Editor/BuildScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/BombScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/Misc.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindSaveLoad.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/Editor/RebindActionUIEditor.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Rebind/RebindActionUI.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/BombScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/MainMenuButton.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioType.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Type.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/ClipAssignmentType.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/MinMax/MinMaxAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/NnUtils/Scripts/MinMax/Editor/MinMaxAttributeDrawer.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Item.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/ItemSettings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/ClipItem.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/ItemSettingsPreset.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Items/Item.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioClipItem.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/ResourceAssignmentType.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/SourceType.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioManagerKey.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Optional.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioItemSettings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioManagerSource.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/OptionalAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/OptionalDrawer.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioItemSettingsPreset.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioEffectsPreset.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioSettingsPreset.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioSettings.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioEffects.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/AudioEffectsPreset.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/Highpass.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/AudioEffect.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/Chorus.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/Distortion.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/Echo.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/HighPass.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/LowPass.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/Reverb.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/Effects/AudioEffects.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioManager.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioManagerItem.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioItem.cs",
+    "/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Audio/AudioResourceItem.cs"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -103,7 +136,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="213" lastUsage="1750908867367" />
+      <summary usageCount="386" lastUsage="1751300992400" />
     </language>
     <language id="JSON">
       <summary usageCount="2" lastUsage="1749822828733" />
@@ -123,6 +156,19 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
               <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Audio" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Audio" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Effects" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -263,7 +309,7 @@
         </entry>
         <entry key="Hierarchy">
           <value>
-            <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
+            <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
           </value>
         </entry>
         <entry key="IL">
@@ -298,7 +344,7 @@
         </entry>
         <entry key="Notifications">
           <value>
-            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.09004678" />
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.14727917" />
           </value>
         </entry>
         <entry key="NuGet">
@@ -313,17 +359,22 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.23166403" />
+            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.111395895" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17921925" />
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.15201104" />
           </value>
         </entry>
         <entry key="Pull Requests">
           <value>
             <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Refactoring - Change signature">
+          <value>
+            <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
           </value>
         </entry>
         <entry key="RoslynVisualizer">
@@ -348,7 +399,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.23166403" />
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.111395895" />
           </value>
         </entry>
         <entry key="TODO">
@@ -415,7 +466,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109973000" />
+    <option name="totallyTimeSpent" value="233096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -430,7 +481,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17921925" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.15201104" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -451,103 +502,77 @@
       <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
       <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
       <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+      <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
       <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
-      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.09004678" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.14727917" />
       <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.23166403" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" visible="true" weight="0.111395895" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
-      <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
+      <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
       <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
-      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.23166403" />
-      <unified_weights bottom="0.68538135" left="0.17921925" right="0.23166403" />
+      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.111395895" />
+      <unified_weights bottom="0.68538135" left="0.15201104" right="0.111395895" />
     </layoutV2>
   </component>
   <component name="WindowStateProjectService">
+    <state x="780" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1751006320647">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="780" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1751006320647" />
+    <state x="762" y="359" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1751287442736">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="762" y="359" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.2560.1440@0.0.2560.1440" timestamp="1751287442736" />
     <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter" timestamp="1749813438030">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter/0.0.5120.1440@0.0.5120.1440" timestamp="1749813438030" />
-    <state x="2646" y="323" key="FileChooserDialogImpl" timestamp="1749813349423">
-      <screen x="0" y="0" width="5120" height="1440" />
+    <state x="1323" y="323" key="FileChooserDialogImpl" timestamp="1751006307779">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="1323" y="323" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1751006307779" />
     <state x="2646" y="323" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1749813349423" />
     <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog" timestamp="1749767989252">
       <screen x="0" y="0" width="5120" height="1440" />
     </state>
     <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog/0.0.5120.1440@0.0.5120.1440" timestamp="1749767989252" />
-    <state x="361" y="174" width="1814" height="1264" key="SettingsEditor" timestamp="1750273765911">
+    <state x="765" y="229" key="RiderGenerateDialog" timestamp="1751188147970">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="361" y="174" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1750273765911" />
+    <state x="765" y="229" key="RiderGenerateDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1751188147970" />
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor" timestamp="1751200407776">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1751200407776" />
     <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
-    <state width="746" height="797" key="SwitcherDM" timestamp="1750464893915">
-      <screen x="0" y="0" width="5120" height="1440" />
-    </state>
-    <state width="746" height="797" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1750464893915" />
-    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup" timestamp="1750811227704">
+    <state width="623" height="797" key="SwitcherDM" timestamp="1751281168466">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1750811227704" />
+    <state width="623" height="797" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1751281168466" />
+    <state width="746" height="797" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1750464893915" />
+    <state x="860" y="335" key="run.anything.popup" timestamp="1751262474446">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="860" y="335" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751262474446" />
+    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup" timestamp="1751286240150">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1070" y="321" width="974" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751286240150" />
     <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750521498994" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/TextEffectInstance.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Color.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Color.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Composite.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Move.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/PerVertex.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Rotate.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/Rotate-1.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/Icons/TextEffect.png" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/PerVertexEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/TextEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/ColorEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect_Base.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/MoveEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/RotateEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/ScaleEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Editor/CompositeEffectEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_PerVertex.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/TextEffect.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Easy-Text-Effects-for-Unity/Runtime/Effects/Effect_Composite.cs" />
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalLightData.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/Easings/Easings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSceneManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/OpenFracture/Tests/Runtime/SlicedMeshDataTests.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OpenFracture/Runtime/Scripts/Slice.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/OpenFracture/Runtime/Scripts/Fragment/Fragmenter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/SpotlightRotatorScript.cs">
@@ -595,13 +620,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopUIScript.cs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/Item.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Samples/Input System/1.11.2/Rebinding UI/RebindActionUI.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Rebind/RebindSaveLoad.cs">
@@ -658,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LocalizeDropdown.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -707,10 +718,205 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/Item.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <marker date="1751094245544" expanded="true" signature="6:155" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <marker date="1751108999425" expanded="true" signature="6:317" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/SourceType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/ResourceAssignmentType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="239">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/MinMax/MinMaxAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/MinMax/Editor/MinMaxAttributeDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManagerKey.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/OptionalAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/OptionalDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50aeaeb42dc14809ba2b81c540d1cdc818600/62/97ad350c/AudioChorusFilter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4329c3c34eb04a1fae94b355d2bed7f81dea00/7f/2fcc5b3f/Behaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioSettingsPreset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/Chorus.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/Distortion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/Echo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/HighPass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/LowPass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/Reverb.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/AudioEffectsPreset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/AudioEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/Effects/AudioEffects.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioResourceItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManagerItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="80" column="49" lean-forward="true" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
         </state>
       </provider>
     </entry>

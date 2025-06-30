@@ -1,3 +1,10 @@
 <application>
-  <component name="CommonFeedbackSurveyService"><![CDATA[{}]]></component>
+  <component name="CommonFeedbackSurveyService"><![CDATA[{
+  "feedbackSurveyToNumberNotificationShows": {
+    "RIDER-125074.rider": 2
+  },
+  "feedbackSurveyToNumberDisableActionInvoked": {
+    "RIDER-125074.rider": 1
+  }
+}]]></component>
 </application>
