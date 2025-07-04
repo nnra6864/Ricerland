@@ -766,6 +766,16 @@ function get_app_usage
             return 1
         end
 
+        # Find maximum app name length
+        set max_width 0
+        for app in $apps
+            set name_length (string length $app)
+            if test $name_length -gt $max_width
+                set max_width $name_length
+            end
+        end
+        set max_width (math $max_width + 1)
+
         # Create pairs and sort by time (descending)
         set pairs
         for i in (seq (count $apps))
@@ -783,9 +793,9 @@ function get_app_usage
             set seconds (math --scale=0 "$time_seconds % 60")
 
             if test $days -gt 0
-                printf "%-20s %dd %02d:%02d:%02d\n" $app_name $days $hours $minutes $seconds
+                printf "%-*s %dd %02d:%02d:%02d\n" $max_width $app_name $days $hours $minutes $seconds
             else
-                printf "%-20s %02d:%02d:%02d\n" $app_name $hours $minutes $seconds
+                printf "%-*s %02d:%02d:%02d\n" $max_width $app_name $hours $minutes $seconds
             end
         end
 
