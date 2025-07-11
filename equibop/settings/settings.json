@@ -1320,13 +1320,6 @@
         "Title": {
             "enabled": false
         },
-        "toggleVideoBind": {
-            "enabled": false,
-            "keyBind": "KeyX",
-            "reqCtrl": true,
-            "reqShift": true,
-            "reqAlt": false
-        },
         "TosuRPC": {
             "enabled": false
         },
@@ -1474,6 +1467,13 @@
         },
         "TidalEmbeds": {
             "enabled": false
+        },
+        "ToggleVideoBind": {
+            "enabled": false,
+            "keyBind": "KeyX",
+            "reqCtrl": true,
+            "reqShift": true,
+            "reqAlt": false
         }
     },
     "notifications": {
@@ -1486,7 +1486,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1750349783237
+        "settingsSyncVersion": 1751657980954
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

@@ -1,18 +1,56 @@
-scheme: "Ricer"
-author: "nnra"
-base00: "ricer.col.background"
-base01: "ricer.col.background_alt"
-base02: "ricer.col.background_highlight"
-base03: "ricer.col.foreground_inactive"
-base04: "ricer.col.foreground_alt"
-base05: "ricer.col.foreground"
-base06: "ricer.col.foreground_highlight"
-base07: "ricer.col.background_highlight"
-base08: "ricer.col.br_red"
-base09: "ricer.col.yellow"
-base0A: "ricer.col.br_yellow"
-base0B: "ricer.col.br_green"
-base0C: "ricer.col.br_cyan"
-base0D: "ricer.col.br_blue"
-base0E: "ricer.col.br_magenta"
-base0F: "ricer.col.foreground_highlight"
+# Themix Color Configuration
+# Using ricer.col variables for replacement
+
+# Base colors
+BG=ricer.col.background
+FG=ricer.col.foreground
+HDR_BG=ricer.col.background
+HDR_FG=ricer.col.foreground
+SEL_BG=ricer.col.foreground_alt
+SEL_FG=ricer.col.foreground
+TXT_BG=ricer.col.background
+TXT_FG=ricer.col.foreground
+BTN_BG=ricer.col.button
+BTN_FG=ricer.col.button_foreground
+ACCENT_BG=ricer.col.foreground_alt
+MENU_BG=ricer.col.background
+MENU_FG=ricer.col.foreground
+
+# Window manager colors
+WM_BORDER_FOCUS=ricer.col.outline
+WM_BORDER_UNFOCUS=ricer.col.outline_inactive
+
+# Additional GTK colors
+ROUNDNESS=3
+GRADIENT=0.0
+GTK3_GENERATE_DARK=True
+
+# Terminal colors
+TERMINAL_COLOR0=ricer.col.black
+TERMINAL_COLOR1=ricer.col.red
+TERMINAL_COLOR2=ricer.col.green
+TERMINAL_COLOR3=ricer.col.yellow
+TERMINAL_COLOR4=ricer.col.blue
+TERMINAL_COLOR5=ricer.col.magenta
+TERMINAL_COLOR6=ricer.col.cyan
+TERMINAL_COLOR7=ricer.col.white
+TERMINAL_COLOR8=ricer.col.br_black
+TERMINAL_COLOR9=ricer.col.br_red
+TERMINAL_COLOR10=ricer.col.br_green
+TERMINAL_COLOR11=ricer.col.br_yellow
+TERMINAL_COLOR12=ricer.col.br_blue
+TERMINAL_COLOR13=ricer.col.br_magenta
+TERMINAL_COLOR14=ricer.col.br_cyan
+TERMINAL_COLOR15=ricer.col.br_white
+
+# Error and warning colors
+ERROR_COLOR=ricer.col.red
+WARNING_COLOR=ricer.col.yellow
+SUCCESS_COLOR=ricer.col.green
+
+# Outline colors
+OUTLINE_WIDTH=1
+OUTLINE_COLOR=ricer.col.outline
+
+# Shadow
+SHADOW_COLOR=ricer.col.shadow

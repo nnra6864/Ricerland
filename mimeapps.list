@@ -1,6 +1,6 @@
 [Added Associations]
 application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;dev.zed.Zed.desktop;libreoffice-writer.desktop;org.kde.okteta.desktop;
-application/octet-stream=blender.desktop;nvim.desktop;neovide.desktop;org.kde.okteta.desktop;
+application/octet-stream=nvim.desktop;blender.desktop;neovide.desktop;org.kde.okteta.desktop;
 application/pdf=firefox.desktop;krita_pdf.desktop;chromium.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/x-extension-htm=zen.desktop;
@@ -19,11 +19,13 @@ audio/mpeg=vlc.desktop;mpv.desktop;
 audio/vnd.wave=vlc.desktop;mpv.desktop;skypeforlinux-share.desktop;
 audio/x-ms-asx=mpv.desktop;vlc.desktop;
 audio/x-opus+ogg=mpv.desktop;vlc.desktop;firefox.desktop;blender.desktop;nvim.desktop;
+image/avif=viewnior.desktop;firefox.desktop;krita_heif.desktop;blender.desktop;nvim.desktop;
 image/bmp=viewnior.desktop;krita_qimageio.desktop;blender.desktop;nvim.desktop;
 image/gif=viewnior.desktop;mpv.desktop;krita_gif.desktop;chromium.desktop;firefox.desktop;blender.desktop;nvim.desktop;
 image/jpeg=viewnior.desktop;firefox.desktop;krita_jpeg.desktop;chromium.desktop;skypeforlinux-share.desktop;
-image/png=viewnior.desktop;firefox.desktop;chromium.desktop;krita_png.desktop;skypeforlinux-share.desktop;
-image/webp=krita_webp.desktop;viewnior.desktop;neovide.desktop;chromium.desktop;firefox.desktop;krita_qimageio.desktop;skypeforlinux-share.desktop;
+image/jxl=viewnior.desktop;
+image/png=viewnior.desktop;mpv.desktop;firefox.desktop;chromium.desktop;krita_png.desktop;blender.desktop;nvim.desktop;
+image/webp=mpv.desktop;krita_webp.desktop;viewnior.desktop;blender.desktop;nvim.desktop;chromium.desktop;firefox.desktop;krita_qimageio.desktop;
 image/x-exr=org.kde.krita.desktop;
 image/x-tga=viewnior.desktop;krita_tga.desktop;blender.desktop;nvim.desktop;
 inode/directory=dev.zed.Zed.desktop;org.kde.dolphin.desktop;mpv.desktop;kitty-open.desktop;com.system76.CosmicFiles.desktop;
@@ -49,7 +51,7 @@ x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Default Applications]
 application/json=nvim.desktop;
-application/octet-stream=blender.desktop;
+application/octet-stream=nvim.desktop;
 application/pdf=firefox.desktop;
 application/uproject=com.epicgames.UnrealEngineEditor.desktop
 application/vnd.microsoft.portable-executable=wine.desktop;
@@ -69,11 +71,13 @@ audio/mpeg=vlc.desktop;
 audio/vnd.wave=vlc.desktop;
 audio/x-ms-asx=mpv.desktop;
 audio/x-opus+ogg=mpv.desktop;
+image/avif=viewnior.desktop;
 image/bmp=viewnior.desktop;
 image/gif=viewnior.desktop;
 image/jpeg=viewnior.desktop;
+image/jxl=viewnior.desktop;
 image/png=viewnior.desktop;
-image/webp=krita_webp.desktop;
+image/webp=mpv.desktop;
 image/x-exr=org.kde.krita.desktop;
 image/x-tga=viewnior.desktop;
 inode/directory=dev.zed.Zed.desktop;

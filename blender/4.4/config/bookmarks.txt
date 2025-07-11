@@ -2,6 +2,7 @@
 /home/nnra/Data/Projects/
 /home/nnra/Data/Projects/Unity/
 [Recent]
+/home/nnra/Data/Projects/Unity/Katana/Files/Blender/
 /home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Models/Objects/
 /home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Models/Colosseum/
 /home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/

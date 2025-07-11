@@ -9,7 +9,7 @@ set -Ux P4IGNORE .p4ignore
 
 # Aliases
 alias doas='sudo'
-alias nlear='clear; neofetch'
+alias nlear='clear; fastfetch; echo ""'
 alias py='python'
 alias timeshit='timeshift'
 alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk' 
@@ -861,6 +861,8 @@ if status is-interactive
         end
     end
 end
+
+nlear
 
 oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
 

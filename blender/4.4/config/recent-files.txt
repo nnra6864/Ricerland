@@ -1,3 +1,5 @@
+/home/nnra/Data/Projects/Unity/Katana/Files/Blender/SettingsBoard.blend
+/home/nnra/Data/Projects/Unity/Katana/Files/Blender/Bar.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/Arena.blend
 /home/nnra/Downloads/Bar.blend
 /home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/Cannon.blend
