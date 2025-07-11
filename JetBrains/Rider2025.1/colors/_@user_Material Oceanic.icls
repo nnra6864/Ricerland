@@ -25,7 +25,15 @@
     <option name="EDITOR_FONT_SIZE" value="13" />
   </console-font>
   <colors>
+    <option name="FILESTATUS_ADDED" value="C3E887" />
+    <option name="FILESTATUS_DELETED" value="F77669" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="848504" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="D5756C" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="D5756C" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="D5756C" />
+    <option name="FILESTATUS_MERGED" value="9876AA" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="80CBC4" />
     <option name="FILESTATUS_OBSOLETE" value="FFCB6B" />
+    <option name="FILESTATUS_SWITCHED" value="F77669" />
   </colors>
 </scheme>

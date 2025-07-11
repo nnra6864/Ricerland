@@ -6,33 +6,6 @@
         <option name="overrideAccentColor" value="false" />
       </MTAccentConfigState>
     </option>
-    <option name="customThemeState">
-      <MTCustomThemeConfigState>
-        <option name="accentColorHex" value="73ace6" />
-        <option name="activeColorHex" value="163859" />
-        <option name="backgroundColorHex" value="102840" />
-        <option name="borderColorHex" value="bfe1ff" />
-        <option name="buttonColorHex" value="102840" />
-        <option name="colorScheme" value="Frost" />
-        <option name="contrastColorHex" value="102840" />
-        <option name="disabledColorHex" value="8fa9bf" />
-        <option name="excludedColorHex" value="0a1826" />
-        <option name="foregroundColorHex" value="bfe1ff" />
-        <option name="highlightColorHex" value="73ace6" />
-        <option name="notificationColorHex" value="102840" />
-        <option name="secondAccentColorHex" value="73ace6" />
-        <option name="secondBackgroundColorHex" value="102840" />
-        <option name="selectionBackgroundColorHex" value="266099" />
-        <option name="selectionForegroundColorHex" value="bfe1ff" />
-        <option name="textColorHex" value="73ace6" />
-        <option name="treeColorHex" value="163859" />
-      </MTCustomThemeConfigState>
-    </option>
-    <option name="lightCustomThemeState">
-      <MTLightCustomThemeConfigState>
-        <option name="colorScheme" value="Frost" />
-      </MTLightCustomThemeConfigState>
-    </option>
     <option name="metadata">
       <MTMetadataState>
         <option name="pristineConfig" value="false" />
@@ -40,6 +13,11 @@
         <option name="version" value="9.8.1" />
         <option name="wizardShown" value="true" />
       </MTMetadataState>
+    </option>
+    <option name="themeState">
+      <MTThemeConfigState>
+        <option name="selectedThemeName" value="NATIVE" />
+      </MTThemeConfigState>
     </option>
   </component>
 </application>

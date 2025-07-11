@@ -734,6 +734,33 @@
       }
     }
   }, {
+    "id" : "cidr.docker.rosetta.extension.usage",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:enabled}" ],
+      "event_data" : {
+        "requested" : [ "{enum#boolean}" ],
+        "used" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "cidr.embedded.live.watches",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:debug}" ],
+      "event_data" : {
+        "expressions" : [ "{regexp#integer}" ],
+        "sampling_time_ms" : [ "{regexp#integer}" ],
+        "visible_fields" : [ "{enum:watch|type|value|max|min|changes}" ]
+      }
+    }
+  }, {
     "id" : "cloud.tools",
     "builds" : [ ],
     "versions" : [ {
@@ -2717,6 +2744,20 @@
       }
     }
   }, {
+    "id" : "dotnet.memory.consumption",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:measured|histogram_configured}" ],
+      "event_data" : {
+        "buckets" : [ "{regexp#integer}" ],
+        "kind" : [ "{enum:WorkingSet|ManagedMemory}" ],
+        "process" : [ "{enum:RiderBackend|RoslynWorker|MsBuildWorker|DebuggerWorker}" ]
+      }
+    }
+  }, {
     "id" : "dotnet.microservices",
     "builds" : [ ],
     "versions" : [ {
@@ -3448,7 +3489,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:projectModelGenerated|targetInfoGenerated}" ],
+      "event_id" : [ "{enum:projectModelGenerated|targetInfoGenerated|solutionStructureScanned}" ],
       "event_data" : {
         "duration_ms" : [ "{regexp#integer}" ],
         "number" : [ "{regexp#integer}" ],
@@ -3632,16 +3673,20 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:table.data.loaded|table.info.loaded|table.data.sorted|table.data.filtered}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "data_accessor" : [ "{util#class_name}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
         "loaded_rows_count" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "table_cols_count" : [ "{regexp#integer}" ],
         "table_rows_count" : [ "{regexp#integer}" ],
-        "table_type" : [ "{enum:PANDAS_DATA_FRAME|PANDAS_SERIES|NUMPY_ARRAY|POLARS_TABLE|GENERIC_TABLE|PYSPARK_TABLE|EXTERNAL}", "{enum:PANDAS_DATA_FRAME|PANDAS_SERIES|NUMPY_ARRAY|EAGER_TENSOR|RESOURCE_VARIABLE|SPARSE_TENSOR|TORCH_TENSOR|POLARS_DATA_FRAME|POLARS_SERIES|PYSPARK_TABLE|HF_DATASET|KOTLIN_DATAFRAME|GENERIC_TABLE|EXTERNAL|NOT_ANY}", "{enum:NUMPY_RECARRAY}" ]
+        "table_type" : [ "{enum:PANDAS_DATA_FRAME|PANDAS_SERIES|NUMPY_ARRAY|POLARS_TABLE|GENERIC_TABLE|PYSPARK_TABLE|EXTERNAL}", "{enum:PANDAS_DATA_FRAME|PANDAS_SERIES|NUMPY_ARRAY|NUMPY_RECARRAY|EAGER_TENSOR|RESOURCE_VARIABLE|SPARSE_TENSOR|TORCH_TENSOR|POLARS_DATA_FRAME|POLARS_SERIES|PYSPARK_TABLE|HF_DATASET|KOTLIN_DATAFRAME|GENERIC_TABLE|EXTERNAL|NOT_ANY}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "table.data.loaded", "table.info.loaded", "table.data.sorted", "table.data.filtered", "statistics.header.statistics.data.computed", "statistics.header.visualization.data.computed" ]
       }
     }
   }, {
@@ -4277,19 +4322,21 @@
       "from" : "2"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:search.session.started|check.box.toggled|regexp.help.clicked|pin.toggled}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "case_sensitive" : [ "{enum#boolean}" ],
         "context" : [ "{enum#__context}" ],
         "option_name" : [ "{enum#__option_name}" ],
         "option_value" : [ "{enum#boolean}" ],
         "regular_expressions" : [ "{enum#boolean}" ],
+        "selected_scope" : [ "{enum:Project|Module|Directory|Scopes|Other|Undefined}" ],
         "type" : [ "{enum:FindInFile|FindInPath|Unknown}" ],
         "whole_words_only" : [ "{enum#boolean}" ],
         "with_file_filter" : [ "{enum#boolean}" ]
       },
       "enums" : {
         "__context" : [ "ANY", "IN_STRING_LITERALS", "IN_COMMENTS", "EXCEPT_STRING_LITERALS", "EXCEPT_COMMENTS", "EXCEPT_COMMENTS_AND_STRING_LITERALS" ],
+        "__event_id" : [ "search.session.started", "check.box.toggled", "regexp.help.clicked", "pin.toggled", "search.scope.changed" ],
         "__option_name" : [ "CaseSensitive", "PreserveCase", "WholeWords", "Regex", "FileFilter" ]
       }
     }
@@ -4563,6 +4610,35 @@
         "duration_ms" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
         "is_full_refresh" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "github.login",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:login}" ],
+      "event_data" : {
+        "auth_type" : [ "{enum:OAUTH|TOKEN}" ],
+        "re_login" : [ "{enum#boolean}" ],
+        "server_offering" : [ "{enum:GITHUB_COM|GHE_CLOUD|GHE_SERVER}" ],
+        "source" : [ "{enum:GIT|CLONE|SHARE|PR_TW|PR_LIST|PR_DETAILS|PR_CHANGES|PR_TIMELINE|SETTINGS|GIST|SYNC_FORK|TRACKER|WELCOME_SCREEN|UNKNOWN}" ]
+      }
+    }
+  }, {
+    "id" : "gitlab.login",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:login}" ],
+      "event_data" : {
+        "is_gitlab_com" : [ "{enum#boolean}" ],
+        "re_login" : [ "{enum#boolean}" ],
+        "source" : [ "{enum:GIT|SETTINGS|CLONE|SHARE|MR_TW|MR_LIST|MR_DETAILS|MR_TIMELINE|SNIPPET|WELCOME_SCREEN|UNKNOWN}" ]
       }
     }
   }, {
@@ -5732,6 +5808,7 @@
         "roots_count" : [ "{regexp#integer}" ],
         "rush_json" : [ "{enum#boolean}" ],
         "total_package_json_files" : [ "{regexp#integer}" ],
+        "tsconfigs_count" : [ "{regexp#integer}" ],
         "turbo_json" : [ "{enum#boolean}" ]
       }
     }
@@ -7496,10 +7573,11 @@
         "ej_version" : [ "{regexp#version}" ],
         "file_id" : [ "{regexp#short_hash}" ],
         "follow_up" : [ "{enum#boolean}" ],
-        "issue_id" : [ "{regexp#short_hash}" ]
+        "issue_id" : [ "{regexp#short_hash}" ],
+        "speed_mode" : [ "{enum:Speed|Quality}" ]
       },
       "enums" : {
-        "__event_id" : [ "task.done.button.clicked", "task.reopen.from.history", "task.ask.confirmation.answered", "task.cancel.step.button.clicked", "task.description.input", "task.go.back.button.clicked", "task.command.auto.approve.checked", "task.description.focus", "task.recent.files.removed", "task.recent.files.selected", "task.rollback.button.clicked", "task.ask.confirmation.showed", "task.recent.files.button.clicked", "task.stop.button.clicked", "task.delete.menu.clicked", "task.start.again.menu.clicked", "task.stop.menu.clicked", "task.start.again.button.clicked", "task.decline.button.clicked", "task.rollback.menu.clicked", "task.delete.all.menu.clicked", "task.example.clicked", "task.submit" ]
+        "__event_id" : [ "task.done.button.clicked", "task.reopen.from.history", "task.ask.confirmation.answered", "task.cancel.step.button.clicked", "task.description.input", "task.go.back.button.clicked", "task.command.auto.approve.checked", "task.description.focus", "task.recent.files.removed", "task.recent.files.selected", "task.rollback.button.clicked", "task.ask.confirmation.showed", "task.recent.files.button.clicked", "task.stop.button.clicked", "task.delete.menu.clicked", "task.start.again.menu.clicked", "task.stop.menu.clicked", "task.start.again.button.clicked", "task.decline.button.clicked", "task.rollback.menu.clicked", "task.delete.all.menu.clicked", "task.example.clicked", "task.submit", "task.command.speed.mode.changed" ]
       }
     },
     "anonymized_fields" : [ {
@@ -8564,12 +8642,15 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "count" : [ "{regexp#integer}" ],
+        "duration_s" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
-        "plugin_version" : [ "{regexp#version}", "{util#plugin_version}" ]
+        "plugin_version" : [ "{regexp#version}", "{util#plugin_version}" ],
+        "restart_required" : [ "{enum#boolean}" ]
       },
       "enums" : {
-        "__event_id" : [ "load", "unload.fail", "unload.success", "unload.failure", "load.success" ]
+        "__event_id" : [ "load", "unload.fail", "unload.success", "unload.failure", "load.success", "load.paid" ]
       }
     }
   }, {
@@ -8772,7 +8853,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:all.indexable.files|content.indexable.files}" ],
+      "event_id" : [ "{enum:all.indexable.files|content.indexable.files|all.non.indexable.files}" ],
       "event_data" : {
         "count" : [ "{regexp#integer}" ]
       }
@@ -10464,6 +10545,22 @@
       }
     }
   }, {
+    "id" : "rider.sqlproj.events",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:import_started|reference_added|publish_started}" ],
+      "event_data" : {
+        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}" ],
+        "publush_type" : [ "{enum:Update|GenerateScript}" ],
+        "reference_location" : [ "{enum:SameDatabaseSameServer|DifferentDatabaseSameServer|DifferentDatabaseDifferentServer}" ],
+        "reference_type" : [ "{enum:Project|SystemDatabase|Dacpac|NugetPackage}" ],
+        "with_publish_profile" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "rider.sqlproj.schemaCompare",
     "builds" : [ ],
     "versions" : [ {
@@ -10803,6 +10900,21 @@
       },
       "enums" : {
         "__event_id" : [ "xcasset.editor.opened", "xcasset.propertyChanged", "xcasset.propertiesClosed", "xcasset.propertiesOpened", "xcasset.item.added", "xcasset.item.removeCanceled", "xcasset.item.removed", "xcasset.added", "xcasset.corrupted.revealFolder", "xcasset.corrupted.recreate", "xcasset.corrupted.open", "xcasset.corrupted.navigate" ]
+      }
+    }
+  }, {
+    "id" : "ruby.debugger.gems",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:up_to_date|installation_cancelled|installation_attempt|installation_state}" ],
+      "event_data" : {
+        "count" : [ "{regexp#integer}" ],
+        "installation_cancelled" : [ "{enum#boolean}" ],
+        "installation_state" : [ "{enum:success|fail|timeout|bundled_gems_missing}" ],
+        "up_to_date" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -11210,13 +11322,14 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:error_coverage|muted_error}" ],
+      "event_id" : [ "{enum:error_coverage|muted_error|false_positive}" ],
       "event_data" : {
         "compiler_error_code" : [ "{util#rust_error_code_validation_rule}" ],
         "error_code_matches" : [ "{enum#boolean}" ],
         "error_was_highlighted" : [ "{enum#boolean}" ],
         "file_was_highlighted" : [ "{enum#boolean}" ],
         "highlighted_error_code" : [ "{util#rust_error_code_validation_rule}" ],
+        "inspection_name" : [ "{util#rust_inspection_name_validation_rule}" ],
         "muted_error_code" : [ "{enum:E0277|E0599}" ],
         "muted_type" : [ "{enum:TyAnon|TyInfer|TyPlaceholder|TyProjection|TyReference|TySlice|TyTraitObject|TyTypeParameter|TyUnknown|CtUnknown|other}" ],
         "reason_for_no_error" : [ "{enum:BLACKLISTED_SELFTY|BLACKLISTED_TRAIT_REF|MULTI_VARIANT_METHOD|ZERO_VARIANT_METHOD|UNEXPANDED_DERIVE_MACRO|HAS_ATTRIBUTE_MACROS_AFTER_DERIVE|CONTEXT_HAS_NESTED_MODS|MACRO_EXPANSION_WITH_ERROR|UNKNOWN_CAUSE_ELEMENT|ASYNC_AWAIT|ERROR_NOT_DETECTED}", "{enum:IMPL_FOR_UNRESOLVED_TRAIT}", "{enum:ERROR_NOT_DETECTED_OUT_OF_BLOCK}" ]
@@ -12426,7 +12539,7 @@
         "total_duration_ms" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "local.exec", "terminal.command.executed", "terminal.command.finished", "backend.typing.latency", "frontend.document.update.latency", "backend.document.update.latency", "frontend.output.latency", "backend.output.latency", "backend.text.buffer.collection.latency", "frontend.typing.latency", "hyperlink.followed", "startup.cursor.showing.latency", "focus.gained", "focus.lost", "session.restored", "tab.opened", "startup.shell.starting.latency", "startup.first.output.latency" ]
+        "__event_id" : [ "local.exec", "terminal.command.executed", "terminal.command.finished", "backend.typing.latency", "frontend.document.update.latency", "backend.document.update.latency", "frontend.output.latency", "backend.output.latency", "backend.text.buffer.collection.latency", "frontend.typing.latency", "hyperlink.followed", "startup.cursor.showing.latency", "focus.gained", "focus.lost", "session.restored", "tab.opened", "startup.shell.starting.latency", "startup.first.output.latency", "tab.closing.check.latency" ]
       }
     }
   }, {
@@ -14171,5 +14284,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5904"
+  "version" : "5930"
 }

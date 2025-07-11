@@ -25,20 +25,20 @@
     <option name="EDITOR_FONT_SIZE" value="13" />
   </console-font>
   <colors>
-    <option name="FILESTATUS_ADDED" value="ADDB67" />
-    <option name="FILESTATUS_DELETED" value="EF5350" />
-    <option name="FILESTATUS_HIJACKED" value="C792EA" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="637777" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="F78C6C" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="F78C6C" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="F78C6C" />
-    <option name="FILESTATUS_MERGED" value="82AAFF" />
-    <option name="FILESTATUS_MODIFIED" value="FFCB8B" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="7FDBCA" />
-    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="7FDBCA" />
+    <option name="FILESTATUS_ADDED" value="72F1B8" />
+    <option name="FILESTATUS_DELETED" value="FE4450" />
+    <option name="FILESTATUS_HIJACKED" value="FEDE5D" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="FFFFFF59" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="03EDF9" />
+    <option name="FILESTATUS_MERGED" value="36F9F6" />
+    <option name="FILESTATUS_MODIFIED" value="F92AAD" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="B893CE" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="B893CE" />
     <option name="FILESTATUS_OBSOLETE" value="FFCB6B" />
-    <option name="FILESTATUS_SUPPRESSED" value="D6DEEB" />
-    <option name="FILESTATUS_SWITCHED" value="C792EA" />
-    <option name="FILESTATUS_UNKNOWN" value="EF5350" />
+    <option name="FILESTATUS_SUPPRESSED" value="848BBD" />
+    <option name="FILESTATUS_SWITCHED" value="FEDE5D" />
+    <option name="FILESTATUS_UNKNOWN" value="999999" />
   </colors>
 </scheme>

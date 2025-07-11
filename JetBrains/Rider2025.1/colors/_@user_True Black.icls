@@ -15,6 +15,21 @@
     <option name="CARET_ROW_COLOR" value="101010" />
     <option name="DOC_COMMENT_GUIDE" value="" />
     <option name="DOC_COMMENT_LINK" value="" />
+    <option name="FILESTATUS_ADDED" value="008C4C" />
+    <option name="FILESTATUS_DELETED" value="B23566" />
+    <option name="FILESTATUS_HIJACKED" value="9EAA00" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="677290" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="DD002E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="DD002E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="DD002E" />
+    <option name="FILESTATUS_MERGED" value="8F3EB9" />
+    <option name="FILESTATUS_MODIFIED" value="DD002E" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="FA0036" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="FA0036" />
+    <option name="FILESTATUS_OBSOLETE" value="798300" />
+    <option name="FILESTATUS_SUPPRESSED" value="677290" />
+    <option name="FILESTATUS_SWITCHED" value="D90070" />
+    <option name="FILESTATUS_UNKNOWN" value="D90070" />
     <option name="INDENT_GUIDE" value="808080" />
     <option name="LINE_NUMBERS_COLOR" value="808080" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="FFFFFF" />
