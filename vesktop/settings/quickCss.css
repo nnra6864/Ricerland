@@ -3,10 +3,10 @@
 
 .theme-dark {
 	/* Variables */
-	--background-col: #102840;
-	--background-col-alt: #102840;
-	--background-highlight: #153959;
-	--background-highlight-alt: #153959;
+	--background-col: #10284010;
+	--background-col-alt: #10284010;
+	--background-highlight: #15395910;
+	--background-highlight-alt: #15395910;
 	--text-col: #ACCAE6;
 	--highlight-col: #BDDFFF;
 	--placeholder-col: #97B3CC;

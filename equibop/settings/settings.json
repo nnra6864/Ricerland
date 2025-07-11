@@ -445,7 +445,8 @@
             "memberList": false,
             "voiceChannelList": false,
             "emojiReactions": false,
-            "showGradient": false
+            "showGradient": false,
+            "userProfilePopout": false
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -1474,6 +1475,15 @@
             "reqCtrl": true,
             "reqShift": true,
             "reqAlt": false
+        },
+        "ExportMessages": {
+            "enabled": false
+        },
+        "GuildTagSettings": {
+            "enabled": false
+        },
+        "OrbolayBridge": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1486,7 +1496,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1751657980954
+        "settingsSyncVersion": 1752251085729
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

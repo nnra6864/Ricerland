@@ -1,20 +1,20 @@
 * {
-	background-col: rgba(ricer.col.background.rgb, 0.5);
-	background-selected-col: rgba(ricer.col.background_highlight.rgb, 0.1);
+	background-col: rgba(ricer.col.background.rgb, ricer.col.background.a01);
+	background-selected-col: rgba(ricer.col.background_highlight.rgb, ricer.col.background_highlight.a01);
     background-color: transparent;
     transparency: "real";
-	
-	color: #ricer.col.foreground.hex;
-	text-col: #ricer.col.foreground.hex;
-	text-selected-col: #ricer.col.foreground_alt.hex;
-	border-col: #ricer.col.outline.hex;
-    highlight: underline bold #ricer.col.foreground_highlight_alt.hex;
+
+	color: #ricer.col.foreground;
+	text-col: #ricer.col.foreground;
+	text-selected-col: #ricer.col.foreground_alt;
+	border-col: #ricer.col.outline;
+    highlight: underline bold #ricer.col.foreground_highlight_alt;
 }
 
 window {
     location: center;
     anchor: center;
-	width: 20%;
+	width: 800px;
 	height: 40%;
     border: 0%;
     border-radius: ricer.val.rounding\px;
@@ -24,7 +24,6 @@ window {
     orientation: horizontal;
     spacing: 0;
 }
-
 
 mainbox {
     spacing: 0;
