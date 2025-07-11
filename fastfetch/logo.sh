@@ -7,6 +7,7 @@ export LC_ALL=en_US.UTF-8
 cat "$(dirname "$0")/NN"
 echo ""
 echo ""
+echo ""
 
 # Get the width of the first line of the logo
 LOGO_WIDTH=$(head -n1 "$(dirname "$0")/NN" | wc -m)
