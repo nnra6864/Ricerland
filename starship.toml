@@ -1,0 +1,54 @@
+format = """
+[](white)\
+$time\
+[](fg:white bg:blue)\
+$os\
+[ ](fg:bright-blue bg:blue)\
+$username\
+[](fg:blue bg:bright-blue)\
+$directory\
+[](fg:bright-blue bg:bright-cyan)\
+$git_branch\
+[ ](fg:cyan bg:bright-cyan)\
+$git_status\
+[](fg:bright-cyan) 
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+[time]
+disabled = false
+time_format = "%R"            # Hour:Minute Format
+style = "bg:white fg:black"
+format = '[🕰 $time ]($style)'
+
+[os]
+format = "[ $symbol ]($style)"
+style = "bg:blue fg:white"
+disabled = false
+
+[os.symbols]
+Arch = ""
+
+[username]
+show_always = true
+style_user = "bg:blue fg:white"
+style_root = "bg:blue fg:red"
+format = '[$user ]($style)'
+disabled = false
+
+[directory]
+style = "bg:bright-blue fg:white"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:bright-cyan fg:black"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:bright-cyan fg:black"
+format = '[$all_status$ahead_behind ]($style)'
