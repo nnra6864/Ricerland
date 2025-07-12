@@ -18,7 +18,7 @@
         },
         {
           "background": "#ricer.col.br_cyan",
-          "foreground": "#ricer.col.black",
+          "foreground": "#ricer.col.white",
           "style": "diamond",
           "template": " {{ .Icon }} ",
           "trailing_diamond": "<#ricer.col.cyan> ",
@@ -28,7 +28,7 @@
           "type": "session",
           "style": "diamond",
           "background": "#ricer.col.br_cyan",
-          "foreground": "{{ if .Root }}#ricer.col.red{{ else }}#ricer.col.black{{ end }}",
+          "foreground": "{{ if .Root }}#ricer.col.red{{ else }}#ricer.col.white{{ end }}",
           "trailing_diamond": "",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
         },
@@ -62,7 +62,8 @@
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "style": "powerline",
+          "style": "diamond",
+          "trailing_diamond": "",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         }

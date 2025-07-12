@@ -18,7 +18,7 @@
         },
         {
           "background": "#6DA1D8",
-          "foreground": "#102840",
+          "foreground": "#ACCAE6",
           "style": "diamond",
           "template": " {{ .Icon }} ",
           "trailing_diamond": "<#608FBF> ",
@@ -28,7 +28,7 @@
           "type": "session",
           "style": "diamond",
           "background": "#6DA1D8",
-          "foreground": "{{ if .Root }}#BF3030{{ else }}#102840{{ end }}",
+          "foreground": "{{ if .Root }}#BF3030{{ else }}#ACCAE6{{ end }}",
           "trailing_diamond": "",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
         },
@@ -62,7 +62,8 @@
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "style": "powerline",
+          "style": "diamond",
+          "trailing_diamond": "",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
