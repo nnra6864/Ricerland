@@ -82,6 +82,7 @@
 !/fish/
 !/nushell/
 !/oh-my-posh/
+!/starship.toml
 !/btop/
 !/htop/
 !/cava/

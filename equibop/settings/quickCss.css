@@ -7,12 +7,12 @@
 	--background-col-alt: #10284010;
 	--background-highlight: #15395910;
 	--background-highlight-alt: #15395910;
-	--text-col: #ACCAE6;
-	--highlight-col: #BDDFFF;
-	--placeholder-col: #97B3CC;
-	--link-col: #6DA1D8;
-	--button-text-col: #608FBF;
-	--outline-col: #608FBF;
+	--text-col: #ACCAE6FF;
+	--highlight-col: #BDDFFFFF;
+	--placeholder-col: #97B3CCFF;
+	--link-col: #6DA1D8FF;
+	--button-text-col: #608FBFFF;
+	--outline-col: #608FBFFF;
 	--rounding-big: 10px;
 	--rounding-small: calc(var(--rounding-big) / 2);
 

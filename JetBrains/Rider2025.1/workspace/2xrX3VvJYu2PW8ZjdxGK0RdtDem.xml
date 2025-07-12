@@ -11,7 +11,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="400">
+            <state>
               <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
             </state>
           </provider>
@@ -21,7 +21,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="4432">
+            <state>
               <caret line="291" selection-start-line="291" selection-end-line="291" />
             </state>
           </provider>
@@ -31,7 +31,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="288">
+            <state>
               <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="737">
+            <state relative-caret-position="541">
               <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
@@ -51,7 +51,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="880">
+            <state>
               <caret line="66" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
@@ -63,8 +63,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 579,
-      "lastUsed": 1751703372620
+      "usageCount": 584,
+      "lastUsed": 1752256219032
     },
     "Image": {
       "usageCount": 7,
@@ -165,7 +165,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="579" lastUsage="1751703372620" />
+      <summary usageCount="584" lastUsage="1752256219032" />
     </language>
     <language id="JSON">
       <summary usageCount="3" lastUsage="1751474857045" />
@@ -475,7 +475,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312805000" />
+    <option name="totallyTimeSpent" value="312833000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -561,10 +561,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="765" y="229" key="RiderGenerateDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1751188147970" />
-    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor" timestamp="1751703442343">
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor" timestamp="1752256241305">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1751703442343" />
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1752256241305" />
     <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
     <state width="623" height="797" key="SwitcherDM" timestamp="1751348433042">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -843,36 +843,36 @@
     <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/ITweak.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state>
           <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="291" selection-start-line="291" selection-end-line="291" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
+        <state relative-caret-position="541">
           <caret line="95" selection-start-line="95" selection-end-line="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
+        <state>
           <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state>
           <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4432">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
         </state>
       </provider>
     </entry>

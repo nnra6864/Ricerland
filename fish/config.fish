@@ -865,6 +865,7 @@ if status is-interactive
 end
 
 oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
+#starship init fish | source
 
 # Created by `pipx` on 2025-02-06 06:22:34
 set PATH $PATH /home/nnra/.local/bin

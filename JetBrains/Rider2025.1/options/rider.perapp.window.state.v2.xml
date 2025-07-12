@@ -193,6 +193,7 @@
           "id": "AIAssistant",
           "order": 1,
           "anchor": "RIGHT",
+          "isVisible": true,
           "isShowStripeButton": false,
           "weight": 0.25029433
         },
@@ -219,7 +220,6 @@
           "order": 5,
           "anchor": "RIGHT",
           "isActiveOnStart": true,
-          "isVisible": true,
           "weight": 0.1693612,
           "sideWeight": 0.47386363,
           "isSplit": true

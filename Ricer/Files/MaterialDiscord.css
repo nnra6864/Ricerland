@@ -3,10 +3,10 @@
 
 .theme-dark {
 	/* Variables */
-	--background-col: #ricer.col.background.hexa;
-	--background-col-alt: #ricer.col.background_alt.hexa;
-	--background-highlight: #ricer.col.background_highlight.hexa;
-	--background-highlight-alt: #ricer.col.background_highlight_alt.hexa;
+	--background-col: #ricer.col.background;
+	--background-col-alt: #ricer.col.background_alt;
+	--background-highlight: #ricer.col.background_highlight;
+	--background-highlight-alt: #ricer.col.background_highlight_alt;
 	--text-col: #ricer.col.foreground;
 	--highlight-col: #ricer.col.foreground_highlight;
 	--placeholder-col: #ricer.col.foreground_placeholder;

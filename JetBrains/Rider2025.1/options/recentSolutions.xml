@@ -391,26 +391,10 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Nisualizer – GameManagerScript.cs" projectWorkspaceId="2q1M50SoKyREM3P6dGoQmQZQc6p">
-              <option name="activationTimestamp" value="1751168532459" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-251.26094.147" />
-              <option name="buildTimestamp" value="1749665700000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="5" />
-              </option>
-              <frame x="12" y="12" width="2536" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1751167540988" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="Katana – SettingsManager.cs" opened="true" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
-              <option name="activationTimestamp" value="1751734024289" />
+            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
+              <option name="activationTimestamp" value="1752256242916" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-251.26094.147" />
               <option name="buildTimestamp" value="1749665700000" />
@@ -419,12 +403,28 @@
               </option>
               <frame x="12" y="12" width="2536" height="1416" />
               <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1751703372474" />
+              <option name="projectOpenTimestamp" value="1752256218925" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Nisualizer – GameManagerScript.cs" opened="true" projectWorkspaceId="2q1M50SoKyREM3P6dGoQmQZQc6p">
+              <option name="activationTimestamp" value="1752256719552" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.26094.147" />
+              <option name="buildTimestamp" value="1749665700000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="12" y="12" width="2536" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1752256439642" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Nisualizer/Nisualizer/Nisualizer.sln" />
   </component>
 </application>

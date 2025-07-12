@@ -380,12 +380,12 @@
         "plugin_version" : [ "{util#plugin_version}" ],
         "selected" : [ "{util#class_name}" ],
         "status" : [ "{enum:SUCCESS|VALIDATION_ERROR|ERROR|CANCEL}", "{enum:SUCCESS|ERROR|CANCELED}" ],
-        "type" : [ "{enum#driver_type}", "{enum:LOCAL|SFTP|YARN|HIVE|GLUE|EMR|DATAPROC|ARBITRARY_CLUSTER|TENCENT_COS|HDFS|GCS|YANDEX|ALIBABA_OSS|AZURE|MINIO|LINODE|DOS|S3|CLOUDFLARE|KAFKA|ZEPPELIN|SPARK_MONITORING|SPARK_SUBMIT_CLUSTER|FLINK|DATABRICKS|TEST}" ],
+        "type" : [ "{enum#driver_type}" ],
         "value" : [ "{enum#boolean}", "{enum:direct|file}", "{enum:DISABLED|GLOBAL|CUSTOM}", "{enum:Explicit uri|Configuration files directory}", "{enum:PLAIN|SCRAM_512|SCRAM_256|KERBEROS}", "{enum:LOCAL|STANDALONE|MESOS|YARN|KUBERNETES|NOMAD}", "{enum:MATCH|START_WITH|CONTAINS|REGEX}", "{enum:Default credential providers chain|Explicit access key and secret key|Profile from credentials file|anonymous}", "{enum:NOT_SPECIFIED|SASL|SSL|AWS_IAM}", "{enum:HTTP|SOCKS}", "{enum:CLIENT|CLUSTER}", "{enum:EMR|DATAPROC|SSH|ADD_SSH|ADD_EMR|ADD_DATAPROC}", "{enum:ARBITRARY_CLUSTER|ADD_ARBITRARY_CLUSTER}", "{enum:confluent|aws_msk}", "{enum:none|confluent|glue}", "{enum:NOT_SPECIFIED|BASIC_AUTH|BEARER}", "{enum:cloud|from_ui|from_properties}", "{enum:2.10|2.11|2.12}", "{enum:KEYTAB|PASSWORD|SUBJECT}" ]
       },
       "enums" : {
         "__event_id" : [ "showVersioning.changed", "urlField.changed", "sshLink.invoke", "brokerPropertiesEditor.changed", "sudoCommand.changed", "classNameField.changed", "brokerSslKeystorePassword.changed", "proxyPasswordField.changed", "isInteractiveField.changed", "region.changed", "propertiesFileField.invoke", "password.changed", "databasePatternField.changed", "nameField.changed", "customEndpoint.changed", "operationTimeout.changed", "targetDirectory.changed", "brokerPropertiesSource.changed", "registryConfluentProxyUrl.changed", "proxyLoginField.changed", "bucketFilter.changed", "test.connection.result", "clusterComboBox.invoke", "secretKey.changed", "workDirectoryField.invoke", "url.changed", "tablePatternField.changed", "sparkHomeField.invoke", "propertiesEditor.changed", "archivesField.changed", "sparkVersion.changed", "brokerSaslPassword.changed", "proxyEnableComboBox.changed", "notificationAfter.changed", "envParamsField.changed", "ssh.status.updated", "endpoint.changed", "brokerSslUseKeystore.changed", "login.changed", "profileConfigPath.changed", "connection.is.enabled.changed", "registryGlueRegistryName.changed", "totalExecutorCoresField.changed", "authTypeChooser.changed", "anonymous.changed", "brokerSaslSecurityProtocol.changed", "brokerAwsIamSecretKey.changed", "useKerberosTicketCache.changed", "registryConfluentSslKeystoreLocation.changed", "proxyUserField.changed", "beforeShellScriptField.changed", "numExecutorsField.changed", "principalField.changed", "brokerSaslMechanism.changed", "proxyHostField.changed", "sslTrustAllCheckBox.changed", "classNameField.invoke", "test.connection.invoke", "rootPath.changed", "brokerAwsIamAccess.changed", "masterField.changed", "brokerSaslUseTicketCache.changed", "targetDirectory.invoke", "clusterManagerField.changed", "executorCoresField.changed", "proxyWorkstation.changed", "driverClassPathField.changed", "sourceTypeChooser.changed", "sparkMonitoringField.changed", "accessKey.changed", "registryConfluentSslKeystorePassword.changed", "connectionString.changed", "useCustomSftpCommand.changed", "basicPass.changed", "customRegion.changed", "regions.changed", "suggestSudo.changed", "sparkPropertiesEditor.changed", "superviseField.changed", "brokerSslTrustoreLocation.changed", "proxyBasicAuthCheckbox.changed", "artifactArgsField.changed", "brokerMskUrl.changed", "bucketFilterComboBox.changed", "configPathField.changed", "registryConfluentUrl.changed", "sshComponent.changed", "brokerAwsIamProfile.changed", "loadSparkCommand.invoke", "changeAccount.invoke", "jarsField.invoke", "saslPrincipal.changed", "sparkMonitoringComboBox.changed", "username.changed", "registryConfluentBasicPassword.changed", "jaasEntryField.changed", "basicAuthPasswordField.changed", "profileCredentialsPath.changed", "registryConfluentSslTruststorePassword.changed", "brokerSslKeystoreLocation.changed", "brokerConfluentConf.changed", "keytabField.changed", "brokerSaslPrincipal.changed", "connection.apply.invoke", "registryConfluentBasicAuth.changed", "proxyPortField.changed", "registryGlueAuthType.changed", "enableCacheAuthField.changed", "proxyIsDisabledProxy.changed", "connection.cancel.invoke", "connection.per.project.changed", "isBucketSourceFromWorkspace.changed", "brokerSaslUsername.changed", "registryGlueProfile.changed", "bucketFilterByRegion.changed", "systemNotificationEnabled.changed", "enableZtools.changed", "brokerPropertiesFile.changed", "registryConfluentSslTrustoreLocation.changed", "customEndpointCheckbox.changed", "tunnelField.changed", "brokerSslTruststorePassword.changed", "propertiesFileField.changed", "queueField.changed", "basicAuthLoginField.changed", "keytabField.invoke", "brokerSaslKeytab.changed", "profileName.changed", "flinkVersion.changed", "verboseField.changed", "excludePackagesField.changed", "brokerAwsIamAuthType.changed", "bucket.changed", "address.changed", "brokerAuthType.changed", "workDirectoryField.changed", "brokerMskCloudAuthType.changed", "sasToken.changed", "regionCombobox.changed", "useSshPasswordForSudo.changed", "proxyTypeComboBox.changed", "proxyDomainField.changed", "userName.changed", "credentialFileChooser.changed", "deployModeField.changed", "userCustomConfigPath.changed", "driverLibraryPathField.changed", "brokerMskCloudSecretKey.changed", "registryConfluentSslKeyPassword.changed", "driverCoresField.changed", "clusterComboBox.changed", "brokerCloudSource.changed", "registryConfluentProperties.changed", "registryType.changed", "useSudo.changed", "registryConfluentSslEnableValidation.changed", "googleProject.changed", "shellExecutorField.changed", "saslKeytab.changed", "jarsField.changed", "registryGlueAccessKey.changed", "actionLink.invoke", "container.changed", "sparkHomeField.changed", "registryConfluentAuth.changed", "artifactPathField.changed", "registryConfluentSslUseKeystore.changed", "registryGlueRegion.changed", "storageChooser.changed", "executorMemoryField.changed", "driverMemoryField.changed", "key.changed", "packagesField.changed", "filesField.invoke", "registryConfluentSource.changed", "registryGlueSecretKey.changed", "configFolder.changed", "brokerSslKeyPassword.changed", "appidField.changed", "pyFilesField.changed", "hadoopVersion.changed", "brokerMskCloudProfile.changed", "kerberosPasswordField.changed", "repositoriesField.changed", "brokerConfSource.changed", "driverLibraryPathField.invoke", "pyFilesField.invoke", "driverJavaOptionsField.changed", "tunnelComponent.changed", "scalaVersion.changed", "sftpCommand.changed", "filesField.changed", "proxyNonProxyHostsField.changed", "brokerMskCloudAccessKey.changed", "brokerSslEnableValidation.changed", "archivesField.invoke", "kerberosTypeField.changed", "proxyAuthEnabledCheckbox.changed", "driverClassPathField.invoke", "enableBasicAuthCheckbox.changed", "rootPathComponent.changed", "registryConfluentUseBrokerSsl.changed", "artifactPathField.invoke", "registryConfluentBearerToken.changed", "registryConfluentUseProxy.changed", "jaasConfigPathPerIde.changed", "kerberosPrincipalField.changed", "enableTunnelField.changed", "kerberosAuthType.changed", "noneAuthType.changed", "settings.group.visibility.updated", "sftpConnection.changed", "sparkMonitoringConnection.changed", "attach.inlay.ssh.shown", "attach.inlay.ssh", "customEndpointField.changed", "accountIdField.changed", "endpointCheckbox.changed" ],
-        "driver_type" : [ "s3", "local", "hdfs", "gcs", "sftp", "azure", "linode", "minio", "ceph", "do_spaces", "alibabaOSS", "yandexCloud", "S3", "DATABRICKS", "LINODE", "GOOGLE_CLOUD_STORAGE", "MINIO", "HDFS", "SFTP", "ALIBABA_OSS", "HADOOP_MONITORING", "HIVE_METASTORE", "EMR", "YANDEX_STORAGE", "AZURE", "ZEPPELIN", "GLUE", "TEST", "SPARK_MONITORING", "LOCAL", "KAFKA", "DIGITAL_SPACES_OCEAN", "FLINK", "TENCENT_COS", "DATAPROC", "HIVE", "YANDEX", "DOS", "YARN", "SPARK_SUBMIT_CLUSTER", "ARBITRARY_CLUSTER", "CLOUDFLARE" ]
+        "driver_type" : [ "s3", "local", "hdfs", "gcs", "sftp", "azure", "linode", "minio", "ceph", "do_spaces", "alibabaOSS", "yandexCloud", "S3", "DATABRICKS", "LINODE", "GOOGLE_CLOUD_STORAGE", "MINIO", "HDFS", "SFTP", "ALIBABA_OSS", "HADOOP_MONITORING", "HIVE_METASTORE", "EMR", "YANDEX_STORAGE", "AZURE", "ZEPPELIN", "GLUE", "TEST", "SPARK_MONITORING", "LOCAL", "KAFKA", "DIGITAL_SPACES_OCEAN", "FLINK", "TENCENT_COS", "DATAPROC", "HIVE", "YANDEX", "DOS", "YARN", "SPARK_SUBMIT_CLUSTER", "ARBITRARY_CLUSTER", "CLOUDFLARE", "GCS" ]
       }
     }
   }, {
@@ -4642,6 +4642,33 @@
       }
     }
   }, {
+    "id" : "go.dfa",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:quick.doc.nilability.shown|explain.nil.dereference.shown|explain.nil.dereference.hidden}" ],
+      "event_data" : {
+        "duration_ms" : [ "{regexp#integer}" ],
+        "interaction_count" : [ "{regexp#integer}" ],
+        "location_count" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
+    "id" : "go.inspections",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:inspection.shown|inspection.closed}" ],
+      "event_data" : {
+        "duration_ms" : [ "{regexp#integer}" ],
+        "inspection_id" : [ "{util#tool}" ]
+      }
+    }
+  }, {
     "id" : "go.linter.state",
     "builds" : [ ],
     "versions" : [ {
@@ -4652,6 +4679,18 @@
       "event_data" : {
         "exists" : [ "{enum#boolean}" ],
         "selected" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
+    "id" : "go.single.file.opening",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:notification.suppressed|notification.clicked|notification.shown|notification.closed}" ],
+      "event_data" : {
+        "opening_strategy" : [ "{enum:FOLDER|PROJECT}" ]
       }
     }
   }, {
@@ -5170,6 +5209,23 @@
       "event_id" : [ "{enum:invalid.compilation.failure}" ],
       "event_data" : {
         "lang" : [ "{util#lang}" ]
+      }
+    }
+  }, {
+    "id" : "identifier.highlighting",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "2"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:highlighted}" ],
+      "event_data" : {
+        "duration_ms" : [ "{regexp#integer}" ],
+        "file_type" : [ "{util#file_type}" ],
+        "from_cache" : [ "{enum#boolean}" ],
+        "occurrences" : [ "{regexp#integer}" ],
+        "offset" : [ "{regexp#integer}" ],
+        "targets" : [ "{regexp#integer}" ]
       }
     }
   }, {
@@ -6083,6 +6139,23 @@
       }
     }
   }, {
+    "id" : "jupyter.py.variables",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:command_executed}" ],
+      "event_data" : {
+        "command" : [ "{util#class_name}" ],
+        "command_type" : [ "{enum:DF_INFO|SLICE|SLICE_CSV|DF_DESCRIBE|VISUALIZATION_DATA|IMAGE_START_CHUNK_LOAD|IMAGE_CHUNK_LOAD}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
+        "plugin" : [ "{util#plugin}" ],
+        "plugin_type" : [ "{util#plugin_type}" ],
+        "plugin_version" : [ "{util#plugin_version}" ]
+      }
+    }
+  }, {
     "id" : "jupyter.remote.debugger",
     "builds" : [ ],
     "versions" : [ {
@@ -6143,6 +6216,24 @@
       "event_id" : [ "{enum:action.invoked}" ],
       "event_data" : {
         "action_status" : [ "{enum:action_started|action_finished}" ]
+      }
+    }
+  }, {
+    "id" : "kafka.connection.settings",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "index" : [ "{regexp#integer}" ],
+        "status" : [ "{enum:SUCCESS|VALIDATION_ERROR|ERROR|CANCEL}" ],
+        "type" : [ "{enum:LOCAL|KAFKA|TEST}" ],
+        "value" : [ "{enum:Default credential providers chain|Explicit access key and secret key|Profile from credentials file|anonymous}", "{enum#boolean}", "{enum:cloud|from_ui|from_properties}", "{enum:confluent|aws_msk}", "{enum:NOT_SPECIFIED|SASL|SSL|AWS_IAM}", "{enum:NOT_SPECIFIED|BASIC_AUTH|BEARER}", "{enum:direct|file}", "{enum:none|confluent|glue}", "{enum:PLAIN|SCRAM_512|SCRAM_256|KERBEROS}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "brokerMskCloudSecretKey.changed", "registryConfluentSslTrustoreLocation.changed", "connection.cancel.invoke", "registryGlueRegion.changed", "brokerMskUrl.changed", "url.changed", "brokerMskCloudAuthType.changed", "connection.per.project.changed", "registryGlueSecretKey.changed", "brokerMskCloudProfile.changed", "registryConfluentProxyUrl.changed", "brokerAwsIamAuthType.changed", "registryConfluentSource.changed", "registryConfluentBasicPassword.changed", "registryConfluentProperties.changed", "registryConfluentSslTruststorePassword.changed", "brokerSslTrustoreLocation.changed", "registryConfluentBasicAuth.changed", "registryConfluentUrl.changed", "brokerSaslKeytab.changed", "registryConfluentSslKeystoreLocation.changed", "registryConfluentSslKeystorePassword.changed", "test.connection.result", "brokerSaslPassword.changed", "brokerCloudSource.changed", "brokerAuthType.changed", "brokerSaslUsername.changed", "brokerSaslUseTicketCache.changed", "brokerSslEnableValidation.changed", "registryGlueRegistryName.changed", "brokerAwsIamProfile.changed", "registryConfluentAuth.changed", "brokerAwsIamSecretKey.changed", "connection.is.enabled.changed", "registryGlueProfile.changed", "tunnelField.changed", "brokerPropertiesSource.changed", "registryType.changed", "enableTunnelField.changed", "brokerAwsIamAccess.changed", "brokerPropertiesEditor.changed", "brokerPropertiesFile.changed", "registryConfluentUseProxy.changed", "brokerConfSource.changed", "brokerSaslPrincipal.changed", "nameField.changed", "brokerConfluentConf.changed", "registryConfluentSslEnableValidation.changed", "connection.apply.invoke", "brokerSslKeyPassword.changed", "registryConfluentBearerToken.changed", "brokerSslTruststorePassword.changed", "brokerSaslMechanism.changed", "brokerSslUseKeystore.changed", "registryConfluentUseBrokerSsl.changed", "test.connection.invoke", "registryConfluentSslUseKeystore.changed", "registryConfluentSslKeyPassword.changed", "brokerSslKeystoreLocation.changed", "registryGlueAuthType.changed", "brokerSaslSecurityProtocol.changed", "brokerSslKeystorePassword.changed", "brokerMskCloudAccessKey.changed", "registryGlueAccessKey.changed" ]
       }
     }
   }, {
@@ -6853,7 +6944,7 @@
       },
       "enums" : {
         "__error" : [ "GrazieAuthorizationException", "RequestTimeout", "AIAssistantForbiddenException", "TokenLimitExceededException", "ClassNotFoundException" ],
-        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied" ],
+        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed" ],
         "__level" : [ "OSRegistry", "JvmFlag", "JBA", "Allowed", "UserSetting" ]
       }
     },
@@ -7707,6 +7798,20 @@
       },
       "enums" : {
         "__event_id" : [ "artifact.from.pom.added", "index.update.started", "index.update.finished", "index.broken", "index.open", "gav.index.update.started", "gav.index.update.finished" ]
+      }
+    }
+  }, {
+    "id" : "maven.libraries",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:maven.libraries.used}" ],
+      "event_data" : {
+        "context" : [ "{enum:annotation_processor|parent|compiler-dependency|dependency}" ],
+        "group_artifact_id" : [ "{util#maven_libraries_rule_whitelist_ids}" ],
+        "scope" : [ "{enum:|compile|runtime|provided|test|system|import}" ]
       }
     }
   }, {
@@ -12409,7 +12514,7 @@
         "name" : [ "{enum#os}" ],
         "release" : [ "{enum#__release}", "{regexp#version}" ],
         "revision" : [ "{regexp#integer}" ],
-        "shell" : [ "{enum:sh|ash|bash|csh|dash|fish|ksh|tcsh|xonsh|zsh|nu|other|unknown}" ],
+        "shell" : [ "{enum:sh|ash|bash|csh|dash|fish|ksh|tcsh|xonsh|zsh|nu|other|unknown}", "{enum:pwsh}" ],
         "time_zone" : [ "{regexp#time_zone}" ],
         "value" : [ "{regexp#time_zone}", "{regexp#hash}", "{enum:unknown}" ],
         "version" : [ "{regexp#version}", "{enum:unknown.format}", "{enum#__version}" ],
@@ -14284,5 +14389,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "5930"
+  "version" : "5948"
 }

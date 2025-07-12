@@ -10,10 +10,10 @@
     --button-hover-text-color:    #ricer.col.foreground_highlight;
     --button-bg-color:            #ricer.col.button;
     --button-text-color:          #ricer.col.button_foreground;
-    --background-primary:         #ricer.col.background.hexa;
-    --background-primary-alt:     #ricer.col.background.hexa;
-    --background-secondary:       #ricer.col.background_alt.hexa;
-    --background-secondary-alt:   #ricer.col.background_alt.hexa;
+    --background-primary:         #ricer.col.background;
+    --background-primary-alt:     #ricer.col.background;
+    --background-secondary:       #ricer.col.background_alt;
+    --background-secondary-alt:   #ricer.col.background_alt;
     --text-normal:                #ricer.col.foreground;
     --text-faint:                 #ricer.col.foreground_placeholder;
     --text-title-h1:              #ricer.col.foreground_highlight;
@@ -26,8 +26,8 @@
     --text-link:                  #ricer.col.link; 
     --text-a-hover:               #ricer.col.foreground_highlight_alt;
     --text-accent-hover:          #ricer.col.foreground_highlight;
-    --inline-code:                #ricer.col.background_highlight.hexa;
-    --code-block:                 #ricer.col.background_highlight.hexa;
+    --inline-code:                #ricer.col.background_highlight;
+    --code-block:                 #ricer.col.background_highlight;
     --text-a:                     #ricer.col.link;
     --interactive-accent:         #ricer.col.link;
     --text-accent:                #ricer.col.foreground_highlight;

@@ -47,13 +47,13 @@ disabled_hsv = "h+0.s-5.v-15"
 [Colors]
 # Terminal
 black = "10284010"
-red = "bf3030"
-green = "60bf30"
-yellow = "bfa730"
-blue = "3078bf"
-magenta = "8330bf"
-cyan = "608fbf"
-white = "accae6"
+red = "bf3030ff"
+green = "60bf30ff"
+yellow = "bfa730ff"
+blue = "3078bfff"
+magenta = "8330bfff"
+cyan = "608fbfff"
+white = "accae6ff"
 
 # Terminal Bright
 br_black = "$black.$highlight_hsv"
@@ -143,7 +143,7 @@ visualizer = "$white"
 visualizer_outline = "$cyan"
 
 [Files]
-oh-my-posh = "~/.config/oh-my-posh/Ricer.json"
+oh-my-posh = ["~/.config/oh-my-posh/Ricer.json", "hex"]
 Alacritty = "~/.config/alacritty.toml"
 NvimTheme = "~/.config/nvim/lua/theme.lua"
 Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
@@ -158,19 +158,19 @@ QtCol = ["~/.config/qt5ct/colors/Ricer.conf", "hexa"]
 QtColors = ["~/.config/qt6ct/colors/Ricer.conf", "hexa"]
 KDEGlobals = ["~/.config/kdeglobals", "hexa"]
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
-ZenBrowserLogo = "~/.config/ZenBrowser/ZenLogo.svg"
-ZenBrowserUserChrome = "~/.config/ZenBrowser/userChrome.css"
-ZenBrowserUserContent = "~/.config/ZenBrowser/userContent.css"
+ZenBrowserLogo = ["~/.config/ZenBrowser/ZenLogo.svg", "hexa"]
+ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
+ZenBrowserUserContent = ["~/.config/ZenBrowser/userContent.css", "hexa"]
 YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
 Kitty = "~/.config/kitty/kitty.conf"
-KDEColors = "~/.local/share/color-schemes/Ricer.colors"
-RicerHub = "~/.config/RicerHub.py"
-MaterialDisc = "~/.config/vesktop/settings/quickCss.css"
-MaterialDiscord = "~/.config/equibop/settings/quickCss.css"
-Oomox = "~/.config/OomoxRicer"
+KDEColors = ["~/.local/share/color-schemes/Ricer.colors", "hexa"]
+RicerHub = ["~/.config/RicerHub.py", "hexa"]
+MaterialDisc = ["~/.config/vesktop/settings/quickCss.css", "hexa"]
+MaterialDiscord = ["~/.config/equibop/settings/quickCss.css", "hexa"]
+Oomox = ["~/.config/OomoxRicer", "hexa"]
 Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
-Obsidian = "~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css"
+Obsidian = ["~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css", "hexa"]
 AdwSteamGtk = [
 	"~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css",
 	"rgb",

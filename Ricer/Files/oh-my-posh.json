@@ -5,51 +5,58 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#ricer.col.foreground",
-          "foreground": "#ricer.col.background",
+          "background": "#ricer.col.white",
+          "foreground": "#ricer.col.black",
           "properties": {
           "time_format": "15:04:05"
         },
           "style": "diamond",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "leading_diamond": "<#ricer.col.foreground,transparent>\ue0b6</>",
-          "trailing_diamond": "\ue0b0",
+          "template": "🕰 {{ .CurrentDate | date .Format }} ",
+          "leading_diamond": "<#ricer.col.white,transparent>",
+          "trailing_diamond": "<#ricer.col.white,#ricer.col.br_cyan>",
           "type": "time"
         },
         {
-          "background": "#ricer.col.blue",
-          "foreground": "#ricer.col.background",
-          "leading_diamond": "<transparent,#ricer.col.blue>\ue0b0</>",
+          "background": "#ricer.col.br_cyan",
+          "foreground": "#ricer.col.black",
           "style": "diamond",
           "template": " {{ .Icon }} ",
-          "trailing_diamond": "<#ricer.col.background>\ue0b1",
+          "trailing_diamond": "<#ricer.col.cyan> ",
           "type": "os"
         },
         {
-          "background": "#ricer.col.blue",
-          "foreground": "#ricer.col.background",
+          "type": "session",
+          "style": "diamond",
+          "background": "#ricer.col.br_cyan",
+          "foreground": "{{ if .Root }}#ricer.col.red{{ else }}#ricer.col.black{{ end }}",
+          "trailing_diamond": "",
+          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
+        },
+        {
+          "background": "#ricer.col.br_blue",
+          "foreground": "#ricer.col.white",
           "properties": {
-            "folder_icon": "...",
-            "folder_separator_icon": "<#ricer.col.background> \ue0b1 </>",
-            "home_icon": "\ueb06",
+            "folder_icon": " ",
+            "folder_separator_icon": "  ",
+            "home_icon": "",
             "style": "unique",
             "max_depth": 1
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
-          "trailing_diamond": "\ue0b0",
+          "trailing_diamond": "",
           "type": "path"
         },
         {
           "background": "#ricer.col.blue",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.yellow{{ end }}",
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#ricer.col.cyan{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ricer.col.magenta{{ end }}",
             "{{ if gt .Ahead 0 }}#ricer.col.green{{ end }}",
-            "{{ if gt .Behind 0 }}#ricer.col.blue{{ end }}"
+            "{{ if gt .Behind 0 }}#ricer.col.yellow{{ end }}"
           ],
-          "foreground": "#ricer.col.background",
-          "powerline_symbol": "\ue0b0",
+          "foreground": "#ricer.col.white",
+          "powerline_symbol": "",
           "properties": {
             "fetch_stash_count": true,
             "fetch_status": true,
