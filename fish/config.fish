@@ -839,6 +839,8 @@ end
 zoxide init fish | source
 fish_vi_key_bindings
 
+nlear
+
 # Start a Hyprland session
 if status is-interactive
     if test (tty) = /dev/tty1
@@ -861,8 +863,6 @@ if status is-interactive
         end
     end
 end
-
-nlear
 
 oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
 
