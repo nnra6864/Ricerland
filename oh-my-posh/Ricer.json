@@ -11,7 +11,7 @@
           "time_format": "15:04:05"
         },
           "style": "diamond",
-          "template": "🕰 {{ .CurrentDate | date .Format }} ",
+          "template": "🕰   {{ .CurrentDate | date .Format }} ",
           "leading_diamond": "",
           "trailing_diamond": "",
           "type": "time"
@@ -20,9 +20,8 @@
           "background": "#3687D8",
           "foreground": "#ACCAE6",
           "style": "diamond",
-          "template": " {{ .Icon }} ",
+          "template": " {{ .Icon }}  ",
           "leading_diamond": "",
-          "trailing_diamond": "<#ACCAE6> ",
           "type": "os"
         },
         {
