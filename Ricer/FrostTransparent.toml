@@ -122,6 +122,20 @@ shadow_inactive = "$shadow.$inactive_hsv"
 link = "$br_cyan"
 link_visited = "$br_blue"
 
+# Prompt
+prompt_time_bg = "$blue"
+prompt_time_fg = "$white"
+prompt_os_bg = "$blue.v+5"
+prompt_os_fg = "$white"
+prompt_dir_bg = "$blue.v+10"
+prompt_dir_fg = "$white"
+prompt_git_bg = "$blue.v+15"
+prompt_git_fg = "$white"
+prompt_git_changed = "$cyan"
+prompt_git_diverged = "$magenta"
+prompt_git_ahead = "$green"
+prompt_git_behind = "$yellow"
+
 # Code
 code_var = "$foreground"
 code_type = "$br_cyan"

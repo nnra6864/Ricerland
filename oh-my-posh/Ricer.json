@@ -5,32 +5,33 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#ACCAE6",
-          "foreground": "#102840",
+          "background": "#3078BF",
+          "foreground": "#ACCAE6",
           "properties": {
           "time_format": "15:04:05"
         },
           "style": "diamond",
           "template": "🕰 {{ .CurrentDate | date .Format }} ",
-          "leading_diamond": "<#ACCAE6,transparent>",
-          "trailing_diamond": "<#ACCAE6,#6DA1D8>",
+          "leading_diamond": "",
+          "trailing_diamond": "",
           "type": "time"
         },
         {
-          "background": "#6DA1D8",
+          "background": "#337FCC",
           "foreground": "#ACCAE6",
           "style": "diamond",
           "template": " {{ .Icon }} ",
-          "trailing_diamond": "<#608FBF> ",
+          "leading_diamond": "",
+          "trailing_diamond": "<#ACCAE6> ",
           "type": "os"
         },
         {
           "type": "session",
           "style": "diamond",
-          "background": "#6DA1D8",
+          "background": "#337FCC",
           "foreground": "{{ if .Root }}#BF3030{{ else }}#ACCAE6{{ end }}",
           "trailing_diamond": "",
-          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} "
+          "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ☦ {{ .HostName }} "
         },
         {
           "background": "#3687D8",
@@ -44,11 +45,12 @@
           },
           "style": "diamond",
           "template": " {{ .Path }} ",
+          "leading_diamond": "",
           "trailing_diamond": "",
           "type": "path"
         },
         {
-          "background": "#3078BF",
+          "background": "#3A8FE5",
           "background_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#608FBF{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#8330BF{{ end }}",
@@ -63,8 +65,9 @@
             "fetch_upstream_icon": true
           },
           "style": "diamond",
+          "leading_diamond": "",
           "trailing_diamond": "",
-          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "template": " {{ .UpstreamIcon }}  {{ .HEAD }} {{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         }
       ],
