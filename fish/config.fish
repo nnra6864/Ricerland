@@ -152,7 +152,13 @@ function spc
     set default_output "$base_name Remuxed$extension"
     set duration_seconds (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
     set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
-    set modified_date (stat -c "%y" $input_file | cut -d'.' -f1 | sed 's/ /T/')
+
+    # Get the input file creation date
+    if set creation_time (ffprobe -v quiet -show_entries format_tags=creation_time -of csv=p=0 "$input_file" 2>/dev/null)
+        set modified_date $creation_time
+    else
+        set modified_date (stat -c "%y" "$input_file" | cut -d'.' -f1 | sed 's/ /T/')
+    end
 
     # Get and set output name
     read -P "Output file path(Default: $default_output) - " output_file
