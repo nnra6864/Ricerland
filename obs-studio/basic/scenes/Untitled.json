@@ -154,7 +154,7 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": -1280.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "pos_rel": {
@@ -218,7 +218,7 @@
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "559363dd-028e-4926-9113-efad059aab76"
+                "RestoreToken": "e12184d6-35fe-4193-90c3-2a727d13dd0b"
             },
             "mixers": 0,
             "sync": 0,
@@ -274,7 +274,7 @@
         }
     },
     "resolution": {
-        "x": 2560,
+        "x": 5120,
         "y": 1440
     },
     "version": 2,
