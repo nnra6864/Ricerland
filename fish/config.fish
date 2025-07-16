@@ -154,11 +154,13 @@ function spc
     set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
 
     # Get the input file creation date
-    if set creation_time (ffprobe -v quiet -show_entries format_tags=creation_time -of csv=p=0 "$input_file" 2>/dev/null)
+    set creation_time (ffprobe -v quiet -show_entries format_tags=creation_time -of csv=p=0 "$input_file" 2>/dev/null)
+    if test -n "$creation_time"
         set modified_date $creation_time
     else
-        set modified_date (stat -c "%y" "$input_file" | cut -d'.' -f1 | sed 's/ /T/')
+        set modified_date(stat -c "%y" "$input_file" | cut -d'.' -f1 | sed 's/ /T/')
     end
+
 
     # Get and set output name
     read -P "Output file path(Default: $default_output) - " output_file
