@@ -24,31 +24,31 @@ provider=Freesound
 zoom=7
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/Videos/OBS/,$HOME/HDD2TB/Videos/Clips/CS2/Highlights/,$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/Clips/CS2/Highlights/
+KdenliveClipFolder[$e]=$HOME/Data/Projects/Editing/Other/Reklama/,$HOME/Videos/OBS/,$HOME/HDD2TB/Videos/Clips/CS2/Highlights/
 KdenliveFramesFolder[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/,$HOME/Documents
-KdenliveProjectsFolder[$e]=$HOME/Videos,$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time,$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/
+KdenliveProjectsFolder[$e]=$HOME/Data/Projects/Editing/Other/Reklama,$HOME/Videos,$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time
 
 [Recent Files]
-File1[$e]=$HOME/Data/Projects/Hyprnord/Hyprnord.kdenlive
-File10[$e]=$HOME/Videos/e-3000.kdenlive
-File2[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/IS_THIS_NORMAL.kdenlive
-File3[$e]=$HOME/Data/Projects/Editing/Nisualizer/Alpha/NisualizerAlpha.kdenlive
-File4[$e]=$HOME/Data/Projects/Editing/Scout_Linux_Gaming!!!/Scout_Linux_Gaming!!!.kdenlive
-File5[$e]=$HOME/Data/Projects/Editing/nn/Insaine_Russian_4K/Insaine_Russian_4K.kdenlive
-File6[$e]=$HOME/Data/Projects/Editing/nn/I'm_Comin/I'm_Comin.kdenlive
-File7[$e]=$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/Greatest_Sprayer_Of_All_Time-6000.kdenlive
-File8[$e]=$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/Greatest_Sprayer_Of_All_Time.kdenlive
-File9[$e]=$HOME/Videos/e.kdenlive
-Name1[$e]=Hyprnord.kdenlive
-Name10[$e]=e-3000.kdenlive
-Name2[$e]=IS_THIS_NORMAL.kdenlive
-Name3[$e]=NisualizerAlpha.kdenlive
-Name4[$e]=Scout_Linux_Gaming!!!.kdenlive
-Name5[$e]=Insaine_Russian_4K.kdenlive
-Name6[$e]=I'm_Comin.kdenlive
-Name7[$e]=Greatest_Sprayer_Of_All_Time-6000.kdenlive
-Name8[$e]=Greatest_Sprayer_Of_All_Time.kdenlive
-Name9[$e]=e.kdenlive
+File1[$e]=$HOME/Data/Projects/Editing/IS_THIS_NORMAL_2/IS_THIS_NORMAL.kdenlive
+File10[$e]=$HOME/Data/Projects/Editing/Other/Reklama/Reklama.kdenlive
+File2[$e]=$HOME/Data/Projects/Editing/Nisualizer/Alpha/NisualizerAlpha.kdenlive
+File3[$e]=$HOME/Data/Projects/Editing/Scout_Linux_Gaming!!!/Scout_Linux_Gaming!!!.kdenlive
+File4[$e]=$HOME/Data/Projects/Editing/nn/Insaine_Russian_4K/Insaine_Russian_4K.kdenlive
+File5[$e]=$HOME/Data/Projects/Editing/nn/I'm_Comin/I'm_Comin.kdenlive
+File6[$e]=$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/Greatest_Sprayer_Of_All_Time-6000.kdenlive
+File7[$e]=$HOME/Data/Projects/Editing/nn/Greatest_Sprayer_Of_All_Time/Greatest_Sprayer_Of_All_Time.kdenlive
+File8[$e]=$HOME/Videos/e.kdenlive
+File9[$e]=$HOME/Videos/e-3000.kdenlive
+Name1[$e]=IS_THIS_NORMAL.kdenlive
+Name10[$e]=Reklama.kdenlive
+Name2[$e]=NisualizerAlpha.kdenlive
+Name3[$e]=Scout_Linux_Gaming!!!.kdenlive
+Name4[$e]=Insaine_Russian_4K.kdenlive
+Name5[$e]=I'm_Comin.kdenlive
+Name6[$e]=Greatest_Sprayer_Of_All_Time-6000.kdenlive
+Name7[$e]=Greatest_Sprayer_Of_All_Time.kdenlive
+Name8[$e]=e.kdenlive
+Name9[$e]=e-3000.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -98,13 +98,13 @@ scale_factor=6
 [TitleWidget]
 background_alpha=0
 background_color=0,0,0
-dialog_geometry=AdnQywADAAAAAAAAAAAAAAAABEcAAALVAAAAAAAAAAAAAARHAAAC1QAAAAACAAAAFAAAAAAAAAAAAAAABEcAAALV
-font_color=255,255,255
-font_family=Comfortaa,-1,100,5,400,0,0,0,0,0,0,1,0,0,0,1
+dialog_geometry=AdnQywADAAAAAAAAAAAAAAAABEcAAANTAAAAAAAAAAAAAARHAAADUwAAAAACAAAACgAAAAAAAAAAAAAABEcAAANT
+font_color=255,255,0
+font_family=Maple Mono NF CN,-1,72,5,400,0,0,0,0,0,0,1,0,0,0,1
 font_italic=false
-font_outline=100
-font_outline_color=170,85,255
-font_pixel_size=100
+font_outline=0
+font_outline_color=255,255,255
+font_pixel_size=72
 font_underlined=false
 font_weight=400
 rect_background_alpha=255
@@ -112,14 +112,15 @@ rect_background_color=0,0,0
 rect_foreground_alpha=255
 rect_foreground_color=0,0,0
 rect_line_width=0
+splitter=581,494
 use_grid=false
 
 [UiSettings]
-ColorSchemePath=Ricer.colors
+ColorSchemePath=Breeze-Light.colors
 
 [bin]
 bin_zoom=5
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAA6UAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAADpQAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAAAAAAAAAAAAAAAAAQ==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAADUAAAADAAAASAAAAAcAAABEAAAAAQAAAEgAAAAIAAAAZAAAAAIAAACKAAAABQAAAG0AAAAEAAAAPwAAAb4AAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABvgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABIAAAAAAAAAAAAAAAAAAAAAQ==
 
 [capture]
 decklink_capturedevice=4294967295
@@ -138,7 +139,7 @@ ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2025,6,1,8,21,7.293
+lastCacheCheck=2025,7,18,3,21,15.468
 mediainfopath[$e]=/usr/bin/mediainfo
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
@@ -192,7 +193,7 @@ titlerVersion=400
 
 [unmanaged]
 consumerslist=xml,sdl2,sdl2_audio,qglsl,cbrts,blipflash,xgl,decklink,multi,null,avformat
-default_profile=/home/nnra/.local/share/kdenlive/profiles/customprofile2
+default_profile=/home/nn/.local/share/kdenlive/profiles/customprofile2
 defaultrescaleheight=720
 defaultrescalewidth=1280
 guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
@@ -205,4 +206,4 @@ use_dark_breeze=true
 widgetstyle=qt6ct-style
 
 [version]
-version=25.04.1
+version=25.04.3
