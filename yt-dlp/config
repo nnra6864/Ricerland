@@ -1,0 +1,4 @@
+# Copy the server time
+--mtime
+
+--concurrent-fragments 20

@@ -327,7 +327,7 @@ alias dla 'yt-dlp -f bestaudio --extract-audio'
 # Downloads a video with metadata
 function dlvi
     # Downloads the video
-    yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --write-info-json --write-thumbnail --write-subs -o "%(title)s/%(title)s.%(ext)s" "$argv"
+    yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --write-description --write-info-json --no-clean-info-json --write-comments --write-thumbnail --write-subs -o "%(title)s/%(title)s.%(ext)s" "$argv"
 
     # Makes the json human readable
     for file in **/*.info.json

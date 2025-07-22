@@ -142,6 +142,7 @@
 !/waybar/
 !/hyprpanel/
 !/pipewire/
+!/yt-dlp/
 !/.tidal-dl.json
 !/OpenRGB/
 /OpenRGB/logs/
