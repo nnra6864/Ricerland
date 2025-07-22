@@ -1,0 +1,25 @@
+schema_version = "1.0.0"
+
+id = "nocturna_theme"
+version = "1.1.0"
+name = "Nocturna"
+tagline = "Nocturna - A Dark Theme for Blender"
+maintainer = "Ventko"
+type = "theme"
+
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
+
+blender_version_min = "4.4.0"
+
+
+tags = ['Dark']
+
+
+copyright = [
+  "GNU GPL",
+
+]
+
+

@@ -1,3 +1,5 @@
+/home/nn/Data/Projects/Editing/Other/Reklama/Reklama.blend
+/home/nn/Data/Projects/Editing/Other/Reklama/Untitled.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/SettingsBoard.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/Bar.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/Arena.blend

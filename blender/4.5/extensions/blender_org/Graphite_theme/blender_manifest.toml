@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "Graphite_theme"
+version = "0.0.3"
+name = "Graphite"
+tagline = "Dark, cool blue-tinted graphite theme"
+maintainer = "kame404"
+type = "theme"
+
+website = "https://github.com/kame404/Blender-Themes"
+tags = ["Dark"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
