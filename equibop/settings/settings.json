@@ -1430,9 +1430,6 @@
         "ExpressionCloner": {
             "enabled": true
         },
-        "ExpandedUserTags": {
-            "enabled": false
-        },
         "BypassPinPrompt": {
             "enabled": false
         },
@@ -1484,6 +1481,9 @@
         },
         "OrbolayBridge": {
             "enabled": false
+        },
+        "MoreUserTags": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1496,7 +1496,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1752251085729
+        "settingsSyncVersion": 1753256070933
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
