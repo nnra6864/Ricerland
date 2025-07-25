@@ -32,8 +32,22 @@ def set_brush_asset(brush_name, mode='TEXTURE_PAINT'):
 
     wmyp = bpy.context.window_manager.ypprops
 
+    # Get essential asset identifier path
+    essential_asset_prefix = "brushes\\essentials_brushes-mesh_"
+    mode_type = ''
+    if mode == 'TEXTURE_PAINT': mode_type = 'texture'
+    elif mode == 'VERTEX_PAINT': mode_type = 'vertex'
+    elif mode == 'SCULPT': mode_type = 'sculpt'
+    essential_asset_identifier = essential_asset_prefix + mode_type + ".blend"
+
     # Check asset brush caches first
-    bac = wmyp.brush_asset_caches.get(brush_name)
+    bac = None
+    for cache in wmyp.brush_asset_caches:
+        # Only get brush cache if it's not essential asset or essential assets with correct mode
+        if cache.name == brush_name and (not cache.blend_path.startswith(essential_asset_prefix) or cache.blend_path == essential_asset_identifier):
+            bac = cache
+            break
+
     if bac:
         blend_path = bac.blend_path
         if blend_path != '': blend_path += os.sep
@@ -44,7 +58,7 @@ def set_brush_asset(brush_name, mode='TEXTURE_PAINT'):
                 relative_asset_identifier = blend_path + "Brush\\" + brush_name
             )
             return
-        except Exception as e: print(e) 
+        except Exception as e: print('EXCEPTIION:', e) 
 
     # Try local
     try:
@@ -62,18 +76,14 @@ def set_brush_asset(brush_name, mode='TEXTURE_PAINT'):
         bac.blend_path = ''
 
         return
-    except Exception as e: print(e) 
+    except Exception as e: print('EXCEPTIION:', e) 
 
     # Try essential
-    if mode == 'TEXTURE_PAINT': mode_type = 'texture'
-    elif mode == 'VERTEX_PAINT': mode_type = 'vertex'
-    elif mode == 'SCULPT': mode_type = 'sculpt'
     try:
-        asset_identifier = "brushes\\essentials_brushes-mesh_" + mode_type + ".blend"
         bpy.ops.brush.asset_activate(
             asset_library_type = 'ESSENTIALS', 
             asset_library_identifier = "", 
-            relative_asset_identifier = asset_identifier + "\\Brush\\" + brush_name
+            relative_asset_identifier = essential_asset_identifier + "\\Brush\\" + brush_name
         )
 
         # Set up the cache for faster loading next time
@@ -81,7 +91,7 @@ def set_brush_asset(brush_name, mode='TEXTURE_PAINT'):
         bac.name = brush_name
         bac.library_type = 'ESSENTIALS'
         bac.library_name = ''
-        bac.blend_path = asset_identifier
+        bac.blend_path = essential_asset_identifier
 
         return
     except Exception as e: print(e) 
@@ -172,7 +182,7 @@ class YToggleEraser(bpy.types.Operator):
             brush = context.tool_settings.image_paint.brush
 
             brush_name = brush.name
-            image_tool = brush.image_tool
+            image_tool = get_brush_image_tool(brush)
             use_pressure_strength = brush.use_pressure_strength
             use_pressure_size = brush.use_pressure_size
 
@@ -182,7 +192,7 @@ class YToggleEraser(bpy.types.Operator):
                 if brush.name in tex_default_brush_eraser_pairs:
                     # Get eraser name based on dictionary
                     new_brush_name = tex_default_brush_eraser_pairs[brush.name]
-                elif brush.image_tool == 'DRAW':
+                elif get_brush_image_tool(brush) == 'DRAW':
                     # Only toggle erase alpha if the draw brush is custom
                     new_brush_name = brush.name
                 else: 
@@ -194,7 +204,9 @@ class YToggleEraser(bpy.types.Operator):
 
             # Get original brush name
             else:
-                new_brush_name = ve.ori_texpaint_brush
+                if ve.ori_texpaint_brush != '':
+                    new_brush_name = ve.ori_texpaint_brush
+                else: new_brush_name = 'Paint Soft'
 
             # Toggle 'Erase Alpha' if new brush is the same
             if brush.name == new_brush_name:
@@ -237,7 +249,7 @@ class YToggleEraser(bpy.types.Operator):
                 draw_brush = bpy.data.brushes.get(draw_brush_name)
 
             if not draw_brush:
-                draw_brushes = [d for d in bpy.data.brushes if d.use_paint_sculpt and d.sculpt_tool == 'PAINT']
+                draw_brushes = [d for d in bpy.data.brushes if d.use_paint_sculpt and get_brush_sculpt_tool(d) == 'PAINT']
                 if draw_brushes: draw_brush = draw_brushes[0]
                 else:
                     self.report({'ERROR'}, "Cannot find a paint brush!")

@@ -44,7 +44,8 @@ def _remember_before_bake(obj):
     book['ori_view_transform'] = scene.view_settings.view_transform
 
     # Remember world settings
-    book['ori_distance'] = scene.world.light_settings.distance
+    if scene.world:
+        book['ori_distance'] = scene.world.light_settings.distance
 
     # Remember image editor images
     book['editor_images'] = [a.spaces[0].image for a in bpy.context.screen.areas if a.type == 'IMAGE_EDITOR']
@@ -62,6 +63,10 @@ def _prepare_bake_settings(book, obj, uv_map='', samples=1, margin=15, bake_devi
 
     scene = bpy.context.scene
     ypui = bpy.context.window_manager.ypui
+    wmyp = bpy.context.window_manager.ypprops
+
+    # Hack function on depsgraph update can cause crash, so halt it before baking
+    wmyp.halt_hacks = True
 
     scene.render.engine = 'CYCLES'
     scene.render.threads_mode = 'AUTO'
@@ -115,6 +120,7 @@ def _recover_bake_settings(book, recover_active_uv=False):
     obj = book['obj']
     uv_layers = obj.data.uv_layers
     ypui = bpy.context.window_manager.ypui
+    wmyp = bpy.context.window_manager.ypprops
 
     scene.render.engine = book['ori_engine']
     scene.cycles.samples = book['ori_samples']
@@ -141,7 +147,8 @@ def _recover_bake_settings(book, recover_active_uv=False):
     scene.render.bake_margin = book['ori_bake_margin']
 
     # Recover world settings
-    scene.world.light_settings.distance = book['ori_distance']
+    if scene.world:
+        scene.world.light_settings.distance = book['ori_distance']
 
     # Recover image editors
     for i, area in enumerate([a for a in bpy.context.screen.areas if a.type == 'IMAGE_EDITOR']):
@@ -158,6 +165,9 @@ def _recover_bake_settings(book, recover_active_uv=False):
         if 'ori_active_render_uv' in book:
             uvl = uv_layers.get(book['ori_active_render_uv'])
             if uvl: uvl.active_render = True
+
+    # Bring back the hack functions
+    wmyp.halt_hacks = False
 
 def get_offset_attributes(base, sclupted_mesh, layer_disabled_mesh=None, intensity=1.0):
 
@@ -706,7 +716,7 @@ class YSculptImage(bpy.types.Operator):
         height_ch = get_height_channel(layer)
         intensity = get_vdm_intensity(layer, height_ch) if height_ch else 1.0
 
-        if mapping and is_transformed(mapping):
+        if mapping and is_transformed(mapping, layer):
             self.report({'ERROR'}, "Cannot sculpt VDM with transformed mapping!")
             return {'CANCELLED'}
 
@@ -835,7 +845,7 @@ class YSculptImage(bpy.types.Operator):
 
         bpy.ops.object.mode_set(mode='SCULPT')
 
-        print('INFO: Sculpt mode is entered in', '{:0.2f}'.format((time.time() - T) * 1000), 'ms!')
+        self.report({'INFO'}, 'Sculpt mode is entered in '+'{:0.2f}'.format(time.time() - T)+' seconds!')
 
         return {'FINISHED'}
 
@@ -898,7 +908,7 @@ class YApplySculptToImage(bpy.types.Operator):
         if space.type == 'VIEW_3D' and space.shading.type not in {'MATERIAL', 'RENDERED'}:
             space.shading.type = 'MATERIAL'
 
-        print('INFO: Applying sculpt to VDM is done in', '{:0.2f}'.format((time.time() - T) * 1000), 'ms!')
+        self.report({'INFO'}, 'Applying sculpt to VDM is done in '+'{:0.2f}'.format(time.time() - T)+' seconds!')
 
         return {'FINISHED'}
 
