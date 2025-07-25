@@ -48,8 +48,8 @@ function rice
     #
     #sleep 0.2
 
-    # Remove all the CS2 fonts
-    rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
+    # Remove all the CS2 fonts(can cause crashes)
+    #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
 
     #Execute Ricer
     python ~/Data/Projects/Ricer/Ricer.py $argv # > /dev/null 2>&1
@@ -158,9 +158,8 @@ function spc
     if test -n "$creation_time"
         set modified_date $creation_time
     else
-        set modified_date(stat -c "%y" "$input_file" | cut -d'.' -f1 | sed 's/ /T/')
+        set modified_date (stat -c "%y" "$input_file" | cut -d'.' -f1 | sed 's/ /T/')
     end
-
 
     # Get and set output name
     read -P "Output file path(Default: $default_output) - " output_file
