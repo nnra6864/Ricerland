@@ -121,6 +121,19 @@
             </ConfigurationInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Documents/e/My project">
+          <value>
+            <ConfigurationInfo />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/e/My project/My project.sln">
+          <value>
+            <ConfigurationInfo>
+              <option name="activeConfiguration" value="Debug" />
+              <option name="activePlatform" value="Any CPU" />
+            </ConfigurationInfo>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

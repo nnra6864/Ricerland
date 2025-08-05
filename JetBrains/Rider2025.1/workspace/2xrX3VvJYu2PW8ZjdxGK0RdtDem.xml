@@ -7,64 +7,34 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="2ra6yigia6vwt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="2xymlezv0937p" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
-        <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSun.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+            <state relative-caret-position="720">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"AudioManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="291" selection-start-line="291" selection-end-line="291" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"SteamAudioManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"BellScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"ColosseumSun.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="541">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="1566">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SettingsManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"ShopItemScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 584,
-      "lastUsed": 1752256219032
+      "usageCount": 627,
+      "lastUsed": 1754063744979
     },
     "Image": {
       "usageCount": 7,
@@ -82,12 +52,12 @@
 }]]></component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
       <find>Target</find>
       <find>Source</find>
       <find>Create</find>
       <find>create</find>
       <find>getsource</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace />
@@ -103,9 +73,6 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">{
   &quot;changedPaths&quot;: [
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/MinMax/Editor/MinMaxAttributeDrawer.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioSettings.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/BypassEffects.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/Setting.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/Bypass.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/AudioSettings.cs&quot;,
@@ -153,7 +120,10 @@
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
     &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs&quot;,
-    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSun.cs&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -165,7 +135,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="584" lastUsage="1752256219032" />
+      <summary usageCount="627" lastUsage="1754063744979" />
     </language>
     <language id="JSON">
       <summary usageCount="3" lastUsage="1751474857045" />
@@ -184,13 +154,32 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="AudioManager" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="71192831:AssetsRootNode" />
-              <item name="AudioManager" type="daf7a7f:UnityExplorerFileSystemNode" />
-              <item name="Tweaks" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Camera" type="daf7a7f:UnityExplorerFileSystemNode" />
             </path>
           </expand>
           <select>
@@ -475,7 +464,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312833000" />
+    <option name="totallyTimeSpent" value="335391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -579,57 +568,13 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="860" y="335" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751262474446" />
-    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup" timestamp="1751649117100">
+    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup" timestamp="1753979459100">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751649117100" />
+    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1753979459100" />
     <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750521498994" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Scripts.asmdef" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AmbiencePlayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Effects/Chorus.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Utils.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Easings.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/MinMax/MinMaxAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/AudioManager/MinMax/Editor/MinMaxAttributeDrawer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -848,17 +793,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <folding>
+            <marker date="1748698216426" expanded="true" signature="6:79" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/Perspective.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/ConfigColor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1748696351142" expanded="true" signature="6:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar@c42b0f4497a2/Editor/CustomToolbar/Scripts/ToolbarCallback.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2640">
+          <folding>
+            <marker date="1751384483990" expanded="true" signature="6:304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="240">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -869,10 +858,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSun.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        <state relative-caret-position="720">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
         </state>
       </provider>
     </entry>

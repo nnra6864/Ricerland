@@ -1,6 +1,8 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
+/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Colosseum/
+/home/nn/Downloads/
 /home/nn/.fonts/MapleMono-NF-CN-unhinted-patch/
 /home/nn/Data/Projects/Editing/Other/Reklama/
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/
@@ -9,5 +11,3 @@
 /home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/
 /home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Models/MainMenu/
 /home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/SettingsBoard/
-/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Materials/MainMenu/ItemBoard/
-/home/nnra/Downloads/theme-eclipse-v1.1.0/

@@ -200,7 +200,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 610.2564102564103,
-            "zoom": 4.374999865889554,
+            "zoom": 4.374999865889555,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -322,7 +322,8 @@
             "enabled": true,
             "channelToAffect": "both_dms",
             "allowMentions": false,
-            "allowEveryone": false
+            "allowEveryone": false,
+            "ignoreUsers": ""
         },
         "OpenInApp": {
             "enabled": true,
@@ -446,7 +447,24 @@
             "voiceChannelList": false,
             "emojiReactions": false,
             "showGradient": false,
-            "userProfilePopout": false
+            "userProfilePopout": false,
+            "triggerNameRerender": false,
+            "hideDefaultAtSign": false,
+            "replies": true,
+            "messages": true,
+            "mentions": true,
+            "profilePopout": true,
+            "reactions": true,
+            "discriminators": true,
+            "truncateAllNamesWithStreamerMode": true,
+            "removeDuplicates": true,
+            "ignoreGradients": true,
+            "animateGradients": false,
+            "includedNames": "{friend, nick} [{display}] (@{user})",
+            "friendNameColor": "Role-25",
+            "nicknameColor": "Role-25",
+            "displayNameColor": "Role-25",
+            "usernameColor": "Role-25"
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -459,7 +477,16 @@
             "isEnabled": true,
             "contextMenu": true,
             "blockAllTypingIndicators": false,
-            "blockAllIsTyping": false
+            "blockAllIsTyping": false,
+            "hideMembersListTypingIndicators": false,
+            "chatIcon": true,
+            "defaultHidden": true,
+            "enabledLocations": "",
+            "disabledLocations": "",
+            "chatIconLeftClickAction": "channel",
+            "chatIconMiddleClickAction": "settings",
+            "chatIconRightClickAction": "global",
+            "hideChatBoxTypingIndicators": false
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -1155,8 +1182,8 @@
             "cacheLimit": 1000,
             "whitelistedIds": "",
             "blacklistedIds": "",
-            "imageCacheDir": "/home/nnra/.config/equibop/MessageLoggerData/savedImages",
-            "logsDir": "/home/nnra/.config/equibop/MessageLoggerData",
+            "imageCacheDir": "/home/nn/.config/equibop/MessageLoggerData/savedImages",
+            "logsDir": "/home/nn/.config/equibop/MessageLoggerData",
             "ignoreWebhooks": false
         },
         "MessageTranslate": {
@@ -1484,6 +1511,33 @@
         },
         "MoreUserTags": {
             "enabled": false
+        },
+        "DiscordDevBanner": {
+            "enabled": false
+        },
+        "InviteDefaults": {
+            "enabled": false
+        },
+        "QuestFocused": {
+            "enabled": false
+        },
+        "SaveFavoriteGIFs": {
+            "enabled": false
+        },
+        "SelfForward": {
+            "enabled": false
+        },
+        "TimelessClips": {
+            "enabled": false
+        },
+        "YouTubeMusicControls": {
+            "enabled": false
+        },
+        "Questify": {
+            "enabled": false
+        },
+        "BetterCommands": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1496,7 +1550,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1753256070933
+        "settingsSyncVersion": 1754374043537
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
