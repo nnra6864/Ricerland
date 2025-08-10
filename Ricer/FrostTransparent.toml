@@ -47,7 +47,7 @@ prompt_bg_hsv_delta = "v+10"
 
 [Colors]
 # Terminal
-black = "10284010"
+black = "102840ff"
 red = "bf3030ff"
 green = "60bf30ff"
 yellow = "bfa730ff"
@@ -86,34 +86,40 @@ foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
 foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
 
 # Background
-background = "$black"
+background = "10284010"
 background_highlight = "$background.$highlight_hsv"
 background_inactive = "$background.$inactive_hsv"
 background_disabled = "$background.$disabled_hsv"
 
 # Background Alternative
-background_alt = "$black"
+background_alt = "10284020"
 background_highlight_alt = "$background_alt.$highlight_hsv"
 background_inactive_alt = "$background_alt.$inactive_hsv"
 background_disabled_alt = "$background_alt.$disabled_hsv"
 
 # Button Background
-button = "$br_black"
+button = "$background_alt"
 button_highlight = "$button.$highlight_hsv"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
 # Button Foreground
-button_foreground = "$cyan"
+button_foreground = "$white"
 button_foreground_highlight = "$button_foreground.$highlight_hsv"
 button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
 # Outline
-outline = "$cyan"
-outline_alt = "$br_white"
-outline_inactive = "$outline.v-50"
-outline_inactive_alt = "$outline_alt.v-50"
+outline = "$br_white"
+outline_highlight = "$outline.$highlight_hsv"
+outline_inactive = "$outline.$inactive_hsv"
+outline_disabled = "$outline.$disabled_hsv"
+
+# Outline Alternative
+outline_alt = "$br_blue"
+outline_highlight_alt = "$outline_alt.$highlight_hsv"
+outline_inactive_alt = "$outline_alt.$inactive_hsv"
+outline_disabled_alt = "$outline_alt.$disabled_hsv"
 
 # Shadow
 shadow = "$black"
@@ -185,7 +191,7 @@ RicerHub = ["~/.config/RicerHub.py", "hexa"]
 MaterialDisc = ["~/.config/vesktop/settings/quickCss.css", "hexa"]
 MaterialDiscord = ["~/.config/equibop/settings/quickCss.css", "hexa"]
 Oomox = ["~/.config/OomoxRicer", "hexa"]
-Zed = ["~/.config/zed/themes/ZedRicer.json", "hexa"]
+Zed = ["~/.config/zed/themes/Ricer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = ["~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css", "hexa"]
 AdwSteamGtk = [
