@@ -12,12 +12,12 @@
 	},
 
 	//Font
-	"buffer_font_family": "Courier Prime Code",
-	"buffer_font_size": 32,
+	"buffer_font_family": "Maple Mono NF CN",
+	"buffer_font_size": 32.0,
 	"buffer_font_weight": 400,
 	"buffer_line_height": "comfortable",
 
-	"ui_font_family": "Courier Prime Code",
+	"ui_font_family": "Maple Mono NF CN",
 	"ui_font_size": 32,
 	"ui_font_weight": 400,
 
@@ -133,7 +133,7 @@
 		}
 	},
 
-	"assistant": {
+	"agent": {
 		"default_model": {
 			"provider": "ollama",
 			"model": "qwen2.5:32b"
@@ -185,8 +185,18 @@
 		"metrics": false
 	},
 	"auto_update": false,
+
 	"diagnostics": {
-		"include_warnings": true
+		"button": true,
+		"include_warnings": true,
+		"inline": {
+			"enabled": true,
+			"update_debounce_ms": 150,
+			"padding": 4,
+			"min_column": 0,
+			"max_severity": null
+		},
+		"cargo": null
 	},
 
 	"file_scan_exclusions": [

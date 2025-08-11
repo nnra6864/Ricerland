@@ -14,7 +14,7 @@
 				"border.selected": "#ricer.col.outline_highlight",
 				"border.transparent": "#00000000",
 				"border.disabled": "#ricer.col.outline_disabled",
-				"elevated_surface.background": "#00000096",
+				"elevated_surface.background": "#ricer.col.background.hex",
 				"surface.background": "#ricer.col.background",
 				"background": "#ricer.col.background",
 				"element.background": "#ricer.col.background_alt",
