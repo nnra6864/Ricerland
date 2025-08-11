@@ -100,10 +100,10 @@
         <entry encoding="base64">MTA1</entry>
         <entry encoding="base64">MTQ2</entry>
         <entry encoding="base64">MTc1</entry>
-        <entry encoding="base64">cQ==</entry>
         <entry encoding="base64" />
-        <entry encoding="base64">dw==</entry>
         <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64">cQ==</entry>
+        <entry encoding="base64">dw==</entry>
       </history-cmd>
       <history-expr />
       <history-input />
@@ -2701,12 +2701,10 @@
       <jump line="95" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/Perspective.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="193" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="197" column="27" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="192" column="19" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="29" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="31" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="196" column="67" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="33" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="270" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
@@ -2730,9 +2728,7 @@
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" protocol="file" />
       <jump line="115" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
-      <jump line="60" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="114" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="61" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
       <jump line="119" column="11" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="121" column="42" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="239" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
@@ -2759,6 +2755,21 @@
       <jump line="163" column="47" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="162" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="157" column="8" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="60" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="268" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.openfracture@07b1a499a335/Runtime/Scripts/Fragment/Fragmenter.cs" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="61" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="66" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="13" column="17" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="63" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="68" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="73" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="82" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="31" column="18" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="21" column="7" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
+      <jump line="56" column="39" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
     </project>
     <project id="My project-3d605ab4">
       <jump line="2" column="13" filename="$USER_HOME$/Documents/e/My project/Assets/Scripts/Player.cs" protocol="file" />
@@ -2794,18 +2805,14 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.nnra6864.openfracture@07b1a499a335/Runtime/Scripts/Fragment/Fragmenter.cs" timestamp="1754543695884">
+        <mark key="&quot;" line="265" column="0" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/SettingsMenu.cs" timestamp="1753978973645">
         <mark key="&quot;" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/SpatialBlendRangeTweak.cs" timestamp="1751542797721">
-        <mark key="&quot;" line="8" column="39" />
-        <mark key="[" line="8" column="42" />
-        <mark key="]" line="8" column="60" />
-        <mark key="." line="8" column="59" />
-        <mark key="^" line="8" column="60" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" timestamp="1753979594122">
-        <mark key="&quot;" line="61" column="12" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs" timestamp="1754543946332">
+        <mark key="&quot;" line="15" column="28" />
         <mark key="[" line="61" column="0" />
         <mark key="]" line="61" column="0" />
         <mark key="." line="61" column="0" />
@@ -2817,21 +2824,11 @@
         <mark key="." line="16" column="11" />
         <mark key="^" line="16" column="12" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioItem.cs" timestamp="1751542794588">
-        <mark key="&quot;" line="44" column="0" />
-        <mark key="'" line="48" column="19" />
-        <mark key="[" line="144" column="0" />
-        <mark key="]" line="145" column="25" />
-        <mark key="." line="145" column="24" />
-        <mark key="^" line="145" column="25" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/SteamAudioUnity.csproj" timestamp="1754543950005">
+        <mark key="&quot;" line="175" column="49" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1753982084397">
-        <mark key="&quot;" line="240" column="24" />
-        <mark key="'" line="255" column="68" />
-        <mark key="[" line="238" column="31" />
-        <mark key="]" line="240" column="25" />
-        <mark key="." line="240" column="24" />
-        <mark key="^" line="240" column="25" />
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1754544355420">
+        <mark key="&quot;" line="12" column="29" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs" timestamp="1753982088011">
         <mark key="&quot;" line="66" column="0" />
@@ -2881,15 +2878,11 @@
         <mark key="." line="23" column="16" />
         <mark key="^" line="23" column="17" />
       </file>
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/SteamAudioUnityEditor.csproj" timestamp="1754543950215">
+        <mark key="&quot;" line="171" column="49" />
+      </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/Perspective.cs" timestamp="1753894933898">
         <mark key="&quot;" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioTweaksPresetTweak.cs" timestamp="1751542798256">
-        <mark key="&quot;" line="7" column="39" />
-        <mark key="[" line="5" column="1" />
-        <mark key="]" line="6" column="17" />
-        <mark key="." line="6" column="16" />
-        <mark key="^" line="6" column="17" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs" timestamp="1754063750025">
         <mark key="&quot;" line="314" column="0" />
@@ -2915,7 +2908,7 @@
         <text encoding="base64">ZHdhSVR3ZWFrPD4lQXVkaW9TT3VyY2UICAgICG91cmNlGw==</text>
       </register>
       <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">IHRyYW5zZm9ybS5mb3J3YXJkICo=</text>
+        <text encoding="base64">X2ZsaXBSb3RhdGlvbg==</text>
       </register>
       <register name="*" type="CHARACTER_WISE">
         <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvbnRQYXRoID0gcHJvY2Vzcy5TdGFuZGFyZE91dHB1dC5SZWFkVG9FbmQoKS5UcmltKCk7Cg==</text>
@@ -2924,46 +2917,46 @@
         <text encoding="base64">UGx1ZyAndG9tbWNkby92aW0tZXhjaGFuZ2Un</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">IHRyYW5zZm9ybS5mb3J3YXJkICo=</text>
+        <text encoding="base64">X2ZsaXBSb3RhdGlvbg==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">KjYgIDQqIDQg</text>
+        <text encoding="base64">X2ZsaXBSZXdhcmRNdWx0aXBsaWVyMjI=</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">RmxpcA==</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICB2YXIgaG9yaXpvbnRhbCA9IElucHV0LkdldEF4aXNSYXcoIkhvcml6b250YWwiKTsK</text>
+        <text encoding="base64">ICAgICAgICBbRm9sZG91dEdyb3VwKCJNb3ZlbWVudC9GbGlwIiksIFNlcmlhbGl6ZUZpZWxkXQogICAgICAgIHByaXZhdGUgZmxvYXQgX2ZsaXBSb3RhdGlvbiA9IDU7Cg==</text>
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgIHJiLmxpbmVhclZlbG9jaXR5ID0gdHJhbnNmb3JtLmZvcndhcmQgKiBuZXcgVmVjdG9yMyhyYi52ZWxvY2l0eS54LCAwLCByYi52ZWxvY2l0eS56KTsK</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgIC8vIFVwZGF0ZSBpcyBjYWxsZWQgb25jZSBwZXIgZnJhbWUK</text>
+        <text encoding="base64">ICAgICAgICAKICAgICAgICBwcml2YXRlIGZsb2F0IF9mbGlwTXUK</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgIC8vIFN0YXJ0IGlzIGNhbGxlZCBvbmNlIGJlZm9yZSB0aGUgZmlyc3QgZXhlY3V0aW9uIG9mIFVwZGF0ZSBhZnRlciB0aGUgTW9ub0JlaGF2aW91ciBpcyBjcmVhdGVkCg==</text>
+        <text encoding="base64">ICAgICAgIHJiLmxpbmVhclZlbG9jaXR5ID0gdHJhbnNmb3JtLmZvcndhcmQgKiBuZXcgVmVjdG9yMyhyYi52ZWxvY2l0eS54LCAwLCByYi52ZWxvY2l0eS56KTsK</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgIC8vIFVwZGF0ZSBpcyBjYWxsZWQgb25jZSBwZXIgZnJhbWUK</text>
       </register>
       <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIHhSb3QgPSB0cmFuc2Zvcm0uZXVsZXJBbmdsZXMueDsK</text>
+        <text encoding="base64">ICAgIC8vIFN0YXJ0IGlzIGNhbGxlZCBvbmNlIGJlZm9yZSB0aGUgZmlyc3QgZXhlY3V0aW9uIG9mIFVwZGF0ZSBhZnRlciB0aGUgTW9ub0JlaGF2aW91ciBpcyBjcmVhdGVkCg==</text>
       </register>
       <register name="6" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuTG9nKHRyYW5zZm9ybS5yb3RhdGlvbi5ldWxlckFuZ2xlcyk7Cg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdHJhbnNmb3JtLmxvY2FsUgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgdmFyIHhSb3QgPSB0cmFuc2Zvcm0uZXVsZXJBbmdsZXMueDsK</text>
       </register>
       <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgdmFyIGZvcndhcmQgPSB0cmFuc2Zvcm0udXA7Cg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgRGVidWcuTG9nKHRyYW5zZm9ybS5yb3RhdGlvbi5ldWxlckFuZ2xlcyk7Cg==</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">CiAgICAgICAgICAgIC8vIFN0b3JlIGZvcndhcmQK</text>
+        <text encoding="base64">ICAgICAgICAgICAgdHJhbnNmb3JtLmxvY2FsUgo=</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
-        <text encoding="base64">d3E=</text>
+        <text encoding="base64">dw==</text>
       </register>
       <register name="z" type="CHARACTER_WISE">
         <text encoding="base64" />

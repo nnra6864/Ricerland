@@ -13,7 +13,7 @@
       <i c="33" l="1751532054305" />
     </e>
     <e n="$Redo">
-      <i c="618" l="1754070982637" />
+      <i c="619" l="1754544108966" />
     </e>
     <e n="$SelectAll">
       <i c="29" l="1751200401608" />
@@ -100,7 +100,7 @@
       <i c="15" l="1751287434017" />
     </e>
     <e n="CollapseRegion">
-      <i c="18" l="1748711356745" />
+      <i c="22" l="1754544151249" />
     </e>
     <e n="CollapseRegionRecursively">
       <i c="5" l="1746629171987" />
@@ -121,10 +121,10 @@
       <i c="19" l="1749296024412" />
     </e>
     <e n="EditorBackSpace">
-      <i c="43570" l="1754072387431" />
+      <i c="43587" l="1754544353937" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="17351" l="1754071094071" />
+      <i c="17353" l="1754544148239" />
     </e>
     <e n="EditorChooseLookupItemDot">
       <i c="7" l="1745542864811" />
@@ -145,16 +145,16 @@
       <i c="2331" l="1751543657618" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="18954" l="1753996441740" />
+      <i c="18955" l="1754544173322" />
     </e>
     <e n="EditorDown">
-      <i c="42195" l="1754069233876" />
+      <i c="42253" l="1754544162183" />
     </e>
     <e n="EditorDownWithSelection">
       <i c="1" l="1726078755558" />
     </e>
     <e n="EditorEnter">
-      <i c="18108" l="1754072419003" />
+      <i c="18124" l="1754544323581" />
     </e>
     <e n="EditorEscape">
       <i c="14421" l="1754069536352" />
@@ -247,13 +247,13 @@
       <i c="2" l="1730381142267" />
     </e>
     <e n="EditorUp">
-      <i c="31722" l="1754070642178" />
+      <i c="31759" l="1754544163839" />
     </e>
     <e n="ExpandCollapseToggleAction">
       <i c="3" l="1738473939563" />
     </e>
     <e n="ExpandRegion">
-      <i c="23" l="1740352880051" />
+      <i c="25" l="1754544119585" />
     </e>
     <e n="ExpandRegionRecursively">
       <i c="8" l="1748699690234" />
@@ -442,7 +442,7 @@
       <i c="2" l="1743219008140" />
     </e>
     <e n="OptimizeImports">
-      <i c="2" l="1751262419054" />
+      <i c="3" l="1754544105042" />
     </e>
     <e n="ProblemsView.CopyProblemDescription">
       <i c="11" l="1751381231423" />
@@ -475,7 +475,7 @@
       <i c="30" l="1751531572372" />
     </e>
     <e n="RenameElement">
-      <i c="1380" l="1751649738853" />
+      <i c="1381" l="1754544289832" />
     </e>
     <e n="Replace">
       <i c="3" l="1744729849107" />
@@ -514,10 +514,10 @@
       <i c="21" l="1751262473643" />
     </e>
     <e n="SaveAll">
-      <i c="9631" l="1754072737782" />
+      <i c="9632" l="1754544357848" />
     </e>
     <e n="SearchEverywhere">
-      <i c="189" l="1753979455600" />
+      <i c="190" l="1754543944714" />
     </e>
     <e n="SettingsEntryPoint">
       <i c="308" l="1753914176801" />
@@ -535,7 +535,7 @@
       <i c="1" l="1744593207115" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="6050" l="1753996354167" />
+      <i c="6051" l="1754544075769" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1723602793199" />
@@ -754,7 +754,7 @@
       <i c="18" l="1751015561026" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="373926" l="1754072737746" />
+      <i c="374362" l="1754544358400" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="1" l="1748828144880" />
@@ -793,13 +793,13 @@
       <i c="2" l="1733848145777" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="418" l="1753979459084" />
+      <i c="419" l="1754543950965" />
     </e>
     <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
       <i c="76" l="1751348433042" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="195" l="1754067971906" />
+      <i c="196" l="1754919486682" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="90" l="1752256225021" />
@@ -820,7 +820,7 @@
       <i c="3" l="1746715388470" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="148" l="1751469264918" />
+      <i c="151" l="1754543870279" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="61" l="1751469257745" />
@@ -886,7 +886,7 @@
       <i c="10" l="1751531943059" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderActionUpdateInterceptor$RiderBackendCompositeAction">
-      <i c="1206" l="1751649738848" />
+      <i c="1208" l="1754544289821" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAsyncBackendDelegatingActionPromoter$DumbAwareActionWrapper">
       <i c="33" l="1726166352633" />

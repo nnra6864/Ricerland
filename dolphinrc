@@ -19,6 +19,7 @@ DirHistory[$e]=$HOME/HDD2TB/Games/Universal/OSU/Skins/,$HOME/HDD2TB/Work/Uni/Hom
 LimitFoldersPanelToHome=false
 
 [General]
+ShowFullPath=true
 UseTabForSwitchingSplitView=true
 Version=202
 ViewPropsTimestamp=2023,8,28,1,16,21.136

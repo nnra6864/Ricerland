@@ -27,8 +27,8 @@
 
     :root {
       --newtab-background-color: #10284010 !important;  /* New tab main background color */
-      --newtab-background-color-secondary: #15395910 !important;  /* Secondary background (e.g., panels) */
-      --newtab-element-hover-color: #15395910 !important;  /* Hover color for interactive elements */
+      --newtab-background-color-secondary: #10284020 !important;  /* Secondary background (e.g., panels) */
+      --newtab-element-hover-color: #10284020 !important;  /* Hover color for interactive elements */
       --newtab-text-primary-color: #ACCAE6FF !important;  /* Primary text color on new tab */
       --newtab-wordmark-color: #ACCAE6FF !important;  /* Wordmark (logo text) color */
       --newtab-primary-action-background: #BDDFFFFF !important;  /* Primary action button background (updated from blue) */
@@ -77,8 +77,8 @@
       --in-content-text-color: #ACCAE6FF !important;  /* In-content text color */
       --link-color: #BDDFFFFF !important;  /* Link color updated from blue to foreground_highlight */
       --link-color-hover: #BDDFFFFF !important;  /* Link hover color updated from br_blue to foreground_highlight */
-      --zen-colors-primary: #15395910 !important;  /* Primary UI element background (e.g., buttons) */
-      --in-content-box-background: #15395910 !important;  /* Background color for in-content boxes */
+      --zen-colors-primary: #10284020 !important;  /* Primary UI element background (e.g., buttons) */
+      --in-content-box-background: #10284020 !important;  /* Background color for in-content boxes */
       --zen-primary-color: #BDDFFFFF !important;  /* Primary accent for preferences updated from blue */
     }
 
@@ -88,7 +88,7 @@
 
     button,
     groupbox menulist {
-      background: #15395910 !important;  /* Button and menulist background color */
+      background: #10284020 !important;  /* Button and menulist background color */
       color: #ACCAE6FF !important;  /* Button text color */
     }
 
@@ -161,14 +161,14 @@
       --fingerprinter-color: #BFA730FF !important;  /* Color for fingerprinting alerts */
       --cryptominer-color: #BDDFFFFF !important;  /* Cryptominer alert color updated from br_blue */
       --tracker-color: #60BF30FF !important;  /* Tracker indicator color remains green */
-      --in-content-primary-button-background-hover: #1A487210 !important;  /* Hover background for primary buttons */
+      --in-content-primary-button-background-hover: #15395920 !important;  /* Hover background for primary buttons */
       --in-content-primary-button-text-color-hover: #ACCAE6FF !important;  /* Hover text color for primary buttons */
-      --in-content-primary-button-background: #15395910 !important;  /* Primary button background color */
+      --in-content-primary-button-background: #10284020 !important;  /* Primary button background color */
       --in-content-primary-button-text-color: #ACCAE6FF !important;  /* Primary button text color */
     }
 
     .card {
-      background-color: #15395910 !important;  /* Card background color for protections elements */
+      background-color: #10284020 !important;  /* Card background color for protections elements */
     }
   }
 }

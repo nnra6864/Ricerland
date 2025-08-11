@@ -31,9 +31,7 @@
           "id": "Project",
           "order": 1,
           "contentUiType": "COMBO",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.17953286,
+          "weight": 0.18486288,
           "sideWeight": 0.51935965
         },
         {
@@ -218,10 +216,8 @@
           "id": "Structure",
           "order": 5,
           "anchor": "RIGHT",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.17003167,
-          "sideWeight": 0.47366413,
+          "weight": 0.15163502,
+          "sideWeight": 0.4734375,
           "isSplit": true
         },
         {
@@ -300,17 +296,15 @@
           "id": "Problems View",
           "order": 15,
           "anchor": "RIGHT",
-          "isActiveOnStart": true,
-          "isVisible": true,
-          "weight": 0.17003167,
-          "sideWeight": 0.52633584
+          "weight": 0.15163502,
+          "sideWeight": 0.5265625
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.17953286,
+        "left": 0.18486288,
         "bottom": 0.68538135,
-        "right": 0.17003167
+        "right": 0.15163502
       }
     }
   }

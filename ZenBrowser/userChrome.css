@@ -29,10 +29,10 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
       Defines the main color scheme for primary interface components
     -----------------------------------------------------*/
     --zen-primary-color: #ACCAE6FF !important;         /* Main foreground color for text and icons */
-    --zen-colors-primary: #15395910 !important;              /* Primary color for buttons and actionable elements */
-    --zen-colors-secondary: #15395910 !important;            /* Secondary color for alternative actions */
+    --zen-colors-primary: #10284020 !important;              /* Primary color for buttons and actionable elements */
+    --zen-colors-secondary: #10284020 !important;            /* Secondary color for alternative actions */
     --zen-colors-tertiary: #10284010 !important;         /* Tertiary color for less prominent UI areas */
-    --zen-colors-border: #608FBFFF !important;              /* Color used for borders and outlines */
+    --zen-colors-border: #BDDFFFFF !important;              /* Color used for borders and outlines */
 
     /*-----------------------------------------------------
       Toolbar & Icon Colors
@@ -60,7 +60,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
       Background Colors for Toolbars & Main Browser
       Defines background colors for toolbars, new tab page, and the main browser window
     -----------------------------------------------------*/
-    --toolbar-bgcolor: #15395910 !important;             /* Background color for the toolbar */
+    --toolbar-bgcolor: #10284020 !important;             /* Background color for the toolbar */
     --newtab-background-color: #10284010 !important;  /* Background color for the new tab page */
     --zen-themed-toolbar-bg: #10284010 !important;    /* Background color for the Zen-themed toolbar */
     --zen-main-browser-background: #10284010 !important; /* Main browser background color */

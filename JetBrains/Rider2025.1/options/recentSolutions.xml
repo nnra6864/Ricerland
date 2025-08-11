@@ -407,25 +407,9 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana – PlayerScript.cs" projectWorkspaceId="2xrX3VvJYu2PW8ZjdxGK0RdtDem">
-              <option name="activationTimestamp" value="1754067971994" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-251.26927.67" />
-              <option name="buildTimestamp" value="1751003640000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="12" y="12" width="2536" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1754063624117" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Documents/e/My project/My project.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="My project" opened="true" projectWorkspaceId="30h9x6299zRWEkW7VP2QhkfKf1o">
+            <RecentProjectMetaInfo frameTitle="My project" projectWorkspaceId="30h9x6299zRWEkW7VP2QhkfKf1o">
               <option name="activationTimestamp" value="1754072739297" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-251.26927.67" />
@@ -439,8 +423,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" opened="true" projectWorkspaceId="30wTYyzQmx1jE7fGjc6Oo7lIIwf">
+              <option name="activationTimestamp" value="1754919482227" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-251.27812.87" />
+              <option name="buildTimestamp" value="1754005500000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="12" y="12" width="2536" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1754919353424" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Documents/e/My project/My project.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln" />
   </component>
 </application>

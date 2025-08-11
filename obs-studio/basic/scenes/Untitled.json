@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520093700,
+        "prev_ver": 520159234,
         "name": "Desktop Audio",
         "uuid": "38f5a2ec-10d2-4094-b2fc-694958ea13b6",
         "id": "pulse_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520093700,
+        "prev_ver": 520159234,
         "name": "Mic/Aux",
         "uuid": "3e05e856-bf35-494a-9990-df754caa7a92",
         "id": "pulse_input_capture",
@@ -62,7 +62,7 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 520093700,
+                "prev_ver": 520159234,
                 "name": "Noise Suppression",
                 "uuid": "b772da39-8575-400e-8b90-e86ad42369b7",
                 "id": "noise_suppress_filter",
@@ -86,7 +86,7 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520093700,
+                "prev_ver": 520159234,
                 "name": "Noise Gate",
                 "uuid": "d8c48c4a-0b20-49b2-b1cf-e27ac0eb22c0",
                 "id": "noise_gate_filter",
@@ -124,7 +124,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520093700,
+            "prev_ver": 520159234,
             "name": "Scene",
             "uuid": "54dc72df-b33a-4722-a99e-35a24044cf5c",
             "id": "scene",
@@ -209,10 +209,11 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
         },
         {
-            "prev_ver": 520093700,
+            "prev_ver": 520159234,
             "name": "Screen Capture (PipeWire)",
             "uuid": "b3ff861c-333b-4570-835e-d35c8ad06956",
             "id": "pipewire-screen-capture-source",
@@ -242,11 +243,12 @@
     "quick_transitions": [],
     "transitions": [],
     "saved_projectors": [],
+    "canvases": [],
     "current_transition": "Затухание",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": 0,
+    "scaling_level": -25,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {

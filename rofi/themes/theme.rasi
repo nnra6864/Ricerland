@@ -7,7 +7,7 @@
 	color: #ACCAE6;
 	text-col: #ACCAE6;
 	text-selected-col: #608FBF;
-	border-col: #608FBF;
+	border-col: #BDDFFF;
     highlight: underline bold #6DA1D8;
 }
 

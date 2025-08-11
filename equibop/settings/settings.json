@@ -99,7 +99,8 @@
         },
         "BlurNSFW": {
             "enabled": true,
-            "blurAmount": 10
+            "blurAmount": 10,
+            "blurAllChannels": false
         },
         "CallTimer": {
             "enabled": true,
@@ -486,7 +487,8 @@
             "chatIconLeftClickAction": "channel",
             "chatIconMiddleClickAction": "settings",
             "chatIconRightClickAction": "global",
-            "hideChatBoxTypingIndicators": false
+            "hideChatBoxTypingIndicators": false,
+            "chatContextMenu": true
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -1538,6 +1540,18 @@
         },
         "BetterCommands": {
             "enabled": false
+        },
+        "ContentWarning": {
+            "enabled": false
+        },
+        "CopyStatusUrls": {
+            "enabled": false
+        },
+        "MusicControls": {
+            "enabled": false
+        },
+        "ShowResourceChannels": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1550,7 +1564,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1754374043537
+        "settingsSyncVersion": 1754935516477
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
