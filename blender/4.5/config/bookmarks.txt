@@ -1,8 +1,8 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
-/home/nn/Data/Projects/Unity/Katana/Files/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Colosseum/
+/home/nn/Data/Projects/Unity/Katana/Files/
 /home/nn/Downloads/
 /home/nn/.fonts/MapleMono-NF-CN-unhinted-patch/
 /home/nn/Data/Projects/Editing/Other/Reklama/
