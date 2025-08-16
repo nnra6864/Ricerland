@@ -136,7 +136,7 @@
                     {
                         "name": "Screen Capture (PipeWire)",
                         "source_uuid": "b3ff861c-333b-4570-835e-d35c8ad06956",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {

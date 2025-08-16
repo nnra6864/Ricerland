@@ -357,7 +357,8 @@
             "canCollapseDmSection": false,
             "userBasedCategoryList": {
                 "576156118519119894": []
-            }
+            },
+            "disableCreateDMButton": true
         },
         "PlainFolderIcon": {
             "enabled": false
@@ -406,7 +407,7 @@
             "enabled": false
         },
         "SecretRingToneEnabler": {
-            "enabled": true,
+            "enabled": false,
             "onlySnow": true
         },
         "SendTimestamps": {
@@ -449,7 +450,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": false,
+            "triggerNameRerender": true,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -822,9 +823,6 @@
             "enabled": false
         },
         "AltKrispSwitch": {
-            "enabled": false
-        },
-        "AlwaysExpandProfile": {
             "enabled": false
         },
         "AmITyping": {
@@ -1551,6 +1549,12 @@
             "enabled": false
         },
         "ShowResourceChannels": {
+            "enabled": true
+        },
+        "AlwaysExpandProfiles": {
+            "enabled": false
+        },
+        "TiktokTTS": {
             "enabled": false
         }
     },
@@ -1564,7 +1568,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1754935516477
+        "settingsSyncVersion": 1755303714167
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
