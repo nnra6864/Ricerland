@@ -42,7 +42,7 @@ notification_duration = 3
 highlight_hsv = "h+0.s+0.v+10"
 placeholder_hsv = "h+0.s+0.v-10"
 inactive_hsv = "h+0.s+0.v-15"
-disabled_hsv = "h+0.s-5.v-15"
+disabled_hsv = "h+0.s-10.v-20"
 prompt_bg_hsv_delta = "v+10"
 
 [Colors]
