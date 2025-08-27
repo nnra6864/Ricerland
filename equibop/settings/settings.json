@@ -254,7 +254,8 @@
             "logEdits": true,
             "logDeletes": true,
             "collapseDeleted": false,
-            "inlineEdits": true
+            "inlineEdits": true,
+            "showEditDiffs": false
         },
         "MessageTags": {
             "enabled": false,
@@ -450,7 +451,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": true,
+            "triggerNameRerender": false,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -489,7 +490,8 @@
             "chatIconMiddleClickAction": "settings",
             "chatIconRightClickAction": "global",
             "hideChatBoxTypingIndicators": false,
-            "chatContextMenu": true
+            "chatContextMenu": true,
+            "enabledGlobally": true
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -936,7 +938,59 @@
             "enabled": false
         },
         "CustomSounds": {
-            "enabled": true
+            "enabled": true,
+            "activity_end": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_launch": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "asmr_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "bit_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "bop_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "call_calling": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "call_ringing": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "clip_error": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "clip_save": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-down": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-right": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-up": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "deafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "discodo": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "disconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ducky_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "hang_status_select": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "highfive_clap": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "highfive_whistle": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "human_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "lofi_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "overlayunlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_achievement_unlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_applause": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_enabled": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_message_send": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ptt_start": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ptt_stop": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "reconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "robot_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stage_waiting": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_ended": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_started": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_user_joined": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "success": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "undeafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "unmute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_leave": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_moved": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "vibing_wumpus": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}"
         },
         "CustomTimestamps": {
             "enabled": false,
@@ -1556,6 +1610,15 @@
         },
         "TiktokTTS": {
             "enabled": false
+        },
+        "ImageFilename": {
+            "enabled": false
+        },
+        "Downloadify": {
+            "enabled": false
+        },
+        "Animalese": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1568,7 +1631,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1755303714167
+        "settingsSyncVersion": 1756293700180
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

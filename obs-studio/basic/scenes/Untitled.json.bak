@@ -136,8 +136,8 @@
                     {
                         "name": "Screen Capture (PipeWire)",
                         "source_uuid": "b3ff861c-333b-4570-835e-d35c8ad06956",
-                        "visible": false,
-                        "locked": false,
+                        "visible": true,
+                        "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
                             "x": 2560.0,
@@ -219,7 +219,7 @@
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "84b06aa4-1f6e-4171-b8b1-0571c630b9ce"
+                "RestoreToken": "9742fc5d-df8f-4040-842a-b76527986a21"
             },
             "mixers": 0,
             "sync": 0,
@@ -248,7 +248,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -25,
+    "scaling_level": -11,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
