@@ -18,11 +18,11 @@ nvim_theme = "nord"
 
 # Font
 font = "Maple Mono NF CN"
-min_font_size = 10
-small_font_size = 13
-font_size = 15
-big_font_size = 17
-max_font_size = 32
+min_font_size = 9
+small_font_size = 11
+font_size = 14
+big_font_size = 16
+max_font_size = 25
 
 # Misc
 terminal = "kitty"
