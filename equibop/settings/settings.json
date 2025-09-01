@@ -451,7 +451,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": false,
+            "triggerNameRerender": true,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -1631,7 +1631,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1756293700180
+        "settingsSyncVersion": 1756763532940
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1639,5 +1639,6 @@
     ],
     "updateRelaunch": false,
     "ignoreResetWarning": false,
-    "userCssVars": {}
+    "userCssVars": {},
+    "themeNames": {}
 }

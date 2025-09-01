@@ -1,5 +1,5 @@
 configuration {
-    font: "Maple Mono NF CN 17";
+    font: "Maple Mono NF CN 16";
     line-margin: 10;
 
     display-ssh: "";

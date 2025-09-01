@@ -1,7 +1,7 @@
 [Added Associations]
 application/json=nvim.desktop;firefox.desktop;azuredatastudio.desktop;vim.desktop;dev.zed.Zed.desktop;libreoffice-writer.desktop;org.kde.okteta.desktop;
 application/octet-stream=nvim.desktop;blender.desktop;neovide.desktop;org.kde.okteta.desktop;
-application/pdf=libreoffice-startcenter.desktop;firefox.desktop;krita_pdf.desktop;chromium.desktop;zen.desktop;libreoffice-draw.desktop;nvim.desktop;blender.desktop;
+application/pdf=zen.desktop;libreoffice-startcenter.desktop;blender.desktop;nvim.desktop;firefox.desktop;krita_pdf.desktop;chromium.desktop;libreoffice-draw.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;com.usebottles.bottles.desktop;
 application/x-extension-htm=zen.desktop;
 application/x-extension-html=zen.desktop;
@@ -19,6 +19,7 @@ audio/mpeg=vlc.desktop;mpv.desktop;
 audio/vnd.wave=vlc.desktop;mpv.desktop;skypeforlinux-share.desktop;
 audio/x-ms-asx=mpv.desktop;vlc.desktop;
 audio/x-opus+ogg=mpv.desktop;vlc.desktop;firefox.desktop;blender.desktop;nvim.desktop;
+audio/x-vorbis+ogg=mpv.desktop;firefox.desktop;vlc.desktop;nvim.desktop;blender.desktop;
 image/avif=viewnior.desktop;firefox.desktop;krita_heif.desktop;blender.desktop;nvim.desktop;
 image/bmp=viewnior.desktop;krita_qimageio.desktop;blender.desktop;nvim.desktop;
 image/gif=viewnior.desktop;mpv.desktop;krita_gif.desktop;chromium.desktop;firefox.desktop;blender.desktop;nvim.desktop;
@@ -52,7 +53,7 @@ x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 [Default Applications]
 application/json=nvim.desktop;
 application/octet-stream=nvim.desktop;
-application/pdf=libreoffice-startcenter.desktop;
+application/pdf=zen.desktop;
 application/uproject=com.epicgames.UnrealEngineEditor.desktop
 application/vnd.microsoft.portable-executable=wine.desktop;
 application/x-extension-htm=zen.desktop
@@ -71,6 +72,7 @@ audio/mpeg=vlc.desktop;
 audio/vnd.wave=vlc.desktop;
 audio/x-ms-asx=mpv.desktop;
 audio/x-opus+ogg=mpv.desktop;
+audio/x-vorbis+ogg=mpv.desktop;
 image/avif=viewnior.desktop;
 image/bmp=viewnior.desktop;
 image/gif=viewnior.desktop;
