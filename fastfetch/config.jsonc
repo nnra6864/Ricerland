@@ -16,8 +16,10 @@
     },
     "bar": {
       "width": 20,
-      "charElapsed": "❄",
-      "charTotal": "🞚"
+      "char": {
+        "elapsed": "❄",
+        "total": "🞚"
+      }
     },
     "percent": {
       "type": 3,
