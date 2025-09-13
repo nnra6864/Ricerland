@@ -1,0 +1,891 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Nisualizer" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="3c30idmzqmmvt" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigData.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="620">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ConfigData.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SceneScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="279">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"SceneScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneCreator/Editor/NisualizerSceneCreator.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="930">
+              <caret line="226" column="28" selection-start-line="226" selection-start-column="28" selection-end-line="226" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"NisualizerSceneCreator.cs","foregroundColor":-1324149,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManager.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"FontManager.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state>
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+              <folding>
+                <marker date="1733824254286" expanded="true" signature="4545:6020" ph="LiveConfigReload" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ConfigScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 339,
+      "lastUsed": 1733825265477
+    },
+    "JSON": {
+      "usageCount": 26,
+      "lastUsed": 1733823160797
+    },
+    "WebPreview": {
+      "usageCount": 1,
+      "lastUsed": 1731650330604
+    },
+    "USS": {
+      "usageCount": 1,
+      "lastUsed": 1733549593769
+    },
+    "UXML": {
+      "usageCount": 1,
+      "lastUsed": 1733553242134
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/SystemFontScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/SystemTMP/SystemFontScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/SystemTMP/SystemFont.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/SystemFont/SystemTMP.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/SystemTMP.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/Config.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveTMPText.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/TransitionScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/ReadOnlyAttribute.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/NnUtils/Scripts/Editor/ReadOnlyDrawer.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/DefaultConfig.json",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/BackgroundScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/UI/LiveReloadImage.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Snowstorm/SnowstormConfig.json",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Banana/BananaManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Banana/Banana.json",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Banana/BananaConfigData.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveVolume.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Snowstorm/SnowstormManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/TestScene/TestSceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Test/TestManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/SceneCreator/Editor/SceneCreator.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveTMP_Text.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/GameManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/FontManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/SceneManager.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/InteractiveComponents/InteractiveText.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/SceneScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/ConfigScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scenes/Snowstorm/SnowstormConfigData.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/GeneralConfigData.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Core/MicrophoneDataScript.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/Config/ConfigData.cs",
+    "/home/nnra/Data/Projects/Unity/Nisualizer/Nisualizer/Assets/Scripts/SceneCreator/Editor/NisualizerSceneCreator.cs"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.Nisualizer/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="339" lastUsage="1733825265477" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="26" lastUsage="1733823160797" />
+    </language>
+    <language id="USS">
+      <summary usageCount="1" lastUsage="1733549593769" />
+    </language>
+    <language id="UXML">
+      <summary usageCount="1" lastUsage="1733553242134" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="0.9" version="1" />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scenes" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scenes" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Snowstorm" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Clock" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Config" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="InteractiveComponents" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="SceneCreator" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="SceneCreator" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="UI" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="SceneCreator" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Editor" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="NisualizerSceneCreator.cs" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-project-names" value="true" />
+        <option name="show-tilde-folders" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Nisualizer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Nisualizer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="show-project-imports" value="true" />
+        <option name="autoscroll-all" value="false" />
+        <option name="show-scratches" value="true" />
+        <option name="search-dependencies" value="false" />
+        <option name="show-unreal-project-files" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="RiderPerAppToolWindowOpenedTWKeeper">
+    <option name="map">
+      <map>
+        <entry key="AIAssistant">
+          <value>
+            <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.32977885" />
+          </value>
+        </entry>
+        <entry key="Bookmarks">
+          <value>
+            <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+          </value>
+        </entry>
+        <entry key="Build">
+          <value>
+            <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+          </value>
+        </entry>
+        <entry key="Codeium Chat">
+          <value>
+            <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+          </value>
+        </entry>
+        <entry key="Commit">
+          <value>
+            <window_info id="Commit" order="0" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Coverage">
+          <value>
+            <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+          </value>
+        </entry>
+        <entry key="Database Changes">
+          <value>
+            <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Debug">
+          <value>
+            <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.3125" />
+          </value>
+        </entry>
+        <entry key="Dynamic Program Analysis">
+          <value>
+            <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="File Transfer">
+          <value>
+            <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Find">
+          <value>
+            <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3125" />
+          </value>
+        </entry>
+        <entry key="Gradle">
+          <value>
+            <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Hierarchy">
+          <value>
+            <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+          </value>
+        </entry>
+        <entry key="IL">
+          <value>
+            <window_info anchor="right" id="IL" order="11" weight="0.18004316" />
+          </value>
+        </entry>
+        <entry key="IL Viewer">
+          <value>
+            <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+          </value>
+        </entry>
+        <entry key="Learn">
+          <value>
+            <window_info id="Learn" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Maven">
+          <value>
+            <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Merge Requests">
+          <value>
+            <window_info id="Merge Requests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Monitoring">
+          <value>
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+          </value>
+        </entry>
+        <entry key="Notifications">
+          <value>
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.23165229" />
+          </value>
+        </entry>
+        <entry key="NuGet">
+          <value>
+            <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Problems">
+          <value>
+            <window_info anchor="bottom" id="Problems" order="1" />
+          </value>
+        </entry>
+        <entry key="Problems View">
+          <value>
+            <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.34573698" visible="true" weight="0.245781" />
+          </value>
+        </entry>
+        <entry key="Project">
+          <value>
+            <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.6494424" visible="true" weight="0.10743721" />
+          </value>
+        </entry>
+        <entry key="Pull Requests">
+          <value>
+            <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Services">
+          <value>
+            <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="Space Code Reviews">
+          <value>
+            <window_info id="Space Code Reviews" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Structure">
+          <value>
+            <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+          </value>
+        </entry>
+        <entry key="TODO">
+          <value>
+            <window_info active="true" id="TODO" order="4" sideWeight="0.35055763" side_tool="true" visible="true" weight="0.10743721" />
+          </value>
+        </entry>
+        <entry key="Terminal">
+          <value>
+            <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+          </value>
+        </entry>
+        <entry key="Test Coverage">
+          <value>
+            <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Tests">
+          <value>
+            <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="TypeScript">
+          <value>
+            <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unit Tests">
+          <value>
+            <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unity">
+          <value>
+            <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="UnrealBuildTool">
+          <value>
+            <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+          </value>
+        </entry>
+        <entry key="Version Control">
+          <value>
+            <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="documentation.v2">
+          <value>
+            <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="dotMemory">
+          <value>
+            <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="dotTrace Profiler">
+          <value>
+            <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Attach to Unity Editor.Attach to Unity Editor" />
+    </history>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="235375000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <option name="selectedScope" value="All Places" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Space Code Reviews" show_stripe_button="false" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="Commit" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.49963874" side_tool="true" weight="0.095214844" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.6494424" visible="true" weight="0.10743721" />
+      <window_info id="Bookmarks" order="3" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info active="true" id="TODO" order="4" sideWeight="0.35055763" side_tool="true" visible="true" weight="0.10743721" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22563559" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.3125" />
+      <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+      <window_info anchor="bottom" id="Find" order="7" show_stripe_button="false" weight="0.3125" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="documentation.v2" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.50036764" weight="0.23165229" />
+      <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.32977885" />
+      <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.654263" side_tool="true" weight="0.12783203" />
+      <window_info active="true" anchor="right" id="Problems View" order="6" sideWeight="0.34573698" visible="true" weight="0.245781" />
+      <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+      <window_info anchor="right" id="Hierarchy" order="8" weight="0.06936813" />
+      <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.0958595" />
+      <window_info anchor="right" id="IL" order="11" weight="0.18004316" />
+      <unified_weights bottom="0.3125" left="0.10743721" right="0.245781" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2217" y="541" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1731680716302">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2217" y="541" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1731680716302" />
+    <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1731650341054">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2060" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.5120.1440@0.0.5120.1440" timestamp="1731650341054" />
+    <state x="2290" y="421" width="772" height="568" key="FileChooserDialogImpl" timestamp="1731680714359">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2290" y="421" width="772" height="568" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1731680714359" />
+    <state width="5014" height="401" key="GridCell.Tab.0.bottom" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.0.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.0.center" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.0.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.0.left" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.0.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.0.right" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.0.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.1.bottom" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.1.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.1.center" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.1.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.1.left" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.1.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.1.right" timestamp="1731509734028">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.1.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734028" />
+    <state width="5014" height="401" key="GridCell.Tab.2.bottom" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.2.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.2.center" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.2.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.2.left" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.2.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.2.right" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.2.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.3.bottom" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.3.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.3.center" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.3.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.3.left" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.3.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.3.right" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.3.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.4.bottom" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.4.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.4.center" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.4.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.4.left" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.4.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.4.right" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.4.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.5.bottom" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.5.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.5.center" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.5.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.5.left" timestamp="1731509734029">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.5.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734029" />
+    <state width="5014" height="401" key="GridCell.Tab.5.right" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.5.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.6.bottom" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.6.bottom/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.6.center" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.6.center/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.6.left" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.6.left/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state width="5014" height="401" key="GridCell.Tab.6.right" timestamp="1731509734030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="5014" height="401" key="GridCell.Tab.6.right/0.0.5120.1440@0.0.5120.1440" timestamp="1731509734030" />
+    <state x="3252" y="282" key="SettingsEditor" timestamp="1731850693751">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="3252" y="282" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1731850693751" />
+    <state width="648" height="500" key="SwitcherDM" timestamp="1730296729692">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="648" height="500" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1730296729692" />
+    <state width="625" height="325" key="com.jetbrains.rider.debugger.components.RiderExceptionPane" timestamp="1731492140436">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state width="625" height="325" key="com.jetbrains.rider.debugger.components.RiderExceptionPane/0.0.5120.1440@0.0.5120.1440" timestamp="1731492140436" />
+    <state x="2140" y="338" key="run.anything.popup" timestamp="1733467454344">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2140" y="338" key="run.anything.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1733467454344" />
+    <state x="2139" y="321" width="914" height="1056" key="search.everywhere.popup" timestamp="1731934613584">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="2139" y="321" width="914" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1731934613584" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVolume.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveVFX.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UnfocusedEventSystem.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MousePos.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MicrophoneDataScript.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ConfigScript.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f724beac1c704825ad74571377c52f70468c00/72/cd1aca71/Task.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f724beac1c704825ad74571377c52f70468c00/a5/8a476fd5/ThreadPoolWorkQueue.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f724beac1c704825ad74571377c52f70468c00/57/93a5e0d8/_ThreadPoolWaitCallback.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/DefaultConfig.json" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dbb227d7b33d42b595370bacbf9858301f4200/85/7721c22a/LayoutDataStore.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/UnityMainThreadDispatcher/Runtime/UnityMainThreadDispatcher.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SystemFontScript.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveTMPText.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/DefaultConfig.json" />
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/ReadOnlyAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Editor/ReadOnlyDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/LiveReloadImage.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Banana/BananaManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Banana/Banana.json" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Banana/BananaConfig.json" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Banana/BananaConfigData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneCreator/Editor/SceneCreator.uss" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneCreator/Editor/SceneCreator.uxml" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/TestScene/TestSceneManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Test/TestManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Test/TestConfig.json" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Test/TestConfigData.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/TransitionScript.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/Misc.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1274">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/SystemTMP.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/UI/NBar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1730295740185" expanded="true" signature="6:100" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Scripts/UI/RadioNutton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1730295740185" expanded="true" signature="6:100" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clock/DigitalClockScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveParticleSystemScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVolume.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveVFX.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractiveComponents/InteractiveText.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Snowstorm/SnowstormManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Snowstorm/SnowstormConfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/MicrophoneDataScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-744" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Snowstorm/SnowstormConfigData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/GeneralConfigData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/FontManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <marker date="1733824254286" expanded="true" signature="4545:6020" ph="LiveConfigReload" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SceneScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SceneCreator/Editor/NisualizerSceneCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="226" column="28" selection-start-line="226" selection-start-column="28" selection-end-line="226" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Config/ConfigData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

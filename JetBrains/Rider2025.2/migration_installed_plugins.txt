@@ -1,0 +1,4 @@
+IdeaVIM
+com.chrisrm.idea.MaterialThemeUI
+avalonia-rider
+com.jetbrains.space

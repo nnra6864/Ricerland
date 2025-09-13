@@ -1,0 +1,48 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="MaterialThemeProjectNewConfig">
+        <option name="metadata">
+          <MTProjectMetadataState>
+            <option name="migrated" value="true" />
+            <option name="pristineConfig" value="false" />
+            <option name="userId" value="-454724b6:196dc343b6e:-7ffb" />
+          </MTProjectMetadataState>
+        </option>
+      </component>
+      <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;
+  }
+}</component>
+      <component name="VcsDirectoryMappings" defaultProject="true" />
+      <component name="WindowStateProjectService">
+        <state x="1277" y="141" width="985" height="757" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1743194423659">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1277" y="141" width="985" height="757" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.5120.1440" timestamp="1743194423659" />
+        <state x="1270" y="439" width="1299" height="632" key="Edit.Enum members" timestamp="1743194295688">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1270" y="439" width="1299" height="632" key="Edit.Enum members/0.0.5120.1440" timestamp="1743194295688" />
+        <state x="2289" y="420" key="FileChooserDialogImpl" timestamp="1744094691519">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="2289" y="420" key="FileChooserDialogImpl/0.0.5120.1440" timestamp="1744094691519" />
+        <state x="2177" y="364" key="Rider.InstallTemplatesDialog.Size" timestamp="1744094696371">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="2177" y="364" key="Rider.InstallTemplatesDialog.Size/0.0.5120.1440" timestamp="1744094696371" />
+        <state x="1821" y="281" width="1296" height="828" key="Rider.NewProjectDialog.Size" timestamp="1744094954709">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1821" y="281" width="1296" height="828" key="Rider.NewProjectDialog.Size/0.0.5120.1440" timestamp="1744094954709" />
+        <state x="1329" y="267" key="SettingsEditor" timestamp="1743219643158">
+          <screen x="0" y="0" width="5120" height="1440" />
+        </state>
+        <state x="1329" y="267" key="SettingsEditor/0.0.5120.1440" timestamp="1743219643158" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

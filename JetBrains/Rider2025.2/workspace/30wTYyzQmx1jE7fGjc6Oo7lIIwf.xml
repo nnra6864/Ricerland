@@ -1,0 +1,593 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Katana" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="r6h9475go1in" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" file-id="2592" managing-fs="1757346037995">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="469">
+              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+              <folding>
+                <marker date="1757347151255" expanded="false" signature="6:183" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ColosseumSceneManager.cs","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"EFFECT_COLOR","value":"bc3f3c"}},{"name":"option","attributes":{"name":"EFFECT_TYPE","value":"2"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" file-id="2556" managing-fs="1757346037995">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="800">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding>
+                <marker date="1757347592844" expanded="false" signature="6:79" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"CameraHandlerScript.cs","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"EFFECT_COLOR","value":"bc3f3c"}},{"name":"option","attributes":{"name":"EFFECT_TYPE","value":"2"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 9,
+      "lastUsed": 1757347706363
+    },
+    "WebPreview": {
+      "usageCount": 2,
+      "lastUsed": 1757346052625
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Assets/Scripts/Colosseum</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isCustomScope" value="true" />
+    <option name="customScopeName" value="Solution" />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs",
+    "/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs",
+    "/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.Katana/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="9" lastUsage="1757347706363" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" />
+    <panes />
+  </component>
+  <component name="RiderPerAppToolWindowOpenedTWKeeper">
+    <option name="map">
+      <map>
+        <entry key="AIAssistant">
+          <value>
+            <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="Assembly Explorer">
+          <value>
+            <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+          </value>
+        </entry>
+        <entry key="Backup and Sync History">
+          <value>
+            <window_info id="Backup and Sync History" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Bookmarks">
+          <value>
+            <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+          </value>
+        </entry>
+        <entry key="Build">
+          <value>
+            <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+          </value>
+        </entry>
+        <entry key="Codeium Chat">
+          <value>
+            <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+          </value>
+        </entry>
+        <entry key="Commit">
+          <value>
+            <window_info id="Commit" order="0" weight="0.2597135" />
+          </value>
+        </entry>
+        <entry key="Coverage">
+          <value>
+            <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+          </value>
+        </entry>
+        <entry key="Database Changes">
+          <value>
+            <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Debug">
+          <value>
+            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.39300847" />
+          </value>
+        </entry>
+        <entry key="Dynamic Program Analysis">
+          <value>
+            <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="ErrorToolWindow">
+          <value>
+            <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
+          </value>
+        </entry>
+        <entry key="File Transfer">
+          <value>
+            <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Find">
+          <value>
+            <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+          </value>
+        </entry>
+        <entry key="Gradle">
+          <value>
+            <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Hierarchy">
+          <value>
+            <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
+          </value>
+        </entry>
+        <entry key="IL">
+          <value>
+            <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="IL Viewer">
+          <value>
+            <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+          </value>
+        </entry>
+        <entry key="Learn">
+          <value>
+            <window_info id="Learn" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Maven">
+          <value>
+            <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Merge Requests">
+          <value>
+            <window_info id="Merge Requests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Monitoring">
+          <value>
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2616325" />
+          </value>
+        </entry>
+        <entry key="Notifications">
+          <value>
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.2616325" />
+          </value>
+        </entry>
+        <entry key="NuGet">
+          <value>
+            <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
+          </value>
+        </entry>
+        <entry key="Problems">
+          <value>
+            <window_info anchor="bottom" id="Problems" order="1" />
+          </value>
+        </entry>
+        <entry key="Problems View">
+          <value>
+            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.5265625" weight="0.2616325" />
+          </value>
+        </entry>
+        <entry key="Project">
+          <value>
+            <window_info content_ui="combo" id="Project" order="1" sideWeight="0.51935965" weight="0.18473974" />
+          </value>
+        </entry>
+        <entry key="Pull Requests">
+          <value>
+            <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Refactoring - Change signature">
+          <value>
+            <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
+          </value>
+        </entry>
+        <entry key="RoslynVisualizer">
+          <value>
+            <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Run">
+          <value>
+            <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
+          </value>
+        </entry>
+        <entry key="Services">
+          <value>
+            <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="Space Code Reviews">
+          <value>
+            <window_info id="Space Code Reviews" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Structure">
+          <value>
+            <window_info anchor="right" id="Structure" order="5" sideWeight="0.4734375" side_tool="true" weight="0.15163502" />
+          </value>
+        </entry>
+        <entry key="TODO">
+          <value>
+            <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
+          </value>
+        </entry>
+        <entry key="Terminal">
+          <value>
+            <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+          </value>
+        </entry>
+        <entry key="Test Coverage">
+          <value>
+            <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Tests">
+          <value>
+            <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="TypeScript">
+          <value>
+            <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unit Tests">
+          <value>
+            <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+          </value>
+        </entry>
+        <entry key="Unity">
+          <value>
+            <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="UnrealBuildTool">
+          <value>
+            <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+          </value>
+        </entry>
+        <entry key="Version Control">
+          <value>
+            <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5000997" weight="0.15713277" />
+          </value>
+        </entry>
+        <entry key="documentation.v2">
+          <value>
+            <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+          </value>
+        </entry>
+        <entry key="dotMemory">
+          <value>
+            <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="dotTrace Profiler">
+          <value>
+            <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Attach to Unity Editor.Attach to Unity Editor" />
+      <element setting="Attach to Unity Player.Unity (Unknown Project)" />
+    </history>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6420000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Space Code Reviews" show_stripe_button="false" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Backup and Sync History" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="Commit" order="0" weight="0.2597135" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.51935965" weight="0.18473974" />
+      <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5000997" weight="0.15713277" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.39300847" />
+      <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
+      <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+      <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
+      <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.2616325" />
+      <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
+      <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.4734375" side_tool="true" weight="0.15163502" />
+      <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+      <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+      <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
+      <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2616325" />
+      <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+      <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+      <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
+      <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
+      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.5265625" weight="0.2616325" />
+      <unified_weights bottom="0.39300847" left="0.18473974" right="0.2616325" />
+    </layoutV2>
+    <recentWindows>
+      <value>Debug</value>
+      <value>Notifications</value>
+      <value>Problems View</value>
+      <value>Monitoring</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2454" height="516" key="GridCell.Tab.0.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.0.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.0.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.0.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.1.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.1.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.1.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.1.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.1.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.1.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.1.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.1.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.2.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.2.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.2.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.2.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.2.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.2.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.2.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.2.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.3.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.3.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.3.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.3.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.3.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.3.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.3.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.3.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.4.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.4.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.4.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.4.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.4.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.4.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.4.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.4.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.5.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.5.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.5.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.5.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.5.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.5.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.5.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.5.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.6.bottom" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.6.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.6.center" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.6.center/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.6.left" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.6.left/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state width="2454" height="516" key="GridCell.Tab.6.right" timestamp="1757347561334">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2454" height="516" key="GridCell.Tab.6.right/0.0.2560.1440@0.0.2560.1440" timestamp="1757347561334" />
+    <state x="1048" y="248" key="SettingsEditor" timestamp="1757346796461">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1048" y="248" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1757346796461" />
+    <state x="926" y="147" width="1085" height="644" key="find.popup" timestamp="1757346910581">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="926" y="147" width="1085" height="644" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1757346910581" />
+    <state x="719" y="17" width="1284" height="1452" key="search.everywhere.popup" timestamp="1757346929170">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="539" y="13" width="963" height="1089" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1754543950970" />
+    <state x="719" y="17" width="1284" height="1452" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1757346929170" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.nnra6864.openfracture@07b1a499a335/Runtime/Scripts/Fragment/Fragmenter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="112" column="43" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+          <folding>
+            <marker date="1757288473398" expanded="false" signature="6:317" ph="..." />
+            <marker date="1757288473398" expanded="true" signature="891:2242" ph="Components" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Colosseum/ColosseumSceneManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+          <folding>
+            <marker date="1757347151255" expanded="false" signature="6:183" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Fruits/ExplosionManagerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1755401981272" expanded="false" signature="6:75" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <marker date="1757347592844" expanded="false" signature="6:79" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

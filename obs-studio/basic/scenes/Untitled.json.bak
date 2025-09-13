@@ -130,7 +130,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 21,
+                "id_counter": 23,
                 "custom_size": false,
                 "items": [
                     {
@@ -219,7 +219,7 @@
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "9742fc5d-df8f-4040-842a-b76527986a21"
+                "RestoreToken": "782ad77d-c94c-4b55-81b3-b13c3a6d0f51"
             },
             "mixers": 0,
             "sync": 0,
@@ -248,7 +248,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -24,
+    "scaling_level": -11,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {

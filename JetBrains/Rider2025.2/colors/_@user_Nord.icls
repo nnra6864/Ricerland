@@ -1,0 +1,33 @@
+<scheme name="_@user_Nord" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2023-08-25T02:12:02</property>
+    <property name="ide">Rider</property>
+    <property name="ideVersion">2023.2.1.0.0</property>
+    <property name="modified">2024-04-11T21:14:09</property>
+    <property name="originalScheme">Nord</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.arcticicestudio.nord.jetbrains</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.2" />
+  <option name="EDITOR_FONT_SIZE" value="28" />
+  <option name="EDITOR_FONT_NAME" value="Maple Mono NF CN" />
+  <option name="EDITOR_LIGATURES" value="true" />
+  <colors>
+    <option name="FILESTATUS_ADDED" value="859900" />
+    <option name="FILESTATUS_DELETED" value="B58900" />
+    <option name="FILESTATUS_HIJACKED" value="D33682" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="B58900" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="CB4B16" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="CB4B16" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="CB4B16" />
+    <option name="FILESTATUS_MERGED" value="6C71C4" />
+    <option name="FILESTATUS_MODIFIED" value="2AA198" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="268BD2" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="268BD2" />
+    <option name="FILESTATUS_OBSOLETE" value="B58900" />
+    <option name="FILESTATUS_SUPPRESSED" value="546E7A" />
+    <option name="FILESTATUS_SWITCHED" value="268BD2" />
+    <option name="FILESTATUS_UNKNOWN" value="D33682" />
+  </colors>
+</scheme>

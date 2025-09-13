@@ -20,7 +20,7 @@ nvim_theme = "nord"
 font = "Maple Mono NF CN"
 min_font_size = 9
 small_font_size = 11
-font_size = 14
+font_size = 13
 big_font_size = 16
 max_font_size = 25
 

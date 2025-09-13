@@ -1,0 +1,7 @@
+<application>
+  <component name="LLMThirdPartyAIProvidersSettings">
+    <option name="enabledThirdPartyAIProviders">
+      <option value="ollama" />
+    </option>
+  </component>
+</application>

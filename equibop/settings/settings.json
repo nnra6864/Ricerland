@@ -229,7 +229,8 @@
         "MemberCount": {
             "enabled": true,
             "memberList": true,
-            "toolTip": true
+            "toolTip": true,
+            "voiceActivity": true
         },
         "MessageClickActions": {
             "enabled": false,
@@ -451,7 +452,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": true,
+            "triggerNameRerender": false,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -1619,6 +1620,12 @@
         },
         "Animalese": {
             "enabled": false
+        },
+        "ChatButtonsPlus": {
+            "enabled": false
+        },
+        "ShowMessageEmbeds": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1631,7 +1638,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1756763532940
+        "settingsSyncVersion": 1757725895216
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

@@ -1,0 +1,883 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Katana" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2xymlezv0937p" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSun.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="720">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ColosseumSun.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1566">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"PlayerScript.cs","foregroundColor":-1249292,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C#": {
+      "usageCount": 627,
+      "lastUsed": 1754063744979
+    },
+    "Image": {
+      "usageCount": 7,
+      "lastUsed": 1749307139058
+    },
+    "JSON": {
+      "usageCount": 2,
+      "lastUsed": 1749822828726
+    },
+    "AsmDef": {
+      "usageCount": 1,
+      "lastUsed": 1751474857043
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Target</find>
+      <find>Source</find>
+      <find>Create</find>
+      <find>create</find>
+      <find>getsource</find>
+      <find />
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/Assets/Scripts/Audio</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isCustomScope" value="true" />
+    <option name="customScopeName" value="Solution" />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/Setting.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/Bypass.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/AudioSettings.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Settings/Tweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/3DTweaks.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/A3DTweaks.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioSettings.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/ReverZoneMixRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/PlayOnAwakeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/LoopTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/PresetTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/Tweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/ITweaks.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioTweaks.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioPresetTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioSettingsPreset.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/BypassTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/VolumeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/VolumeRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/TweakPreset.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/StereoPanTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/StereoPanRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/SpreadTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/SpreadRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/SpatialBlendTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/SpatialBlendRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/RolloffModeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/ReverbZoneMixTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/ReverbZoneMixRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/PriorityTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/PitchTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/PitchRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/MixerGroupTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/DopplerLevelTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/DopplerLevelRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/DistanceRangeTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioTweaksPreset.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/AudioTweaksPresetTweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioManagerItem.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioItem.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioResourceItem.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/Tweaks/ITweak.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/MainMenu/BellScript.cs&quot;,
+    &quot;/home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/GameManager.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs&quot;,
+    &quot;/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/ColosseumSun.cs&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.Katana/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="C#">
+      <summary usageCount="627" lastUsage="1754063744979" />
+    </language>
+    <language id="JSON">
+      <summary usageCount="3" lastUsage="1751474857045" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="0.9" version="1" />
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Core" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="MainMenu" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+              <item name="Scripts" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Player" type="daf7a7f:UnityExplorerFileSystemNode" />
+              <item name="Camera" type="daf7a7f:UnityExplorerFileSystemNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="71192831:AssetsRootNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-project-names" value="true" />
+        <option name="show-tilde-folders" value="true" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Katana" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Katana" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </select>
+        </subPane>
+        <option name="show-all-files" value="false" />
+        <option name="show-project-imports" value="true" />
+        <option name="autoscroll-all" value="false" />
+        <option name="show-scratches" value="true" />
+        <option name="search-dependencies" value="false" />
+        <option name="show-unreal-project-files" value="true" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="RiderPerAppToolWindowOpenedTWKeeper">
+    <option name="map">
+      <map>
+        <entry key="AIAssistant">
+          <value>
+            <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="Assembly Explorer">
+          <value>
+            <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+          </value>
+        </entry>
+        <entry key="Backup and Sync History">
+          <value>
+            <window_info id="Backup and Sync History" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Bookmarks">
+          <value>
+            <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+          </value>
+        </entry>
+        <entry key="Build">
+          <value>
+            <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+          </value>
+        </entry>
+        <entry key="Codeium Chat">
+          <value>
+            <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+          </value>
+        </entry>
+        <entry key="Commit">
+          <value>
+            <window_info id="Commit" order="0" weight="0.2597135" />
+          </value>
+        </entry>
+        <entry key="Coverage">
+          <value>
+            <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+          </value>
+        </entry>
+        <entry key="Database">
+          <value>
+            <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+          </value>
+        </entry>
+        <entry key="Database Changes">
+          <value>
+            <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Debug">
+          <value>
+            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+          </value>
+        </entry>
+        <entry key="Dynamic Program Analysis">
+          <value>
+            <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="ErrorToolWindow">
+          <value>
+            <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
+          </value>
+        </entry>
+        <entry key="File Transfer">
+          <value>
+            <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Find">
+          <value>
+            <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+          </value>
+        </entry>
+        <entry key="Gradle">
+          <value>
+            <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Hierarchy">
+          <value>
+            <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
+          </value>
+        </entry>
+        <entry key="IL">
+          <value>
+            <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+          </value>
+        </entry>
+        <entry key="IL Viewer">
+          <value>
+            <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+          </value>
+        </entry>
+        <entry key="Learn">
+          <value>
+            <window_info id="Learn" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Maven">
+          <value>
+            <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+          </value>
+        </entry>
+        <entry key="Merge Requests">
+          <value>
+            <window_info id="Merge Requests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Monitoring">
+          <value>
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
+          </value>
+        </entry>
+        <entry key="Notifications">
+          <value>
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.14727917" />
+          </value>
+        </entry>
+        <entry key="NuGet">
+          <value>
+            <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
+          </value>
+        </entry>
+        <entry key="Problems">
+          <value>
+            <window_info anchor="bottom" id="Problems" order="1" />
+          </value>
+        </entry>
+        <entry key="Problems View">
+          <value>
+            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.52613634" visible="true" weight="0.1693612" />
+          </value>
+        </entry>
+        <entry key="Project">
+          <value>
+            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17882493" />
+          </value>
+        </entry>
+        <entry key="Pull Requests">
+          <value>
+            <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Refactoring - Change signature">
+          <value>
+            <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
+          </value>
+        </entry>
+        <entry key="RoslynVisualizer">
+          <value>
+            <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Run">
+          <value>
+            <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
+          </value>
+        </entry>
+        <entry key="Services">
+          <value>
+            <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="Space Code Reviews">
+          <value>
+            <window_info id="Space Code Reviews" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Structure">
+          <value>
+            <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47386363" side_tool="true" visible="true" weight="0.1693612" />
+          </value>
+        </entry>
+        <entry key="TODO">
+          <value>
+            <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
+          </value>
+        </entry>
+        <entry key="Terminal">
+          <value>
+            <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+          </value>
+        </entry>
+        <entry key="Test Coverage">
+          <value>
+            <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Tests">
+          <value>
+            <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="TypeScript">
+          <value>
+            <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="Unit Tests">
+          <value>
+            <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+          </value>
+        </entry>
+        <entry key="Unity">
+          <value>
+            <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+          </value>
+        </entry>
+        <entry key="UnrealBuildTool">
+          <value>
+            <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+          </value>
+        </entry>
+        <entry key="Version Control">
+          <value>
+            <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5000997" weight="0.15713277" />
+          </value>
+        </entry>
+        <entry key="documentation.v2">
+          <value>
+            <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+          </value>
+        </entry>
+        <entry key="dotMemory">
+          <value>
+            <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+          </value>
+        </entry>
+        <entry key="dotTrace Profiler">
+          <value>
+            <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="335391000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info id="Space Code Reviews" show_stripe_button="false" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Backup and Sync History" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" show_stripe_button="false" />
+      <window_info id="Commit" order="0" weight="0.2597135" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.17882493" />
+      <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
+      <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Tests" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dynamic Program Analysis" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotTrace Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="dotMemory" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5000997" weight="0.15713277" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
+      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+      <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
+      <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
+      <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+      <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
+      <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
+      <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.14727917" />
+      <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
+      <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info active="true" anchor="right" id="Structure" order="5" sideWeight="0.47386363" side_tool="true" visible="true" weight="0.1693612" />
+      <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
+      <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
+      <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
+      <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
+      <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
+      <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
+      <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
+      <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
+      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.52613634" visible="true" weight="0.1693612" />
+      <unified_weights bottom="0.68538135" left="0.17882493" right="0.1693612" />
+    </layoutV2>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="780" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1751006320647">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="780" y="345" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1751006320647" />
+    <state x="762" y="359" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1751287442736">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="762" y="359" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.2560.1440@0.0.2560.1440" timestamp="1751287442736" />
+    <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter" timestamp="1749813438030">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="1748" y="50" width="1672" height="1071" key="EditorConfigExporter/0.0.5120.1440@0.0.5120.1440" timestamp="1749813438030" />
+    <state x="1323" y="323" key="FileChooserDialogImpl" timestamp="1751006307779">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1323" y="323" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1751006307779" />
+    <state x="2646" y="323" key="FileChooserDialogImpl/0.0.5120.1440@0.0.5120.1440" timestamp="1749813349423" />
+    <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog" timestamp="1749767989252">
+      <screen x="0" y="0" width="5120" height="1440" />
+    </state>
+    <state x="1222" y="2" width="2814" height="1369" key="IDE.errors.dialog/0.0.5120.1440@0.0.5120.1440" timestamp="1749767989252" />
+    <state x="765" y="229" key="RiderGenerateDialog" timestamp="1751188147970">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="765" y="229" key="RiderGenerateDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1751188147970" />
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor" timestamp="1752256241305">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="468" y="140" width="1814" height="1264" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1752256241305" />
+    <state x="1366" y="54" width="2983" height="1384" key="SettingsEditor/0.0.5120.1440@0.0.5120.1440" timestamp="1750108525120" />
+    <state width="623" height="797" key="SwitcherDM" timestamp="1751348433042">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="623" height="797" key="SwitcherDM/0.0.2560.1440@0.0.2560.1440" timestamp="1751348433042" />
+    <state width="746" height="797" key="SwitcherDM/0.0.5120.1440@0.0.5120.1440" timestamp="1750464893915" />
+    <state x="926" y="147" width="1112" height="1110" key="find.popup" timestamp="1751377630606">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="926" y="147" width="1112" height="1110" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751377630606" />
+    <state x="860" y="335" key="run.anything.popup" timestamp="1751262474446">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="860" y="335" key="run.anything.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1751262474446" />
+    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup" timestamp="1753979459100">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1070" y="321" width="978" height="1056" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1753979459100" />
+    <state x="2139" y="321" width="980" height="1056" key="search.everywhere.popup/0.0.5120.1440@0.0.5120.1440" timestamp="1750521498994" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/MinMax/Editor/MinMaxAttributeDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/3DTweaks.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/PlayOnAwakeTweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/LoopTweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManagerItemExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1751475054589" expanded="true" signature="90:3621" ph="Audio Item Override Getters" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/Tweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioTweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioPresetTweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioTweaks.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioSettingsPreset.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/BypassTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/VolumeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/VolumeRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/TweakPreset.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/StereoPanTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/StereoPanRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/SpreadTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/SpreadRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/SpatialBlendTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/SpatialBlendRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/RolloffModeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/ReverbZoneMixTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/ReverbZoneMixRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/PriorityTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/PitchTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/PitchRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/MixerGroupTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/DopplerLevelTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/DopplerLevelRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Effects/AudioEffectsPreset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioTweaksPreset.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/DistanceRangeTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/AudioTweaksPresetTweak.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManagerKey.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioResourceItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManagerItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding>
+            <marker date="1751536761875" expanded="true" signature="6:139" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/Tweaks/ITweak.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/BellScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AudioManager/AudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/CameraHandlerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <folding>
+            <marker date="1748698216426" expanded="true" signature="6:79" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/Camera/Perspective.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/NnUtils/Modules/JSONUtils/Scripts/Types/ConfigColor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1748696351142" expanded="true" signature="6:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.smkplus.custom-toolbar@c42b0f4497a2/Editor/CustomToolbar/Scripts/ToolbarCallback.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/SettingsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2640">
+          <folding>
+            <marker date="1751384483990" expanded="true" signature="6:304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/SettingsManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/Shop/ShopItemScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/ColosseumSun.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/SteamAudio/Scripts/Runtime/SteamAudioManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
