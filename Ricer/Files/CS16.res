@@ -28,8 +28,8 @@ Scheme
 		"DimListText"		"ricer.col.foreground_inactive.format(r g b a)"	// offline friends, unsubscribed games, etc.
 
 		// background colors
-		"ControlBG"			"ricer.col.background_highlight.format(r g b) ricer.col.opacity_cs16.a"		// background color of controls
-		"ControlDarkBG"		"ricer.col.background.format(r g b) ricer.col.opacity_cs16.a"		// darker background color; used for background of scrollbars
+		"ControlBG"			"ricer.col.background.format(r g b) ricer.col.opacity_cs16.a"		// background color of controls
+		"ControlDarkBG"		"ricer.col.background_highlight.format(r g b) ricer.col.opacity_cs16.a"		// darker background color; used for background of scrollbars
 		"WindowBG"			"ricer.col.background.format(r g b) ricer.col.opacity_cs16.a"		// background color of text edit panes (chat, text entries, etc.)
 		"SelectionBG"		"ricer.col.background_highlight.format(r g b) ricer.col.opacity_cs16.a"	// background color of any selected text or menu item
 		"SelectionBG2"		"ricer.col.background_highlight.format(r g b) ricer.col.opacity_cs16.a"		// selection background in window w/o focus
@@ -46,8 +46,8 @@ Scheme
 		"SliderTrackColor"	"ricer.col.button.format(r g b a)"
 
 		// border colors
-		"BorderBright"		"ricer.col.outline.format(r g b a)"	// the lit side of a control
-		"BorderDark"		"ricer.col.outline_alt.format(r g b a)"		// the dark/unlit side of a control
+		"BorderBright"		"ricer.col.outline_alt.format(r g b a)"	// the lit side of a control
+		"BorderDark"		"ricer.col.outline.format(r g b a)"		// the dark/unlit side of a control
 		"BorderSelection"	"ricer.col.outline_inactive.format(r g b a)"			// the additional border color for displaying the default/selected button
 	}
 

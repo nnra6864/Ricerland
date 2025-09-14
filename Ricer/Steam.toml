@@ -26,22 +26,22 @@ max_font_size = 25
 
 # Outline
 outline_size = 2
-outline_rotation = 90
+outline_rotation = 225
 outline_fade_animation = 1
-outline_fade_duration = 1
-outline_fade_bezier = "quadOut"
-outline_rotation_animation = 1
-outline_rotation_duration = 30
-outline_rotation_bezier = "linear"
-outline_rotation_type = "loop"
+outline_fade_duration = 10
+outline_fade_bezier = "expoOut"
+outline_rotation_animation = 0
+outline_rotation_duration = 5
+outline_rotation_bezier = "quadOut"
+outline_rotation_type = "once"
 
 # Misc
 terminal = "kitty"
-rounding = 10
-roundingPower = 4
+rounding = 0
+roundingPower = 1
 gapsIn = 5
 gapsOut = 10
-blur = "true"
+blur = "false"
 blurSize = 20
 blurPasses = 4
 cursor_size = 32
@@ -57,14 +57,14 @@ prompt_bg_hsv_delta = "v+10"
 
 [Colors]
 # Terminal
-black = "102840ff"
-red = "bf3030ff"
-green = "60bf30ff"
-yellow = "bfa730ff"
-blue = "3078bfff"
-magenta = "8330bfff"
-cyan = "608fbfff"
-white = "accae6ff"
+black = "3E4637FF"
+red = "4C5844FF"
+green = "5A6A50FF"
+yellow = "958831FF"
+blue = "C4B550FF"
+magenta = "75806FFF"
+cyan = "A0AA95FF"
+white = "D8DED3FF"
 
 # Terminal Bright
 br_black = "$black.$highlight_hsv"
@@ -77,70 +77,68 @@ br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
 # Opacity
-opacity = "rgb(0, 0, 0, 0.85)"
-opacity_inactive = "rgb(0, 0, 0, 0.75)"
-opacity_cs16 = "rgb(0, 0, 0, 0.5)"
+opacity = "rgb(0, 0, 0, 1.0)"
+opacity_inactive = "rgb(0, 0, 0, 1.0)"
+opacity_cs16 = "rgb(0, 0, 0, 1.0)"
 
 # Foreground
-foreground = "$white"
+foreground = "D8DED3"
 foreground_highlight = "$foreground.$highlight_hsv"
 foreground_placeholder = "$foreground.$placeholder_hsv"
 foreground_inactive = "$foreground.$inactive_hsv"
 foreground_disabled = "$foreground.$disabled_hsv"
 
 # Foreground Alternative
-foreground_alt = "$cyan"
+foreground_alt = "$foreground"
 foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
 foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
 foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
 foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
 
 # Background
-background = "10284010"
-background_highlight = "$background.$highlight_hsv"
+background = "4c5843"
+background_highlight = "3e4637"
 background_inactive = "$background.$inactive_hsv"
 background_disabled = "$background.$disabled_hsv"
 
 # Background Alternative
-background_alt = "10284020"
-background_highlight_alt = "$background_alt.$highlight_hsv"
+background_alt = "5a6a50"
+background_highlight_alt = "3e4637"
 background_inactive_alt = "$background_alt.$inactive_hsv"
 background_disabled_alt = "$background_alt.$disabled_hsv"
 
 # Button Background
-button = "$background_alt"
-button_highlight = "$button.$highlight_hsv"
+button = "4c5843"
+button_highlight = "3e4637"
 button_inactive = "$button.$inactive_hsv"
 button_disabled = "$button.$disabled_hsv"
 
 # Button Foreground
-button_foreground = "$white"
-button_foreground_highlight = "$button_foreground.$highlight_hsv"
+button_foreground = "d8ded3"
+button_foreground_highlight = "c4b550"
 button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
 # Outline
-outline = "$br_white"
-outline_highlight = "$outline.$highlight_hsv"
-outline_inactive = "$outline.$inactive_hsv"
-outline_disabled = "$outline.$disabled_hsv"
-
-# Outline Alternative
-outline_alt = "$br_blue"
-outline_highlight_alt = "$outline_alt.$highlight_hsv"
-outline_inactive_alt = "$outline_alt.$inactive_hsv"
-outline_disabled_alt = "$outline_alt.$disabled_hsv"
+outline = "282E22"
+outline_highlight = "$outline"
+outline_alt = "889180"
+outline_highlight_alt = "$outline_alt"
+outline_inactive = "$outline_alt"
+outline_disabled = "$outline_alt"
+outline_inactive_alt = "$outline"
+outline_disabled_alt = "$outline"
 
 # Shadow
 shadow = "$black"
-shadow_inactive = "$shadow.$inactive_hsv"
+shadow_inactive = "$shadow"
 
 # Link
 link = "$br_cyan"
 link_visited = "$br_blue"
 
 # Prompt
-prompt_bg = "$blue"
+prompt_bg = "$green"
 prompt_fg = "$white"
 prompt_time_bg = "$prompt_bg"
 prompt_time_fg = "$prompt_fg"
@@ -187,9 +185,9 @@ GTKSettings = "~/.local/share/nwg-look/gsettings"
 Dunst = ["~/.config/dunst/dunstrc", "hexa"]
 Fonts = "~/.config/fontconfig/fonts.conf"
 Hyprmouse = "~/.config/hypr/hyprmouse.conf"
-QtCol = ["~/.config/qt5ct/colors/Ricer.conf", "hexa"]
-QtColors = ["~/.config/qt6ct/colors/Ricer.conf", "hexa"]
-KDEGlobals = ["~/.config/kdeglobals", "hexa"]
+QtCol = ["~/.config/qt5ct/colors/Ricer.conf", "hex"]
+QtColors = ["~/.config/qt6ct/colors/Ricer.conf", "hex"]
+KDEGlobals = ["~/.config/kdeglobals", "hex"]
 FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
 ZenBrowserLogo = ["~/.config/ZenBrowser/ZenLogo.svg", "hexa"]
 ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
