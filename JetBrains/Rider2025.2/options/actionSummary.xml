@@ -112,13 +112,13 @@
       <i c="6" l="1746284509414" />
     </e>
     <e n="ConfigurationXDebuggerResumeAction">
-      <i c="5" l="1757347494581" />
+      <i c="15" l="1757930136665" />
     </e>
     <e n="CopyReferencePopupGroup">
       <i c="1" l="1748709249304" />
     </e>
     <e n="Debug">
-      <i c="12" l="1757347303959" />
+      <i c="15" l="1757929979276" />
     </e>
     <e n="EditPropertiesAction">
       <i c="19" l="1749296024412" />
@@ -313,7 +313,7 @@
       <i c="4" l="1746439599953" />
     </e>
     <e n="GotoDeclaration">
-      <i c="213" l="1753980335787" />
+      <i c="215" l="1757928981956" />
     </e>
     <e n="GotoFile">
       <i c="8" l="1757346927766" />
@@ -472,7 +472,7 @@
       <i c="1" l="1733848119423" />
     </e>
     <e n="RedesignedRunConfigurationSelector">
-      <i c="4" l="1751467800397" />
+      <i c="5" l="1757929415851" />
     </e>
     <e n="Refactorings.QuickListPopupAction">
       <i c="30" l="1751531572372" />
@@ -484,7 +484,7 @@
       <i c="3" l="1744729849107" />
     </e>
     <e n="Rerun">
-      <i c="3" l="1742926840973" />
+      <i c="4" l="1757929521565" />
     </e>
     <e n="ResizeToolWindowLeft">
       <i c="1" l="1717164779081" />
@@ -565,7 +565,7 @@
       <i c="92" l="1742927014924" />
     </e>
     <e n="Stop">
-      <i c="14" l="1757347553662" />
+      <i c="17" l="1757930243487" />
     </e>
     <e n="Switcher">
       <i c="124" l="1742300749600" />
@@ -595,7 +595,7 @@
       <i c="6" l="1751537120680" />
     </e>
     <e n="ToggleLineBreakpoint">
-      <i c="139" l="1757346991699" />
+      <i c="145" l="1757929974033" />
     </e>
     <e n="Tree-scrollDownChangeSelection">
       <i c="1" l="1751193700418" />
@@ -619,7 +619,7 @@
       <i c="3" l="1742247094246" />
     </e>
     <e n="TriggerPlayInUnity">
-      <i c="12" l="1757347340635" />
+      <i c="15" l="1757929986578" />
     </e>
     <e n="TriggerStepInUnityEditor">
       <i c="4" l="1731489489823" />
@@ -686,6 +686,9 @@
     </e>
     <e n="com.intellij.codeInsight.documentation.render.DocRenderer$ToggleRenderingAction">
       <i c="4" l="1733830647218" />
+    </e>
+    <e n="com.intellij.execution.runners.RunContentBuilder$3">
+      <i c="1" l="1757930075004" />
     </e>
     <e n="com.intellij.execution.ui.RunToolbarPopupKt$createRunConfigurationWithInlines$result$1">
       <i c="1" l="1717725388003" />
@@ -802,7 +805,7 @@
       <i c="76" l="1751348433042" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="196" l="1754919486682" />
+      <i c="197" l="1757930941136" />
     </e>
     <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
       <i c="90" l="1752256225021" />
@@ -823,7 +826,7 @@
       <i c="3" l="1746715388470" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="157" l="1757347564135" />
+      <i c="159" l="1757930150762" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="61" l="1751469257745" />
@@ -877,7 +880,7 @@
       <i c="1268" l="1753979147340" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
-      <i c="21" l="1757347568707" />
+      <i c="26" l="1757929629757" />
     </e>
     <e n="com.jetbrains.rd.ui.bindable.views.ButtonViewControl$tryGetRealAction$action$1">
       <i c="7" l="1746283921077" />

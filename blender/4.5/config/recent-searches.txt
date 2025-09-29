@@ -5,3 +5,4 @@ Deform ▸ Curve
 Generate ▸ Array
 Generate ▸ Decimate
 Mesh ▸ Cube
+Generate ▸ Subdivision Surface

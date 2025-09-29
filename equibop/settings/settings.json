@@ -263,7 +263,8 @@
             "clyde": true
         },
         "MoreCommands": {
-            "enabled": true
+            "enabled": true,
+            "uwuEverything": false
         },
         "MoreKaomoji": {
             "enabled": false
@@ -326,7 +327,8 @@
             "channelToAffect": "both_dms",
             "allowMentions": false,
             "allowEveryone": false,
-            "ignoreUsers": ""
+            "ignoreUsers": "",
+            "alwaysPlaySound": false
         },
         "OpenInApp": {
             "enabled": true,
@@ -494,10 +496,6 @@
             "chatContextMenu": true,
             "enabledGlobally": true
         },
-        "SortFriendRequests": {
-            "enabled": true,
-            "showDates": true
-        },
         "SpotifyControls": {
             "enabled": false
         },
@@ -637,9 +635,6 @@
             "showTimeouts": true,
             "showInvitesPaused": true,
             "showModView": true
-        },
-        "WebRichPresence (arRPC)": {
-            "enabled": false
         },
         "BetterRoleContext": {
             "enabled": false
@@ -836,7 +831,9 @@
             "dms": true,
             "billing": true,
             "gift": true,
-            "emojiList": false
+            "emojiList": false,
+            "serverBoost": true,
+            "gif": false
         },
         "AtSomeone": {
             "enabled": false
@@ -1165,9 +1162,6 @@
         "InstantScreenshare": {
             "enabled": false
         },
-        "JumpToStart": {
-            "enabled": false
-        },
         "Jumpscare": {
             "enabled": false,
             "imageSource": "https://github.com/Equicord/Equibored/blob/main/icons/jumpscare/troll.gif?raw=true",
@@ -1317,10 +1311,6 @@
         },
         "RandomVoice": {
             "enabled": false
-        },
-        "Remix": {
-            "enabled": false,
-            "remixTag": true
         },
         "RemixMe": {
             "enabled": false
@@ -1480,7 +1470,10 @@
         },
         "EquicordHelper": {
             "enabled": true,
-            "hideClanBadges": false
+            "hideClanBadges": false,
+            "disableCreateDMButton": false,
+            "disableDMContextMenu": false,
+            "noMirroredCamera": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1626,19 +1619,46 @@
         },
         "ShowMessageEmbeds": {
             "enabled": false
+        },
+        "ToneIndicators": {
+            "enabled": false
+        },
+        "JumpTo": {
+            "enabled": false
+        },
+        "AudioPlayerAPI": {
+            "enabled": true
+        },
+        "VoiceButtons": {
+            "enabled": false
+        },
+        "SortFriends": {
+            "enabled": true,
+            "showDates": true
+        },
+        "ListenBrainzRPC": {
+            "enabled": false
+        },
+        "WebRichPresence": {
+            "enabled": false
+        },
+        "RemixRevived": {
+            "enabled": false,
+            "remixTag": true
         }
     },
     "notifications": {
         "timeout": 2495.1576468582016,
         "position": "bottom-right",
         "useNative": "not-focused",
-        "logLimit": 50
+        "logLimit": 50,
+        "missed": true
     },
     "cloud": {
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1757725895216
+        "settingsSyncVersion": 1759094002180
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

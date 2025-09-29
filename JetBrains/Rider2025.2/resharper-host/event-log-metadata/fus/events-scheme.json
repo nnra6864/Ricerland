@@ -934,6 +934,19 @@
       }
     }
   }, {
+    "id" : "command.completion.state",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:command.completion.enabled}" ],
+      "event_data" : {
+        "enabled" : [ "{enum#boolean}" ],
+        "used_as_group" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "commit.interactions",
     "builds" : [ ],
     "versions" : [ {
@@ -3513,7 +3526,7 @@
       "event_data" : {
         "acceptance_information" : [ "{enum:LIVE|SURROUND|SURROUND_FROM_OVERTYPING|FILE|IGNORED}" ],
         "is_multiple_file_template" : [ "{enum#boolean}" ],
-        "name" : [ "{enum:#if|#region|asp:HyperLink|script|()|@inherits|@model|@section|Attribute|ByRef|ByVal|Dim|Exception|UCLASS|UENUM|UENUMCLASS|UINTERFACE|USTRUCT|a|addTestSet|asrt|asrtn|attachedProperty|cast|cctor|cerr|checked|cin|class|clog|const_cast|cout|ct|ctor|ctx|cw|d|dc|dependencyProperty|do|doc|dtor|dw|dynamic_cast|ear|else|ensure|ensureIsPositive|enum|enum_to_string|enumclass|for|foreach|fori|forin|forof|forr|from|fun|function|generator|hal|if|if...else|incg|include_guard|indexer|interface|it|itar|iterator|itli|join|lock|main|mbox|mctor|mock|module|namespace|namespace ...|ngClass|ngFor|ngIf|ngModel|ngRouterLink|ngStyle|nguid|nidx|out|outv|pci|pcs|prop|propg|psr|pssm|psvm|reinterpret_cast|ritar|rta|sel|sfc|sidx|sim|static_cast|struct|sub|svm|switch|t|tag|tc|test|thr|try|tryf|ua|unchecked|union|unsafe|using|vdtor|wcerr|wcin|wclog|wcout|while|with|{}|~|Class|Enum|Interface|Module|Record|Struct|Structure|TypeScript Class|App.config File|Component|Content Page|Content View|Controller|Header file|MSTest Test Class|MVC View Page with master page|MVC View Page without master page|MVC View UserControl|Master page with base master page|Master page without base master page|Module interface unit|NUnit 2x Test Fixture|NUnit 3x Test Fixture|Page|Property List|Razor MVC Partial View|Razor MVC View|Razor MVC View with Layout|Resource Dictionary|Resources (.resx)|Script|Signature file|Source file|Storyboard for Mac|Storyboard for iOS|TypeScript Interface|TSX Empty File|Type|TypeScript Module|TypeScript Empty File|User Control|View Controller with XIB for Mac|View Controller with XIB for iOS|View Controller without XIB for Mac|View Controller without XIB for iOS|Web control|Web form with master page|Web form without master page|Web.config File|Window|Windows Form|XIB for Mac|XIB for iOS|Xamarin Form|appsettings.json File|launchSettings.json File|runtimeconfig.template.json File|xUnit Test Class}" ],
+        "name" : [ "{enum:#if|#region|asp:HyperLink|script|()|@inherits|@model|@section|Attribute|ByRef|ByVal|Dim|Exception|UCLASS|UENUM|UENUMCLASS|UINTERFACE|USTRUCT|a|addTestSet|asrt|asrtn|attachedProperty|cast|cctor|cerr|checked|cin|class|clog|const_cast|cout|ct|ctor|ctx|cw|d|dc|dependencyProperty|do|doc|dtor|dw|dynamic_cast|ear|else|ensure|ensureIsPositive|enum|enum_to_string|enumclass|for|foreach|fori|forin|forof|forr|from|fun|function|generator|hal|if|if...else|incg|include_guard|indexer|interface|it|itar|iterator|itli|join|lock|main|mbox|mctor|mock|module|namespace|namespace ...|ngClass|ngFor|ngIf|ngModel|ngRouterLink|ngStyle|nguid|nidx|out|outv|pci|pcs|prop|propg|psr|pssm|psvm|reinterpret_cast|ritar|rta|sel|sfc|sidx|sim|static_cast|struct|sub|svm|switch|t|tag|tc|test|thr|try|tryf|ua|unchecked|union|unsafe|using|vdtor|wcerr|wcin|wclog|wcout|while|with|~|Class|Enum|Interface|Module|Record|Struct|Structure|TypeScript Class|App.config File|Component|Content Page|Content View|Controller|Header file|MSTest Test Class|MVC View Page with master page|MVC View Page without master page|MVC View UserControl|Master page with base master page|Master page without base master page|Module interface unit|NUnit 2x Test Fixture|NUnit 3x Test Fixture|Page|Property List|Razor MVC Partial View|Razor MVC View|Razor MVC View with Layout|Resource Dictionary|Resources (.resx)|Script|Signature file|Source file|Storyboard for Mac|Storyboard for iOS|TypeScript Interface|TSX Empty File|Type|TypeScript Module|TypeScript Empty File|User Control|View Controller with XIB for Mac|View Controller with XIB for iOS|View Controller without XIB for Mac|View Controller without XIB for iOS|Web control|Web form with master page|Web form without master page|Web.config File|Window|Windows Form|XIB for Mac|XIB for iOS|Xamarin Form|appsettings.json File|launchSettings.json File|runtimeconfig.template.json File|xUnit Test Class}" ],
         "type" : [ "{util#dotnet_file_extension}" ]
       }
     }
@@ -4580,7 +4593,8 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "code" : [ "{regexp#integer}" ],
-        "error" : [ "{enum:SEND|NOT_PERMITTED_SERVER|NOT_PERMITTED_USER|ERROR_IN_CONFIG|NOT_PERMITTED_TIMEOUT|NOTHING_TO_SEND|SENT_WITH_ERRORS|EXCEPTION_OCCURRED|NO_ARGUMENTS|NO_APPLICATION_CONFIG|IDE_NOT_CLOSING|ERROR_ON_SEND|NO_DEVICE_ID|NO_MACHINE_ID|INVALID_BUCKET|INVALID_REVISION|NO_LOG_FILES}", "{enum:EMPTY_CONTENT|INVALID_JSON|UNKNOWN|EMPTY_SERVICE_URL|UNREACHABLE_SERVICE|EMPTY_RESPONSE_BODY|ERROR_ON_LOAD}", "{enum:NO_LOGS|NO_UPLOADER|NO_LIBRARIES|NO_TEMP_FOLDER}", "{util#class_name}" ],
+        "dictionary_last_modified" : [ "{regexp#integer}" ],
+        "error" : [ "{enum:SEND|NOT_PERMITTED_SERVER|NOT_PERMITTED_USER|ERROR_IN_CONFIG|NOT_PERMITTED_TIMEOUT|NOTHING_TO_SEND|SENT_WITH_ERRORS|EXCEPTION_OCCURRED|NO_ARGUMENTS|NO_APPLICATION_CONFIG|IDE_NOT_CLOSING|ERROR_ON_SEND|NO_DEVICE_ID|NO_MACHINE_ID|INVALID_BUCKET|INVALID_REVISION|NO_LOG_FILES}", "{enum:NO_LOGS|NO_UPLOADER|NO_LIBRARIES|NO_TEMP_FOLDER}", "{util#class_name}", "{enum:EMPTY_CONTENT|INVALID_JSON|UNKNOWN|EMPTY_SERVICE_URL|UNREACHABLE_SERVICE|EMPTY_RESPONSE_BODY|ERROR_ON_LOAD|UNKNOWN_IO_ERROR}" ],
         "error_ts" : [ "{regexp#integer}" ],
         "errors" : [ "{regexp#integer}" ],
         "external" : [ "{enum#boolean}" ],
@@ -4600,7 +4614,7 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated" ]
+        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionaries.load.failed", "dictionaries.loaded", "dictionary.updated", "dictionary.update.failed" ]
       }
     },
     "anonymized_fields" : [ {
@@ -7501,6 +7515,20 @@
       "fields" : [ "message_id", "chat_session_id" ]
     } ]
   }, {
+    "id" : "llm.daemon",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:request}" ],
+      "event_data" : {
+        "cached_postprocessed_insights" : [ "{regexp#integer}" ],
+        "new_postprocessed_insights" : [ "{regexp#integer}" ],
+        "new_processed_lines" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "llm.hub",
     "builds" : [ ],
     "versions" : [ {
@@ -7513,8 +7541,8 @@
         "button_name" : [ "{enum:Lets Go|Upgrade|Refresh}" ],
         "current_plan" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}", "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
         "new_plan" : [ "{enum:Ultimate|Enterprise|Pro Trial|Pro|Business Trial|Business|Trial for EAP IDE|Free|None}" ],
-        "notification_action" : [ "{enum:Close(x)|Upgrade now|Renew now|Upgrade to Pro}" ],
-        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}", "{enum:Business expires in 5 days|Business expired}", "{enum:Business trial expires in 5 days|Business trial expired}" ],
+        "notification_action" : [ "{enum:Top-up credits|Upgrade to ultimate}", "{enum:Close(x)|Upgrade now|Renew now|Upgrade to Pro}" ],
+        "notification_type" : [ "{enum:Trial expires in 5 days|Trial expired|Trial expired Free available|Trial expired Free not available}", "{enum:Free limit|Pro limit|Pro trial limit|Business limit|Business trial limit|Ultimate plan|Enterprise}", "{enum:Ultimate top up limit|Pro top up limit}", "{enum:Pro expires in 5 days|Pro expired|Pro expired Free available|Pro expired Free not available}", "{enum:Pro expired, top up remained}", "{enum:Business expires in 5 days|Business expired}", "{enum:Business expired, top up remained}", "{enum:Business trial expires in 5 days|Business trial expired}" ],
         "plan_type" : [ "{enum:ULTIMATE|ENTERPRISE|PRO_TRIAL|PRO|BUSINESS_TRIAL|BUSINESS|EAP_TRIAL|FREE|NONE}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -7992,8 +8020,11 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:ej_generation.finished|ej_generation.started|ej_generation_step.started|ej_generation_step.finished}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "agent_locs_added" : [ "{regexp#integer}" ],
+        "agent_locs_read" : [ "{regexp#integer}" ],
+        "agent_locs_removed" : [ "{regexp#integer}" ],
         "anonymous_id" : [ "{regexp#hash}" ],
         "artifact_id" : [ "{regexp#short_hash}" ],
         "artifact_stats_time_ms" : [ "{regexp#integer}" ],
@@ -8004,6 +8035,8 @@
         "explicitly_selected_user_paths_count" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
+        "issue_type" : [ "{enum:ISSUE|CHAT}" ],
+        "llm_model" : [ "{enum:OPENAI_GPT_5|ANTHROPIC_SONNET_3_7|ANTHROPIC_SONNET_4}" ],
         "model_stats_cache_create_input_tokens" : [ "{regexp#integer}" ],
         "model_stats_cache_input_tokens" : [ "{regexp#integer}" ],
         "model_stats_cached_cost" : [ "{regexp#float}" ],
@@ -8017,8 +8050,11 @@
         "open_files_added_to_context" : [ "{regexp#integer}" ],
         "open_files_added_to_context_count" : [ "{regexp#integer}" ],
         "parent_artifact_id" : [ "{regexp#short_hash}" ],
+        "post_generation_delay_ms" : [ "{regexp#integer}" ],
         "recent_files_added_to_context" : [ "{regexp#integer}" ],
         "recent_files_added_to_context_count" : [ "{regexp#integer}" ],
+        "remains_locs_added" : [ "{regexp#integer}" ],
+        "remains_locs_removed" : [ "{regexp#integer}" ],
         "result_status" : [ "{enum:UNKNOWN|SUBMIT|EXIT_COST|EXIT_FORMAT|EXIT_TIMEOUT|EXIT_CONTEXT|EXIT_MAX_ITERATIONS|EXIT_EARLY}" ],
         "speed_mode" : [ "{enum:Speed|Quality}" ],
         "start_time_ms" : [ "{regexp#integer}" ],
@@ -8026,7 +8062,8 @@
         "step_type" : [ "{enum:unknown|add_npm_dependency|create|replace_lines|search_replace|edit|edit_symbol|find_class_by_fqn|find_file|find_related_test|goto|npm_install|open|remove_npm_dependency|rewrite_file|npm_build|npm_test|run_test|scroll_up|scroll_down|search_dir|search_file|search_project|submit|undo_edit|get_file_structure|summarize_task_description|report_generator|ls|cd|find|cat|rm|grep|python|python3|pip|pip3|curl|git|pytest|conda}", "{enum#__step_type}" ]
       },
       "enums" : {
-        "__step_type" : [ "gradlew", "mvnw", "AgentStateMarker", "javac", "mvn", "NameMarker", "gradle", "ReportGenerator", "java", "StepSummary", "kotlinc", "SummarizeTaskDescription", "EditFileMarker", "swe_next_step", "nebius_critique", "replace_lines_worker", "phpstorm_swe_patch", "phpstorm_swe_next_step", "edit_critique", "ranking_critique", "rider_swe_next_step", "swe_patch_idea", "void_history_processor", "last_5_observations", "add_steps_info", "search_replace_worker", "last_5_observations_w_steps_info", "relevant_symbols_extractor", "rewrite_file_worker", "rider_swe_patch", "swe_patch", "webstorm_swe_next_step", "webstorm_swe_patch", "open_entire_file", "swe_next_step_idea", "compress_history_processor", "project_str_worker", "goland_swe_next_step", "goland_swe_patch", "rubymine_swe_next_step", "rustrover_swe_patch", "rustrover_swe_next_step", "rubymine_swe_patch" ]
+        "__event_id" : [ "ej_generation.finished", "ej_generation.started", "ej_generation_step.started", "ej_generation_step.finished", "ej_post_generation.finished", "ej_post_generation.started" ],
+        "__step_type" : [ "gradlew", "mvnw", "AgentStateMarker", "javac", "mvn", "NameMarker", "gradle", "ReportGenerator", "java", "StepSummary", "kotlinc", "SummarizeTaskDescription", "EditFileMarker", "swe_next_step", "nebius_critique", "replace_lines_worker", "phpstorm_swe_patch", "phpstorm_swe_next_step", "edit_critique", "ranking_critique", "rider_swe_next_step", "swe_patch_idea", "void_history_processor", "last_5_observations", "add_steps_info", "search_replace_worker", "last_5_observations_w_steps_info", "relevant_symbols_extractor", "rewrite_file_worker", "rider_swe_patch", "swe_patch", "webstorm_swe_next_step", "webstorm_swe_patch", "open_entire_file", "swe_next_step_idea", "compress_history_processor", "project_str_worker", "goland_swe_next_step", "goland_swe_patch", "rubymine_swe_next_step", "rustrover_swe_patch", "rustrover_swe_next_step", "rubymine_swe_patch", "rename_element", "update_status", "answer", "build", "ask_user", "bash" ]
       }
     },
     "anonymized_fields" : [ {
@@ -8038,6 +8075,9 @@
     }, {
       "event" : "ej_generation.started",
       "fields" : [ "issue_id", "anonymous_id", "chain_id", "artifact_id" ]
+    }, {
+      "event" : "ej_post_generation.started",
+      "fields" : [ "artifact_id", "issue_id", "parent_artifact_id", "chain_id" ]
     }, {
       "event" : "ej_generation_step.finished",
       "fields" : [ "chain_id", "issue_id", "parent_artifact_id", "artifact_id" ]
@@ -9720,7 +9760,7 @@
         "recovery_reason" : [ "{util#class_name}" ],
         "redone_requests" : [ "{regexp#integer}" ],
         "request_type" : [ "{util#class_name}" ],
-        "response" : [ "{enum:SUCCESS|FAILURE|RETRY|UNKNOWN}" ],
+        "response" : [ "{enum:SUCCESS|FAILURE|RETRY|UNKNOWN}", "{enum:FAILURE_EDITOR_UNBOUND_RECENTLY}" ],
         "undone_requests" : [ "{regexp#integer}" ]
       },
       "enums" : {
@@ -13233,12 +13273,13 @@
         "engine" : [ "{enum:REWORKED|CLASSIC|NEW_TERMINAL}" ],
         "font_size" : [ "{regexp#float}" ],
         "line_spacing" : [ "{regexp#float}" ],
+        "mode" : [ "{enum:ALWAYS|ONLY_PARAMETERS|NEVER}" ],
         "option_name" : [ "{enum:enable_audible_bell|close_on_session_end|report_mouse|copy_on_selection|paste_on_middle_mouse_button|override_ide_shortcuts|enable_shell_integration|highlight_hyperlinks|use_option_as_meta|run_commands_using_ide}", "{enum:show_separators_between_commands}" ],
         "shape" : [ "{enum:BLOCK|UNDERLINE|VERTICAL}" ],
         "style" : [ "{enum:SINGLE_LINE|DOUBLE_LINE|SHELL}" ]
       },
       "enums" : {
-        "__event_id" : [ "non.default.tab.name", "non.default.options", "non.default.prompt.style", "non.default.shell", "non.default.cursor.shape", "non.default.font.name", "non.default.column.spacing", "non.default.font.size", "non.default.line.spacing", "non.default.engine" ]
+        "__event_id" : [ "non.default.tab.name", "non.default.options", "non.default.prompt.style", "non.default.shell", "non.default.cursor.shape", "non.default.font.name", "non.default.column.spacing", "non.default.font.size", "non.default.line.spacing", "non.default.engine", "non.default.command.completion.mode" ]
       }
     }
   }, {
@@ -14969,5 +15010,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "6147"
+  "version" : "6174"
 }

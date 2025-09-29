@@ -1,9 +1,9 @@
 sw_volume: 50
 audio_device_state:1:MPD PipeWire Output
 audio_device_state:1:my_fifo
-state: play
-current: 509
-time: 120.138
+state: pause
+current: 321
+time: 52.61
 random: 1
 repeat: 1
 single: 0
@@ -684,8 +684,8 @@ playlist_begin
 668:YouTube/SpongeBOZZ & TJ_beastboy - Warm Up (prod. by Vendetta Beats) [wjeCJ11oUHY].mp3
 669:YouTube/Tau the Song with 6.28318 Million Notes [b0gyQMJHQ78].mp3
 670:YouTube/The Forest： Original Game Soundtrack - Main Menu Theme [3aU5u4H1vvg].mp3
-671:YouTube/Three Days Grace - The Real You (Piano Cover) [6oIpnbBQurg].opus
-672:YouTube/Thunderzone V2 ON PIANO (The Golden) #geometrydash [Nzk9TVR-feg].mp3
+671:YouTube/Thunderzone V2 ON PIANO (The Golden) #geometrydash [Nzk9TVR-feg].mp3
+672:YouTube/Three Days Grace - The Real You (Piano Cover) [6oIpnbBQurg].opus
 673:YouTube/Tiësto & KSHMR - Secrets (Hasit Nanda Piano Version) [fDPqsNrTqlk].opus
 674:YouTube/Time Back (Evir Remix) [mL4mgxIYTF4].mp3
 675:YouTube/Tristam  Flawless [tQ4WADz6gkA].mp3

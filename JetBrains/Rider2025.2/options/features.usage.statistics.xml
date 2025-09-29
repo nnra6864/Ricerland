@@ -74,7 +74,7 @@
     <feature id="refactoring.extractMethod" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="NuGet.QuickList" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.generate.code" count="4" last-shown="0" last-used="1751188133104" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="264" last-shown="0" last-used="1753980335788" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="266" last-shown="0" last-used="1757928981960" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="210" last-shown="0" last-used="1757347085832" shown-count="0" />
     <feature id="ui.open.project.tool.window" count="6" last-shown="0" last-used="1748750489551" shown-count="0" />
     <feature id="editing.join.lines" count="0" last-shown="0" last-used="0" shown-count="0" />

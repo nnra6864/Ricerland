@@ -2695,15 +2695,6 @@
       <jump line="44" column="36" filename="$USER_HOME$/Data/Projects/Unity/EasyTextEffect/Assets/Scripts/InputScript.cs" protocol="file" />
     </project>
     <project id="Katana-e8b37a81">
-      <jump line="92" column="14" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="91" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="93" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="95" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Core/SettingsManager.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/Perspective.cs" protocol="file" />
-      <jump line="193" column="46" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="197" column="27" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
-      <jump line="192" column="19" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="29" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="196" column="67" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
       <jump line="33" column="22" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" protocol="file" />
@@ -2794,6 +2785,16 @@
       <jump line="50" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" protocol="file" />
       <jump line="36" column="13" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
       <jump line="21" column="0" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Fruits/ExplosionManagerScript.cs" protocol="file" />
+      <jump line="47" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" protocol="file" />
+      <jump line="11" column="47" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" protocol="file" />
+      <jump line="12" column="26" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/UnitySingleton/Runtime/Scripts/MonoSingleton.cs" protocol="file" />
+      <jump line="32" column="12" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
+      <jump line="170" column="25" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/UnitySingleton/Runtime/Scripts/MonoSingleton.cs" protocol="file" />
+      <jump line="38" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/UnitySingleton/Runtime/Scripts/MonoSingleton.cs" protocol="file" />
+      <jump line="39" column="16" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/UnitySingleton/Runtime/Scripts/MonoSingleton.cs" protocol="file" />
+      <jump line="46" column="20" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/UnitySingleton/Runtime/Scripts/MonoSingleton.cs" protocol="file" />
+      <jump line="10" column="43" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" protocol="file" />
+      <jump line="22" column="45" filename="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" protocol="file" />
     </project>
     <project id="My project-3d605ab4">
       <jump line="2" column="13" filename="$USER_HOME$/Documents/e/My project/Assets/Scripts/Player.cs" protocol="file" />
@@ -2854,12 +2855,9 @@
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/SteamAudioUnity.csproj" timestamp="1754543950005">
         <mark key="&quot;" line="175" column="49" />
       </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" timestamp="1757347150542">
+      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Colosseum/ColosseumSceneManager.cs" timestamp="1757928981750">
         <mark key="&quot;" line="11" column="38" />
-        <mark key="[" line="50" column="32" />
-        <mark key="]" line="50" column="30" />
-        <mark key="^" line="50" column="30" />
-        <mark key="." line="50" column="29" />
+        <mark key="'" line="11" column="47" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/PlayerScript.cs" timestamp="1757346693957">
         <mark key="&quot;" line="112" column="43" />
@@ -2873,10 +2871,6 @@
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" timestamp="1757347592149">
         <mark key="&quot;" line="8" column="36" />
-        <mark key="[" line="36" column="12" />
-        <mark key="]" line="36" column="14" />
-        <mark key="^" line="36" column="14" />
-        <mark key="." line="36" column="13" />
       </file>
       <file name="$USER_HOME$/Documents/e/My project/Assets/Scripts/Player.cs" timestamp="1754072737798">
         <mark key="&quot;" line="16" column="17" />
@@ -2885,14 +2879,6 @@
         <mark key="]" line="23" column="85" />
         <mark key="." line="23" column="84" />
         <mark key="^" line="23" column="85" />
-      </file>
-      <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Assets/AudioManager/AudioManager.cs" timestamp="1753895194156">
-        <mark key="&quot;" line="28" column="53" />
-        <mark key="'" line="47" column="38" />
-        <mark key="[" line="157" column="14" />
-        <mark key="]" line="157" column="14" />
-        <mark key="." line="157" column="13" />
-        <mark key="^" line="157" column="14" />
       </file>
       <file name="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Library/PackageCache/com.smkplus.custom-toolbar@c42b0f4497a2/Editor/CustomToolbar/Scripts/ToolbarCallback.cs" timestamp="1753977087314">
         <mark key="&quot;" line="59" column="0" />
