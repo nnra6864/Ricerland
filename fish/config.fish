@@ -58,9 +58,9 @@ function rice
     kill -SIGUSR1 (pgrep kitty)
 
     #Generate Oomox theme and icons and update nwg-look
-    #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
-    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/OomoxRicer > /dev/null 2>&1 &
-    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/OomoxRicer -o Ricer > /dev/null 2>&1 &
+    #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer > /dev/null 2>&1 &
+    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer > /dev/null 2>&1 &
+    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer > /dev/null 2>&1 &
     rm -rf ~/.gtkrc-2.0 2>&1 &
     nwg-look -a > /dev/null 2>&1 &
     disown
