@@ -13,7 +13,7 @@ space_files = true
 bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
 icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
-gtk_theme = "Ricer"
+gtk_theme = "oomox-OomoxRicer"
 nvim_theme = "nord"
 
 # Font
@@ -44,7 +44,7 @@ gapsOut = 10
 blur = "true"
 blurSize = 20
 blurPasses = 4
-cursor_size = 32
+cursor_size = 24
 cursor_rot = 21
 notification_duration = 3
 
