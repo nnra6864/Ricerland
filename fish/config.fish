@@ -41,46 +41,43 @@ end
 
 # Rices the system with the provided config
 function rice
-    #Start the Shifter transition
-    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    #set pid $last_pid
-    #disown
-    #
-    #sleep 0.2
+    # Start the Shifter transition
+    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    set pid $last_pid
+    disown
+    sleep 0.2
 
     # Remove all the CS2 fonts(can cause crashes)
     #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
 
-    #Execute Ricer
-    python ~/Data/Projects/Ricer/Ricer.py $argv # > /dev/null 2>&1
+    # Execute Ricer
+    python ~/Data/Projects/Ricer/Ricer.py $argv &&
 
-    #Reload Kitty cfg
+    # Reload Kitty cfg
     kill -SIGUSR1 (pgrep kitty)
 
-    #Generate Oomox theme and icons and update nwg-look
-    #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer > /dev/null 2>&1 &
-    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer > /dev/null 2>&1 &
-    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer > /dev/null 2>&1 &
-    rm -rf ~/.gtkrc-2.0 2>&1 &
-    nwg-look -a > /dev/null 2>&1 &
-    disown
+    # Remove all the gtk files to avoid conflicts
+    rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/ ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
 
-    #Generate Steam theme
-    adwaita-steam-gtk -i > /dev/null 2>&1 &
-    disown
+    # Generate Themix theme and icons
+    #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
+    /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
+    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer &&
     
-    #Restart Dunst
+    # Apply the theme with nwg-look
+    nwg-look -a
+
+    # Generate Steam theme
+    adwaita-steam-gtk -i
+    
+    # Restart Dunst
     killall dunst > /dev/null 2>&1
     dunst >/dev/null 2>&1 &
-    disown
 
-    #Update Unity Hub(requires sudo)
-    #sudo python .config/RicerHub.py /opt/unityhub/
-
-    #Nlear the console, sleep and kill Shifter
-    #nlear
-    #sleep 1
-    #kill -SIGUSR1 $pid
+    # Nlear the console, sleep and kill Shifter
+    nlear
+    sleep 0.5
+    kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
