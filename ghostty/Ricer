@@ -1,0 +1,29 @@
+font-family = Maple Mono NF CN
+font-family = Cascadia Code NF
+font-family = Adwaita Mono
+font-family-bold = Maple Mono NF CN
+font-family-italic = Maple Mono NF CN
+font-family-bold-italic = Maple Mono NF CN
+font-size = 13
+
+palette =  0 = 102840
+palette =  1 = BF3030
+palette =  2 = 60BF30
+palette =  3 = BFA730
+palette =  4 = 3078BF
+palette =  5 = 8330BF
+palette =  6 = 608FBF
+palette =  7 = ACCAE6
+palette =  8 = 153959
+palette =  9 = D83636
+palette = 10 = 6DD836
+palette = 11 = D8BB36
+palette = 12 = 3687D8
+palette = 13 = 9336D8
+palette = 14 = 6DA1D8
+palette = 15 = BDDFFF
+
+cursor-color = ffffff
+background = 102840
+foreground = ACCAE6
+background-opacity = 0

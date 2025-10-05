@@ -1,0 +1,27 @@
+config-file = Ricer
+
+font-synthetic-style = true
+font-size = 13
+
+cursor-style = block
+focus-follows-mouse = true
+
+window-padding-x = 10
+window-padding-y = 10
+
+resize-overlay = never
+image-storage-limit = 4294967295
+confirm-close-surface = false
+
+custom-shader-animation = always
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/blaze_sparks.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_blaze.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_blaze_no_trail.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_blaze_tapered.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_frozen.glsl
+custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_smear.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_smear_fade.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_smear_gradient.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_smear_rainbow.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/manga_slash.glsl
+#custom-shader = shaders/ghostty-shader-playground/public/shaders/sparks.glsl

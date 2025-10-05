@@ -7,3 +7,6 @@
 [submodule "hypr/HyprlandUnityFix"]
 	path = hypr/HyprlandUnityFix
 	url = https://github.com/nnra6864/HyprlandUnityFix
+[submodule "ghostty/shaders/ghostty-shader-playground"]
+	path = ghostty/shaders/ghostty-shader-playground
+	url = https://github.com/KroneCorylus/ghostty-shader-playground
