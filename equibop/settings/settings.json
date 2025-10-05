@@ -1645,6 +1645,12 @@
         "RemixRevived": {
             "enabled": false,
             "remixTag": true
+        },
+        "RecentDMSwitcher": {
+            "enabled": false
+        },
+        "StatusWhileActive": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1658,7 +1664,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1759392384851
+        "settingsSyncVersion": 1759653424929
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
