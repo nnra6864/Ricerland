@@ -1,0 +1,29 @@
+font-family = ricer.val.font
+font-family = ricer.val.font_fallback
+font-family = ricer.val.font_fallback_2
+font-family-bold = ricer.val.font
+font-family-italic = ricer.val.font
+font-family-bold-italic = ricer.val.font
+font-size = ricer.val.font_size
+
+palette =  0 = ricer.col.black
+palette =  1 = ricer.col.red
+palette =  2 = ricer.col.green
+palette =  3 = ricer.col.yellow
+palette =  4 = ricer.col.blue
+palette =  5 = ricer.col.magenta
+palette =  6 = ricer.col.cyan
+palette =  7 = ricer.col.white
+palette =  8 = ricer.col.br_black
+palette =  9 = ricer.col.br_red
+palette = 10 = ricer.col.br_green
+palette = 11 = ricer.col.br_yellow
+palette = 12 = ricer.col.br_blue
+palette = 13 = ricer.col.br_magenta
+palette = 14 = ricer.col.br_cyan
+palette = 15 = ricer.col.br_white
+
+cursor-color = ffffff
+background = ricer.col.background
+foreground = ricer.col.foreground
+background-opacity = 0
