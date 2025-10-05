@@ -1,4 +1,6 @@
 config-file = Ricer
+gtk-single-instance = true
+quit-after-last-window-closed = false
 
 font-synthetic-style = true
 font-size = 13
