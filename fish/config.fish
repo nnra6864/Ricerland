@@ -71,9 +71,8 @@ function rice
     # Generate Steam theme
     adwaita-steam-gtk -i
     
-    # Restart Dunst
-    killall dunst > /dev/null 2>&1
-    dunst >/dev/null 2>&1 &
+    # Reload Dunst
+	dunstctl reload
 
     # Nlear the console, sleep and kill Shifter
     nlear
