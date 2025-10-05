@@ -18,6 +18,8 @@ nvim_theme = "nord"
 
 # Font
 font = "Maple Mono NF CN"
+font_fallback = "Cascadia Code NF"
+font_fallback_2 = "Adwaita Mono"
 min_font_size = 9
 small_font_size = 11
 font_size = 13
@@ -36,7 +38,7 @@ outline_rotation_bezier = "linear"
 outline_rotation_type = "loop"
 
 # Misc
-terminal = "kitty"
+terminal = "ghostty"
 rounding = 10
 roundingPower = 4
 gapsIn = 5
@@ -195,6 +197,7 @@ ZenBrowserLogo = ["~/.config/ZenBrowser/ZenLogo.svg", "hexa"]
 ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
 ZenBrowserUserContent = ["~/.config/ZenBrowser/userContent.css", "hexa"]
 YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
+Ghostty = "~/.config/ghostty/Ricer"
 Kitty = "~/.config/kitty/kitty.conf"
 KDEColors = ["~/.local/share/color-schemes/Ricer.colors", "hexa"]
 RicerHub = ["~/.config/RicerHub.py", "hexa"]
