@@ -16,7 +16,7 @@
 	},
 
 	{
-		"context": "!(vim_mode == insert || Terminal)",
+		"context": "!(vim_mode == insert || Terminal || CommandPalette)",
 		"bindings": {
 			"space s f": "file_finder::Toggle",
 			":": "command_palette::Toggle"
