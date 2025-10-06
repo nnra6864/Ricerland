@@ -1,6 +1,6 @@
 {
     "schemeVersion": 2,
-    "enabled": true,
+    "enabled": false,
     "fetchNews": true,
     "theme": {
         "mode": 1,
@@ -150,13 +150,9 @@
         "web3.career",
         "odysee.com",
         "hyprland-community.github.io",
-        "docs.github.com",
         "hyprland.org",
-        "claude.ai",
-        "chatgpt.com",
         "xmpp.org",
         "www.curseforge.com",
-        "www.google.com",
         "search.brave.com",
         "x.com",
         "www.imagine.art",
@@ -166,17 +162,15 @@
         "us04web.zoom.us",
         "listen.tidal.com",
         "www.instagram.com",
-        "studio.youtube.com",
         "forums.playdeadlock.com",
         "fish-networking.gitbook.io",
         "gdl.space",
         "discussions.unity.com",
         "pastebin.com",
-        "www.reddit.com",
         "jellyfin.org",
         "www.facebook.com",
         "web.whatsapp.com",
-        "discord.com"
+        "remotedesktop.google.com"
     ],
     "disabledFor": [
         "excalidraw.com",
@@ -200,14 +194,27 @@
         "huly.io",
         "colorkit.co",
         "www.ebay.com",
-        "proxzima.dev"
+        "proxzima.dev",
+        "claude.ai",
+        "chatgpt.com",
+        "gemini.google.com",
+        "www.reddit.com",
+        "studio.youtube.com",
+        "discord.com",
+        "www.dropbox.com",
+        "gitverse.ru",
+        "aquawash.site",
+        "em1t.me",
+        "hypr.land",
+        "lapfoxtrax.fandom.com",
+        "heckscaper.com"
     ],
     "changeBrowserTheme": false,
     "syncSettings": true,
     "syncSitesFixes": true,
     "automation": {
-        "enabled": false,
-        "mode": "",
+        "enabled": true,
+        "mode": "system",
         "behavior": "OnOff"
     },
     "time": {
@@ -224,15 +231,15 @@
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": true,
-    "displayedNews": [
-        "thanks-2023"
-    ],
-    "readNews": [
-        "thanks-2023"
-    ],
     "installation": {
         "date": 1726503093268,
         "reason": "update",
         "version": "4.9.89"
-    }
+    },
+    "readNews": [
+        "thanks-2023"
+    ],
+    "displayedNews": [
+        "thanks-2023"
+    ]
 }
