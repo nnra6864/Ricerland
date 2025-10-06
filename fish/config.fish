@@ -58,7 +58,7 @@ function rice
     kill -SIGUSR2 (pgrep ghostty)
 
     # Remove all the gtk files to avoid conflicts
-    rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/ ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
+    rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
 
     # Generate Themix theme and icons
     #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
