@@ -1,13 +1,14 @@
-sw_volume: 40
+sw_volume: 50
 audio_device_state:1:MPD PipeWire Output
 audio_device_state:1:my_fifo
-state: stop
-current: 580
+state: pause
+current: 614
+time: 113.002
 random: 1
 repeat: 1
 single: 0
 consume: 0
-crossfade: 0
+crossfade: 5
 mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
