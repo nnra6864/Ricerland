@@ -14,7 +14,6 @@ alias py='python'
 alias timeshit='timeshift'
 alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk' 
 alias lg='lazygit'
-alias update='paru -Syu --noconfirm --sudoloop'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 
 # Paths
@@ -30,6 +29,36 @@ alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-per
 alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions -muU'
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
+
+# Updates the entire system
+function update
+	# Clear cache to avoid issues and update the pacman and AUR packages
+	yes | paru -Scc
+	and paru -Syu --noconfirm --sudoloop
+	
+	# Update hyprpm
+	and hyprpm update
+
+	# Update nv drivers
+	and cd ~/Packages/nvidia-all
+	and git pull
+	and makepkg -si
+    and notify-send "Update" "Input required for nvidia drivers"
+    and paplay /usr/share/sounds/freedesktop/stereo/message.oga
+
+	# Clear the cache once again
+	and yes | paru -Scc
+    
+	# Notify the user system has been updated
+	and notify-send "Update" "Update complete"
+    and paplay /usr/share/sounds/freedesktop/stereo/message.oga
+
+	# Notify the user update failed
+	or begin
+		notify-send -u critical "Update Failed" "Check terminal for errors"
+        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+    end
+end
 
 # Starts Monero Wallet GUI
 function monero
