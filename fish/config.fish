@@ -39,6 +39,9 @@ function update
 	# Update hyprpm
 	and hyprpm update
 
+	# Update flatpak
+	and flatpak update -y
+
 	# Update nv drivers
 	and cd ~/Packages/nvidia-all
 	and git pull
