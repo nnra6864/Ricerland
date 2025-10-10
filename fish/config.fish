@@ -39,15 +39,15 @@ function update
 	# Update hyprpm
 	and hyprpm update
 
-	# Update flatpak
-	and flatpak update -y
-
 	# Update nv drivers
 	and cd ~/Packages/nvidia-all
 	and git pull
-	and makepkg -si
     and notify-send "Update" "Input required for nvidia drivers"
     and paplay /usr/share/sounds/freedesktop/stereo/message.oga
+	and makepkg -si
+
+	# Update flatpak
+	and flatpak update -y
 
 	# Clear the cache once again
 	and yes | paru -Scc
