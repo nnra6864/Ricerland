@@ -1473,7 +1473,8 @@
             "hideClanBadges": false,
             "disableCreateDMButton": false,
             "disableDMContextMenu": false,
-            "noMirroredCamera": false
+            "noMirroredCamera": false,
+            "removeActivitySection": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1651,6 +1652,9 @@
         },
         "StatusWhileActive": {
             "enabled": false
+        },
+        "ZipPreview": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1664,7 +1668,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1759743293490
+        "settingsSyncVersion": 1760178063406
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
