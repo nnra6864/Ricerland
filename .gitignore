@@ -32,6 +32,8 @@
 !/obs-studio/
 /obs-studio/*
 !/obs-studio/basic/
+/obs-studio/basic/profiles/*/service.json
+/obs-studio/basic/profiles/*/service.json.bak
 
 
 ##########
@@ -133,6 +135,7 @@
 !/vesktop/
 /vesktop/*
 !/vesktop/settings/
+!/Mumble/
 
 # Audio
 !/pipewire/
@@ -144,6 +147,7 @@
 !/rofi/
 !/clapboard/
 !/cliphist-rofi-img
+!/keepassxc/
 !/swaync/
 !/waybar/
 !/hyprpanel/

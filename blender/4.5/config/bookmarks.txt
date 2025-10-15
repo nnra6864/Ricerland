@@ -1,6 +1,7 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
+/home/nn/Videos/
 /home/nn/Downloads/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/
@@ -10,4 +11,3 @@
 /home/nn/Data/Projects/Editing/Other/Reklama/
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/
 /home/nnra/Data/Projects/Unity/Katana/Katana/Assets/Models/Objects/
-/home/nnra/Data/Projects/Unity/GoodKatana/Katana/Assets/Models/Colosseum/

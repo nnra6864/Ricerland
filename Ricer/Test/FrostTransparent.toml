@@ -1,0 +1,12 @@
+[Modifiers]
+hsvBright = "hsv(360, 1.0, -50)"
+hsvDark = "hsv(-0.1, +25, 0.5)"
+
+[Colors]
+black = "FFFFFFFF"
+red = "#FFFFFF"
+green = "rgb(1, 0.5, 255, 1.0)"
+yellow = "rgb(1, 0.5, 255)"
+# Each of these operations should support both colors and ints/floats
+blue = "$black.hsv(+10, -0.1, 1).hsv($hsvBright).add($green).sub($yellow).mul(2).div(5).pow($red).sqrt(2)"
+blue = ""

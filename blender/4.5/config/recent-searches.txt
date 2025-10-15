@@ -7,3 +7,12 @@ Generate ▸ Decimate
 Mesh ▸ Cube
 Generate ▸ Subdivision Surface
    Material
+Converter ▸ Math ▸ Add
+Color ▸ Mix Color ▸ Mix
+Color ▸ Mix Color ▸ Color
+Input ▸ Object Info ▸ Color
+Input ▸ Color Attribute
+Vector Math ▸ Add
+Emission ▸ Color
+   NodesMat
+Mix ▸ Color

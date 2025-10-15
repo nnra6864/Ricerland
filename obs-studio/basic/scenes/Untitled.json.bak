@@ -1,6 +1,6 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "Desktop Audio",
         "uuid": "38f5a2ec-10d2-4094-b2fc-694958ea13b6",
         "id": "pulse_output_capture",
@@ -31,7 +31,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520159234,
+        "prev_ver": 536870913,
         "name": "Mic/Aux",
         "uuid": "3e05e856-bf35-494a-9990-df754caa7a92",
         "id": "pulse_input_capture",
@@ -62,7 +62,7 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 520159234,
+                "prev_ver": 536870913,
                 "name": "Noise Suppression",
                 "uuid": "b772da39-8575-400e-8b90-e86ad42369b7",
                 "id": "noise_suppress_filter",
@@ -86,7 +86,7 @@
                 "private_settings": {}
             },
             {
-                "prev_ver": 520159234,
+                "prev_ver": 536870913,
                 "name": "Noise Gate",
                 "uuid": "d8c48c4a-0b20-49b2-b1cf-e27ac0eb22c0",
                 "id": "noise_gate_filter",
@@ -124,7 +124,7 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "Scene",
             "uuid": "54dc72df-b33a-4722-a99e-35a24044cf5c",
             "id": "scene",
@@ -213,13 +213,13 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520159234,
+            "prev_ver": 536870913,
             "name": "Screen Capture (PipeWire)",
             "uuid": "b3ff861c-333b-4570-835e-d35c8ad06956",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "782ad77d-c94c-4b55-81b3-b13c3a6d0f51"
+                "RestoreToken": "29d2df68-4094-4a42-a6a5-93d3e6a3269e"
             },
             "mixers": 0,
             "sync": 0,
@@ -244,7 +244,7 @@
     "transitions": [],
     "saved_projectors": [],
     "canvases": [],
-    "current_transition": "Затухание",
+    "current_transition": "Fade",
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
