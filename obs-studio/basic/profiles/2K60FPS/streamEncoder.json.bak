@@ -1,1 +1,1 @@
-{"rate_control":"CBR","bitrate":30000}
+{"rate_control":"CBR","bitrate":15000,"keyint_sec":2,"bf":0,"multipass":"disabled","preset":"p4"}
