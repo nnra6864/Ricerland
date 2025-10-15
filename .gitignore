@@ -134,6 +134,10 @@
 /vesktop/*
 !/vesktop/settings/
 
+# Audio
+!/pipewire/
+!/wireplumber/
+
 # Misc
 !/glava/
 !/mpv/
@@ -143,7 +147,6 @@
 !/swaync/
 !/waybar/
 !/hyprpanel/
-!/pipewire/
 !/yt-dlp/
 !/.tidal-dl.json
 !/OpenRGB/
