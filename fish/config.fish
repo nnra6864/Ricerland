@@ -878,18 +878,27 @@ fish_vi_key_bindings
 
 nlear
 
+oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
+#starship init fish | source
+
+# Created by `pipx` on 2025-02-06 06:22:34
+set PATH $PATH /home/nnra/.local/bin
+
+# Start the ssh-agent
+if not pgrep -u $USER ssh-agent > /dev/null
+	ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
+end
+set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
+
 # Start a Hyprland session
 if status is-interactive
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
-            # Remove any stale keyring files
-            rm -rf /run/user/1000/keyring/*
-
+			# This is handled in the startup hyprland config now
             # Start dbus session
-            eval (dbus-launch --sh-syntax)
-
+			#eval (dbus-launch --sh-syntax)
             # Start gnome-keyring-daemon
-            /usr/bin/gnome-keyring-daemon --start --components=secrets,ssh
+			#/usr/bin/gnome-keyring-daemon --start --components=secrets,ssh
 
             # Setup and combine_input and output_input
             # combine_input
@@ -900,9 +909,3 @@ if status is-interactive
         end
     end
 end
-
-oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
-#starship init fish | source
-
-# Created by `pipx` on 2025-02-06 06:22:34
-set PATH $PATH /home/nnra/.local/bin
