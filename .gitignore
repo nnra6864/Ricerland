@@ -132,9 +132,6 @@
 !/equibop
 /equibop/*
 !/equibop/settings/
-!/vesktop/
-/vesktop/*
-!/vesktop/settings/
 !/Mumble/
 
 # Audio
