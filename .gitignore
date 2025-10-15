@@ -132,7 +132,6 @@
 !/equibop
 /equibop/*
 !/equibop/settings/
-!/Mumble/
 
 # Audio
 !/pipewire/
