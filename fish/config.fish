@@ -4,7 +4,10 @@
 # set -g tide_right_prompt_suffix ''
 # set -g tide_time_format '%T'
 
-# Perforce Morph
+# Load user scripts
+fish_add_path ~/.config/fish/scripts
+
+# Perforce
 set -Ux P4IGNORE .p4ignore
 
 # Aliases
