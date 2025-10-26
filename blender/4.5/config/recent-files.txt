@@ -1,3 +1,6 @@
+/home/nn/Data/Projects/Editing/nn/When_Game_Developers_Prioritized_Gameplay/Projects/Blender/When_Game_Developers_Prioritized_Gameplay.blend
+/home/nn/Data/Projects/Editing/Project_Template/Projects/Blender/Project_Name.blend
+/home/nn/Data/Projects/Editing/Blender_CS_Template/Projects/Blender/Project_Name.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/ItemBoard.blend
 /home/nn/Downloads/colosseum1.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Bar.blend
@@ -15,6 +18,3 @@
 /home/nn/Data/Projects/Editing/Other/Reklama/Untitled.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/SettingsBoard.blend
 /home/nnra/Data/Projects/Unity/Katana/Files/Blender/Bar.blend
-/home/nnra/Data/Projects/Unity/Katana/Files/Blender/Arena.blend
-/home/nnra/Downloads/Bar.blend
-/home/nnra/Data/Projects/Unity/GoodKatana/Files/Blender/Cannon.blend

@@ -2826,6 +2826,9 @@
       <jump line="14" column="5" filename="$USER_HOME$/Documents/e/My project/Assets/Scripts/Player.cs" protocol="file" />
       <jump line="13" column="17" filename="$USER_HOME$/Documents/e/My project/Assets/Scripts/Player.cs" protocol="file" />
     </project>
+    <project id="SmoothSceneCamera-9945e120">
+      <jump line="196" column="0" filename="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />

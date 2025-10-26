@@ -31,7 +31,8 @@
           "id": "Project",
           "order": 1,
           "contentUiType": "COMBO",
-          "weight": 0.18473974,
+          "isVisible": true,
+          "weight": 0.18480189,
           "sideWeight": 0.51935965
         },
         {
@@ -296,15 +297,16 @@
           "id": "Problems View",
           "order": 15,
           "anchor": "RIGHT",
-          "weight": 0.2616325,
+          "isVisible": true,
+          "weight": 0.26167947,
           "sideWeight": 0.5265625
         }
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.18473974,
+        "left": 0.18480189,
         "bottom": 0.5829802,
-        "right": 0.2616325
+        "right": 0.26167947
       }
     }
   }

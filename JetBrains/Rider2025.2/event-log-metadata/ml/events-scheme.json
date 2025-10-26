@@ -1369,6 +1369,7 @@
         "analysis.number_of_candidates" : [ "{regexp#integer}" ],
         "analysis.number_of_usage_files" : [ "{regexp#integer}" ],
         "analysis.search_timestamp_ms" : [ "{regexp#integer}" ],
+        "analysis.session_id" : [ "{regexp#integer}" ],
         "features.directory_distance" : [ "{regexp#float}" ],
         "features.file_length" : [ "{regexp#integer}" ],
         "features.file_type" : [ "{util#file_type}" ],
@@ -2801,6 +2802,7 @@
         "inline_api_finishing.final_proposal_line" : [ "{regexp#integer}" ],
         "inline_api_finishing.finish_type" : [ "{enum:SELECTED|TYPED|ESCAPE_PRESSED|BACKSPACE_PRESSED|KEY_PRESSED|INVALIDATED|MOUSE_PRESSED|CARET_CHANGED|DOCUMENT_CHANGED|EDITOR_REMOVED|FOCUS_LOST|EMPTY|ERROR|OTHER}" ],
         "inline_api_finishing.full_insert_actions" : [ "{regexp#integer}" ],
+        "inline_api_finishing.full_logs" : [ "{enum#boolean}" ],
         "inline_api_finishing.invalidation_event" : [ "{util#class_name}" ],
         "inline_api_finishing.next_line_actions" : [ "{regexp#integer}" ],
         "inline_api_finishing.next_word_actions" : [ "{regexp#integer}" ],
@@ -3356,7 +3358,7 @@
         "accepted_diffs" : [ "{regexp#integer}" ],
         "accepted_jumps" : [ "{regexp#integer}" ],
         "deleted_length" : [ "{regexp#integer}" ],
-        "filter_reason" : [ "{enum:iter_no_diffs|iter_does_not_fit_screen|iter_one_diff_too_long|iter_file_removed|iter_internal_markers|iter_revert_last_change}", "{enum:iter_contains_simple_comment|iter_contains_plain_todo}", "{enum:iter_direct_code_repetition}", "{enum:iter_jupyter_change_cell_separators}", "{enum:iter_similar_to_rejected_suggestion}" ],
+        "filter_reason" : [ "{enum:iter_no_diffs|iter_does_not_fit_screen|iter_one_diff_too_long|iter_file_removed|iter_internal_markers|iter_revert_last_change}", "{enum:iter_contains_simple_comment|iter_contains_plain_todo}", "{enum:iter_direct_code_repetition}", "{enum:iter_jupyter_change_cell_separators}", "{enum:iter_similar_to_rejected_suggestion}", "{enum:iter_changes_only_whitespaces}" ],
         "finish_type" : [ "{enum:ESCAPE|DOCUMENT_CHANGE|ACCEPTED|COULD_NOT_SHOW|MANAGER_DISPOSED|INACTIVE|NEW_SESSION}", "{enum:EXPIRED|NOT_APPROPRIATE|ASSOCIATED_COMPLETION_FINISHED_SESSION}", "{enum:INCOMPATIBLE_CARET_CHANGE}", "{enum:SELECTION_CHANGED}" ],
         "inserted_length" : [ "{regexp#integer}" ],
         "invalid" : [ "{enum#boolean}" ],
@@ -3406,5 +3408,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "6171"
+  "version" : "6323"
 }

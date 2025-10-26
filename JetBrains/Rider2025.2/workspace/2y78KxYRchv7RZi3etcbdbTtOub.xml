@@ -7,24 +7,24 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="5h9xorupfplx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="2nzcf1pkhufhf" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" file-id="48" managing-fs="1761212606282">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1104">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
+            <state relative-caret-position="605">
+              <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"SmoothSceneCamera.cs","foregroundColor":-4201985,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"SmoothSceneCamera.cs","foregroundColor":-8336444,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,92,10,30,114,101,115,104,97,114,112,101,114,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,18,36,114,101,115,104,97,114,112,101,114,47,101,120,112,117,105,47,80,115,105,67,83,104,97,114,112,47,67,115,104,97,114,112,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-118,-79,-68,-127,4,48,2]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C#": {
-      "usageCount": 2,
-      "lastUsed": 1749451140306
+      "usageCount": 3,
+      "lastUsed": 1761212616453
     }
   }
 }]]></component>
@@ -47,7 +47,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C#">
-      <summary usageCount="2" lastUsage="1749451140307" />
+      <summary usageCount="3" lastUsage="1761212616455" />
     </language>
   </component>
   <component name="ProjectView">
@@ -104,7 +104,9 @@
         <option name="search-dependencies" value="false" />
         <option name="show-unreal-project-files" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
+      <pane id="FileSystemExplorer">
+        <option name="show-all-files" value="true" />
+      </pane>
     </panes>
   </component>
   <component name="RiderPerAppToolWindowOpenedTWKeeper">
@@ -162,7 +164,7 @@
         </entry>
         <entry key="Debug">
           <value>
-            <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+            <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.5829802" />
           </value>
         </entry>
         <entry key="Dynamic Program Analysis">
@@ -187,7 +189,7 @@
         </entry>
         <entry key="Find">
           <value>
-            <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.10346045" />
+            <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
           </value>
         </entry>
         <entry key="Gradle">
@@ -197,7 +199,7 @@
         </entry>
         <entry key="Hierarchy">
           <value>
-            <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
+            <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
           </value>
         </entry>
         <entry key="IL">
@@ -227,12 +229,12 @@
         </entry>
         <entry key="Monitoring">
           <value>
-            <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
+            <window_info anchor="right" id="Monitoring" order="10" weight="0.2616325" />
           </value>
         </entry>
         <entry key="Notifications">
           <value>
-            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.09004678" />
+            <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.2616325" />
           </value>
         </entry>
         <entry key="NuGet">
@@ -247,17 +249,22 @@
         </entry>
         <entry key="Problems View">
           <value>
-            <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.27207613" />
+            <window_info anchor="right" id="Problems View" order="15" sideWeight="0.5265625" visible="true" weight="0.26167947" />
           </value>
         </entry>
         <entry key="Project">
           <value>
-            <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.18220171" />
+            <window_info content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.18480189" />
           </value>
         </entry>
         <entry key="Pull Requests">
           <value>
             <window_info id="Pull Requests" />
+          </value>
+        </entry>
+        <entry key="Refactoring - Change signature">
+          <value>
+            <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
           </value>
         </entry>
         <entry key="RoslynVisualizer">
@@ -282,7 +289,7 @@
         </entry>
         <entry key="Structure">
           <value>
-            <window_info anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" weight="0.27207613" />
+            <window_info anchor="right" id="Structure" order="5" sideWeight="0.4734375" side_tool="true" weight="0.15163502" />
           </value>
         </entry>
         <entry key="TODO">
@@ -349,7 +356,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1777000" />
+    <option name="totallyTimeSpent" value="2003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -364,7 +371,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" show_stripe_button="false" />
       <window_info id="Commit" order="0" weight="0.2597135" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.18220171" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.51935965" visible="true" weight="0.18480189" />
       <window_info id="Bookmarks" order="2" sideWeight="0.49963236" side_tool="true" weight="0.19578907" />
       <window_info id="Assembly Explorer" order="3" sideWeight="0.4605948" side_tool="true" weight="0.15335557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -377,45 +384,43 @@
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.5000997" weight="0.15713277" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.12040961" />
-      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.22775424" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" weight="0.5829802" />
       <window_info active="true" anchor="bottom" id="UnrealBuildTool" order="4" visible="true" weight="0.58792377" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.22563559" />
       <window_info anchor="bottom" id="Unity" order="6" weight="0.22563559" />
       <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.2213983" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.2213983" />
       <window_info anchor="bottom" id="NuGet" order="9" weight="0.3117938" />
-      <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.10346045" />
+      <window_info anchor="bottom" id="Find" order="10" show_stripe_button="false" weight="0.68538135" />
+      <window_info anchor="bottom" id="Refactoring - Change signature" order="11" weight="0.68538135" />
       <window_info anchor="right" id="RoslynVisualizer" show_stripe_button="false" />
       <window_info anchor="right" id="Endpoints" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" id="Test Coverage" show_stripe_button="false" />
-      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.09004678" />
+      <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5003788" weight="0.2616325" />
       <window_info anchor="right" id="AIAssistant" order="1" show_stripe_button="false" weight="0.25029433" />
       <window_info anchor="right" id="Database" order="2" weight="0.14511383" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="5" sideWeight="0.47310606" side_tool="true" weight="0.27207613" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.4734375" side_tool="true" weight="0.15163502" />
       <window_info anchor="right" id="Terminal" order="6" sideWeight="0.5698885" side_tool="true" weight="0.2614796" />
       <window_info active="true" anchor="right" x="2727" y="156" width="935" height="1174" id="Codeium Chat" order="7" sideWeight="0.654263" side_tool="true" visible="true" weight="0.15830079" />
-      <window_info anchor="right" id="Hierarchy" order="8" weight="0.25029433" />
+      <window_info anchor="right" id="Hierarchy" order="8" sideWeight="0.5003788" weight="0.13702682" />
       <window_info anchor="right" id="IL Viewer" order="9" sideWeight="0.40183824" weight="0.25892857" />
-      <window_info anchor="right" id="Monitoring" order="10" weight="0.2614796" />
+      <window_info anchor="right" id="Monitoring" order="10" weight="0.2616325" />
       <window_info anchor="right" id="IL" order="11" weight="0.25029433" />
       <window_info anchor="right" id="documentation.v2" order="12" sideWeight="0.50446093" side_tool="true" weight="0.1886774" />
       <window_info anchor="right" id="ErrorToolWindow" order="13" weight="0.17651099" />
       <window_info anchor="right" id="TODO" order="14" sideWeight="0.56999254" side_tool="true" weight="0.14118916" />
-      <window_info active="true" anchor="right" id="Problems View" order="15" sideWeight="0.5268939" visible="true" weight="0.27207613" />
-      <unified_weights bottom="0.10346045" left="0.18220171" right="0.27207613" />
+      <window_info anchor="right" id="Problems View" order="15" sideWeight="0.5265625" visible="true" weight="0.26167947" />
+      <unified_weights bottom="0.5829802" left="0.18480189" right="0.26167947" />
     </layoutV2>
-    <recentWindows>
-      <value>Project</value>
-    </recentWindows>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        <state relative-caret-position="605">
+          <caret line="127" column="13" lean-forward="true" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
         </state>
       </provider>
     </entry>

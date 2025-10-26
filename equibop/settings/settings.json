@@ -256,7 +256,8 @@
             "logDeletes": true,
             "collapseDeleted": false,
             "inlineEdits": true,
-            "showEditDiffs": false
+            "showEditDiffs": false,
+            "separatedDiffs": false
         },
         "MessageTags": {
             "enabled": false,
@@ -264,7 +265,8 @@
         },
         "MoreCommands": {
             "enabled": true,
-            "uwuEverything": false
+            "uwuEverything": false,
+            "uwuEveryMessage": false
         },
         "MoreKaomoji": {
             "enabled": false
@@ -454,7 +456,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": false,
+            "triggerNameRerender": true,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -470,7 +472,8 @@
             "friendNameColor": "Role-25",
             "nicknameColor": "Role-25",
             "displayNameColor": "Role-25",
-            "usernameColor": "Role-25"
+            "usernameColor": "Role-25",
+            "nameSeparator": " "
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -1655,6 +1658,12 @@
         },
         "ZipPreview": {
             "enabled": false
+        },
+        "KeyboardNavigation": {
+            "enabled": false
+        },
+        "AutoZipper": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1668,7 +1677,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1760545629577
+        "settingsSyncVersion": 1761386639868
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
