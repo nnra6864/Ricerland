@@ -1,1 +1,1 @@
-{"rate_control":"CBR","bitrate":15000,"keyint_sec":2,"bf":0,"multipass":"disabled","preset":"p5"}
+{"rate_control":"CQP","profile":"main10","keyint_sec":2}

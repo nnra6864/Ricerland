@@ -1,1 +1,1 @@
-{"vaapi_device":"/dev/dri/by-path/pci-0000:01:00.0-render"}
+{"rate_control":"CQP","profile":"main10","keyint_sec":2}
