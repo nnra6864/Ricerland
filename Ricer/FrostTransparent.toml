@@ -214,6 +214,7 @@ AdwSteamGtk = [
 ]
 Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
 HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
+Hyprtoolkit = ["~/.config/hypr/hyprtoolkit.conf", "hexa"]
 Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
 CS16 = "~/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
 CS2_Fonts = "~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/fonts.conf"
