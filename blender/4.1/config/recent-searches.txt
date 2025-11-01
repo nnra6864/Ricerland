@@ -1,2 +1,0 @@
-Generate ▸ Subdivision Surface
-Generate ▸ Bevel

@@ -5,7 +5,6 @@ Deform ▸ Curve
 Generate ▸ Array
 Generate ▸ Decimate
 Mesh ▸ Cube
-Generate ▸ Subdivision Surface
    Material
 Converter ▸ Math ▸ Add
 Color ▸ Mix Color ▸ Mix
@@ -16,3 +15,6 @@ Vector Math ▸ Add
 Emission ▸ Color
    NodesMat
 Mix ▸ Color
+Generate ▸ Subdivision Surface
+Deform ▸ Wave
+Generate ▸ Multiresolution
