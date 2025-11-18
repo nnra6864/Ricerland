@@ -271,12 +271,23 @@
 	},
 
 	"lsp": {
-		"csharp": {
-			"command": "omnisharp",
-			"args": ["-lsp"],
-			"language_id": "csharp",
-			"root_markers": ["*.csproj", "*.sln"]
-		}
+		//"omnisharp": {
+		//	"binary": {
+		//		"path": "omnisharp",
+		//		"arguments": ["optional", "additional", "args", "-lsp"]
+		//	}
+		//}
+		//"csharp": {
+		//	"command": "omnisharp",
+		//	"args": ["-lsp"],
+		//	"language_id": "csharp",
+		//	"root_markers": ["*.csproj", "*.sln"]
+		//}
+		//"omnisharp": {
+		//	"binary": {
+		//		"path": "csharp-language-server"
+		//	}
+		//}
 	},
 
 	// Vim settings
