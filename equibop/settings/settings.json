@@ -133,7 +133,7 @@
             "enabled": true,
             "hideButton": false,
             "replaceElements": 0,
-            "dearrowByDefault": true
+            "dearrowByDefault": false
         },
         "Decor": {
             "enabled": true,
@@ -386,7 +386,8 @@
         },
         "QuickReply": {
             "enabled": true,
-            "shouldMention": 2
+            "shouldMention": 2,
+            "ignoreBlockedAndIgnored": true
         },
         "ReactErrorDecoder": {
             "enabled": false
@@ -473,7 +474,8 @@
             "nicknameColor": "Role-25",
             "displayNameColor": "Role-25",
             "usernameColor": "Role-25",
-            "nameSeparator": " "
+            "nameSeparator": " ",
+            "ignoreFonts": false
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -631,7 +633,8 @@
             "highlights": true,
             "messages": 3,
             "showAllChannels": true,
-            "mobilePush": true
+            "mobilePush": true,
+            "voiceChannels": false
         },
         "ShowHiddenThings": {
             "enabled": true,
@@ -1664,6 +1667,25 @@
         },
         "AutoZipper": {
             "enabled": false
+        },
+        "arRPCBun": {
+            "enabled": true,
+            "oneTimeNotice": true
+        },
+        "SongLink": {
+            "enabled": false
+        },
+        "Ghosted": {
+            "enabled": false
+        },
+        "CleanUserArea": {
+            "enabled": false
+        },
+        "Snowfall": {
+            "enabled": false
+        },
+        "UniversalMention": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1677,7 +1699,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1761386639868
+        "settingsSyncVersion": 1763470621277
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
