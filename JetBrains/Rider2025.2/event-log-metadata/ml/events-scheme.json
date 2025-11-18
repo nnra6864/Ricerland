@@ -2791,6 +2791,7 @@
         "context_collection.is_multiline_suitable" : [ "{enum:DISABLED_BY_LANGUAGE_KIT|ENABLED_DIRECT_CALL|ENABLED_SHOW_REST|DISABLED_BY_LOOKUP|DISABLED_BY_LANGUAGE_SUPPORTER|ENABLED}", "{enum:ENABLED_AFTER_SUGGESTION_INSERTED}" ],
         "context_collection.trigger_bypass_reason" : [ "{enum:DISABLED|LOADING|FAILED_TO_LOAD|UNAVAILABLE_LANGUAGE|UNAVAILABLE_FEATURES|SILENT|RANDOM_PASS|MUTED}", "{enum:ERROR}", "{enum:UNSUITABLE_EDITOR}" ],
         "context_collection.trigger_inference_time_ms" : [ "{regexp#integer}" ],
+        "context_collection.trigger_model_tag" : [ "{enum:ONE_LANGUAGE|POLYGLOT}" ],
         "context_collection.trigger_pass" : [ "{enum#boolean}" ],
         "context_collection.trigger_score" : [ "{regexp#float}" ],
         "context_collection.trigger_threshold" : [ "{regexp#float}" ],
@@ -2925,7 +2926,7 @@
         "inline_api_starting.showup_decayed_by_1d" : [ "{regexp#float}" ],
         "inline_api_starting.showup_decayed_by_1h" : [ "{regexp#float}" ],
         "inline_api_starting.showup_decayed_by_7d" : [ "{regexp#float}" ],
-        "inline_api_starting.skip_reason" : [ "{enum:AI_IGNORE|NOT_APPLICABLE|DISABLED_LANGUAGE|JS_IMPORT_STRING_LITERAL|COMMENT|JVM_ANNOTATION|DUBIOUS_TOKEN|KOTLIN_CODE_OUTSIDE_OF_PROJECT_SOURCES|PY_DOCSTRING_WITH_LLM_INLAY}", "{enum#__inline_api_starting_skip_reason}", "{enum:YAML_CC_NOT_SUPPORTED_WHEN_SCHEMA_DEFINED}", "{enum:CODE_BLOCK_IN_CHAT_INPUT_NOT_SUPPORTED}", "{enum:PROPERTIES_SECRET_PLAIN_VALUE_COMPLETION_DISABLED|PROPERTIES_SECRET_TEMPLATE_WITH_DEFAULT_VALUE_COMPLETION_DISABLED}", "{enum:TEMPLATE_PRESENT}" ],
+        "inline_api_starting.skip_reason" : [ "{enum:AI_IGNORE|NOT_APPLICABLE|DISABLED_LANGUAGE|JS_IMPORT_STRING_LITERAL|COMMENT|JVM_ANNOTATION|DUBIOUS_TOKEN|KOTLIN_CODE_OUTSIDE_OF_PROJECT_SOURCES|PY_DOCSTRING_WITH_LLM_INLAY}", "{enum#__inline_api_starting_skip_reason}", "{enum:YAML_CC_NOT_SUPPORTED_WHEN_SCHEMA_DEFINED}", "{enum:CODE_BLOCK_IN_CHAT_INPUT_NOT_SUPPORTED}", "{enum:PROPERTIES_SECRET_PLAIN_VALUE_COMPLETION_DISABLED|PROPERTIES_SECRET_TEMPLATE_WITH_DEFAULT_VALUE_COMPLETION_DISABLED}", "{enum:TEMPLATE_PRESENT}", "{enum:CHAT_INPUT_CODE_BLOCK_NOT_SUPPORTED|CHAT_INPUT_NOT_SUPPORTED_FOR_VERY_SHORT_INPUT|CHAT_INPUT_NOT_SUPPORTED_SHORT_AFTER_PUNCTUATION}" ],
         "inline_api_starting.symbols_in_line_after_caret" : [ "{regexp#integer}" ],
         "inline_api_starting.symbols_in_line_before_caret" : [ "{regexp#integer}" ],
         "inline_api_starting.third_parent" : [ "{util#class_name}" ],
@@ -3339,7 +3340,7 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionary.update.failed", "dictionaries.load.failed", "dictionaries.loaded", "dictionary.updated" ]
+        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionary.update.failed", "dictionaries.load.failed", "dictionaries.loaded", "dictionary.updated", "dictionary.loaded", "dictionary.load.failed", "dictionary.list.load.failed", "dictionary.list.update.failed" ]
       }
     },
     "anonymized_fields" : [ {
@@ -3357,10 +3358,13 @@
       "event_data" : {
         "accepted_diffs" : [ "{regexp#integer}" ],
         "accepted_jumps" : [ "{regexp#integer}" ],
+        "backend_provider_id" : [ "{util#backend_provider_id}" ],
         "deleted_length" : [ "{regexp#integer}" ],
-        "filter_reason" : [ "{enum:iter_no_diffs|iter_does_not_fit_screen|iter_one_diff_too_long|iter_file_removed|iter_internal_markers|iter_revert_last_change}", "{enum:iter_contains_simple_comment|iter_contains_plain_todo}", "{enum:iter_direct_code_repetition}", "{enum:iter_jupyter_change_cell_separators}", "{enum:iter_similar_to_rejected_suggestion}", "{enum:iter_changes_only_whitespaces}" ],
-        "finish_type" : [ "{enum:ESCAPE|DOCUMENT_CHANGE|ACCEPTED|COULD_NOT_SHOW|MANAGER_DISPOSED|INACTIVE|NEW_SESSION}", "{enum:EXPIRED|NOT_APPROPRIATE|ASSOCIATED_COMPLETION_FINISHED_SESSION}", "{enum:INCOMPATIBLE_CARET_CHANGE}", "{enum:SELECTION_CHANGED}" ],
+        "deleted_lines_number" : [ "{regexp#integer}" ],
+        "filter_reason" : [ "{enum:iter_no_diffs|iter_does_not_fit_screen|iter_one_diff_too_long|iter_file_removed|iter_internal_markers|iter_revert_last_change}", "{enum:iter_contains_simple_comment|iter_contains_plain_todo}", "{enum:iter_direct_code_repetition}", "{enum:iter_jupyter_change_cell_separators}", "{enum:iter_similar_to_rejected_suggestion}", "{enum:iter_changes_only_whitespaces}", "{enum:iter_removed_last_modified_region}" ],
+        "finish_type" : [ "{enum:EXPIRED|NOT_APPROPRIATE|ASSOCIATED_COMPLETION_FINISHED_SESSION}", "{enum:ESCAPE|DOCUMENT_CHANGE|INCOMPATIBLE_CARET_CHANGE|ACCEPTED|COULD_NOT_SHOW|MANAGER_DISPOSED|INACTIVE|NEW_SESSION|NO_SUGGESTION_FROM_PROVIDERS|DOCUMENT_EXPIRED|SELECTION_CHANGED|OLD_SESSION_EXPIRED|FOCUS_LOST|INLINE_COMPLETION_FAILED_TO_SHOW|INLINE_COMPLETION_FINISHED_WITH_UNKNOWN_REASON}" ],
         "inserted_length" : [ "{regexp#integer}" ],
+        "inserted_lines_number" : [ "{regexp#integer}" ],
         "invalid" : [ "{enum#boolean}" ],
         "lang" : [ "{util#lang}" ],
         "performance.client_execution_time" : [ "{regexp#integer}" ],
@@ -3368,19 +3372,22 @@
         "performance.iteration_filter_time" : [ "{regexp#integer}" ],
         "performance.request_waiting_time" : [ "{regexp#integer}" ],
         "performance.session_duration" : [ "{regexp#integer}" ],
-        "provider_id" : [ "{enum:nes_client|ide_action_rename}", "{enum:ide_action_change_signature}" ],
+        "provider_id" : [ "{enum:nes_client|ide_action_rename}", "{enum:ide_action_change_signature}", "{enum:backend_call|test_provider}" ],
         "request_id" : [ "{regexp#integer}" ],
         "show_time" : [ "{regexp#integer}" ],
         "shown_diffs" : [ "{regexp#integer}" ],
         "shown_jumps" : [ "{regexp#integer}" ],
+        "steps_description.steps_view_type" : [ "{enum:INLINE_COMPLETION|GREEN_ADDITION|DELETION|SIMPLE_REPLACEMENT|GENERAL_REPLACEMENT|ACTION|UNKNOWN}" ],
         "suppressed_by_inline" : [ "{regexp#integer}" ],
         "suppressed_by_lookup" : [ "{regexp#integer}" ],
         "task_id" : [ "{util#llm_parameters}" ],
         "time_to_show" : [ "{regexp#integer}" ],
         "total_delete_length" : [ "{regexp#integer}" ],
+        "total_deleted_lines_number" : [ "{regexp#integer}" ],
         "total_diffs" : [ "{regexp#integer}" ],
         "total_insert_length" : [ "{regexp#integer}" ],
-        "trigger_event" : [ "{enum:TYPING|REMOVAL|DIRECT_CALL|IDE_ACTION|LOOKUP_ITEM_SELECTED|INLINE_COMPLETION_SELECTED|NEXT_EDIT_SELECTED|UNKNOWN}" ]
+        "total_inserted_lines_number" : [ "{regexp#integer}" ],
+        "trigger_event" : [ "{enum:TYPING|REMOVAL|DIRECT_CALL|IDE_ACTION|LOOKUP_ITEM_SELECTED|INLINE_COMPLETION_SELECTED|NEXT_EDIT_SELECTED|CARET_MOVE|RESTART_AFTER_HIGHLIGHTING_FINISHED|UNKNOWN}" ]
       }
     }
   } ],
@@ -3408,5 +3415,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "6323"
+  "version" : "6376"
 }

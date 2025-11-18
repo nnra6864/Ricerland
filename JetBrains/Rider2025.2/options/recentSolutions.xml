@@ -407,25 +407,9 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
-        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
-          <value>
-            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/Katana/Katana/Assets/Scripts/Player/Camera/CameraHandlerScript.cs" projectWorkspaceId="30wTYyzQmx1jE7fGjc6Oo7lIIwf">
-              <option name="activationTimestamp" value="1757932142361" />
-              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="build" value="RD-252.25557.182" />
-              <option name="buildTimestamp" value="1756965000000" />
-              <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="2" />
-              </option>
-              <frame x="61" y="22" width="2536" height="1416" />
-              <option name="productionCode" value="RD" />
-              <option name="projectOpenTimestamp" value="1757932131382" />
-            </RecentProjectMetaInfo>
-          </value>
-        </entry>
         <entry key="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/SmoothSceneCamera.sln">
           <value>
-            <RecentProjectMetaInfo frameTitle="SmoothSceneCamera – ~/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" opened="true" projectWorkspaceId="2y78KxYRchv7RZi3etcbdbTtOub">
+            <RecentProjectMetaInfo frameTitle="SmoothSceneCamera – ~/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/Assets/SmoothSceneCamera/Editor/SmoothSceneCamera.cs" projectWorkspaceId="2y78KxYRchv7RZi3etcbdbTtOub">
               <option name="activationTimestamp" value="1761212844346" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="RD-252.26830.109" />
@@ -439,8 +423,24 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Katana – ~/Data/Projects/Unity/Katana/Katana/Assets/NnAudio/Runtime/NnAudioItem.cs" opened="true" projectWorkspaceId="35PeBkk0WqHSaHRKprtw3wKWOiy">
+              <option name="activationTimestamp" value="1763016196671" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RD-252.27397.121" />
+              <option name="buildTimestamp" value="1761554880000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="3419" y="12" width="1691" height="1416" />
+              <option name="productionCode" value="RD" />
+              <option name="projectOpenTimestamp" value="1763016002596" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/SmoothSceneCamera/SmoothSceneCamera/SmoothSceneCamera.sln" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Data/Projects/Unity/Katana/Katana/Katana.sln" />
   </component>
 </application>

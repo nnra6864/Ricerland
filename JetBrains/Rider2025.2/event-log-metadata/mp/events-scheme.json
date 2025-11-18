@@ -30,7 +30,7 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionaries.loaded", "dictionary.update.failed", "dictionaries.load.failed", "dictionary.updated" ]
+        "__event_id" : [ "external.send.finished", "metadata.load.failed", "external.send.started", "metadata.updated", "external.send.command.creation.started", "logs.send", "metadata.loaded", "metadata.update.failed", "external.send.command.creation.finished", "loading.config.failed", "sent.logs.files.calculated", "dictionaries.loaded", "dictionary.update.failed", "dictionaries.load.failed", "dictionary.updated", "dictionary.loaded", "dictionary.load.failed", "dictionary.list.update.failed", "dictionary.list.load.failed" ]
       }
     },
     "anonymized_fields" : [ {
@@ -151,5 +151,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "6157"
+  "version" : "6360"
 }
