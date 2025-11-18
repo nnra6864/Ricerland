@@ -8,13 +8,78 @@ Mesh ▸ Cube
    Material
 Converter ▸ Math ▸ Add
 Color ▸ Mix Color ▸ Mix
-Color ▸ Mix Color ▸ Color
 Input ▸ Object Info ▸ Color
 Input ▸ Color Attribute
 Vector Math ▸ Add
-Emission ▸ Color
    NodesMat
-Mix ▸ Color
 Generate ▸ Subdivision Surface
 Deform ▸ Wave
 Generate ▸ Multiresolution
+  death1
+  crouch_shoot_shotgun
+  longjump
+  ref_aim_ak47
+  ref_shoot_c4
+  ref_shoot_ak47
+  jump
+  I_am_a_stupid_placeholder
+  gutshot
+  crouchrun
+  forward
+  ref_aim_knife
+  right
+  run
+  so_am_I
+  swim
+  treadwater
+  walk
+  idle1
+0 Test
+0 Test.001
+  Test.001
+   Board
+Emission ▸ Color
+   Metal
+ F Ground080_2K-PNG_NORMAL
+ F Ground080_2K-PNG_DISPLACEMENT
+Vector ▸ Mapping
+Input ▸ UV Map
+Input ▸ Texture Coordinate
+Texture ▸ Noise Texture
+Math ▸ Multiply
+Vector Math ▸ Multiply
+Color Ramp ▸ Fac
+Mix ▸ Color
+Color ▸ Mix Color
+Output ▸ Material Output
+Mix Shader ▸ Shader
+Mix ▸ A
+Shader ▸ Diffuse BSDF
+Mix ▸ Multiply
+Displacement ▸ Height
+Texture ▸ Image Texture
+   ColosseumGround
+Shader ▸ Principled BSDF
+Principled BSDF ▸ Base Color
+   GroundSandMap
+   Ground080_2K-PNG_AmbientOcclusion.png
+   Ground080_2K-PNG_Roughness.png
+   Ground080_2K-PNG_Displacement.png
+Group ▸ NnMat
+   rock_wall_11_diff_2k.jpg
+   rock_wall_11_ao_2k.jpg
+   rock_wall_11_rough_2k.exr
+   rock_wall_11_disp_2k.png
+ 0 yellow_stone_wall_diff_2k.jpg
+   yellow_stone_wall_ao_2k.jpg
+ 0 yellow_stone_wall_rough_2k.exr
+ 0 yellow_stone_wall_disp_2k.png
+   SandMap
+   RockWallMap
+   YellowStoneMap
+   RockMap
+   DirtMap
+Color ▸ Mix Color ▸ Color
+Input ▸ Value
+Math ▸ Add
+Input ▸ RGB

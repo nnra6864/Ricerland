@@ -1,9 +1,14 @@
+/home/nn/Bar.blend
 /home/nn/Downloads/Colosseum.blend
+/home/nn/Downloads/Ground080_2K-PNG/Ground080_2K-PNG.blend
+/home/nn/Data/Projects/Unity/Katana/Files/Blender/MainMenu.blend
+/home/nn/Data/Projects/Unity/Katana/Files/Blender/ItemBoard.blend
+/home/nn/Data/Projects/Unity/Katana/Files/Blender/Chains.blend
+/home/nn/Data/Projects/Unity/Katana/Files/Blender/SettingsBoard.blend
 /home/nn/Data/Projects/Editing/nnra/Blender_Velocity_Tutorial/Projects/Blender/Blender_Velocity_Tutorial.blend
 /home/nn/Data/Projects/Editing/nn/When_Game_Developers_Prioritized_Gameplay/Projects/Blender/When_Game_Developers_Prioritized_Gameplay.blend
 /home/nn/Data/Projects/Editing/Project_Template/Projects/Blender/Project_Name.blend
 /home/nn/Data/Projects/Editing/Blender_CS_Template/Projects/Blender/Project_Name.blend
-/home/nn/Data/Projects/Unity/Katana/Files/Blender/ItemBoard.blend
 /home/nn/Downloads/colosseum1.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Bar.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Arena.blend
@@ -13,8 +18,3 @@
 /home/nn/Data/Projects/Unity/Katana/Files/Arena.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Enemy.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Coin.blend
-/home/nn/Data/Projects/Unity/Katana/Files/Blender/Cannon.blend
-/home/nn/Data/Projects/Unity/Katana/Files/Blender/Cannontop.blend
-/home/nn/Downloads/ArenaTrowe.blend
-/home/nn/Data/Projects/Editing/Other/Reklama/Reklama.blend
-/home/nn/Data/Projects/Editing/Other/Reklama/Untitled.blend
