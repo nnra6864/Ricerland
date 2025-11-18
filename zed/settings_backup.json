@@ -1,25 +1,53 @@
 {
+	"icon_theme": "Catppuccin Mocha",
 	"theme": {
 		"mode": "dark",
-		"light": "Nord Light",
-		"dark": "ZedRicer"
+		"light": "Ricer",
+		"dark": "Ricer"
 	},
 
+	"auto_install_extensions": {
+		"lua": true,
+		"csharp": true,
+		"pylsp": true,
+		"html": true,
+		"scss": true,
+		"markdown-oxide": true,
+		"toml": true,
+		"sql": true,
+		"fish": true,
+		"nu": true,
+		"ini": true,
+		"hyprlang": true,
+		"git-firefly": true,
+		"make": true,
+		"catppuccin-icons": true,
+		"symbols": true
+	},
+
+	"autoscroll_on_clicks": true,
 	"base_keymap": "JetBrains",
-
-	"features": {
-		"edit_prediction_provider": "copilot"
-	},
 
 	//Font
 	"buffer_font_family": "Maple Mono NF CN",
-	"buffer_font_size": 32.0,
+	"buffer_font_size": 30,
 	"buffer_font_weight": 400,
 	"buffer_line_height": "comfortable",
 
 	"ui_font_family": "Maple Mono NF CN",
-	"ui_font_size": 32,
+	"ui_font_size": 30,
 	"ui_font_weight": 400,
+
+	"centered_layout": {
+		"left_padding": 0.2,
+		"right_padding": 0.2
+	},
+
+	"snippet_sort_order": "top",
+
+	"features": {
+		"edit_prediction_provider": "copilot"
+	},
 
 	"unnecessary_code_fade": 0.3,
 	"vim_mode": true,
@@ -55,7 +83,7 @@
 	"vertical_scroll_margin": 5,
 	"scroll_sensitivity": 1.0,
 	"search_wrap": true,
-	"use_smartcase_search": false,
+	"use_smartcase_search": true,
 
 	"inlay_hints": {
 		"enabled": true,
@@ -118,7 +146,6 @@
 
 	"language_models": {
 		"openai": {
-			"version": "1",
 			"available_models": [
 				{
 					"name": "deepseek-coder",
@@ -137,8 +164,7 @@
 		"default_model": {
 			"provider": "ollama",
 			"model": "qwen2.5:32b"
-		},
-		"version": "2"
+		}
 	},
 
 	"slash_commands": {
@@ -163,7 +189,7 @@
 	"tabs": {
 		"git_status": true,
 		"close_position": "right",
-		"file_icons": false
+		"file_icons": true
 	},
 
 	"file_finder": {
@@ -241,27 +267,34 @@
 				"directories": [".env", "env", ".venv", "venv"],
 				"activate_script": "default"
 			}
-		},
-		"toolbar": {
-			"title": true
 		}
 	},
 
 	"lsp": {
-		"csharp": {
-			"command": "omnisharp",
-			"args": ["-lsp"],
-			"language_id": "csharp",
-			"root_markers": ["*.csproj", "*.sln"]
-		}
+		//"omnisharp": {
+		//	"binary": {
+		//		"path": "omnisharp",
+		//		"arguments": ["-lsp"]
+		//	}
+		//}
+		//"csharp": {
+		//	"command": "omnisharp",
+		//	"args": ["-lsp"],
+		//	"language_id": "csharp",
+		//	"root_markers": ["*.csproj", "*.sln"]
+		//}
+		//"omnisharp": {
+		//	"binary": {
+		//		"path": "csharp-language-server"
+		//	}
+		//}
 	},
 
 	// Vim settings
 	"vim": {
 		"toggle_relative_line_numbers": true,
 		"use_system_clipboard": "never",
-		"use_multiline_find": false,
-		"use_smartcase_find": false,
+		"use_smartcase_find": true,
 		"custom_digraphs": {}
 	},
 
