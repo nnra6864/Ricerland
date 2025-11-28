@@ -3,7 +3,7 @@ update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd
 
 [ColorEffects:Disabled]
 ChangeSelectionColor=
-Color=#10284010
+Color=#102840
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
@@ -14,7 +14,7 @@ IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
-Color=#06101910
+Color=#061019
 ColorAmount=0.025
 ColorEffect=2
 ContrastAmount=0.1
@@ -24,10 +24,10 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=#10284020
-BackgroundNormal=#10284010
-DecorationFocus=#BDDFFFFF
-DecorationHover=#3687D8FF
+BackgroundAlternate=#102840
+BackgroundNormal=#102840
+DecorationFocus=#BDDFFF
+DecorationHover=#3687D8
 ForegroundActive=#eceff4
 ForegroundInactive=#d8dee9
 ForegroundLink=#88c0d0
@@ -52,8 +52,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header]
-BackgroundAlternate=#10284020
-BackgroundNormal=#10284010
+BackgroundAlternate=#102840
+BackgroundNormal=#102840
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -66,8 +66,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header][Inactive]
-BackgroundAlternate=#10284020
-BackgroundNormal=#10284010
+BackgroundAlternate=#102840
+BackgroundNormal=#102840
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -108,8 +108,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:View]
-BackgroundAlternate=#10284020
-BackgroundNormal=#10284010
+BackgroundAlternate=#102840
+BackgroundNormal=#102840
 DecorationFocus=#3b4252
 DecorationHover=#3b4252
 ForegroundActive=#eceff4
@@ -122,8 +122,8 @@ ForegroundPositive=#3b4252
 ForegroundVisited=#eceff4
 
 [Colors:Window]
-BackgroundAlternate=#10284020
-BackgroundNormal=#10284010
+BackgroundAlternate=#102840
+BackgroundNormal=#102840
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -160,6 +160,9 @@ Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=false
 Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
@@ -171,9 +174,6 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=144
 View Style=Detail
-
-[KShortcutsDialog Settings]
-Dialog Size=1487,897
 
 [PreviewSettings]
 MaximumRemoteSize=0
