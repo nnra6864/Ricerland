@@ -183,7 +183,8 @@
         },
         "GameActivityToggle": {
             "enabled": true,
-            "oldIcon": false
+            "oldIcon": false,
+            "location": "PANEL"
         },
         "GifPaste": {
             "enabled": true
@@ -350,9 +351,6 @@
             "permissionsSortOrder": 1,
             "defaultPermissionsDropdownState": false
         },
-        "petpet": {
-            "enabled": true
-        },
         "PictureInPicture": {
             "enabled": false
         },
@@ -475,7 +473,8 @@
             "displayNameColor": "Role-25",
             "usernameColor": "Role-25",
             "nameSeparator": " ",
-            "ignoreFonts": false
+            "ignoreFonts": false,
+            "customNameColor": "Role-25"
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -933,7 +932,10 @@
                 "Shift",
                 "P"
             ],
-            "allowMouseControl": true
+            "allowMouseControl": true,
+            "visualStyle": "classic",
+            "showTags": true,
+            "enableTagFilter": true
         },
         "CopyProfileColors": {
             "enabled": false
@@ -943,37 +945,37 @@
         },
         "CustomSounds": {
             "enabled": true,
-            "activity_end": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_end": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":9.732824427480915,\"useFile\":false}",
             "activity_launch": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "activity_user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "activity_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "asmr_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "bit_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "bop_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "call_calling": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "call_ringing": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "bit_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":9.541984732824428,\"useFile\":false}",
+            "bop_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":10.305343511450381,\"useFile\":false}",
+            "call_calling": "{\"enabled\":true,\"selectedSound\":\"winter_call_calling\",\"volume\":30.343511450381676,\"useFile\":false}",
+            "call_ringing": "{\"enabled\":true,\"selectedSound\":\"winter_call_ringing\",\"volume\":29.770992366412212,\"useFile\":false}",
             "clip_error": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "clip_save": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ddr-down": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ddr-left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ddr-right": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ddr-up": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "deafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "discodo": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "disconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "ducky_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "deafen": "{\"enabled\":true,\"selectedSound\":\"winter_deafen\",\"volume\":29.961832061068705,\"useFile\":false}",
+            "discodo": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":29.770992366412212,\"useFile\":false}",
+            "disconnect": "{\"enabled\":true,\"selectedSound\":\"winter_disconnect\",\"volume\":30.15267175572519,\"useFile\":false}",
+            "ducky_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":30.343511450381676,\"useFile\":false}",
             "hang_status_select": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "highfive_clap": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "highfive_whistle": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "human_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "lofi_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "mention1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":29.961832061068705,\"useFile\":false}",
             "mention2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "mention3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "message2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "message3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "mute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message1": "{\"enabled\":true,\"selectedSound\":\"halloween_message1\",\"volume\":30.15267175572519,\"useFile\":false}",
+            "message2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":29.961832061068705,\"useFile\":false}",
+            "message3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":29.770992366412212,\"useFile\":false}",
+            "mute": "{\"enabled\":true,\"selectedSound\":\"winter_mute\",\"volume\":30.15267175572519,\"useFile\":false}",
             "overlayunlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "poggermode_achievement_unlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "poggermode_applause": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
@@ -981,7 +983,7 @@
             "poggermode_message_send": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ptt_start": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "ptt_stop": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "reconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "reconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":30.343511450381676,\"useFile\":false}",
             "robot_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "stage_waiting": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "stream_ended": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
@@ -989,11 +991,11 @@
             "stream_user_joined": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "stream_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
             "success": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "undeafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "unmute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "user_leave": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
-            "user_moved": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "undeafen": "{\"enabled\":true,\"selectedSound\":\"winter_undeafen\",\"volume\":30.15267175572519,\"useFile\":false}",
+            "unmute": "{\"enabled\":true,\"selectedSound\":\"winter_unmute\",\"volume\":29.580152671755727,\"useFile\":false}",
+            "user_join": "{\"enabled\":true,\"selectedSound\":\"winter_user_join\",\"volume\":30.15267175572519,\"useFile\":false}",
+            "user_leave": "{\"enabled\":true,\"selectedSound\":\"winter_user_leave\",\"volume\":29.961832061068705,\"useFile\":false}",
+            "user_moved": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":30.343511450381676,\"useFile\":false}",
             "vibing_wumpus": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}"
         },
         "CustomTimestamps": {
@@ -1239,7 +1241,8 @@
             "blacklistedIds": "",
             "imageCacheDir": "/home/nn/.config/equibop/MessageLoggerData/savedImages",
             "logsDir": "/home/nn/.config/equibop/MessageLoggerData",
-            "ignoreWebhooks": false
+            "ignoreWebhooks": false,
+            "ShowWhereMessageIsFrom": false
         },
         "MessageTranslate": {
             "enabled": false
@@ -1319,9 +1322,6 @@
             "enabled": false
         },
         "RemixMe": {
-            "enabled": false
-        },
-        "RepeatMessage": {
             "enabled": false
         },
         "ReplyPingControl": {
@@ -1417,7 +1417,9 @@
         },
         "UserPFP": {
             "enabled": true,
-            "preferNitro": true
+            "preferNitro": true,
+            "dbSource": "https://userpfp.github.io/UserPFP/source/data.json",
+            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json"
         },
         "UwUifier": {
             "enabled": false
@@ -1619,7 +1621,13 @@
             "enabled": false
         },
         "Animalese": {
-            "enabled": false
+            "enabled": false,
+            "volume": 0.5,
+            "speed": 1,
+            "pitch": 1,
+            "messageLengthLimit": 50,
+            "processOwnMessages": true,
+            "soundQuality": "high"
         },
         "ChatButtonsPlus": {
             "enabled": false
@@ -1637,7 +1645,16 @@
             "enabled": true
         },
         "VoiceButtons": {
-            "enabled": false
+            "enabled": true,
+            "showChatButton": true,
+            "showMuteButton": true,
+            "showDeafenButton": true,
+            "muteSoundboard": true,
+            "disableVideo": true,
+            "showButtonsSelf": "display",
+            "whichNameToShow": "both",
+            "useServer": false,
+            "serverSelf": false
         },
         "SortFriends": {
             "enabled": true,
@@ -1663,10 +1680,15 @@
             "enabled": false
         },
         "KeyboardNavigation": {
-            "enabled": false
+            "enabled": true,
+            "hotkey": [
+                "f5"
+            ],
+            "allowMouseControl": true
         },
         "AutoZipper": {
-            "enabled": false
+            "enabled": true,
+            "extensions": ".psd,.blend,.exe,.dmg,.app,.apk,.iso"
         },
         "arRPCBun": {
             "enabled": true,
@@ -1676,16 +1698,50 @@
             "enabled": false
         },
         "Ghosted": {
-            "enabled": false
+            "enabled": false,
+            "showIndicator": true,
+            "showDmIcons": true,
+            "exemptedChannels": "",
+            "scary": false
         },
         "CleanUserArea": {
             "enabled": false
         },
         "Snowfall": {
-            "enabled": false
+            "enabled": false,
+            "typeOfSnow": "text",
+            "maxSize": 30,
+            "speed": 50,
+            "flakesPerSecond": 5
         },
         "UniversalMention": {
+            "enabled": false,
+            "globalMention": false,
+            "onlyDMUsers": false
+        },
+        "PetPet": {
+            "enabled": true
+        },
+        "RepeatMessages": {
             "enabled": false
+        },
+        "BetterUserArea": {
+            "enabled": false
+        },
+        "RichMagnetLinks": {
+            "enabled": false
+        },
+        "VoiceRejoin": {
+            "enabled": false
+        },
+        "ExitSounds": {
+            "enabled": false
+        },
+        "MessageNotifier": {
+            "enabled": false
+        },
+        "HeaderBarAPI": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -1699,7 +1755,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1763470884004
+        "settingsSyncVersion": 1764577658109
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1708,5 +1764,9 @@
     "updateRelaunch": false,
     "ignoreResetWarning": false,
     "userCssVars": {},
-    "themeNames": {}
+    "themeNames": {},
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
+    }
 }
