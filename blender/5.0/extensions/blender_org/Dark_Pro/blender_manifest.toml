@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+
+id = "Dark_Pro"
+version = "2.0.2"
+name = "Dark Pro"
+tagline = "Just a little darker"
+maintainer = "Mahdi Shalchian"
+type = "theme"
+tags = ["Dark"]
+blender_version_min = "5.0.0"
+blender_version_max = "5.1.0"
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
