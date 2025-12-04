@@ -1,57 +1,59 @@
 import bpy
 import bmesh
-from mathutils import Vector
+import math
+from mathutils import Vector, Matrix
 
 
-def sync_uv_from_mesh(context, selected_objects):
-    objects = selected_objects if selected_objects else context.objects_in_mode
-    for obj in objects:
-        sync_uv_from_mesh_obj(obj)
+# bm.uv_select_foreach_set(select, /, *, loop_verts=(), loop_edges=(), faces=())
 
 
-def sync_uv_from_mesh_obj(obj):
-    bm = bmesh.from_edit_mesh(obj.data)
-    uv_layer = bm.loops.layers.uv.verify()
-    for face in bm.faces:
+def uv_select_set_face(face, select):
+    face.uv_select = select
+    for loop in face.loops:
+        loop.uv_select_vert = select
+        loop.uv_select_edge = select
+
+
+def uv_select_set_all(faces, select):
+    for face in faces:
+        face.uv_select = select
         for loop in face.loops:
-            loop[uv_layer].select = False
-            loop[uv_layer].select_edge = False
-    for vert in bm.verts:
-        if vert.select:
-            for loop in vert.link_loops:
-                loop[uv_layer].select = True
-    for edge in bm.edges:
-        if edge.select:
-            for loop in edge.link_loops:
-                loop[uv_layer].select_edge = True
-    bmesh.update_edit_mesh(obj.data)
+            loop.uv_select_vert = select
+            loop.uv_select_edge = select
 
 
-def sync_mesh_from_uv(context, selected_objects):
-    objects = selected_objects if selected_objects else context.selected_objects
-    for obj in objects:
-        sync_mesh_from_uv_obj(obj)
-        obj.data.update()
+def get_uv_selected_edges(faces):
+    selected_edges = set()
+    for face in faces:
+        for loop in face.loops:
+            if loop.uv_select_edge:
+                selected_edges.add(loop.edge)
+    return selected_edges
 
 
-def sync_mesh_from_uv_obj(obj):
-    bm = bmesh.from_edit_mesh(obj.data)
-    uv_layer = bm.loops.layers.uv.verify()
+def get_uv_from_mirror_offset(obj, is_vertical):
+    "ミラーモディファイアのオフセット設定を取得する"
+    for mod in obj.modifiers:
+        if mod.type != "MIRROR" or not mod.show_viewport:
+            continue
+        if is_vertical and mod.use_mirror_u and mod.mirror_offset_u:
+            offset_u = 0.5 + mod.mirror_offset_u * 0.5
+            return Vector((offset_u, 0))
+        if not is_vertical and mod.use_mirror_v and mod.mirror_offset_v:
+            offset_v = 0.5 + mod.mirror_offset_v * 0.5
+            return Vector((0, offset_v))
+    return None
 
-    for vert in bm.verts:
-        vert.select = False
-    bm.select_flush(False)
 
-    for vert in bm.verts:
-        vert.select = all(loop[uv_layer].select for loop in vert.link_loops)
-    # for edge in bm.edges:
-    #     if all(loop[uv_layer].select_edge for loop in edge.link_loops):
-    #         edge.select = True
-    for face in bm.faces:
-        if all(loop[uv_layer].select for loop in face.loops):
-            face.select = True
-    bm.select_flush(True)
-    bmesh.update_edit_mesh(obj.data)
+def rotate_uv_faces(faces, angle, uv_layer, center):
+    sin_a = math.sin(angle)
+    cos_a = math.cos(angle)
+    rot_matrix = Matrix(((cos_a, -sin_a), (sin_a, cos_a)))
+    for face in faces:
+        for loop in face.loops:
+            loop_uv = loop[uv_layer]
+            local = loop_uv.uv - center
+            loop_uv.uv = rot_matrix @ local + center
 
 
 def get_tile_co(offset_vector, uv_layer, loops):
@@ -73,74 +75,20 @@ def get_bounds(uv_layer, faces):
     return min_u, max_u, min_v, max_v
 
 
-# UV空間を基準にアイランドで分割
-def split_uv_islands(uv_layer, selected_faces):
-    islands = []
-
-    def are_uv_connected(face1, face2):
-        uv1 = set(tuple(loop[uv_layer].uv) for loop in face1.loops)
-        uv2 = set(tuple(loop[uv_layer].uv) for loop in face2.loops)
-        return len(uv1.intersection(uv2)) >= 2
-
-    unassigned_faces = set(selected_faces)
-    while unassigned_faces:
-        start_face = unassigned_faces.pop()
-        island = {start_face}
-        to_check = {start_face}
-        while to_check:
-            current_face = to_check.pop()
-            for edge in current_face.edges:
-                for face in edge.link_faces:
-                    if face in unassigned_faces and are_uv_connected(current_face, face):
-                        island.add(face)
-                        unassigned_faces.remove(face)
-                        to_check.add(face)
-        islands.append(list(island))
-    return islands
-
-
 def straight_uv_nodes(node_group, mode="GEOMETRY", keep_length=False, center=False):
-    uv_nodes = list(node_group.nodes)
-    uv_layer = node_group.uv_layer
-
-    start_node = next((node for node in uv_nodes if len(node.neighbors) == 1), None)
-    if start_node is None:
-        start_node = min(uv_nodes)
-
-    ordered_nodes = []
-    visited = set()
-    current_node = start_node
-    while len(ordered_nodes) < len(uv_nodes):
-        if current_node not in visited:
-            ordered_nodes.append(current_node)
-            visited.add(current_node)
-        next_node = next((n for n in current_node.neighbors if n not in visited), None)
-        if next_node is None:
-            unvisited = set(uv_nodes) - visited
-            if unvisited:
-                current_node = min(unvisited, key=lambda n: (n.uv - current_node.uv).length)
-            else:
-                break
-        else:
-            current_node = next_node
+    ordered_nodes = node_group.get_ordered_nodes()
+    if len(ordered_nodes) <= 1:
+        return
 
     start_uv = ordered_nodes[0].uv
     end_uv = ordered_nodes[-1].uv
     direction = end_uv - start_uv
-
     if abs(direction.x) > abs(direction.y):
         direction.y = 0
     else:
         direction.x = 0
 
-    original_uv_length = (
-        sum((ordered_nodes[i + 1].uv - ordered_nodes[i].uv).length for i in range(len(ordered_nodes) - 1))
-        if keep_length
-        else 0
-    )
-
-    if len(ordered_nodes) <= 1:
-        return
+    original_uv_length = node_group.get_sum_length(ordered_nodes) if keep_length else 0
 
     if mode == "GEOMETRY":
         total_3d_distance = 0

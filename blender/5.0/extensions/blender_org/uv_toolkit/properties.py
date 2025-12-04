@@ -1,10 +1,5 @@
 from bpy.types import PropertyGroup
-from bpy.props import (
-    IntProperty,
-    FloatProperty,
-    EnumProperty,
-    StringProperty,
-)
+from bpy.props import IntProperty, FloatProperty, EnumProperty, StringProperty
 
 
 class UvToolkitProperties(PropertyGroup):

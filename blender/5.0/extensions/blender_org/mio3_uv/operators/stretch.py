@@ -1,8 +1,7 @@
 import bpy
 import numpy as np
 from bpy.props import BoolProperty, EnumProperty
-from ..classes.uv import UVIslandManager, UVNodeManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, UVNodeManager, Mio3UVOperator
 
 
 class MIO3UV_OT_stretch(Mio3UVOperator):
@@ -24,33 +23,19 @@ class MIO3UV_OT_stretch(Mio3UVOperator):
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
-        use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
         selected_face = self.check_selected_face_objects(self.objects)
-
         self.island = True if context.scene.mio3uv.island_mode else selected_face
 
         return self.execute(context)
 
-    def check(self, context):
-        self.objects = self.get_selected_objects(context)
-        if context.tool_settings.use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-        return True
-
     def execute(self, context):
         self.start_time()
-
         self.objects = self.get_selected_objects(context)
+
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
         if self.island:
-            if use_uv_select_sync:
-                im = UVIslandManager(self.objects, mesh_link_uv=True, mesh_keep=True)
-            else:
-                im = UVIslandManager(self.objects)
-
+            im = UVIslandManager(self.objects, sync=use_uv_select_sync)
             if not im.islands:
                 return {"CANCELLED"}
 
@@ -104,13 +89,9 @@ class MIO3UV_OT_stretch(Mio3UVOperator):
                                 local_y = uv.y - center_y
                                 uv.y = center_y + (local_y * scale_y)
 
-            im.update_uvmeshes()
+            im.update_uvmeshes(True)
         else:
-            if use_uv_select_sync:
-                nm = UVNodeManager(self.objects, mode="VERT")
-            else:
-                nm = UVNodeManager(self.objects, mode="EDGE")
-            
+            nm = UVNodeManager(self.objects, sync=use_uv_select_sync)
             if not nm.groups:
                 return {"CANCELLED"}
 
@@ -180,16 +161,9 @@ class MIO3UV_OT_stretch(Mio3UVOperator):
         row.enabled = self.axis != "BOTH"
 
 
-classes = [
-    MIO3UV_OT_stretch,
-]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_stretch)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_stretch)

@@ -1,3 +1,4 @@
+from typing import Literal
 import numpy as np
 from time import time
 from math import atan, cos, sin, pi
@@ -104,10 +105,10 @@ def get_sorted_uv_edge_loops(uv, loops):
     return sorted_uv_edge_loops
 
 
-def deselect_all_loops_uv(uv, bm):
+def deselect_all_loops_uv(bm):
     for f in bm.faces:
         for l in f.loops:
-            l[uv].select = False
+            l.uv_select_edge_set(False)
 
 
 def select_all_faces(bm):
@@ -124,16 +125,16 @@ def create_list_of_selected_faces(bm):
     return [f for f in bm.faces if f.select]
 
 
-def create_list_of_loops_from_uv_selection(uv, faces):
-    return [l for f in faces for l in f.loops if l[uv].select]
+def create_list_of_loops_from_uv_selection(faces):
+    return [l for f in faces for l in f.loops if l.uv_select_edge]
 
 
-def create_set_of_loops_from_uv_selection(uv, faces):
-    return {l for f in faces for l in f.loops if l[uv].select}
+def create_set_of_loops_from_uv_selection(faces):
+    return {l for f in faces for l in f.loops if l.uv_select_edge}
 
 
-def verts_from_uv_selection(uv, faces):
-    return {l.vert for f in faces for l in f.loops if l[uv].select}
+def verts_from_uv_selection(faces):
+    return {l.vert for f in faces for l in f.loops if l.uv_select_edge}
 
 
 def clear_all_seams(bm):
@@ -146,9 +147,7 @@ def store_all_seams(bm):
 
 
 def get_bbox(uv, faces):
-    """
-    Return lower left point and top right point.
-    """
+    """Return lower left point and top right point."""
     if isinstance(faces, list):
         initial_point = faces[0].loops[0][uv].uv
     else:
@@ -188,9 +187,7 @@ def calc_bbox_center(bbox):
 
 
 def get_udim_co(point):
-    """
-    Return udim coordinates by a point coordinate.
-    """
+    """Return udim coordinates by a point coordinate."""
     point_u, point_v = point[0], point[1]
 
     u1, v1 = point_u // 1, point_v // 1
@@ -201,9 +198,9 @@ def get_udim_co(point):
 def calc_slope(context, point_a, point_b):
     u1, v1 = point_a[0], point_a[1]
     u2, v2 = point_b[0], point_b[1]
-    acitve_img = get_non_square_acitve_img(context)
-    if acitve_img:
-        width, height = acitve_img.size
+    active_img = get_non_square_active_img(context)
+    if active_img:
+        width, height = active_img.size
         if u1 > u2:
             pivot_u = (u1 - u2) / 2
         else:
@@ -229,9 +226,7 @@ def calc_slope(context, point_a, point_b):
 
 
 def min_angle_to_axis(slope):
-    """
-    Returns the angle to the nearest axis.
-    """
+    """Returns the angle to the nearest axis."""
     if 0 < slope:
         if slope < pi / 2 - slope:
             angle = slope * -1
@@ -247,21 +242,18 @@ def min_angle_to_axis(slope):
     return angle
 
 
-def find_nearest_axis(slope, point_a, point_b):
+def find_nearest_axis(slope, point_a, point_b) -> Literal[int]:
     u1, v1 = point_a[0], point_a[1]
     u2, v2 = point_b[0], point_b[1]
 
     if slope == 0:
         if v1 == v2:
-            axis = AXIS_U
+            return AXIS_U
         if u1 == u2:
-            axis = AXIS_V
-    else:
-        if pi / 2 - abs(slope) > abs(slope):
-            axis = AXIS_U
-        else:
-            axis = AXIS_V
-    return axis
+            return AXIS_V
+    if pi / 2 - abs(slope) > abs(slope):
+        return AXIS_U
+    return AXIS_V
 
 
 def get_direction(axis, point_a, point_b):
@@ -270,15 +262,11 @@ def get_direction(axis, point_a, point_b):
 
     if axis == AXIS_U:
         if u1 < u2:
-            direction = POSITIVE
-        else:
-            direction = NEGATIVE
-    if axis == AXIS_V:
-        if v1 < v2:
-            direction = POSITIVE
-        else:
-            direction = NEGATIVE
-    return direction
+            return POSITIVE
+        return NEGATIVE
+    if v1 < v2:
+        return POSITIVE
+    return NEGATIVE
 
 
 def translate_matrix(u, v):
@@ -299,13 +287,11 @@ def rotation_matrix(angle, pivot):
 
 
 def universal_rotation_matrix(context, angle, pivot):
-    """
-    Rotate on non square active image
-    """
-    acitve_img = get_non_square_acitve_img(context)
+    """Rotate on non square active image"""
+    active_img = get_non_square_active_img(context)
     rotation = rotation_matrix(angle, pivot)
-    if acitve_img:
-        width, height = acitve_img.size
+    if active_img:
+        width, height = active_img.size
         if width > height:
             scale_1 = scale_matrix((width / height, 1), pivot)
             scale_2 = scale_matrix((1 / (width / height), 1), pivot)
@@ -327,15 +313,16 @@ def scale_matrix(factor, pivot):
         [0, 0, 1]])
 
 
-def get_non_square_acitve_img(context):
+def get_non_square_active_img(context):
+    active_img = None
     for area in context.screen.areas:
         if area.type == 'IMAGE_EDITOR':
-            acitve_img = area.spaces.active.image
-    if acitve_img:
-        width, height = acitve_img.size
+            active_img = area.spaces.active.image
+    if active_img:
+        width, height = active_img.size
         if height != 0:
             if width / height != 1:
-                return acitve_img
+                return active_img
 
 
 def get_objects_seams(context):
@@ -353,7 +340,7 @@ def get_objects_seams(context):
     for ob in context.objects_in_mode_unique_data:
         me = ob.data
         bm = bmesh.from_edit_mesh(me)
-        uv = bm.loops.layers.uv.verify()
+        bm.loops.layers.uv.verify()
         for e in bm.edges:
             if e.seam:
                 store_initial_seams[ob].append(e.index)
@@ -367,9 +354,9 @@ def get_objects_seams(context):
             if f.select:
                 store_face_selection[ob].add(f.index)
             for l in f.loops:
-                if l[uv].select:
+                if l.uv_select_edge:
                     store_initial_selection[ob].add(l.index)
-                l[uv].select = True
+                l.uv_select_edge_set(True)
             f.select = True
 
     bpy.ops.uv.seams_from_islands(mark_seams=True)
@@ -385,7 +372,7 @@ def get_objects_seams(context):
     for ob in context.objects_in_mode_unique_data:
         me = ob.data
         bm = bmesh.from_edit_mesh(me)
-        uv = bm.loops.layers.uv.verify()
+        bm.loops.layers.uv.verify()
         bm.edges.ensure_lookup_table()
         for edge_idx in store_initial_seams[ob]:
             bm.edges[edge_idx].seam = True
@@ -394,7 +381,7 @@ def get_objects_seams(context):
             for l in f.loops:
                 if l.index in store_initial_selection[ob]:
                     continue
-                l[uv].select = False
+                l.uv_select_edge_set(False)
 
         for f in bm.faces:
             if f.index in store_face_selection[ob]:
@@ -412,9 +399,9 @@ def get_objects_seams(context):
     return objects_seams
 
 
-def get_islands(uv, bm, seams, has_selected_faces=False, islands_with_hidden_faces=True):
+def get_islands(bm, seams, has_selected_faces=False, islands_with_hidden_faces=True):
     if has_selected_faces:
-        faces = {f for f in bm.faces for l in f.loops if l[uv].select}
+        faces = {f for f in bm.faces for l in f.loops if l.uv_select_edge}
     else:
         faces = set(bm.faces)
     while len(faces) != 0:

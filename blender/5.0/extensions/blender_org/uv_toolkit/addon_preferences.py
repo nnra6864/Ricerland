@@ -29,7 +29,6 @@ def update_addon_category(self, _context):
         "UVTOOLKIT_PT_uv_maps",
         "UVTOOLKIT_PT_checker_map",
         "UVTOOLKIT_PT_quick_presets",
-        "UVTOOLKIT_PT_cleanup",
         "UVTOOLKIT_PT_help",
     )
     sub_panels = (
@@ -180,7 +179,7 @@ class UvToolkitPreferences(AddonPreferences):
     pie_uv_editor_custom_op_bottom_right: StringProperty(default="")
     pie_uv_editor_custom_op_name_bottom_right: StringProperty(default="")
 
-    chekcer_maps_path: StringProperty(
+    checker_maps_path: StringProperty(
         name="",
         description="Path to Directory",
         default=os.path.join(os.path.split(__file__)[0], "checker_maps"),
@@ -309,7 +308,7 @@ class UvToolkitPreferences(AddonPreferences):
             row = col.row()
             row.prop(self, "icon_style", expand=True)
             col.separator()
-            col.prop(self, "chekcer_maps_path")
+            col.prop(self, "checker_maps_path")
 
             layout.separator()
             row = layout.row()

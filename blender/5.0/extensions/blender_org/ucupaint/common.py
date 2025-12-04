@@ -7,8 +7,8 @@ BLENDER_28_GROUP_INPUT_HACK = False
 
 MAX_VERTEX_DATA = 8
 
-LAYERGROUP_PREFIX = '~yP Layer '
-MASKGROUP_PREFIX = '~yP Mask '
+LAYERGROUP_PREFIX = '.yP Layer '
+MASKGROUP_PREFIX = '.yP Mask '
 
 INFO_PREFIX = '__yp_info_'
 
@@ -39,7 +39,7 @@ LAYER_VIEWER = '_Layer Viewer'
 LAYER_ALPHA_VIEWER = '_Layer Alpha Viewer'
 EMISSION_VIEWER = 'Emission Viewer'
 
-ITERATE_GROUP = '~yP Iterate Parallax Group'
+ITERATE_GROUP = '.yP Iterate Parallax Group'
 PARALLAX_DIVIDER = 4
 
 FLOW_VCOL = '__flow_'
@@ -47,6 +47,9 @@ FLOW_VCOL = '__flow_'
 COLOR_ID_VCOL_NAME = '__yp_color_id'
 
 BUMP_MULTIPLY_TWEAK = 5
+
+TEMP_ACTIVE_IMAGE_NAME = '.YP_TEMP_ACTIVE_IMAGE'
+TEMP_ACTIVE_IMAGE_NODE_NAME = '.YP_TEMP_ACTIVE_IMAGE_NODE'
 
 def blend_type_items(self, context):
     items = [
@@ -132,6 +135,13 @@ voronoi_feature_items = (
     ("N_SPHERE_RADIUS", "N-Sphere Radius", "Compute and return the radius of the n-sphere inscribed in the Voronoi cells. In other words, it is half the distance between the closest feature point and the feature point closest to it.")
 )
 
+swizzle_items = (
+    ('RGB', 'RGB', ''),
+    ('R', 'R', ''),
+    ('G', 'G', ''),
+    ('B', 'B', '')
+)
+
 def entity_input_items(self, context):
     yp = self.id_data.yp
     entity = self
@@ -176,6 +186,23 @@ TANGENT_SIGN_PREFIX = '__tsign_'
 
 neighbor_directions = ['n', 's', 'e', 'w']
 
+def get_vertex_color_label(capital=11):
+    if not is_bl_newer_than(3, 2):
+
+        if capital == 10:
+            return 'Vertex color'
+        elif capital == 00:
+            return 'vertex color'
+
+        return 'Vertex Color'
+
+    if capital == 10:
+        return 'Color attribute'
+    elif capital == 00:
+        return 'color attribute'
+
+    return 'Color Attribute'
+
 normal_blend_items = (
     ('MIX', 'Mix', ''),
     ('OVERLAY', 'Add', ''),
@@ -219,7 +246,7 @@ layer_type_items = (
     ('NOISE', 'Noise', ''),
     ('VORONOI', 'Voronoi', ''),
     ('WAVE', 'Wave', ''),
-    ('VCOL', 'Vertex Color', ''),
+    ('VCOL', 'Color Attribute', ''),
     ('BACKGROUND', 'Background', ''),
     ('COLOR', 'Solid Color', ''),
     ('GROUP', 'Group', ''),
@@ -239,7 +266,7 @@ mask_type_items = (
     ('NOISE', 'Noise', ''),
     ('VORONOI', 'Voronoi', ''),
     ('WAVE', 'Wave', ''),
-    ('VCOL', 'Vertex Color', ''),
+    ('VCOL', 'Color Attribute', ''),
     ('HEMI', 'Fake Lighting', ''),
     ('OBJECT_INDEX', 'Object Index', ''),
     ('COLOR_ID', 'Color ID', ''),
@@ -261,7 +288,7 @@ channel_override_type_items = (
     ('NOISE', 'Noise', ''),
     ('VORONOI', 'Voronoi', ''),
     ('WAVE', 'Wave', ''),
-    ('VCOL', 'Vertex Color', ''),
+    ('VCOL', 'Color Attribute', ''),
     ('GABOR', 'Gabor', ''),
 )
 
@@ -287,7 +314,7 @@ layer_type_labels = {
     'NOISE' : 'Noise',
     'VORONOI' : 'Voronoi',
     'WAVE' : 'Wave',
-    'VCOL' : 'Vertex Color',
+    'VCOL' : 'Color Attribute',
     'BACKGROUND' : 'Background',
     'COLOR' : 'Solid Color',
     'GROUP' : 'Group',
@@ -307,7 +334,7 @@ mask_type_labels = {
     'NOISE' : 'Noise',
     'VORONOI' : 'Voronoi',
     'WAVE' : 'Wave',
-    'VCOL' : 'Vertex Color',
+    'VCOL' : 'Color Attribute',
     'HEMI' : 'Fake Lighting',
     'OBJECT_INDEX' : 'Object Index',
     'COLOR_ID' : 'Color ID',
@@ -360,7 +387,7 @@ channel_override_labels = {
     'NOISE' : 'Noise',
     'VORONOI' : 'Voronoi',
     'WAVE' : 'Wave',
-    'VCOL' : 'Vertex Color',
+    'VCOL' : 'Color Attribute',
     'HEMI' : 'Fake Lighting',
     'GABOR' : 'Gabor',
 }
@@ -586,6 +613,14 @@ tex_eraser_asset_names = [
     'Erase Soft'
 ]
 
+tex_default_brushes = [
+    'Airbrush',
+    'Paint Hard',
+    'Paint Hard Pressure',
+    'Paint Soft',
+    'Paint Soft Pressure',
+]
+
 rgba_letters = ['r', 'g', 'b', 'a']
 nsew_letters = ['n', 's', 'e', 'w']
 
@@ -645,6 +680,9 @@ def get_alpha_suffix():
             return ' Beta'
 
     return ''
+
+def get_version_str(version):
+    return str(version).replace(', ', '.').replace('(', '').replace(')', '')
 
 def get_current_version_str():
     if not is_bl_newer_than(4, 2):
@@ -791,6 +829,11 @@ def set_object_select(obj, val):
         obj.select_set(val)
     else: obj.select = val
 
+def get_object_hide(obj):
+    if is_bl_newer_than(2, 80):
+        return obj.hide_get()
+    return obj.hide
+
 def set_object_hide(obj, val):
     if is_bl_newer_than(2, 80):
         obj.hide_set(val)
@@ -810,6 +853,13 @@ def get_viewport_shade():
     if is_bl_newer_than(2, 80):
         return bpy.context.area.spaces[0].shading.type
     else: return bpy.context.area.spaces[0].viewport_shade
+
+def is_not_in_material_view():
+    space = bpy.context.space_data
+    return space.type == 'VIEW_3D' and (
+        (not is_bl_newer_than(2, 80) and space.viewport_shade not in {'MATERIAL', 'RENDERED'}) or 
+        (is_bl_newer_than(2, 80) and space.shading.type not in {'MATERIAL', 'RENDERED'})
+    )
 
 def get_user_preferences():
     if is_bl_newer_than(2, 80):
@@ -873,12 +923,6 @@ def get_active_material(obj=None):
         return None
 
     return mat
-
-def get_material_output(mat):
-    if mat != None and mat.node_tree:
-        output = [n for n in mat.node_tree.nodes if n.type == 'OUTPUT_MATERIAL' and n.is_active_output]
-        if output: return output[0]
-    return None
 
 def get_list_of_ypaint_nodes(mat):
 
@@ -1278,21 +1322,23 @@ def get_unique_name(name, items, surname = ''):
 
     return unique_name
 
-def get_active_node():
-    mat = get_active_material()
+def get_active_node(mat=None):
+    if not mat: mat = get_active_material()
     if not mat or not mat.node_tree: return None
     node = mat.node_tree.nodes.active
     return node
 
 # Specific methods for this addon
 
-def get_active_ypaint_node(obj=None):
+def get_active_ypaint_node(obj=None, mat=None):
     ypui = bpy.context.window_manager.ypui
 
+    active_material = get_active_material(obj)
+
     # Get material UI prop
-    mat = get_active_material(obj)
+    if not mat: mat = active_material
     if not mat or not mat.node_tree: 
-        ypui.active_mat = ''
+        if mat == active_material: ypui.active_mat = ''
         return None
 
     # Search for its name first
@@ -1304,7 +1350,7 @@ def get_active_ypaint_node(obj=None):
     # If still not found, create one
     if not mui:
 
-        if ypui.active_mat != '':
+        if mat == active_material and ypui.active_mat != '':
             prev_mat = bpy.data.materials.get(ypui.active_mat)
             if not prev_mat:
                 #print(ypui.active_mat)
@@ -1319,11 +1365,11 @@ def get_active_ypaint_node(obj=None):
         mui.name = mat.name
         #print('New MUI!', mui.name)
 
-    if ypui.active_mat != mat.name:
+    if mat == active_material and ypui.active_mat != mat.name:
         ypui.active_mat = mat.name
 
     # Try to get yp node
-    node = get_active_node()
+    node = get_active_node(mat)
     if node and node.type == 'GROUP' and node.node_tree and node.node_tree.yp.is_ypaint_node:
         # Update node name
         if mui.active_ypaint_node != node.name:
@@ -1572,12 +1618,14 @@ def create_essential_nodes(tree, solid_value=False, texcoord=False, geometry=Fal
         node = tree.nodes.new('ShaderNodeTexCoord')
         node.name = TEXCOORD
 
-def get_active_mat_output_node(tree):
-    # Search for output
-    for node in tree.nodes:
-        if node.bl_idname == 'ShaderNodeOutputMaterial' and node.is_active_output:
-            return node
+def get_material_output(mat, create_one=False):
+    if mat != None and mat.node_tree:
+        output = [n for n in mat.node_tree.nodes if n.type == 'OUTPUT_MATERIAL' and n.is_active_output]
+        if output: return output[0]
 
+        # Create new material output if there's none
+        if create_one:
+            return mat.node_tree.nodes.new('ShaderNodeOutputMaterial')
     return None
 
 def get_all_image_users(image):
@@ -2147,28 +2195,19 @@ def replace_new_node(tree, entity, prop, node_id_name, label='', group_name='', 
 
 def get_tree(entity):
 
-    #m = re.match(r'yp\.layers\[(\d+)\]', entity.path_from_id())
-    #if not m: return None
-    #if not hasattr(entity.id_data, 'yp') or not hasattr(entity, 'group_node'): return None
-
-    #try:
-
     # Search inside yp tree
     tree = entity.id_data
     yp = tree.yp
-    group_node = None
+    node = None
 
     if entity.trash_group_node != '':
         trash = tree.nodes.get(yp.trash)
-        if trash: group_node = trash.node_tree.nodes.get(entity.trash_group_node)
+        if trash: node = trash.node_tree.nodes.get(entity.trash_group_node)
     else:
-        group_node = tree.nodes.get(entity.group_node)
+        node = tree.nodes.get(entity.group_node)
 
-    if not group_node or group_node.type != 'GROUP': return None
-    return group_node.node_tree
-
-    #except: 
-    #    return None
+    if not node or node.type != 'GROUP': return None
+    return node.node_tree
 
 def get_mod_tree(entity):
 
@@ -2199,20 +2238,25 @@ def get_mod_tree(entity):
         if source_group and source_group.type == 'GROUP': 
             tree = source_group.node_tree
 
+        '''
         mod_group = tree.nodes.get(layer.mod_group)
+        '''
+        mod_group = tree.nodes.get(layer.mod_groups[0].name) if len(layer.mod_groups) > 0 else None
         if mod_group and mod_group.type == 'GROUP':
             return mod_group.node_tree
 
         return tree
 
-def get_mask_tree(mask, ignore_group=False):
+def get_mask_tree(mask, layer_tree=None, ignore_group=False):
 
-    m = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]', mask.path_from_id())
-    if not m : return None
+    if not layer_tree:
+        m = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]', mask.path_from_id())
+        if not m : return None
 
-    yp = mask.id_data.yp
-    layer = yp.layers[int(m.group(1))]
-    layer_tree = get_tree(layer)
+        yp = mask.id_data.yp
+        layer = yp.layers[int(m.group(1))]
+
+        layer_tree = get_tree(layer)
 
     if ignore_group:
         return layer_tree
@@ -2224,16 +2268,16 @@ def get_mask_tree(mask, ignore_group=False):
     if not group_node or group_node.type != 'GROUP': return layer_tree
     return group_node.node_tree
 
-def get_mask_source(mask, get_baked=False):
-    tree = get_mask_tree(mask)
+def get_mask_source(mask, get_baked=False, layer_tree=None):
+    tree = get_mask_tree(mask, layer_tree=layer_tree)
     if tree:
         if get_baked:
             return tree.nodes.get(mask.baked_source)
         return tree.nodes.get(mask.source)
     return None
 
-def get_mask_mapping(mask, get_baked=False):
-    tree = get_mask_tree(mask, True)
+def get_mask_mapping(mask, get_baked=False, layer_tree=None):
+    tree = get_mask_tree(mask, layer_tree=layer_tree, ignore_group=True)
     return tree.nodes.get(mask.mapping) if not get_baked else tree.nodes.get(mask.baked_mapping)
 
 def get_image_mask_base_color(mask, image, mask_index):
@@ -2370,6 +2414,20 @@ def get_neighbor_uv_space_input(texcoord_type):
 
 def change_vcol_name(yp, obj, src, new_name, layer=None):
 
+    objs = []
+    if obj.type == 'MESH' and is_material_has_tree(obj.active_material, yp.id_data):
+        objs = get_all_objects_with_same_materials(obj.active_material)
+    else:
+        mats = get_all_materials_with_tree(yp.id_data)
+        for mat in mats:
+            obs = get_all_objects_with_same_materials(mat)
+            for ob in obs:
+                if ob not in objs:
+                    objs.append(ob)
+
+        if len(objs) == 0: return
+        obj = objs[0]
+
     # Get vertex color from node
     ori_name = get_source_vcol_name(src)
     vcols = get_vertex_colors(obj)
@@ -2388,7 +2446,6 @@ def change_vcol_name(yp, obj, src, new_name, layer=None):
     set_source_vcol_name(src, new_name)
 
     # Replace vertex color name on other objects too
-    objs = get_all_objects_with_same_materials(obj.active_material, True)
     for o in objs:
         if o != obj:
             ovcols = get_vertex_colors(o)
@@ -2445,9 +2502,10 @@ def change_layer_name(yp, obj, src, layer, texes):
 
     yp.halt_update = True
 
-    if layer.type == 'VCOL' and obj.type == 'MESH':
+    if layer.type == 'VCOL':
 
-        change_vcol_name(yp, obj, src, layer.name, layer)
+        if obj.type == 'MESH':
+            change_vcol_name(yp, obj, src, layer.name, layer)
         
     elif layer.type == 'IMAGE':
         src.image.name = '___TEMP___'
@@ -2643,6 +2701,14 @@ def get_tree_output_by_name(tree, name):
     if outp: return outp[0]
 
     return None
+
+def set_modifier_input_value(mod, socket_name, value):
+    if mod.type != 'NODES' or not mod.node_group: return
+
+    inp = get_tree_input_by_name(mod.node_group, socket_name)
+    if not inp: return
+
+    mod[inp.identifier] = value
 
 def new_tree_input(tree, name, socket_type, description='', use_both=False):
     if not is_bl_newer_than(4):
@@ -3513,7 +3579,7 @@ def remove_temp_uv(obj, entity):
             except: print('EXCEPTIION: Cannot set modifier mirror offset!')
 
 def refresh_temp_uv(obj, entity): 
-    if obj.type != 'MESH':
+    if not obj or obj.type != 'MESH':
         return False
 
     if not entity:
@@ -3592,9 +3658,9 @@ def refresh_temp_uv(obj, entity):
         #print('Layer!')
     elif m2: 
         if entity.use_baked:
-            mask_tree = get_mask_tree(entity)
+            layer_tree = get_mask_tree(entity, ignore_group=True)
+            mask_tree = get_mask_tree(entity, layer_tree)
             source = mask_tree.nodes.get(entity.baked_source)
-            layer_tree = get_mask_tree(entity, True)
         else:
             source = get_mask_source(entity)
         mapping = get_mask_mapping(entity, get_baked=entity.use_baked)
@@ -4874,6 +4940,59 @@ def set_editor_images(editor_images={}, editor_pins={}):
                         if screen_pin_dict != None and j in screen_pin_dict:
                             space.use_image_pin = screen_pin_dict[j]
 
+def get_temporary_active_image():
+    temp_image = bpy.data.images.get(TEMP_ACTIVE_IMAGE_NAME)
+    if not temp_image:
+        temp_image = bpy.data.images.new(TEMP_ACTIVE_IMAGE_NAME, width=1, height=1, alpha=False, float_buffer=False)
+
+    return temp_image
+
+def get_material_temp_active_image_node(mat, create_one=False):
+    node = get_active_ypaint_node(mat=mat)
+    tree = node.node_tree if node else mat.node_tree
+    temp = tree.nodes.get(TEMP_ACTIVE_IMAGE_NODE_NAME)
+    if create_one and not temp:
+        try: temp = tree.nodes.new('ShaderNodeTexImage')
+        except Exception as e: 
+            print('EXCEPTIION: Cannot create temporary image for non active material! Error:', e)
+            return None
+        temp.name = TEMP_ACTIVE_IMAGE_NODE_NAME
+        temp.image = get_temporary_active_image()
+        temp.hide = True
+        temp.location = Vector((-500, 0))
+
+    return temp
+
+def check_other_mats_to_use_temp_image(obj):
+    if not is_bl_newer_than(2, 81) or obj.type != 'MESH' or not obj.active_material: return
+
+    active_mat = obj.active_material
+
+    # Remove temporary active image node in active material
+    if active_mat.node_tree:
+        temp = active_mat.node_tree.nodes.get(TEMP_ACTIVE_IMAGE_NODE_NAME)
+        if temp: simple_remove_node(active_mat.node_tree, temp)
+
+    # Do not create temporary image if the active material has no images
+    if len(active_mat.texture_paint_images) == 0:
+        return
+
+    # Create temporary image for non active material so the active image in this material won't accidentally be painted
+    for mat in obj.data.materials:
+        if not mat or not mat.node_tree or mat == active_mat or len(mat.texture_paint_images) == 0: continue
+
+        temp = get_material_temp_active_image_node(mat, create_one=True)
+        if temp:
+            node = get_active_ypaint_node(mat=mat)
+            tree = node.node_tree if node else mat.node_tree
+            tree.nodes.active = temp
+
+            for idx, img in enumerate(mat.texture_paint_images):
+                if img == None: continue
+                if img.name == TEMP_ACTIVE_IMAGE_NAME:
+                    mat.paint_active_slot = idx
+                    break
+
 def set_active_paint_slot_entity(yp):
     image = None
     mat = get_active_material()
@@ -5008,7 +5127,6 @@ def set_active_paint_slot_entity(yp):
                     layer_tree.nodes.active = source
 
                 image = source.image
-
 
     # HACK: Remember all original images in all image editors since setting canvas/paint slot will replace all of them
     ori_editor_imgs, ori_editor_pins = get_editor_images_dict(return_pins=True)
@@ -5360,14 +5478,26 @@ def get_channel_enabled(ch, layer=None, root_ch=None):
             lays = [l for i, l in enumerate(yp.layers) if i > layer_idx and l.parent_idx == layer.parent_idx]
         else:
             lays = get_list_of_direct_children(layer)
+
+        color_ch, alpha_ch = get_color_alpha_ch_pairs(yp)
+        alpha_ch_idx = get_channel_index(alpha_ch) if alpha_ch else -1
+        color_ch_idx = get_channel_index(color_ch) if color_ch else -1
         
         for l in lays:
             if not l.enable: continue
             if channel_idx >= len(l.channels): continue
             c = l.channels[channel_idx]
 
-            if l.type not in {'GROUP', 'BACKGROUND'} and c.enable:
-                return True
+            if l.type not in {'GROUP', 'BACKGROUND'}:
+
+                # NOTE: Only consider child alpha channel to be actually enabled or unpaired
+                if channel_idx == alpha_ch_idx:
+                    cc = l.channels[color_ch_idx]
+                    if cc.enable and not cc.unpair_alpha:
+                        continue
+
+                if c.enable:
+                    return True
 
             if l.type == 'GROUP' and get_channel_enabled(l.channels[channel_idx], l, root_ch):
                 return True
@@ -5381,6 +5511,47 @@ def get_channel_enabled(ch, layer=None, root_ch=None):
                 return False
 
     return True
+
+def is_unpaired_alpha_chilren_exist(layer):
+    if layer.type != 'GROUP': return False
+
+    lays = get_list_of_direct_children(layer)
+    for l in lays:
+        if not l.enable: continue
+        cc, ac = get_layer_color_alpha_ch_pairs(l)
+        if not ac: continue
+
+        if l.type != 'GROUP' and ((not cc.enable and ac.enable) or (cc.enable and cc.unpair_alpha)):
+            return True
+
+        if l.type == 'GROUP' and ac.enable and is_unpaired_alpha_chilren_exist(l):
+            return True
+
+    return False
+
+def is_blend_node_needed(ch, layer=None, root_ch=None):
+    yp = ch.id_data.yp
+
+    if not layer or not root_ch:
+        m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\]', ch.path_from_id())
+        layer = yp.layers[int(m.group(1))]
+        root_ch = yp.channels[int(m.group(2))]
+
+    # Get alpha and color pair channel
+    color_ch, alpha_ch = get_layer_color_alpha_ch_pairs(layer)
+
+    # Blend node is necessary for alpha channel that is forced to be unpaired from color channel
+    if ch == alpha_ch:
+        if layer.type == 'GROUP':
+            return is_unpaired_alpha_chilren_exist(layer)
+
+        #if layer.type == 'GROUP':
+        #    return get_channel_enabled(color_ch, layer) or get_channel_enabled(ch, layer, root_ch)
+
+        elif get_channel_enabled(color_ch, layer):
+            return color_ch.unpair_alpha
+
+    return get_channel_enabled(ch, layer, root_ch)
 
 def is_any_entity_using_uv(yp, uv_name):
 
@@ -5507,13 +5678,22 @@ def is_any_layer_using_channel(root_ch, node=None):
         inp = node.inputs.get(root_ch.name + io_suffix['ALPHA'])
         if inp and len(inp.links):
             return True
-        inp = node.inputs.get(root_ch.name + io_suffix['HEIGHT'])
-        if inp and len(inp.links):
-            return True
+        if root_ch.type == 'NORMAL':
+            inp = node.inputs.get(root_ch.name + io_suffix['HEIGHT'])
+            if inp and len(inp.links):
+                return True
+            inp = node.inputs.get(root_ch.name + io_suffix['VDISP'])
+            if inp and len(inp.links):
+                return True
+
+    color_ch, alpha_ch = get_color_alpha_ch_pairs(yp)
+    color_ch_idx = get_channel_index(color_ch) if root_ch == alpha_ch else -1
 
     for layer in yp.layers:
         if layer.type in {'GROUP', 'BACKGROUND'}: continue
-        if get_channel_enabled(layer.channels[ch_idx], layer):
+        if (get_channel_enabled(layer.channels[ch_idx], layer) or 
+            (root_ch == alpha_ch and get_channel_enabled(layer.channels[color_ch_idx], layer))
+        ):
             return True
 
     return False
@@ -5577,14 +5757,21 @@ def get_all_materials_with_yp_nodes(mesh_only=True):
 
     return mats
 
+def is_material_has_tree(mat, tree):
+    if not mat.node_tree: return False
+
+    for node in mat.node_tree.nodes:
+        if node.type == 'GROUP' and node.node_tree == tree:
+            return True
+
+    return False
+
 def get_all_materials_with_tree(tree):
     mats = []
 
     for mat in bpy.data.materials:
-        if not mat.node_tree: continue
-        for node in mat.node_tree.nodes:
-            if node.type == 'GROUP' and node.node_tree == tree and mat not in mats:
-                mats.append(mat)
+        if mat not in mats and is_material_has_tree(mat, tree):
+            mats.append(mat)
 
     return mats
 
@@ -5672,16 +5859,6 @@ def get_layer_images(layer, udim_only=False, ondisk_only=False, packed_only=Fals
 
     return filtered_images
 
-def any_decal_inside_layer(layer):
-    if layer.texcoord_type == 'Decal':
-        return True
-
-    for mask in layer.masks:
-        if mask.texcoord_type == 'Decal':
-            return True
-
-    return False
-
 def any_dirty_images_inside_layer(layer):
     for image in get_layer_images(layer):
         if image.is_dirty:
@@ -5732,7 +5909,7 @@ def get_yp_images(yp, udim_only=False, get_baked_channels=False, check_overlay_n
                 if baked_vdisp and baked_vdisp.image and baked_vdisp.image not in images:
                     images.append(baked_vdisp.image)
 
-                if not check_overlay_normal or not is_overlay_normal_empty(yp):
+                if not check_overlay_normal or not is_overlay_normal_empty(ch):
                     baked_normal_overlay = tree.nodes.get(ch.baked_normal_overlay)
                     if baked_normal_overlay and baked_normal_overlay.image and baked_normal_overlay.image not in images:
                         images.append(baked_normal_overlay.image)
@@ -5939,6 +6116,15 @@ def get_node(tree, name, parent=None):
 
     return node
 
+def is_normal_vdisp_input_connected(root_normal_ch):
+    # NOTE: Assuming that the active node is using the input tree
+    node = get_active_ypaint_node()
+    if not node: return False
+
+    io_vdisp_name = root_normal_ch.name + io_suffix['VDISP']
+    vdisp_inp = node.inputs.get(io_vdisp_name)
+    return vdisp_inp and len(vdisp_inp.links) > 0
+
 def is_normal_height_input_connected(root_normal_ch):
     # NOTE: Assuming that the active node is using the input tree
     node = get_active_ypaint_node()
@@ -5956,36 +6142,52 @@ def is_normal_input_connected(root_normal_ch):
     normal_inp = node.inputs.get(root_normal_ch.name)
     return normal_inp and len(normal_inp.links) > 0
 
-def is_overlay_normal_empty(yp):
+def is_overlay_normal_empty(root_ch):
+    yp = root_ch.id_data.yp
+    channel_index = get_channel_index(root_ch)
 
-    root_ch = get_root_height_channel(yp)
-    if root_ch and is_normal_input_connected(root_ch):
+    if is_normal_input_connected(root_ch):
         return False
 
     for l in yp.layers:
-        c = get_height_channel(l)
-        if not c or not get_channel_enabled(c, l): continue
+        if l.type in {'GROUP', 'BACKGROUND'}: continue
+        if channel_index >= len(l.channels): continue
+        c = l.channels[channel_index]
+        if not get_channel_enabled(c, l): continue
         if c.normal_map_type == 'NORMAL_MAP' or (c.normal_map_type == 'BUMP_MAP' and not c.write_height):
             return False
 
     return True
 
-def any_layers_using_vdisp(yp):
+def any_layers_using_vdisp(root_ch):
+    yp = root_ch.id_data.yp
+    channel_index = get_channel_index(root_ch)
+
+    if is_normal_vdisp_input_connected(root_ch):
+        return True
 
     for l in yp.layers:
-        c = get_height_channel(l)
-        if not c or not get_channel_enabled(c, l): continue
+        if l.type in {'GROUP', 'BACKGROUND'}: continue
+        if channel_index >= len(l.channels): continue
+        c = l.channels[channel_index]
+        if not get_channel_enabled(c, l): continue
         if c.normal_map_type == 'VECTOR_DISPLACEMENT_MAP':
             return True
 
     return False
 
-def any_layers_using_disp(yp):
+def any_layers_using_disp(root_ch):
+    yp = root_ch.id_data.yp
+    channel_index = get_channel_index(root_ch)
+
+    if is_normal_height_input_connected(root_ch):
+        return True
 
     for l in yp.layers:
         if l.type in {'GROUP', 'BACKGROUND'}: continue
-        c = get_height_channel(l)
-        if not c or not get_channel_enabled(c, l): continue
+        if channel_index >= len(l.channels): continue
+        c = l.channels[channel_index]
+        if not get_channel_enabled(c, l): continue
         if c.normal_map_type in {'BUMP_MAP', 'BUMP_NORMAL_MAP'} and c.write_height:
             return True
 
@@ -6123,23 +6325,27 @@ def get_layer_and_root_ch_from_layer_ch(ch):
 
     return layer, root_ch
 
-def get_layer_channel_gamma_value(ch, layer=None, root_ch=None):
+def get_layer_channel_gamma_value(ch, layer=None, root_ch=None, channel_source=None, layer_source=None, channel_enabled=None):
     yp = ch.id_data.yp
     if not layer or not root_ch: layer, root_ch = get_layer_and_root_ch_from_layer_ch(ch)
 
-    channel_enabled = get_channel_enabled(ch, layer, root_ch)
+    if channel_enabled == None: channel_enabled = get_channel_enabled(ch, layer, root_ch)
     if not channel_enabled: return 1.0
-
-    source_tree = get_channel_source_tree(ch, layer)
 
     image = None
     source = None
     if ch.override and ch.override_type == 'IMAGE':
-        source = source_tree.nodes.get(ch.source)
+        if channel_source == None: 
+            source_tree = get_channel_source_tree(ch, layer)
+            channel_source = source_tree.nodes.get(ch.source)
+        source = channel_source
         if source: image = source.image
     elif layer.type == 'IMAGE':
-        source = get_layer_source(layer)
+        if layer_source == None: layer_source = get_layer_source(layer)
+        source = layer_source
         if source: image = source.image
+
+    socket_input_name = get_channel_input_socket_name(layer, ch, source)
 
     if yp.use_linear_blending:
 
@@ -6149,7 +6355,7 @@ def get_layer_channel_gamma_value(ch, layer=None, root_ch=None):
             and ch.gamma_space 
             and root_ch.type != 'NORMAL' 
             and root_ch.colorspace == 'SRGB' 
-            and ch.layer_input == 'RGB' 
+            and socket_input_name == 'Color' 
             and layer.type not in {'IMAGE', 'BACKGROUND', 'GROUP'}
         ):
             return GAMMA
@@ -6182,23 +6388,23 @@ def get_layer_channel_gamma_value(ch, layer=None, root_ch=None):
             and not ch.gamma_space 
             and root_ch.type != 'NORMAL' 
             and root_ch.colorspace == 'SRGB' 
-            and ch.layer_input == 'RGB' 
+            and socket_input_name == 'Color' 
             and layer.type not in {'IMAGE', 'BACKGROUND', 'GROUP'}
         ):
             return 1.0 / GAMMA
 
     return 1.0
 
-def get_layer_channel_normal_gamma_value(ch, layer=None, root_ch=None):
+def get_layer_channel_normal_gamma_value(ch, layer=None, root_ch=None, layer_tree=None, channel_enabled=None):
     yp = ch.id_data.yp
     if not layer or not root_ch: layer, root_ch = get_layer_and_root_ch_from_layer_ch(ch)
 
-    channel_enabled = get_channel_enabled(ch, layer, root_ch)
+    if channel_enabled == None: channel_enabled = get_channel_enabled(ch, layer, root_ch)
     if not channel_enabled: return 1.0
 
     image = None
     source = None
-    layer_tree = get_tree(layer)
+    if layer_tree == None: layer_tree = get_tree(layer)
     if ch.override_1 and ch.override_1_type == 'IMAGE':
         source = layer_tree.nodes.get(ch.source_1)
         if source: image = source.image
@@ -6209,28 +6415,33 @@ def get_layer_channel_normal_gamma_value(ch, layer=None, root_ch=None):
 
     return 1.0
 
-def get_layer_mask_gamma_value(mask, mask_tree=None):
-    if not mask_tree: mask_tree = get_mask_tree(mask)
+def get_layer_mask_gamma_value(mask, mask_tree=None, mask_source=None, mask_enabled=None):
+    if mask_tree == None: mask_tree = get_mask_tree(mask)
+    if mask_enabled == None: mask_enabled = get_mask_enabled(mask)
 
-    if get_mask_enabled(mask) and mask.type == 'IMAGE':
+    if mask_enabled and mask.type == 'IMAGE':
 
-        source = mask_tree.nodes.get(mask.source)
-        image = source.image
+        if mask_source == None: mask_source = mask_tree.nodes.get(mask.source)
+        image = mask_source.image
 
         if not image: return 1.0
 
         # Convert srgb mask image to linear
-        if is_image_source_srgb(image, source):
+        if is_image_source_srgb(image, mask_source):
             return 1.0 / GAMMA
 
     return 1.0
 
-def get_layer_gamma_value(layer):
+def get_layer_gamma_value(layer, source=None, layer_enabled=None):
     yp = layer.id_data.yp
 
-    if get_layer_enabled(layer) and layer.type == 'IMAGE':
-        source_tree = get_source_tree(layer)
-        source = source_tree.nodes.get(layer.source)
+    if layer_enabled == None:
+        layer_enabled = get_layer_enabled(layer)
+
+    if layer_enabled and layer.type == 'IMAGE':
+        if not source:
+            source_tree = get_source_tree(layer)
+            source = source_tree.nodes.get(layer.source)
         image = source.image
         if image:
 
@@ -6247,65 +6458,6 @@ def get_layer_gamma_value(layer):
                     return 1.0 / GAMMA
 
     return 1.0
-
-def any_linear_images_problem(yp):
-    for layer in yp.layers:
-        if not get_layer_enabled(layer): continue
-        layer_tree = get_tree(layer)
-
-        for i, ch in enumerate(layer.channels):
-            root_ch = yp.channels[i]
-            #if not get_channel_enabled(ch, layer, root_ch): continue
-
-            gamma = get_layer_channel_gamma_value(ch, layer, root_ch)
-            source_tree = get_channel_source_tree(ch, layer)
-            linear = source_tree.nodes.get(ch.linear)
-
-            if (
-                (gamma == 1.0 and linear) or
-                (gamma != 1.0 and (not linear or not isclose(linear.inputs[1].default_value, gamma, rel_tol=1e-5)))
-                ):
-                return True
-
-            if root_ch.type == 'NORMAL':
-                gamma_1 = get_layer_channel_normal_gamma_value(ch, layer, root_ch)
-                linear_1 = layer_tree.nodes.get(ch.linear_1)
-                if (
-                    (gamma_1 == 1.0 and linear_1) or
-                    (gamma_1 != 1.0 and (not linear_1 or not isclose(linear_1.inputs[1].default_value, gamma_1, rel_tol=1e-5)))
-                    ):
-                    return True
-
-        for mask in layer.masks:
-            source_tree = get_mask_tree(mask)
-            gamma = get_layer_mask_gamma_value(mask, mask_tree=source_tree)
-            linear = source_tree.nodes.get(mask.linear)
-            if (
-                (gamma == 1.0 and linear) or
-                (gamma != 1.0 and (not linear or not isclose(linear.inputs[1].default_value, gamma, rel_tol=1e-5)))
-                ):
-                return True
-
-        # Blender 2.7x has color space option on the node 
-        if not is_bl_newer_than(2, 80) and layer.type == 'IMAGE':
-            source = get_layer_source(layer)
-            if source:
-                if source.color_space == 'NONE' and yp.use_linear_blending:
-                    return True
-                if source.color_space == 'COLOR' and not yp.use_linear_blending:
-                    return True
-
-        gamma = get_layer_gamma_value(layer)
-        source_tree = get_source_tree(layer)
-        linear = source_tree.nodes.get(layer.linear)
-
-        if (
-            (gamma == 1.0 and linear) or
-            (gamma != 1.0 and (not linear or not isclose(linear.inputs[1].default_value, gamma, rel_tol=1e-5)))
-            ):
-            return True
-
-    return False
 
 def get_write_height(ch):
     #if ch.normal_map_type == 'NORMAL_MAP':
@@ -6462,6 +6614,8 @@ def get_mix_color_indices(mix):
             return 2, 3, 0
         elif mix.data_type == 'VECTOR':
             return 4, 5, 1
+        elif mix.data_type == 'ROTATION':
+            return 8, 9, 3
         return 6, 7, 2
 
     # Check for Color1 input name
@@ -6478,6 +6632,82 @@ def get_mix_color_indices(mix):
     outidx = 0
 
     return idx0, idx1, outidx
+
+def any_yp_dot_fcurves():
+    fcurve_found = False
+
+    for action in bpy.data.actions:
+
+        if not is_bl_newer_than(5):
+            # Check fcurves
+            if action.id_root != 'NODETREE': continue
+
+            for fc in action.fcurves:
+                if fc.data_path.startswith('yp.'):
+                    fcurve_found = True
+                    break
+
+        else:
+            
+            # Get channelbags
+            for slot in action.slots:
+                if slot.target_id_type != 'NODETREE': continue
+
+                from bpy_extras import anim_utils
+
+                channelbag = anim_utils.action_get_channelbag_for_slot(action, slot)
+                for fc in channelbag.fcurves:
+                    if fc.data_path.startswith('yp.'):
+                        fcurve_found = True
+                        break
+
+                if fcurve_found:
+                    break
+
+        if fcurve_found:
+            break
+
+    return fcurve_found
+
+def new_fcurve(obj, data_path):
+    if not obj.animation_data:
+        return None
+
+    action = obj.animation_data.action
+
+    if not is_bl_newer_than(5):
+        return action.fcurves.new(data_path=data_path) #, index=2)
+
+    from bpy_extras import anim_utils
+
+    # Create new action slot
+    slot = action.slots.new(id_type=obj.id_type, name=obj.name)
+
+    # Ensure channelbag
+    channelbag = anim_utils.action_ensure_channelbag_for_slot(action, slot)
+    return channelbag.fcurves.new(data_path) #,index=2)
+
+def get_datablock_fcurves(obj):
+    if not obj or not obj.animation_data: return []
+
+    action = obj.animation_data.action
+    if not action: return []
+
+    if not is_bl_newer_than(5):
+        return action.fcurves
+
+    from bpy_extras import anim_utils
+
+    # Get action slot first
+    #slots = [s for s in action.slots if s.target_id_type == obj.id_type and obj in s.users()]
+    slots = [s for s in action.slots if obj in s.users()]
+    if not slots: return []
+    slot = slots[0]
+
+    # Get channelbag
+    channelbag = anim_utils.action_get_channelbag_for_slot(action, slot)
+
+    return channelbag.fcurves
 
 def copy_fcurves(src_fc, dest, subdest, attr):
     bpytypes = get_bpytypes()
@@ -6529,9 +6759,10 @@ def copy_fcurves(src_fc, dest, subdest, attr):
 
             # Get new fcurve
             if not nfc:
+                dest_fcurves = get_datablock_fcurves(dest)
                 if array_index >= 0:
-                    nfc = [f for f in dest.animation_data.action.fcurves if f.data_path == dest_path and f.array_index == array_index][0]
-                else: nfc = [f for f in dest.animation_data.action.fcurves if f.data_path == dest_path][0]
+                    nfc = [f for f in dest_fcurves if f.data_path == dest_path and f.array_index == array_index][0]
+                else: nfc = [f for f in dest_fcurves if f.data_path == dest_path][0]
 
             # Get new keyframe point
             nkp = nfc.keyframe_points[i]
@@ -6549,15 +6780,11 @@ def get_action_and_driver_fcurves(obj):
 
         # Fcurves from action
         if obj.animation_data.action:
-            fcs.append(obj.animation_data.action.fcurves)
-            #for fc in obj.animation_data.action.fcurves:
-            #    fcs.append(fc)
+            fcs.append(get_datablock_fcurves(obj))
 
         # Fcurves from drivers
         for fc in obj.animation_data.drivers:
             fcs.append(obj.animation_data.drivers)
-            #for fc in obj.animation_data.drivers:
-            #    fcs.append(fc)
 
     return fcs
 
@@ -6567,7 +6794,7 @@ def get_material_fcurves(mat):
     fcurves = []
 
     if tree.animation_data and tree.animation_data.action:
-        for fc in tree.animation_data.action.fcurves:
+        for fc in get_datablock_fcurves(mat):
             match = re.match(r'^nodes\[".+"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
             if match:
                 fcurves.append(fc)
@@ -6587,9 +6814,9 @@ def get_material_drivers(mat):
 
     return drivers
 
-def get_material_fcurves_and_drivers(yp):
-    fcurves = get_material_fcurves(yp)
-    fcurves.extend(get_material_drivers(yp))
+def get_material_fcurves_and_drivers(mat):
+    fcurves = get_material_fcurves(mat)
+    fcurves.extend(get_material_drivers(mat))
     return fcurves
 
 def get_yp_fcurves(yp):
@@ -6597,11 +6824,10 @@ def get_yp_fcurves(yp):
 
     fcurves = []
 
-    if tree.animation_data and tree.animation_data.action:
-        for fc in tree.animation_data.action.fcurves:
-            match = re.match(r'^nodes\[".+"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
-            if fc.data_path.startswith('yp.') or match:
-                fcurves.append(fc)
+    for fc in get_datablock_fcurves(tree):
+        match = re.match(r'^nodes\[".+"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
+        if fc.data_path.startswith('yp.') or match:
+            fcurves.append(fc)
 
     return fcurves
 
@@ -6660,11 +6886,6 @@ def swap_channel_fcurves(yp, idx0, idx1):
             elif index == idx1:
                 fc.data_path = fc.data_path.replace('yp.channels[' + str(idx1) + ']', 'yp.channels[' + str(idx0) + ']')
 
-    # Material fcurves 
-    node = get_active_ypaint_node()
-    mat = get_active_material()
-    fcurves = get_material_fcurves_and_drivers(mat)
-
     ch0 = yp.channels[idx0]
     ch1 = yp.channels[idx1]
 
@@ -6680,15 +6901,29 @@ def swap_channel_fcurves(yp, idx0, idx1):
     if idx0 < idx1 and ch0.enable_alpha:
         ch0_idx += 1
 
-    for fc in fcurves:
-        m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
-        if m:
-            index = int(m.group(1))
-            if index == ch0_idx:
-                fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(ch1_idx) + '].default_value'
+    for mat in bpy.data.materials:
+        if not mat.node_tree: continue
 
-            elif index == ch1_idx:
-                fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(ch0_idx) + '].default_value'
+        # Get yp nodes
+        yp_nodes = []
+        for node in mat.node_tree.nodes:
+            if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp:
+                if node not in yp_nodes:
+                    yp_nodes.append(node)
+
+        # Check for animation data
+        if len(yp_nodes) > 0:
+            fcurves = get_material_fcurves_and_drivers(mat)
+            for node in yp_nodes:
+                for fc in fcurves:
+                    m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
+                    if m:
+                        index = int(m.group(1))
+                        if index == ch0_idx:
+                            fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(ch1_idx) + '].default_value'
+
+                        elif index == ch1_idx:
+                            fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(ch0_idx) + '].default_value'
 
 def swap_layer_channel_fcurves(layer, idx0, idx1):
     if idx0 >= len(layer.channels) or idx1 >= len(layer.channels): return
@@ -6815,9 +7050,10 @@ def remove_entity_fcurves(entity):
     fcurves = get_yp_fcurves(yp)
     drivers = get_yp_drivers(yp)
 
+    tree_fcurves = get_datablock_fcurves(tree)
     for fc in reversed(fcurves):
         if entity.path_from_id() in fc.data_path:
-            tree.animation_data.action.fcurves.remove(fc)
+            if tree_fcurves: tree_fcurves.remove(fc)
 
     for dr in reversed(drivers):
         if entity.path_from_id() in dr.data_path:
@@ -6875,15 +7111,16 @@ def remove_channel_fcurves(root_ch):
     fcurves = get_yp_fcurves(yp)
     drivers = get_yp_drivers(yp)
 
+    tree_fcurves = get_datablock_fcurves(tree)
     for fc in reversed(fcurves):
 
         layer, prop_name = get_layer_and_channel_prop_name_from_data_path(yp, index, fc.data_path)
         if layer and prop_name != '':
-            tree.animation_data.action.fcurves.remove(fc)
+            if tree_fcurves: tree_fcurves.remove(fc)
 
         else:
             m = re.match(r'.*\.channels\[' + str(index) + '\].*', fc.data_path)
-            if m: tree.animation_data.action.fcurves.remove(fc)
+            if m and tree_fcurves: tree_fcurves.remove(fc)
 
     for dr in reversed(drivers):
         layer, prop_name = get_layer_and_channel_prop_name_from_data_path(yp, index, dr.data_path)
@@ -6914,8 +7151,9 @@ def remove_channel_fcurves(root_ch):
             if m and fc not in fcs:
                 fcs.append(fc)
 
+    mat_fcurves = get_datablock_fcurves(mat)
     for fc in reversed(fcs):
-        mat.node_tree.animation_data.action.fcurves.remove(fc)
+        if mat_fcurves: mat_fcurves.remove(fc)
 
     # Delete drivers
     drs = []
@@ -7015,30 +7253,41 @@ def shift_channel_fcurves(yp, start_index=1, direction='UP', remove_ch_mode=True
                     if m:
                         fc.data_path = fc.data_path.replace('.channels[' + str(i) + ']', '.channels[' + str(i+shifter) + ']')
 
-    # Material fcurves
-    node = get_active_ypaint_node()
-    mat = get_active_material()
-    fcurves = get_material_fcurves_and_drivers(mat)
-
     if remove_ch_mode and start_index < len(yp.channels) and yp.channels[start_index].enable_alpha and shifter < 0:
         shifter -= 1
 
-    if shifter > 0:
+    for mat in bpy.data.materials:
+        if not mat.node_tree: continue
 
-        for i, root_ch in reversed(list(enumerate(yp.channels))):
-            if i <= start_index: continue
-            io_index = root_ch.io_index
-            for fc in fcurves:
-                m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[' + str(io_index) + '\]\.default_value$', fc.data_path)
-                if m: fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(io_index+shifter) + '].default_value'
-    else:
+        # Get yp nodes
+        yp_nodes = []
+        for node in mat.node_tree.nodes:
+            if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp:
+                if node not in yp_nodes:
+                    yp_nodes.append(node)
 
-        for i, root_ch in enumerate(yp.channels):
-            if i <= start_index: continue
-            io_index = root_ch.io_index
-            for fc in fcurves:
-                m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[' + str(io_index) + '\]\.default_value$', fc.data_path)
-                if m: fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(io_index+shifter) + '].default_value'
+        # Check for animation data
+        if len(yp_nodes) > 0:
+            fcurves = get_material_fcurves_and_drivers(mat)
+
+            for node in yp_nodes:
+
+                if shifter > 0:
+
+                    for i, root_ch in reversed(list(enumerate(yp.channels))):
+                        if i <= start_index: continue
+                        io_index = root_ch.io_index
+                        for fc in fcurves:
+                            m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[' + str(io_index) + '\]\.default_value$', fc.data_path)
+                            if m: fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(io_index+shifter) + '].default_value'
+                else:
+
+                    for i, root_ch in enumerate(yp.channels):
+                        if i <= start_index: continue
+                        io_index = root_ch.io_index
+                        for fc in fcurves:
+                            m = re.match(r'^nodes\["' + node.name + '"\]\.inputs\[' + str(io_index) + '\]\.default_value$', fc.data_path)
+                            if m: fc.data_path = 'nodes["' + node.name + '"].inputs[' + str(io_index+shifter) + '].default_value'
 
 
 def shift_mask_fcurves_up(layer, start_index=1):
@@ -7567,38 +7816,42 @@ def get_entity_input_name(entity, prop_name):
 
     return path + '.' + prop_name
 
-def get_entity_prop_input(entity, prop_name):
+def get_entity_prop_input(entity, prop_name, layer=None, path=''):
     root_tree = entity.id_data
     yp = root_tree.yp
 
     # Regex
-    m1 = re.match(r'^yp\.layers\[(\d+)\].*', entity.path_from_id())
-    if m1:
-        layer_index = int(m1.group(1))
-        layer = yp.layers[layer_index]
+    if layer == None:
+        m1 = re.match(r'^yp\.layers\[(\d+)\].*', entity.path_from_id())
+        if m1:
+            layer_index = int(m1.group(1))
+            layer = yp.layers[layer_index]
+        else:
+            return None
     else:
-        return None
+        layer_index = get_layer_index(layer)
 
     # Get layer node
     layer_node = root_tree.nodes.get(layer.group_node)
 
-    # Get path
-    path = entity.path_from_id()
-    path = path.replace('yp.layers[' + str(layer_index) + ']', '')
-    path += '.' + prop_name
+    if path == '':
+        # Get path
+        path = entity.path_from_id()
+        path = path.replace('yp.layers[' + str(layer_index) + ']', '')
+        path += '.' + prop_name
 
     return layer_node.inputs.get(path)
 
-def set_entity_prop_value(entity, prop_name, value):
-    inp = get_entity_prop_input(entity, prop_name)
+def set_entity_prop_value(entity, prop_name, value, layer=None):
+    inp = get_entity_prop_input(entity, prop_name, layer=layer)
     if inp: 
         if type(value) == Color:
             inp.default_value = (value.r, value.g, value.b, 1.0)
         else: inp.default_value = value
     setattr(entity, prop_name, value)
 
-def get_entity_prop_value(entity, prop_name):
-    inp = get_entity_prop_input(entity, prop_name)
+def get_entity_prop_value(entity, prop_name, layer=None, path=''):
+    inp = get_entity_prop_input(entity, prop_name, layer=layer, path=path)
     if inp: return inp.default_value
     return getattr(entity, prop_name)
 
@@ -7669,6 +7922,24 @@ def get_first_vdm_layer(yp):
 
     return None
 
+def any_vdm_layer(yp):
+    return get_first_vdm_layer(yp) != None
+
+def get_all_vdm_layers(yp, return_index=False):
+    ls = []
+    ids = []
+
+    for i, l in enumerate(yp.layers):
+        if not l.enable: continue
+        if is_layer_vdm(l):
+            ls.append(l)
+            ids.append(i)
+
+    if return_index:
+        return ls, ids
+
+    return ls
+
 def get_mesh_hash(obj):
     if obj.type != 'MESH': return ''
     vertex_count = len(obj.data.vertices)
@@ -7688,17 +7959,6 @@ def get_uv_hash(obj, uv_name):
 
     h = hash(uv_np.tobytes())
     return str(h)
-
-def remove_decal_object(tree, entity):
-    if not tree: return
-    # NOTE: This will remove the texcoord object even if the entity is not using decal
-    #if entity.texcoord_type == 'Decal':
-    texcoord = tree.nodes.get(entity.texcoord)
-    if texcoord and hasattr(texcoord, 'object') and texcoord.object:
-        decal_obj = texcoord.object
-        if decal_obj.type == 'EMPTY' and decal_obj.users <= 2:
-            texcoord.object = None
-            remove_datablock(bpy.data.objects, decal_obj)
 
 def load_image(path, directory, check_existing=True):
     if not is_bl_newer_than(2, 77):
@@ -7729,5 +7989,201 @@ def enable_eevee_ao():
         scene.eevee.use_gtao = True
 
 def is_image_available_to_open(image):
-    return not image.yia.is_image_atlas and not image.yua.is_udim_atlas and image.name not in {'Render Result', 'Viewer Node'}
+    return not image.yia.is_image_atlas and not image.yua.is_udim_atlas and image.name not in {'Render Result', 'Viewer Node', TEMP_ACTIVE_IMAGE_NAME}
 
+def fix_missing_vcol(obj, name, src=None, entity=None, entities=[]):
+
+    ref_vcol = None
+
+    if is_bl_newer_than(3, 2):
+        # Try to get reference vcol
+        mat = get_active_material()
+        objs = get_all_objects_with_same_materials(mat)
+
+        for o in objs:
+            ovcols = get_vertex_colors(o)
+            if name in ovcols:
+                ref_vcol = ovcols.get(name)
+                break
+
+    # Default recovered missing vcol is black
+    color = (0.0, 0.0, 0.0, 0.0)
+
+    # Create missing vertex color
+    if ref_vcol: vcol = new_vertex_color(obj, name, ref_vcol.data_type, ref_vcol.domain, color_fill=color)
+    else: vcol = new_vertex_color(obj, name, color_fill=color)
+
+    # Set attribute name back to source in case the name is different
+    if src: set_source_vcol_name(src, vcol.name)
+
+    # Set the name back to entity
+    if entity and vcol.name not in entity.name:
+        entity.name = get_unique_name(vcol.name, entities)
+
+def fix_missing_object_vcols(yp, objs, enabled_only=False):
+    need_color_id_vcol = False
+
+    for obj in objs:
+        if obj.type != 'MESH': continue
+
+        for layer in yp.layers:
+            if enabled_only and not layer.enable: continue
+
+            if layer.type == 'VCOL':
+                src = get_layer_source(layer)
+                if not get_vcol_from_source(obj, src):
+                    fix_missing_vcol(obj, src.attribute_name, src, entity=layer, entities=yp.layers)
+
+            for mask in layer.masks:
+                if enabled_only and not mask.enable: continue
+
+                if mask.type == 'VCOL': 
+                    src = get_mask_source(mask)
+                    if not get_vcol_from_source(obj, src):
+                        fix_missing_vcol(obj, src.attribute_name, src, entity=mask, entities=layer.masks)
+
+                if mask.type == 'COLOR_ID':
+                    vcols = get_vertex_colors(obj)
+                    if COLOR_ID_VCOL_NAME not in vcols:
+                        need_color_id_vcol = True
+
+            for ch in layer.channels:
+                if enabled_only and not ch.enable: continue
+
+                if ch.override and ch.override_type == 'VCOL':
+                    src = get_channel_source(ch, layer)
+                    if not get_vcol_from_source(obj, src):
+                        fix_missing_vcol(obj, src.attribute_name, src)
+
+    # Fix missing color id missing vcol
+    if need_color_id_vcol: check_colorid_vcol(objs)
+def get_alpha_channel_pair(root_ch):
+    yp = root_ch.id_data.yp
+    # Look for alpha channel
+    alpha_channel = None
+    for ch in yp.channels:
+        if ch.is_alpha and ch.alpha_pair_name == root_ch.name:
+            return ch
+
+    return None
+
+def is_channel_alpha_enabled(root_ch):
+    return root_ch.enable_alpha or get_alpha_channel_pair(root_ch)
+
+def get_alpha_channel(yp):
+    for ch in yp.channels:
+        if ch.is_alpha and yp.channels.get(ch.alpha_pair_name):
+            return ch
+
+    return None
+
+def get_color_alpha_ch_pairs(yp):
+
+    alpha_ch = get_alpha_channel(yp)
+    color_ch = yp.channels.get(alpha_ch.alpha_pair_name) if alpha_ch else None
+
+    return color_ch, alpha_ch
+
+def get_layer_color_alpha_ch_pairs(layer):
+    yp = layer.id_data.yp
+
+    color_ch, alpha_ch = get_color_alpha_ch_pairs(yp)
+
+    alpha_ch_idx = get_channel_index(alpha_ch) if alpha_ch else -1
+    color_ch_idx = get_channel_index(color_ch) if color_ch else -1
+
+    layer_color_ch = layer.channels[color_ch_idx] if color_ch_idx >= 0 and color_ch_idx < len(layer.channels) else None
+    layer_alpha_ch = layer.channels[alpha_ch_idx] if alpha_ch_idx >= 0 and alpha_ch_idx < len(layer.channels) else None
+
+    return layer_color_ch, layer_alpha_ch
+
+def is_modifier_used_by_paired_alpha_channel(mod):
+    yp = mod.id_data.yp
+    
+    m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\]\.modifiers\[(\d+)\]', mod.path_from_id())
+    if not m: return False
+
+    layer = yp.layers[int(m.group(1))]
+    ch = layer.channels[int(m.group(2))]
+
+    color_ch, alpha_ch = get_layer_color_alpha_ch_pairs(layer)
+    if color_ch and alpha_ch and color_ch.enable and alpha_ch == ch:
+        return True
+
+    return False
+
+def is_modifier_used_by_alpha_channel(mod):
+    yp = mod.id_data.yp
+    
+    m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\]\.modifiers\[(\d+)\]', mod.path_from_id())
+    if not m: return False
+
+    layer = yp.layers[int(m.group(1))]
+    ch = layer.channels[int(m.group(2))]
+
+    color_ch, alpha_ch = get_layer_color_alpha_ch_pairs(layer)
+    if color_ch and alpha_ch and alpha_ch == ch:
+        return True
+
+    return False
+
+def get_channel_input_socket_name(layer, ch, source=None, secondary_input=False):
+    if not source: source = get_layer_source(layer)
+
+    socket_input_name = ch.socket_input_name if not secondary_input else ch.socket_input_1_name
+
+    if source:
+        # Check if channel prop is in output name
+        outp = source.outputs.get(socket_input_name)
+        if outp and outp.enabled:
+            return socket_input_name
+
+        # NOTE: Always return the first socket if socket input name is not found
+        # Probably need to be rethinked again when layer types with multiple outputs are finally bakeable
+        for outp in get_available_source_outputs(source, layer.type):
+            if outp.enabled:
+                return outp.name
+
+    return 'Error'
+
+def get_channel_input_socket(layer, ch, source=None, secondary_input=False):
+    if not source: source = get_layer_source(layer)
+
+    socket_name = get_channel_input_socket_name(layer, ch, source, secondary_input)
+    return source.outputs.get(socket_name)
+
+def get_mask_input_socket_name(mask, source=None):
+    if not source: source = get_mask_source(mask)
+
+    # Check if mask prop is in output name
+    if source:
+        outp = source.outputs.get(mask.socket_input_name)
+        if outp and outp.enabled:
+            return mask.socket_input_name
+
+        # NOTE: Always return the first socket if socket input name is not found
+        for outp in get_available_source_outputs(source, mask.type):
+            if outp.enabled:
+                return outp.name
+
+    return 'Error'
+
+def get_mask_input_socket(mask, source=None):
+    if not source: source = get_mask_source(mask)
+    
+    socket_name = get_mask_input_socket_name(mask, source)
+    return source.outputs.get(socket_name)
+
+def get_available_source_outputs(source, entity_type):
+    # Some entity types only need to acces some of the source outputs
+    valid_socket_names = []
+    if entity_type == 'VCOL':
+        valid_socket_names = ['Color', 'Alpha']
+    elif entity_type == 'BACKFACE':
+        valid_socket_names = ['Backfacing']
+    elif entity_type == 'AO':
+        valid_socket_names = ['Color']
+
+    outps = [outp for outp in source.outputs if outp.enabled and (not valid_socket_names or outp.name in valid_socket_names)]
+
+    return outps

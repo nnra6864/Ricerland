@@ -1,7 +1,6 @@
 import bpy
 from bpy.props import EnumProperty
-from ..classes.uv import UVNodeManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVNodeManager, Mio3UVOperator
 
 
 class MIO3UV_OT_align_seam(Mio3UVOperator):
@@ -36,27 +35,25 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
-        if context.tool_settings.use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
+        use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        node_manager = UVNodeManager(self.objects, mode="VERT")
+        node_manager = UVNodeManager(self.objects, sync=use_uv_select_sync)
 
         if len(node_manager.groups) == 1:
             obj = node_manager.groups[0].obj
             bm = node_manager.groups[0].bm
-            uv_layer = node_manager.groups[0].uv_layer
             selected_uv_verts = set()
             for face in bm.faces:
                 for loop in face.loops:
-                    if loop[uv_layer].select:
+                    if loop.uv_select_vert:
                         selected_uv_verts.add(loop.vert)
             for face in bm.faces:
                 for loop in face.loops:
                     if loop.vert in selected_uv_verts:
-                        loop[uv_layer].select = True
+                        loop.uv_select_vert = True
 
             node_manager.update_uvmeshes()
-            node_manager = UVNodeManager([obj], mode="VERT")
+            node_manager = UVNodeManager([obj], sync=use_uv_select_sync)
             groups = []
             for group in node_manager.groups:
                 if len(group.nodes) == 1:
@@ -83,9 +80,7 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
         vert_to_uv_nodes = {}
         for group in [group_a, group_b]:
             for node in group.nodes:
-                if node.vert not in vert_to_uv_nodes:
-                    vert_to_uv_nodes[node.vert] = []
-                vert_to_uv_nodes[node.vert].append(node)
+                vert_to_uv_nodes.setdefault(node.vert, []).append(node)
 
         for vert, nodes in vert_to_uv_nodes.items():
             if len(nodes) < 2:
@@ -93,27 +88,26 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
 
             if self.align == "A":
                 source_nodes = [n for n in nodes if n in group_a.nodes]
-                move_nodes = [n for n in nodes if n in group_b.nodes]
+                target_nodes = [n for n in nodes if n in group_b.nodes]
             elif self.align == "B":
                 source_nodes = [n for n in nodes if n in group_b.nodes]
-                move_nodes = [n for n in nodes if n in group_a.nodes]
+                target_nodes = [n for n in nodes if n in group_a.nodes]
             else:
                 source_nodes = nodes
-                move_nodes = nodes
+                target_nodes = nodes
 
             if not source_nodes:
                 continue
 
             pos = sum(node.uv[axis_index] for node in source_nodes) / len(source_nodes)
 
-            for node in move_nodes:
+            for node in target_nodes:
                 node.uv[axis_index] = pos
 
         for group in groups:
             group.update_uvs()
 
         node_manager.update_uvmeshes()
-
 
         self.print_time()
         return {"FINISHED"}
@@ -131,14 +125,9 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
         return "Y" if height > width else "X"
 
 
-classes = [MIO3UV_OT_align_seam]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_align_seam)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_align_seam)

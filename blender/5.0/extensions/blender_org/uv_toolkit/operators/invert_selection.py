@@ -51,14 +51,14 @@ class InvertSelection(Operator):
 
                 me = ob.data
                 bm = bmesh.from_edit_mesh(me)
-                uv = bm.loops.layers.uv.verify()
+                bm.loops.layers.uv.verify()
 
-                loops = create_list_of_loops_from_uv_selection(uv, bm.faces)
+                loops = create_list_of_loops_from_uv_selection(bm.faces)
 
                 bpy.ops.uv.select_linked()
 
                 for l in loops:
-                    l[uv].select = False
+                    l.uv_select_edge_set(False)
 
                 bpy.ops.object.mode_set(mode='OBJECT')
                 ob.select_set(False)

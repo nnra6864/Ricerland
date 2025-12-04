@@ -46,7 +46,6 @@ class SharpEdgesFromUvIslands(Operator):
         for ob in mesh_ob:
             me = ob.data
             bm = bmesh.from_edit_mesh(me)
-            uv = bm.loops.layers.uv.verify()
             view_layer.objects.active = ob
 
             bpy.ops.mesh.customdata_custom_splitnormals_clear()
@@ -55,7 +54,7 @@ class SharpEdgesFromUvIslands(Operator):
                 f.smooth = True  # Set all faces shaded smooth
                 for l in f.loops:
                     l.edge.smooth = True  # Remove all sharp edges
-                    if l[uv].select:
+                    if l.uv_select_edge:
                         initial_selection[ob].add(l.index)
 
         bpy.ops.uv.reveal()
@@ -70,13 +69,12 @@ class SharpEdgesFromUvIslands(Operator):
         for ob in context.objects_in_mode_unique_data:
             me = ob.data
             bm = bmesh.from_edit_mesh(me)
-            uv = bm.loops.layers.uv.verify()
 
             for f in bm.faces:
                 for l in f.loops:
                     if l.index in initial_selection[ob]:
                         continue
-                    l[uv].select = False
+                    l.uv_select_edge_set(False)
             if self.use_existing_seams:
                 for e in bm.edges:
                     if e.seam:

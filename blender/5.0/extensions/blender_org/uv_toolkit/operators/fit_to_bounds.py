@@ -51,7 +51,7 @@ class FitToBounds(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                 bbox = get_bbox(uv, island)
                 bbox_center_u, bbox_center_v = calc_bbox_center(bbox)
                 bbox_width, bbox_height = get_bbox_size(bbox)

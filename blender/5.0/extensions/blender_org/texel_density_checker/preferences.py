@@ -191,11 +191,7 @@ class TDAddonPreferences(bpy.types.AddonPreferences):
 		row = box.row(align=True)
 		row.label(text='Calculation Backend:')
 
-		if sys.platform.startswith("darwin"):
-			self.calculation_backend = 'PY'
-			row.label(text='Option is not available on macOS yet.', icon='INFO')
-		else:
-			row.prop(self, 'calculation_backend', expand=False)
+		row.prop(self, 'calculation_backend', expand=False)
 
 		box = layout.box()
 		row = box.row()
@@ -320,7 +316,7 @@ class TDObjectSetting(bpy.types.PropertyGroup):
 
 class ResetPreferences(bpy.types.Operator):
 	"""Reset all preferences to default values"""
-	bl_idname = "texel_density.reset_preferences"
+	bl_idname = "object.texel_density_reset_preferences"
 	bl_label = "Reset Preferences"
 
 	def execute(self, _):
@@ -335,7 +331,7 @@ class ResetPreferences(bpy.types.Operator):
 
 class ApplyDefaultsToProps(bpy.types.Operator):
 	"""Apply current defaults from preferences to props"""
-	bl_idname = "texel_density.apply_defaults_to_props"
+	bl_idname = "object.texel_density_apply_defaults_to_props"
 	bl_label = "Copy Default Settings To Current Session"
 
 	def execute(self, _):

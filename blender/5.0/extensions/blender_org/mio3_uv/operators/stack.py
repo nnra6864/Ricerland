@@ -1,7 +1,6 @@
 import bpy
 from bpy.props import BoolProperty, EnumProperty
-from ..classes.uv import UVIslandManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_paste(Mio3UVOperator):
@@ -20,7 +19,7 @@ class MIO3UV_OT_paste(Mio3UVOperator):
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
         if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
+            mesh_select_mode = self.store_mesh_select_mode(context, (False, False, True))
 
         island_manager = UVIslandManager(self.objects)
         if self.mode == "AUTO":
@@ -37,6 +36,9 @@ class MIO3UV_OT_paste(Mio3UVOperator):
                 offset = island.original_center - island.center
                 island.move(offset)
 
+        if use_uv_select_sync:
+            self.restore_mesh_select_mode(context, mesh_select_mode)
+
         island_manager.update_uvmeshes()
 
         return {"FINISHED"}
@@ -52,54 +54,40 @@ class MIO3UV_OT_stack(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-
         self.objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
+        # context.tool_settings.mesh_select_mode = (False, False, True)
 
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-            context.tool_settings.use_uv_select_sync = False
-            context.scene.mio3uv.auto_uv_sync_skip = True
-            island_manager = UVIslandManager(self.objects, find_all=True, mesh_all=True)
-        else:
-            island_manager = UVIslandManager(self.objects, find_all=True)
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, find_all=True, select_mode="FACE")
 
-        selected_islands = [island for island in island_manager.islands if island.is_any_uv_selected()]
-        islands = selected_islands if self.selected else island_manager.islands
+        source_islands = [i for i in island_manager.islands if i.is_any_uv_selected]
+        among_islands = source_islands if self.selected else island_manager.islands
 
         bpy.ops.uv.copy()
 
-        visited = set()
-        for base_island in selected_islands:
-            if base_island in visited:
+        processed = set()
+        for source_island in source_islands:
+            if source_island in processed:
                 continue
-            base_face_count = len(base_island.faces)
-            base_uv_count = self.get_island_uv_count(base_island)
+            base_face_count = len(source_island.faces)
 
-            for island in islands:
-                if island == base_island:
+            for island in among_islands:
+                if island == source_island:
                     continue
-                if not self.is_different(island, base_face_count, base_uv_count):
+                if not self.is_different(island, base_face_count):
                     island.select_all_uv()
-                    visited.add(island)
+                    for face in island.faces:
+                        face.select = True
+                    processed.add(island)
 
         bpy.ops.uv.paste()
-
-        if use_uv_select_sync:
-            island_manager.restore_vertex_selection()
-            context.tool_settings.use_uv_select_sync = True
 
         island_manager.update_uvmeshes()
         self.print_time()
         return {"FINISHED"}
 
-    def get_island_uv_count(self, island):
-        return sum(len(face.loops) for face in island.faces)
-
-    def is_different(self, island, base_face_count, base_uv_count):
+    def is_different(self, island, base_face_count):
         if len(island.faces) != base_face_count:
-            return True
-        if self.get_island_uv_count(island) != base_uv_count:
             return True
         return False
 

@@ -93,7 +93,7 @@ class OrientIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                 uv_edges_co = self.get_uv_edges_coordinates(uv, island)
                 uv_edges_angles = self.collect_uv_edges_angles(context, uv_edges_co)
                 rotation_angle = self.get_rotation_angle(uv_edges_angles)

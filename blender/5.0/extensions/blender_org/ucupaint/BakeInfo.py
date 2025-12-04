@@ -106,10 +106,33 @@ class YBakeInfoProps(bpy.types.PropertyGroup):
         default = False
     )
 
+    blur_type : EnumProperty(
+        name = 'Blur Type', 
+        description = 'Blur type for the baked image',
+        items = (
+            ('NOISE', 'Noise Blur', 'Noisy and need more samples but has matching value to the blur vector option'),
+            ('FLAT', 'Flat', 'Flat blur'),
+            ('TENT', 'Tent', 'Tent blur'),
+            ('QUAD', 'Quadratic', 'Quadratic blur'),
+            ('CUBIC', 'Cubic', 'Cubic blur'),
+            ('GAUSS', 'Gaussian', 'Gausssian blur'),
+            ('FAST_GAUSS', 'Fast Gaussian', 'Fast gausssian blur'),
+            ('CATROM', 'Catrom', 'Catrom blur'),
+            ('MITCH', 'Mitch', 'Mitch blur')
+        ),
+        default='GAUSS'
+    )
+
     blur_factor : FloatProperty(
         name = 'Blur Factor',
         description = "Blur factor to baked image",
         default=1.0, min=0.0, max=100.0
+    )
+
+    blur_size : FloatProperty(
+        name = 'Blur Size',
+        description = 'Blur size (in pixels) to the baked image',
+        default=10.0, min=0.0
     )
 
     use_baked_disp : BoolProperty(
@@ -150,6 +173,12 @@ class YBakeInfoProps(bpy.types.PropertyGroup):
         name = 'Max Ray Distance',
         description = 'The maximum ray distance for matching points between the active and selected objects. If zero, there is no limit',
         default=0.2, min=0.0, max=1.0
+    )
+
+    use_transparent_for_missing_rays : BoolProperty(
+        name = 'Use Transparent for Missing Rays',
+        description = 'Use transparent for missing rays',
+        default = True
     )
 
     use_udim : BoolProperty(
@@ -216,6 +245,12 @@ class YBakeInfoProps(bpy.types.PropertyGroup):
     # To store other objects info
     other_objects : CollectionProperty(type=YBakeInfoOtherObject)
     
+    hide_source_objects : BoolProperty(
+        name = 'Hide Source Objects after Baking',
+        description = 'Hide source objects after baking',
+        default = False
+    )
+
     multires_base : IntProperty(default=1, min=0, max=16)
 
     hdr : BoolProperty(name='32 bit Float', default=False)
@@ -227,6 +262,16 @@ class YBakeInfoProps(bpy.types.PropertyGroup):
     bevel_samples : IntProperty(default=4, min=2, max=16)
     bevel_radius : FloatProperty(default=0.05, min=0.0, max=1000.0)
 
+    edge_detect_method : EnumProperty(
+        name = 'Edge Detection Method',
+        description = 'Edge detection method',
+        items = (
+            ('DOT', 'Dot Product', ''),
+            ('CROSS', 'Cross Product', '')
+        ),
+        default='CROSS'
+    )
+
     use_image_atlas : BoolProperty(
         name = 'Use Image Atlas',
         description = 'Use Image Atlas',
@@ -234,8 +279,8 @@ class YBakeInfoProps(bpy.types.PropertyGroup):
     )
 
     vcol_force_first_ch_idx : StringProperty(
-        name = 'Force First Vertex Color Channel',
-        description = 'Force the first channel after baking the Vertex Color',
+        name = 'Force First '+get_vertex_color_label()+' Channel',
+        description = 'Force the first channel after baking the '+get_vertex_color_label(),
         default = 'Do Nothing'
     )
 

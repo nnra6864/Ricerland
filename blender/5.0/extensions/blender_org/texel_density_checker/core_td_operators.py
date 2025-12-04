@@ -12,7 +12,7 @@ from .cpp_interface import TDCoreWrapper
 # Calculate TD for selected polygons
 class TexelDensityCheck(bpy.types.Operator):
 	"""Calculate TD for selected objects/faces"""
-	bl_idname = "texel_density.check"
+	bl_idname = "object.texel_density_check"
 	bl_label = "Calculate TD"
 	bl_options = {'REGISTER', 'UNDO'}
 
@@ -21,10 +21,16 @@ class TexelDensityCheck(bpy.types.Operator):
 		td = context.scene.td
 		start_mode = bpy.context.object.mode
 		start_active_obj = bpy.context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		need_select_again_obj = bpy.context.selected_objects
 		start_selected_obj = (bpy.context.objects_in_mode if start_mode == 'EDIT' else bpy.context.selected_objects)
 
 		tdcore_lib = TDCoreWrapper() if utils.get_preferences().calculation_backend == 'CPP' else None
+
+		version = bpy.app.version
 
 		bpy.ops.object.mode_set(mode='OBJECT')
 
@@ -52,11 +58,13 @@ class TexelDensityCheck(bpy.types.Operator):
 				bm.clear()
 				bm.from_mesh(obj.data)
 				bm.faces.ensure_lookup_table()
-				uv_layer = bm.loops.layers.uv.active
-
-				selected_faces = np.array([f.index for f in bm.faces
-					if f.select and all(loop[uv_layer].select for loop in f.loops)], dtype=np.int32)
-
+				if version < (5, 0, 0):
+					uv_layer = bm.loops.layers.uv.active
+					selected_faces = np.array([f.index for f in bm.faces
+						if f.select and all(loop[uv_layer].select for loop in f.loops)], dtype=np.int32)
+				else:
+					selected_faces = np.array([f.index for f in bm.faces
+						if f.select and all(loop.uv_select_vert for loop in f.loops)], dtype=np.int32)
 			else:
 				selected_faces = np.array([p.index for p in mesh_data.polygons if p.select], dtype=np.int32)
 
@@ -111,7 +119,7 @@ class TexelDensityCheck(bpy.types.Operator):
 # Set TD
 class TexelDensitySet(bpy.types.Operator):
 	"""Sets texel density for selected UV islands based on target value"""
-	bl_idname = "texel_density.set"
+	bl_idname = "object.texel_density_set"
 	bl_label = "Set TD"
 	bl_options = {'REGISTER', 'UNDO'}
 
@@ -119,6 +127,10 @@ class TexelDensitySet(bpy.types.Operator):
 		start_time = datetime.now()
 		td = context.scene.td
 		start_active_obj = bpy.context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		start_mode = bpy.context.object.mode
 		need_select_again_obj = bpy.context.selected_objects
 		start_selected_obj = (bpy.context.objects_in_mode if start_mode == 'EDIT' else bpy.context.selected_objects)
@@ -149,6 +161,8 @@ class TexelDensitySet(bpy.types.Operator):
 				], dtype=np.int32)
 
 			bpy.ops.object.mode_set(mode='EDIT')
+
+			start_sync_selection = context.scene.tool_settings.use_uv_select_sync
 
 			if context.area.spaces.active.type == "IMAGE_EDITOR" and not context.scene.tool_settings.use_uv_select_sync:
 				utils.sync_uv_selection()
@@ -192,10 +206,12 @@ class TexelDensitySet(bpy.types.Operator):
 			if not context.scene.tool_settings.use_uv_select_sync:
 				bpy.ops.uv.select_all(action='SELECT')
 
+			context.scene.tool_settings.use_uv_select_sync = False
+
 			if td.set_method == 'EACH':
 				bpy.ops.uv.average_islands_scale()
 
-			bpy.ops.texel_density.check()
+			bpy.ops.object.texel_density_check()
 
 			try:
 				density_current_value = float(td.density)
@@ -212,6 +228,8 @@ class TexelDensitySet(bpy.types.Operator):
 				scale_fac = density_new_value / density_current_value
 
 			bpy.ops.transform.resize(value=(scale_fac, scale_fac, 1))
+
+			context.scene.tool_settings.use_uv_select_sync = start_sync_selection
 
 			# Restore cursor and pivot
 			bpy.ops.uv.cursor_set(location=start_cursor_loc)
@@ -239,7 +257,7 @@ class TexelDensitySet(bpy.types.Operator):
 			bpy.ops.object.mode_set(mode='EDIT')
 
 		# Final TD check
-		bpy.ops.texel_density.check()
+		bpy.ops.object.texel_density_check()
 		utils.print_execution_time("Set TD", start_time)
 		return {'FINISHED'}
 

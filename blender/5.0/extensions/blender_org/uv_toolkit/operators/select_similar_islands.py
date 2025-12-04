@@ -61,7 +61,7 @@ class SelectSimilarIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True):
+            for island in get_islands(bm, seams, has_selected_faces=True):
                 current_bbox = get_bbox(uv, island)
                 current_bbox_size = get_bbox_size(current_bbox)
                 current_island_params = collect_island_params(uv, island)
@@ -83,7 +83,7 @@ class SelectSimilarIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
             seams = objects_seams[ob]
-            for island in get_islands(uv, bm, seams):
+            for island in get_islands(bm, seams):
                 current_island_params = collect_island_params(uv, island)
                 target_island = islands_params.get(current_island_params)
                 if target_island:
@@ -94,7 +94,7 @@ class SelectSimilarIslands(Operator):
                         if self.is_same_bbox_size(target_bbox_size, current_bbox_size):
                             for f in island:
                                 for l in f.loops:
-                                    l[uv].select = True
+                                    l.uv_select_edge_set(True)
             bmesh.update_edit_mesh(me)
 
         scene.tool_settings.uv_select_mode = 'VERTEX'

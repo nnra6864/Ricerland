@@ -33,7 +33,7 @@ class AlignUv(Operator):
             me = ob.data
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
-            for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                 bbox = get_bbox(uv, island)
                 bboxes.append(bbox)
 
@@ -41,13 +41,13 @@ class AlignUv(Operator):
             return {'CANCELED'}
 
         if self.align_uv == 'MAX_U':
-            max_u = max([bbox[1][0] for bbox in bboxes])
+            max_u = max(bbox[1][0] for bbox in bboxes)
             for ob in context.objects_in_mode_unique_data:
                 seams = objects_seams[ob]
                 me = ob.data
                 bm = bmesh.from_edit_mesh(me)
                 uv = bm.loops.layers.uv.verify()
-                for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+                for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                     bbox = get_bbox(uv, island)
                     bbox_max_u = bbox[1][0]
                     distance = max_u - bbox_max_u
@@ -58,14 +58,14 @@ class AlignUv(Operator):
                             l[uv].uv = new_co
                 bmesh.update_edit_mesh(me)
 
-        if self.align_uv == 'MIN_U':
-            min_u = min([bbox[0][0] for bbox in bboxes])
+        elif self.align_uv == 'MIN_U':
+            min_u = min(bbox[0][0] for bbox in bboxes)
             for ob in context.objects_in_mode_unique_data:
                 seams = objects_seams[ob]
                 me = ob.data
                 bm = bmesh.from_edit_mesh(me)
                 uv = bm.loops.layers.uv.verify()
-                for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+                for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                     bbox = get_bbox(uv, island)
                     bbox_min_u = bbox[0][0]
                     distance = bbox_min_u - min_u
@@ -76,14 +76,14 @@ class AlignUv(Operator):
                             l[uv].uv = new_co
                 bmesh.update_edit_mesh(me)
 
-        if self.align_uv == 'MAX_V':
-            max_v = max([bbox[1][1] for bbox in bboxes])
+        elif self.align_uv == 'MAX_V':
+            max_v = max(bbox[1][1] for bbox in bboxes)
             for ob in context.objects_in_mode_unique_data:
                 seams = objects_seams[ob]
                 me = ob.data
                 bm = bmesh.from_edit_mesh(me)
                 uv = bm.loops.layers.uv.verify()
-                for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+                for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                     bbox = get_bbox(uv, island)
                     bbox_max_v = bbox[1][1]
                     distance = max_v - bbox_max_v
@@ -94,14 +94,14 @@ class AlignUv(Operator):
                             l[uv].uv = new_co
                 bmesh.update_edit_mesh(me)
 
-        if self.align_uv == 'MIN_V':
-            min_v = min([bbox[0][1] for bbox in bboxes])
+        elif self.align_uv == 'MIN_V':
+            min_v = min(bbox[0][1] for bbox in bboxes)
             for ob in context.objects_in_mode_unique_data:
                 seams = objects_seams[ob]
                 me = ob.data
                 bm = bmesh.from_edit_mesh(me)
                 uv = bm.loops.layers.uv.verify()
-                for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+                for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                     bbox = get_bbox(uv, island)
                     bbox_min_v = bbox[0][1]
                     distance = bbox_min_v - min_v
@@ -121,10 +121,11 @@ class AlignUv(Operator):
             uv = bm.loops.layers.uv.verify()
 
             for f in bm.faces:
-                if f.select:
-                    for l in f.loops:
-                        if l[uv].select:
-                            coords.append(l[uv].uv[:])
+                if not f.select:
+                    continue
+                for l in f.loops:
+                    if l.uv_select_edge:
+                        coords.append(l[uv].uv[:])
 
         if not coords:
             return {'CANCELED'}
@@ -135,44 +136,53 @@ class AlignUv(Operator):
             uv = bm.loops.layers.uv.verify()
 
             if self.align_uv == 'MAX_U':
-                u = max([uv[0] for uv in coords])
+                u = max(uv[0] for uv in coords)
                 for f in bm.faces:
-                    if f.select:
-                        for l in f.loops:
-                            if l[uv].select:
-                                for l in l.vert.link_loops:
-                                    if l[uv].select:
-                                        l[uv].uv[0] = u
+                    if not f.select:
+                        continue
+                    for l in f.loops:
+                        if not l.uv_select_edge:
+                            continue
+                        for l in l.vert.link_loops:
+                            if l.uv_select_edge:
+                                l[uv].uv[0] = u
 
-            if self.align_uv == 'MIN_U':
-                u = min([uv[0] for uv in coords])
+            elif self.align_uv == 'MIN_U':
+                u = min(uv[0] for uv in coords)
                 for f in bm.faces:
-                    if f.select:
-                        for l in f.loops:
-                            if l[uv].select:
-                                for l in l.vert.link_loops:
-                                    if l[uv].select:
-                                        l[uv].uv[0] = u
+                    if not f.select:
+                        continue
+                    for l in f.loops:
+                        if not l.uv_select_edge:
+                            continue
+                        for l in l.vert.link_loops:
+                            if l.uv_select_edge:
+                                l[uv].uv[0] = u
 
-            if self.align_uv == 'MAX_V':
-                v = max([uv[1] for uv in coords])
+            elif self.align_uv == 'MAX_V':
+                v = max(uv[1] for uv in coords)
                 for f in bm.faces:
-                    if f.select:
-                        for l in f.loops:
-                            if l[uv].select:
-                                for l in l.vert.link_loops:
-                                    if l[uv].select:
-                                        l[uv].uv[1] = v
+                    if not f.select:
+                        continue
+                    for l in f.loops:
+                        if not l.uv_select_edge:
+                            continue
+                        for l in l.vert.link_loops:
+                            if l.uv_select_edge:
+                                l[uv].uv[1] = v
 
-            if self.align_uv == 'MIN_V':
-                v = min([uv[1] for uv in coords])
+            elif self.align_uv == 'MIN_V':
+                v = min(uv[1] for uv in coords)
                 for f in bm.faces:
-                    if f.select:
-                        for l in f.loops:
-                            if l[uv].select:
-                                for l in l.vert.link_loops:
-                                    if l[uv].select:
-                                        l[uv].uv[1] = v
+                    if not f.select:
+                        continue
+                    for l in f.loops:
+                        if not l.uv_select_edge:
+                            continue
+                        for l in l.vert.link_loops:
+                            if l.uv_select_edge:
+                                l[uv].uv[1] = v
+
             bmesh.update_edit_mesh(me)
 
     def execute(self, context):

@@ -461,7 +461,7 @@ class Straighten(Operator):
             for l in uv_coords:
                 l[uv].uv = uv_coords[l]
 
-        for island in get_islands(uv, bm, seams, has_selected_faces=True):
+        for island in get_islands(bm, seams, has_selected_faces=True):
             if self.properties.reshape_all:
                 island_has_an_hidden_faces = False
                 for f in island:
@@ -476,7 +476,7 @@ class Straighten(Operator):
 
                 for f in island:
                     for l in f.loops:
-                        if not l[uv].select:
+                        if not l.uv_select_edge:
                             deselected_loops_uv.add(f)
 
                 faces = {f for f in island

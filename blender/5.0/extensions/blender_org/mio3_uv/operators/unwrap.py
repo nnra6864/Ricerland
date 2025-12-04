@@ -2,8 +2,7 @@ import bpy
 from bpy.props import  EnumProperty
 from bpy.app.translations import pgettext_iface as tt_iface
 from mathutils import Vector
-from ..classes.uv import UVIslandManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_unwrap(Mio3UVOperator):
@@ -65,13 +64,8 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
                 return {"FINISHED"}
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-            context.tool_settings.use_uv_select_sync = False
-            context.scene.mio3uv.auto_uv_sync_skip = True
-            island_manager = UVIslandManager(self.objects, mesh_link_uv=True)
-        else:
-            island_manager = UVIslandManager(self.objects)
+
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
 
         axis = self.axis
 
@@ -91,7 +85,7 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
                 uv_layer = island.uv_layer
                 for face in island.faces:
                     for loop in face.loops:
-                        if loop[uv_layer].select:
+                        if loop.uv_select_vert:
                             original_uvs_island[loop] = loop[uv_layer].uv.copy()
 
             if island.ajast:
@@ -109,25 +103,21 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
                 for face in island.faces:
                     for loop in face.loops:
                         if loop in original_uvs_island:
-                            current_uv = loop[uv_layer].uv
-                            original_uv = original_uvs_island[loop]
+                            curr_uv = loop[uv_layer].uv
+                            orig_uv = original_uvs_island[loop]
                             if axis == "X":
-                                loop[uv_layer].uv = Vector((current_uv.x, original_uv.y))
+                                loop[uv_layer].uv = Vector((curr_uv.x, orig_uv.y))
                             elif axis == "Y":
-                                loop[uv_layer].uv = Vector((original_uv.x, current_uv.y))
+                                loop[uv_layer].uv = Vector((orig_uv.x, curr_uv.y))
             if island.ajast:
                 island.update_bounds()
                 offset = island.original_center - island.center
                 self.transform_island(island, offset)
                 if hasattr(island, "tmp_uv_list"):
-                    for uv in island.tmp_uv_list:
-                        uv.select = True
+                    for loop in island.tmp_uv_list:
+                        loop.uv_select_vert = True
 
-        if use_uv_select_sync:
-            island_manager.restore_vertex_selection()
-            context.tool_settings.use_uv_select_sync = True
-
-        island_manager.update_uvmeshes()
+        island_manager.update_uvmeshes(True)
 
         self.print_time()
         return {"FINISHED"}
@@ -147,17 +137,6 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
                 uv.uv = (uv.uv - original_center) * scale + original_center
                 uv.uv += offset
 
-    def count_uvs(self, island):
-        uv_layer = island.uv_layer
-        unselected_count = 0
-        for face in island.faces:
-            for loop in face.loops:
-                if not loop[uv_layer].select:
-                    unselected_count += 1
-                    if unselected_count >= 2:
-                        return False
-        return True
-
     def init_select_uvs(self, island):
         island.tmp_uv_list = []
 
@@ -173,12 +152,10 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
         selected_nodes = {}
         for face in island.faces:
             for loop in face.loops:
-                uv = loop[uv_layer]
-                if uv.select:
-                    key = (uv.uv.x, uv.uv.y, loop.vert.index)
-                    if key not in selected_nodes:
-                        selected_nodes[key] = []
-                    selected_nodes[key].append(uv)
+                loop_uv = loop[uv_layer]
+                if loop.uv_select_vert:
+                    key = (loop_uv.uv.x, loop_uv.uv.y, loop.vert.index)
+                    selected_nodes.setdefault(key, []).append((loop, loop_uv))
 
         sorted_keys = sorted(selected_nodes.keys())
         nodes_to_process = []
@@ -188,11 +165,11 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
                 nodes_to_process.append(selected_nodes[sorted_keys[-1]])
 
         additional_deselect_needed = 2 - deselect_count
-        for uvs in nodes_to_process:
-            for uv in uvs:
+        for loop_uvs in nodes_to_process:
+            for loop, loop_uv in loop_uvs:
                 if self.keep == "ALL":
-                    uv.select = False
-                island.tmp_uv_list.append(uv)
+                    loop.uv_select_vert = False
+                island.tmp_uv_list.append(loop)
             additional_deselect_needed -= 1
             if additional_deselect_needed == 0:
                 break
@@ -208,14 +185,10 @@ class MIO3UV_OT_unwrap(Mio3UVOperator):
         row = layout.row()
         row.prop(self, "axis", expand=True)
 
-classes = [MIO3UV_OT_unwrap]
-
 
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_unwrap)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_unwrap)

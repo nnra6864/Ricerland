@@ -1,8 +1,7 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty, FloatProperty, IntProperty, EnumProperty
-from ..classes.uv import UVIslandManager, UVNodeManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, UVNodeManager, UVNodeGroup, Mio3UVOperator
 from ..utils import straight_uv_nodes
 
 
@@ -15,7 +14,8 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
     island: BoolProperty(name="Island Mode", default=False)
     method: EnumProperty(
         name="Method",
-        items=[("DISTRIBUTE", "Distribute", ""), ("FREE", "Free", "")],
+        items=[("FREE", "Free", ""), ("DISTRIBUTE", "Distribute", "")],
+        default="FREE",
     )
     axis: EnumProperty(
         name="Axis",
@@ -61,40 +61,25 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
-        use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
         selected_face = self.check_selected_face_objects(self.objects)
-
         self.island = True if context.scene.mio3uv.island_mode else selected_face
-
         return self.execute(context)
-
-    def check(self, context):
-        self.objects = self.get_selected_objects(context)
-        if context.tool_settings.use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-        return True
 
     def execute(self, context):
         self.start_time()
         self.objects = self.get_selected_objects(context)
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
 
         if self.island:
-            island_manager = UVIslandManager(self.objects)
+            island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
             if not island_manager.islands:
                 return {"CANCELLED"}
             self.align_islands(island_manager)
-            island_manager.update_uvmeshes()
+
+            island_manager.update_uvmeshes(True)
         else:
-            if use_uv_select_sync:
-                node_manager = UVNodeManager(self.objects, mode="VERT")
-            else:
-                node_manager = UVNodeManager(self.objects, mode="EDGE")
+            node_manager = UVNodeManager(self.objects, sync=use_uv_select_sync)
 
             count = sum(len(group.nodes) for group in node_manager.groups)
             if count > 1000:
@@ -112,7 +97,7 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
         self.print_time()
         return {"FINISHED"}
 
-    def align_islands(self, island_manager):
+    def align_islands(self, island_manager: UVIslandManager):
         islands = island_manager.islands
         if not islands:
             return
@@ -131,13 +116,13 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
 
             first_island = islands[0]
             last_island = islands[-1]
-            
+
             if self.reference == "BBOX":
                 if axis == "X":
                     total_space = last_island.max_uv.x - first_island.min_uv.x
                     islands_width = sum(island.width for island in islands[1:-1])
                     space = (total_space - islands_width - first_island.width - last_island.width) / (total_islands - 1)
-                    
+
                     current_pos = first_island.max_uv.x + space
                     for island in islands[1:-1]:
                         offset = Vector((current_pos - island.min_uv.x, 0))
@@ -146,8 +131,10 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
                 else:
                     total_space = first_island.max_uv.y - last_island.min_uv.y
                     islands_height = sum(island.height for island in islands[1:-1])
-                    space = (total_space - islands_height - first_island.height - last_island.height) / (total_islands - 1)
-                    
+                    space = (total_space - islands_height - first_island.height - last_island.height) / (
+                        total_islands - 1
+                    )
+
                     current_pos = first_island.min_uv.y - space
                     for island in islands[1:-1]:
                         offset = Vector((0, current_pos - island.max_uv.y))
@@ -158,7 +145,7 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
                 end_center = last_island.center[0 if axis == "X" else 1]
                 total_space = abs(end_center - start_center)
                 equal_space = total_space / (total_islands - 1)
-                
+
                 for i, island in enumerate(islands[1:-1], 1):
                     target_center = start_center + (equal_space * i * (1 if axis == "X" else -1))
                     current_center = island.center[0 if axis == "X" else 1]
@@ -181,7 +168,11 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
                         island.move(offset)
             else:
                 get_center = lambda island: island.center[0 if axis == "X" else 1]
-                current_pos = min(get_center(island) for island in islands) if axis == "X" else max(get_center(island) for island in islands)
+                current_pos = (
+                    min(get_center(island) for island in islands)
+                    if axis == "X"
+                    else max(get_center(island) for island in islands)
+                )
                 for island in islands:
                     current_center = get_center(island)
                     offset_value = current_pos - current_center
@@ -189,7 +180,7 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
                     island.move(offset)
                     current_pos += self.spacing * (1 if axis == "X" else -1)
 
-    def adjust_edges(self, group):
+    def adjust_edges(self, group: UVNodeGroup):
         align_uvs = self.align_uvs
         nodes = list(group.nodes)
         node_indices = {node: i for i, node in enumerate(group.nodes)}
@@ -278,14 +269,9 @@ class MIO3UV_OT_distribute(Mio3UVOperator):
         layout.prop(self, "island")
 
 
-classes = [MIO3UV_OT_distribute]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_distribute)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_distribute)

@@ -26,13 +26,12 @@ class SelectIslandBorder(Operator):
             seams = objects_seams[ob]
             me = ob.data
             bm = bmesh.from_edit_mesh(me)
-            uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True):
+            for island in get_islands(bm, seams, has_selected_faces=True):
                 island_loops = set()
                 for f in island:
                     for l in f.loops:
-                        l[uv].select = False
+                        l.uv_select_edge_set(False)
                         island_loops.add(l)
 
                 for f in island:
@@ -41,12 +40,12 @@ class SelectIslandBorder(Operator):
                             for v in e.verts:
                                 for l in v.link_loops:
                                     if l in island_loops:
-                                        l[uv].select = True
+                                        l.uv_select_edge_set(True)
                     for l in f.loops:
                         if l.vert.is_boundary:
                             for l in l.vert.link_loops:
                                 if l in island_loops:
-                                    l[uv].select = True
+                                    l.uv_select_edge_set(True)
             bmesh.update_edit_mesh(me)
         scene.tool_settings.uv_select_mode = 'VERTEX'
         scene.tool_settings.uv_select_mode = current_uv_select_mode

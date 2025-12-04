@@ -1,11 +1,9 @@
 import bpy
 import bmesh
 from bpy.props import BoolProperty, FloatProperty
-from bpy.app.translations import pgettext_iface as tt_iface
 from mathutils import Vector
 from ..icons import preview_collections
-from ..classes.uv import UVIslandManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_unwrap_project(Mio3UVOperator):
@@ -68,7 +66,6 @@ class MIO3UV_OT_unwrap_project(Mio3UVOperator):
             return
 
         islands.sort(key=lambda island: island.width * island.height)
-        # islands.sort(key=lambda island: (island.center_3d.x, -island.center_3d.z, island.center_3d.y))
 
         current_x = 0
         current_y = 0
@@ -138,24 +135,19 @@ class MIO3UV_OT_unwrap_project(Mio3UVOperator):
                 loop[uv_layer].uv = (x, y)
 
 
-classes = [MIO3UV_OT_unwrap_project]
-
-
 def menu_context(self, context):
     icons = preview_collections["icons"]
     self.layout.separator()
     self.layout.operator(
-        MIO3UV_OT_unwrap_project.bl_idname, text=tt_iface("Projection Unwrap"), icon_value=icons["UNWRAP"].icon_id
+        MIO3UV_OT_unwrap_project.bl_idname, text="Projection Unwrap", icon_value=icons["UNWRAP"].icon_id
     )
 
 
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_unwrap_project)
     bpy.types.VIEW3D_MT_uv_map.append(menu_context)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_unwrap_project)
     bpy.types.VIEW3D_MT_uv_map.remove(menu_context)

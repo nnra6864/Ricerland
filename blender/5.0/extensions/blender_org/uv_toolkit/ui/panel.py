@@ -265,13 +265,13 @@ class UVTOOLKIT_PT_display(Panel):
 
     def draw(self, context):
         icons_coll = get_icons_set(context)
-        layout = self.layout
-        row = layout.row(align=True)
-        row.operator("uv.toolkit_toggle_material", icon_value=icons_coll["toggle_material"].icon_id)
-        row.operator("uv.toolkit_toggle_color_mode", icon_value=icons_coll["toggle_color_mode"].icon_id)
-        row = layout.row(align=True)
-        row.operator("uv.toolkit_toggle_grid_type", icon_value=icons_coll["toggle_grid_type"].icon_id)
-        row.label(text="")
+        col = self.layout.column(align=True)
+        col.operator("uv.toolkit_toggle_material",
+                     icon_value=icons_coll["toggle_material"].icon_id)
+        col.operator("uv.toolkit_toggle_color_mode",
+                     icon_value=icons_coll["toggle_color_mode"].icon_id)
+        col.operator("uv.toolkit_toggle_grid_type",
+                     icon_value=icons_coll["toggle_grid_type"].icon_id)
 
 
 class UVTOOLKIT_PT_checker_map(Panel):
@@ -284,14 +284,14 @@ class UVTOOLKIT_PT_checker_map(Panel):
     def draw_user_checker_maps(self, context):
         supported_formats = {
             ".bmp", ".sgi", ".rgb", ".bw", ".png",
-            ".jpg", ".jpeg", ".jp2", ".jp2", ".j2c",
+            ".jpg", ".jpeg", ".jp2", ".j2c",
             ".tga", ".cin", ".dpx", ".exr", ".hdr",
             ".tif", ".tiff"
         }
 
         def get_checker_maps_path():
             addon_prefs = get_addon_preferences()
-            c_maps_path = addon_prefs.chekcer_maps_path
+            c_maps_path = addon_prefs.checker_maps_path
             if os.path.exists(c_maps_path):
                 for path in os.listdir(path=c_maps_path):
                     current_path = os.path.join(c_maps_path, path)
@@ -325,17 +325,27 @@ class UVTOOLKIT_PT_checker_map(Panel):
             split.prop(scene.uv_toolkit, "checker_map_height")
             row = col.row(align=True)
             row.prop(addon_prefs, "checker_type", expand=True)
-
-            prop = layout.operator("uv.toolkit_create_checker_material",
-                                   icon_value=icons_coll["create_checker_material"].icon_id)
-            prop.width, prop.height = scene.uv_toolkit.checker_map_width, scene.uv_toolkit.checker_map_height
+            row = col.row(align=True)
+            row.scale_y = 1.2
+            prop = row.operator(
+                "uv.toolkit_create_checker_material",
+                icon_value=icons_coll["create_checker_material"].icon_id
+            )
+            prop.width  = scene.uv_toolkit.checker_map_width
+            prop.height = scene.uv_toolkit.checker_map_height
         else:
             self.draw_user_checker_maps(context)
+
+        layout.operator(
+            "uv.toolkit_remove_all_checker_materials",
+            icon_value=icons_coll["remove_all_checker_materials"].icon_id
+        )
 
 
 class UVTOOLKIT_PT_quick_presets(Panel):
     bl_label = "Quick Presets"
     bl_idname = "UVTOOLKIT_PT_quick_presets"
+    bl_parent_id = "UVTOOLKIT_PT_checker_map"
     bl_space_type = 'IMAGE_EDITOR'
     bl_region_type = 'UI'
     bl_category = "UV Toolkit"
@@ -440,20 +450,6 @@ class UVTOOLKIT_PT_checker_map_vertical_rectangle(Panel):
         prop.width, prop.height = 4096, 8192
 
 
-class UVTOOLKIT_PT_cleanup(Panel):
-    bl_label = "Cleanup"
-    bl_idname = "UVTOOLKIT_PT_cleanup"
-    bl_space_type = 'IMAGE_EDITOR'
-    bl_region_type = 'UI'
-    bl_category = "UV Toolkit"
-
-    def draw(self, context):
-        icons_coll = get_icons_set(context)
-        layout = self.layout
-        layout.operator("uv.toolkit_remove_all_checker_materials",
-                        icon_value=icons_coll["remove_all_checker_materials"].icon_id)
-
-
 class UVTOOLKIT_PT_uv_maps(Panel):
     bl_label = "UV Maps"
     bl_idname = "UVTOOLKIT_PT_uv_maps"
@@ -493,14 +489,25 @@ class UVTOOLKIT_PT_help(Panel):
     bl_category = "UV Toolkit"
     bl_options = {'DEFAULT_CLOSED'}
 
+    documentation = "https://alexbelyakov.gitlab.io/uv-toolkit-docs/"
+    tutorials = "https://www.youtube.com/playlist?list=PLex7IjhY06w63StowG501tBbEyZrzHa00"
+
     def draw(self, context):
-        documentation = "https://alexbelyakov.gitlab.io/uv-toolkit-docs/"
-        tutorials = "https://www.youtube.com/playlist?list=PLex7IjhY06w63StowG501tBbEyZrzHa00"
         icons_coll = get_icons_set(context)
-        layout = self.layout
-        layout.operator("uv.toolkit_open_addon_settings", icon_value=icons_coll["settings"].icon_id)
-        layout.operator("uv.toolkit_hotkeys", text="List of Hotkeys", icon_value=icons_coll["hotkeys"].icon_id)
-        layout.operator("wm.url_open", text="Documentation",
-                        icon_value=icons_coll["documentation"].icon_id).url = documentation
-        layout.operator("wm.url_open", text="Tutorials",
-                        icon_value=icons_coll["tutorials"].icon_id).url = tutorials
+        col = self.layout.column(align=True)
+        col.operator(
+            "uv.toolkit_open_addon_settings",
+            icon_value=icons_coll["settings"].icon_id
+        )
+        col.operator(
+            "uv.toolkit_hotkeys", text="List of Hotkeys",
+            icon_value=icons_coll["hotkeys"].icon_id
+        )
+        col.operator(
+            "wm.url_open", text="Documentation",
+            icon_value=icons_coll["documentation"].icon_id
+        ).url = self.documentation
+        col.operator(
+            "wm.url_open", text="Tutorials",
+            icon_value=icons_coll["tutorials"].icon_id
+        ).url = self.tutorials

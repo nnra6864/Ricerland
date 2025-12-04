@@ -46,12 +46,12 @@ class FindUdimCrossing(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            deselect_all_loops_uv(uv, bm)
+            deselect_all_loops_uv(bm)
 
             if uv_sync_status:
                 select_all_faces(bm)
 
-            for island in get_islands(uv, bm, seams):
+            for island in get_islands(bm, seams):
                 bbox = get_bbox(uv, island)
                 bbox_u1, bbox_v1 = bbox[0][0], bbox[0][1]
                 bbox_u2, bbox_v2 = bbox[1][0], bbox[1][1]
@@ -70,7 +70,7 @@ class FindUdimCrossing(Operator):
 
                     for f in island:
                         for l in f.loops:
-                            l[uv].select = True
+                            l.uv_select_edge_set(True)
                     islands_count += 1
 
             bmesh.update_edit_mesh(me)

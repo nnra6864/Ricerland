@@ -1,8 +1,7 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty, EnumProperty, IntProperty
-from ..classes.uv import UVNodeManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVNodeManager, Mio3UVOperator
 
 
 class MIO3UV_OT_relax(Mio3UVOperator):
@@ -46,11 +45,8 @@ class MIO3UV_OT_relax(Mio3UVOperator):
             bpy.ops.uv.minimize_stretch(fill_holes=True, blend=0, iterations=self.iterations)
         else:
             use_uv_select_sync = context.tool_settings.use_uv_select_sync
-            if use_uv_select_sync:
-                self.sync_uv_from_mesh(context, self.objects)
-                node_manager = UVNodeManager(self.objects, mode="VERT")
-            else:
-                node_manager = UVNodeManager(self.objects, mode="FACE")
+
+            node_manager = UVNodeManager(self.objects, sync=use_uv_select_sync)
 
             self.cache_data = self.prepare_cache_data(node_manager)
 
@@ -122,16 +118,9 @@ class MIO3UV_OT_relax(Mio3UVOperator):
         row.prop(self, "iterations")
 
 
-classes = [
-    MIO3UV_OT_relax,
-]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_relax)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_relax)

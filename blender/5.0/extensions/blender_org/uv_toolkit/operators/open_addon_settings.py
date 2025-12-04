@@ -9,9 +9,8 @@ class OpenAddonSettings(bpy.types.Operator):
 
     def execute(self, context):
         bpy.ops.screen.userpref_show('INVOKE_DEFAULT')
-        bpy.data.window_managers["WinMan"].addon_search = "UV Toolkit"
-        bpy.context.preferences.active_section = 'ADDONS'
-        bpy.data.window_managers["WinMan"].addon_support = {
-            'OFFICIAL', 'COMMUNITY'
-        }
+        bpy.data.window_managers["WinMan"].addon_search = "UVToolkit"
+        context.preferences.active_section = 'ADDONS'
+        bpy.data.window_managers["WinMan"].addon_support = \
+            {'OFFICIAL', 'COMMUNITY'}
         return {'FINISHED'}

@@ -1,7 +1,6 @@
 import bpy
 from bpy.types import Panel
-from bpy.app.translations import pgettext_iface as tt_iface
-from ..operators.view_padding import MIO3UV_OT_view_padding
+from ..operators.view_padding import UV_OT_mio3_guide_padding
 from ..icons import preview_collections
 
 
@@ -57,13 +56,13 @@ class MIO3UV_PT_UVMesh(Panel):
             row = col.row(align=True)
             row.operator(
                 "mesh.mio3_uvmesh_control",
-                text=tt_iface("Mesh"),
+                text="Mesh",
                 icon_value=icons["CUBE"].icon_id,
                 depress=False if props_object.uvmesh_factor > 0 else True,
             ).mode = "MESH"
             row.operator(
                 "mesh.mio3_uvmesh_control",
-                text=tt_iface("UV"),
+                text="UV",
                 icon_value=icons["UNFOLDIFY"].icon_id,
                 depress=True if props_object.uvmesh_factor > 0 else False,
             ).mode = "UV"
@@ -106,12 +105,7 @@ class MIO3UV_PT_SubGuidePadding(Panel):
         row.operator(
             "uv.mio3_guide_padding",
             icon_value=icons["OFFSET"].icon_id,
-            depress=True if MIO3UV_OT_view_padding.is_running() else False,
-        )
-        row.operator(
-            "uv.mio3_guide_padding_refresh",
-            text="",
-            icon="FILE_REFRESH",
+            depress=True if UV_OT_mio3_guide_padding.is_running() else False,
         )
         row = layout.row()
         row.label(text="Padding")
@@ -121,8 +115,8 @@ class MIO3UV_PT_SubGuidePadding(Panel):
         row.scale_x = 1
         row.label(text="px")
 
-        row = layout.row()
-        row.prop(props_object, "realtime")
+        # row = layout.row()
+        # row.prop(props_object, "realtime")
 
 
 classes = [MIO3UV_PT_Utility, MIO3UV_PT_UVMesh, MIO3UV_PT_SubGuidePadding]

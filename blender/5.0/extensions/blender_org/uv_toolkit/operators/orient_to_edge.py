@@ -37,11 +37,11 @@ class OrientToEdge(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                 selected_uv_verts_co = {l[uv].uv.copy().freeze()
                                         for f in island
                                         for l in f.loops
-                                        if l[uv].select}
+                                        if l.uv_select_edge}
                 if not len(selected_uv_verts_co) >= 2:
                     continue
 

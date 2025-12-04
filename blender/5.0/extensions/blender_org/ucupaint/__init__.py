@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Ucupaint",
-    "author": "Yusuf Umar, Agni Rakai Sahakarya, Jan Bláha, Ahmad Rifai, morirain, Patrick W. Crawford, neomonkeus, Kareem Haddad, passivestar",
-    "version": (2, 3, 3),
+    "author": "Yusuf Umar, Agni Rakai Sahakarya, Jan Bláha, Ahmad Rifai, morirain, Patrick W. Crawford, neomonkeus, Kareem Haddad, passivestar, Przemysław Bągard",
+    "version": (2, 4, 1),
     "blender": (2, 80, 0),
     "location": "Node Editor > Properties > Ucupaint",
     "warning": "",
@@ -14,11 +14,13 @@ bl_info = {
 if "bpy" in locals():
     import imp
     imp.reload(Localization)
+    imp.reload(BaseOperator)
     imp.reload(image_ops)
     imp.reload(common)
     imp.reload(bake_common)
     imp.reload(modifier_common)
     imp.reload(lib)
+    imp.reload(Decal)
     imp.reload(ui)
     imp.reload(subtree)
     imp.reload(transition_common)
@@ -45,12 +47,14 @@ if "bpy" in locals():
     imp.reload(Root)
     imp.reload(versioning)
     imp.reload(Test)
+    imp.reload(credits_ui)
 else:
     from . import Localization
-    from . import image_ops, common, bake_common, modifier_common, lib, ui, subtree, transition_common, input_outputs, node_arrangements, node_connections, preferences
+    from . import BaseOperator, image_ops, common, bake_common, modifier_common, lib, Decal, ui, subtree, transition_common, input_outputs, node_arrangements, node_connections, preferences
     from . import vector_displacement_lib, vector_displacement
     from . import vcol_editor, transition, BakeTarget, BakeInfo, UDIM, ImageAtlas, MaskModifier, Mask, Modifier, NormalMapModifier, Layer, ListItem, Bake, BakeToLayer, Root, versioning
     from . import Test
+    from . import credits_ui
 
 import bpy 
 
@@ -60,6 +64,7 @@ def register():
     image_ops.register()
     preferences.register()
     lib.register()
+    Decal.register()
     ui.register()
     vcol_editor.register()
     transition.register()
@@ -79,15 +84,18 @@ def register():
     Root.register()
     versioning.register()
     Test.register()
+    credits_ui.register()
 
     print('INFO: ' + common.get_addon_title() + ' ' + common.get_current_version_str() + ' is registered!')
 
 def unregister():
     Localization.unregister_module(ui)
 
+    credits_ui.unregister()
     image_ops.unregister()
     preferences.unregister()
     lib.unregister()
+    Decal.unregister()
     ui.unregister()
     vcol_editor.unregister()
     transition.unregister()

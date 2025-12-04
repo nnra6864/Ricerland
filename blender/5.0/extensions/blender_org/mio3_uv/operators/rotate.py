@@ -3,8 +3,7 @@ import math
 from mathutils import Vector, Matrix
 from bpy.app.translations import pgettext_iface as tt_iface
 from bpy.props import BoolProperty, FloatProperty, EnumProperty
-from ..classes.operator import Mio3UVOperator
-from ..classes.uv import UVIslandManager
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_rotate(Mio3UVOperator):
@@ -39,9 +38,6 @@ class MIO3UV_OT_rotate(Mio3UVOperator):
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
-        if context.tool_settings.use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-
         if event.shift:
             self.pivot_point = "INDIVIDUAL_ORIGINS"
         else:
@@ -53,18 +49,11 @@ class MIO3UV_OT_rotate(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
+        self.objects = self.get_selected_objects(context)
+        use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
         if self.island:
-            self.objects = self.get_selected_objects(context)
-            use_uv_select_sync = context.tool_settings.use_uv_select_sync
-            if use_uv_select_sync:
-                self.sync_uv_from_mesh(context, self.objects)
-
-            if use_uv_select_sync:
-                island_manager = UVIslandManager(self.objects, mesh_keep=True, mesh_link_uv=True)
-            else:
-                island_manager = UVIslandManager(self.objects)
-
+            island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
             if not island_manager.islands:
                 return {"CANCELLED"}
 
@@ -88,13 +77,13 @@ class MIO3UV_OT_rotate(Mio3UVOperator):
 
                 for face in island.faces:
                     for loop in face.loops:
-                        uv = loop[uv_layer]
-                        relative_pos = uv.uv - center
-                        uv.uv = rot_matrix @ relative_pos + center
+                        loop_uv = loop[uv_layer]
+                        relative_pos = loop_uv.uv - center
+                        loop_uv.uv = rot_matrix @ relative_pos + center
 
                 island.update_bounds()
 
-            island_manager.update_uvmeshes()
+            island_manager.update_uvmeshes(True)
         else:
             pivot_point = context.space_data.pivot_point
             context.space_data.pivot_point = self.pivot_point
@@ -123,14 +112,9 @@ class MIO3UV_OT_rotate(Mio3UVOperator):
         return Vector(((min_x + max_x) / 2, (min_y + max_y) / 2))
 
 
-classes = [MIO3UV_OT_rotate]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_rotate)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_rotate)

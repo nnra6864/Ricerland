@@ -1,9 +1,9 @@
 import bpy
 import math
 from bpy.props import BoolProperty, EnumProperty
-from mathutils import Vector
-from ..classes.uv import UVIslandManager
-from ..classes.operator import Mio3UVOperator
+from mathutils import Vector, Matrix
+from ..classes import UVIslandManager, Mio3UVOperator
+import mathutils
 
 
 class MIO3UV_OT_grid(Mio3UVOperator):
@@ -25,27 +25,31 @@ class MIO3UV_OT_grid(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-
+        tool_settings = context.tool_settings
         self.objects = self.get_selected_objects(context)
-        use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-            context.tool_settings.use_uv_select_sync = False
-            context.scene.mio3uv.auto_uv_sync_skip = True
-            island_manager = UVIslandManager(self.objects, mesh_link_uv=True)
-        else:
-            island_manager = UVIslandManager(self.objects, extend=False)
+        use_uv_select_sync = tool_settings.use_uv_select_sync
+
+        bpy.ops.uv.remove_doubles(threshold=1e-7)
+
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, extend=False)
+        if not island_manager.islands:
+            self.report({"WARNING"}, "No UV islands found")
+            return {"CANCELLED"}
 
         for island in island_manager.islands:
             island.store_selection()
-            island.deselect_all_uv()
+            # island.deselect_all_uv()
 
-        for obj in self.objects:
-            islands = island_manager.islands_by_object[obj]
+        # オブジェクトで並行処理
+        max_length = max(len(colle.islands) for colle in island_manager.collections)
+        for i in range(max_length):
+            islands = [colle.islands[i] for colle in island_manager.collections if len(colle.islands) > i]
+
             for island in islands:
-                island.restore_selection()
                 bm = island.bm
                 uv_layer = island.uv_layer
+
+                island.restore_selection()
 
                 quad = self.get_base_face(uv_layer, island.faces)
                 if not quad:
@@ -53,27 +57,28 @@ class MIO3UV_OT_grid(Mio3UVOperator):
                     continue
                 bm.faces.active = quad
 
-                self.align_square(uv_layer, bm.faces.active)
+                self.align_rect(uv_layer, bm.faces.active)
 
                 for face in island.faces:
-                    if all(loop[uv_layer].select for loop in face.loops):
+                    if all(loop.uv_select_vert for loop in face.loops):
                         for loop in face.loops:
                             loop[uv_layer].pin_uv = True
                     else:
                         for loop in face.loops:
                             loop[uv_layer].pin_uv = False
+            try:
+                bpy.ops.uv.follow_active_quads(mode=self.mode)
+            except:
+                pass
 
-                try:
-                    bpy.ops.uv.follow_active_quads(mode=self.mode)
-                except:
-                    pass
+            for island in islands:
+                island.deselect_all_uv()
+
+        for island in island_manager.islands:
+            island.restore_selection()
 
         bpy.ops.uv.unwrap(method="ANGLE_BASED", margin=0)
         bpy.ops.uv.pin(clear=True)
-
-        if use_uv_select_sync:
-            island_manager.restore_vertex_selection()
-            context.tool_settings.use_uv_select_sync = True
 
         island_manager.update_uvmeshes()
 
@@ -91,7 +96,7 @@ class MIO3UV_OT_grid(Mio3UVOperator):
         avg_area = total_area / len(selected_faces)
 
         for face in selected_faces:
-            if len(face.loops) == 4 and all(loop[uv_layer].select for loop in face.loops):
+            if len(face.loops) == 4 and all(loop.uv_select_vert for loop in face.loops):
                 max_angle_diff = 0
                 for i in range(4):
                     v1 = face.loops[i][uv_layer].uv - face.loops[(i - 1) % 4][uv_layer].uv
@@ -112,32 +117,26 @@ class MIO3UV_OT_grid(Mio3UVOperator):
 
         return best_face
 
-    # 四角形にする
-    def align_square(self, uv_layer, active_face):
+    def align_rect(self, uv_layer, active_face):
+
         uv_coords = [loop[uv_layer].uv for loop in active_face.loops]
         min_uv = Vector((min(uv.x for uv in uv_coords), min(uv.y for uv in uv_coords)))
         max_uv = Vector((max(uv.x for uv in uv_coords), max(uv.y for uv in uv_coords)))
         center_uv = (min_uv + max_uv) / 2
 
-        # 角度
+        # 特定のエッジを基準に水平 or 垂直にする
         edge_uv = uv_coords[1] - uv_coords[0]
         current_angle = math.atan2(edge_uv.y, edge_uv.x)
-        rotation_angle = (round(math.degrees(current_angle) / 90) * 90 - math.degrees(current_angle) + 45) % 90 - 45
-        rotation_rad = math.radians(rotation_angle)
-        sin_rot, cos_rot = math.sin(rotation_rad), math.cos(rotation_rad)
+        target_angle = round(current_angle / (math.pi / 2)) * (math.pi / 2)  # 90度単位
+        angle_diff = target_angle - current_angle
+        sin_a = math.sin(angle_diff)
+        cos_a = math.cos(angle_diff)
 
+        rot_matrix = Matrix(((cos_a, -sin_a), (sin_a, cos_a)))
         rotated_uvs = []
         for uv in uv_coords:
-            uv_local = uv - center_uv
-            uv_rotated = (
-                Vector(
-                    (
-                        uv_local.x * cos_rot - uv_local.y * sin_rot,
-                        uv_local.x * sin_rot + uv_local.y * cos_rot,
-                    )
-                )
-                + center_uv
-            )
+            local = uv - center_uv
+            uv_rotated = rot_matrix @ local + center_uv
             rotated_uvs.append(uv_rotated)
 
         min_x = min(uv.x for uv in rotated_uvs)
@@ -174,16 +173,9 @@ class MIO3UV_OT_grid(Mio3UVOperator):
         row.prop(self, "keep_aspect")
 
 
-classes = [
-    MIO3UV_OT_grid,
-]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_grid)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_grid)

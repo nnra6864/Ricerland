@@ -137,64 +137,6 @@ def update_bake_to_layer_uv_map(self, context):
         objs = get_all_objects_with_same_materials(mat)
         self.use_udim = UDIM.is_uvmap_udim(objs, self.uv_map)
 
-def get_bake_properties_from_self(self):
-
-    bprops = dotdict()
-
-    # NOTE: Getting props from keys doesn't work
-    #for prop in self.properties.keys():
-    #    try: bprops[prop] = getattr(self, prop)
-    #    except Exception as e: print(e)
-
-    props = [
-        'bake_device',
-        'samples',
-        'margin',
-        'margin_type',
-        'width',
-        'height',
-        'image_resolution',
-        'use_custom_resolution',
-        'name',
-        'uv_map',
-        'uv_map_1',
-        'interpolation',
-        'type',
-        'use_cage',
-        'cage_object_name',
-        'cage_extrusion',
-        'max_ray_distance',
-        'normalize',
-        'ao_distance',
-        'bevel_samples',
-        'bevel_radius',
-        'multires_base',
-        'target_type',
-        'fxaa',
-        'ssaa',
-        'denoise',
-        'channel_idx',
-        'blend_type',
-        'normal_blend_type',
-        'normal_map_type',
-        'hdr',
-        'use_baked_disp',
-        'flip_normals',
-        'only_local',
-        'subsurf_influence',
-        'force_bake_all_polygons',
-        'use_image_atlas',
-        'use_udim',
-        'blur',
-        'blur_factor'
-    ]
-
-    for prop in props:
-        if hasattr(self, prop):
-            bprops[prop] = getattr(self, prop)
-
-    return bprops
-
 class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
     bl_idname = "wm.y_bake_to_layer"
     bl_label = "Bake To Layer"
@@ -266,6 +208,12 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         default=0.2, min=0.0, max=1.0
     )
 
+    use_transparent_for_missing_rays : BoolProperty(
+        name = 'Use Transparent for Missing Rays',
+        description = 'Use transparent for missing rays',
+        default = True
+    )
+
     normalize : BoolProperty(
         name = 'Normalize Bake Result',
         description = 'Normalize the bake result',
@@ -278,6 +226,16 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
     # Bevel Props
     bevel_samples : IntProperty(default=4, min=2, max=16)
     bevel_radius : FloatProperty(default=0.05, min=0.0, max=1000.0)
+
+    edge_detect_method : EnumProperty(
+        name = 'Edge Detection Method',
+        description = 'Edge detection method',
+        items = (
+            ('DOT', 'Dot Product', ''),
+            ('CROSS', 'Cross Product', '')
+        ),
+        default='DOT'
+    )
 
     multires_base : IntProperty(default=1, min=0, max=16)
 
@@ -376,6 +334,18 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         default = False
     )
     
+    use_osl : BoolProperty(
+        name = 'Use OSL',
+        description = 'Use Open Shading Language (slower but can handle more complex layer setup)',
+        default = False
+    )
+
+    hide_source_objects : BoolProperty(
+        name = 'Hide Source Objects after Baking',
+        description = 'Hide source objects after baking',
+        default = True
+    )
+
     @classmethod
     def poll(cls, context):
         return get_active_ypaint_node() and context.object.type == 'MESH'
@@ -644,7 +614,11 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         if not requires_popup and get_user_preferences().skip_property_popups and not event.shift:
             return self.execute(context)
 
-        return context.window_manager.invoke_props_dialog(self, width=320)
+        width = 320
+        if self.type.startswith('OTHER_OBJECT_'):
+            width = 350
+
+        return context.window_manager.invoke_props_dialog(self, width=width)
 
     def check(self, context):
         self.check_operator(context)
@@ -699,8 +673,12 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
             if self.use_cage:
                 col.label(text='Cage Object:')
                 col.label(text='Cage Extrusion:')
-                if hasattr(bpy.context.scene.render.bake, 'max_ray_distance'):
-                    col.label(text='Max Ray Distance:')
+            else:
+                col.label(text='Extrusion:')
+            if hasattr(bpy.context.scene.render.bake, 'max_ray_distance'):
+                col.label(text='Max Ray Distance:')
+            if self.type in {'OTHER_OBJECT_NORMAL'}:
+                col.label(text='')
         elif self.type == 'POINTINESS' and is_bl_newer_than(2, 83):
             col.label(text='')
         elif self.type == 'AO':
@@ -709,6 +687,8 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         elif self.type in {'BEVEL_NORMAL', 'BEVEL_MASK'}:
             col.label(text='Bevel Samples:')
             col.label(text='Bevel Radius:')
+            if self.type == 'BEVEL_MASK':
+                col.label(text='Edge Detect Method:')
         elif self.type.startswith('MULTIRES_'):
             col.label(text='Base Level:')
         #elif self.type.startswith('OTHER_OBJECT_'):
@@ -752,6 +732,10 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
             col.separator()
             col.label(text='')
 
+        if is_bl_newer_than(2, 79) and self.type.startswith('OTHER_OBJECT_'):
+            col.separator()
+            col.label(text='')
+
         col = row.column(align=False)
 
         if not self.overwrite_current:
@@ -780,9 +764,11 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
             col.prop(self, 'use_cage')
             if self.use_cage:
                 col.prop_search(self, "cage_object_name", self, "cage_object_coll", text='', icon='OBJECT_DATA')
-                col.prop(self, 'cage_extrusion', text='')
-                if hasattr(bpy.context.scene.render.bake, 'max_ray_distance'):
-                    col.prop(self, 'max_ray_distance', text='')
+            col.prop(self, 'cage_extrusion', text='')
+            if hasattr(bpy.context.scene.render.bake, 'max_ray_distance'):
+                col.prop(self, 'max_ray_distance', text='')
+            if self.type in {'OTHER_OBJECT_NORMAL'}:
+                col.prop(self, 'use_transparent_for_missing_rays')
         elif self.type == 'POINTINESS' and is_bl_newer_than(2, 83):
             col.prop(self, 'normalize', text='Normalize Pointiness')
         elif self.type == 'AO':
@@ -791,6 +777,9 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         elif self.type in {'BEVEL_NORMAL', 'BEVEL_MASK'}:
             col.prop(self, 'bevel_samples', text='')
             col.prop(self, 'bevel_radius', text='')
+            if self.type == 'BEVEL_MASK':
+                crow = col.row(align=True)
+                crow.prop(self, 'edge_detect_method', expand=True)
         elif self.type.startswith('MULTIRES_'):
             col.prop(self, 'multires_base', text='')
 
@@ -815,7 +804,9 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
 
         if is_bl_newer_than(2, 80):
             col.separator()
-            col.prop(self, 'bake_device', text='')
+            if self.use_osl:
+                col.label(text='CPU (OSL)')
+            else: col.prop(self, 'bake_device', text='')
         col.prop(self, 'interpolation', text='')
 
         if self.target_type == 'MASK':
@@ -847,6 +838,8 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
         if UDIM.is_udim_supported() or self.type not in {'OTHER_OBJECT_CHANNELS'}:
             col.separator()
 
+        col.prop(self, 'use_osl')
+
         if UDIM.is_udim_supported():
             ccol = col.column(align=True)
             ccol.prop(self, 'use_udim')
@@ -855,6 +848,10 @@ class YBakeToLayer(bpy.types.Operator, BaseBakeOperator):
             ccol = col.column(align=True)
             #ccol.active = not self.use_udim
             ccol.prop(self, 'use_image_atlas')
+
+        if is_bl_newer_than(2, 79) and self.type.startswith('OTHER_OBJECT_'):
+            ccol = col.column(align=True)
+            ccol.prop(self, 'hide_source_objects')
 
     def execute(self, context):
         if not self.is_cycles_exist(context): return {'CANCELLED'}
@@ -941,17 +938,40 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
         description = 'Use Image Atlas',
         default = False
     )
+    
+    blur_type : EnumProperty(
+        name = 'Blur Type', 
+        description = 'Blur type for the baked image',
+        items = (
+            ('NOISE', 'Noise', 'Noisy and need more samples but has matching value to the blur vector option'),
+            ('FLAT', 'Flat', 'Flat blur'),
+            ('TENT', 'Tent', 'Tent blur'),
+            ('QUAD', 'Quadratic', 'Quadratic blur'),
+            ('CUBIC', 'Cubic', 'Cubic blur'),
+            ('GAUSS', 'Gaussian', 'Gausssian blur'),
+            ('FAST_GAUSS', 'Fast Gaussian', 'Fast gausssian blur'),
+            ('CATROM', 'Catrom', 'Catrom blur'),
+            ('MITCH', 'Mitch', 'Mitch blur')
+        ),
+        default='GAUSS'
+    )
 
     blur : BoolProperty(
         name = 'Use Blur', 
-        description = 'Use blur to baked image',
+        description = 'Use blur to the baked image',
         default = False
     )
 
     blur_factor : FloatProperty(
         name = 'Blur Factor',
-        description = 'Blur factor to baked image',
+        description = 'Blur factor to the baked image',
         default=1.0, min=0.0, max=100.0
+    )
+
+    blur_size : FloatProperty(
+        name = 'Blur Size',
+        description = 'Blur size (in pixels) to the baked image',
+        default=10.0, min=0.0
     )
 
     duplicate_entity : BoolProperty(
@@ -969,6 +989,12 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
     use_udim : BoolProperty(
         name = 'Use UDIM Tiles',
         description = 'Use UDIM Tiles',
+        default = False
+    )
+
+    use_osl : BoolProperty(
+        name = 'Use OSL',
+        description = 'Use Open Shading Language (slower but can handle more complex layer setup)',
         default = False
     )
 
@@ -1138,6 +1164,14 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
             col.label(text='Bake Device:')
         col.separator()
         col.label(text='')
+
+        if self.blur:
+            if self.blur_type == 'NOISE':
+                col.label(text='Blur Factor:')
+            else: col.label(text='Blur Size:')
+            col.separator()
+
+        col.label(text='')
         if is_bl_newer_than(2, 81):
             col.label(text='')
         col.label(text='')
@@ -1167,17 +1201,28 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
 
         if is_bl_newer_than(2, 80):
             col.separator()
-            col.prop(self, 'bake_device', text='')
+            if self.use_osl:
+                col.label(text='CPU (OSL)')
+            else: col.prop(self, 'bake_device', text='')
         col.separator()
-        col.prop(self, 'fxaa')
-        if is_bl_newer_than(2, 81):
-            col.prop(self, 'denoise', text='Use Denoise')
-        ccol = col.column(align=True)
 
         rrow = col.row(align=True)
         rrow.prop(self, 'blur')
         if self.blur:
-            rrow.prop(self, 'blur_factor', text='')
+            rrow.prop(self, 'blur_type', text='')
+
+            rrow = col.row(align=True)
+            if self.blur_type == 'NOISE':
+                rrow.prop(self, 'blur_factor', text='')
+            else: rrow.prop(self, 'blur_size', text='')
+
+            col.separator()
+
+        col.prop(self, 'fxaa')
+        if is_bl_newer_than(2, 81):
+            col.prop(self, 'denoise', text='Use Denoise')
+
+        col.prop(self, 'use_osl')
 
         if self.mask:
             col.prop(self, 'duplicate_entity', text='Duplicate Mask')
@@ -1202,6 +1247,10 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
 
         if self.uv_map == '':
             self.report({'ERROR'}, "UV Map cannot be empty!")
+            return {'CANCELLED'}
+
+        if self.mask and self.mask.type == 'BACKFACE':
+            self.report({'ERROR'}, "Backface mask can't be baked!")
             return {'CANCELLED'}
 
         T = time.time()
@@ -1240,7 +1289,10 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
                 new_entity_name = get_unique_name(self.name, self.entities) if self.use_image_atlas else image.name
 
                 # Create new mask
-                mask = Mask.add_new_mask(self.layer, new_entity_name, 'IMAGE', 'UV', self.uv_map, image, '', segment)
+                mask = Mask.add_new_mask(
+                    self.layer, new_entity_name, 'IMAGE', 'UV', self.uv_map, 
+                    image=image, vcol_name='', segment=segment
+                )
 
                 # Set mask properties
                 mask.intensity_value = self.mask.intensity_value
@@ -1283,6 +1335,13 @@ class YBakeEntityToImage(bpy.types.Operator, BaseBakeOperator):
         reconnect_yp_nodes(node.node_tree)
         rearrange_yp_nodes(node.node_tree)
 
+        # Expand entity source to show rebake button
+        ypui = context.window_manager.ypui
+        if self.mask and not self.duplicate_entity:
+            self.mask.expand_content = True
+            self.mask.expand_source = True
+        ypui.need_update = True
+
         if image: 
             self.report({'INFO'}, 'Baking '+entity_label+' is done in '+'{:0.2f}'.format(time.time() - T)+' seconds!')
 
@@ -1318,7 +1377,7 @@ class YRemoveBakedEntity(bpy.types.Operator):
         if m1: 
             layer = yp.layers[int(m1.group(1))]
             mask = None
-            tree = get_tree(layer)
+            tree = get_source_tree(layer)
             baked_source = tree.nodes.get(layer.baked_source)
         elif m2: 
             layer = yp.layers[int(m2.group(1))]
@@ -1420,6 +1479,60 @@ class YRebakeSpecificLayers(bpy.types.Operator, BaseBakeOperator):
 
         return {'FINISHED'}
 
+class YSelectAllOtherObjects(bpy.types.Operator):
+    bl_idname = "wm.y_select_all_other_objects"
+    bl_label = "Select All Other Objects"
+    bl_description = "Select all objects in the other objects list"
+    bl_options = {'REGISTER', 'UNDO'}
+
+    @classmethod
+    def poll(cls, context):
+        return get_active_ypaint_node() and hasattr(context, 'bake_info')
+
+    def execute(self, context):
+        bpy.ops.object.select_all(action='DESELECT')
+
+        for i in range(len(context.bake_info.other_objects)):
+            so = context.bake_info.other_objects[i]
+            if so.object:
+                so_object = so.object
+                so_object.hide_viewport = False
+                set_object_select(so_object, True)
+        if so_object:
+            set_active_object(so_object)
+
+        return {'FINISHED'}
+
+class YToggleOtherObjectsVisibility(bpy.types.Operator):
+    bl_idname = "wm.y_toggle_other_objects_visibility"
+    bl_label = "Toggle Other Objects Visibility"
+    bl_description = "Toggle visibility of all objects in the other objects list"
+    bl_options = {'REGISTER', 'UNDO'}
+
+    @classmethod
+    def poll(cls, context):
+        return get_active_ypaint_node() and hasattr(context, 'bake_info')
+
+    def execute(self, context):
+        bi = context.bake_info
+
+        reference_obj = None
+        for oo in bi.other_objects:
+            if oo.object:
+                reference_obj = oo.object
+                break
+
+        if not reference_obj:
+            return {'CANCELLED'}
+
+        current_hidden_state = reference_obj.hide_viewport
+
+        for oo in bi.other_objects:
+            if oo.object:
+                oo.object.hide_viewport = not current_hidden_state
+
+        return {'FINISHED'}
+
 def register():
     bpy.utils.register_class(YBakeToLayer)
     bpy.utils.register_class(YBakeEntityToImage)
@@ -1428,6 +1541,8 @@ def register():
     bpy.utils.register_class(YRemoveBakedEntity)
     bpy.utils.register_class(YRebakeBakedImages)
     bpy.utils.register_class(YRebakeSpecificLayers)
+    bpy.utils.register_class(YSelectAllOtherObjects)
+    bpy.utils.register_class(YToggleOtherObjectsVisibility)
 
 def unregister():
     bpy.utils.unregister_class(YBakeToLayer)
@@ -1437,3 +1552,5 @@ def unregister():
     bpy.utils.unregister_class(YRemoveBakedEntity)
     bpy.utils.unregister_class(YRebakeBakedImages)
     bpy.utils.unregister_class(YRebakeSpecificLayers)
+    bpy.utils.unregister_class(YSelectAllOtherObjects)
+    bpy.utils.unregister_class(YToggleOtherObjectsVisibility)

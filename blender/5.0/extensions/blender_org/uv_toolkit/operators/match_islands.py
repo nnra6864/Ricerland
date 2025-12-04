@@ -103,7 +103,7 @@ class MatchIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for target_island in get_islands(uv, bm, seams, has_selected_faces=True):
+            for target_island in get_islands(bm, seams, has_selected_faces=True):
                 target_island_found = True
                 break
             if target_island_found:
@@ -139,11 +139,11 @@ class MatchIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams):
+            for island in get_islands(bm, seams):
                 island_has_selection = False
                 for f in island:
                     for l in f.loops:
-                        if l[uv].select:
+                        if l.uv_select_edge:
                             island_has_selection = True
                     if island_has_selection:
                         break

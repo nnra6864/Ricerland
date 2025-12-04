@@ -1,5 +1,5 @@
 import bpy, re
-from . import lib
+from . import lib, Decal
 from .common import *
 from .transition_common import *
 from .subtree import *
@@ -260,7 +260,7 @@ def check_start_end_root_ch_nodes(group_tree, specific_channel=None):
                 remove_node(group_tree, channel, 'end_max_height_tweak')
 
             # Engine filter is needed if subdiv is on and channel is baked
-            if yp.use_baked and channel.enable_subdiv_setup and any_layers_using_displacement(channel):
+            if yp.use_baked and channel.enable_subdiv_setup and (any_layers_using_disp(channel) or any_layers_using_vdisp(channel)):
 
                 lib_name = lib.ENGINE_FILTER if is_bl_newer_than(2, 80) else lib.ENGINE_FILTER_LEGACY
                 end_normal_engine_filter = replace_new_node(
@@ -328,6 +328,7 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
 
     #print("Checking YP IO. Specific Layer: " + str(specific_layer))
 
+    group_node = get_active_ypaint_node()
     group_tree = yp.id_data
 
     input_index = 0
@@ -335,7 +336,12 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
     valid_inputs = []
     valid_outputs = []
 
+    # Get alpha and color pair channel
+    color_ch, alpha_ch = get_color_alpha_ch_pairs(yp)
+
     for ch in yp.channels:
+
+        is_alpha_ch = ch.enable_alpha or (alpha_ch and ch == alpha_ch)
 
         if ch.type == 'VALUE':
             create_input(
@@ -378,7 +384,8 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
             input_index += 1
             output_index += 1
 
-            # Backface mode
+        # Backface mode
+        if is_alpha_ch:
             if ch.backface_mode != 'BOTH':
                 end_backface = check_new_node(group_tree, ch, 'end_backface', 'ShaderNodeMath', 'Backface')
                 end_backface.use_clamp = True
@@ -388,13 +395,11 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
             elif ch.backface_mode == 'BACK_ONLY':
                 end_backface.operation = 'MULTIPLY'
 
-        if not ch.enable_alpha or ch.backface_mode == 'BOTH':
-                remove_node(group_tree, ch, 'end_backface')
+        if not is_alpha_ch or ch.backface_mode == 'BOTH':
+            remove_node(group_tree, ch, 'end_backface')
 
         # Displacement IO
         if ch.type == 'NORMAL' and (ch.enable_subdiv_setup or force_height_io):
-
-            group_node = get_active_ypaint_node()
 
             name = ch.name + io_suffix['HEIGHT']
 
@@ -403,7 +408,7 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
                 group_tree, name, 'NodeSocketFloatFactor', valid_inputs, input_index, 
                 min_value=0.0, max_value=1.0, default_value=height_default_value, hide_value=True
             )
-            if group_node.node_tree == group_tree:
+            if group_node and group_node.node_tree == group_tree:
                 group_node.inputs[name].default_value = height_default_value
             input_index += 1
 
@@ -412,11 +417,10 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
 
             name = ch.name + io_suffix['MAX_HEIGHT']
 
-            max_height_default_value = 0.1
-            create_input(group_tree, name, 'NodeSocketFloat', valid_inputs, input_index, default_value=max_height_default_value)
-            # Set node default value
-            if group_node.node_tree == group_tree:
-                group_node.inputs[name].default_value = max_height_default_value
+            if create_input(group_tree, name, 'NodeSocketFloat', valid_inputs, input_index, default_value=0.1):
+                # Set node default value
+                if group_node and group_node.node_tree == group_tree:
+                    group_node.inputs[name].default_value = ch.ori_max_height_value
             input_index += 1
 
             create_output(group_tree, name, 'NodeSocketFloat', valid_outputs, output_index)
@@ -445,6 +449,19 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
     # Check for invalid io
     for inp in get_tree_inputs(group_tree):
         if inp not in valid_inputs:
+
+            # Remember default values
+            for ch in yp.channels:
+
+                if group_node and inp.name == ch.name + io_suffix['ALPHA']:
+                    node_inp = group_node.inputs.get(inp.name)
+                    if node_inp: ch.ori_alpha_value = node_inp.default_value
+
+                if ch.type == 'NORMAL':
+                    if group_node and inp.name == ch.name + io_suffix['MAX_HEIGHT']:
+                        node_inp = group_node.inputs.get(inp.name)
+                        if node_inp: ch.ori_max_height_value = node_inp.default_value
+
             remove_tree_input(group_tree, inp)
 
     for outp in get_tree_outputs(group_tree):
@@ -473,183 +490,6 @@ def check_all_channel_ios(yp, reconnect=True, specific_layer=None, remove_props=
         reconnect_yp_nodes(group_tree)
         rearrange_yp_nodes(group_tree)
 
-def create_decal_empty():
-    obj = bpy.context.object
-    scene = bpy.context.scene
-    empty_name = get_unique_name('Decal', bpy.data.objects)
-    empty = bpy.data.objects.new(empty_name, None)
-    if is_bl_newer_than(2, 80):
-        empty.empty_display_type = 'SINGLE_ARROW'
-    else: empty.empty_draw_type = 'SINGLE_ARROW'
-    custom_collection = obj.users_collection[0] if is_bl_newer_than(2, 80) and len(obj.users_collection) > 0 else None
-    link_object(scene, empty, custom_collection)
-    if is_bl_newer_than(2, 80):
-        empty.location = scene.cursor.location.copy()
-        empty.rotation_euler = scene.cursor.rotation_euler.copy()
-    else: 
-        empty.location = scene.cursor_location.copy()
-
-    # Parent empty to active object
-    empty.parent = obj
-    empty.matrix_parent_inverse = obj.matrix_world.inverted()
-
-    return empty
-
-def check_mask_texcoord_nodes(layer, mask, tree=None):
-    yp = layer.id_data.yp
-    if not tree: tree = get_tree(layer)
-
-    height_root_ch = get_root_height_channel(yp)
-    height_ch = get_height_channel(layer)
-    height_ch_enabled = get_channel_enabled(height_ch) if height_ch else False
-
-    # Create texcoord node if decal is used
-    texcoord = tree.nodes.get(mask.texcoord)
-    if get_mask_enabled(mask) and mask.texcoord_type == 'Decal' and is_mapping_possible(mask.type):
-
-        # Set image extension type to clip
-        image = None
-        source = get_mask_source(mask)
-        if mask.type == 'IMAGE' and source:
-            image = source.image
-
-        # Create new empty object if there's no texcoord yet
-        if not texcoord:
-            empty = create_decal_empty()
-            texcoord = new_node(tree, mask, 'texcoord', 'ShaderNodeTexCoord', 'TexCoord')
-            texcoord.object = empty
-
-        decal_process = tree.nodes.get(mask.decal_process)
-        if not decal_process:
-            decal_process = new_node(tree, mask, 'decal_process', 'ShaderNodeGroup', 'Decal Process')
-            decal_process.node_tree = get_node_tree_lib(lib.DECAL_PROCESS)
-
-            # Set image extension only after decal process node is initialized
-            if image and source:
-                mask.original_image_extension = source.extension
-                source.extension = 'CLIP'
-
-        # Set decal aspect ratio
-        if image:
-            if image.size[0] > image.size[1]:
-                decal_process.inputs['Scale'].default_value = (image.size[1] / image.size[0], 1.0, 1.0)
-            else: decal_process.inputs['Scale'].default_value = (1.0, image.size[0] / image.size[1], 1.0)
-
-        decal_alpha = check_new_node(tree, mask, 'decal_alpha', 'ShaderNodeMath', 'Decal Alpha')
-        if decal_alpha.operation != 'MULTIPLY':
-            decal_alpha.operation = 'MULTIPLY'
-
-        if height_ch and height_ch_enabled and height_root_ch.enable_smooth_bump:
-            for letter in nsew_letters:
-                decal_alpha = check_new_node(tree, mask, 'decal_alpha_' + letter, 'ShaderNodeMath', 'Decal Alpha ' + letter.upper())
-                if decal_alpha.operation != 'MULTIPLY':
-                    decal_alpha.operation = 'MULTIPLY'
-        else:
-            for letter in nsew_letters:
-                remove_node(tree, mask, 'decal_alpha_' + letter)
-
-    else:
-        if not texcoord or not hasattr(texcoord, 'object') or not texcoord.object: 
-            remove_node(tree, mask, 'texcoord')
-        remove_node(tree, mask, 'decal_process')
-        remove_node(tree, mask, 'decal_alpha')
-
-        if height_ch:
-            for letter in nsew_letters:
-                remove_node(tree, mask, 'decal_alpha_' + letter)
-
-        # Recover image extension type
-        if mask.type == 'IMAGE' and mask.original_texcoord == 'Decal' and mask.original_image_extension != '':
-            source = get_mask_source(mask)
-            if source:
-                source.extension = mask.original_image_extension
-                mask.original_image_extension = ''
-
-    # Save original texcoord type
-    if mask.original_texcoord != mask.texcoord_type:
-        mask.original_texcoord = mask.texcoord_type
-
-def check_layer_texcoord_nodes(layer, tree=None):
-    yp = layer.id_data.yp
-    if not tree: tree = get_tree(layer)
-
-    # Create texcoord node if decal is used
-    texcoord = tree.nodes.get(layer.texcoord)
-    if get_layer_enabled(layer) and layer.texcoord_type == 'Decal' and is_mapping_possible(layer.type):
-
-        # Set image extension type to clip
-        image = None
-        source = get_layer_source(layer)
-        if layer.type == 'IMAGE' and source:
-            image = source.image
-
-        # Create new empty object if there's no texcoord yet
-        if not texcoord:
-            empty = create_decal_empty()
-            texcoord = new_node(tree, layer, 'texcoord', 'ShaderNodeTexCoord', 'TexCoord')
-            texcoord.object = empty
-
-        decal_process = tree.nodes.get(layer.decal_process)
-        if not decal_process:
-            decal_process = new_node(tree, layer, 'decal_process', 'ShaderNodeGroup', 'Decal Process')
-            decal_process.node_tree = get_node_tree_lib(lib.DECAL_PROCESS)
-
-            # Set image extension only after decal process node is initialized
-            if image and source:
-                layer.original_image_extension = source.extension
-                source.extension = 'CLIP'
-
-        # Set decal aspect ratio
-        if image:
-            if image.size[0] > image.size[1]:
-                decal_process.inputs['Scale'].default_value = (image.size[1] / image.size[0], 1.0, 1.0)
-            else: decal_process.inputs['Scale'].default_value = (1.0, image.size[0] / image.size[1], 1.0)
-
-        # Create decal alpha nodes
-        for i, ch in enumerate(layer.channels):
-            root_ch = yp.channels[i]
-            ch_enabled = get_channel_enabled(ch)
-            if ch_enabled:
-                decal_alpha = check_new_node(tree, ch, 'decal_alpha', 'ShaderNodeMath', 'Decal Alpha')
-                if decal_alpha.operation != 'MULTIPLY':
-                    decal_alpha.operation = 'MULTIPLY'
-            else:
-                remove_node(tree, ch, 'decal_alpha')
-
-            if root_ch.type == 'NORMAL':
-                if ch_enabled and root_ch.enable_smooth_bump:
-                    for letter in nsew_letters:
-                        decal_alpha = check_new_node(tree, ch, 'decal_alpha_' + letter, 'ShaderNodeMath', 'Decal Alpha ' + letter.upper())
-                        if decal_alpha.operation != 'MULTIPLY':
-                            decal_alpha.operation = 'MULTIPLY'
-                else:
-                    for letter in nsew_letters:
-                        remove_node(tree, ch, 'decal_alpha_' + letter)
-
-    else:
-        if not texcoord or not hasattr(texcoord, 'object') or not texcoord.object: 
-            remove_node(tree, layer, 'texcoord')
-        remove_node(tree, layer, 'decal_process')
-
-        for i, ch in enumerate(layer.channels):
-            root_ch = yp.channels[i]
-            remove_node(tree, ch, 'decal_alpha')
-
-            if root_ch.type == 'NORMAL':
-                for letter in nsew_letters:
-                    remove_node(tree, ch, 'decal_alpha_' + letter)
-
-        # Recover image extension type
-        if layer.type == 'IMAGE' and layer.original_texcoord == 'Decal' and layer.original_image_extension != '':
-            source = get_layer_source(layer)
-            if source:
-                source.extension = layer.original_image_extension
-                layer.original_image_extension = ''
-
-    # Save original texcoord type
-    if layer.original_texcoord != layer.texcoord_type:
-        layer.original_texcoord = layer.texcoord_type
-
 def check_all_layer_channel_io_and_nodes(layer, tree=None, specific_ch=None, do_recursive=True, remove_props=False, hard_reset=False): #, check_uvs=False): #, has_parent=False):
 
     #print("Checking layer IO. Layer: " + layer.name + ' Specific Channel: ' + str(specific_ch))
@@ -665,7 +505,7 @@ def check_all_layer_channel_io_and_nodes(layer, tree=None, specific_ch=None, do_
     check_layer_tree_ios(layer, tree, remove_props=remove_props, hard_reset=hard_reset)
 
     # Check texcoord nodes
-    check_layer_texcoord_nodes(layer, tree)
+    Decal.check_entity_decal_nodes(layer, tree)
 
     # Create mapping if necessary
     if is_layer_using_vector(layer):
@@ -678,6 +518,8 @@ def check_all_layer_channel_io_and_nodes(layer, tree=None, specific_ch=None, do_
 
     # Linear node
     check_layer_image_linear_node(layer)
+
+    check_group_alpha_multiply_node(layer)
 
     # Check the need of bump process
     check_layer_bump_process(layer, tree)
@@ -712,7 +554,7 @@ def check_all_layer_channel_io_and_nodes(layer, tree=None, specific_ch=None, do_
 
     # Mask nodes
     for mask in layer.masks:
-        check_mask_texcoord_nodes(layer, mask, tree)
+        Decal.check_entity_decal_nodes(mask, tree)
         #check_mask_image_linear_node(mask)
 
     # Linear nodes
@@ -807,10 +649,9 @@ def create_prop_input(entity, prop_name, valid_inputs, input_index, dirty):
     if root_tree.animation_data:
         # Example: yp.layers[0].channels[0].intensity_value'
 
-        if root_tree.animation_data.action:
-            for fc in root_tree.animation_data.action.fcurves:
-                if fc.data_path == 'yp.layers[' + str(layer_index) + ']' + input_name:
-                    fc.data_path = 'nodes["' + layer_node.name + '"].inputs[' + str(input_index) + '].default_value'
+        for fc in get_datablock_fcurves(root_tree):
+            if fc.data_path == 'yp.layers[' + str(layer_index) + ']' + input_name:
+                fc.data_path = 'nodes["' + layer_node.name + '"].inputs[' + str(input_index) + '].default_value'
 
         for driver in root_tree.animation_data.drivers:
             if driver.data_path == 'yp.layers[' + str(layer_index) + ']' + input_name:
@@ -844,16 +685,18 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
     
     trans_bump_ch = get_transition_bump_channel(layer)
 
+    # Get alpha and color pair channel
+    color_ch, alpha_ch = get_layer_color_alpha_ch_pairs(layer)
+
     # Rename fcurve and driver data path before rearranging the inputs
     if root_tree.animation_data:
         # Example: nodes["Group.003"].inputs[9].default_value'
 
-        if root_tree.animation_data.action:
-            for fc in root_tree.animation_data.action.fcurves:
-                m = re.match(r'^nodes\["' + layer_node.name + '"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
-                if m:
-                    inp = layer_node.inputs[int(m.group(1))]
-                    fc.data_path = 'yp.layers[' + str(get_layer_index(layer)) + ']' + inp.name
+        for fc in get_datablock_fcurves(root_tree):
+            m = re.match(r'^nodes\["' + layer_node.name + '"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
+            if m:
+                inp = layer_node.inputs[int(m.group(1))]
+                fc.data_path = 'yp.layers[' + str(get_layer_index(layer)) + ']' + inp.name
 
         for driver in root_tree.animation_data.drivers:
             m = re.match(r'^nodes\["' + layer_node.name + '"\]\.inputs\[(\d+)\]\.default_value$', driver.data_path)
@@ -892,16 +735,19 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
 
         # Channel prop inputs
         for i, ch in enumerate(layer.channels):
-            if not get_channel_enabled(ch): continue
+            channel_enabled = get_channel_enabled(ch) or (alpha_ch == ch and get_channel_enabled(color_ch))
+            if not channel_enabled: continue
 
             root_ch = yp.channels[i]
 
             # Get default value
             default_value = ch.intensity_value
 
-            # Create intensity socket
-            dirty = create_prop_input(ch, 'intensity_value', valid_inputs, input_index, dirty)
-            input_index += 1
+            # Alpha channel won't use intensity_value prop input if color channel is enabled
+            if alpha_ch != ch or (alpha_ch == ch and (not get_channel_enabled(color_ch) or color_ch.unpair_alpha or layer.type == 'GROUP')):
+                # Create intensity socket
+                dirty = create_prop_input(ch, 'intensity_value', valid_inputs, input_index, dirty)
+                input_index += 1
 
             # Override values
             if ch.override and ch.override_type == 'DEFAULT':
@@ -1040,7 +886,7 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
     # Tree input and outputs
     for i, ch in enumerate(layer.channels):
         root_ch = yp.channels[i]
-        channel_enabled = get_channel_enabled(ch, layer, root_ch)
+        channel_enabled = get_channel_enabled(ch, layer, root_ch) or (ch == alpha_ch and get_channel_enabled(color_ch))
 
         force_normal_input = root_ch.type == 'NORMAL' and need_prev_normal and layer_enabled
 
@@ -1055,7 +901,7 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
             output_index += 1
 
         # Alpha IO
-        if root_ch.enable_alpha or has_parent:
+        if ch != color_ch and (root_ch.enable_alpha or has_parent):
 
             name = root_ch.name + io_suffix['ALPHA']
 
@@ -1161,6 +1007,8 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
         for i, ch in enumerate(layer.channels):
             root_ch = yp.channels[i]
             channel_enabled = get_channel_enabled(ch, layer, root_ch)
+            if not channel_enabled and ch == alpha_ch:
+                channel_enabled = get_channel_enabled(color_ch, layer)
 
             #if yp.disable_quick_toggle and not channel_enabled: continue
             if not channel_enabled: continue
@@ -1177,7 +1025,7 @@ def check_layer_tree_ios(layer, tree=None, remove_props=False, hard_reset=False)
                 input_index += 1
 
                 # Alpha Input
-                if root_ch.enable_alpha or layer.type == 'GROUP':
+                if ch != color_ch and (root_ch.enable_alpha or layer.type == 'GROUP'):
 
                     name = root_ch.name + io_suffix['ALPHA'] + io_suffix[layer.type]
                     dirty = create_input(

@@ -49,11 +49,11 @@ class UnwrapSelected(Operator):
                 if l.edge.seam:
                     initial_seams.append(l.edge)
 
-                if l[uv].select:
+                if l.uv_select_edge:
                     initial_selection.add(l)
                 else:
                     l[uv].pin_uv = True
-                l[uv].select = True
+                l.uv_select_edge_set(True)
 
         bpy.ops.uv.seams_from_islands(mark_seams=True)
         bpy.ops.uv.unwrap(method=self.method,
@@ -78,7 +78,7 @@ class UnwrapSelected(Operator):
             for l in f.loops:
                 if l in initial_selection:
                     continue
-                l[uv].select = False
+                l.uv_select_edge_set(False)
 
     def execute(self, context):
         scene = context.scene

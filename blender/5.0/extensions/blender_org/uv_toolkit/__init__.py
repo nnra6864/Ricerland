@@ -74,7 +74,6 @@ from .ui.panel import (
     UVTOOLKIT_PT_checker_map_square,
     UVTOOLKIT_PT_checker_map_horizontal_rectangle,
     UVTOOLKIT_PT_checker_map_vertical_rectangle,
-    UVTOOLKIT_PT_cleanup,
     UVTOOLKIT_PT_help,
 )
 
@@ -154,7 +153,6 @@ classes = (
     UVTOOLKIT_PT_checker_map_square,
     UVTOOLKIT_PT_checker_map_horizontal_rectangle,
     UVTOOLKIT_PT_checker_map_vertical_rectangle,
-    UVTOOLKIT_PT_cleanup,
     UVTOOLKIT_PT_help,
     Pie3dView,
     PieUvEditor,

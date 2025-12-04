@@ -1,10 +1,10 @@
 translation_dict = {
     "zh_HANS": {
-        # 选项
+        # Options
         ("*", "UV Sync Auto Select"): "选择同步自动选择",
         ("*", "Use Legacy UI Layout"): "传统UI布局",
 
-        # 常用
+        # Common
         ("Operator", "Horizontal"): "水平",
         ("Operator", "Vertical"): "垂直",
         ("*", "UV Space"): "UV 空间",
@@ -29,8 +29,11 @@ translation_dict = {
         ("*", "Keep Pin"): "保持钉住",
         ("*", "Keep Seam"): "保持缝线",
         ("*", "Keep Boundary"): "保持边界",
+        ("*", "Original Position"): "原始位置",
+        ("*", "Mirror U/V"): "镜像 U/V",
+        ("*", "Refers to the Mirror setting of the Mirror Modifier"): "参考镜像修改器的镜像设置",
 
-        # 展开
+        # Unwrap
         ("Operator", "UV Unwrap"): "UV 展开",
         ("*", "Position and Scale"): "位置和缩放",
         ("*", "Keep Position, Scale, Angle"): "保持位置、缩放和角度",
@@ -42,9 +45,11 @@ translation_dict = {
         ("*", "Unwrap boundary to rectangle using four corners or a range as reference"): "使用四个角或范围作为参考将边界展开为矩形",
         ("Operator", "Gridify"): "网格化",
         ("*", "Align UVs of a quadrangle in a grid"): "将四边形的UV在网格中对齐",
-        ("*", "Projection Unwrap"): "投影展开",
+        ("Operator", "Projection Unwrap"): "投影展开",
         ("*", "Unwrap linked faces"): "展开连接的面",
         ("*", "Unwrap by linked mesh"): "按链接的网格展开",
+        ("Operator", "Unwrap Virtual Mirror"): "镜像展开",
+        ("*", "Unwrap as if the mirror modifier is applied"): "如同应用了镜像修改器一样展开",
 
         ("Operator", "Mark Seam by Angle"): "按角度标记缝线",
         ("Operator", "Mark Seam by Boundary"): "按边界标记缝线",
@@ -56,7 +61,7 @@ translation_dict = {
         ("*", "Clear Original Seam"): "清除原始缝线",
         ("*", "Rear"): "背面",
 
-        # 对齐
+        # Align
         ("*", "Fixed Mode"): "固定模式",
         ("*", "Island Mode"): "岛屿模式",
         ("*", "Edge Mode"): "边缘模式",
@@ -81,7 +86,7 @@ translation_dict = {
         ("Operator", "Stretch Island"): "拉伸岛屿",
         ("Operator", "Stretch"): "拉伸",
 
-        # 顶点
+        # Vertex
         ("Operator", "Distribute UVs"): "分布 UV",
         ("*", "Island Mode: Distribute islands evenly spaced\nUV Group: evenly spaced or based on geometry"): "均匀分布UV或基于几何形状分布",
         ("Operator", "Circular"): "圆形",
@@ -89,7 +94,7 @@ translation_dict = {
         ("Operator", "Offset"): "偏移",
         ("*", "Expand/Shrink UV Borders"): "扩展/缩小 UV 边界",
 
-        # 岛屿
+        # Island
         ("Operator", "Sort Islands"): "排序岛屿",
         ("*", "Rearrange islands based on coordinates in 3D space"): "根据3D空间中的坐标重新排序岛屿",
         ("*", "Sort Method"): "排序方法",
@@ -103,7 +108,7 @@ translation_dict = {
         ("Operator", "Average Island Scales"): "平均岛屿大小",
         ("Operator", "Average Scales"): "平均大小",
 
-        # 组
+        # Group
         ("Operator", "Grid Sort"): "网格排序",
         ("*", "Gridding island based on coordinates in 3D space"): "根据3D空间中的坐标对岛屿进行网格排序",
         ("*", "Grid Threshold"): "网格阈值",
@@ -113,6 +118,7 @@ translation_dict = {
         ("*", "Align Type"): "对齐类型",
         ("*", "Align by group"): "按组对齐",
         ("*", "Group Margin"): "组间距",
+        ("*", "Fixed Width"): "固定宽度",
 
         ("Operator", "Unfoldify"): "展开图",
         ("*", "Arrange islands vertically and horizontally based on their positional relationships in 3D space"): "根据岛屿在 3D 空间中的位置关系，垂直和水平排列岛屿",
@@ -131,12 +137,17 @@ translation_dict = {
         ("Operator", "Front Hair"): "前发",
         ("Operator", "Back Hair"): "后发",
 
-        # 对称
+        # Symmetrize
         ("*", "Symmetrize based on 3D space"): "基于3D空间对称化UV",
         ("Operator", "Snap"): "对齐",
         ("*", "Symmetrize based on UV space"): "基于UV空间对称化",
+        ("*", "Stack Mirror"): "折叠镜像",
+        ("*", "Mirror along the axis and stack the UVs"): "沿轴镜像并堆叠UV",
+        ("*", "Fast Mode"): "快速模式",
+        ("*", "Performs a simplified search for mirrored UVs\n(may not work correctly if multiple faces are too close together in 3D space"): "执行简化的镜像UV搜索\n(如果多个面在3D空间中太近，可能无法正确工作",
+        ("*", "Does not reference the orientation of the face in 3D space"): "不参考3D空间中面的方向",
 
-        # 选择
+        # Select
         ("Operator", "Select Half"): "选择一半",
         ("*", "Select UVs on one side of the axis in 3D space"): "选择3D空间中轴的一侧的UV",
         ("Operator", "Shared Vert"): "共享顶点",
@@ -152,7 +163,7 @@ translation_dict = {
         ("Operator", "Select Edge Loops"): "选择边缘环",
         ("*", "Select only vertical or horizontal edges"): "仅选择垂直或水平边缘",
 
-        # 工具
+        # Utils
         ("Operator", "Checker Map"): "棋盘格贴图",
         ("Operator", "Clear Checker Map"): "清除棋盘格贴图",
         ("*", "Set the checker map (using Geometry Nodes)"): "设置棋盘格贴图(使用几何节点)",

@@ -2,8 +2,7 @@ import bpy
 import bmesh
 from bpy.props import BoolProperty, FloatProperty
 from mathutils import Vector
-from ..classes.operator import Mio3UVOperator
-from ..classes.uv import UVIslandManager
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_unfoldify(Mio3UVOperator):
@@ -20,24 +19,24 @@ class MIO3UV_OT_unfoldify(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
 
         if self.align_rotation:
             bpy.ops.uv.align_rotation(method="GEOMETRY", axis="Z")
 
+        self.objects = self.get_selected_objects(context)
+
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-            island_manager = UVIslandManager(self.objects, mesh_link_uv=True)
-        else:
-            island_manager = UVIslandManager(self.objects, extend=True)
+
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
+        if not island_manager.islands:
+            return {"CANCELLED"}
 
         island_manager.set_orientation_mode("LOCAL")
 
         groups = []
-        for obj in self.objects:
-            islands = island_manager.islands_by_object[obj]
-            bm = island_manager.bmesh_dict[obj]
+        for colle in island_manager.collections:
+            islands = colle.islands
+            bm = colle.bm
             if islands:
                 if self.group:
                     face_groups = self.find_groups(bm)
@@ -74,10 +73,7 @@ class MIO3UV_OT_unfoldify(Mio3UVOperator):
                 island.move(offset)
             current_u += bounds["width"] + self.offset_group
 
-        island_manager.update_uvmeshes()
-
-        if use_uv_select_sync:
-            island_manager.restore_vertex_selection()
+        island_manager.update_uvmeshes(True)
 
         self.print_time()
         return {"FINISHED"}
@@ -287,14 +283,9 @@ class MIO3UV_OT_unfoldify(Mio3UVOperator):
             return sorted(islands, key=lambda i: (-i.center_3d_local.z, -i.center_3d_local.y))
 
 
-classes = [MIO3UV_OT_unfoldify]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_unfoldify)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_unfoldify)

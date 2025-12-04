@@ -60,7 +60,7 @@ class StackSimilarIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, has_selected_faces=True, islands_with_hidden_faces=False):
                 current_bbox = get_bbox(uv, island)
                 current_bbox_center = calc_bbox_center(current_bbox)
                 current_bbox_size = get_bbox_size(current_bbox)
@@ -83,7 +83,7 @@ class StackSimilarIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
             seams = objects_seams[ob]
-            for island in get_islands(uv, bm, seams, islands_with_hidden_faces=False):
+            for island in get_islands(bm, seams, islands_with_hidden_faces=False):
                 current_island_params = collect_island_params(uv, island)
                 target_island = islands_params.get(current_island_params)
                 if target_island:
@@ -113,6 +113,6 @@ class StackSimilarIslands(Operator):
                                     else:
                                         v = l[uv].uv[1] - offset_v
                                     l[uv].uv = (u, v)
-                                    l[uv].select = True
+                                    l.uv_select_edge_set(True)
             bmesh.update_edit_mesh(me)
         return {'FINISHED'}

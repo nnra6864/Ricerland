@@ -29,6 +29,9 @@ translation_dict = {
         ("*", "Keep Pin"): "ピンを維持",
         ("*", "Keep Seam"): "シームを維持",
         ("*", "Keep Boundary"): "境界を維持",
+        ("*", "Original Position"): "元の位置",
+        ("*", "Mirror U/V"): "ミラー U/V",
+        ("*", "Refers to the Mirror setting of the Mirror Modifier"): "ミラーモディファイアのミラーオフセット設定を参照します",
 
         # Unwrap
         ("Operator", "UV Unwrap"): "UV展開",
@@ -42,9 +45,11 @@ translation_dict = {
         ("*", "Unwrap boundary to rectangle using four corners or a range as reference"): "基準のコーナー4点または範囲を選択し境界が矩形になるように展開する",
         ("Operator", "Gridify"): "グリッド",
         ("*", "Align UVs of a quadrangle in a grid"): "四角形のUVをグリッド状に整列させる",
-        ("*", "Projection Unwrap"): "投影展開",
+        ("Operator", "Projection Unwrap"): "投影展開",
         ("*", "Unwrap linked faces"): "リンク面を展開",
         ("*", "Unwrap by linked mesh"): "メッシュごとに投影",
+        ("Operator", "Unwrap Virtual Mirror"): "仮想ミラー展開",
+        ("*", "Unwrap as if the mirror modifier is applied"): "ミラーモディファイアを適用してあるように展開する",
 
         ("Operator", "Mark Seam by Angle"): "角度でシームを設定",
         ("Operator", "Mark Seam by Boundary"): "選択境界にシームを設定",
@@ -113,8 +118,9 @@ translation_dict = {
         ("*", "Align Type"): "整列タイプ",
         ("*", "Align by group"): "グループごとに整列",
         ("*", "Group Margin"): "グループの間隔",
+        ("*", "Fixed Width"): "固定幅",
 
-        ("Operator", "Unfoldify"): "展開図レイアウト",
+        ("Operator", "Unfoldify"): "展開配置",
         ("*", "Arrange islands vertically and horizontally based on their positional relationships in 3D space"): "3D空間の位置関係に基づきアイランドを配置します",
         ("*", "Group Rearrange"): "グループ化して再配置",
         ("*", "Group by Linked Faces"): "接続した面でグループ化",
@@ -135,6 +141,11 @@ translation_dict = {
         ("*", "Symmetrize based on 3D space"): "3D空間の対称性に基づきUVを対称化します",
         ("Operator", "Snap"): "スナップ",
         ("*", "Symmetrize based on UV space"): "UV空間での対称位置にスナップします",
+        ("*", "Stack Mirror"): "折り返して重ねる",
+        ("*", "Mirror along the axis and stack the UVs"): "軸に沿ってミラーリングしUVを重ねます",
+        ("*", "Fast Mode"): "高速モード",
+        ("*", "Performs a simplified search for mirrored UVs\n(may not work correctly if multiple faces are too close together in 3D space"): "ミラーUVを簡易的に検索します\n3D空間で複数の面が近すぎると正しく検索できないことがあります",
+        ("*", "Does not reference the orientation of the face in 3D space"): "3D空間の面の方向を参照しません",
 
         # Select
         ("Operator", "Select Half"): "半分を選択",

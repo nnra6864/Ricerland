@@ -1,8 +1,7 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty
-from ..classes.uv import UVIslandManager
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVIslandManager, Mio3UVOperator
 
 
 class MIO3UV_OT_normalize(Mio3UVOperator):
@@ -17,12 +16,9 @@ class MIO3UV_OT_normalize(Mio3UVOperator):
     def execute(self, context):
         self.start_time()
         self.objects = self.get_selected_objects(context)
-
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
 
-        island_manager = UVIslandManager(self.objects, extend=False)
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, extend=False)
 
         if self.individual:
             for island in island_manager.islands:
@@ -106,16 +102,10 @@ class MIO3UV_OT_normalize(Mio3UVOperator):
         udim_y = tile_v + offset_vector.y
         return Vector((udim_x, udim_y))
 
-classes = [
-    MIO3UV_OT_normalize,
-]
-
 
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_normalize)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_normalize)

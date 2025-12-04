@@ -5,13 +5,13 @@ import sys
 
 
 class RunTests(bpy.types.Operator):
-    bl_idname = "texel_density.run_tests"
+    bl_idname = "object.texel_density_run_tests"
     bl_label = "Run Texel Density Tests"
     bl_description = "Run all Texel Density tests"
 
     def execute(self, context):
         try:
-            addon_name = __name__.split('.')[0]
+            addon_name = __package__
             tests_pkg_name = f"{addon_name}.tests"
             tests_pkg = importlib.import_module(tests_pkg_name)
 

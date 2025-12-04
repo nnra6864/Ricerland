@@ -29,6 +29,8 @@ STRAIGHT_OVER_BG_VEC = '~yPL Straight Over Vector Background Mix'
 STRAIGHT_OVER_HEIGHT_MIX = '~yPL Straight Over Height Mix'
 STRAIGHT_OVER_HEIGHT_ADD = '~yPL Straight Over Height Add'
 
+STRAIGHT_OVER_PAIRED_CHILD = '~yPL Straight Over Paired Child Mix'
+
 #STRAIGHT_OVER_BG_RAMP = '~yPL Straight Over Background Mix Ramp'
 
 SPREAD_ALPHA = '~yPL Spread Alpha'
@@ -61,6 +63,7 @@ RAMP_FLIP = '~yPL Ramp Flip'
 RAMP_FLIP_BLEND = '~yPL Ramp Flip Blend'
 RAMP_FLIP_MIX_BLEND = '~yPL Ramp Flip Mix Blend'
 RAMP_FLIP_STRAIGHT_OVER_BLEND = '~yPL Ramp Flip Straight Over Blend'
+RAMP_FLIP_STRAIGHT_OVER_PAIRED_CHILD_BLEND = '~yPL Ramp Flip Straight Over Paired Child Blend'
 
 VECTOR_MIX ='~yPL Vector Mix'
 #INVERTED_MULTIPLIER ='~yPL Inverted Multiplier'
@@ -153,6 +156,8 @@ SMOOTH_PREFIX = '~yPL Smooth '
 # Nodes that require Blender 2.81 at minimum
 EDGE_DETECT = '~yPL Edge Detect'
 EDGE_DETECT_CUSTOM_NORMAL = '~yPL Edge Detect Custom Normal'
+EDGE_DETECT_DOT = '~yPL Edge Detect Dot'
+EDGE_DETECT_CUSTOM_NORMAL_DOT = '~yPL Edge Detect Custom Normal Dot'
 
 # Legacy nodes for Blender 2.79
 FLIP_BACKFACE_NORMAL_LEGACY = '~yPL Flip Backface Normal Legacy'
@@ -163,6 +168,7 @@ ENGINE_FILTER_LEGACY = '~yPL Engine Filter Legacy'
 
 TB_DELTA_CALC = '~yPL Transition Bump Delta Calculation'
 CH_MAX_HEIGHT_CALC = '~yPL Layer Channel Max Height'
+CH_MAX_HEIGHT_ADD_CALC = '~yPL Layer Channel Max Height Add'
 CH_MAX_HEIGHT_TB_CALC = '~yPL Layer Channel Max Height with Transition Bump'
 CH_MAX_HEIGHT_TB_ADD_CALC = '~yPL Layer Channel Max Height with Transition Bump Add'
 CH_MAX_HEIGHT_TBC_CALC = '~yPL Layer Channel Max Height with Transition Bump Crease'
@@ -224,6 +230,91 @@ channel_custom_icon_dict = {
     'NORMAL' : 'vector_channel',
 }
 
+icon_synonyms = {
+    'mask' : 'CLIPUV_DEHLT',
+    'bake' : 'OUTPUT',
+    'image' : 'IMAGE_DATA',
+    'background' : 'IMAGE_RGB_ALPHA',
+    'backface' : 'ORIENTATION_NORMAL',
+    'vertex_color' : 'GROUP_VCOL',
+    'blend' : 'IMAGE_ZDEPTH',
+    'close' : 'CANCEL',
+    'mask_off' : 'CHECKBOX_DEHLT',
+    'edge_detect' : 'MOD_WIREFRAME',
+    'group' : 'FILE_FOLDER',
+    'hemi' : 'LIGHT',
+    'input' : 'INFO',
+    'object_index' : 'OBJECT_DATA',
+    #'r' : 'COLOR_RED', NOTE: There's no alpha icon in native blender, so it's better to keep using custom icon for consistency
+    #'g' : 'COLOR_GREEN',
+    #'b' : 'COLOR_BLUE',
+    'rename' : 'GREASEPENCIL',
+    'rgb_channel' : 'NODE_SOCKET_RGBA',
+    'value_channel' : 'NODE_SOCKET_FLOAT',
+    'vector_channel' : 'NODE_SOCKET_VECTOR',
+}
+
+icon_synonyms_27x = {
+    #'mask' : 'MOD_MASK', # NOTE: The built in mask icon in Blender 2.7x has too many gradients
+    'bake' : 'RENDER_STILL',
+    'image' : 'IMAGE_DATA',
+    'background' : 'IMAGE_RGB',
+    'vertex_color' : 'GROUP_VCOL',
+    'blend' : 'IMAGE_ZDEPTH',
+    'close' : 'CANCEL',
+    'group' : 'FILE_FOLDER',
+    'hemi' : 'LAMP',
+    'input' : 'INFO',
+    'object_index' : 'OBJECT_DATA',
+    'rename' : 'GREASEPENCIL',
+}
+
+def get_icon(icon_name='', default_icon='QUESTION'):
+
+    # Use global icon dictionary when available for optimization
+    if icon_name in icon_id_dict:
+        return icon_id_dict[icon_name]
+
+    ypup = get_user_preferences()
+
+    # Get default blender icons
+    icons = bpy.types.UILayout.bl_rna.functions["prop"].parameters["icon"].enum_items
+
+    # Default icon is QUESTION
+    default_value = icons[default_icon].value
+    icon_value = default_value
+
+    if ypup.icons == 'DEFAULT':
+
+        # Check icon synonyms
+        syname = ''
+        if not is_bl_newer_than(2, 80):
+            if icon_name in icon_synonyms_27x:
+                syname = icon_synonyms_27x[icon_name]
+        else:
+            if icon_name in icon_synonyms:
+                syname = icon_synonyms[icon_name]
+
+        if syname in icons:
+            icon_value = icons[syname].value
+
+        if icon_value == default_value:
+
+            # Check forced uppercase icon name
+            upper_name = icon_name.upper()
+            if upper_name in icons:
+                icon_value = icons[upper_name].value
+
+    # Get from custom icons
+    if icon_value == default_value and icon_name in custom_icons:
+        icon_value = custom_icons[icon_name].icon_id
+
+    # Set icon value to global dictionary for optimization
+    if icon_name not in icon_id_dict:
+        icon_id_dict[icon_name] = icon_value
+
+    return icon_value
+
 def get_icon_folder():
     if not is_bl_newer_than(2, 80):
         icon_set = 'legacy'
@@ -240,6 +331,10 @@ def get_icon_folder():
     return get_addon_filepath() + 'icons' + os.sep + icon_set.lower() + os.sep
 
 def load_custom_icons():
+    # For icon id getter optimization
+    global icon_id_dict
+    icon_id_dict = {}
+
     import bpy.utils.previews
     # Custom Icon
     if not hasattr(bpy.utils, 'previews'): return
@@ -257,9 +352,6 @@ def unload_custom_icons():
     if hasattr(bpy.utils, 'previews'):
         bpy.utils.previews.remove(custom_icons)
         custom_icons = None
-
-def get_icon(custom_icon_name):
-    return custom_icons[custom_icon_name].icon_id
 
 def check_uv_difference_to_main_uv(entity):
     yp = entity.id_data.yp

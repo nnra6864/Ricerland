@@ -173,7 +173,7 @@ def draw_callback_px(_, __):
 # Assign of Checker Material
 class CheckerAssign(bpy.types.Operator):
 	"""Assign of checker material"""
-	bl_idname = "texel_density.material_assign"
+	bl_idname = "object.texel_density_material_assign"
 	bl_label = "Assign Checker Material"
 	bl_options = {'REGISTER', 'UNDO'}
 
@@ -182,6 +182,10 @@ class CheckerAssign(bpy.types.Operator):
 		td = context.scene.td
 		start_mode = context.object.mode
 		start_active_obj = context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		need_select_again_obj = context.selected_objects
 		start_selected_obj = context.objects_in_mode if start_mode == 'EDIT' else context.selected_objects
 
@@ -306,7 +310,7 @@ class CheckerAssign(bpy.types.Operator):
 # Restore Real Materials
 class CheckerRestore(bpy.types.Operator):
 	"""Restores original materials saved before applying the checker material"""
-	bl_idname = "texel_density.material_restore"
+	bl_idname = "object.texel_density_material_restore"
 	bl_label = "Restore Materials"
 	bl_options = {'REGISTER'}
 
@@ -314,6 +318,10 @@ class CheckerRestore(bpy.types.Operator):
 		start_time = datetime.now()
 		start_mode = context.object.mode
 		start_active_obj = context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		need_select_again_obj = context.selected_objects
 		start_selected_obj = context.objects_in_mode if start_mode == 'EDIT' else context.selected_objects
 
@@ -370,13 +378,18 @@ class CheckerRestore(bpy.types.Operator):
 # Clear Saved Real Materials assignment from Objects
 class ClearSavedMaterials(bpy.types.Operator):
 	"""Clear original materials assignment saved before applying the checker material"""
-	bl_idname = "texel_density.material_clear"
+	bl_idname = "object.texel_density_material_clear"
 	bl_label = "Clear Stored Materials"
 	bl_options = {'REGISTER', 'UNDO'}
 
 	def execute(self, context):
 		start_time = datetime.now()
 		start_mode = context.object.mode
+		start_active_obj = bpy.context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		start_selected_obj = context.objects_in_mode if start_mode == 'EDIT' else context.selected_objects
 
 		bpy.ops.object.mode_set(mode='OBJECT')
@@ -395,7 +408,7 @@ class ClearSavedMaterials(bpy.types.Operator):
 # Bake TD to VC
 class BakeTDToVC(bpy.types.Operator):
 	"""Visualize TD/Islands/UV with vertex color"""
-	bl_idname = "texel_density.vc_bake"
+	bl_idname = "object.texel_density_vc_bake"
 	bl_label = "Bake TD to Vertex Color"
 	bl_options = {'REGISTER', 'UNDO'}
 
@@ -404,6 +417,10 @@ class BakeTDToVC(bpy.types.Operator):
 		td = context.scene.td
 		version = bpy.app.version
 		start_active_obj = context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		start_mode = context.object.mode
 		need_select_again_obj = context.selected_objects
 		start_selected_obj = context.objects_in_mode if start_mode == 'EDIT' else context.selected_objects
@@ -620,7 +637,7 @@ class BakeTDToVC(bpy.types.Operator):
 # Clear Baked TD or UV area form VC
 class ClearTDFromVC(bpy.types.Operator):
 	"""Clear baked values from vertex colors"""
-	bl_idname = "texel_density.vc_clear"
+	bl_idname = "object.texel_density_vc_clear"
 	bl_label = "Clear TD Vertex Colors"
 	bl_options = {'REGISTER', 'UNDO'}
 
@@ -629,6 +646,10 @@ class ClearTDFromVC(bpy.types.Operator):
 		version = bpy.app.version
 		start_mode = context.object.mode
 		start_active_obj = context.active_object
+
+		if len(bpy.context.selected_objects) == 0:
+			start_active_obj.select_set(True)
+
 		need_select_again_obj = context.selected_objects
 		start_selected_obj = context.objects_in_mode if start_mode == 'EDIT' else context.selected_objects
 

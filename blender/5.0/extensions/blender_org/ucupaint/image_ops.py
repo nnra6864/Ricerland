@@ -4,7 +4,7 @@ from bpy.props import *
 from bpy_extras.io_utils import ExportHelper
 from .common import *
 import time
-from . import UDIM, subtree
+from . import UDIM, subtree, BaseOperator
 
 def preserve_float_color_hack_before_saving(image):
     if not image.is_float or not is_bl_newer_than(2, 80): return
@@ -248,7 +248,7 @@ def create_temp_scene():
 
 def save_pack_all(yp):
 
-    images = get_yp_images(yp, get_baked_channels=True, check_overlay_normal=True)
+    images = get_yp_images(yp, get_baked_channels=True) #, check_overlay_normal=True)
     packed_float_images = []
 
     # Temporary scene for some saving hack
@@ -259,12 +259,20 @@ def save_pack_all(yp):
     for image in images:
         if not image: continue
 
-        # There's a need to check if there's empty tile to make sure the image will be packed correctly
-        # NOTE: There's actually no need to do this for Blender 4.1 onward,
-        # but empty tile will still be removed just in case it will cause unexpected problem
         force_pack = False
-        if UDIM.is_udim_supported() and image.source == 'TILED' and UDIM.remove_empty_tiles(image) and UDIM.is_using_temp_dir(image):
-            force_pack = True
+
+        if UDIM.is_udim_supported() and image.source == 'TILED' and UDIM.is_using_temp_dir(image):
+
+            # There's a need to check if there's empty tile to make sure the image will be packed correctly
+            # NOTE: There's actually no need to do this for Blender 4.1 onward,
+            # but empty tile will still be removed just in case it will cause unexpected problem
+            if UDIM.remove_empty_tiles(image):
+                force_pack = True
+
+            # Check if UDIM image mistakenly lost the packed flag
+            path = bpy.path.abspath(image.filepath)
+            if not image.packed_file and not os.path.exists(path):
+                force_pack = True
 
         if not image.is_dirty and not force_pack: continue
         T = time.time()
@@ -506,7 +514,7 @@ class YPackImage(bpy.types.Operator):
                     pack_image(baked_vdisp.image)
                     baked_vdisp.image.filepath = ''
 
-                if not is_overlay_normal_empty(yp):
+                if not is_overlay_normal_empty(ch):
                     baked_normal_overlay = tree.nodes.get(ch.baked_normal_overlay)
                     if baked_normal_overlay and baked_normal_overlay.image and not baked_normal_overlay.image.packed_file:
                         pack_image(baked_normal_overlay.image)
@@ -775,7 +783,7 @@ class YSaveAllBakedImages(bpy.types.Operator):
                     images.append(baked_vdisp.image)
                     baked_vdisp_image = baked_vdisp.image
 
-                if not is_overlay_normal_empty(yp):
+                if not is_overlay_normal_empty(ch):
                     baked_normal_overlay = tree.nodes.get(ch.baked_normal_overlay)
                     if baked_normal_overlay and baked_normal_overlay.image:
                         images.append(baked_normal_overlay.image)
@@ -908,7 +916,7 @@ def get_file_format_items():
 
     return items
 
-class YSaveAsImage(bpy.types.Operator, ExportHelper):
+class YSaveAsImage(bpy.types.Operator, ExportHelper, BaseOperator.FileSelectOptions):
     """Save As Image"""
     bl_idname = "wm.y_save_as_image"
     bl_label = "Save As Image"
@@ -919,20 +927,6 @@ class YSaveAsImage(bpy.types.Operator, ExportHelper):
         items = get_file_format_items(),
         default = 'PNG',
         update = update_save_as_file_format
-    )
-
-    # File browser filter
-    filter_folder : BoolProperty(default=True, options={'HIDDEN', 'SKIP_SAVE'})
-    filter_image : BoolProperty(default=True, options={'HIDDEN', 'SKIP_SAVE'})
-    display_type : EnumProperty(
-        items = (
-            ('FILE_DEFAULTDISPLAY', 'Default', ''),
-            ('FILE_SHORTDISLPAY', 'Short List', ''),
-            ('FILE_LONGDISPLAY', 'Long List', ''),
-            ('FILE_IMGDISPLAY', 'Thumbnails', '')
-        ),
-        default = 'FILE_IMGDISPLAY',
-        options = {'HIDDEN', 'SKIP_SAVE'}
     )
 
     copy : BoolProperty(

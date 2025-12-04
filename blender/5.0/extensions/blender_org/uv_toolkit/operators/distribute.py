@@ -247,7 +247,7 @@ class Distribute(Operator):
             for f in bm.faces:
                 if f.select:
                     for l in f.loops:
-                        if l[uv].select:
+                        if l.uv_select_edge:
                             loops.add(l)
 
             uv_edge_loops = get_sorted_uv_edge_loops(uv, loops)

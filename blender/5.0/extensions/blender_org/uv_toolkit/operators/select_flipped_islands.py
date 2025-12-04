@@ -47,11 +47,11 @@ class SelectFlippedIslands(Operator):
             bm = bmesh.from_edit_mesh(me)
             uv = bm.loops.layers.uv.verify()
 
-            for island in get_islands(uv, bm, seams):
+            for island in get_islands(bm, seams):
                 if self.is_flipped_island(uv, island):
                     for f in island:
                         for l in f.loops:
-                            l[uv].select = True
+                            l.uv_select_edge_set(True)
 
         scene.tool_settings.uv_select_mode = 'VERTEX'
         scene.tool_settings.uv_select_mode = current_uv_select_mode

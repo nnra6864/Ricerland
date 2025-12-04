@@ -65,14 +65,14 @@ class StraightenIsland(Operator):
                 if l.edge.seam:
                     initial_seams.append(l.edge)
 
-                if l[uv].select:
+                if l.uv_select_edge:
                     initial_selection.add(l)
                 l[uv].pin_uv = True
 
-        for island in get_islands(uv, bm, seams, has_selected_faces=True):
+        for island in get_islands(bm, seams, has_selected_faces=True):
             for f in island:
                 for l in f.loops:
-                    if l[uv].select is False:
+                    if l.uv_select_edge is False:
                         l[uv].pin_uv = False
 
         if self.pin:
@@ -81,7 +81,7 @@ class StraightenIsland(Operator):
 
         for f in bm.faces:
             for l in f.loops:
-                l[uv].select = True
+                l.uv_select_edge_set(True)
 
         bpy.ops.uv.seams_from_islands(mark_seams=True)
         bpy.ops.uv.unwrap(method=self.method,
@@ -106,7 +106,7 @@ class StraightenIsland(Operator):
             for l in f.loops:
                 if l in initial_selection:
                     continue
-                l[uv].select = False
+                l.uv_select_edge_set(False)
 
         scene.tool_settings.uv_select_mode = current_uv_select_mode
 

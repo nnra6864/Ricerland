@@ -5,6 +5,7 @@ from . import translation
 
 from .operators import unwrap
 from .operators import unwrap_project
+from .operators import unwrap_mirrored
 from .operators import straight
 from .operators import rectify
 from .operators import gridify
@@ -18,6 +19,7 @@ from .operators import orient
 from .operators import select
 
 from .operators import align
+from .operators import align_edge
 from .operators import align_seam
 from .operators import circle
 from .operators import stretch
@@ -32,6 +34,7 @@ from .operators import stack
 from .operators import shuffle
 
 from .operators import symmetrize
+from .operators import symmetrize_snap
 from .operators import unfoldify
 from .operators import body_preset
 
@@ -44,23 +47,13 @@ from .ui import ui_view
 from .ui import ui_menu
 
 
-bl_info = {
-    "name": "Mio3 UV",
-    "author": "mio",
-    "version": (1, 5, 0),
-    "blender": (4, 2, 0),
-    "location": "UV Image Editor > Sidebar > Mio3",
-    "description": "UV Edit Assistant Tools",
-    "category": "UV",
-}
-
-
 modules = [
     preferences,
     translation,
     icons,
     unwrap,
     unwrap_project,
+    unwrap_mirrored,
     straight,
     rectify,
     gridify,
@@ -72,6 +65,7 @@ modules = [
     orient,
     select,
     align,
+    align_edge,
     align_seam,
     circle,
     stretch,
@@ -84,6 +78,7 @@ modules = [
     stack,
     shuffle,
     symmetrize,
+    symmetrize_snap,
     unfoldify,
     body_preset,
     view_padding,

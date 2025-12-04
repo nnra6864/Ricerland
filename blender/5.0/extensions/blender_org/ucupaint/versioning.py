@@ -7,7 +7,7 @@ from bpy.app.handlers import persistent
 from .node_arrangements import *
 from .node_connections import *
 from .input_outputs import *
-from . import Bake, ListItem, Modifier
+from . import Bake, ListItem, Modifier, Root, Layer
 
 def flip_tangent_sign():
     meshes = []
@@ -84,7 +84,7 @@ def remove_tangent_sign_vcols(objs=None):
         vcols = get_vertex_colors(ob)
         for vcol in reversed(vcols):
             if vcol.name.startswith(TANGENT_SIGN_PREFIX):
-                print('INFO:', 'Vertex color "' + vcol.name + '" in', ob.name, 'is deleted!')
+                print('INFO:', get_vertex_color_label(10)+'"' + vcol.name + '" in', ob.name, 'is deleted!')
                 vcols.remove(vcol)
 
 def update_tangent_process(tree, lib_name):
@@ -268,6 +268,17 @@ def update_yp_tree(tree):
                         if layer_tree:
                             vdisp_blend = layer_tree.nodes.get(height_ch.vdisp_blend)
                             if vdisp_blend: vdisp_blend.label = 'VDisp Blend'
+
+    # Version 2.4.0 has flexible layer modifier group nodes
+    if version_tuple(yp.version) < (2, 4, 0):
+        for layer in yp.layers:
+            if layer.mod_group != '':
+                mg = layer.mod_groups.add()
+                mg.name = layer.mod_group
+            
+            if layer.mod_group_1 != '':
+                mg = layer.mod_groups.add()
+                mg.name = layer.mod_group_1
 
     ## LATER UPDATE
     # NOTE: These updates probably can be run after the above
@@ -565,9 +576,11 @@ def update_yp_tree(tree):
     if version_tuple(yp.version) < (1, 2, 0):
         for layer in yp.layers:
             for mask in layer.masks:
+                # NOTE: Source input system changes
                 # Voronoi and noise default is using alpha/value input
-                if mask.type in {'VORONOI', 'NOISE'}:
-                    mask.source_input = 'ALPHA'
+                #if mask.type in {'VORONOI', 'NOISE'}:
+                #    mask.source_input = 'ALPHA'
+                pass
 
     # Version 1.2.4 has voronoi feature prop
     if version_tuple(yp.version) < (1, 2, 4):
@@ -710,15 +723,14 @@ def update_yp_tree(tree):
                     layer.expand_channels = False
 
                 # Transfer fcurve
-                if tree.animation_data and tree.animation_data.action:
-                    fcs = tree.animation_data.action.fcurves
-                    for fc in fcs:
-                        m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\]\.intensity_value', fc.data_path)
-                        if m:
-                            mlayer = yp.layers[int(m.group(1))]
-                            mch = mlayer.channels[int(m.group(2))]
-                            if mch != ch: continue
-                            fc.data_path = 'yp.layers[' + m.group(1) + '].intensity_value'
+                fcs = get_datablock_fcurves(tree)
+                for fc in fcs:
+                    m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\]\.intensity_value', fc.data_path)
+                    if m:
+                        mlayer = yp.layers[int(m.group(1))]
+                        mch = mlayer.channels[int(m.group(2))]
+                        if mch != ch: continue
+                        fc.data_path = 'yp.layers[' + m.group(1) + '].intensity_value'
 
         # Subdiv tweak is no longer used
         height_root_ch = get_root_height_channel(yp)
@@ -727,100 +739,99 @@ def update_yp_tree(tree):
             height_root_ch.height_tweak = height_root_ch.subdiv_tweak
 
         # Check for mapping actions
-        if tree.animation_data and tree.animation_data.action:
-            fcs = tree.animation_data.action.fcurves
-            new_fcs = []
-            for fc in fcs:
-                #print(fc.data_path)
+        fcs = get_datablock_fcurves(tree)
+        new_fcs = []
+        for fc in fcs:
+            #print(fc.data_path)
 
-                # New fcurve
-                nfc = None
+            # New fcurve
+            nfc = None
 
-                # Get entity
-                mlayer = re.match(r'yp\.layers\[(\d+)\]\.+', fc.data_path)
-                mmask = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.+', fc.data_path)
+            # Get entity
+            mlayer = re.match(r'yp\.layers\[(\d+)\]\.+', fc.data_path)
+            mmask = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.+', fc.data_path)
 
-                if mlayer: entity = yp.layers[int(mlayer.group(1))]
-                if mmask: entity = yp.layers[int(mmask.group(1))].masks[int(mmask.group(2))]
+            if mlayer: entity = yp.layers[int(mlayer.group(1))]
+            if mmask: entity = yp.layers[int(mmask.group(1))].masks[int(mmask.group(2))]
 
-                # Match data path
-                m1 = re.match(r'yp\.layers\[(\d+)\]\.translation', fc.data_path)
-                m2 = re.match(r'yp\.layers\[(\d+)\]\.rotation', fc.data_path)
-                m3 = re.match(r'yp\.layers\[(\d+)\]\.scale', fc.data_path)
-                m4 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.translation', fc.data_path)
-                m5 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.rotation', fc.data_path)
-                m6 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.scale', fc.data_path)
+            # Match data path
+            m1 = re.match(r'yp\.layers\[(\d+)\]\.translation', fc.data_path)
+            m2 = re.match(r'yp\.layers\[(\d+)\]\.rotation', fc.data_path)
+            m3 = re.match(r'yp\.layers\[(\d+)\]\.scale', fc.data_path)
+            m4 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.translation', fc.data_path)
+            m5 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.rotation', fc.data_path)
+            m6 = re.match(r'yp\.layers\[(\d+)\]\.masks\[(\d+)\]\.scale', fc.data_path)
 
-                # Mapping
-                if m1 or m2 or m3 or m4 or m5 or m6:
-                    mapping = get_entity_mapping(entity)
-                    parent_node = mapping.id_data
+            # Mapping
+            if m1 or m2 or m3 or m4 or m5 or m6:
+                mapping = get_entity_mapping(entity)
+                parent_node = mapping.id_data
 
-                    # Translation
-                    if m1 or m4:
-                        if is_bl_newer_than(2, 81):
-                            new_data_path = 'nodes["' + mapping.name + '"].inputs[1].default_value'
-                        else: new_data_path = 'nodes["' + mapping.name + '"].translation'
+                # Translation
+                if m1 or m4:
+                    if is_bl_newer_than(2, 81):
+                        new_data_path = 'nodes["' + mapping.name + '"].inputs[1].default_value'
+                    else: new_data_path = 'nodes["' + mapping.name + '"].translation'
 
-                    # Rotation
-                    elif m2 or m5:
-                        if is_bl_newer_than(2, 81):
-                            new_data_path = 'nodes["' + mapping.name + '"].inputs[2].default_value'
-                        else: new_data_path = 'nodes["' + mapping.name + '"].rotation'
+                # Rotation
+                elif m2 or m5:
+                    if is_bl_newer_than(2, 81):
+                        new_data_path = 'nodes["' + mapping.name + '"].inputs[2].default_value'
+                    else: new_data_path = 'nodes["' + mapping.name + '"].rotation'
 
-                    # Scale
-                    else: #elif m3 or m6:
-                        if is_bl_newer_than(2, 81):
-                            new_data_path = 'nodes["' + mapping.name + '"].inputs[3].default_value'
-                        else: new_data_path = 'nodes["' + mapping.name + '"].scale'
+                # Scale
+                else: #elif m3 or m6:
+                    if is_bl_newer_than(2, 81):
+                        new_data_path = 'nodes["' + mapping.name + '"].inputs[3].default_value'
+                    else: new_data_path = 'nodes["' + mapping.name + '"].scale'
 
-                    for i, kp in enumerate(fc.keyframe_points):
+                for i, kp in enumerate(fc.keyframe_points):
 
-                        # Set current frame and value
-                        #mapping.inputs[1].default_value[fc.array_index] = fc.evaluate(int(kp.co[0]))
-                        bpy.context.scene.frame_set(int(kp.co[0]))
-                        if m1 or m4: # Translation
-                            mapping.inputs[1].default_value[fc.array_index] = entity.translation[fc.array_index]
-                        elif m2 or m5: # Rotation
-                            mapping.inputs[2].default_value[fc.array_index] = entity.rotation[fc.array_index]
-                        elif m3 or m6: # Scale
-                            mapping.inputs[3].default_value[fc.array_index] = entity.scale[fc.array_index]
+                    # Set current frame and value
+                    #mapping.inputs[1].default_value[fc.array_index] = fc.evaluate(int(kp.co[0]))
+                    bpy.context.scene.frame_set(int(kp.co[0]))
+                    if m1 or m4: # Translation
+                        mapping.inputs[1].default_value[fc.array_index] = entity.translation[fc.array_index]
+                    elif m2 or m5: # Rotation
+                        mapping.inputs[2].default_value[fc.array_index] = entity.rotation[fc.array_index]
+                    elif m3 or m6: # Scale
+                        mapping.inputs[3].default_value[fc.array_index] = entity.scale[fc.array_index]
 
-                        # Insert keyframe
-                        parent_node.keyframe_insert(data_path=new_data_path, frame=int(kp.co[0]))
+                    # Insert keyframe
+                    parent_node.keyframe_insert(data_path=new_data_path, frame=int(kp.co[0]))
 
-                        # Get new fcurve
-                        if not nfc:
-                            nfc = [f for f in parent_node.animation_data.action.fcurves if f.data_path == new_data_path and f.array_index == fc.array_index][0]
+                    # Get new fcurve
+                    if not nfc:
+                        nfc = [f for f in get_datablock_fcurves(parent_node) if f.data_path == new_data_path and f.array_index == fc.array_index][0]
 
-                        # Get new keyframe point
-                        nkp = nfc.keyframe_points[i]
+                    # Get new keyframe point
+                    nkp = nfc.keyframe_points[i]
 
-                        # Copy keyframe props
-                        copy_id_props(kp, nkp)
+                    # Copy keyframe props
+                    copy_id_props(kp, nkp)
 
-                new_fcs.append(nfc)
+            new_fcs.append(nfc)
 
-            for i, fc in reversed(list(enumerate(fcs))):
+        for i, fc in reversed(list(enumerate(fcs))):
 
-                # Get new fcurve
-                nfc = new_fcs[i]
-                if not nfc: continue
+            # Get new fcurve
+            nfc = new_fcs[i]
+            if not nfc: continue
 
-                # Copy modifiers
-                for mod in fc.modifiers:
-                    nmod = nfc.modifiers.new(type=mod.type)
-                    copy_id_props(mod, nmod)
+            # Copy modifiers
+            for mod in fc.modifiers:
+                nmod = nfc.modifiers.new(type=mod.type)
+                copy_id_props(mod, nmod)
 
-                # Copy fcurve props
-                #copy_id_props(fc, nfc)
-                nfc.mute = fc.mute
-                nfc.hide = fc.hide
-                nfc.extrapolation = fc.extrapolation
-                nfc.lock = fc.lock
+            # Copy fcurve props
+            #copy_id_props(fc, nfc)
+            nfc.mute = fc.mute
+            nfc.hide = fc.hide
+            nfc.extrapolation = fc.extrapolation
+            nfc.lock = fc.lock
 
-                # Remove original fcurve
-                fcs.remove(fc)
+            # Remove original fcurve
+            fcs.remove(fc)
 
     # Version 2.1 has new flag for bake info
     if version_tuple(yp.version) < (2, 1, 0):
@@ -994,6 +1005,224 @@ def update_yp_tree(tree):
                     if height_ch.normal_map_type in {'BUMP_MAP', 'BUMP_NORMAL_MAP'} and not height_ch.write_height:
                         height = get_entity_prop_value(height_ch, 'bump_distance')
                         set_entity_prop_value(height_ch, 'bump_distance', height * 5)
+
+    # Version 2.3.5 has blur bake type, and no longer use get/set prop for Blender 5.0 compatibility
+    if version_tuple(yp.version) < (2, 3, 5):
+        images = get_yp_images(yp)
+
+        for i, image in enumerate(images):
+            bi = image.y_bake_info
+
+            if bi.is_baked_entity:
+                if bi.blur:
+                    bi.blur_type = 'NOISE'
+
+        # Update original name for channel
+        for ch in yp.channels:
+            ch.original_name = ch.name
+
+            if ch.bake_to_vcol_name == '':
+                ch.bake_to_vcol_name = 'Baked ' + ch.name
+
+        height_root_ch = get_root_height_channel(yp)
+        if height_root_ch:
+            for layer in yp.layers:
+                height_ch = get_height_channel(layer)
+                if height_ch:
+
+                    # Update to proper 'Add' max height calculation node
+                    if height_ch.normal_blend_type == 'OVERLAY' and height_ch.normal_map_type in {'BUMP_MAP', 'BUMP_NORMAL_MAP'}:
+                        check_all_layer_channel_io_and_nodes(layer, specific_ch=height_ch)
+                        reconnect_layer_nodes(layer)
+                        rearrange_layer_nodes(layer)
+
+                    # Transition bump distance now can do negative value, so reset the value by reenabling and enabling back
+                    if height_ch.enable_transition_bump:
+                        height_ch.enable_transition_bump = False
+                        height_ch.enable_transition_bump = True
+
+    # Version 2.4.0 has new alpha channel system and input systems
+    if version_tuple(yp.version) < (2, 4, 0):
+
+        # Get color channel pair for alpha channel
+        color_ch_name = ''
+        backface_mode = ''
+        alpha_socs = {}
+        alpha_soc_defaults = {}
+        background_values = {}
+        mats = get_materials_using_yp(yp)
+        for mat in mats:
+            alpha_socs[mat.name] = {}
+            alpha_soc_defaults[mat.name] = {}
+            yp_nodes = [node for node in mat.node_tree.nodes if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp]
+            for node in yp_nodes:
+                alpha_socs[mat.name][node.name] = []
+                for ch in yp.channels:
+
+                    if ch.enable_alpha:
+
+                        # Remember original connections
+                        inp = node.inputs.get(ch.name + io_suffix['ALPHA'])
+                        outp = node.outputs.get(ch.name + io_suffix['ALPHA'])
+
+                        if inp: 
+                            alpha_soc_defaults[mat.name][node.name] = background_values['Alpha'] = inp.default_value
+                        if outp:
+                            for link in outp.links:
+                                alpha_socs[mat.name][node.name].append(link.to_socket)
+
+                        ch.enable_alpha = False
+                        color_ch_name = ch.name
+                        backface_mode = ch.backface_mode
+
+                    if ch.type != 'NORMAL':
+                        inp = node.inputs.get(ch.name)
+                        if inp:
+                            val = inp.default_value
+                            if ch.type == 'RGB':
+                                val = Color((val[0], val[1], val[2]))
+                            background_values[ch.name] = val
+
+        if color_ch_name != '':
+
+            # Create alpha channel
+            alpha_ch = Root.create_new_yp_channel(tree, 'Alpha', 'VALUE', non_color=True)
+            alpha_ch.is_alpha = True
+            if backface_mode != '':
+                alpha_ch.backface_mode = backface_mode
+            yp.halt_update = True
+            alpha_ch.alpha_pair_name = color_ch_name
+            yp.halt_update = False
+
+            # Move index
+            color_ch = yp.channels.get(color_ch_name)
+            color_idx = get_channel_index(color_ch)
+            Root.set_channel_index(alpha_ch, color_idx+1)
+
+            # Repoint after creating new data
+            color_ch, alpha_ch = get_color_alpha_ch_pairs(yp)
+
+            check_all_channel_ios(yp, yp_node=None)
+
+            mats = get_materials_using_yp(yp)
+            for mat in mats:
+                for node in mat.node_tree.nodes:
+                    if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp:
+                        if mat.name in alpha_socs and node.name in alpha_socs[mat.name]:
+                            socs = alpha_socs[mat.name][node.name]
+                            outp = node.outputs.get(alpha_ch.name)
+                            # Connect to original sockets
+                            for soc in socs:
+                                mat.node_tree.links.new(outp, soc)
+
+                        if mat.name in alpha_soc_defaults and node.name in alpha_soc_defaults[mat.name]:
+                            inp = node.inputs.get(alpha_ch.name)
+                            inp.default_value = alpha_soc_defaults[mat.name][node.name]
+
+        # Convert background layer to solid color
+        for layer in yp.layers:
+            if layer.type == 'BACKGROUND':
+                Layer.replace_layer_type(layer, 'COLOR')
+                if 'Solid Color' in layer.name: layer.name = 'Hole'
+
+                source = get_layer_source(layer)
+                alpha_base = 1.0
+                if 'Alpha' in background_values:
+                    alpha_base = background_values['Alpha']
+                source.outputs[0].default_value = (alpha_base, alpha_base, alpha_base, 1.0)
+
+                layer_color_ch, layer_alpha_ch = get_layer_color_alpha_ch_pairs(layer)
+
+                # Enable the alpha channel
+                if layer_alpha_ch: layer_alpha_ch.enable = True
+
+                if alpha_base != 0.0:
+                    # Dealing with non-zero alpha base
+                    for i, ch in enumerate(layer.channels):
+                        if ch == layer_alpha_ch: continue
+                        root_ch = yp.channels[i]
+                        if root_ch.name in background_values:
+                            val = background_values[root_ch.name]
+                            ch.override = True
+                            if ch == layer_color_ch:
+                                ch.unpair_alpha = True
+
+                            if root_ch.type == 'RGB':
+                                set_entity_prop_value(ch, 'override_color', val)
+                            else: set_entity_prop_value(ch, 'override_value', val)
+                else:
+                    # Disable the color channel if the alpha value is 0.0
+                    layer_color_ch.enable = False
+
+                # Dealing with transition ramp
+                if layer_color_ch and layer_color_ch.enable_transition_ramp:
+                    layer_color_ch.enable = True
+                    layer_color_ch.unpair_alpha = True
+                    height_ch = get_height_channel(layer)
+                    if height_ch and height_ch.enable_transition_bump and not height_ch.transition_bump_flip:
+                        set_entity_prop_value(layer_alpha_ch, 'transition_bump_fac', 0.0)
+
+        # Version 2.4.0 has refactored layer channel input
+        for layer in yp.layers:
+
+            # Layer channels
+            for i, ch in enumerate(layer.channels):
+                root_ch = yp.channels[i]
+                if ch.layer_input == 'RGB':
+                    if layer.type == 'GABOR':
+                        ch.socket_input_name = 'Value'
+                    else: ch.socket_input_name = 'Color'
+                elif ch.layer_input == 'ALPHA':
+                    if is_bl_newer_than(2, 81) and layer.type == 'VORONOI':
+                        ch.socket_input_name = 'Distance'
+                    elif layer.type == 'GABOR':
+                        ch.socket_input_name = 'Phase'
+                    elif layer.type in {'IMAGE', 'VCOL'}:
+                        ch.socket_input_name = 'Alpha'
+                    else: ch.socket_input_name = 'Factor'
+
+                # Apparently normal channel use the same input as the bump map in previous versions
+                if root_ch.type == 'NORMAL':
+                    ch.socket_input_1_name = ch.socket_input_name
+
+            # Masks
+            for mask in layer.masks:
+                if mask.source_input in {'RGB', 'R', 'G', 'B'}:
+                    if mask.type == 'GABOR':
+                        mask.socket_input_name = 'Value'
+                    else: mask.socket_input_name = 'Color'
+
+                    if mask.source_input in {'R', 'G', 'B'}:
+                        mask.swizzle_input_mode = mask.source_input
+
+                elif mask.source_input == 'ALPHA':
+                    if is_bl_newer_than(2, 81) and mask.type == 'VORONOI':
+                        mask.socket_input_name = 'Distance'
+                    elif mask.type == 'GABOR':
+                        mask.socket_input_name = 'Phase'
+                    elif mask.type in {'IMAGE', 'VCOL'}:
+                        mask.socket_input_name = 'Alpha'
+                    else: mask.socket_input_name = 'Factor'
+
+        # There can be the remains of mistakenly baked fake lighting layers/masks in previous versions
+        for layer in yp.layers:
+            ltree = get_tree(layer)
+            for n in ltree.nodes:
+                if n.type == 'TEX_IMAGE' and n.image and len(n.outputs[0].links) == 0 and 'Fake Lighting' in n.image.name and ' Temp' in n.image.name:
+                    print('INFO: Unused image named \''+n.image.name+'\' is removed!')
+                    simple_remove_node(ltree, n)
+
+    # Version 2.4.1 has fix for inbetween invert modifier mask
+    if version_tuple(yp.version) < (2, 4, 1):
+
+        # Vector sockect can be mistakenly connected to invert mask source input
+        for layer in yp.layers:
+            for mask in layer.masks:
+                if mask.type == 'MODIFIER' and mask.modifier_type == 'INVERT':
+                    mask_tree = get_mask_tree(mask)
+                    mask_source = mask_tree.nodes.get(mask.source)
+                    if mask_source and len(mask_source.inputs[0].links) > 0:
+                        mask_tree.links.remove(mask_source.inputs[0].links[0])
 
     # SECTION II: Updates based on the blender version
 
@@ -1620,6 +1849,26 @@ class YUpdateYPTrees(bpy.types.Operator):
         update_routine('')
         return {'FINISHED'}
 
+class YDisableLegacyAlpha(bpy.types.Operator):
+    bl_idname = "wm.y_disable_legacy_channel_alpha"
+    bl_label = "Disable Legacy Alpha"
+    bl_description = "Disable legacy channel's alpha"
+    bl_options = {'REGISTER', 'UNDO'}
+
+    @classmethod
+    def poll(cls, context):
+        return get_active_ypaint_node()
+
+    def execute(self, context):
+        node = get_active_ypaint_node()
+        yp = node.node_tree.yp
+
+        for ch in yp.channels:
+            if ch.enable_alpha:
+                ch.enable_alpha = False
+
+        return {'FINISHED'}
+
 class YUpdateRemoveSmoothBump(bpy.types.Operator):
     bl_idname = "wm.y_update_remove_smooth_bump"
     bl_label = "Remove Smooth Bump"
@@ -1662,11 +1911,12 @@ class YUpdateRemoveSmoothBump(bpy.types.Operator):
                     # Check if material use subsurface scattering
                     sss_enabled = False
                     outp = get_material_output(mat)
-                    bsdf = get_closest_bsdf_backward(outp, ['BSDF_PRINCIPLED'])
-                    if bsdf:
-                        inp = bsdf.inputs.get('Subsurface Weight') if is_bl_newer_than(4) else bsdf.inputs.get('Subsurface')
-                        if inp and (inp.default_value > 0.0 or len(inp.links) > 0):
-                            sss_enabled = True
+                    if outp:
+                        bsdf = get_closest_bsdf_backward(outp, ['BSDF_PRINCIPLED'])
+                        if bsdf:
+                            inp = bsdf.inputs.get('Subsurface Weight') if is_bl_newer_than(4) else bsdf.inputs.get('Subsurface')
+                            if inp and (inp.default_value > 0.0 or len(inp.links) > 0):
+                                sss_enabled = True
                 
                 for layer in yp.layers:
                     height_ch = get_height_channel(layer)
@@ -1696,6 +1946,7 @@ class YUpdateRemoveSmoothBump(bpy.types.Operator):
 
 def register():
     bpy.utils.register_class(YUpdateYPTrees)
+    bpy.utils.register_class(YDisableLegacyAlpha)
     bpy.utils.register_class(YUpdateRemoveSmoothBump)
 
     bpy.app.handlers.load_post.append(update_node_tree_libs)
@@ -1703,6 +1954,7 @@ def register():
 
 def unregister():
     bpy.utils.unregister_class(YUpdateYPTrees)
+    bpy.utils.unregister_class(YDisableLegacyAlpha)
     bpy.utils.unregister_class(YUpdateRemoveSmoothBump)
 
     bpy.app.handlers.load_post.remove(update_node_tree_libs)

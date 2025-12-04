@@ -17,7 +17,7 @@ class FindShatteredIslands(Operator):
         min=1,
         default=3
     )
-    
+
     pin: BoolProperty(
         name="Pin to Corner",
         description="Move and pin islands to the top-left corner within UV space\n(handy for testing your workflow under ideal conditions)",
@@ -53,11 +53,11 @@ class FindShatteredIslands(Operator):
                          face.select = True
                     for loop in face.loops:
                         if not use_uv_select_sync:
-                            loop[uv_layer].select = True
+                            loop.uv_select_edge_set(True)
                         if self.pin:
                             loop[uv_layer].uv = (0, 1)
                             loop[uv_layer].pin_uv = True
-            
+
             bmesh.update_edit_mesh(ob.data)
             bm.free()
         return {'FINISHED'}

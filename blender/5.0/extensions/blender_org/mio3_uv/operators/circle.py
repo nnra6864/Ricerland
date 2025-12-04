@@ -1,8 +1,7 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty
-from ..classes.uv import UVNodeManager, UVNodeGroup
-from ..classes.operator import Mio3UVOperator
+from ..classes import UVNodeManager, UVNodeGroup, Mio3UVOperator
 
 
 class MIO3UV_OT_circle(Mio3UVOperator):
@@ -26,12 +25,8 @@ class MIO3UV_OT_circle(Mio3UVOperator):
     def execute(self, context):
         self.start_time()
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
-            node_manager = UVNodeManager(self.objects, mode="VERT")
-        else:
-            node_manager = UVNodeManager(self.objects, mode="EDGE")
 
+        node_manager = UVNodeManager(self.objects, sync=use_uv_select_sync)
         if not node_manager.groups:
             return {"CANCELLED"}
 
@@ -39,7 +34,7 @@ class MIO3UV_OT_circle(Mio3UVOperator):
             base_group = node_manager.groups[0]
             all_nodes = {node for group in node_manager.groups for node in group.nodes}
             composite_group = UVNodeGroup(
-                nodes=all_nodes, obj=base_group.obj, bm=base_group.bm, uv_layer=base_group.uv_layer
+                nodes=all_nodes, obj=base_group.obj, bm=base_group.bm, uv_layer=base_group.uv_layer, mode="EDGE"
             )
             self.make_circular(composite_group)
             composite_group.update_uvs()
@@ -62,14 +57,9 @@ class MIO3UV_OT_circle(Mio3UVOperator):
                 node.uv = center + direction.normalized() * avg_radius
 
 
-classes = [MIO3UV_OT_circle]
-
-
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_circle)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_circle)

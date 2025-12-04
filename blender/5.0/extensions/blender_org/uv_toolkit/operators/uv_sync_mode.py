@@ -47,20 +47,16 @@ class UvSyncMode(Operator):
         for ob in context.objects_in_mode_unique_data:
             me = ob.data
             bm = bmesh.from_edit_mesh(me)
-
             uv_layer = bm.loops.layers.uv.verify()
-
             if uv_sync_enable:
                 for face in bm.faces:
                     for loop in face.loops:
-                        loop_uv = loop[uv_layer]
-                        if not loop_uv.select:
+                        if not loop.uv_select_edge:
                             face.select = False
 
                 for face in bm.faces:
                     for loop in face.loops:
-                        loop_uv = loop[uv_layer]
-                        if loop_uv.select:
+                        if loop.uv_select_edge:
                             loop.vert.select = True
 
                 for edge in bm.edges:
@@ -71,31 +67,28 @@ class UvSyncMode(Operator):
                     if vert_count == 2:
                         edge.select = True
 
+                bmesh.update_edit_mesh(me)
+                continue
+
+            for face in bm.faces:
+                for loop in face.loops:
+                    loop.uv_select_edge_set(False)
+
+            mesh_select_mode = context.tool_settings.mesh_select_mode[:]
+            if mesh_select_mode[2]:  # face
+                for face in bm.faces:
+                    if face.select:
+                        for loop in face.loops:
+                            if loop.vert.select:
+                                loop.uv_select_edge_set(True)
             else:
                 for face in bm.faces:
                     for loop in face.loops:
-                        loop_uv = loop[uv_layer]
-                        loop_uv.select = False
+                        if loop.vert.select:
+                            loop.uv_select_edge_set(True)
 
-                mesh_select_mode = context.tool_settings.mesh_select_mode[:]
-
-                if mesh_select_mode[2]:  # face
-                    for face in bm.faces:
-                        if face.select:
-                            for loop in face.loops:
-                                loop_uv = loop[uv_layer]
-                                if loop.vert.select:
-                                    loop_uv.select = True
-                else:
-                    for face in bm.faces:
-                        for loop in face.loops:
-                            loop_uv = loop[uv_layer]
-                            if loop.vert.select:
-                                loop_uv.select = True
-
-                for face in bm.faces:
-                    face.select = True
-
+            for face in bm.faces:
+                face.select = True
             bmesh.update_edit_mesh(me)
 
     def execute(self, context):

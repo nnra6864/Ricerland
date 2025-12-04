@@ -1,7 +1,7 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty, FloatProperty
-from ..classes.uv import UVIslandManager
+from ..classes import UVIslandManager, Mio3UVOperator
 from ..classes.operator import Mio3UVOperator
 
 
@@ -26,25 +26,16 @@ class MIO3UV_OT_offset(Mio3UVOperator):
         if context.tool_settings.uv_select_mode in {"FACE", "ISLAND"}:
             context.tool_settings.uv_select_mode = "VERTEX"
 
-        if not context.tool_settings.use_uv_select_sync:
-            bpy.ops.uv.mio3_select_boundary(
-                "INVOKE_DEFAULT",
-                use_mesh_boundary=self.use_mesh_boundary,
-                use_seam=self.use_seam,
-                use_uv_boundary=self.use_uv_boundary,
-            )
-
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
         if use_uv_select_sync:
-            self.sync_uv_from_mesh(context, self.objects)
             context.tool_settings.mesh_select_mode = (True, False, False)
 
-        island_manager = UVIslandManager(self.objects)
+        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
 
         for island in island_manager.islands:
             self.expand_uv_boundary_outward(island, self.offset)
 
-        island_manager.update_uvmeshes()
+        island_manager.update_uvmeshes(True)
 
         self.print_time()
         return {"FINISHED"}
@@ -56,7 +47,7 @@ class MIO3UV_OT_offset(Mio3UVOperator):
         for face in island.faces:
             if face.select:
                 for loop in face.loops:
-                    if loop[uv_layer].select and loop.link_loop_next[uv_layer].select:
+                    if loop.uv_select_vert and loop.link_loop_next.uv_select_vert:
                         selected_uv_edges.append((loop, loop.link_loop_next))
 
         uv_movements = {}
@@ -79,16 +70,10 @@ class MIO3UV_OT_offset(Mio3UVOperator):
                                 loop[uv_layer].uv += movement
 
 
-classes = [
-    MIO3UV_OT_offset,
-]
-
 
 def register():
-    for c in classes:
-        bpy.utils.register_class(c)
+    bpy.utils.register_class(MIO3UV_OT_offset)
 
 
 def unregister():
-    for c in classes:
-        bpy.utils.unregister_class(c)
+    bpy.utils.unregister_class(MIO3UV_OT_offset)
