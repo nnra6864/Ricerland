@@ -723,18 +723,7 @@ set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 if status is-interactive
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
-			# This is handled in the startup hyprland config now
-            # Start dbus session
-			#eval (dbus-launch --sh-syntax)
-            # Start gnome-keyring-daemon
-			#/usr/bin/gnome-keyring-daemon --start --components=secrets,ssh
-
-            # Setup and combine_input and output_input
-            # combine_input
-            # output_input
-
-            # Start Hyprland
-            Hyprland
+            start-hyprland
         end
     end
 end
