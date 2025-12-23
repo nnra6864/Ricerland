@@ -11,7 +11,8 @@
 			"ctrl-alt-left": "workspace::ActivatePaneLeft",
 			"ctrl-alt-l": "workspace::ActivatePaneRight",
 			"ctrl-alt-right": "workspace::ActivatePaneRight",
-			"alt-r": "editor::Rename"
+			"alt-r": "editor::Rename",
+			"alt-=": "editor::FormatSelections"
 		}
 	},
 

@@ -1,5 +1,24 @@
 {
-	"icon_theme": "Catppuccin Mocha",
+	"ssh_connections": [
+  {
+   "host": "192.168.0.10",
+   "username": "nn",
+   "args": [],
+   "projects": [
+    {
+     "paths": [
+      "/home/nn/Containers"
+     ]
+    },
+    {
+     "paths": [
+      "/home/nn/Containers/CS_1.6"
+     ]
+    }
+   ]
+  }
+ ],
+ "icon_theme": "Catppuccin Mocha",
 	"theme": {
 		"mode": "dark",
 		"light": "Ricer",
