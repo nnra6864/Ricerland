@@ -133,7 +133,7 @@
             "enabled": true,
             "hideButton": false,
             "replaceElements": 0,
-            "dearrowByDefault": false
+            "dearrowByDefault": true
         },
         "Decor": {
             "enabled": true,
@@ -796,7 +796,8 @@
             "enabled": true
         },
         "FixImagesQuality": {
-            "enabled": true
+            "enabled": true,
+            "originalImagesInChat": false
         },
         "FullUserInChatbox": {
             "enabled": false
@@ -1482,7 +1483,8 @@
             "disableCreateDMButton": false,
             "disableDMContextMenu": false,
             "noMirroredCamera": false,
-            "removeActivitySection": false
+            "removeActivitySection": false,
+            "showYourOwnActivityButtons": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1742,6 +1744,18 @@
         },
         "HeaderBarAPI": {
             "enabled": true
+        },
+        "UrlHighlighter": {
+            "enabled": false
+        },
+        "ScheduledMessages": {
+            "enabled": false
+        },
+        "IdleAutoRestart": {
+            "enabled": false
+        },
+        "UserAreaAPI": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -1755,7 +1769,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1764577658109
+        "settingsSyncVersion": 1766495345385
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1768,5 +1782,7 @@
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
-    }
+    },
+    "enableOnlineThemes": true,
+    "pinnedThemes": []
 }
