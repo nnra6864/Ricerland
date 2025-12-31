@@ -1,7 +1,9 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Colosseum/
+/home/nn/Data/Projects/Unity/Katana/Files/Blender/Colosseum/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/Colosseum/
 /home/nn/Downloads/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/Colosseum/Cage/
@@ -9,5 +11,3 @@
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/MainMenu/Buttons/
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/MainMenu/
-/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/MainMenu/Chains/
-/home/nn/Data/Projects/Editing/nnra/Blender_Velocity_Tutorial/Projects/Blender/
