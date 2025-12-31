@@ -339,7 +339,8 @@
             "steam": true,
             "epic": true,
             "tidal": true,
-            "itunes": true
+            "itunes": true,
+            "vrcx": true
         },
         "PermissionFreeWill": {
             "enabled": true,
@@ -1243,7 +1244,8 @@
             "imageCacheDir": "/home/nn/.config/equibop/MessageLoggerData/savedImages",
             "logsDir": "/home/nn/.config/equibop/MessageLoggerData",
             "ignoreWebhooks": false,
-            "ShowWhereMessageIsFrom": false
+            "ShowWhereMessageIsFrom": false,
+            "timeBasedCleanupMinutes": 0
         },
         "MessageTranslate": {
             "enabled": false
@@ -1420,7 +1422,8 @@
             "enabled": true,
             "preferNitro": true,
             "dbSource": "https://userpfp.github.io/UserPFP/source/data.json",
-            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json"
+            "databaseSource": "https://userpfp.github.io/UserPFP/source/data.json",
+            "overrideServerAvatars": true
         },
         "UwUifier": {
             "enabled": false
@@ -1484,7 +1487,8 @@
             "disableDMContextMenu": false,
             "noMirroredCamera": false,
             "removeActivitySection": false,
-            "showYourOwnActivityButtons": false
+            "showYourOwnActivityButtons": false,
+            "noDefaultHangStatus": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1756,6 +1760,12 @@
         },
         "UserAreaAPI": {
             "enabled": true
+        },
+        "MicLoopbackTester": {
+            "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1769,7 +1779,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1766495345385
+        "settingsSyncVersion": 1767163664583
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
