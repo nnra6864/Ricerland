@@ -4,7 +4,7 @@ SETUVAR --export LS_COLORS:di\x3d\x23BDDFFF\x3afi\x3d\x23ACCAE6\x3aln\x3d\x23669
 SETUVAR --export P4IGNORE:\x2ep4ignore
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:true
 SETUVAR --export YTFZF_YTDL_BACKEND:yt\x2ddlp
-SETUVAR __fish_initialized:3800
+SETUVAR __fish_initialized:4300
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/nvm\x2efish\x1epatrickf1/fzf\x2efish
@@ -591,35 +591,7 @@ SETUVAR _tide_prompt_994:\x1b\x5bm\x0f\x1b\x5bm\x0f\x1b\x5b37m\x1b\x5b30m\x1b\x5
 SETUVAR _tide_prompt_99515:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\x1b\x5b30m\x1b\x5b47m\x20\uf303\x20\x1b\x5b37m\x1b\x5b44m\ue0b0\x1b\x5b44m\x20\x40PWD\x40\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b34m\ue0b0\x1e\x1b\x5b92m\u276f\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m\ue0b2\x1b\x5b30m\x1b\x5b47m\x2000\x3a32\x3a06\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b37m
 SETUVAR _tide_prompt_999:\x1b\x5bm\x0f\x1b\x5bm\x0f\x1b\x5b37m\x1b\x5b30m\x1b\x5b47m\x20\uf303\x20\x1b\x5b37m\x1b\x5b44m\ue0b0\x1b\x5b44m\x20\x40PWD\x40\x20\x1b\x5bm\x0f\x1b\x5bm\x0f\x1b\x5b34m\ue0b0\x1e\x1b\x5b32m\u276f\x1e\x1b\x5bm\x0f\x1b\x5bm\x0f\x1b\x5b33m\ue0b2\x1b\x5b30m\x1b\x5b43m\x20\uf252\x2040s\x20\x1b\x5b37m\x1b\x5b43m\ue0b2\x1b\x5b30m\x1b\x5b47m\x2007\x3a43\x3a13\x20\x1b\x5bm\x0f\x1b\x5bm\x0f\x1b\x5b37m
 SETUVAR _tide_right_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1enode\x1epython\x1erustc\x1ejava\x1eruby\x1ego\x1ezig
-SETUVAR fish_color_autosuggestion:555\x1ebrblack
-SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:blue
-SETUVAR fish_color_comment:red
-SETUVAR fish_color_cwd:green
-SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:green
-SETUVAR fish_color_error:brred
-SETUVAR fish_color_escape:brcyan
-SETUVAR fish_color_history_current:\x2d\x2dbold
-SETUVAR fish_color_host:normal
-SETUVAR fish_color_host_remote:yellow
-SETUVAR fish_color_normal:normal
-SETUVAR fish_color_operator:brcyan
-SETUVAR fish_color_param:cyan
-SETUVAR fish_color_quote:yellow
-SETUVAR fish_color_redirection:cyan\x1e\x2d\x2dbold
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d111
-SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
-SETUVAR fish_color_status:red
-SETUVAR fish_color_user:brgreen
-SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:\x1d
-SETUVAR fish_key_bindings:fish_vi_key_bindings
-SETUVAR fish_pager_color_completion:normal
-SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
-SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
-SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/nn/\x2econfig/fish/scripts\x1e/usr/bin/samba\x1e/usr/bin
 SETUVAR tide_aws_bg_color:yellow
 SETUVAR tide_aws_color:brblack
