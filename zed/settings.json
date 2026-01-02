@@ -49,12 +49,12 @@
 
 	//Font
 	"buffer_font_family": "Maple Mono NF CN",
-	"buffer_font_size": 30,
+	"buffer_font_size": 24,
 	"buffer_font_weight": 400,
 	"buffer_line_height": "comfortable",
 
 	"ui_font_family": "Maple Mono NF CN",
-	"ui_font_size": 30,
+	"ui_font_size": 24,
 	"ui_font_weight": 400,
 
 	"centered_layout": {
