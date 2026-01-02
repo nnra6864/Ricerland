@@ -104,7 +104,9 @@
         },
         "CallTimer": {
             "enabled": true,
-            "format": "stopwatch"
+            "format": "stopwatch",
+            "allCallTimers": false,
+            "watchLargeGuilds": false
         },
         "ClearURLs": {
             "enabled": true
@@ -546,7 +548,8 @@
             "enabled": true,
             "alternativeFormatting": true,
             "showRoleColors": true,
-            "showAvatars": true
+            "showAvatars": true,
+            "amITyping": false
         },
         "Unindent": {
             "enabled": true
@@ -811,9 +814,6 @@
         },
         "IloveSpam": {
             "enabled": true
-        },
-        "Oneko": {
-            "enabled": false
         },
         "EquicordToolbox": {
             "enabled": false
@@ -1765,6 +1765,9 @@
             "enabled": false
         },
         "MoreQuickReactions": {
+            "enabled": false
+        },
+        "CursorBuddy": {
             "enabled": false
         }
     },
