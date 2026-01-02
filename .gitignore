@@ -91,10 +91,14 @@
 !/htop/
 !/cava/
 !/dunst/
-!/mpd/
 !/ncmpcpp/
 !/neofetch/
 !/fastfetch/
+
+# MPD
+!/mpd/
+/mpd/*
+!/mpd/mpd.conf
 
 # Browsers
 !/BrowserExtensions/
@@ -130,6 +134,8 @@
 
 # Social
 !/BetterDiscord/
+
+# Equibop
 !/equibop
 /equibop/*
 !/equibop/settings/
