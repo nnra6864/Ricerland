@@ -1,3 +1,15 @@
+[Configs]
+Frost = "./Frost.toml"
+Frost_Transparent = "../Frost_Transparent.toml"
+Catppuccin = "~/.config/Ricer/Catppuccin.toml"
+Steam = "/home/nn/.config/Ricer/Steam.toml"
+
+[Values]
+intValue = 1
+floatValue = 2.0
+stringValue = "some string"
+boolValue = true
+
 [Modifiers]
 hsvBright = "hsv(360, 1.0, -50)"
 hsvDark = "hsv(-0.1, +25, 0.5)"
@@ -10,3 +22,14 @@ yellow = "rgb(1, 0.5, 255)"
 # Each of these operations should support both colors and ints/floats
 blue = "$black.hsv(+10, -0.1, 1).hsv($hsvBright).add($green).sub($yellow).mul(2).div(5).pow($red).sqrt(2)"
 blue = ""
+
+[Files]
+hyprland = {
+  source = "$files/Hyprland",
+  destination = "~/.config/hypr/hyprland.conf",
+  format = {
+    bool = "$val.ToUpper()",
+    col = "rgb01.r, rgb.g, rgb01.b, hex.a"
+  }
+}
+

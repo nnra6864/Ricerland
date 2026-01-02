@@ -1,0 +1,131 @@
+// Config is completely case insensitive
+// Variables literally just get replaced with actual values, meaning that using a defined color, modifier etc. results in that var being replaced at runtime
+/*
+Reserved Keywords:
+int
+float
+string
+bool
+
+col
+rgb
+hsv
+
+conf
+file
+source
+target
+prefix
+options
+
+mod
+add
+sub
+mul
+div
+pow
+sqrt
+clamp
+remap
+variation
+variations
+negate
+invert
+ToString
+
+and more to be added later
+*/
+
+// Config
+conf FullPath = "/home/nn/.config/Ricer/Banana.toml"; // Full path
+CONF HomePath = "~/.config/Ricer/Frost.toml"; // Home path
+cOnf ParentPath = "../FrostTransparent.toml"; // Parent dir relative to the cfg
+coNf CurrentPath = "./Frost.toml"; // Current dir relative to the cfg
+
+// Values
+InT SomeInt = 1;
+fLoAt SomeFloat = 2.0;
+sTrIng SomeString = "some string";
+string InterpolatedString = $"{SomeFloat} is a float";
+BoOl SomeBool = false;
+
+// Colors
+col HEXCol = #FF00AA; // # and A channel are optional
+col RGBCol = rgb(1, 1.0, 255, 0.5); // rgb can also be rgba and A channel is optional
+col HSVCol = hsv(160, 50, 1.0);
+coL RGBACol = <col>{ r = 0.1; g = 255; b = #FF; a = 1.0; };
+COL MixedCol = <col>{ r = 100; h = 180; v = 0.5; };
+col BrightnessDelta = <col>{ v = 10 };
+
+// Modifiers
+// When working with colors, first function parameter is always an optional array, and determines what channels will be affected
+// Float operations will be applied to 0-1 channels and int to 0-255
+// base is the original value passed to the Mod function
+// val is the current value, initially same as base
+// Functions:
+// Add        | int, float, col | Adds
+// Sub        | int, float, col | Subtracts
+// Mul        | int, float, col | Multiplies
+// Div        | int, float, col | Divides
+// Pow        | int, float, col | Raises to power
+// Sqrt       | int, float, col | Gets the square root
+// Clamp      | int, float, col | Clamps the value
+// Remap      | int, float, col | Remaps the value
+// Variations | int, float, col | Creates variations of a color
+// Negate     | int, float      | Negates the value
+// Invert     | col             | Inverts the color
+// ToString   | any             | Turns into a string
+intMod IntMath = Add(10).Sub(5).Pow(2).Negate(); // Does simple math on an int
+floatMod FloatMath = Add(3).Mul(10).Sqrt(2).Sub(.3); // Does simple math on a float
+stringMod StringMod = Concat("asd");
+colMod ColAddSub = Add([r, g, b], 10).Sub([v], BrigthnessDelta.v); // Adds 10 to r, g and b and subtracts the brigthness delta vibrance from v
+colMod ColMulDiv = Mul([g], 2).Div([a], base.g); // Multiplies g with 2 and divides a with base.g
+colMod ColPowSqrtMod = Pow([r], val.r).Sqrt([b], val.r).Mod([a], val.r); // Raises r to val.r power, applies square root val.r to b, applies mod val.r to a
+colMod ColInvert = Invert().Invert([a]); // Inverts r, g and b and then inverts a
+colMod ColRemap = Remap([r, g], 0.0, 1.0, -1.0, 1.0); // Remaps the color from 0 to 1 range to -1 to 1 range, channels are optional(affects rgba by default)
+colMod BrightHSV = Add([v], 10);
+
+// Values with modifiers
+int SomeRandomInt = (5).Add(5).IntMath();
+float SomeRandomFloat = (5).Add(10.5).FloatMath().Round();
+col SomeBrightCol = (#553399FF).BrightHSV();
+col SomeDefinedCol = SomeBrightCol.BrightHSV();
+
+// Variations
+// Variations take the base value and create variations from it
+// They are quite useful for creating bright, dark, inactive etc. variations for colors because you can reduce 5 lines to a single line
+// This is the same as creating a new color named BrightOriginalName, and assigning the OriginalColor.BrightHSV() to it
+colVar BrightVariation = { name = $"Brigt{name}"; val.BrightHSV(); };
+colVar DarkVariation = { name = $"Dark{name}"; val.Sub([v], 10); };
+mod BrigthnessVariations = Variations([
+	BrightVariation, DarkVariation,
+	{ name = $"Test{name}"; val.Add([v], 20); }
+]);
+
+// Colors with variations
+col Cyan = 608fbfff.BrightnessVariations();
+/*
+Results in:
+col BrightCyan = 6ca3d9ff;
+col DarkCyan = 537ca6ff;
+col TestCyan = 79b6f2ff;
+*/
+
+// Files
+// File represents an object that contains:
+// source - a template that Ricer will process
+// target - path in which the riced file will be placed
+// prefix - a prefix that ricer will look for in the file | default "ricer."
+// options - holds configurations for how floats should be rounded, default formats etc.
+file MinimalExample = { source = "../Files/Hyprland.conf"; target = "~/.config/hypr/Hyprland.conf"; };
+file ComplexExample =
+{
+	source = "../Files/Hyprland.conf";
+	target = "~/.config/hypr/Hyprland.conf";
+	prefix = "Ricer."; // "" Is optional but can be used in case you wanna include characters such as ; or use an interpolated string for vars
+	options =
+	{
+		rgb01rounding = 0; // This will result in RGB01 being clamped down to an int, prob not what you want, 1 will be 1 decimal etc.
+		HexFormat = $"Red: {hr}, Green: {hg}, HEXA: {hexa}";
+	};
+};

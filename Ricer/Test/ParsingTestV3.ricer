@@ -1,0 +1,31 @@
+// Config
+//conf FullPath = "/home/nn/.config/Ricer/Banana.toml"; // Full path
+//CONF HomePath = "~/.config/Ricer/Frost.toml"; // Home path
+//cOnf ParentPath = "../FrostTransparent.toml"; // Parent dir relative to the cfg
+//coNf CurrentPath = "./Frost.toml"; // Current dir relative to the cfg
+
+// Values
+InT SomeInt = 1;
+fLoAt SomeFloat = 2.0;
+sTrIng SomeString = "some string";
+string InterpolatedString = $"{SomeFloat} is a float";
+BoOl SomeBool = false;
+
+// Colors
+//col HEXCol = #FF00AA; // # and A channel are optional
+//col RGBCol = rgb(1, 1.0, 255, 0.5); // rgb can also be rgba and A channel is optional
+//col HSVCol = hsv(160, 50, 1.0);
+//col RGBACol = <col>{ r = 0.1; g = 255; b = #FF; a = 1.0; };
+//col MixedCol = <col>{ r = 100; h = 180; v = 0.5; };
+//col BrightnessDelta = <col>{ v = 10 };
+
+// Modifiers
+//mod<int> IntMod = Add(10).Sub(5).Pow(2).Negate(); // Does simple math on an int
+//mod<float> FloatMod = Add(3).Mul(10).Sqrt(2).Sub(.3); // Does simple math on a float
+//mod<string> StringMod = Concat("asd");
+//mod<col> ColAddSub = Add([r, g, b], 10).Sub([v], BrigthnessDelta.v); // Adds 10 to r, g and b and subtracts the brigthness delta vibrance from v
+//mod<col> ColMulDiv = Mul([g], 2).Div([a], base.g); // Multiplies g with 2 and divides a with base.g
+//mod<col> ColPowSqrtMod = Pow([r], val.r).Sqrt([b], val.r).Mod([a], val.r); // Raises r to val.r power, applies square root val.r to b, applies mod val.r to a
+//mod<col> ColInvert = Invert().Invert([a]); // Inverts r, g and b and then inverts a
+//mod<col> ColRemap = Remap([r, g], 0.0, 1.0, -1.0, 1.0); // Remaps the color from 0 to 1 range to -1 to 1 range, channels are optional(affects rgba by default)
+//mod<col> BrightHSV = Add([v], 10);

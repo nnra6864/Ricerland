@@ -1,0 +1,59 @@
+// Config is completely case insensitive
+// Variables literally just get replaced with actual values, meaning that using a defined color, modifier etc. results in that var being replaced at runtime
+/*
+Reserved Keywords:
+int
+float
+string
+bool
+
+col
+rgb
+hsv
+
+conf
+file
+source
+target
+prefix
+options
+
+mod
+add
+sub
+mul
+div
+pow
+sqrt
+clamp
+remap
+variation
+variations
+negate
+invert
+ToString
+
+and more to be added later
+*/
+
+// Configs
+//conf FullPath = /home/nn/.config/Ricer/Banana.toml; // Full path
+//CONF HomePath = "~/.config/Ricer/Frost.toml"; // Home path
+//cOnf ParentPath = '../FrostTransparent.toml'; // Parent dir relative to the cfg
+//coNf CurrentPath = ./Frost.toml; // Current dir relative to the cfg
+
+// Values
+InT SomeInt = 1;
+InT SomeInt2 = SomeInt;
+fLoAt SomeFloat = 2.0;
+sTrIng SomeString = "some string with \"";
+string InterpolatedString = $"{SomeFloat} is a float";
+BoOl SomeBool = false;
+
+// Colors
+//col HEXCol = #FF00AA; // # and A channel are optional
+//col RGBCol = rgb(1, 1.0, 255, 0.5); // rgb can also be rgba and A channel is optional
+//col HSVCol = hsv(160, 50, 1.0);
+//coL RGBACol = <col>{ r = 0.1; g = 255; b = #FF; a = 1.0; };
+//COL MixedCol = { r = 100; h = 180; v = 0.5; };
+//col BrightnessDelta = { v = 10 };
