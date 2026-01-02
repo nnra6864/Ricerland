@@ -86,7 +86,11 @@ function rice
     #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
 
     # Execute Ricer
+<<<<<<< HEAD
     python ~/Data/Projects/Ricer/Ricer.py $argv &&
+=======
+    python ~/Packages/Pycer/Ricer.py $argv &&
+>>>>>>> b821e12 (Fixed ricer path in fish)
 
     # Reload terminal cfg
     kill -SIGUSR1 (pgrep kitty)
