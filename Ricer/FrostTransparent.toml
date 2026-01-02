@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 # Theme
-bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+bg = "~/.config/Backgrounds/Frost/FrostedPalace.png"
 icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
 gtk_theme = "oomox-Ricer"
