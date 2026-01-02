@@ -34,6 +34,7 @@
 !/obs-studio/
 /obs-studio/*
 !/obs-studio/basic/
+/obs-studio/basic/scenes
 /obs-studio/basic/profiles/*/service.json
 /obs-studio/basic/profiles/*/service.json.bak
 
