@@ -10,7 +10,7 @@ normal = { family = "Maple Mono NF CN", style = "Regular" }
 bold = { family = "Maple Mono NF CN", style = "Bold" }
 italic = { family = "Maple Mono NF CN", style = "Italic" }
 bold_italic = { family = "Maple Mono NF CN", style = "Bold Italic" }
-size = 11
+size = 13
 
 [colors]
 footer_bar = { foreground = "#ACCAE6", background = "#102840" }
