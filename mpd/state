@@ -1,9 +1,9 @@
-sw_volume: 30
+sw_volume: 40
 audio_device_state:1:MPD PipeWire Output
 audio_device_state:1:my_fifo
-state: pause
-current: 579
-time: 128.03900000000002
+state: play
+current: 405
+time: 115.669
 random: 1
 repeat: 1
 single: 0
