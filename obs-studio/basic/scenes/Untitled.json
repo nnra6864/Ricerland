@@ -154,7 +154,7 @@
                         "id": 12,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
+                            "x": -960.0,
                             "y": 0.0
                         },
                         "pos_rel": {
@@ -162,16 +162,16 @@
                             "y": -1.0
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.75,
+                            "y": 0.75
                         },
                         "scale_rel": {
                             "x": 1.0,
                             "y": 1.0
                         },
                         "bounds": {
-                            "x": 5120.0,
-                            "y": 1440.0
+                            "x": 3840.0,
+                            "y": 1080.0
                         },
                         "bounds_rel": {
                             "x": 7.111111164093018,
@@ -219,7 +219,7 @@
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": "03a8b1a0-cb8f-4636-8408-f84be0ea0741"
+                "RestoreToken": "a935007a-2189-4182-8d8c-44e34f9c3437"
             },
             "mixers": 0,
             "sync": 0,
@@ -248,7 +248,7 @@
     "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -17,
+    "scaling_level": -9,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
