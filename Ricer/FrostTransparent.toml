@@ -20,11 +20,11 @@ nvim_theme = "nord"
 font = "Maple Mono NF CN"
 font_fallback = "Cascadia Code NF"
 font_fallback_2 = "Adwaita Mono"
-min_font_size = 4
-small_font_size = 6
-font_size = 9
-big_font_size = 11
-max_font_size = 15
+min_font_size = 9
+small_font_size = 11
+font_size = 13
+big_font_size = 16
+max_font_size = 25
 
 # Outline
 outline_size = 2
