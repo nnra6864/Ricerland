@@ -80,8 +80,8 @@ br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
 # Opacity
-opacity = "rgb(0, 0, 0, 0.85)"
-opacity_inactive = "rgb(0, 0, 0, 0.75)"
+opacity = "rgb(0, 0, 0, 0.5)"
+opacity_inactive = "rgb(0, 0, 0, 0.3)"
 opacity_cs16 = "rgb(0, 0, 0, 0.5)"
 
 # Foreground
