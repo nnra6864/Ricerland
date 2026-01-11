@@ -80,7 +80,7 @@ br_cyan = "$cyan.$highlight_hsv"
 br_white = "$white.$highlight_hsv"
 
 # Opacity
-opacity = "rgb(0, 0, 0, 0.99)"
+opacity = "rgb(0, 0, 0, 1.0)"
 opacity_inactive = "rgb(0, 0, 0, 0.75)"
 opacity_cs16 = "rgb(0, 0, 0, 0.5)"
 
