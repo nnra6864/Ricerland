@@ -141,11 +141,11 @@ ColorSchemeHash=d05680ca25bbbbf09a8b5f36923ee7f2b1117fbf
 TerminalApplication=ghostty
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=Maple Mono NF CN,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Maple Mono NF CN,11,-1,5,50,0,0,0,0,0,Regular
-menuFont=Maple Mono NF CN,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=Maple Mono NF CN,6,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Maple Mono NF CN,11,-1,5,50,0,0,0,0,0,Regular
+fixed=Maple Mono NF CN,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Maple Mono NF CN,13,-1,5,50,0,0,0,0,0,Regular
+menuFont=Maple Mono NF CN,13,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Maple Mono NF CN,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Maple Mono NF CN,13,-1,5,50,0,0,0,0,0,Regular
 
 [Icons]
 Theme=Ricer
@@ -181,7 +181,7 @@ MaximumRemoteSize=0
 [WM]
 activeBackground=46,52,64
 activeBlend=236,239,244
-activeFont=Maple Mono NF CN,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=Maple Mono NF CN,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=236,239,244
 inactiveBackground=46,52,64
 inactiveBlend=216,222,233

@@ -16,6 +16,28 @@
      ]
     }
    ]
+  },
+  {
+   "host": "100.124.174.21",
+   "username": "nn",
+   "args": [],
+   "projects": [
+    {
+     "paths": [
+      "/home/nn"
+     ]
+    },
+    {
+     "paths": [
+      "/home/nn/Containers"
+     ]
+    },
+    {
+     "paths": [
+      "/home/nn/Containers/CS_1.6"
+     ]
+    }
+   ]
   }
  ],
  "icon_theme": "Catppuccin Mocha",

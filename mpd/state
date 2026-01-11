@@ -1,9 +1,9 @@
-sw_volume: 40
+sw_volume: 50
 audio_device_state:1:MPD PipeWire Output
 audio_device_state:1:my_fifo
 state: pause
-current: 579
-time: 140.425
+current: 108
+time: 0
 random: 1
 repeat: 1
 single: 0
@@ -711,46 +711,47 @@ playlist_begin
 695:YouTube/playing piano at the speed of force [qgxdSyAd-K4].opus
 696:YouTube/Saw Main Theme - Hello Zepp Piano Tutorial [7_Mu243B3Ec].opus
 697:YouTube/Saw Theme - Hello Zepp + Overture (Piano Version) [yO_6Mo9wQ1g].opus
-698:YouTube/Silent Hill - Solkrieg's Promise (Reprise) Dubstep Remix [oKmM5niqcOE].mp3
-699:YouTube/Skrillex - Scary Monsters And Nice Sprites (piano cover) [ON9LdE7SAGA].mp3
-700:YouTube/SpongeBOZZ & TJ_beastboy - Warm Up (prod. by Vendetta Beats) [wjeCJ11oUHY].mp3
-701:YouTube/Tau the Song with 6.28318 Million Notes [b0gyQMJHQ78].mp3
-702:YouTube/The Forest： Original Game Soundtrack - Main Menu Theme [3aU5u4H1vvg].mp3
-703:YouTube/Three Days Grace - The Real You (Piano Cover) [6oIpnbBQurg].opus
-704:YouTube/Thunderzone V2 ON PIANO (The Golden) #geometrydash [Nzk9TVR-feg].mp3
-705:YouTube/Tiësto & KSHMR - Secrets (Hasit Nanda Piano Version) [fDPqsNrTqlk].opus
-706:YouTube/Time Back (Evir Remix) [mL4mgxIYTF4].mp3
-707:YouTube/Tristam  Flawless [tQ4WADz6gkA].mp3
-708:YouTube/Tristam  games [6lFD4gFvpmk].mp3
-709:YouTube/Tristam - Bone Dry (Jonah Wei-Haas Piano Cover) [JJxVRgo8XN4].m4a
-710:YouTube/Tristam - I Remember [Piano Cover] [o2HJcUAkyKQ].m4a
-711:YouTube/Tristam - Shine Piano Cover [yixW-YKtF9A].opus
-712:YouTube/Tristam - Till It's Over (Jonah Wei-Haas Piano Cover) [3bkKvoxRFjk].opus
-713:YouTube/Tristam - Truth (Jonah Wei-Haas Piano Cover) [dEfo7cqhXl8].opus
-714:YouTube/Tristam & Braken - Far Away (Jonah Wei-Haas Piano Cover) [5xEdoobziQU].opus
-715:YouTube/Tristam & Braken - Flight (Jonah Wei-Haas Piano Cover) [sMMmuhlV0y4].opus
-716:YouTube/Tristam & Braken - Frame of Mind (Jonah Wei-Haas Piano Cover) [L0nqwEGp6vQ].opus
-717:YouTube/UFO361 - ＂Rich Rich＂ 🎹 FL Studio REMAKE [Free FLP] [TmzkqJkpyxI].mp3
-718:YouTube/Xomu & Amidst - Pagoda ON PIANO (Verdant Landscape Song) #geometrydash [W55XJMCbJxI].mp3
-719:YouTube/XXXTENTACION - changes ｜ Tishler Piano Cover [9sqIxtQgBjI].opus
-720:YouTube/Zatox Tribute ： Ciara - Paint It Black ( Hardstyle rmx ) [QRHCfNQHR-k].mp3
-721:YouTube/Άξιον εστίν, ήχος Α' Μιχαήλ Χατζηαθανασίου ｜ Ψάλλουν οι Δανιηλαίοι ｜ Άγιον Όρος [yRjfswac_rA].opus
-722:YouTube/Πάντων θλιβομένων ἡ Χαρά (2014). 01 - Άξιον Έστίν Μ Χατζηαθανασίου Α' [TlIm6TKI_B4].opus
-723:YouTube/Τη Υπερμάχω Στρατηγώ [VFwG-LfUmJs].opus
-724:YouTube/длб - глупая [9mNllyeoUUs].opus
-725:YouTube/Достойно есть (хор Валаамского монастыря) [qoWzhSs9UdM].opus
-726:YouTube/ДОСТОЈНО ЈЕ, химна Богородици, мелос Григорија Протопсалта, глас 1. [nHJbTeD13-4].opus
-727:YouTube/Скриптонит - Космос [ON PIANO + LYRICS] [0j9sHPRPCGE].mp3
-728:YouTube/The_Facility/Calm Before the Storm [12dJ6mRv0hk].opus
-729:YouTube/The_Facility/Confined (Full Version) [j-zTXXx45KQ].opus
-730:YouTube/The_Facility/Descent [VtS4oLL1bF4].opus
-731:YouTube/The_Facility/Dissolve [4940vbTFjXE].opus
-732:YouTube/The_Facility/Eleventh Hour [pu5gcwLqd34].opus
-733:YouTube/The_Facility/Moonlight [slure6SZGbQ].opus
-734:YouTube/The_Facility/Out Of Order (Remix) [VKCqNeUdaYQ].opus
-735:YouTube/The_Facility/Rock Bottom (Full Version) [8WmU4qbf6AE].opus
-736:YouTube/The_Facility/Starlight [9GXH0veO2uk].opus
-737:YouTube/The_Facility/stop. (Full Version) [BEjnJC1nU4w].opus
-738:YouTube/The_Facility/Terminal Velocity [jqc4w2Yg62U].opus
-739:YouTube/The_Facility/Watch This [xR8_szqDdgo].opus
+698:YouTube/She's A Badass [d4FSc4vmHg8].opus
+699:YouTube/Silent Hill - Solkrieg's Promise (Reprise) Dubstep Remix [oKmM5niqcOE].mp3
+700:YouTube/Skrillex - Scary Monsters And Nice Sprites (piano cover) [ON9LdE7SAGA].mp3
+701:YouTube/SpongeBOZZ & TJ_beastboy - Warm Up (prod. by Vendetta Beats) [wjeCJ11oUHY].mp3
+702:YouTube/Tau the Song with 6.28318 Million Notes [b0gyQMJHQ78].mp3
+703:YouTube/The Forest： Original Game Soundtrack - Main Menu Theme [3aU5u4H1vvg].mp3
+704:YouTube/Three Days Grace - The Real You (Piano Cover) [6oIpnbBQurg].opus
+705:YouTube/Thunderzone V2 ON PIANO (The Golden) #geometrydash [Nzk9TVR-feg].mp3
+706:YouTube/Tiësto & KSHMR - Secrets (Hasit Nanda Piano Version) [fDPqsNrTqlk].opus
+707:YouTube/Time Back (Evir Remix) [mL4mgxIYTF4].mp3
+708:YouTube/Tristam  Flawless [tQ4WADz6gkA].mp3
+709:YouTube/Tristam  games [6lFD4gFvpmk].mp3
+710:YouTube/Tristam - Bone Dry (Jonah Wei-Haas Piano Cover) [JJxVRgo8XN4].m4a
+711:YouTube/Tristam - I Remember [Piano Cover] [o2HJcUAkyKQ].m4a
+712:YouTube/Tristam - Shine Piano Cover [yixW-YKtF9A].opus
+713:YouTube/Tristam - Till It's Over (Jonah Wei-Haas Piano Cover) [3bkKvoxRFjk].opus
+714:YouTube/Tristam - Truth (Jonah Wei-Haas Piano Cover) [dEfo7cqhXl8].opus
+715:YouTube/Tristam & Braken - Far Away (Jonah Wei-Haas Piano Cover) [5xEdoobziQU].opus
+716:YouTube/Tristam & Braken - Flight (Jonah Wei-Haas Piano Cover) [sMMmuhlV0y4].opus
+717:YouTube/Tristam & Braken - Frame of Mind (Jonah Wei-Haas Piano Cover) [L0nqwEGp6vQ].opus
+718:YouTube/UFO361 - ＂Rich Rich＂ 🎹 FL Studio REMAKE [Free FLP] [TmzkqJkpyxI].mp3
+719:YouTube/Xomu & Amidst - Pagoda ON PIANO (Verdant Landscape Song) #geometrydash [W55XJMCbJxI].mp3
+720:YouTube/XXXTENTACION - changes ｜ Tishler Piano Cover [9sqIxtQgBjI].opus
+721:YouTube/Zatox Tribute ： Ciara - Paint It Black ( Hardstyle rmx ) [QRHCfNQHR-k].mp3
+722:YouTube/Άξιον εστίν, ήχος Α' Μιχαήλ Χατζηαθανασίου ｜ Ψάλλουν οι Δανιηλαίοι ｜ Άγιον Όρος [yRjfswac_rA].opus
+723:YouTube/Πάντων θλιβομένων ἡ Χαρά (2014). 01 - Άξιον Έστίν Μ Χατζηαθανασίου Α' [TlIm6TKI_B4].opus
+724:YouTube/Τη Υπερμάχω Στρατηγώ [VFwG-LfUmJs].opus
+725:YouTube/длб - глупая [9mNllyeoUUs].opus
+726:YouTube/Достойно есть (хор Валаамского монастыря) [qoWzhSs9UdM].opus
+727:YouTube/ДОСТОЈНО ЈЕ, химна Богородици, мелос Григорија Протопсалта, глас 1. [nHJbTeD13-4].opus
+728:YouTube/Скриптонит - Космос [ON PIANO + LYRICS] [0j9sHPRPCGE].mp3
+729:YouTube/The_Facility/Calm Before the Storm [12dJ6mRv0hk].opus
+730:YouTube/The_Facility/Confined (Full Version) [j-zTXXx45KQ].opus
+731:YouTube/The_Facility/Descent [VtS4oLL1bF4].opus
+732:YouTube/The_Facility/Dissolve [4940vbTFjXE].opus
+733:YouTube/The_Facility/Eleventh Hour [pu5gcwLqd34].opus
+734:YouTube/The_Facility/Moonlight [slure6SZGbQ].opus
+735:YouTube/The_Facility/Out Of Order (Remix) [VKCqNeUdaYQ].opus
+736:YouTube/The_Facility/Rock Bottom (Full Version) [8WmU4qbf6AE].opus
+737:YouTube/The_Facility/Starlight [9GXH0veO2uk].opus
+738:YouTube/The_Facility/stop. (Full Version) [BEjnJC1nU4w].opus
+739:YouTube/The_Facility/Terminal Velocity [jqc4w2Yg62U].opus
+740:YouTube/The_Facility/Watch This [xR8_szqDdgo].opus
 playlist_end

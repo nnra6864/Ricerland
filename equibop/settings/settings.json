@@ -840,7 +840,8 @@
             "gift": true,
             "emojiList": false,
             "serverBoost": true,
-            "gif": false
+            "gif": false,
+            "quests": false
         },
         "AtSomeone": {
             "enabled": false
@@ -1488,7 +1489,8 @@
             "noMirroredCamera": false,
             "removeActivitySection": false,
             "showYourOwnActivityButtons": false,
-            "noDefaultHangStatus": false
+            "noDefaultHangStatus": false,
+            "forceRoleIcon": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1769,6 +1771,9 @@
         },
         "CursorBuddy": {
             "enabled": false
+        },
+        "DragFavoriteEmotes": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1782,7 +1787,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1767348314397
+        "settingsSyncVersion": 1768137049853
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
