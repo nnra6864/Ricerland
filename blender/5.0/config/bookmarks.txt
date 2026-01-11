@@ -1,8 +1,8 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
-/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Colosseum/
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Colosseum/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/Colosseum/
 /home/nn/Downloads/
