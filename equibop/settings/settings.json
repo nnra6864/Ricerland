@@ -104,7 +104,9 @@
         },
         "CallTimer": {
             "enabled": true,
-            "format": "stopwatch"
+            "format": "stopwatch",
+            "allCallTimers": false,
+            "watchLargeGuilds": false
         },
         "ClearURLs": {
             "enabled": true
@@ -546,7 +548,8 @@
             "enabled": true,
             "alternativeFormatting": true,
             "showRoleColors": true,
-            "showAvatars": true
+            "showAvatars": true,
+            "amITyping": false
         },
         "Unindent": {
             "enabled": true
@@ -699,7 +702,8 @@
             "enabled": true
         },
         "WebScreenShareFixes": {
-            "enabled": true
+            "enabled": true,
+            "experimentalAV1Support": false
         },
         "ShowTimeoutDuration": {
             "enabled": true,
@@ -812,9 +816,6 @@
         "IloveSpam": {
             "enabled": true
         },
-        "Oneko": {
-            "enabled": false
-        },
         "EquicordToolbox": {
             "enabled": false
         },
@@ -840,7 +841,8 @@
             "gift": true,
             "emojiList": false,
             "serverBoost": true,
-            "gif": false
+            "gif": false,
+            "quests": false
         },
         "AtSomeone": {
             "enabled": false
@@ -1191,7 +1193,9 @@
         "LimitMiddleClickPaste": {
             "enabled": true,
             "limitTo": "active",
-            "reenableDelay": 500
+            "reenableDelay": 500,
+            "threshold": 100,
+            "scope": "always"
         },
         "LoginWithQR": {
             "enabled": false
@@ -1488,7 +1492,8 @@
             "noMirroredCamera": false,
             "removeActivitySection": false,
             "showYourOwnActivityButtons": false,
-            "noDefaultHangStatus": false
+            "noDefaultHangStatus": false,
+            "forceRoleIcon": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1766,6 +1771,12 @@
         },
         "MoreQuickReactions": {
             "enabled": false
+        },
+        "CursorBuddy": {
+            "enabled": false
+        },
+        "DragFavoriteEmotes": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1779,7 +1790,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1768150481591
+        "settingsSyncVersion": 1768492246554
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
