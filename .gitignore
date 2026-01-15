@@ -69,6 +69,7 @@
 !/Backgrounds/
 !/fontconfig/
 !/Fonts/
+/Fonts/**/.uuid
 !/oomox/
 !/wpaperd/
 !/ags/
