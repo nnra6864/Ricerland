@@ -710,6 +710,7 @@ nlear
 
 # Set env vars
 set -gx EDITOR nvim
+set -gx VISUAL nvim
 
 oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
 #starship init fish | source

@@ -702,7 +702,8 @@
             "enabled": true
         },
         "WebScreenShareFixes": {
-            "enabled": true
+            "enabled": true,
+            "experimentalAV1Support": false
         },
         "ShowTimeoutDuration": {
             "enabled": true,
@@ -1192,7 +1193,9 @@
         "LimitMiddleClickPaste": {
             "enabled": true,
             "limitTo": "active",
-            "reenableDelay": 500
+            "reenableDelay": 500,
+            "threshold": 100,
+            "scope": "always"
         },
         "LoginWithQR": {
             "enabled": false
@@ -1787,7 +1790,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1768150481591
+        "settingsSyncVersion": 1768492246554
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
