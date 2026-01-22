@@ -19,8 +19,13 @@ class TexelDensityCheck(bpy.types.Operator):
 	def execute(self, context):
 		start_time = datetime.now()
 		td = context.scene.td
+
+		start_active_obj = context.active_object
+
+		if start_active_obj is None:
+			return {"CANCELLED"}
+
 		start_mode = bpy.context.object.mode
-		start_active_obj = bpy.context.active_object
 
 		if len(bpy.context.selected_objects) == 0:
 			start_active_obj.select_set(True)
@@ -126,7 +131,10 @@ class TexelDensitySet(bpy.types.Operator):
 	def execute(self, context):
 		start_time = datetime.now()
 		td = context.scene.td
-		start_active_obj = bpy.context.active_object
+		start_active_obj = context.active_object
+
+		if start_active_obj is None:
+			return {"CANCELLED"}
 
 		if len(bpy.context.selected_objects) == 0:
 			start_active_obj.select_set(True)

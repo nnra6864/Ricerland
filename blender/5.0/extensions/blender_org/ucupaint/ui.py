@@ -1134,7 +1134,7 @@ def draw_root_channels_ui(context, layout, node):
                     row.alert = True
                     row.operator('wm.y_optimize_normal_process', icon='ERROR', text='Fix Height Input')
 
-            if is_output_unconnected(node, output_index, channel):
+            if is_output_unconnected(node, channel) and not channel.disable_unconnected_warning:
                 row = mcol.row(align=True)
                 row.alert = True
                 row.operator('wm.y_connect_ypaint_channel', icon='ERROR', text='Fix Unconnected Channel Output')
@@ -2627,7 +2627,9 @@ def draw_layer_channels(context, layout, layer, layer_tree, image, specific_ch):
                     if ch == color_ch and ch.enable:
                         label = root_ch.name + ':'
 
-                    if ch.override or input_settings_available or swizzleable:
+                    dropdown_available = (ch.override and ch.override_type != 'VCOL') or input_settings_available or swizzleable
+
+                    if dropdown_available:
                         inbox_dropdown_button(row, chui, 'expand_source', label)
                     else:
                         row.label(text='', icon='BLANK1')
@@ -2668,7 +2670,7 @@ def draw_layer_channels(context, layout, layer, layer_tree, image, specific_ch):
                     if ch.override:
                         ch_source = get_channel_source(ch, layer)
 
-                    if ch.expand_source and (ch.override or input_settings_available or swizzleable): # and ch.override_type != 'DEFAULT':
+                    if ch.expand_source and dropdown_available: # and ch.override_type != 'DEFAULT':
 
                         rrow = mcol.row(align=True)
                         rrow.label(text='', icon='BLANK1')
@@ -3382,7 +3384,7 @@ def any_yp_problems(yp, vcols=[]):
                         missing_data = True
 
             # No need to check linear problem if mask is disabled or there's missing data
-            if missing_data or layer_enabled or not get_mask_enabled(mask, layer): continue
+            if missing_data or not layer_enabled or not get_mask_enabled(mask, layer): continue
 
             # Check for AO problem
             if gtao_not_used and not ao_problem and mask.type in {'EDGE_DETECT', 'AO'}:
@@ -3400,7 +3402,7 @@ def any_yp_problems(yp, vcols=[]):
                     linear_problem = True
 
         # No need to check linear problem if layer is disabled or there's missing data
-        if missing_data or layer_enabled: continue
+        if missing_data or not layer_enabled: continue
 
         # Check for AO problem
         if gtao_not_used and not ao_problem and layer.type in {'EDGE_DETECT', 'AO'}:
@@ -4173,7 +4175,7 @@ def draw_layers_ui(context, layout, node):
                 row.operator('object.y_fix_vdm_missmatch_uv')
                 row.alert = False
 
-        if is_not_in_material_view():
+        if is_not_in_material_view() and ypup.enable_material_view_warning:
             bbox = col.box()
             row = bbox.row(align=True)
             row.alert = True
@@ -4294,6 +4296,15 @@ def main_draw(self, context):
 
     #layout.operator("wm.y_debug_mesh", icon='MESH_DATA')
     #layout.operator("wm.y_test_ray", icon='MESH_DATA')
+
+    # Extension platform update notification
+    if is_online() and not ypup.hide_update_notification and ypui.extension_update_state == 'AVAILABLE':
+        col = layout.column()
+        row_alert = col.row(align=True)
+        row_alert.alert = True
+        row_alert.operator("extensions.userpref_show_for_update", icon='ERROR', text='New version is available!') # + ypui.latest_version)
+        row_alert.alert = False
+        row_alert.operator("ext.pending_update", icon='PANEL_CLOSE', text='')
 
     icon = 'TRIA_DOWN' if ypui.show_object else 'TRIA_RIGHT'
     row = layout.row(align=True)
@@ -4812,11 +4823,13 @@ class VIEW3D_PT_YPaint_ui(bpy.types.Panel):
     def draw(self, context):
         main_draw(self, context)
 
-def is_output_unconnected(node, index, root_ch=None):
+def is_output_unconnected(node, root_ch):
     yp = node.node_tree.yp
-    unconnected = len(node.outputs[index].links) == 0 and not (yp.use_baked and yp.enable_baked_outside)
-    if root_ch and root_ch.type == 'NORMAL':
-        unconnected &= not (not is_bl_newer_than(2, 80) and yp.use_baked and root_ch.subdiv_adaptive)
+    outp = node.outputs.get(root_ch.name)
+    if not outp: return False
+    unconnected = len(outp.links) == 0 and not (yp.use_baked and yp.enable_baked_outside)
+    #if root_ch.type == 'NORMAL':
+    #    unconnected &= not (not is_bl_newer_than(2, 80) and yp.use_baked and root_ch.subdiv_adaptive)
     return unconnected
 
 def is_height_input_connected_but_has_no_start_process(node, root_ch):
@@ -4889,7 +4902,7 @@ class NODE_UL_YPaint_channels(bpy.types.UIList):
             else:
                 row.label(text='', icon='LINKED')
 
-            if is_output_unconnected(group_node, output_index, item):
+            if is_output_unconnected(group_node, item) and not item.disable_unconnected_warning:
                 row.label(text='', icon='ERROR')
 
             if ypup.developer_mode and item.type=='RGB' and item.enable_alpha:
@@ -5285,7 +5298,7 @@ def layer_listing(layout, layer, show_expand=False):
             if active_override_image:
                 if active_override_image.yia.is_image_atlas or active_override_image.yua.is_udim_atlas:
                     #row.label(text='Image Atlas Override')
-                    row.label(text=override_image.name)
+                    row.label(text=active_override_image.name)
                 else: row.prop(active_override_image, 'name', text='', emboss=False)
             elif override_ch.override_type == 'VCOL':
                 row.prop(override_ch, 'override_vcol_name', text='', emboss=False)
@@ -6225,40 +6238,6 @@ class YLayerChannelBlendMenu(bpy.types.Menu):
         for key, val in blend_type_labels.items():
             col.operator('wm.y_set_layer_channel_blend_type', text=val).blend_type = key
 
-class YLayerChannelBlendPopover(bpy.types.Panel):
-    bl_idname = "NODE_PT_y_layer_channel_blend_popover"
-    bl_label = "Layer Channel Blend"
-    bl_description = "Layer channel blend"
-    bl_space_type = "VIEW_3D"
-    bl_region_type = "WINDOW"
-    bl_ui_units_x = 8
-
-    @classmethod
-    def poll(cls, context):
-        return get_active_ypaint_node()
-
-    def draw(self, context):
-        ch = context.channel
-        yp = ch.id_data.yp
-        m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\].*', ch.path_from_id())
-        if m: 
-            #layer = yp.layers[int(m.group(1))]
-            root_ch = yp.channels[int(m.group(2))]
-            #tree = get_tree(layer)
-        else: return
-
-        #self.layout.label(text=root_ch.name)
-        split = split_layout(self.layout, 0.35)
-
-        col = split.column()
-        col.label(text='Blend:')
-        col.label(text='Opacity:')
-
-        col = split.column()
-        col.prop(ch, 'blend_type', text='')
-        draw_input_prop(col, ch, 'intensity_value', text='', layer=layer)
-
-
 def draw_expandable_list_options(layout):
     col = layout.column()
     yp = get_active_ypaint_node().node_tree.yp
@@ -6298,49 +6277,14 @@ class YListItemOptionMenu(bpy.types.Menu):
     def draw(self, context):
         draw_expandable_list_options(self.layout)
 
-class YLayerChannelNormalBlendPopover(bpy.types.Panel):
-    bl_idname = "NODE_PT_y_layer_channel_normal_blend_popover"
-    bl_label = "Layer Channel Normal Blend"
-    bl_description = "Layer channel normal blend"
-    bl_space_type = "VIEW_3D"
-    bl_region_type = "WINDOW"
-    bl_ui_units_x = 8
-
-    @classmethod
-    def poll(cls, context):
-        return get_active_ypaint_node()
-
-    def draw(self, context):
-        ch = context.channel
-        yp = ch.id_data.yp
-        m = re.match(r'yp\.layers\[(\d+)\]\.channels\[(\d+)\].*', ch.path_from_id())
-        if m: 
-            #layer = yp.layers[int(m.group(1))]
-            root_ch = yp.channels[int(m.group(2))]
-            #tree = get_tree(layer)
-        else: return
-
-        #self.layout.label(text=root_ch.name)
-        split = split_layout(self.layout, 0.35)
-
-        col = split.column()
-        col.label(text='Blend:')
-        col.label(text='Type:')
-        col.label(text='Opacity:')
-
-        col = split.column()
-        col.prop(ch, 'normal_blend_type', text='')
-        col.prop(ch, 'normal_map_type', text='')
-        draw_input_prop(col, ch, 'intensity_value', text='', layer=layer)
-
 def has_layer_input_options(layer):
     return (layer.type not in {'IMAGE', 'VCOL', 'BACKGROUND', 'COLOR', 'GROUP', 'HEMI', 'MUSGRAVE', 'EDGE_DETECT', 'AO'} and not 
         (is_bl_newer_than(2, 81) and layer.type == 'VORONOI' and layer.voronoi_feature in {'DISTANCE_TO_EDGE', 'N_SPHERE_RADIUS'}))
 
 class YLayerChannelInputMenu(bpy.types.Menu):
     bl_idname = "NODE_MT_y_layer_channel_input_menu"
-    bl_label = "Layer Channel Input"
-    bl_description = "Layer Channel Input"
+    bl_label = "Layer Channel Source"
+    bl_description = "Replace layer channel source"
 
     @classmethod
     def poll(cls, context):
@@ -6445,8 +6389,8 @@ class YLayerChannelInputMenu(bpy.types.Menu):
 
 class YLayerChannelInput1Menu(bpy.types.Menu):
     bl_idname = "NODE_MT_y_layer_channel_input_1_menu"
-    bl_label = "Normal Channel Input"
-    bl_description = "Normal Channel Input"
+    bl_label = "Layer Normal Channel Source"
+    bl_description = "Replace layer normal channel source"
 
     @classmethod
     def poll(cls, context):
@@ -7230,6 +7174,7 @@ class YChannelSpecialMenu(bpy.types.Menu):
         row = self.layout.row()
 
         col = row.column()
+        node = get_active_ypaint_node()
 
         if not hasattr(context, 'parent'):
             col.label(text='ERROR: Context has no parent!', icon='ERROR')
@@ -7252,12 +7197,22 @@ class YChannelSpecialMenu(bpy.types.Menu):
                 if mt[0] == 'MULTIPLIER': continue
                 col.operator('wm.y_new_ypaint_modifier', text=mt[1], icon_value=lib.get_icon('modifier')).type = mt[0]
 
-        # NOTE: This menu is only visible if name of the channel has 'Alpha' on it
-        if context.parent.type == 'VALUE' and 'Alpha' in context.parent.name:
+        is_alpha_in_name = context.parent.type == 'VALUE' and 'Alpha' in context.parent.name
+        is_unconnected = is_output_unconnected(node, context.parent)
+
+        # Add extra section
+        if is_alpha_in_name or is_unconnected:
             col.separator()
             col.label(text='Extra')
+
+        # NOTE: This menu is only visible if name of the channel has 'Alpha' on it
+        if is_alpha_in_name:
             icon = 'CHECKBOX_HLT' if context.parent.is_alpha else 'CHECKBOX_DEHLT'
             col.operator('wm.y_toggle_channel_as_alpha', text='Use as Alpha Channel', icon=icon)
+
+        # NOTE: This menu is only visible when the channel output doesn't connect to anything
+        if is_unconnected:
+            col.prop(context.parent, 'disable_unconnected_warning')
 
         ypup = get_user_preferences()
         if ypup.show_experimental:
@@ -7338,7 +7293,7 @@ class YLayerChannelSpecialMenu(bpy.types.Menu):
 class YLayerTypeMenu(bpy.types.Menu):
     bl_idname = "NODE_MT_y_layer_type_menu"
     bl_label = "Layer Type Menu"
-    bl_description = 'Layer Type Menu'
+    bl_description = 'Replace layer source'
 
     @classmethod
     def poll(cls, context):
@@ -7456,7 +7411,7 @@ class YLayerTypeMenu(bpy.types.Menu):
 class YMaskTypeMenu(bpy.types.Menu):
     bl_idname = "NODE_MT_y_mask_type_menu"
     bl_label = "Mask Type Menu"
-    bl_description = 'Mask Type Menu'
+    bl_description = 'Replace mask source'
 
     @classmethod
     def poll(cls, context):
@@ -8202,6 +8157,21 @@ class YPaintUI(bpy.types.PropertyGroup):
 
     any_expandable_layers : BoolProperty(default=False)
 
+    extension_update_state : EnumProperty(
+        name = 'Update State',
+        description = 'Extension update state',
+        items = (
+            ('UNAVAILABLE', 'Unavailable', ''),
+            ('AVAILABLE', 'Available', ''),
+            ('PENDING', 'Pending', '')
+        ),
+        default = 'UNAVAILABLE'
+    )
+
+    latest_version : StringProperty(
+        default= ''
+    )
+
 def add_new_ypaint_node_menu(self, context):
     if context.space_data.tree_type != 'ShaderNodeTree' or context.scene.render.engine not in {'CYCLES', 'BLENDER_EEVEE', 'BLENDER_EEVEE_NEXT', 'HYDRA_STORM'}: return
     l = self.layout
@@ -8286,6 +8256,83 @@ def yp_load_ui_settings(scene):
     # Update UI
     wmui.need_update = True
 
+def get_new_extension_version_available():
+    addon_id = 'ucupaint'
+    from bl_pkg import bl_extension_ops as ext_op
+    from bl_pkg import bl_extension_utils
+
+    repos_all = ext_op.extension_repos_read(use_active_only=True)
+    repo_cache_store = ext_op.repo_cache_store_ensure()
+
+    repo_directory_supset = [repo_entry.directory for repo_entry in repos_all]
+
+    if not repos_all:
+        return None
+
+    for repo_item in repos_all:
+        if repo_item.use_cache:
+            continue
+        bl_extension_utils.pkg_repo_cache_clear(repo_item.directory)
+
+    pkg_manifest_local_all = list(repo_cache_store.pkg_manifest_from_local_ensure(
+        error_fn=None,
+        directory_subset=repo_directory_supset,
+    ))
+
+    for repo_index, pkg_manifest_remote in enumerate(repo_cache_store.pkg_manifest_from_remote_ensure(
+        error_fn=None,
+        directory_subset=repo_directory_supset,
+    )):
+        if pkg_manifest_remote is None:
+            continue
+
+        pkg_manifest_local = pkg_manifest_local_all[repo_index]
+        if pkg_manifest_local is None:
+            continue
+
+        repo_item = repos_all[repo_index]
+        for pkg_id, item_remote in pkg_manifest_remote.items():
+            item_local = pkg_manifest_local.get(pkg_id)
+            if item_local is None:
+                # Not installed.
+                continue
+            if item_remote.block:
+                # Blocked, don't touch.
+                continue
+
+            if pkg_id == addon_id and item_remote.version != item_local.version:
+                # print("available=", item_remote.version)
+                return item_remote.version
+            
+    return None
+
+def check_latest_extension_version():
+    if not is_online(): return
+    ypui = bpy.context.window_manager.ypui
+
+    try: new_ver = get_new_extension_version_available()
+    except Exception as e:
+        new_ver = None
+        print(get_addon_title()+" (Error extension version getter):",e)
+
+    if new_ver:
+        ypui.extension_update_state = 'AVAILABLE'
+        ypui.latest_version = new_ver
+    else:
+        ypui.extension_update_state = 'UNAVAILABLE'
+
+class YPendingUpdate(bpy.types.Operator):
+    bl_idname = "ext.pending_update"
+    bl_label = "Pending Update"
+    bl_description = "Pending update"
+    bl_options = {'REGISTER', 'UNDO'}
+
+    def execute(self, context):
+        ypui = bpy.context.window_manager.ypui
+        ypui.extension_update_state = 'PENDING'
+
+        return {'FINISHED'}
+
 def register():
 
     if not is_bl_newer_than(2, 80):
@@ -8305,8 +8352,6 @@ def register():
     bpy.utils.register_class(YLayerListSpecialMenu)
     bpy.utils.register_class(YLayerChannelBlendMenu)
     bpy.utils.register_class(YLayerChannelNormalBlendMenu)
-    bpy.utils.register_class(YLayerChannelBlendPopover)
-    bpy.utils.register_class(YLayerChannelNormalBlendPopover)
     bpy.utils.register_class(YLayerChannelInputMenu)
     bpy.utils.register_class(YLayerChannelInput1Menu)
     bpy.utils.register_class(YLayerMaskInputMenu)
@@ -8345,6 +8390,7 @@ def register():
     bpy.utils.register_class(YPAssetBrowserMenu)
     bpy.utils.register_class(YPFileBrowserMenu)
     bpy.utils.register_class(NODE_MT_copy_image_path_menu)
+    bpy.utils.register_class(YPendingUpdate)
 
     if not is_bl_newer_than(2, 80):
         bpy.utils.register_class(VIEW3D_PT_YPaint_tools)
@@ -8373,6 +8419,10 @@ def register():
 
     if is_bl_newer_than(2, 81):
         bpy.app.handlers.depsgraph_update_post.append(ypui_cache_timer_check)
+    
+    # NOTE: Extension platform update notification is only for no-auto-update branch
+    if True and is_bl_newer_than(4, 2):
+        check_latest_extension_version()
 
 def unregister():
 
@@ -8392,8 +8442,6 @@ def unregister():
     bpy.utils.unregister_class(YLayerListSpecialMenu)
     bpy.utils.unregister_class(YLayerChannelBlendMenu)
     bpy.utils.unregister_class(YLayerChannelNormalBlendMenu)
-    bpy.utils.unregister_class(YLayerChannelBlendPopover)
-    bpy.utils.unregister_class(YLayerChannelNormalBlendPopover)
     bpy.utils.unregister_class(YLayerChannelInputMenu)
     bpy.utils.unregister_class(YLayerChannelInput1Menu)
     bpy.utils.unregister_class(YLayerMaskInputMenu)
@@ -8432,6 +8480,7 @@ def unregister():
     bpy.utils.unregister_class(YPAssetBrowserMenu)
     bpy.utils.unregister_class(YPFileBrowserMenu)
     bpy.utils.unregister_class(NODE_MT_copy_image_path_menu)
+    bpy.utils.unregister_class(YPendingUpdate)
 
     if not is_bl_newer_than(2, 80):
         bpy.utils.unregister_class(VIEW3D_PT_YPaint_tools)
