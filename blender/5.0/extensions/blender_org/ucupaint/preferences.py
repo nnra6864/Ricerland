@@ -116,6 +116,12 @@ class YPaintPreferences(AddonPreferences):
         default = True
     )
 
+    enable_material_view_warning : BoolProperty(
+        name = 'Enable "Switch to Material View" warning',
+        description = "Enable warning popup when ucupaint parent window is not in a Material render/preview mode",
+        default = True
+    )
+
     layer_list_mode : EnumProperty(
         name = 'Layer Lists Mode',
         items = (
@@ -145,6 +151,12 @@ class YPaintPreferences(AddonPreferences):
         default = False
     )
 
+    hide_update_notification : BoolProperty(
+        name = 'Hide Update Notification',
+        description = 'Always hide update notification',
+        default = False
+    )
+
     def draw(self, context):
         if is_bl_newer_than(2, 80):
             self.layout.prop(self, 'default_bake_device')
@@ -157,6 +169,9 @@ class YPaintPreferences(AddonPreferences):
         self.layout.prop(self, 'image_atlas_size')
         self.layout.prop(self, 'hdr_image_atlas_size')
         self.layout.prop(self, 'unique_image_atlas_per_yp')
+        if is_udim_supported():
+            self.layout.prop(self, 'enable_auto_udim_detection')
+        self.layout.prop(self, 'enable_material_view_warning')
         self.layout.prop(self, 'make_preview_mode_srgb')
         self.layout.prop(self, 'use_image_preview')
         self.layout.prop(self, 'skip_property_popups')
@@ -164,8 +179,7 @@ class YPaintPreferences(AddonPreferences):
         self.layout.prop(self, 'always_evaluate_frame')
         if is_bl_newer_than(2, 81):
             self.layout.prop(self, 'enable_uniform_uv_scale_by_default')
-        if is_udim_supported():
-            self.layout.prop(self, 'enable_auto_udim_detection')
+        self.layout.prop(self, 'hide_update_notification')
         self.layout.prop(self, 'show_experimental')
         self.layout.prop(self, 'developer_mode')
         #self.layout.prop(self, 'parallax_without_baked')
