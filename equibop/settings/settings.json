@@ -1777,6 +1777,12 @@
         },
         "DragFavoriteEmotes": {
             "enabled": false
+        },
+        "ShowSongName": {
+            "enabled": false
+        },
+        "VoiceMessageTranscriber": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1790,7 +1796,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1768492246554
+        "settingsSyncVersion": 1769150443025
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
