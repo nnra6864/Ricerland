@@ -1,9 +1,11 @@
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Chandelier/Chandelier.blend
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Chains.blend
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Bar.blend
+/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/SettingsBoard.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Colosseum/Colosseum.blend
 /home/nn/Downloads/FireBasin.blend
-/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/SettingsBoard.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/ItemBoard.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Cannon.blend
-/home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Bar.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Arena.blend1
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Colosseum/Colosseum.blend
 /home/nn/Downloads/Colosseum.blend

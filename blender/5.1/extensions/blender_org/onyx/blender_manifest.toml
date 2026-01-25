@@ -1,0 +1,19 @@
+schema_version = "1.0.0"
+
+id = "onyx"
+version = "1.1.0"
+name = "Onyx"
+tagline = "A minimalistic dark theme"
+maintainer = "Aeraglyx"
+type = "theme"
+tags = ["Dark"]
+website = "https://github.com/aeraglyx/onyx"
+
+blender_version_min = "5.0.0"
+
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
+
+[build]
+paths = ["onyx.xml"]
