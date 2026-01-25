@@ -1,28 +1,28 @@
 {
-	"ssh_connections": [
-  {
-   "host": "192.168.0.10",
-   "username": "nn",
-   "args": [],
-   "projects": [
-    {
-     "paths": [
-      "/home/nn/Containers"
-     ]
-    },
-    {
-     "paths": [
-      "/home/nn/Containers/CS_1.6"
-     ]
-    }
-   ]
-  }
- ],
- "icon_theme": "Catppuccin Mocha",
+	"which_key": {
+  "enabled": true
+ },
+ "helix_mode": false,
+ "ssh_connections": [
+		{
+			"host": "192.168.0.10",
+			"username": "nn",
+			"args": [],
+			"projects": [
+				{
+					"paths": ["/home/nn/Containers"],
+				},
+				{
+					"paths": ["/home/nn/Containers/CS_1.6"],
+				},
+			],
+		},
+	],
+	"icon_theme": "Catppuccin Mocha",
 	"theme": {
 		"mode": "dark",
 		"light": "Ricer",
-		"dark": "Ricer"
+		"dark": "Ricer",
 	},
 
 	"auto_install_extensions": {
@@ -41,7 +41,7 @@
 		"git-firefly": true,
 		"make": true,
 		"catppuccin-icons": true,
-		"symbols": true
+		"symbols": true,
 	},
 
 	"autoscroll_on_clicks": true,
@@ -59,13 +59,13 @@
 
 	"centered_layout": {
 		"left_padding": 0.2,
-		"right_padding": 0.2
+		"right_padding": 0.2,
 	},
 
 	"snippet_sort_order": "top",
 
 	"features": {
-		"edit_prediction_provider": "copilot"
+		"edit_prediction_provider": "copilot",
 	},
 
 	"unnecessary_code_fade": 0.3,
@@ -76,7 +76,7 @@
 	"current_line_highlight": "all",
 
 	//Completions
-	"show_completions_on_input": true,
+	"show_completions_on_input": false,
 	"show_completion_documentation": true,
 	"auto_signature_help": true,
 	"show_signature_help_after_edits": true,
@@ -91,11 +91,11 @@
 		"line_width": 1,
 		"active_line_width": 2,
 		"coloring": "fixed",
-		"background_coloring": "disabled"
+		"background_coloring": "disabled",
 	},
 
 	"scrollbar": {
-		"show": "never"
+		"show": "never",
 	},
 
 	"middle_click_paste": false,
@@ -105,13 +105,13 @@
 	"use_smartcase_search": true,
 
 	"inlay_hints": {
-		"enabled": true,
+		"enabled": false,
 		"show_type_hints": true,
 		"show_parameter_hints": true,
 		"show_other_hints": true,
 		"show_background": false,
 		"edit_debounce_ms": 700,
-		"scroll_debounce_ms": 50
+		"scroll_debounce_ms": 50,
 	},
 
 	"project_panel": {
@@ -125,8 +125,8 @@
 		"auto_reveal_entries": true,
 		"auto_fold_dirs": true,
 		"scrollbar": {
-			"show": null
-		}
+			"show": null,
+		},
 	},
 
 	"outline_panel": {
@@ -138,29 +138,29 @@
 		"git_status": true,
 		"indent_size": 20,
 		"auto_reveal_entries": true,
-		"auto_fold_dirs": true
+		"auto_fold_dirs": true,
 	},
 
 	"collaboration_panel": {
 		"button": true,
 		"dock": "left",
-		"default_width": 240
+		"default_width": 240,
 	},
 
 	"chat_panel": {
 		"button": "always",
 		"dock": "right",
-		"default_width": 240
+		"default_width": 240,
 	},
 
 	"message_editor": {
-		"auto_replace_emoji_shortcode": true
+		"auto_replace_emoji_shortcode": true,
 	},
 
 	"notification_panel": {
 		"button": true,
 		"dock": "right",
-		"default_width": 380
+		"default_width": 380,
 	},
 
 	"language_models": {
@@ -168,31 +168,31 @@
 			"available_models": [
 				{
 					"name": "deepseek-coder",
-					"max_tokens": 128000
+					"max_tokens": 128000,
 				},
 				{
 					"name": "deepseek-chat",
-					"max_tokens": 128000
-				}
+					"max_tokens": 128000,
+				},
 			],
-			"api_url": "https://api.deepseek.com/beta"
-		}
+			"api_url": "https://api.deepseek.com/beta",
+		},
 	},
 
 	"agent": {
 		"default_model": {
 			"provider": "ollama",
-			"model": "qwen2.5:32b"
-		}
+			"model": "qwen2.5:32b",
+		},
 	},
 
 	"slash_commands": {
 		"docs": {
-			"enabled": false
+			"enabled": false,
 		},
 		"project": {
-			"enabled": false
-		}
+			"enabled": false,
+		},
 	},
 
 	"show_call_status_icon": true,
@@ -202,17 +202,17 @@
 
 	"tab_bar": {
 		"show": true,
-		"show_nav_history_buttons": true
+		"show_nav_history_buttons": true,
 	},
 
 	"tabs": {
 		"git_status": true,
 		"close_position": "right",
-		"file_icons": true
+		"file_icons": true,
 	},
 
 	"file_finder": {
-		"file_icons": true
+		"file_icons": true,
 	},
 
 	"remove_trailing_whitespace_on_save": true,
@@ -222,12 +222,12 @@
 	"formatter": "auto",
 	"soft_wrap": "preferred_line_length",
 	"preferred_line_length": 100,
-	"hard_tabs": true,
+	"hard_tabs": false,
 	"tab_size": 4,
 
 	"telemetry": {
 		"diagnostics": false,
-		"metrics": false
+		"metrics": false,
 	},
 	"auto_update": false,
 
@@ -239,9 +239,9 @@
 			"update_debounce_ms": 150,
 			"padding": 4,
 			"min_column": 0,
-			"max_severity": null
+			"max_severity": null,
 		},
-		"cargo": null
+		"cargo": null,
 	},
 
 	"file_scan_exclusions": [
@@ -252,23 +252,23 @@
 		"**/.DS_Store",
 		"**/Thumbs.db",
 		"**/.classpath",
-		"**/.settings"
+		"**/.settings",
 	],
 
 	"git": {
 		"git_gutter": "tracked_files",
 		"inline_blame": {
-			"enabled": true
-		}
+			"enabled": true,
+		},
 	},
 
 	"edit_predictions": {
-		"disabled_globs": [".env"]
+		"disabled_globs": [".env"],
 	},
 
 	"journal": {
 		"path": "~",
-		"hour_format": "hour24"
+		"hour_format": "hour24",
 	},
 
 	"terminal": {
@@ -284,18 +284,18 @@
 		"detect_venv": {
 			"on": {
 				"directories": [".env", "env", ".venv", "venv"],
-				"activate_script": "default"
-			}
-		}
+				"activate_script": "default",
+			},
+		},
 	},
 
 	"lsp": {
 		//"omnisharp": {
 		//	"binary": {
 		//		"path": "omnisharp",
-		//		"arguments": ["-lsp"]
-		//	}
-		//}
+		//		"arguments": ["-lsp"],
+		//	},
+		//},
 		//"csharp": {
 		//	"command": "omnisharp",
 		//	"args": ["-lsp"],
@@ -304,9 +304,9 @@
 		//}
 		//"omnisharp": {
 		//	"binary": {
-		//		"path": "csharp-language-server"
-		//	}
-		//}
+		//		"path": "csharp-language-server",
+		//	},
+		//},
 	},
 
 	// Vim settings
@@ -314,8 +314,8 @@
 		"toggle_relative_line_numbers": true,
 		"use_system_clipboard": "never",
 		"use_smartcase_find": true,
-		"custom_digraphs": {}
+		"custom_digraphs": {},
 	},
 
-	"line_indicator_format": "short"
+	"line_indicator_format": "short",
 }
