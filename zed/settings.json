@@ -185,12 +185,6 @@
         "default_width": 240,
     },
 
-    "chat_panel": {
-        "button": "always",
-        "dock": "right",
-        "default_width": 240,
-    },
-
     "message_editor": {
         "auto_replace_emoji_shortcode": true,
     },
@@ -221,15 +215,6 @@
         "default_model": {
             "provider": "ollama",
             "model": "qwen2.5:32b",
-        },
-    },
-
-    "slash_commands": {
-        "docs": {
-            "enabled": false,
-        },
-        "project": {
-            "enabled": false,
         },
     },
 
@@ -268,19 +253,6 @@
         "metrics": false,
     },
     "auto_update": false,
-
-    "diagnostics": {
-        "button": true,
-        "include_warnings": true,
-        "inline": {
-            "enabled": true,
-            "update_debounce_ms": 150,
-            "padding": 4,
-            "min_column": 0,
-            "max_severity": null,
-        },
-        "cargo": null,
-    },
 
     "file_scan_exclusions": [
         "**/.git",
