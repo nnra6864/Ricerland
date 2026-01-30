@@ -1,48 +1,54 @@
 [
-	{
-		"context": "Workspace",
-		"bindings": {
-			"shift shift": null,
-			"alt-h": "pane::ActivatePreviousItem",
-			"alt-left": "pane::ActivatePreviousItem",
-			"alt-l": "pane::ActivateNextItem",
-			"alt-right": "pane::ActivateNextItem",
-			"ctrl-alt-h": "workspace::ActivatePaneLeft",
-			"ctrl-alt-left": "workspace::ActivatePaneLeft",
-			"ctrl-alt-l": "workspace::ActivatePaneRight",
-			"ctrl-alt-right": "workspace::ActivatePaneRight",
-			"alt-r": "editor::Rename",
-			"alt-=": "editor::FormatSelections"
-		}
-	},
+    {
+        "context": "Workspace",
+        "bindings": {
+            "shift shift": null,
+            "alt-h": "pane::ActivatePreviousItem",
+            "alt-left": "pane::ActivatePreviousItem",
+            "alt-l": "pane::ActivateNextItem",
+            "alt-right": "pane::ActivateNextItem",
+            "ctrl-alt-h": "workspace::ActivatePaneLeft",
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-l": "workspace::ActivatePaneRight",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "alt-r": "editor::Rename",
+            "alt-=": "editor::FormatSelections",
+        },
+    },
 
-	{
-		"context": "!(vim_mode == insert || vim_mode == operator || vim_mode == waiting || Terminal || CommandPalette)",
-		"bindings": {
-			"space s f": "file_finder::Toggle",
-			":": "command_palette::Toggle"
-		}
-	},
+    {
+        "context": "!(vim_mode == insert || vim_mode == replace || vim_mode == operator || vim_mode == waiting || Terminal || CommandPalette)",
+        "bindings": {
+            "space s f": "file_finder::Toggle",
+            ":": "command_palette::Toggle",
+        },
+    },
 
-	{
-		"context": "Editor",
-		"bindings": {
-			"shift shift": null,
-			"ctrl-shift-c": "editor::Copy",
-			"ctrl-shift-v": "editor::Paste",
-			"alt-w": "pane::CloseActiveItem",
-			"ctrl-alt-h": "workspace::ActivatePaneLeft",
-			"ctrl-alt-left": "workspace::ActivatePaneLeft",
-			"ctrl-alt-l": "workspace::ActivatePaneRight",
-			"ctrl-alt-right": "workspace::ActivatePaneRight",
-			"ctrl-.": "editor::OpenContextMenu"
-		}
-	},
+    {
+        "context": "Editor",
+        "bindings": {
+            "shift shift": null,
+            "ctrl-shift-c": "editor::Copy",
+            "ctrl-shift-v": "editor::Paste",
+            "alt-w": "pane::CloseActiveItem",
+            "ctrl-alt-h": "workspace::ActivatePaneLeft",
+            "ctrl-alt-left": "workspace::ActivatePaneLeft",
+            "ctrl-alt-l": "workspace::ActivatePaneRight",
+            "ctrl-alt-right": "workspace::ActivatePaneRight",
+            "ctrl-.": "editor::OpenContextMenu",
+        },
+    },
 
-	{
-		"context": "(VimControl && !menu)",
-		"bindings": {
-			"g r": "editor::FindAllReferences"
-		}
-	}
+    {
+        "context": "(VimControl && !menu)",
+        "bindings": {
+            "g r": "editor::FindAllReferences",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-k": null,
+        },
+    },
 ]
