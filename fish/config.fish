@@ -39,17 +39,17 @@ function update
 	yes | paru -Scc
 
 	# Update packages and Hyprland
-	and paru -Syu --noconfirm --sudoloop
-	    hyprland-protocols-git
-        hyprwayland-scanner-git
-        hyprutils-git
-        hyprgraphics-git
-        hyprlang-git
-        hyprcursor-git
-        aquamarine-git
-        xdg-desktop-portal-hyprland-git
-        hyprwire-git
-        hyprtoolkit-git
+	and paru -Syu --noconfirm --sudoloop \
+	    hyprland-protocols-git \
+        hyprwayland-scanner-git \
+        hyprutils-git \
+        hyprgraphics-git \
+        hyprlang-git \
+        hyprcursor-git \
+        aquamarine-git \
+        xdg-desktop-portal-hyprland-git \
+        hyprwire-git \
+        hyprtoolkit-git \
         hyprland-git
 	
 	# Update hyprpm
