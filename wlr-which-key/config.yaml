@@ -1,0 +1,196 @@
+font: Maple Mono NF CN 16
+background: "#00000001"
+color: "#ffffff"
+border: "#ffffff"
+separator: "  ⪧  "
+border_width: 2
+corner_r: 10
+
+anchor: center
+
+menu:
+    - key: "r"
+      desc: Runners
+      submenu:
+          - key: "r"
+            desc: Rofi
+            cmd: rofi -modes drun,run -show drun
+          - key: "h"
+            desc: Clipboard History
+            cmd: cliphist list | rofi -dmenu | cliphist decode | wl-copy
+          - key: "H"
+            desc: Clear Clipboard History
+            cmd: cliphist list | rofi -dmenu | cliphist delete
+          - key: "c"
+            desc: Calculator
+            cmd: rofi -show calc -modi calc -no-show-match -no-sort -terse -calc-command | wl-copy
+          - key: "t"
+            desc: Translate
+            cmd: ~/Packages/RofiTranslate/RofiTranslate.sh
+          - key: "e"
+            desc: Emoji
+            cmd: rofi -show emoji
+    - key: "a"
+      desc: Applications
+      submenu:
+          - key: "b"
+            desc: Browser
+            submenu:
+                - key: "z"
+                  desc: Zen
+                  cmd: zen-browser
+                - key: "b"
+                  desc: Brave
+                  cmd: brave
+                - key: "f"
+                  desc: Firefox
+                  cmd: firefox
+                - key: "c"
+                  desc: Chromium
+                  cmd: chromium
+          - key: "t"
+            desc: Terminal
+            submenu:
+                - key: "g"
+                  desc: Ghostty
+                  cmd: ghostty +new-window
+                - key: "f"
+                  desc: Foot
+                  cmd: foot
+                - key: "k"
+                  desc: kitty
+                  cmd: kitty
+          - key: "f"
+            desc: File Manager
+            submenu:
+                - key: "d"
+                  desc: Dolphin
+                  cmd: dolphin
+                - key: "n"
+                  desc: Nautilus
+                  cmd: nautilus
+          - key: "c"
+            desc: Counter Strike
+            submenu:
+                - key: [1, 6]
+                  desc: Counter-Strike 1.6
+                  cmd: gtk-launch Counter-Strike
+                - key: [2, z]
+                  desc: Counter-Strike Condition Zero
+                  cmd: gtk-launch "Counter-Strike Condition Zero"
+                - key: [3, s]
+                  desc: "Counter-Strike: Source"
+                  cmd: gtk-launch "Counter-Strike Source"
+                - key: [4, g]
+                  desc: Counter-Strike Global Offensive
+                  cmd: gtk-launch "Counter-Strike Global Offensive"
+                - key: [5, g]
+                  desc: Counter-Strike 2
+                  cmd: gtk-launch "Counter-Strike 2"
+                - key: [6, r]
+                  desc: Counter-Strike Restored
+                  cmd: gtk-launch "Counter-Strike Restored"
+                - key: [7, c]
+                  desc: Classic Counter
+                  cmd: gtk-launch "Classic Counter"
+                - key: [8, o]
+                  desc: Classic Offensive
+                  cmd: gtk-launch "Classic Offensive"
+    - key: "n"
+      desc: Notifications
+      submenu:
+          - key: [1, y]
+            desc: On
+            cmd: dunstctl set-pause-level 0
+          - key: [2, n]
+            desc: Off
+            cmd: dunstctl set-pause-level 100
+    - key: "p"
+      desc: Power
+      submenu:
+          - key: "r"
+            desc: Reboot
+            cmd: hyprshutdown -t 'Rebooting...' -p reboot
+          - key: "s"
+            desc: Suspend
+            cmd: hyprshutdown -t 'Suspending...' -p systemctl suspend
+          - key: "p"
+            desc: Power off
+            cmd: hyprshutdown -t 'Powering off...' -p poweroff
+    - key: "h"
+      desc: Hyprland
+      submenu:
+          - key: "l"
+            desc: hyprlock
+            cmd: hyprlock
+          - key: "s"
+            desc: hyprshutdown
+            cmd: hyprshutdown
+          - key: "p"
+            desc: Restart Hyprland Portal
+            cmd: killall -e xdg-desktop-portal-hyprland; killall -e xdg-desktop-portal-wlr; killall xdg-desktop-portal; /usr/lib/xdg-desktop-portal-hyprland & sleep 2 /usr/lib/xdg-desktop-portal &
+          - key: "d"
+            desc: Dismiss Errors
+            cmd: hyprctl seterror disable
+    - key: "u"
+      desc: Utilities
+      submenu:
+          - key: "u"
+            desc: Update
+            cmd: xdg-terminal-exec fish -ic "update"
+          - key: "a"
+            desc: App Usage
+            cmd: xdg-terminal-exec fish -ic 'get_app_usage | bat --style="grid,numbers"'
+    - key: "B"
+      desc: Brightness
+      submenu:
+          - key: [Up, l, plus]
+            desc: +10
+            cmd: brightnessctl s +10%
+            keep_open: true
+          - key: [Down, h, minus]
+            desc: -10
+            cmd: brightnessctl s 10%-
+            keep_open: true
+          - key: "1"
+            desc: 10
+            cmd: brightnessctl s 10%
+          - key: "2"
+            desc: 20
+            cmd: brightnessctl s 20%
+          - key: "3"
+            desc: 30
+            cmd: brightnessctl s 30%
+          - key: "4"
+            desc: 40
+            cmd: brightnessctl s 40%
+          - key: "5"
+            desc: 50
+            cmd: brightnessctl s 50%
+          - key: "6"
+            desc: 60
+            cmd: brightnessctl s 60%
+          - key: "7"
+            desc: 70
+            cmd: brightnessctl s 70%
+          - key: "8"
+            desc: 80
+            cmd: brightnessctl s 80%
+          - key: "9"
+            desc: 90
+            cmd: brightnessctl s 90%
+          - key: "0"
+            desc: 100
+            cmd: brightnessctl s 100%
+    - key: "s"
+      desc: Shaders
+      submenu:
+          - key: "b"
+            desc: Blue Light Filter
+            cmd: hyprshade toggle blue-light-filter
+          - key: "i"
+            desc: Invert
+            cmd: hyprshade toggle invert-colors
+          - key: "v"
+            desc: Vibrance
+            cmd: hyprshade toggle vibrance
