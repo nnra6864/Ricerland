@@ -110,13 +110,13 @@ menu:
       submenu:
           - key: "r"
             desc: Reboot
-            cmd: hyprshutdown -t 'Rebooting...' -p reboot
+            cmd: hyprshutdown -t 'Rebooting...' -p "reboot"
           - key: "s"
             desc: Suspend
-            cmd: hyprshutdown -t 'Suspending...' -p systemctl suspend
+            cmd: hyprshutdown -t 'Suspending...' -p "systemctl suspend"
           - key: "p"
             desc: Power off
-            cmd: hyprshutdown -t 'Powering off...' -p poweroff
+            cmd: hyprshutdown -t 'Powering off...' -p "poweroff"
     - key: "h"
       desc: Hyprland
       submenu:
