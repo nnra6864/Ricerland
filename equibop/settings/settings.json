@@ -1195,7 +1195,8 @@
             "limitTo": "active",
             "reenableDelay": 500,
             "threshold": 100,
-            "scope": "always"
+            "scope": "always",
+            "preventLinkOpen": false
         },
         "LoginWithQR": {
             "enabled": false
@@ -1493,7 +1494,9 @@
             "removeActivitySection": false,
             "showYourOwnActivityButtons": false,
             "noDefaultHangStatus": false,
-            "forceRoleIcon": false
+            "forceRoleIcon": false,
+            "refreshSlashCommands": false,
+            "accountStandingButton": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1783,6 +1786,27 @@
         },
         "VoiceMessageTranscriber": {
             "enabled": false
+        },
+        "FavouriteAnything": {
+            "enabled": false
+        },
+        "FileUpload": {
+            "enabled": false
+        },
+        "MessagePeek": {
+            "enabled": false
+        },
+        "ProfileSets": {
+            "enabled": false
+        },
+        "CleanerChannelGroups": {
+            "enabled": false
+        },
+        "Dragify": {
+            "enabled": false
+        },
+        "WaitForSlot": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1796,7 +1820,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1769150443025
+        "settingsSyncVersion": 1770906059648
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
