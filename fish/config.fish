@@ -740,6 +740,7 @@ set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 if status is-interactive
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
+            rm -rf ~/.config/Mumble/Mumble/mumble_settings.json.back
             start-hyprland
         end
     end
