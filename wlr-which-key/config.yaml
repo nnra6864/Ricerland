@@ -113,7 +113,7 @@ menu:
             cmd: hyprshutdown -t 'Rebooting...' -p "reboot"
           - key: "s"
             desc: Suspend
-            cmd: hyprlock && qdbus6 org.keepassxc.KeePassXC.MainWindow /keepassxc org.keepassxc.KeePassXC.MainWindow.lockAllDatabases && systemctl suspend
+            cmd: hyprlock & qdbus6 org.keepassxc.KeePassXC.MainWindow /keepassxc org.keepassxc.KeePassXC.MainWindow.lockAllDatabases && sleep 1 && systemctl suspend
           - key: "p"
             desc: Power off
             cmd: hyprshutdown -t 'Powering off...' -p "poweroff"
@@ -122,7 +122,7 @@ menu:
       submenu:
           - key: "l"
             desc: hyprlock
-            cmd: hyprlock && qdbus6 org.keepassxc.KeePassXC.MainWindow /keepassxc org.keepassxc.KeePassXC.MainWindow.lockAllDatabases
+            cmd: qdbus6 org.keepassxc.KeePassXC.MainWindow /keepassxc org.keepassxc.KeePassXC.MainWindow.lockAllDatabases && hyprlock
           - key: "s"
             desc: hyprshutdown
             cmd: hyprshutdown
