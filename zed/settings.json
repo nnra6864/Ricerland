@@ -266,26 +266,6 @@
         },
     },
 
-    "lsp": {
-        //"omnisharp": {
-        //	"binary": {
-        //		"path": "omnisharp",
-        //		"arguments": ["-lsp"],
-        //	},
-        //},
-        //"csharp": {
-        //	"command": "omnisharp",
-        //	"args": ["-lsp"],
-        //	"language_id": "csharp",
-        //	"root_markers": ["*.csproj", "*.sln"]
-        //}
-        //"omnisharp": {
-        //	"binary": {
-        //		"path": "csharp-language-server",
-        //	},
-        //},
-    },
-
     // Vim settings
     "vim": {
         "toggle_relative_line_numbers": true,
