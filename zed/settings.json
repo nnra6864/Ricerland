@@ -10,22 +10,19 @@
             "args": [],
             "projects": [
                 {
-                    "paths": [
-                        "/home/nn/ByteServis"
-                    ]
+                    "paths": ["/home/nn/ByteServis"],
                 },
                 {
-                    "paths": [
-                        "/home/nn/Containers"
-                    ]
+                    "paths": ["/home/nn/Containers"],
                 },
                 {
-                    "paths": [
-                        "/home/nn/Containers/CS_1.6"
-                    ]
-                }
-            ]
-        }
+                    "paths": ["/home/nn/Containers/CS/1.6"],
+                },
+                {
+                    "paths": ["/home/nn/Containers/CS_1.6"],
+                },
+            ],
+        },
     ],
     "icon_theme": "Catppuccin Mocha",
     "theme": {
@@ -74,10 +71,6 @@
     },
 
     "snippet_sort_order": "top",
-
-    "features": {
-        "edit_prediction_provider": "copilot",
-    },
 
     "unnecessary_code_fade": 0.3,
     "vim_mode": true,
@@ -246,6 +239,7 @@
     },
 
     "edit_predictions": {
+        "provider": "copilot",
         "disabled_globs": [".env"],
     },
 
