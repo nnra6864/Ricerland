@@ -52,11 +52,11 @@ function update
         hyprtoolkit-git \
         hyprland-git
 	
-	# Update hyprpm
+	# Update hyprpm (often fails so don't use `and` after it)
 	and hyprpm update
 
 	# Update nv drivers
-	and cd ~/Packages/nvidia-all
+	cd ~/Packages/nvidia-all
 	and git pull
     and notify-send "Update" "Input required for nvidia drivers"
     and paplay /usr/share/sounds/freedesktop/stereo/message.oga
@@ -90,10 +90,10 @@ end
 # Rices the system with the provided config
 function rice
     # Start the Shifter transition
-    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    set pid $last_pid
-    disown
-    sleep 0.2
+	#python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    #set pid $last_pid
+    #disown
+    #sleep 0.2
 
     # Remove all the CS2 fonts(can cause crashes)
     #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
@@ -123,9 +123,9 @@ function rice
 	dunstctl reload
 
     # Nlear the console, sleep and kill Shifter
-    nlear
-    sleep 0.5
-    kill -SIGUSR1 $pid
+	#nlear
+	#sleep 0.5
+	#kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
