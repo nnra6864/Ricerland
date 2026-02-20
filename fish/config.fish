@@ -39,7 +39,7 @@ function update
 	yes | paru -Scc
 
 	# Update packages and Hyprland
-	and paru -Syu --noconfirm --sudoloop \
+	paru -Syu --noconfirm --sudoloop \
 	    hyprland-protocols-git \
         hyprwayland-scanner-git \
         hyprutils-git \
@@ -63,20 +63,13 @@ function update
 	#and makepkg -si
 
 	# Update flatpak
-	and flatpak update -y
+	flatpak update -y
 
 	# Clear the cache once again
-	and yes | paru -Scc
+	yes | paru -Scc
     
 	# Notify the user system has been updated
-	and notify-send "Update" "Update complete"
-    and paplay /usr/share/sounds/freedesktop/stereo/message.oga
-
-	# Notify the user update failed
-	or begin
-		notify-send -u critical "Update Failed" "Check terminal for errors"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-    end
+	notify-send "Update" "Update complete"
 end
 
 # Starts Monero Wallet GUI
