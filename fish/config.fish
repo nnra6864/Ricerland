@@ -56,11 +56,11 @@ function update
 	and hyprpm update
 
 	# Update nv drivers
-	cd ~/Packages/nvidia-all
-	and git pull
-    and notify-send "Update" "Input required for nvidia drivers"
-    and paplay /usr/share/sounds/freedesktop/stereo/message.oga
-	and makepkg -si
+	#cd ~/Packages/nvidia-all
+	#and git pull
+    #and notify-send "Update" "Input required for nvidia drivers"
+    #and paplay /usr/share/sounds/freedesktop/stereo/message.oga
+	#and makepkg -si
 
 	# Update flatpak
 	and flatpak update -y
