@@ -39,7 +39,7 @@ function update
 	yes | paru -Scc
 
 	# Update packages and Hyprland
-	paru -Syu --noconfirm --sudoloop \
+	paru -Syu --sudoloop \
 	    hyprland-protocols-git \
         hyprwayland-scanner-git \
         hyprutils-git \
