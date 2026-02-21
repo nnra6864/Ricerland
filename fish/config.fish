@@ -185,9 +185,9 @@ function cleanup_intermediate_dir -d "Deletes all the original files and removes
 end
 
 # Downloads video
-alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
+alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --exec \'du -sh {}\''
 # Downloads audio
-alias dla 'yt-dlp -f bestaudio --extract-audio'
+alias dla 'yt-dlp -f bestaudio --extract-audio --exec \'du -sh {}\''
 
 # Downloads a video with metadata
 function dlvi
