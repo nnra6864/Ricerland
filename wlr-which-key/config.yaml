@@ -13,23 +13,17 @@ menu:
       desc: Runners
       submenu:
           - key: "r"
-            desc: Rofi
-            cmd: rofi -modes drun,run -show drun
+            desc: Run
+            cmd: vicinae toggle
           - key: "h"
             desc: Clipboard History
-            cmd: cliphist list | rofi -dmenu | cliphist decode | wl-copy
-          - key: "H"
-            desc: Clear Clipboard History
-            cmd: cliphist list | rofi -dmenu | cliphist delete
-          - key: "c"
-            desc: Calculator
-            cmd: rofi -show calc -modi calc -no-show-match -no-sort -terse -calc-command | wl-copy
+            cmd: vicinae vicinae://extensions/vicinae/clipboard/history
           - key: "t"
             desc: Translate
-            cmd: ~/Packages/RofiTranslate/RofiTranslate.sh
+            cmd: vicinae vicinae://extensions/gebeto/translate/translate
           - key: "e"
             desc: Emoji
-            cmd: rofi -show emoji
+            cmd: vicinae vicinae://extensions/vicinae/core/search-emojis
     - key: "a"
       desc: Applications
       submenu:
