@@ -6,24 +6,24 @@ font-family-italic = Maple Mono NF CN
 font-family-bold-italic = Maple Mono NF CN
 font-size = 13
 
-palette =  0 = 102840
-palette =  1 = BF3030
-palette =  2 = 60BF30
-palette =  3 = BFA730
-palette =  4 = 3078BF
-palette =  5 = 8330BF
-palette =  6 = 608FBF
-palette =  7 = ACCAE6
-palette =  8 = 153959
-palette =  9 = D83636
-palette = 10 = 6DD836
-palette = 11 = D8BB36
-palette = 12 = 3687D8
-palette = 13 = 9336D8
-palette = 14 = 6DA1D8
-palette = 15 = BDDFFF
+palette =  0 = 3E4637
+palette =  1 = 4C5844
+palette =  2 = 5A6A50
+palette =  3 = 958831
+palette =  4 = C4B550
+palette =  5 = 75806F
+palette =  6 = A0AA95
+palette =  7 = D8DED3
+palette =  8 = 535E4C
+palette =  9 = 627258
+palette = 10 = 6E8461
+palette = 11 = AD9E38
+palette = 12 = DDCC59
+palette = 13 = 8C9986
+palette = 14 = B8C4A9
+palette = 15 = F1F7EB
 
-cursor-color = ACCAE6
-background = 102840
-foreground = ACCAE6
-background-opacity = 0.06
+cursor-color = D8DED3
+background = 4C5843
+foreground = D8DED3
+background-opacity = 1.0

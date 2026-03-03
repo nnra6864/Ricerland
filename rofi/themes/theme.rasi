@@ -1,14 +1,14 @@
 * {
-	background-col: rgba(16, 40, 64, 0.06);
-	background-selected-col: rgba(21, 57, 89, 0.06);
+	background-col: rgba(76, 88, 67, 1.0);
+	background-selected-col: rgba(62, 70, 55, 1.0);
     background-color: transparent;
     transparency: "real";
 
-	color: #ACCAE6;
-	text-col: #ACCAE6;
-	text-selected-col: #608FBF;
-	border-col: #BDDFFF;
-    highlight: underline bold #6DA1D8;
+	color: #D8DED3;
+	text-col: #D8DED3;
+	text-selected-col: #D8DED3;
+	border-col: #282E22;
+    highlight: underline bold #F1F7EB;
 }
 
 window {
@@ -17,7 +17,7 @@ window {
 	width: 800px;
 	height: 40%;
     border: 0%;
-    border-radius: 10px;
+    border-radius: 0px;
 
 	fullscreen: false;
     children: [mainbox];
@@ -44,7 +44,7 @@ inputbar {
     background-color: @background-col;
 
     border: 2px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0px 0px 0 0;
     border-color: @border-col;
 }
 
@@ -59,7 +59,7 @@ prompt {
 
 listview {
     padding: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0px 0px;
     border-color: @border-col;
     border: 0 2px 2px 2px;
     background-color: @background-col;

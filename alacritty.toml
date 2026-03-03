@@ -13,42 +13,42 @@ bold_italic = { family = "Maple Mono NF CN", style = "Bold Italic" }
 size = 16
 
 [colors]
-footer_bar = { foreground = "#ACCAE6", background = "#102840" }
+footer_bar = { foreground = "#D8DED3", background = "#4C5843" }
 transparent_background_colors = true
 
 [colors.primary]
-foreground = "#ACCAE6"
-background = "#102840"
-dim_foreground = "#8EA7BF"
-bright_foreground = "#BDDFFF"
+foreground = "#D8DED3"
+background = "#4C5843"
+dim_foreground = "#B3B7AF"
+bright_foreground = "#F1F7EB"
 
 [colors.search]
-matches = { foreground = "#ACCAE6", background = "#102840" }
-focused_match = { foreground = "#BDDFFF", background = "#102840" }
+matches = { foreground = "#D8DED3", background = "#4C5843" }
+focused_match = { foreground = "#F1F7EB", background = "#4C5843" }
 
 [colors.hints]
-start = { foreground = "#ACCAE6", background = "#102840" }
-end = { foreground = "#8EA7BF", background = "#102840" }
+start = { foreground = "#D8DED3", background = "#4C5843" }
+end = { foreground = "#B3B7AF", background = "#4C5843" }
 
 [colors.normal]
-black = "#102840"
-red = "#BF3030"
-green = "#60BF30"
-yellow = "#BFA730"
-blue = "#3078BF"
-magenta = "#8330BF"
-cyan = "#608FBF"
-white = "#ACCAE6"
+black = "#3E4637"
+red = "#4C5844"
+green = "#5A6A50"
+yellow = "#958831"
+blue = "#C4B550"
+magenta = "#75806F"
+cyan = "#A0AA95"
+white = "#D8DED3"
 
 [colors.bright]
-black = "#153959"
-red = "#D83636"
-green = "#6DD836"
-yellow = "#D8BB36"
-blue = "#3687D8"
-magenta = "#9336D8"
-cyan = "#6DA1D8"
-white = "#BDDFFF"
+black = "#535E4C"
+red = "#627258"
+green = "#6E8461"
+yellow = "#AD9E38"
+blue = "#DDCC59"
+magenta = "#8C9986"
+cyan = "#B8C4A9"
+white = "#F1F7EB"
 
 [cursor]
 style = { shape = "Beam", blinking = "Off" }

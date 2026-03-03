@@ -8,18 +8,18 @@ offset = (0, 10)
 progress_bar_max_width = 500
 progress_bar_corner_radius = 0
 font = "Maple Mono NF CN 13"
-corner_radius = 10
+corner_radius = 0
 frame_width = 2
 mouse_left_click = do_action, close_current
 mouse_middle_click = close_current
 mouse_right_click = context
 transparency = 100
-background = "#10284010"
-foreground = "#ACCAE6FF"
-highlight = "#BDDFFFFF"
-frame_color = "#BDDFFFFF"
+background = "#4C5843FF"
+foreground = "#D8DED3FF"
+highlight = "#F1F7EBFF"
+frame_color = "#282E22FF"
 separator_color = frame
-format = "<span color='#608FBFFF'>%s</span>\n%b"
-icon_corner_radius = 10
+format = "<span color='#D8DED3FF'>%s</span>\n%b"
+icon_corner_radius = 0
 timeout = 3
 show_indicators = no
