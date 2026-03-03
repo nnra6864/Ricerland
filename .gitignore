@@ -129,6 +129,7 @@
 !/CS2/
 
 # Files
+!/yazi/
 !/dolphinrc
 !/ranger/
 !/nautilus/
@@ -152,6 +153,7 @@
 # Misc
 !/glava/
 !/mpv/
+!/vicinae/
 !/rofi/
 !/clapboard/
 !/cliphist-rofi-img
