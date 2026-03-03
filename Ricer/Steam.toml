@@ -38,8 +38,8 @@ outline_rotation_bezier = "quadOut"
 outline_rotation_type = "once"
 
 # Misc
-terminal = "ghostty"
-terminal_command = "ghostty +new-window"
+terminal = "foot"
+terminal_command = "foot"
 rounding = 0
 roundingPower = 1
 gapsIn = 5
@@ -199,6 +199,7 @@ ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
 ZenBrowserUserContent = ["~/.config/ZenBrowser/userContent.css", "hexa"]
 YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
 Ghostty = "~/.config/ghostty/Ricer"
+Foot = "~/.config/foot/foot.ini"
 Kitty = "~/.config/kitty/kitty.conf"
 KDEColors = ["~/.local/share/color-schemes/Ricer.colors", "hexa"]
 RicerHub = ["~/.config/RicerHub.py", "hexa"]
