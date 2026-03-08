@@ -9,7 +9,7 @@
           "contentUiType": "COMBO",
           "isActiveOnStart": true,
           "isVisible": true,
-          "weight": 0.11008902
+          "weight": 0.054928742
         },
         {
           "id": "Commit",
@@ -81,7 +81,7 @@
       ],
       "unifiedWeights": {
         "top": 0.33,
-        "left": 0.11008902,
+        "left": 0.054928742,
         "bottom": 0.33,
         "right": 0.33
       }

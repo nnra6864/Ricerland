@@ -7,13 +7,13 @@
       <i c="6" l="1771979576502" />
     </e>
     <e n="ChangeLaf">
-      <i c="2" l="1771352246844" />
+      <i c="8" l="1772983609002" />
     </e>
     <e n="EditorBackSpace">
-      <i c="15" l="1771978869693" />
+      <i c="20" l="1772984262505" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="11" l="1771979062176" />
+      <i c="13" l="1772984396831" />
     </e>
     <e n="EditorDown">
       <i c="3" l="1771884819863" />
@@ -31,10 +31,13 @@
       <i c="1" l="1771352124378" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="20" l="1771979586786" />
+      <i c="28" l="1772983606685" />
     </e>
     <e n="ShowSettings">
       <i c="7" l="1771884825559" />
+    </e>
+    <e n="SplitVertically">
+      <i c="2" l="1772982964478" />
     </e>
     <e n="Tree-selectNext">
       <i c="2" l="1771979577153" />
@@ -43,16 +46,25 @@
       <i c="2" l="1771979577608" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="2" l="1771978859484" />
+      <i c="3" l="1772982987058" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="1" l="1771884675507" />
     </e>
+    <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$1">
+      <i c="3" l="1772983611724" />
+    </e>
     <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$LafChangeAction">
-      <i c="1" l="1771352178693" />
+      <i c="3" l="1772983217975" />
     </e>
     <e n="com.intellij.ide.plugins.PluginManagerMain$3">
       <i c="2" l="1771979537024" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginsTab$3$1">
+      <i c="2" l="1772984413926" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.TabbedPaneHeaderComponent$3">
+      <i c="1" l="1772982991878" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
       <i c="13" l="1771979593025" />
