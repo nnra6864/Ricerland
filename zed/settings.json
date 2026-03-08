@@ -1,4 +1,12 @@
 {
+    "agent": {
+        "default_model": {
+            "provider": "ollama",
+            "model": "qwen2.5-coder:7b",
+        },
+        "favorite_models": [],
+        "model_parameters": [],
+    },
     "which_key": {
         "enabled": true,
     },
@@ -35,7 +43,6 @@
         "lua": true,
         "csharp": true,
         "csharp-snippets": true,
-        "unity-snippets": true,
         "pylsp": true,
         "html": true,
         "scss": true,
@@ -174,13 +181,6 @@
                 },
             ],
             "api_url": "https://api.deepseek.com/beta",
-        },
-    },
-
-    "agent": {
-        "default_model": {
-            "provider": "ollama",
-            "model": "qwen2.5:32b",
         },
     },
 
