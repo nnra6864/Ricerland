@@ -1,4 +1,5 @@
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Chandelier/Chandelier.blend
+/home/nn/Data/Projects/Editing/nn/When_Game_Developers_Prioritized_Gameplay/Projects/Blender/When_Game_Developers_Prioritized_Gameplay.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Chains.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/Bar.blend
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/SettingsBoard.blend
@@ -17,7 +18,6 @@
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Chains.blend
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/SettingsBoard.blend
 /home/nn/Data/Projects/Editing/nnra/Blender_Velocity_Tutorial/Projects/Blender/Blender_Velocity_Tutorial.blend
-/home/nn/Data/Projects/Editing/nn/When_Game_Developers_Prioritized_Gameplay/Projects/Blender/When_Game_Developers_Prioritized_Gameplay.blend
 /home/nn/Data/Projects/Editing/Project_Template/Projects/Blender/Project_Name.blend
 /home/nn/Data/Projects/Editing/Blender_CS_Template/Projects/Blender/Project_Name.blend
 /home/nn/Downloads/colosseum1.blend
