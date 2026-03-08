@@ -4,7 +4,8 @@
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
-        "https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css"
+        "https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css",
+        "https://raw.githubusercontent.com/PL7963/Discord-Mica/refs/heads/main/discord-mica.theme.css"
     ],
     "enabledThemes": [
         "TranslucencePlus.theme.css",
@@ -239,7 +240,8 @@
             "enabled": false,
             "requireModifier": false,
             "enableDoubleClickToReply": true,
-            "enableDoubleClickToEdit": true
+            "enableDoubleClickToEdit": true,
+            "addAdditionalReacts": false
         },
         "MessageLinkEmbeds": {
             "enabled": true,
@@ -458,7 +460,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": true,
+            "triggerNameRerender": false,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -477,7 +479,10 @@
             "usernameColor": "Role-25",
             "nameSeparator": " ",
             "ignoreFonts": false,
-            "customNameColor": "Role-25"
+            "customNameColor": "Role-25",
+            "friendNameOnlyInDirectMessages": false,
+            "customNameOnlyInDirectMessages": false,
+            "typingIndicator": true
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -1190,14 +1195,6 @@
         "LastActive": {
             "enabled": false
         },
-        "LimitMiddleClickPaste": {
-            "enabled": true,
-            "limitTo": "active",
-            "reenableDelay": 500,
-            "threshold": 100,
-            "scope": "always",
-            "preventLinkOpen": false
-        },
         "LoginWithQR": {
             "enabled": false
         },
@@ -1496,7 +1493,8 @@
             "noDefaultHangStatus": false,
             "forceRoleIcon": false,
             "refreshSlashCommands": false,
-            "accountStandingButton": false
+            "accountStandingButton": false,
+            "restoreFileDownloadButton": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1739,9 +1737,6 @@
         "RepeatMessages": {
             "enabled": false
         },
-        "BetterUserArea": {
-            "enabled": false
-        },
         "RichMagnetLinks": {
             "enabled": false
         },
@@ -1807,6 +1802,29 @@
         },
         "WaitForSlot": {
             "enabled": false
+        },
+        "MiddleClickTweaks": {
+            "enabled": true,
+            "pasteScope": "always",
+            "pasteThreshold": 100
+        },
+        "HideMessages": {
+            "enabled": false
+        },
+        "NoPushToTalk": {
+            "enabled": false
+        },
+        "TriviaAI": {
+            "enabled": false
+        },
+        "Declutter": {
+            "enabled": false
+        },
+        "SongSpotlight": {
+            "enabled": false
+        },
+        "ClickableRoles": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1820,7 +1838,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1770906059648
+        "settingsSyncVersion": 1773000942142
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1835,5 +1853,6 @@
         "messagePopoverButtons": {}
     },
     "enableOnlineThemes": true,
-    "pinnedThemes": []
+    "pinnedThemes": [],
+    "mainWindowFrameless": false
 }
