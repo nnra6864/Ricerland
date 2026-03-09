@@ -12,6 +12,7 @@
    "$schema": "https://vicinae.com/schemas/config.json",
    "font": {
       "normal": {
+         "family": "Maple Mono NF CN",
          "size": 12
       }
    },
@@ -22,7 +23,7 @@
       }
    },
    "launcher_window": {
-      "opacity": 0.9,
+      "opacity": 1,
       "client_side_decorations": {
          "enabled": true
       }
