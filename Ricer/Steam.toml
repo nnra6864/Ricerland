@@ -38,7 +38,7 @@ outline_rotation_bezier = "quadOut"
 outline_rotation_type = "once"
 
 # Misc
-terminal = "foot"
+terminal = "ghostty"
 rounding = 0
 roundingPower = 1
 gapsIn = 5
