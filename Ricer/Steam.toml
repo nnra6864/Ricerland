@@ -39,7 +39,6 @@ outline_rotation_type = "once"
 
 # Misc
 terminal = "foot"
-terminal_command = "foot"
 rounding = 0
 roundingPower = 1
 gapsIn = 5
