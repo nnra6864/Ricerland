@@ -1,5 +1,5 @@
 # Customize prompt (Obsolete, using omp now)
-# set -g tide_left_prompt_items time os vi_mode pwd git 
+# set -g tide_left_prompt_items time os vi_mode pwd git
 # set -g tide_right_prompt_items
 # set -g tide_right_prompt_suffix ''
 # set -g tide_time_format '%T'
@@ -15,7 +15,7 @@ alias doas='sudo'
 alias nlear='clear; fastfetch; echo ""'
 alias py='python'
 alias timeshit='timeshift'
-alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk' 
+alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk'
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 
@@ -35,41 +35,41 @@ alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-pe
 
 # Updates the entire system
 function update
-	# Clear cache to avoid issues and update the pacman and AUR packages
-	yes | paru -Scc
+    # Clear cache to avoid issues and update the pacman and AUR packages
+    yes | paru -Scc
 
-	# Update packages and Hyprland
-	paru -Syu --sudoloop \
-	    hyprland-protocols-git \
-        hyprwayland-scanner-git \
-        hyprutils-git \
-        hyprgraphics-git \
-        hyprlang-git \
-        hyprcursor-git \
-        aquamarine-git \
-        xdg-desktop-portal-hyprland-git \
-        hyprwire-git \
-        hyprtoolkit-git \
-        hyprland-git
-	
-	# Update hyprpm (often fails so don't use `and` after it)
-	and hyprpm update
+    # Update packages and Hyprland
+    paru -Syu --sudoloop #\
+        #hyprland-protocols-git \
+        #hyprwayland-scanner-git \
+        #hyprutils-git \
+        #hyprgraphics-git \
+        #hyprlang-git \
+        #hyprcursor-git \
+        #aquamarine-git \
+        #xdg-desktop-portal-hyprland-git \
+        #hyprwire-git \
+        #hyprtoolkit-git \
+        #hyprland-git
 
-	# Update nv drivers
-	#cd ~/Packages/nvidia-all
-	#and git pull
+    # Update hyprpm (often fails so don't use `and` after it)
+    and hyprpm update
+
+    # Update nv drivers
+    #cd ~/Packages/nvidia-all
+    #and git pull
     #and notify-send "Update" "Input required for nvidia drivers"
     #and paplay /usr/share/sounds/freedesktop/stereo/message.oga
-	#and makepkg -si
+    #and makepkg -si
 
-	# Update flatpak
-	flatpak update -y
+    # Update flatpak
+    flatpak update -y
 
-	# Clear the cache once again
-	yes | paru -Scc
-    
-	# Notify the user system has been updated
-	notify-send "Update" "Update complete"
+    # Clear the cache once again
+    yes | paru -Scc
+
+    # Notify the user system has been updated
+    notify-send "Update" "Update complete"
 end
 
 # Starts Monero Wallet GUI
@@ -83,7 +83,7 @@ end
 # Rices the system with the provided config
 function rice
     # Start the Shifter transition
-	#python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
     #set pid $last_pid
     #disown
     #sleep 0.2
@@ -105,20 +105,20 @@ function rice
     #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
     /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
     themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer &&
-    
+
     # Apply the theme with nwg-look
     nwg-look -a
 
     # Generate Steam theme
     adwaita-steam-gtk -i
-    
+
     # Reload Dunst
-	dunstctl reload
+    dunstctl reload
 
     # Nlear the console, sleep and kill Shifter
-	#nlear
-	#sleep 0.5
-	#kill -SIGUSR1 $pid
+    #nlear
+    #sleep 0.5
+    #kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
@@ -129,17 +129,17 @@ end
 # Opens neovide and moves terminal to the nv workspace(Hyprland only)
 function nv
     set current_window (hyprctl activewindow -j | jq -r .address 2>/dev/null)
-    
+
     neovide $argv &
     set neovide_pid $last_pid
     #Sleep is needed to avoid window rearangement when opening
     #Adjust as needed per system, the slower the system the bigger the pause
     sleep 0.3
-    
+
     hyprctl dispatch movetoworkspacesilent "special:nv,address:$current_window" >/dev/null 2>&1
     while kill -0 $neovide_pid 2>/dev/null
-	#Lowering this number reduces the pause between checks
-	#May lead to a very slight performance increase at the cost of seamlessness
+    #Lowering this number reduces the pause between checks
+    #May lead to a very slight performance increase at the cost of seamlessness
         sleep 0.1
     end
     set current_workspace (hyprctl activeworkspace -j | jq -r .id 2>/dev/null)
@@ -266,7 +266,7 @@ function check_remote_dependency
     set remote_machine $argv[1]
     set remote_pass $argv[2]
     set dependency $argv[3]
-    
+
     if not sshpass -p "$remote_pass" ssh "$remote_machine" "command -v $dependency >/dev/null 2>&1"
         echo "Error: $dependency not found on remote machine" >&2
         return 1
@@ -501,7 +501,7 @@ set PATH $PATH /home/nn/.local/bin
 
 # Start the ssh-agent
 if not pgrep -u $USER ssh-agent > /dev/null
-	ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
+    ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
 end
 set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
