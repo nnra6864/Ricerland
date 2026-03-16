@@ -22,6 +22,9 @@
          "icon_theme": "Ricer"
       }
    },
+   "telemetry": {
+      "system_info": false
+   },
    "launcher_window": {
       "opacity": 1,
       "client_side_decorations": {
