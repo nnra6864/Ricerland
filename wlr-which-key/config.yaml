@@ -63,6 +63,9 @@ menu:
                 - key: "n"
                   desc: Nautilus
                   cmd: nautilus
+                - key: "y"
+                  desc: Yazi
+                  cmd: xdg-terminal-exec yazi
           - key: "c"
             desc: Counter Strike
             submenu:
