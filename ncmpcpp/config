@@ -5,3 +5,6 @@ visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
 visualizer_look = "❖❖"
 visualizer_fps = 144
+
+# Required for startup window rule to work
+song_window_title_format = ncmpcpp
