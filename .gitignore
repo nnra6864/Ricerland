@@ -91,6 +91,7 @@
 # CLI
 !/fish/
 !/nushell/
+!/tmux/
 !/oh-my-posh/
 !/starship.toml
 !/btop/
