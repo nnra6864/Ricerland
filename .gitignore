@@ -82,6 +82,8 @@
 # Applications #
 ################
 
+!/Applications/
+
 # Terminals
 !/ghostty/
 !/kitty/
