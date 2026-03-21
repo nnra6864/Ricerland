@@ -15,7 +15,7 @@ resize-overlay = never
 image-storage-limit = 4294967295
 confirm-close-surface = false
 
-##custom-shader-animation = always
+#custom-shader-animation = always
 #custom-shader = shaders/ghostty-shader-playground/public/shaders/blaze_sparks.glsl
 #custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_blaze.glsl
 #custom-shader = shaders/ghostty-shader-playground/public/shaders/cursor_blaze_no_trail.glsl
