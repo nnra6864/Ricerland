@@ -28,14 +28,14 @@ max_font_size = 25
 
 # Outline
 outline_size = 2
-outline_rotation = 225
+outline_rotation = 90
 outline_fade_animation = 1
-outline_fade_duration = 10
-outline_fade_bezier = "expoOut"
-outline_rotation_animation = 0
-outline_rotation_duration = 5
-outline_rotation_bezier = "quadOut"
-outline_rotation_type = "once"
+outline_fade_duration = 1
+outline_fade_bezier = "quadOut"
+outline_rotation_animation = 1
+outline_rotation_duration = 30
+outline_rotation_bezier = "linear"
+outline_rotation_type = "loop"
 
 # Misc
 terminal = "ghostty"
@@ -46,6 +46,8 @@ gapsOut = 10
 blur = "false"
 blurSize = 20
 blurPasses = 4
+animationDuration = 2
+animationEasing = "expoOut"
 cursor_size = 24
 cursor_rot = 21
 notification_duration = 3
