@@ -10,7 +10,7 @@ space_files = true
 
 [Values]
 # Theme
-bg = "~/.config/Backgrounds/Kyanos/Misty_Forest.jpg"
+bg = "~/.config/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jpg"
 icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
 gtk_theme = "oomox-Ricer"
