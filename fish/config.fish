@@ -487,6 +487,7 @@ end
 
 # Fish config
 zoxide init fish | source
+tv init fish | source
 fish_vi_key_bindings
 
 nlear
