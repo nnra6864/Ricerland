@@ -124,7 +124,7 @@ button_foreground_inactive = "$button_foreground.$inactive_hsv"
 button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
 # Outline
-outline = "$blue"
+outline = "$br_blue"
 outline_highlight = "$outline.$highlight_hsv"
 outline_inactive = "$outline.$inactive_hsv"
 outline_disabled = "$outline.$disabled_hsv"
