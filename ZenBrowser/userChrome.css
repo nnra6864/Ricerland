@@ -28,42 +28,42 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
       Primary UI Elements
       Defines the main color scheme for primary interface components
     -----------------------------------------------------*/
-    --zen-primary-color: #D8DED3FF !important;         /* Main foreground color for text and icons */
-    --zen-colors-primary: #4C5843FF !important;              /* Primary color for buttons and actionable elements */
-    --zen-colors-secondary: #4C5843FF !important;            /* Secondary color for alternative actions */
-    --zen-colors-tertiary: #4C5843FF !important;         /* Tertiary color for less prominent UI areas */
-    --zen-colors-border: #282E22FF !important;              /* Color used for borders and outlines */
+    --zen-primary-color: #A3C5CCFF !important;         /* Main foreground color for text and icons */
+    --zen-colors-primary: #081D26FF !important;              /* Primary color for buttons and actionable elements */
+    --zen-colors-secondary: #081D26FF !important;            /* Secondary color for alternative actions */
+    --zen-colors-tertiary: #081D26FF !important;         /* Tertiary color for less prominent UI areas */
+    --zen-colors-border: #266F7FFF !important;              /* Color used for borders and outlines */
 
     /*-----------------------------------------------------
       Toolbar & Icon Colors
       Defines colors specifically for toolbar elements and icons
     -----------------------------------------------------*/
-    --toolbar-field-color: #D8DED3FF !important;               /* Toolbar input text color */
-    --toolbar-field-focus-color: #F1F7EBFF !important; /* Toolbar input text color when focused */
-    --toolbar-color: #D8DED3FF !important;                     /* General toolbar text color */
-    --toolbarbutton-icon-fill: #D8DED3FF !important;           /* Fill color for icons in toolbar buttons */
-    --lwt-text-color: #D8DED3FF !important;                    /* Lightweight theme text color in toolbars */
-    --tab-selected-textcolor: #F1F7EBFF !important;  /* Active/selected tab text color updated to foreground_highlight */
+    --toolbar-field-color: #A3C5CCFF !important;               /* Toolbar input text color */
+    --toolbar-field-focus-color: #B7DCE5FF !important; /* Toolbar input text color when focused */
+    --toolbar-color: #A3C5CCFF !important;                     /* General toolbar text color */
+    --toolbarbutton-icon-fill: #A3C5CCFF !important;           /* Fill color for icons in toolbar buttons */
+    --lwt-text-color: #A3C5CCFF !important;                    /* Lightweight theme text color in toolbars */
+    --tab-selected-textcolor: #B7DCE5FF !important;  /* Active/selected tab text color updated to foreground_highlight */
 
     /*-----------------------------------------------------
       New Tab, Sidebar & Panel Colors
       Colors for new tab page texts, sidebars, and panel elements
     -----------------------------------------------------*/
-    --newtab-text-primary-color: #D8DED3FF !important;         /* Primary text color on the new tab page */
-    --arrowpanel-color: #D8DED3FF !important;                  /* Text color for arrow panels */
-    --arrowpanel-background: #4C5843FF !important;             /* Background color for arrow panels */
-    --sidebar-text-color: #D8DED3FF !important;                /* Text color for sidebar elements */
-    --lwt-sidebar-text-color: #D8DED3FF !important;            /* Text color for lightweight theme sidebar */
-    --lwt-sidebar-background-color: #4C5843FF !important;      /* Background color for lightweight theme sidebar */
+    --newtab-text-primary-color: #A3C5CCFF !important;         /* Primary text color on the new tab page */
+    --arrowpanel-color: #A3C5CCFF !important;                  /* Text color for arrow panels */
+    --arrowpanel-background: #081D26FF !important;             /* Background color for arrow panels */
+    --sidebar-text-color: #A3C5CCFF !important;                /* Text color for sidebar elements */
+    --lwt-sidebar-text-color: #A3C5CCFF !important;            /* Text color for lightweight theme sidebar */
+    --lwt-sidebar-background-color: #081D26FF !important;      /* Background color for lightweight theme sidebar */
 
     /*-----------------------------------------------------
       Background Colors for Toolbars & Main Browser
       Defines background colors for toolbars, new tab page, and the main browser window
     -----------------------------------------------------*/
-    --toolbar-bgcolor: #4C5843FF !important;             /* Background color for the toolbar */
-    --newtab-background-color: #4C5843FF !important;  /* Background color for the new tab page */
-    --zen-themed-toolbar-bg: #4C5843FF !important;    /* Background color for the Zen-themed toolbar */
-    --zen-main-browser-background: #4C5843FF !important; /* Main browser background color */
+    --toolbar-bgcolor: #081D26FF !important;             /* Background color for the toolbar */
+    --newtab-background-color: #081D26FF !important;  /* Background color for the new tab page */
+    --zen-themed-toolbar-bg: #081D26FF !important;    /* Background color for the Zen-themed toolbar */
+    --zen-main-browser-background: #081D26FF !important; /* Main browser background color */
   }
 
   /*-----------------------------------------------------
@@ -71,7 +71,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the icon that indicates granted permissions
   -----------------------------------------------------*/
   #permissions-granted-icon {
-    color: #4C5843FF !important;  /* Sets the icon color to match the background for contrast */
+    color: #081D26FF !important;  /* Sets the icon color to match the background for contrast */
   }
 
   /*-----------------------------------------------------
@@ -79,7 +79,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background of the sidebar places tree
   -----------------------------------------------------*/
   .sidebar-placesTree {
-    background-color: #4C5843FF !important; /* Applies the background color for consistency */
+    background-color: #081D26FF !important; /* Applies the background color for consistency */
   }
 
   /*-----------------------------------------------------
@@ -87,7 +87,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the Zen workspaces button
   -----------------------------------------------------*/
   #zen-workspaces-button {
-    background-color: #4C5843FF !important; /* Sets the button background to the main background color */
+    background-color: #081D26FF !important; /* Sets the button background to the main background color */
   }
 
   /*-----------------------------------------------------
@@ -95,7 +95,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the tab toolbar area
   -----------------------------------------------------*/
   #TabsToolbar {
-    background-color: #4C5843FF !important; /* Matches the background color of the tabs toolbar with the overall theme */
+    background-color: #081D26FF !important; /* Matches the background color of the tabs toolbar with the overall theme */
   }
 
   /*-----------------------------------------------------
@@ -103,7 +103,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the URL bar element
   -----------------------------------------------------*/
   #urlbar-background {
-    background-color: #4C5843FF !important; /* Applies the themed background color to the URL bar */
+    background-color: #081D26FF !important; /* Applies the themed background color to the URL bar */
   }
 
   /*-----------------------------------------------------
@@ -111,8 +111,8 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles for the shortcut buttons or links within content areas
   -----------------------------------------------------*/
   .content-shortcuts {
-    background-color: #4C5843FF !important;             /* Sets the background color of shortcut elements */
-    border-color: #F1F7EBFF !important;         /* Uses foreground_highlight for the border instead of a fixed blue */
+    background-color: #081D26FF !important;             /* Sets the background color of shortcut elements */
+    border-color: #B7DCE5FF !important;         /* Uses foreground_highlight for the border instead of a fixed blue */
   }
 
   /*-----------------------------------------------------
@@ -120,7 +120,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the color of URL text within the URL bar view
   -----------------------------------------------------*/
   .urlbarView-url {
-    color: #F1F7EBFF !important; /* Changed from blue to foreground_highlight for better consistency */
+    color: #B7DCE5FF !important; /* Changed from blue to foreground_highlight for better consistency */
   }
 
   /*-----------------------------------------------------
@@ -128,7 +128,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background of the favicon container in the bookmark edit panel
   -----------------------------------------------------*/
   #zenEditBookmarkPanelFaviconContainer {
-    background: #4C5843FF !important; /* Matches the background to ensure visual harmony */
+    background: #081D26FF !important; /* Matches the background to ensure visual harmony */
   }
 
   /*-----------------------------------------------------
@@ -138,7 +138,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
   toolbar .toolbarbutton-1 {
     &:not([disabled]) {
       &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-        fill: #4C5843FF; /* Changes the fill color for icons/text when the button is active/open */
+        fill: #081D26FF; /* Changes the fill color for icons/text when the button is active/open */
       }
     }
   }
@@ -149,43 +149,43 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Fixed color names retained here as they represent distinct identity hues.
   -----------------------------------------------------*/
   .identity-color-blue {
-    --identity-tab-color: #C4B550FF !important;   /* Sets tab color to blue */
-    --identity-icon-color: #C4B550FF !important;    /* Sets icon color to blue */
+    --identity-tab-color: #1F5A66FF !important;   /* Sets tab color to blue */
+    --identity-icon-color: #1F5A66FF !important;    /* Sets icon color to blue */
   }
 
   .identity-color-turquoise {
-    --identity-tab-color: #A0AA95FF !important;     /* Sets tab color to turquoise (cyan) */
-    --identity-icon-color: #A0AA95FF !important;      /* Sets icon color to turquoise (cyan) */
+    --identity-tab-color: #1F665AFF !important;     /* Sets tab color to turquoise (cyan) */
+    --identity-icon-color: #1F665AFF !important;      /* Sets icon color to turquoise (cyan) */
   }
 
   .identity-color-green {
-    --identity-tab-color: #5A6A50FF !important;    /* Sets tab color to green */
-    --identity-icon-color: #5A6A50FF !important;     /* Sets icon color to green */
+    --identity-tab-color: #1F6628FF !important;    /* Sets tab color to green */
+    --identity-icon-color: #1F6628FF !important;     /* Sets icon color to green */
   }
 
   .identity-color-yellow {
-    --identity-tab-color: #958831FF !important;   /* Sets tab color to yellow */
-    --identity-icon-color: #958831FF !important;    /* Sets icon color to yellow */
+    --identity-tab-color: #66661FFF !important;   /* Sets tab color to yellow */
+    --identity-icon-color: #66661FFF !important;    /* Sets icon color to yellow */
   }
 
   .identity-color-orange {
-    --identity-tab-color: #AD9E38FF !important; /* Sets tab color to a bright yellow/orange */
-    --identity-icon-color: #AD9E38FF !important;  /* Sets icon color to a bright yellow/orange */
+    --identity-tab-color: #7F7F26FF !important; /* Sets tab color to a bright yellow/orange */
+    --identity-icon-color: #7F7F26FF !important;  /* Sets icon color to a bright yellow/orange */
   }
 
   .identity-color-red {
-    --identity-tab-color: #4C5844FF !important;      /* Sets tab color to red */
-    --identity-icon-color: #4C5844FF !important;       /* Sets icon color to red */
+    --identity-tab-color: #661F1FFF !important;      /* Sets tab color to red */
+    --identity-icon-color: #661F1FFF !important;       /* Sets icon color to red */
   }
 
   .identity-color-pink {
-    --identity-tab-color: #8C9986FF !important; /* Sets tab color to bright magenta (pink) */
-    --identity-icon-color: #8C9986FF !important;  /* Sets icon color to bright magenta (pink) */
+    --identity-tab-color: #5F267FFF !important; /* Sets tab color to bright magenta (pink) */
+    --identity-icon-color: #5F267FFF !important;  /* Sets icon color to bright magenta (pink) */
   }
 
   .identity-color-purple {
-    --identity-tab-color: #75806FFF !important;    /* Sets tab color to purple (magenta) */
-    --identity-icon-color: #75806FFF !important;     /* Sets icon color to purple (magenta) */
+    --identity-tab-color: #4D1F66FF !important;    /* Sets tab color to purple (magenta) */
+    --identity-icon-color: #4D1F66FF !important;     /* Sets icon color to purple (magenta) */
   }
 }
 

@@ -3,17 +3,17 @@
 
 .theme-dark {
 	/* Variables */
-	--background-col: #4C5843FF;
-	--background-col-alt: #5A6A50FF;
-	--background-highlight: #3E4637FF;
-	--background-highlight-alt: #3E4637FF;
-	--text-col: #D8DED3FF;
-	--highlight-col: #F1F7EBFF;
-	--placeholder-col: #BFC4BBFF;
-	--link-col: #B8C4A9FF;
-	--button-text-col: #D8DED3FF;
-	--outline-col: #282E22FF;
-	--rounding-big: 0px;
+	--background-col: #081D26FF;
+	--background-col-alt: #0C2E3FFF;
+	--background-highlight: #0C2E3FFF;
+	--background-highlight-alt: #081D26FF;
+	--text-col: #A3C5CCFF;
+	--highlight-col: #B7DCE5FF;
+	--placeholder-col: #8EABB2FF;
+	--link-col: #267F6FFF;
+	--button-text-col: #A3C5CCFF;
+	--outline-col: #266F7FFF;
+	--rounding-big: 10px;
 	--rounding-small: calc(var(--rounding-big) / 2);
 
 	/* App Elements */

@@ -264,10 +264,6 @@
             "showEditDiffs": false,
             "separatedDiffs": false
         },
-        "MessageTags": {
-            "enabled": false,
-            "clyde": true
-        },
         "MoreCommands": {
             "enabled": true,
             "uwuEverything": false,
@@ -624,7 +620,8 @@
             "enabled": false
         },
         "FixYoutubeEmbeds": {
-            "enabled": true
+            "enabled": true,
+            "youtubeDescription": false
         },
         "ChatInputButtonAPI": {
             "enabled": true
@@ -1494,7 +1491,9 @@
             "forceRoleIcon": false,
             "refreshSlashCommands": false,
             "accountStandingButton": false,
-            "restoreFileDownloadButton": false
+            "restoreFileDownloadButton": false,
+            "noModalAnimation": false,
+            "noBulletPoints": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1825,6 +1824,13 @@
         },
         "ClickableRoles": {
             "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false,
+            "clyde": true
+        },
+        "RichPresence": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1838,7 +1844,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773000942142
+        "settingsSyncVersion": 1774298056857
     },
     "eagerPatches": false,
     "enabledThemeLinks": [

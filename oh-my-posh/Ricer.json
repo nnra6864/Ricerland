@@ -5,8 +5,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#5A6A50",
-          "foreground": "#D8DED3",
+          "background": "#1F6628",
+          "foreground": "#A3C5CC",
           "properties": {
           "time_format": "15:04:05"
         },
@@ -17,8 +17,8 @@
           "type": "time"
         },
         {
-          "background": "#6E8461",
-          "foreground": "#D8DED3",
+          "background": "#267F32",
+          "foreground": "#A3C5CC",
           "style": "diamond",
           "template": " {{ .Icon }}  ",
           "leading_diamond": "",
@@ -27,14 +27,14 @@
         {
           "type": "session",
           "style": "diamond",
-          "background": "#6E8461",
-          "foreground": "{{ if .Root }}#4C5844{{ else }}#D8DED3{{ end }}",
+          "background": "#267F32",
+          "foreground": "{{ if .Root }}#661F1F{{ else }}#A3C5CC{{ end }}",
           "trailing_diamond": "",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ☦ {{ .HostName }} "
         },
         {
-          "background": "#829E73",
-          "foreground": "#D8DED3",
+          "background": "#2D993D",
+          "foreground": "#A3C5CC",
           "properties": {
             "folder_icon": " ",
             "folder_separator_icon": "  ",
@@ -49,14 +49,14 @@
           "type": "path"
         },
         {
-          "background": "#97B785",
+          "background": "#35B247",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#A0AA95{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#75806F{{ end }}",
-            "{{ if gt .Ahead 0 }}#5A6A50{{ end }}",
-            "{{ if gt .Behind 0 }}#958831{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#1F665A{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#4D1F66{{ end }}",
+            "{{ if gt .Ahead 0 }}#1F6628{{ end }}",
+            "{{ if gt .Behind 0 }}#66661F{{ end }}"
           ],
-          "foreground": "#D8DED3",
+          "foreground": "#A3C5CC",
           "powerline_symbol": "",
           "properties": {
             "fetch_stash_count": true,

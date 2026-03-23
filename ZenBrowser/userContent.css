@@ -10,12 +10,12 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:") {
     :root {
-      --in-content-page-color: #D8DED3FF !important;  /* Main in-content text color */
-      --color-accent-primary: #F1F7EBFF !important;  /* Primary accent color (updated from blue) */
-      --color-accent-primary-hover: #F1F7EBFF !important;  /* Accent color on hover (updated from br_blue) */
-      --color-accent-primary-active: #F1F7EBFF !important;  /* Accent color when active (updated from br_blue) */
-      background-color: #4C5843FF !important;  /* Overall background color for about pages */
-      --in-content-page-background: #4C5843FF !important;  /* In-content background variable */
+      --in-content-page-color: #A3C5CCFF !important;  /* Main in-content text color */
+      --color-accent-primary: #B7DCE5FF !important;  /* Primary accent color (updated from blue) */
+      --color-accent-primary-hover: #B7DCE5FF !important;  /* Accent color on hover (updated from br_blue) */
+      --color-accent-primary-active: #B7DCE5FF !important;  /* Accent color when active (updated from br_blue) */
+      background-color: #081D26FF !important;  /* Overall background color for about pages */
+      --in-content-page-background: #081D26FF !important;  /* In-content background variable */
     }
   }
 
@@ -26,16 +26,16 @@
   @-moz-document url("about:newtab"), url("about:home") {
 
     :root {
-      --newtab-background-color: #4C5843FF !important;  /* New tab main background color */
-      --newtab-background-color-secondary: #4C5843FF !important;  /* Secondary background (e.g., panels) */
-      --newtab-element-hover-color: #4C5843FF !important;  /* Hover color for interactive elements */
-      --newtab-text-primary-color: #D8DED3FF !important;  /* Primary text color on new tab */
-      --newtab-wordmark-color: #D8DED3FF !important;  /* Wordmark (logo text) color */
-      --newtab-primary-action-background: #F1F7EBFF !important;  /* Primary action button background (updated from blue) */
+      --newtab-background-color: #081D26FF !important;  /* New tab main background color */
+      --newtab-background-color-secondary: #081D26FF !important;  /* Secondary background (e.g., panels) */
+      --newtab-element-hover-color: #081D26FF !important;  /* Hover color for interactive elements */
+      --newtab-text-primary-color: #A3C5CCFF !important;  /* Primary text color on new tab */
+      --newtab-wordmark-color: #A3C5CCFF !important;  /* Wordmark (logo text) color */
+      --newtab-primary-action-background: #B7DCE5FF !important;  /* Primary action button background (updated from blue) */
     }
 
     .icon {
-      color: #F1F7EBFF !important;  /* Icon color updated from blue to foreground_highlight */
+      color: #B7DCE5FF !important;  /* Icon color updated from blue to foreground_highlight */
     }
 
     .search-wrapper .logo-and-wordmark .logo {
@@ -55,15 +55,15 @@
     }
 
     .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
-      color: #F1F7EBFF !important;  /* Card title color on interaction (updated from blue) */
+      color: #B7DCE5FF !important;  /* Card title color on interaction (updated from blue) */
     }
 
     .top-site-outer .search-topsite {
-      background-color: #F1F7EBFF !important;  /* Top site background updated from blue to foreground_highlight */
+      background-color: #B7DCE5FF !important;  /* Top site background updated from blue to foreground_highlight */
     }
 
     .compact-cards .card-outer .card-context .card-context-icon.icon-download {
-      fill: #5A6A50FF !important;  /* Download icon color remains green as a semantic indicator */
+      fill: #1F6628FF !important;  /* Download icon color remains green as a semantic indicator */
     }
   }
 
@@ -73,68 +73,68 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:preferences") {
     :root {
-      --zen-colors-tertiary: #4C5843FF !important;  /* Tertiary color for UI elements */
-      --in-content-text-color: #D8DED3FF !important;  /* In-content text color */
-      --link-color: #F1F7EBFF !important;  /* Link color updated from blue to foreground_highlight */
-      --link-color-hover: #F1F7EBFF !important;  /* Link hover color updated from br_blue to foreground_highlight */
-      --zen-colors-primary: #4C5843FF !important;  /* Primary UI element background (e.g., buttons) */
-      --in-content-box-background: #4C5843FF !important;  /* Background color for in-content boxes */
-      --zen-primary-color: #F1F7EBFF !important;  /* Primary accent for preferences updated from blue */
+      --zen-colors-tertiary: #081D26FF !important;  /* Tertiary color for UI elements */
+      --in-content-text-color: #A3C5CCFF !important;  /* In-content text color */
+      --link-color: #B7DCE5FF !important;  /* Link color updated from blue to foreground_highlight */
+      --link-color-hover: #B7DCE5FF !important;  /* Link hover color updated from br_blue to foreground_highlight */
+      --zen-colors-primary: #081D26FF !important;  /* Primary UI element background (e.g., buttons) */
+      --in-content-box-background: #081D26FF !important;  /* Background color for in-content boxes */
+      --zen-primary-color: #B7DCE5FF !important;  /* Primary accent for preferences updated from blue */
     }
 
     groupbox, moz-card {
-      background: #4C5843FF !important;  /* Background for group boxes and card elements */
+      background: #081D26FF !important;  /* Background for group boxes and card elements */
     }
 
     button,
     groupbox menulist {
-      background: #4C5843FF !important;  /* Button and menulist background color */
-      color: #D8DED3FF !important;  /* Button text color */
+      background: #081D26FF !important;  /* Button and menulist background color */
+      color: #A3C5CCFF !important;  /* Button text color */
     }
 
     .main-content {
-      background-color: #4C5843FF !important;  /* Main content area background color */
+      background-color: #081D26FF !important;  /* Main content area background color */
     }
 
     /* Identity color themes for tab and icon representations in preferences */
     .identity-color-blue {
-      --identity-tab-color: #C4B550FF !important;    /* Identity tab color remains blue */
-      --identity-icon-color: #C4B550FF !important;     /* Identity icon color remains blue */
+      --identity-tab-color: #1F5A66FF !important;    /* Identity tab color remains blue */
+      --identity-icon-color: #1F5A66FF !important;     /* Identity icon color remains blue */
     }
 
     .identity-color-turquoise {
-      --identity-tab-color: #A0AA95FF !important;    /* Identity tab color remains cyan */
-      --identity-icon-color: #A0AA95FF !important;     /* Identity icon color remains cyan */
+      --identity-tab-color: #1F665AFF !important;    /* Identity tab color remains cyan */
+      --identity-icon-color: #1F665AFF !important;     /* Identity icon color remains cyan */
     }
 
     .identity-color-green {
-      --identity-tab-color: #5A6A50FF !important;   /* Identity tab color remains green */
-      --identity-icon-color: #5A6A50FF !important;    /* Identity icon color remains green */
+      --identity-tab-color: #1F6628FF !important;   /* Identity tab color remains green */
+      --identity-icon-color: #1F6628FF !important;    /* Identity icon color remains green */
     }
 
     .identity-color-yellow {
-      --identity-tab-color: #958831FF !important;  /* Identity tab color remains yellow */
-      --identity-icon-color: #958831FF !important;   /* Identity icon color remains yellow */
+      --identity-tab-color: #66661FFF !important;  /* Identity tab color remains yellow */
+      --identity-icon-color: #66661FFF !important;   /* Identity icon color remains yellow */
     }
 
     .identity-color-orange {
-      --identity-tab-color: #AD9E38FF !important;  /* Identity tab color remains bright yellow/orange */
-      --identity-icon-color: #AD9E38FF !important;   /* Identity icon color remains bright yellow/orange */
+      --identity-tab-color: #7F7F26FF !important;  /* Identity tab color remains bright yellow/orange */
+      --identity-icon-color: #7F7F26FF !important;   /* Identity icon color remains bright yellow/orange */
     }
 
     .identity-color-red {
-      --identity-tab-color: #4C5844FF !important;    /* Identity tab color remains red */
-      --identity-icon-color: #4C5844FF !important;     /* Identity icon color remains red */
+      --identity-tab-color: #661F1FFF !important;    /* Identity tab color remains red */
+      --identity-icon-color: #661F1FFF !important;     /* Identity icon color remains red */
     }
 
     .identity-color-pink {
-      --identity-tab-color: #8C9986FF !important;  /* Identity tab color remains bright magenta */
-      --identity-icon-color: #8C9986FF !important;   /* Identity icon color remains bright magenta */
+      --identity-tab-color: #5F267FFF !important;  /* Identity tab color remains bright magenta */
+      --identity-icon-color: #5F267FFF !important;   /* Identity icon color remains bright magenta */
     }
 
     .identity-color-purple {
-      --identity-tab-color: #75806FFF !important;   /* Identity tab color remains magenta/purple */
-      --identity-icon-color: #75806FFF !important;    /* Identity icon color remains magenta/purple */
+      --identity-tab-color: #4D1F66FF !important;   /* Identity tab color remains magenta/purple */
+      --identity-icon-color: #4D1F66FF !important;    /* Identity icon color remains magenta/purple */
     }
   }
 
@@ -144,8 +144,8 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:addons") {
     :root {
-      --zen-dark-color-mix-base: #4C5843FF !important;  /* Base color for dark theme in add-ons */
-      --background-color-box: #4C5843FF !important;  /* Background color for boxes in add-ons */
+      --zen-dark-color-mix-base: #081D26FF !important;  /* Base color for dark theme in add-ons */
+      --background-color-box: #081D26FF !important;  /* Background color for boxes in add-ons */
     }
   }
 
@@ -155,20 +155,20 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:protections") {
     :root {
-      --zen-primary-color: #4C5843FF !important;  /* Primary color for protections set to background */
-      --social-color: #75806FFF !important;  /* Color for social-related indicators */
-      --coockie-color: #A0AA95FF !important;  /* Color for cookie-related elements */
-      --fingerprinter-color: #958831FF !important;  /* Color for fingerprinting alerts */
-      --cryptominer-color: #F1F7EBFF !important;  /* Cryptominer alert color updated from br_blue */
-      --tracker-color: #5A6A50FF !important;  /* Tracker indicator color remains green */
-      --in-content-primary-button-background-hover: #3E4637FF !important;  /* Hover background for primary buttons */
-      --in-content-primary-button-text-color-hover: #D8DED3FF !important;  /* Hover text color for primary buttons */
-      --in-content-primary-button-background: #4C5843FF !important;  /* Primary button background color */
-      --in-content-primary-button-text-color: #D8DED3FF !important;  /* Primary button text color */
+      --zen-primary-color: #081D26FF !important;  /* Primary color for protections set to background */
+      --social-color: #4D1F66FF !important;  /* Color for social-related indicators */
+      --coockie-color: #1F665AFF !important;  /* Color for cookie-related elements */
+      --fingerprinter-color: #66661FFF !important;  /* Color for fingerprinting alerts */
+      --cryptominer-color: #B7DCE5FF !important;  /* Cryptominer alert color updated from br_blue */
+      --tracker-color: #1F6628FF !important;  /* Tracker indicator color remains green */
+      --in-content-primary-button-background-hover: #0C2E3FFF !important;  /* Hover background for primary buttons */
+      --in-content-primary-button-text-color-hover: #A3C5CCFF !important;  /* Hover text color for primary buttons */
+      --in-content-primary-button-background: #081D26FF !important;  /* Primary button background color */
+      --in-content-primary-button-text-color: #A3C5CCFF !important;  /* Primary button text color */
     }
 
     .card {
-      background-color: #4C5843FF !important;  /* Card background color for protections elements */
+      background-color: #081D26FF !important;  /* Card background color for protections elements */
     }
   }
 }

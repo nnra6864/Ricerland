@@ -621,6 +621,13 @@ tex_default_brushes = [
     'Paint Soft Pressure',
 ]
 
+alpha_mode_labels = {
+    'STRAIGHT' : 'Straight',
+    'PREMUL' : 'Premultiplied',
+    'CHANNEL_PACKED' : 'Channel Packed',
+    'NONE' : 'None'
+}
+
 rgba_letters = ['r', 'g', 'b', 'a']
 nsew_letters = ['n', 's', 'e', 'w']
 
@@ -635,7 +642,7 @@ CACHE_BITANGENT_IMAGE_SUFFIX = '_YP_CACHE_BITANGENT'
 
 GAMMA = 2.2
 
-valid_image_extensions = [".jpg",".gif",".png",".tga", ".jpeg", ".mp4", ".webp"]
+valid_image_extensions = [".jpg",".gif",".png",".tga", ".jpeg", ".mp4", ".webp", ".tif", ".tiff"]
 
 class dotdict(dict):
     """dot.notation access to dictionary attributes"""
@@ -1405,8 +1412,11 @@ def get_active_ypaint_node(obj=None, mat=None):
 
     return None
 
+def is_mat_use_nodes(mat):
+    return mat.node_tree != None and (not hasattr(mat, 'use_nodes') or mat.use_nodes)
+
 def is_yp_on_material(yp, mat):
-    if not mat.use_nodes: return False
+    if not is_mat_use_nodes(mat): return False
     for node in mat.node_tree.nodes:
         if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp:
             return True
@@ -1416,14 +1426,14 @@ def is_yp_on_material(yp, mat):
 def get_materials_using_yp(yp):
     mats = []
     for mat in bpy.data.materials:
-        if not mat.use_nodes: continue
+        if not is_mat_use_nodes(mat): continue
         for node in mat.node_tree.nodes:
             if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp and mat not in mats:
                 mats.append(mat)
     return mats
 
 def get_nodes_using_yp(mat, yp):
-    if not mat.use_nodes: return []
+    if not is_mat_use_nodes(mat): return []
     yp_nodes = []
     for node in mat.node_tree.nodes:
         if node.type == 'GROUP' and node.node_tree and node.node_tree.yp == yp:
@@ -2737,7 +2747,10 @@ def new_tree_input(tree, name, socket_type, description='', use_both=False):
     if not inp: 
         inp =  tree.interface.new_socket(name, description=description, in_out='INPUT', socket_type=socket_type)
 
-    if hasattr(inp, 'subtype'): inp.subtype = subtype
+    # NOTE: Setting subtype in Blender 5.1 Alpha here is causing the input socket to disappear
+    if hasattr(inp, 'subtype') and not is_bl_newer_than(5, 1):
+        inp.subtype = subtype
+
     return inp
 
 def new_tree_output(tree, name, socket_type, description='', use_both=False):
@@ -5142,8 +5155,9 @@ def set_active_paint_slot_entity(yp):
             if img == None: continue
             if img.name == image.name:
                 mat.paint_active_slot = idx
-                # HACK: Just in case paint slot does not update
-                wmyp.correct_paint_image_name = img.name
+                # HACK: Just in case paint slot does not update (Necessary for Blender 5.0 and lower)
+                if not is_bl_newer_than(5, 1):
+                    wmyp.correct_paint_image_name = img.name                                         
                 break
         
     else:
@@ -6797,7 +6811,7 @@ def get_material_fcurves(mat):
     fcurves = []
 
     if tree.animation_data and tree.animation_data.action:
-        for fc in get_datablock_fcurves(mat):
+        for fc in get_datablock_fcurves(tree):
             match = re.match(r'^nodes\[".+"\]\.inputs\[(\d+)\]\.default_value$', fc.data_path)
             if match:
                 fcurves.append(fc)

@@ -1,13 +1,13 @@
 [Bookmarks]
 /home/nn/Data/Projects/
 [Recent]
+/home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Objects/Fruits/
 /home/nn/Data/Projects/Unity/Katana/SourceAssets/Blender/
+/home/nn/Downloads/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Objects/Lights/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/Colosseum/
 /home/nn/Data/Projects/Unity/Katana/Files/Blender/Colosseum/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/Colosseum/
-/home/nn/Downloads/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Materials/Colosseum/Cage/
 /home/nn/Downloads/pawsbkr_textures/ColosseumCage/
 /home/nn/Data/Projects/Unity/Katana/Katana/Assets/Models/MainMenu/Buttons/
-/home/nn/Data/Projects/Unity/Katana/Files/Blender/

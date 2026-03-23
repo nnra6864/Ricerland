@@ -45,7 +45,7 @@
         <wcol_regular>
           <ThemeWidgetColors
             outline="#ffffff0d"
-            outline_sel="#ffffff1e"
+            outline_sel="#ffffff2d"
             inner="#000000ff"
             inner_sel="#202020ff"
             item="#161616ff"
@@ -62,7 +62,7 @@
           <ThemeWidgetColors
             outline="#ffffff16"
             outline_sel="#2d2d2dff"
-            inner="#ffffff14"
+            inner="#171717e0"
             inner_sel="#272727ff"
             item="#2b2b2bff"
             text="#cccccc"
@@ -94,8 +94,8 @@
           <ThemeWidgetColors
             outline="#ffffff0d"
             outline_sel="#242424ff"
-            inner="#000000ff"
-            inner_sel="#141414ff"
+            inner="#0d0d0dff"
+            inner_sel="#1b1b1bff"
             item="#2b2b2bff"
             text="#cccccc"
             text_sel="#e6e6e6"
@@ -127,7 +127,7 @@
             outline="#ffffff0d"
             outline_sel="#0d0d0dff"
             inner="#000000ff"
-            inner_sel="#1c1c1cff"
+            inner_sel="#0d0d0dff"
             item="#ccccccff"
             text="#cccccc"
             text_sel="#e6e6e6"
@@ -269,10 +269,10 @@
         <wcol_pie_menu>
           <ThemeWidgetColors
             outline="#ffffff0d"
-            outline_sel="#1e1e1eff"
-            inner="#000000e0"
-            inner_sel="#181818ff"
-            item="#2b2b2bff"
+            outline_sel="#ffffff78"
+            inner="#000000cf"
+            inner_sel="#141414ff"
+            item="#141414cf"
             text="#cccccc"
             text_sel="#e6e6e6"
             show_shaded="TRUE"
@@ -352,7 +352,7 @@
             outline_sel="#0d0d0dff"
             inner="#000000ff"
             inner_sel="#272727b1"
-            item="#2b2b2bff"
+            item="#e6e6e6ff"
             text="#cccccc"
             text_sel="#e6e6e6"
             show_shaded="TRUE"
@@ -378,14 +378,14 @@
             inner_overridden_sel="#0f9999"
             inner_changed="#cc7014"
             inner_changed_sel="#99540f"
-            blend="0.401042"
+            blend="0.302083"
             >
           </ThemeWidgetStateColors>
         </wcol_state>
         <wcol_tab>
           <ThemeWidgetColors
             outline="#ffffff00"
-            outline_sel="#ffffff21"
+            outline_sel="#ffffff28"
             inner="#121212ff"
             inner_sel="#000000ff"
             item="#202020ff"
@@ -487,11 +487,13 @@
     </common>
     <view_3d>
       <ThemeView3D
-        grid="#5454541f"
+        grid="#54545417"
+        grid_major="#54545442"
         clipping_border_3d="#3f3f3fff"
         wire="#bababa"
         wire_edit="#ebebeb"
         edge_width="1"
+        gp_wire_edit="#99999980"
         gp_vertex="#937979"
         gp_vertex_select="#ff7a00"
         gp_vertex_size="3"
@@ -648,7 +650,9 @@
         keyframe_border_selected="#d4d4d4ff"
         keyframe_scale_factor="1"
         summary="#1d1d1d66"
-        interpolation_line="#ace673cc"
+        anim_interpolation_linear="#94e575cc"
+        anim_interpolation_constant="#e59c7bcc"
+        anim_interpolation_other="#5dbabeb3"
         simulated_frames="#731773ff"
         >
         <space>
@@ -668,26 +672,26 @@
     <image_editor>
       <ThemeImageEditor
         grid="#000000ff"
-        vertex="#000000"
+        vertex="#ffe5bc"
         vertex_select="#ff7a00"
         vertex_size="3"
-        face="#e6e6e603"
+        face="#000000d6"
         face_select="#ff7a002e"
         face_mode_select="#ff7a002e"
         facedot_size="3"
-        editmesh_active="#e6e6e633"
-        wire_edit="#bfbfbf"
-        edge_width="1"
+        editmesh_active="#e6e6e64c"
+        wire_edit="#a4a4a4"
+        edge_width="2"
         edge_select="#ff7a00"
-        scope_back="#808080ff"
+        scope_back="#121212ff"
         preview_stitch_face="#40800033"
         preview_stitch_edge="#ff008033"
         preview_stitch_vert="#0000ff33"
         preview_stitch_stitchable="#00cc00ff"
         preview_stitch_unstitchable="#cc0000ff"
-        preview_stitch_active="#bfbfbf26"
+        preview_stitch_active="#dbdbdb27"
         uv_shadow="#808080ff"
-        metadatabg="#000000"
+        metadatabg="#101010"
         metadatatext="#e6e6e6"
         >
         <space>
@@ -794,8 +798,8 @@
       <ThemeNodeEditor
         grid="#272727"
         node_outline="#ffffff1a"
-        node_selected="#ff7a00"
-        node_active="#8b8b8b"
+        node_selected="#ffa922"
+        node_active="#ffe1bf"
         wire="#434343ff"
         wire_inner="#3e3e3e"
         wire_select="#ffffff91"
@@ -803,19 +807,19 @@
         converter_node="#193e65"
         color_node="#53530f"
         group_node="#2c4215"
-        group_socket_node="#393939"
-        frame_node="#ffffff18"
+        group_socket_node="#262626"
+        frame_node="#2e2e2e6b"
         matte_node="#993d3d"
-        distor_node="#208383"
+        distor_node="#145353"
         noodle_curving="4"
         grid_levels="3"
         dash_alpha="0"
-        input_node="#681b41"
+        input_node="#621a3d"
         output_node="#4d1818"
         filter_node="#331256"
         vector_node="#1a3f65"
         texture_node="#572b00"
-        shader_node="#296629"
+        shader_node="#1a3f1a"
         script_node="#264d4d"
         geometry_node="#0b4646"
         attribute_node="#292966"
@@ -891,7 +895,9 @@
       </ThemeInfo>
     </info>
     <preferences>
-      <ThemePreferences>
+      <ThemePreferences
+        match="#4772b3"
+        >
         <space>
           <ThemeSpaceGeneric
             back="#000000"
@@ -942,7 +948,7 @@
         path_after="#0000cc"
         path_keyframe_before="#ffcccc"
         path_keyframe_after="#ccccff"
-        metadatabg="#000000"
+        metadatabg="#0b0b0b"
         metadatatext="#e6e6e6"
         >
         <space>
@@ -993,7 +999,7 @@
     </statusbar>
     <spreadsheet>
       <ThemeSpreadsheet
-        row_alternate="#0000001a"
+        row_alternate="#ffffff0d"
         >
         <space>
           <ThemeSpaceGeneric
@@ -1229,9 +1235,9 @@
       <ThemeFontStyle
         points="11.5"
         character_weight="400"
-        shadow="5"
-        shadow_offset_x="0"
-        shadow_offset_y="-1"
+        shadow="6"
+        shadow_offset_x="2"
+        shadow_offset_y="-3"
         shadow_alpha="1"
         shadow_value="0"
         >
@@ -1241,10 +1247,10 @@
       <ThemeFontStyle
         points="11.5"
         character_weight="400"
-        shadow="5"
-        shadow_offset_x="0"
+        shadow="6"
+        shadow_offset_x="1"
         shadow_offset_y="-1"
-        shadow_alpha="1"
+        shadow_alpha="0.462838"
         shadow_value="0"
         >
       </ThemeFontStyle>
@@ -1252,9 +1258,9 @@
     <tooltip>
       <ThemeFontStyle
         points="12"
-        character_weight="400"
+        character_weight="350"
         shadow="5"
-        shadow_offset_x="0"
+        shadow_offset_x="1"
         shadow_offset_y="-1"
         shadow_alpha="1"
         shadow_value="0"

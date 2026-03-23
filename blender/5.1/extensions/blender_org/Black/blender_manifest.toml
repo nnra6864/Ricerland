@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "Black"
-version = "5.0.2"
+version = "5.0.4"
 name = "Black"
 tagline = "A black theme, probably the blackest one"
 maintainer = "Gurra"

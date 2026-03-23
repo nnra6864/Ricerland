@@ -1,7 +1,7 @@
 font: Maple Mono NF CN 16
-background: "#3e4637ff"
-color: "#ffffff"
-border: "#ffffff"
+background: "#081D26FF"
+color: "#A3C5CC"
+border: "#267180"
 separator: "  ⪧  "
 border_width: 2
 corner_r: 10

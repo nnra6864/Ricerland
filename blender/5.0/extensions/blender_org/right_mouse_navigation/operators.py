@@ -95,7 +95,10 @@ class RMN_OT_right_mouse_navigation(Operator):
             return {"PASS_THROUGH"}
 
     def callMenu(self, context):
-        select_mouse = context.window_manager.keyconfigs.active.preferences.select_mouse
+        wm = context.window_manager
+        blender_keyconfig = wm.keyconfigs["Blender"]
+
+        select_mouse = blender_keyconfig.preferences.select_mouse
         space_type = context.space_data.type
 
         if select_mouse == "LEFT":
@@ -126,16 +129,20 @@ class RMN_OT_right_mouse_navigation(Operator):
         addon_prefs = preferences.addons[__package__].preferences
         enable_nodes = addon_prefs.enable_for_node_editors
         disable_camera = addon_prefs.disable_camera_navigation
+        navigation_mode = addon_prefs.navigation_mode
 
         space_type = context.space_data.type
 
         # Execute is the first thing called in our operator, so we start by
-        # calling Blender's built-in Walk Navigation
+        # calling the appropriate navigation based on user preference
         if space_type == "VIEW_3D":
             view = context.space_data.region_3d.view_perspective
             if not (view == "CAMERA" and disable_camera):
                 try:
-                    bpy.ops.view3d.walk("INVOKE_DEFAULT")
+                    if navigation_mode == "ORBIT":
+                        bpy.ops.view3d.rotate("INVOKE_DEFAULT")
+                    else:
+                        bpy.ops.view3d.walk("INVOKE_DEFAULT")
                     # Adding the timer and starting the loop
                     wm = context.window_manager
                     self._timer = wm.event_timer_add(0.1, window=context.window)
@@ -148,6 +155,7 @@ class RMN_OT_right_mouse_navigation(Operator):
                 return {"CANCELLED"}
 
         elif space_type == "NODE_EDITOR" and enable_nodes:
+            print("In the Nodes")
             bpy.ops.view2d.pan("INVOKE_DEFAULT")
             wm = context.window_manager
             # Adding the timer and starting the loop
@@ -172,7 +180,6 @@ class RMN_OT_toggle_cam_navigation(Operator):
     bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
-        context.preferences.addons[__package__].preferences.disable_camera_navigation = (
-            not context.preferences.addons[__package__].preferences.disable_camera_navigation
-        )
+        addon_prefs = context.preferences.addons[__package__].preferences
+        addon_prefs.disable_camera_navigation = not addon_prefs.disable_camera_navigation
         return {"FINISHED"}

@@ -528,6 +528,13 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         'RIGHTMOUSE': 'RELEASE',
         'MIDDLEMOUSE': 'RELEASE',
     }
+    # Hold keys (Used for internal state management).
+    # This data is updated by using 'PRESS' and 'RELEASE' events.
+    keys_status_internal = {
+        'LEFT_ALT': 'RELEASE',
+        'RIGHT_ALT': 'RELEASE',
+    }
+
     # Event history.
     # Format: [time, event_type, modifiers, repeat_count]
     event_history = []
@@ -723,6 +730,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
 
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        offset = [prefs.offset[0] * ui_scale, prefs.offset[1] * ui_scale]
 
         def is_window_match(window):
             return window.as_pointer() == cls.origin["window"]
@@ -756,12 +765,12 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         # Calculate draw offset
         draw_area_width, draw_area_height = cls.draw_area_size(context)
         if prefs.align == 'LEFT':
-            x, y = prefs.offset
+            x, y = offset
             if prefs.origin == 'CURSOR':
                 x += cls.current_mouse_co[0] - draw_area_width / 2
                 y += cls.current_mouse_co[1] - draw_area_height
         elif prefs.align == 'CENTER':
-            x, y = prefs.offset
+            x, y = offset
             if prefs.origin == 'WINDOW':
                 x += (window.width - draw_area_width) / 2
             elif prefs.origin == 'AREA':
@@ -791,7 +800,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                 x += cls.current_mouse_co[0] - draw_area_width / 2
                 y += cls.current_mouse_co[1] - draw_area_height
         elif prefs.align == 'RIGHT':
-            x, y = prefs.offset
+            x, y = offset
             if prefs.origin == 'WINDOW':
                 x += window.width - draw_area_width
             elif prefs.origin == 'AREA':
@@ -857,11 +866,13 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _area_size_last_operator_layer(cls, context, font_id):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        margin = prefs.margin * ui_scale
 
         if not prefs.show_last_operator:
             return 0, 0
 
-        sh = cls.text_area_height(font_id) + prefs.margin * 2
+        sh = cls.text_area_height(font_id) + margin * 2
         layer_height = sh + sh * cls.HEIGHT_RATIO_FOR_SEPARATOR
 
         operator_history = cls.removed_old_operator_history()
@@ -885,7 +896,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             operator_text += " ('{}')".format(idname_py)
 
         layer_width = cls.text_area_width(operator_text, font_id) \
-            + prefs.margin * 2
+            + margin * 2
 
         return layer_width, layer_height
 
@@ -893,6 +904,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _area_size_mouse_and_modifier_keys_layer(cls, context, font_id):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        margin = prefs.margin * ui_scale
 
         drawing = False  # TODO: Need to check if drawing is now on progress.
         modifier_keys_box_margin = cls.text_area_height(font_id) * \
@@ -920,6 +933,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                 mouse_width = prefs.mouse_size
                 mouse_height = \
                     prefs.mouse_size * cls.HEIGHT_RATIO_FOR_MOUSE_HOLD_STATUS
+            mouse_width *= ui_scale
+            mouse_height *= ui_scale
         if cls.hold_modifier_keys:
             hold_modifier_keys_width = \
                 cls.text_area_width(modifier_keys_text, font_id) \
@@ -931,15 +946,15 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             hold_modifier_keys_width = max(
                 hold_modifier_keys_width, prefs.font_size * 8)
             separator_width = \
-                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR + prefs.margin
+                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR * ui_scale + margin
         if show_mouse_hold_status(prefs) and cls.hold_modifier_keys:
             separator_width = \
-                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR + prefs.margin
+                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR * ui_scale + margin
 
         layer_width = mouse_width + separator_width + \
-            hold_modifier_keys_width + prefs.margin * 2
+            hold_modifier_keys_width + margin * 2
         layer_height = \
-            max(mouse_height, hold_modifier_keys_height) + prefs.margin * 2
+            max(mouse_height, hold_modifier_keys_height) + margin * 2
 
         return layer_width, layer_height
 
@@ -947,8 +962,10 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _area_size_event_history_layer(cls, context, font_id):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        margin = prefs.margin * ui_scale
 
-        sh = cls.text_area_height(font_id) + prefs.margin * 2
+        sh = cls.text_area_height(font_id) + margin * 2
 
         layer_width = 0.0
         layer_height = 0.0
@@ -965,7 +982,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             if repeat_count > 1:
                 text += " x{}".format(repeat_count)
 
-            text_width = cls.text_area_width(text, font_id) + prefs.margin * 2
+            text_width = cls.text_area_width(text, font_id) + margin * 2
             layer_width = max(text_width, layer_width)
             layer_height += sh
 
@@ -1001,12 +1018,14 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def draw_area_baseline(cls, context):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        margin = prefs.margin * ui_scale
 
         if not prefs.show_last_operator:
             return 0, 0
 
         font_id = 0         # TODO: font_id should be constant.
-        sh = cls.text_area_height(font_id) + prefs.margin * 2
+        sh = cls.text_area_height(font_id) + margin * 2
         offset_y = sh + sh * cls.HEIGHT_RATIO_FOR_SEPARATOR
 
         operator_history = cls.removed_old_operator_history()
@@ -1160,8 +1179,11 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _draw_last_operator_layer(cls, context, font_id, x, y):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        ui_line_width = user_prefs.system.ui_line_width
+        margin = prefs.margin * ui_scale
 
-        sh = cls.text_area_height(font_id) + prefs.margin * 2
+        sh = cls.text_area_height(font_id) + margin * 2
 
         operator_history = cls.removed_old_operator_history()
         if not operator_history:
@@ -1192,21 +1214,21 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         operator_start_x = x
         operator_start_y = y
         operator_width = \
-            cls.text_area_width(operator_text, font_id) + prefs.margin * 2
+            cls.text_area_width(operator_text, font_id) + margin * 2
         operator_height = sh + sh * cls.HEIGHT_RATIO_FOR_SEPARATOR * 0.2
         separator_start_x = operator_start_x
         separator_start_y = operator_start_y + operator_height
         separator_line_width = blf.dimensions(font_id, "Left Mouse")[0]
-        separator_width = separator_line_width + prefs.margin * 2
+        separator_width = separator_line_width + margin * 2
         separator_height = sh * cls.HEIGHT_RATIO_FOR_SEPARATOR * 0.8
 
         layer_width = max(operator_width, separator_width)
         layer_height = operator_height + separator_height
 
         operator_offset_x, operator_offset_y = \
-            cls.get_alignment_offset(context, operator_width, prefs.margin)
+            cls.get_alignment_offset(context, operator_width, margin)
         separator_offset_x, separator_offset_y = \
-            cls.get_alignment_offset(context, separator_width, prefs.margin)
+            cls.get_alignment_offset(context, separator_width, margin)
         operator_start_x += operator_offset_x
         operator_start_y += operator_offset_y
         separator_start_x += separator_offset_x
@@ -1218,7 +1240,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             draw_text_background(operator_text, font_id,
                                  operator_start_x,
                                  operator_start_y,
-                                 prefs.background_color, prefs.margin,
+                                 prefs.background_color, margin,
                                  prefs.background_rounded_corner_radius)
         draw_text(operator_text, font_id, prefs.color,
                   prefs.shadow, prefs.shadow_color)
@@ -1228,7 +1250,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             [separator_start_x, separator_start_y],
             [separator_start_x + separator_line_width, separator_start_y],
             prefs.color, prefs.shadow, prefs.shadow_color,
-            prefs.line_thickness)
+            prefs.line_thickness * ui_line_width)
 
         return layer_width, layer_height, True
 
@@ -1236,6 +1258,9 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _draw_mouse_and_modifier_keys_layer(cls, context, font_id, x, y):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        ui_line_width = user_prefs.system.ui_line_width
+        margin = prefs.margin * ui_scale
 
         drawing = False  # TODO: Need to check if drawing is now on progress.
         blf.color(font_id, *prefs.color)
@@ -1274,8 +1299,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                 mouse_icon_width = prefs.mouse_size
                 mouse_icon_height = \
                     prefs.mouse_size * cls.HEIGHT_RATIO_FOR_MOUSE_HOLD_STATUS
-            mouse_width = mouse_icon_width
-            mouse_height = mouse_icon_height
+            mouse_width = mouse_icon_width * ui_scale
+            mouse_height = mouse_icon_height * ui_scale
         if cls.hold_modifier_keys:
             hold_modifier_keys_start_x = x
             hold_modifier_keys_start_y = y
@@ -1291,10 +1316,10 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             hold_modifier_keys_width = max(hold_modifier_keys_width,
                                            prefs.font_size * 8)
             separator_width = \
-                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR + prefs.margin
+                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR * ui_scale + margin
         if show_mouse_hold_status(prefs) and cls.hold_modifier_keys:
             separator_width = \
-                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR + prefs.margin
+                mouse_width * cls.WIDTH_RATIO_FOR_SEPARATOR * ui_scale + margin
             if prefs.align == 'RIGHT':
                 mouse_start_x += hold_modifier_keys_width + separator_width
             elif prefs.align in ('LEFT', 'CENTER'):
@@ -1302,12 +1327,12 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                     mouse_icon_width + separator_width
 
         layer_width = mouse_width + separator_width + \
-            hold_modifier_keys_width + prefs.margin * 2
+            hold_modifier_keys_width + margin * 2
         layer_height = max(mouse_height, hold_modifier_keys_height) + \
-            prefs.margin * 2
+            margin * 2
 
         offset_x, offset_y = cls.get_alignment_offset(
-            context, layer_width, prefs.margin)
+            context, layer_width, margin)
         mouse_start_x += offset_x
         mouse_start_y += offset_y
         hold_modifier_keys_start_x += offset_x
@@ -1322,8 +1347,10 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         # Draw hold mouse status.
         if show_mouse_hold_status(prefs):
             if prefs.use_custom_mouse_image:
-                draw_custom_mouse(mouse_start_x, mouse_start_y,
-                                  mouse_icon_width, mouse_icon_height,
+                draw_custom_mouse(mouse_start_x,
+                                  mouse_start_y,
+                                  mouse_icon_width * ui_scale,
+                                  mouse_icon_height * ui_scale,
                                   cls.mouse_buttons_status['LEFTMOUSE'],
                                   cls.mouse_buttons_status['RIGHTMOUSE'],
                                   cls.mouse_buttons_status['MIDDLEMOUSE'],
@@ -1333,16 +1360,18 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                                   common.CUSTOM_MOUSE_IMG_RMOUSE_NAME,
                                   common.CUSTOM_MOUSE_IMG_MMOUSE_NAME)
             else:
-                draw_default_mouse(mouse_start_x, mouse_start_y,
-                                   mouse_icon_width, mouse_icon_height,
-                                   cls.mouse_buttons_status['LEFTMOUSE'],
-                                   cls.mouse_buttons_status['RIGHTMOUSE'],
-                                   cls.mouse_buttons_status['MIDDLEMOUSE'],
-                                   prefs.color,
-                                   prefs.mouse_size * 0.5,
-                                   fill=prefs.background,
-                                   fill_color=prefs.background_color,
-                                   line_thickness=prefs.line_thickness)
+                draw_default_mouse(
+                    mouse_start_x, mouse_start_y,
+                    mouse_icon_width * ui_scale,
+                    mouse_icon_height * ui_scale,
+                    cls.mouse_buttons_status['LEFTMOUSE'],
+                    cls.mouse_buttons_status['RIGHTMOUSE'],
+                    cls.mouse_buttons_status['MIDDLEMOUSE'],
+                    prefs.color,
+                    prefs.mouse_size * 0.5 * ui_scale,
+                    fill=prefs.background,
+                    fill_color=prefs.background_color,
+                    line_thickness=prefs.line_thickness * ui_line_width)
 
         # Draw hold modifier keys.
         if cls.hold_modifier_keys or drawing:
@@ -1357,7 +1386,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                     font_id,
                     hold_modifier_keys_text_start_x,
                     hold_modifier_keys_text_start_y + modifier_keys_box_margin,
-                    prefs.background_color, prefs.margin,
+                    prefs.background_color, margin,
                     prefs.background_rounded_corner_radius)
             else:
                 # Draw rounded box.
@@ -1370,7 +1399,7 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                     show_text_background(prefs),
                     prefs.background_color if show_text_background(prefs)
                     else prefs.color,
-                    line_thickness=prefs.line_thickness)
+                    line_thickness=prefs.line_thickness * ui_line_width)
 
             # Draw modifier key text.
             blf.position(
@@ -1391,8 +1420,10 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def _draw_event_history_layer(cls, context, font_id, x, y):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        margin = prefs.margin * ui_scale
 
-        sh = cls.text_area_height(font_id) + prefs.margin * 2
+        sh = cls.text_area_height(font_id) + margin * 2
         region_drawn = False
         color = prefs.color
         blf.color(font_id, *color)
@@ -1417,16 +1448,17 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                 text += " x{}".format(repeat_count)
 
             text_width = \
-                cls.text_area_width(text, font_id) + prefs.margin * 2
+                cls.text_area_width(text, font_id) + margin * 2
             offset_x, offset_y = cls.get_alignment_offset(
-                context, text_width, prefs.margin)
-            blf.position(font_id, event_start_x + offset_x,
-                         event_start_y + offset_y, 0)
+                context, text_width, margin)
+            blf.position(font_id,
+                         event_start_x + offset_x, event_start_y + offset_y,
+                         0)
             if show_text_background(prefs):
                 draw_text_background(text, font_id,
                                      event_start_x + offset_x,
                                      event_start_y + offset_y,
-                                     prefs.background_color, prefs.margin,
+                                     prefs.background_color, margin,
                                      prefs.background_rounded_corner_radius)
             draw_text(text, font_id, prefs.color, prefs.shadow,
                       prefs.shadow_color)
@@ -1443,6 +1475,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
     def draw_callback(cls, context):
         user_prefs = context.preferences
         prefs = user_prefs.addons[__package__].preferences
+        ui_scale = user_prefs.system.ui_scale
+        ui_line_width = user_prefs.system.ui_line_width
 
         if cls.skip_draw(context):
             return      # Skip if no contents will be displayed.
@@ -1516,19 +1550,23 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                              draw_area_min_y - region.y + baseline_y,
                              draw_area_max_x - draw_area_min_x,
                              draw_area_max_y - draw_area_min_y - baseline_y,
-                             prefs.background_rounded_corner_radius,
+                             prefs.background_rounded_corner_radius * ui_scale,
                              True,
-                             prefs.background_color)
+                             prefs.background_color,
+                             line_thickness=ui_line_width)
 
         def check_draw_status(cls, context, font_id, layer_name, calc_fn,
                               draw_x, draw_y, draw_w, draw_h):
             user_prefs = bpy.context.preferences
             prefs = user_prefs.addons[__package__].preferences
+            ui_line_width = user_prefs.system.ui_line_width
+
             if prefs.display_draw_area:
                 offset_x, offset_y = cls.get_alignment_offset(context, draw_w)
-                draw_rounded_box(draw_x + offset_x,
-                                 draw_y + offset_y,
-                                 draw_w, draw_h, 0, color=[1.0, 0.0, 0.0, 1.0])
+                draw_rounded_box(draw_x + offset_x, draw_y + offset_y,
+                                 draw_w, draw_h, 0,
+                                 color=[1.0, 0.0, 0.0, 1.0],
+                                 line_thickness=ui_line_width)
             if output_debug_log():
                 calc_w, calc_h = calc_fn(context, font_id)
                 mismatch_width = abs(draw_w - calc_w) >= 0.0001
@@ -1708,11 +1746,37 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         if EventType[event.type] == EventType.WINDOW_DEACTIVATE:
             self.hold_modifier_keys.clear()
 
-    def update_mouse_buttons_status(self, event):
+    def update_keys_status_internal(self, event):
+        """Update internal keys status."""
+
+        if event.type in ('LEFT_ALT', 'RIGHT_ALT'):
+            self.keys_status_internal[event.type] = event.value
+
+    def is_middle_mouse_emulated(self, user_prefs):
+        if user_prefs.inputs.use_mouse_emulate_3_button:
+            alt_pressed = self.keys_status_internal['LEFT_ALT'] == 'PRESS' or \
+                self.keys_status_internal['RIGHT_ALT'] == 'PRESS'
+            return alt_pressed
+        return False
+
+    def get_original_event_from_emulated(self, event, user_prefs):
+        # If "Emulate 3 Button Mouse" option is enabled, we handle the middle
+        # mouse event as the left mouse event.
+        event_type = event.type
+        if self.is_middle_mouse_emulated(user_prefs):
+            # From the observation, event.alt will be False when 'MIDDLEMOUSE'
+            # event will be issued.
+            if event.type == 'MIDDLEMOUSE' and not event.alt:
+                return 'LEFTMOUSE'
+        return event_type
+
+    def update_mouse_buttons_status(self, event, user_prefs):
         """Update hold mouse buttons."""
 
-        is_hold_mouse_event = event.type in self.mouse_buttons_status.keys()
-        if event.type != 'MOUSEMOVE' and not is_hold_mouse_event:
+        event_type = self.get_original_event_from_emulated(event, user_prefs)
+
+        is_hold_mouse_event = event_type in self.mouse_buttons_status.keys()
+        if event_type != 'MOUSEMOVE' and not is_hold_mouse_event:
             return
 
         # Note: This is not complete solution.
@@ -1720,9 +1784,9 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         # mouse drag, ...).
         # To solve this issue, use 'MOUSEMOVE' event which will not be fired
         # when some mouse key is not pressed.
-        if event.type == 'MOUSEMOVE':
+        if event_type == 'MOUSEMOVE':
             if compat.check_version(3, 2, 0) < 0:
-                if event.value == 'RELEASE':
+                if event_type == 'RELEASE':
                     for k in self.mouse_buttons_status.keys():
                         self.mouse_buttons_status[k] = 'RELEASE'
             elif compat.check_version(4, 2, 0) < 0:
@@ -1732,11 +1796,14 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
                 for k, v in self.mouse_buttons_status.items():
                     if k == 'MIDDLEMOUSE':
                         continue
-                    if k == 'LEFTMOUSE' and v == 'CLICK_DRAG':
-                        continue
+                    if k == 'LEFTMOUSE':
+                        if v == 'CLICK_DRAG':
+                            continue
+                        if self.is_middle_mouse_emulated(user_prefs):
+                            continue
                     self.mouse_buttons_status[k] = 'RELEASE'
 
-        self.mouse_buttons_status[event.type] = event.value
+        self.mouse_buttons_status[event_type] = event.value
 
     def is_ignore_event(self, event, prefs=None):
         """Return True if event will not be shown."""
@@ -1773,7 +1840,8 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
         if event.type == 'MOUSEMOVE':
             self.__class__.current_mouse_co = [event.mouse_x, event.mouse_y]
 
-        event_type = EventType[event.type]
+        event_type = self.get_original_event_from_emulated(event, user_prefs)
+        event_type = EventType[event_type]
 
         current_time = time.time()
 
@@ -1789,8 +1857,11 @@ class SK_OT_ScreencastKeys(bpy.types.Operator):
             # Remove modifier key which is just pressed.
             current_mod_keys.remove(event_type)
 
+        # Update keys status internal.
+        self.update_keys_status_internal(event)
+
         # Update hold mouse buttons.
-        self.update_mouse_buttons_status(event)
+        self.update_mouse_buttons_status(event, user_prefs)
 
         # Update event history.
         if not self.is_ignore_event(event, prefs=prefs) and \
