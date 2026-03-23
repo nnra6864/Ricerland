@@ -144,7 +144,7 @@ link = "$br_cyan"
 link_visited = "$br_blue"
 
 # Prompt
-prompt_bg = "$green"
+prompt_bg = "$blue"
 prompt_fg = "$white"
 prompt_time_bg = "$prompt_bg"
 prompt_time_fg = "$prompt_fg"
