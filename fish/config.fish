@@ -96,8 +96,8 @@ function rice
     python ~/Data/Projects/Ricer/Ricer.py $argv &&
 
     # Reload terminal cfg
+    systemctl reload --user app-com.mitchellh.ghostty.service
     kill -SIGUSR1 (pgrep kitty)
-    kill -SIGUSR2 (pgrep ghostty)
 
     # Remove all the gtk files to avoid conflicts
     rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
