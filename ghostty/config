@@ -8,6 +8,7 @@ font-size = 13
 cursor-style = block
 focus-follows-mouse = true
 
+window-decoration = server
 window-padding-x = 10
 window-padding-y = 10
 
