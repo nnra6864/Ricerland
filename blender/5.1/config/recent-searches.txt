@@ -7,9 +7,10 @@ Displacement ▸ Displacement
 Displacement ▸ Bump
 Texture ▸ Image Texture
 Color ▸ Mix Color ▸ Mix
-   OrangeColorMap
 Input ▸ Attributes ▸ UVMap
 Input ▸ UV Map
 Utilities ▸ Vector ▸ Mapping
 Input ▸ Texture Coordinate ▸ UV
 Input ▸ Geometry ▸ Position
+   Mask (Solid Color 1)
+   OrangeColorMap
