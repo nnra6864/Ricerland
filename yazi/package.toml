@@ -73,5 +73,10 @@ use = "simla33/ucp"
 rev = "96f54af"
 hash = "2011ef145f7d4aaa23cbc64c05cd6a7f"
 
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "179ebf6"
+hash = "57056b9728006881d580ccabe8154a9c"
+
 [flavor]
 deps = []
