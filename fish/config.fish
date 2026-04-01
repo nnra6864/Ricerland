@@ -490,8 +490,6 @@ zoxide init fish | source
 tv init fish | source
 fish_vi_key_bindings
 
-nlear
-
 # Set env vars
 set -gx EDITOR nvim
 set -gx VISUAL nvim
@@ -506,6 +504,10 @@ if not pgrep -u $USER ssh-agent > /dev/null
     ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
 end
 set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
+
+if status is-interactive
+    nlear
+end
 
 # Start a Hyprland session
 if status is-interactive
