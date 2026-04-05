@@ -53,6 +53,11 @@ run  = "plugin ucp copy"
 desc = "Copy"
 
 [[mgr.prepend_keymap]]
+on = [ ".", "." ]
+run  = "hidden toggle"
+desc = "Toggle the visibility of hidden files"
+
+[[mgr.prepend_keymap]]
 on = [ ".", "s" ]
 run  = "plugin what-size"
 desc = "Calc size of selection or cwd"
