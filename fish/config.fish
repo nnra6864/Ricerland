@@ -7,15 +7,12 @@
 # Load user scripts
 fish_add_path ~/.config/fish/scripts
 
-# Perforce
-set -Ux P4IGNORE .p4ignore
-
 # Aliases
 alias doas='sudo'
 alias nlear='clear; fastfetch; echo ""'
 alias py='python'
 alias timeshit='timeshift'
-alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk'
+alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk --target-colorspace-hint-mode=source'
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 alias tm='tmux new -As'
@@ -33,53 +30,6 @@ alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-per
 alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions -muU'
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
-
-# Updates the entire system
-function update
-    # Clear cache to avoid issues and update the pacman and AUR packages
-    yes | paru -Scc
-
-    # Update packages and Hyprland
-    paru -Syu --sudoloop #\
-        #hyprland-protocols-git \
-        #hyprwayland-scanner-git \
-        #hyprutils-git \
-        #hyprgraphics-git \
-        #hyprlang-git \
-        #hyprcursor-git \
-        #aquamarine-git \
-        #xdg-desktop-portal-hyprland-git \
-        #hyprwire-git \
-        #hyprtoolkit-git \
-        #hyprland-git
-
-    # Update hyprpm (often fails so don't use `and` after it)
-    and hyprpm update
-
-    # Update nv drivers
-    #cd ~/Packages/nvidia-all
-    #and git pull
-    #and notify-send "Update" "Input required for nvidia drivers"
-    #and paplay /usr/share/sounds/freedesktop/stereo/message.oga
-    #and makepkg -si
-
-    # Update flatpak
-    flatpak update -y
-
-    # Clear the cache once again
-    yes | paru -Scc
-
-    # Notify the user system has been updated
-    notify-send "Update" "Update complete"
-end
-
-# Starts Monero Wallet GUI
-function monero
-    echo "Enter your password:"
-    read -s password
-    echo $password | nohup sudo -E QT_QPA_PLATFORM=wayland monero-wallet-gui >/dev/null 2>&1 & disown
-    exit
-end
 
 # Rices the system with the provided config
 function rice
@@ -485,32 +435,25 @@ function get_app_usage
     end
 end
 
-# Fish config
-zoxide init fish | source
-tv init fish | source
-fish_vi_key_bindings
-
-# Set env vars
-set -gx EDITOR nvim
-set -gx VISUAL nvim
-
-oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
-#starship init fish | source
-
-set PATH $PATH /home/nn/.local/bin
+fish_add_path PATH $PATH /home/nn/.local/bin
 
 # Start the ssh-agent
 if not pgrep -u $USER ssh-agent > /dev/null
     ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
 end
-set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
-
-if status is-interactive
-    nlear
-end
+set -Ux SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
 # Start a Hyprland session
 if status is-interactive
+    zoxide init fish | source
+    tv init fish | source
+    fish_vi_key_bindings
+
+    oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
+    #starship init fish | source
+
+    nlear
+
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
             rm -rf ~/.config/Mumble/Mumble/mumble_settings.json.back
