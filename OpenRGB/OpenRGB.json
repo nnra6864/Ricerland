@@ -1975,7 +1975,7 @@
         ]
     },
     "Theme": {
-        "theme": "Dark"
+        "theme": "Auto"
     },
     "UserInterface": {
         "RunZoneChecks": true,
