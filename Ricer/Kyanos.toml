@@ -184,6 +184,7 @@ oh-my-posh = ["~/.config/oh-my-posh/Ricer.json", "hex"]
 Alacritty = "~/.config/alacritty.toml"
 NvimTheme = "~/.config/nvim/lua/theme.lua"
 Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
+Vicinae = ["~/.local/share/vicinae/themes/Ricer.toml", "hex"]
 RofiConfig = ["~/.config/rofi/config.rasi", "hexa"]
 RofiTheme = "~/.config/rofi/themes/theme.rasi"
 GLavaRadial = "~/.config/glava/radial.glsl"
