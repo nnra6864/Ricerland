@@ -13,12 +13,12 @@
    "font": {
       "normal": {
          "family": "Maple Mono NF CN",
-         "size": 12
+         "size": 13
       }
    },
    "theme": {
       "dark": {
-         "name": "ayu-dark",
+         "name": "Ricer",
          "icon_theme": "Ricer"
       }
    },
