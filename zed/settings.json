@@ -18,19 +18,37 @@
             "args": [],
             "projects": [
                 {
-                    "paths": ["/home/nn/ByteServis"],
+                    "paths": [
+                        "/home/nn/ByteServis"
+                    ]
                 },
                 {
-                    "paths": ["/home/nn/Containers"],
+                    "paths": [
+                        "/home/nn/Containers"
+                    ]
                 },
                 {
-                    "paths": ["/home/nn/Containers/CS/1.6"],
+                    "paths": [
+                        "/home/nn/Containers/CS/1.6"
+                    ]
                 },
                 {
-                    "paths": ["/home/nn/Containers/CS_1.6"],
+                    "paths": [
+                        "/home/nn/Containers/CS_1.6"
+                    ]
                 },
-            ],
-        },
+                {
+                    "paths": [
+                        "/home/nn/Containers/Counter-Strike/Repo"
+                    ]
+                },
+                {
+                    "paths": [
+                        "/home/nn/Containers/omnisearch"
+                    ]
+                }
+            ]
+        }
     ],
     "icon_theme": "Catppuccin Mocha",
     "theme": {
