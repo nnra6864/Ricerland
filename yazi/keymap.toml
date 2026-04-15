@@ -4,6 +4,16 @@ on   = "y"
 run  = [ 'shell -- for path in %s; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ]
 
 [[mgr.prepend_keymap]]
+on   = [ "z" ]
+run  = "plugin zoxide"
+desc = "Jump to a directory using zoxide"
+
+[[mgr.prepend_keymap]]
+on   = [ "Z" ]
+run  = "plugin fzf"
+desc = "Jump to a directory using fzf"
+
+[[mgr.prepend_keymap]]
 on   = [ "<C-k>" ]
 run  = "plugin kdeconnect-send"
 desc = "Send selected files via KDE Connect"
