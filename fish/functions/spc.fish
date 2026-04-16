@@ -97,7 +97,7 @@ function spc
 	# Process the file with ffmpeg
 	ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" \
 	-c:v hevc_nvenc -preset p7 -profile:v main10 -rc vbr -cq "$cqp_quality" -b:v 0 \
-	-spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass 2 \
+	-spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass fullres \
 	-c:a copy -map 0 \
 	-metadata creation_time="$modified_date" \
 	"$output_file"
