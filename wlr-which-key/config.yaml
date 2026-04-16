@@ -33,6 +33,9 @@ menu:
                 - key: "z"
                   desc: Zen
                   cmd: zen-browser
+                - key: "Z"
+                  desc: Zen (Blank)
+                  cmd: zen-browser --blank-window
                 - key: "b"
                   desc: Brave
                   cmd: brave
