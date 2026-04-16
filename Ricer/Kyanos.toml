@@ -43,7 +43,7 @@ rounding = 10
 roundingPower = 2
 gapsIn = 5
 gapsOut = 10
-blur = "false"
+blur = "true"
 blurSize = 20
 blurPasses = 4
 animationDuration = 2
@@ -61,7 +61,7 @@ prompt_bg_hsv_delta = "v+10"
 
 [Colors]
 # Terminal
-black = "081D26FF"
+black = "081D2680"
 red = "661F1FFF"
 green = "1F6628FF"
 yellow = "66661FFF"
