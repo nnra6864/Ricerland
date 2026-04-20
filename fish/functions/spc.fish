@@ -94,11 +94,65 @@ function spc
 		set cqp_quality 20
 	end
 
+	# Get the combine audio option
+	read -P "Add Combined audio track? (y/N) - " combine_audio
+	if test -z "$combine_audio" -o (string lower -- "$combine_audio") = "n"
+		set combine_audio false
+	else
+		set combine_audio true
+	end
+
+	if test "$combine_audio" = "true"
+		set audio_stream_count (ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$input_file" | wc -l)
+		set orig_codec (ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of csv=p=0 "$input_file")
+		set orig_sample_rate (ffprobe -v error -select_streams a:0 -show_entries stream=sample_rate -of csv=p=0 "$input_file")
+		set orig_bit_rate (ffprobe -v error -select_streams a:0 -show_entries stream=bit_rate -of csv=p=0 "$input_file")
+
+		# ffprobe returns decoder names, map to encoder names where they differ
+		switch "$orig_codec"
+		case opus
+			set encoder "libopus"
+		case mp3
+			set encoder "libmp3lame"
+		case vorbis
+			set encoder "libvorbis"
+		case '*'
+			set encoder "$orig_codec"
+		end
+
+		# Build filter_complex input labels
+		set audio_inputs
+		for i in (seq 0 (math "$audio_stream_count - 1"))
+			set audio_inputs $audio_inputs "[0:a:$i]"
+		end
+
+		set filter_args "-filter_complex" (string join "" $audio_inputs)"amix=inputs=$audio_stream_count:normalize=0[aout]"
+		set map_args "-map" "[aout]" "-map" "0"
+
+		# -c:a copy applies to all audio, then -c:a:0 overrides just the mixed track
+		# Bitrate arg only set if ffprobe actually returned a value
+		set codec_args "-c:a:0" "$encoder" "-ar:0" "$orig_sample_rate"
+		if test -n "$orig_bit_rate" -a "$orig_bit_rate" != "N/A"
+			set codec_args $codec_args "-b:a:0" "$orig_bit_rate"
+		end
+		for i in (seq 1 $audio_stream_count)
+			set codec_args $codec_args "-c:a:$i" "copy"
+		end
+		set codec_args $codec_args "-disposition:a:0" "default"
+
+		set meta_args "-metadata:s:a:0" "title=Combined"
+	else
+		set filter_args
+		set map_args "-map" "0"
+		set codec_args "-c:a" "copy"
+		set meta_args
+	end
+
 	# Process the file with ffmpeg
 	ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" \
 	-c:v hevc_nvenc -preset p7 -profile:v main10 -rc vbr -cq "$cqp_quality" -b:v 0 \
 	-spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass fullres \
-	-c:a copy -map 0 \
+	$filter_args $map_args $codec_args $meta_args \
 	-metadata creation_time="$modified_date" \
 	"$output_file"
 
