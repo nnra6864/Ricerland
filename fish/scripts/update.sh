@@ -5,7 +5,7 @@
 yes | paru -Scc
 
 # Update packages and hyprpm
-paru -Syu --needed --devel --sudoloop \
+paru -Syu --devel --sudoloop \
     aur/hyprland-protocols-git \
     aur/hyprwayland-scanner-git \
     aur/hyprutils-git \
