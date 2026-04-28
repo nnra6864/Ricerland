@@ -121,6 +121,7 @@
 
 # Blender
 !/blender/
+/blender/extension/.cache/
 !/BlenderNord.xml
 
 # IDE
