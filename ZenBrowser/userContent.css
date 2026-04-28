@@ -14,8 +14,8 @@
       --color-accent-primary: #B7DCE5FF !important;  /* Primary accent color (updated from blue) */
       --color-accent-primary-hover: #B7DCE5FF !important;  /* Accent color on hover (updated from br_blue) */
       --color-accent-primary-active: #B7DCE5FF !important;  /* Accent color when active (updated from br_blue) */
-      background-color: #081D26FF !important;  /* Overall background color for about pages */
-      --in-content-page-background: #081D26FF !important;  /* In-content background variable */
+      background-color: #081D2680 !important;  /* Overall background color for about pages */
+      --in-content-page-background: #081D2680 !important;  /* In-content background variable */
     }
   }
 
@@ -26,9 +26,9 @@
   @-moz-document url("about:newtab"), url("about:home") {
 
     :root {
-      --newtab-background-color: #081D26FF !important;  /* New tab main background color */
-      --newtab-background-color-secondary: #081D26FF !important;  /* Secondary background (e.g., panels) */
-      --newtab-element-hover-color: #081D26FF !important;  /* Hover color for interactive elements */
+      --newtab-background-color: #081D2680 !important;  /* New tab main background color */
+      --newtab-background-color-secondary: #081D2680 !important;  /* Secondary background (e.g., panels) */
+      --newtab-element-hover-color: #081D2680 !important;  /* Hover color for interactive elements */
       --newtab-text-primary-color: #A3C5CCFF !important;  /* Primary text color on new tab */
       --newtab-wordmark-color: #A3C5CCFF !important;  /* Wordmark (logo text) color */
       --newtab-primary-action-background: #B7DCE5FF !important;  /* Primary action button background (updated from blue) */
@@ -73,27 +73,27 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:preferences") {
     :root {
-      --zen-colors-tertiary: #081D26FF !important;  /* Tertiary color for UI elements */
+      --zen-colors-tertiary: #081D2680 !important;  /* Tertiary color for UI elements */
       --in-content-text-color: #A3C5CCFF !important;  /* In-content text color */
       --link-color: #B7DCE5FF !important;  /* Link color updated from blue to foreground_highlight */
       --link-color-hover: #B7DCE5FF !important;  /* Link hover color updated from br_blue to foreground_highlight */
-      --zen-colors-primary: #081D26FF !important;  /* Primary UI element background (e.g., buttons) */
-      --in-content-box-background: #081D26FF !important;  /* Background color for in-content boxes */
+      --zen-colors-primary: #081D2680 !important;  /* Primary UI element background (e.g., buttons) */
+      --in-content-box-background: #081D2680 !important;  /* Background color for in-content boxes */
       --zen-primary-color: #B7DCE5FF !important;  /* Primary accent for preferences updated from blue */
     }
 
     groupbox, moz-card {
-      background: #081D26FF !important;  /* Background for group boxes and card elements */
+      background: #081D2680 !important;  /* Background for group boxes and card elements */
     }
 
     button,
     groupbox menulist {
-      background: #081D26FF !important;  /* Button and menulist background color */
+      background: #081D2680 !important;  /* Button and menulist background color */
       color: #A3C5CCFF !important;  /* Button text color */
     }
 
     .main-content {
-      background-color: #081D26FF !important;  /* Main content area background color */
+      background-color: #081D2680 !important;  /* Main content area background color */
     }
 
     /* Identity color themes for tab and icon representations in preferences */
@@ -144,8 +144,8 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:addons") {
     :root {
-      --zen-dark-color-mix-base: #081D26FF !important;  /* Base color for dark theme in add-ons */
-      --background-color-box: #081D26FF !important;  /* Background color for boxes in add-ons */
+      --zen-dark-color-mix-base: #081D2680 !important;  /* Base color for dark theme in add-ons */
+      --background-color-box: #081D2680 !important;  /* Background color for boxes in add-ons */
     }
   }
 
@@ -155,20 +155,20 @@
   -----------------------------------------------------*/
   @-moz-document url-prefix("about:protections") {
     :root {
-      --zen-primary-color: #081D26FF !important;  /* Primary color for protections set to background */
+      --zen-primary-color: #081D2680 !important;  /* Primary color for protections set to background */
       --social-color: #4D1F66FF !important;  /* Color for social-related indicators */
       --coockie-color: #1F665AFF !important;  /* Color for cookie-related elements */
       --fingerprinter-color: #66661FFF !important;  /* Color for fingerprinting alerts */
       --cryptominer-color: #B7DCE5FF !important;  /* Cryptominer alert color updated from br_blue */
       --tracker-color: #1F6628FF !important;  /* Tracker indicator color remains green */
-      --in-content-primary-button-background-hover: #0C2E3FFF !important;  /* Hover background for primary buttons */
+      --in-content-primary-button-background-hover: #0C2E3F80 !important;  /* Hover background for primary buttons */
       --in-content-primary-button-text-color-hover: #A3C5CCFF !important;  /* Hover text color for primary buttons */
-      --in-content-primary-button-background: #081D26FF !important;  /* Primary button background color */
+      --in-content-primary-button-background: #081D2680 !important;  /* Primary button background color */
       --in-content-primary-button-text-color: #A3C5CCFF !important;  /* Primary button text color */
     }
 
     .card {
-      background-color: #081D26FF !important;  /* Card background color for protections elements */
+      background-color: #081D2680 !important;  /* Card background color for protections elements */
     }
   }
 }

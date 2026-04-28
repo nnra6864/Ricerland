@@ -29,9 +29,9 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
       Defines the main color scheme for primary interface components
     -----------------------------------------------------*/
     --zen-primary-color: #A3C5CCFF !important;         /* Main foreground color for text and icons */
-    --zen-colors-primary: #081D26FF !important;              /* Primary color for buttons and actionable elements */
-    --zen-colors-secondary: #081D26FF !important;            /* Secondary color for alternative actions */
-    --zen-colors-tertiary: #081D26FF !important;         /* Tertiary color for less prominent UI areas */
+    --zen-colors-primary: #081D2680 !important;              /* Primary color for buttons and actionable elements */
+    --zen-colors-secondary: #081D2680 !important;            /* Secondary color for alternative actions */
+    --zen-colors-tertiary: #081D2680 !important;         /* Tertiary color for less prominent UI areas */
     --zen-colors-border: #266F7FFF !important;              /* Color used for borders and outlines */
 
     /*-----------------------------------------------------
@@ -51,19 +51,19 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     -----------------------------------------------------*/
     --newtab-text-primary-color: #A3C5CCFF !important;         /* Primary text color on the new tab page */
     --arrowpanel-color: #A3C5CCFF !important;                  /* Text color for arrow panels */
-    --arrowpanel-background: #081D26FF !important;             /* Background color for arrow panels */
+    --arrowpanel-background: #081D2680 !important;             /* Background color for arrow panels */
     --sidebar-text-color: #A3C5CCFF !important;                /* Text color for sidebar elements */
     --lwt-sidebar-text-color: #A3C5CCFF !important;            /* Text color for lightweight theme sidebar */
-    --lwt-sidebar-background-color: #081D26FF !important;      /* Background color for lightweight theme sidebar */
+    --lwt-sidebar-background-color: #081D2680 !important;      /* Background color for lightweight theme sidebar */
 
     /*-----------------------------------------------------
       Background Colors for Toolbars & Main Browser
       Defines background colors for toolbars, new tab page, and the main browser window
     -----------------------------------------------------*/
-    --toolbar-bgcolor: #081D26FF !important;             /* Background color for the toolbar */
-    --newtab-background-color: #081D26FF !important;  /* Background color for the new tab page */
-    --zen-themed-toolbar-bg: #081D26FF !important;    /* Background color for the Zen-themed toolbar */
-    --zen-main-browser-background: #081D26FF !important; /* Main browser background color */
+    --toolbar-bgcolor: #081D2680 !important;             /* Background color for the toolbar */
+    --newtab-background-color: #081D2680 !important;  /* Background color for the new tab page */
+    --zen-themed-toolbar-bg: #081D2680 !important;    /* Background color for the Zen-themed toolbar */
+    --zen-main-browser-background: #081D2680 !important; /* Main browser background color */
   }
 
   /*-----------------------------------------------------
@@ -71,7 +71,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the icon that indicates granted permissions
   -----------------------------------------------------*/
   #permissions-granted-icon {
-    color: #081D26FF !important;  /* Sets the icon color to match the background for contrast */
+    color: #081D2680 !important;  /* Sets the icon color to match the background for contrast */
   }
 
   /*-----------------------------------------------------
@@ -79,7 +79,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background of the sidebar places tree
   -----------------------------------------------------*/
   .sidebar-placesTree {
-    background-color: #081D26FF !important; /* Applies the background color for consistency */
+    background-color: #081D2680 !important; /* Applies the background color for consistency */
   }
 
   /*-----------------------------------------------------
@@ -87,7 +87,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the Zen workspaces button
   -----------------------------------------------------*/
   #zen-workspaces-button {
-    background-color: #081D26FF !important; /* Sets the button background to the main background color */
+    background-color: #081D2680 !important; /* Sets the button background to the main background color */
   }
 
   /*-----------------------------------------------------
@@ -95,7 +95,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the tab toolbar area
   -----------------------------------------------------*/
   #TabsToolbar {
-    background-color: #081D26FF !important; /* Matches the background color of the tabs toolbar with the overall theme */
+    background-color: #081D2680 !important; /* Matches the background color of the tabs toolbar with the overall theme */
   }
 
   /*-----------------------------------------------------
@@ -103,7 +103,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background for the URL bar element
   -----------------------------------------------------*/
   #urlbar-background {
-    background-color: #081D26FF !important; /* Applies the themed background color to the URL bar */
+    background-color: #081D2680 !important; /* Applies the themed background color to the URL bar */
   }
 
   /*-----------------------------------------------------
@@ -111,7 +111,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles for the shortcut buttons or links within content areas
   -----------------------------------------------------*/
   .content-shortcuts {
-    background-color: #081D26FF !important;             /* Sets the background color of shortcut elements */
+    background-color: #081D2680 !important;             /* Sets the background color of shortcut elements */
     border-color: #B7DCE5FF !important;         /* Uses foreground_highlight for the border instead of a fixed blue */
   }
 
@@ -128,7 +128,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
     Styles the background of the favicon container in the bookmark edit panel
   -----------------------------------------------------*/
   #zenEditBookmarkPanelFaviconContainer {
-    background: #081D26FF !important; /* Matches the background to ensure visual harmony */
+    background: #081D2680 !important; /* Matches the background to ensure visual harmony */
   }
 
   /*-----------------------------------------------------
@@ -138,7 +138,7 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
   toolbar .toolbarbutton-1 {
     &:not([disabled]) {
       &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
-        fill: #081D26FF; /* Changes the fill color for icons/text when the button is active/open */
+        fill: #081D2680; /* Changes the fill color for icons/text when the button is active/open */
       }
     }
   }

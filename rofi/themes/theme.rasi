@@ -1,6 +1,6 @@
 * {
-	background-col: rgba(8, 29, 38, 1.0);
-	background-selected-col: rgba(12, 46, 63, 1.0);
+	background-col: rgba(8, 29, 38, 0.5);
+	background-selected-col: rgba(12, 46, 63, 0.5);
     background-color: transparent;
     transparency: "real";
 

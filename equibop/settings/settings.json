@@ -262,7 +262,8 @@
             "collapseDeleted": false,
             "inlineEdits": true,
             "showEditDiffs": false,
-            "separatedDiffs": false
+            "separatedDiffs": false,
+            "ignoreSelfEdits": false
         },
         "MoreCommands": {
             "enabled": true,
@@ -456,7 +457,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": false,
+            "triggerNameRerender": true,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -589,7 +590,8 @@
         },
         "ViewRaw": {
             "enabled": true,
-            "clickMethod": "Left"
+            "clickMethod": "Left",
+            "messageContextMenu": false
         },
         "VoiceMessages": {
             "enabled": true,
@@ -1244,7 +1246,8 @@
             "logsDir": "/home/nn/.config/equibop/MessageLoggerData",
             "ignoreWebhooks": false,
             "ShowWhereMessageIsFrom": false,
-            "timeBasedCleanupMinutes": 0
+            "timeBasedCleanupMinutes": 0,
+            "clearLogsOnRestart": false
         },
         "MessageTranslate": {
             "enabled": false
@@ -1493,7 +1496,9 @@
             "accountStandingButton": false,
             "restoreFileDownloadButton": false,
             "noModalAnimation": false,
-            "noBulletPoints": false
+            "noBulletPoints": false,
+            "disableAdoptTagPrompt": false,
+            "jsonGateway": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1665,7 +1670,8 @@
             "showButtonsSelf": "display",
             "whichNameToShow": "both",
             "useServer": false,
-            "serverSelf": false
+            "serverSelf": false,
+            "buttonPosition": "left"
         },
         "SortFriends": {
             "enabled": true,
@@ -1831,6 +1837,27 @@
         },
         "RichPresence": {
             "enabled": false
+        },
+        "CollapsibleUI": {
+            "enabled": false
+        },
+        "CustomStatusTimeouts": {
+            "enabled": false
+        },
+        "EquibopStreamFixes": {
+            "enabled": false
+        },
+        "CancelFriendRequest": {
+            "enabled": false
+        },
+        "SilenceUsers": {
+            "enabled": false
+        },
+        "VoiceChannelLog": {
+            "enabled": false
+        },
+        "ProfileCollectionsAPI": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1844,7 +1871,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1774298056857
+        "settingsSyncVersion": 1777024554724
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1860,5 +1887,6 @@
     },
     "enableOnlineThemes": true,
     "pinnedThemes": [],
-    "mainWindowFrameless": false
+    "mainWindowFrameless": false,
+    "themeActivationModes": {}
 }

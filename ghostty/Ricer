@@ -26,4 +26,4 @@ palette = 15 = B7DCE5
 cursor-color = A3C5CC
 background = 081D26
 foreground = A3C5CC
-background-opacity = 1.0
+background-opacity = 0.5
