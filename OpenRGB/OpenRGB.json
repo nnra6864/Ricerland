@@ -1978,7 +1978,7 @@
         "theme": "Auto"
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "autoload_profiles": {
             "exit_profile": {
                 "enabled": true,
