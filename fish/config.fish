@@ -1,5 +1,5 @@
 # Customize prompt (Obsolete, using omp now)
-# set -g tide_left_prompt_items time os vi_mode pwd git 
+# set -g tide_left_prompt_items time os vi_mode pwd git
 # set -g tide_right_prompt_items
 # set -g tide_right_prompt_suffix ''
 # set -g tide_time_format '%T'
@@ -7,17 +7,15 @@
 # Load user scripts
 fish_add_path ~/.config/fish/scripts
 
-# Perforce
-set -Ux P4IGNORE .p4ignore
-
 # Aliases
 alias doas='sudo'
 alias nlear='clear; fastfetch; echo ""'
 alias py='python'
 alias timeshit='timeshift'
-alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk' 
+alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk --target-colorspace-hint-mode=source'
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
+alias tm='tmux new -As'
 
 # Paths
 alias cfg='cd ~/.config/'
@@ -33,60 +31,13 @@ alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-pe
 # Link ls
 alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
 
-# Updates the entire system
-function update
-	# Clear cache to avoid issues and update the pacman and AUR packages
-	yes | paru -Scc
-
-	# Update packages and Hyprland
-	and paru -Syu --noconfirm --sudoloop \
-	    hyprland-protocols-git \
-        hyprwayland-scanner-git \
-        hyprutils-git \
-        hyprgraphics-git \
-        hyprlang-git \
-        hyprcursor-git \
-        aquamarine-git \
-        xdg-desktop-portal-hyprland-git \
-        hyprwire-git \
-        hyprtoolkit-git \
-        hyprland-git
-	
-	# Update hyprpm
-	and hyprpm update
-
-	# Update flatpak
-	and flatpak update -y
-
-	# Clear the cache once again
-	and yes | paru -Scc
-    
-	# Notify the user system has been updated
-	and notify-send "Update" "Update complete"
-    and paplay /usr/share/sounds/freedesktop/stereo/message.oga
-
-	# Notify the user update failed
-	or begin
-		notify-send -u critical "Update Failed" "Check terminal for errors"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-    end
-end
-
-# Starts Monero Wallet GUI
-function monero
-    echo "Enter your password:"
-    read -s password
-    echo $password | nohup sudo -E QT_QPA_PLATFORM=wayland monero-wallet-gui >/dev/null 2>&1 & disown
-    exit
-end
-
 # Rices the system with the provided config
 function rice
     # Start the Shifter transition
-    python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
-    set pid $last_pid
-    disown
-    sleep 0.2
+    #python ~/Data/Projects/Shifter/Shifter.py > /dev/null 2>&1 &
+    #set pid $last_pid
+    #disown
+    #sleep 0.2
 
     # Remove all the CS2 fonts(can cause crashes)
     #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
@@ -95,8 +46,8 @@ function rice
     python ~/Packages/Pycer/Ricer.py $argv &&
 
     # Reload terminal cfg
+    systemctl reload --user app-com.mitchellh.ghostty.service
     kill -SIGUSR1 (pgrep kitty)
-    kill -SIGUSR2 (pgrep ghostty)
 
     # Remove all the gtk files to avoid conflicts
     rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
@@ -105,20 +56,20 @@ function rice
     #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
     /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
     themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer &&
-    
+
     # Apply the theme with nwg-look
     nwg-look -a
 
     # Generate Steam theme
     adwaita-steam-gtk -i
-    
+
     # Reload Dunst
-	dunstctl reload
+    dunstctl reload
 
     # Nlear the console, sleep and kill Shifter
-    nlear
-    sleep 0.5
-    kill -SIGUSR1 $pid
+    #nlear
+    #sleep 0.5
+    #kill -SIGUSR1 $pid
 end
 
 # Turns video resolution into 8K
@@ -129,17 +80,17 @@ end
 # Opens neovide and moves terminal to the nv workspace(Hyprland only)
 function nv
     set current_window (hyprctl activewindow -j | jq -r .address 2>/dev/null)
-    
+
     neovide $argv &
     set neovide_pid $last_pid
     #Sleep is needed to avoid window rearangement when opening
     #Adjust as needed per system, the slower the system the bigger the pause
     sleep 0.3
-    
+
     hyprctl dispatch movetoworkspacesilent "special:nv,address:$current_window" >/dev/null 2>&1
     while kill -0 $neovide_pid 2>/dev/null
-	#Lowering this number reduces the pause between checks
-	#May lead to a very slight performance increase at the cost of seamlessness
+    #Lowering this number reduces the pause between checks
+    #May lead to a very slight performance increase at the cost of seamlessness
         sleep 0.1
     end
     set current_workspace (hyprctl activeworkspace -j | jq -r .id 2>/dev/null)
@@ -185,9 +136,9 @@ function cleanup_intermediate_dir -d "Deletes all the original files and removes
 end
 
 # Downloads video
-alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv'
+alias dlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --exec \'du -sh {}\''
 # Downloads audio
-alias dla 'yt-dlp -f bestaudio --extract-audio'
+alias dla 'yt-dlp -f bestaudio --extract-audio --exec \'du -sh {}\''
 
 # Downloads a video with metadata
 function dlvi
@@ -266,7 +217,7 @@ function check_remote_dependency
     set remote_machine $argv[1]
     set remote_pass $argv[2]
     set dependency $argv[3]
-    
+
     if not sshpass -p "$remote_pass" ssh "$remote_machine" "command -v $dependency >/dev/null 2>&1"
         echo "Error: $dependency not found on remote machine" >&2
         return 1
@@ -289,230 +240,6 @@ function check_remote_dependencies
         echo "Error - Missing remote dependencies: $missing_remote_deps" >&2
         return 1
     end
-end
-
-# Unity license must still be manually activated on the build machine
-# You can achieve this by:
-# 1. Opening Unity Hub
-# 2. Navigating to Preferences -> Licenses -> Add -> Get a free personal license
-# This step can't be avoided now thanks to highly competent Unity devs
-function rub
-    set dependencies curl wget grep ssh sshpass notify-send paplay pv rsync tee
-
-    function find-project-dir
-      for dir in */
-        if test -d "$dir/Assets" -a -d "$dir/ProjectSettings" -a -d "$dir/Packages"
-          echo (string trim -r -- $dir)
-          return
-        end
-      end
-    end
-
-    function get_unity_url
-        set unity_version $argv[1]
-        set base_version (string replace -r 'f.*$' '' $unity_version)
-
-        curl -s "https://unity.com/releases/editor/whats-new/$base_version#installs" | \
-            grep -oE 'https://download\.unity3d\.com/download_unity/[a-f0-9]{12}/LinuxEditorInstaller/Unity-[^"]*\.tar\.xz' | \
-        head -1
-    end
-
-    # Check all dependencies
-    echo "Checking dependencies..."
-    if not check_dependencies $dependencies
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    echo "Success"
-    echo ""
-    echo ""
-
-    # Gather project info
-    echo "Gathering project info..."
-    set root_dir (pwd)
-    set project_dir (find-project-dir)
-    if test -z "$project_dir"
-        echo "No valid Unity project found in: $root_dir"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    set project_name (basename "$project_dir")
-    
-    # Get the Unity version
-    set version_file "$project_dir/ProjectSettings/ProjectVersion.txt"
-    if not test -f "$version_file"
-        echo "ProjectVersion.txt not found in $project_dir/ProjectSettings/"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    set unity_version (grep "m_EditorVersion:" "$version_file" | cut -d' ' -f2)
-    if test -z "$unity_version"
-        echo "Could not parse Unity version from ProjectVersion.txt"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-
-    # Print all the info
-    echo "Successfully gathered project info:"
-    echo "Name: $project_name" 
-    echo "Path: $project_dir"
-    echo "Unity Version: $unity_version"
-    echo ""
-    echo ""
-    
-    # Get ssh info
-    set default_remote_machine "nn@192.168.0.23"
-    read -P "Enter remote machine ($default_remote_machine): " remote_machine
-    if test -z "$remote_machine"
-        set remote_machine "$default_remote_machine"
-    end
-    read -sP "Enter SSH password: " remote_pass
-
-    # Test the SSH connection
-    echo "Testing SSH connection..."
-    if not sshpass -p "$remote_pass" ssh -o StrictHostKeyChecking=no -q "$remote_machine" exit
-        echo "Can't SSH into $remote_machine with provided password"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    echo "Connection to '$remote_machine' successful"
-    echo ""
-    echo ""
-    
-    # Check remote dependencies
-    echo "Checking remote dependencies..."
-    if not check_remote_dependencies "$remote_machine" "$remote_pass" $dependencies
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    echo "Success"
-    echo ""
-    echo ""
-
-    # Gather remote info
-    echo "Gathering remote info..."
-    set remote_unity_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo \$HOME/Unity/Hub/Editor/")
-    set remote_projects_dir (sshpass -p "$remote_pass" ssh "$remote_machine" "echo \$HOME/Projects/Unity/")
-    set remote_project_dir "$remote_projects_dir$project_name/"
-    set remote_builds_dir "$remote_project_dir""Builds/"
-    set remote_unity_project_dir "$remote_project_dir$project_name/"
-    set unity_editor "$remote_unity_dir$unity_version/Editor/Unity"
-    echo "Successfully gathered remote info"
-    echo ""
-    echo ""
-    
-    # Create the Unity directory if not present on the remote machine
-    if not sshpass -p "$remote_pass" ssh "$remote_machine" test -d "$remote_unity_dir"
-        echo "Unity dir not found on the remote machine: '$remote_unity_dir', creating..."
-        sshpass -p "$remote_pass" ssh "$remote_machine" "mkdir -p $remote_unity_dir"
-        echo "Successfully created '$remote_unity_dir' dir on the remote machine"
-        echo ""
-        echo ""
-    end
-
-    # Verify this version exists on the remote machine
-    if not sshpass -p "$remote_pass" ssh "$remote_machine" test -d "$remote_unity_dir$unity_version"
-        echo "Unity version $unity_version not found on remote machine"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-warning.oga
-        
-        read -n 1 -P "Install Unity $unity_version on the remote machine? [Y/n]: " download_choice
-
-        if test "$download_choice" = "n" -o "$download_choice" = "N"
-            echo "Unity version $unity_version not found on the remote machine"
-            paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-            return 1
-        end
-
-        # Get the Unity download link
-        echo "Getting the Unity $unity_version download link..."
-        set download_url (get_unity_url $unity_version)
-        if test -z "$download_url"
-            echo "Could not find download URL for Unity $unity_version"
-            paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-            return 1
-        end
-        echo "Successfully found the Unity $unity_version download link: $download_url"
-        echo ""
-        echo ""
-
-        # Install Unity
-        echo "Installing Unity $unity_version on remote machine..."
-        sshpass -p "$remote_pass" ssh "$remote_machine" "
-            cd ~/.cache &&
-            echo 'Downloading Unity $unity_version...' &&
-            wget --progress=bar:force:noscroll '$download_url' -O 'Unity-$unity_version.tar.xz' &&
-            echo 'Download complete' &&
-            mkdir -p ~/Unity/Hub/Editor/$unity_version &&
-            echo 'Extracting Unity-$unity_version.tar.xz...' &&
-            pv -f Unity-$unity_version.tar.xz | tar --xz -x -C ~/Unity/Hub/Editor/$unity_version &&
-            echo 'Extraction complete' &&
-            rm -rf 'Unity-$unity_version.tar.xz' &&
-            echo 'Marking Unity as executable' &&
-            chmod +x ~/Unity/Hub/Editor/$unity_version/Editor/Unity &&
-            echo 'Marked' &&
-            cd -"
-
-        if test $status -ne 0
-            notify-send "RUB" "Failed to install Unity $unity_version on remote machine"
-            paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-            return 1
-        end
-
-        echo "Unity $unity_version successfully installed on remote machine"
-        paplay /usr/share/sounds/freedesktop/stereo/message.oga
-    end
-    
-    if sshpass -p "$remote_pass" ssh "$remote_machine" "test -f $unity_editor"
-        echo "Unity Editor found on the remote machine"
-    else
-        echo "Unity Editor not found on the remote machine: $unity_editor"
-        paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
-        return 1
-    end
-    echo ""
-    echo ""
-
-    # rsync files to the remote machine
-    echo "Syncing project..."
-    sshpass -p "$remote_pass" ssh "$remote_machine" mkdir -p "$remote_unity_project_dir"
-    sshpass -p "$remote_pass" rsync -az --delete \
-                --exclude 'Library' \
-                --exclude 'Logs' \
-                --exclude 'Temp' \
-                --exclude 'UserSettings' \
-                "$project_dir/" "$remote_machine:$remote_unity_project_dir"
-    echo "Project synced"
-    echo ""
-    echo ""
-
-    # Make builds
-    echo "Building..."
-    set build_result (sshpass -p "$remote_pass" ssh "$remote_machine" \
-        "mkdir -p '$remote_builds_dir' && \
-        \"$unity_editor\" \
-        -batchmode -nographics -quit -log - \
-        -projectPath \"$remote_unity_project_dir\" \
-        -executeMethod BuildScript.Build 2>&1 | tee /dev/stderr")
-
-    if test $status -ne 0
-        echo "Unity build failed"
-        notify-send --urgency=critical --expire-time=0 "RUB" "Unity build failed"
-        paplay /usr/share/sounds/freedesktop/stereo/message.oga
-        return 1
-    end
-
-    echo "Unity build successful"
-    echo ""
-    echo ""
-
-    # rsync builds
-    echo "Syncing builds..."
-    mkdir -p Builds
-    sshpass -p "$remote_pass" rsync -az --delete \
-        "$remote_machine:$remote_builds_dir/" "./Builds/"
-    echo "Builds synced"
-    notify-send --urgency=critical --expire-time=0 "RUB" "Builds complete"
-    paplay /usr/share/sounds/freedesktop/stereo/message.oga
 end
 
 # Combines all input devices into a new one called CombinedInput
@@ -708,31 +435,28 @@ function get_app_usage
     end
 end
 
-# Fish config
-zoxide init fish | source
-fish_vi_key_bindings
-
-nlear
-
-# Set env vars
-set -gx EDITOR nvim
-set -gx VISUAL nvim
-
-oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
-#starship init fish | source
-
-set PATH $PATH /home/nn/.local/bin
+fish_add_path PATH $PATH /home/nn/.local/bin
 
 # Start the ssh-agent
 if not pgrep -u $USER ssh-agent > /dev/null
-	ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
+    ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
 end
-set -gx SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
+set -Ux SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 
 # Start a Hyprland session
 if status is-interactive
+    zoxide init fish | source
+    tv init fish | source
+    fish_vi_key_bindings
+
+    oh-my-posh init fish --config ~/.config/oh-my-posh/Ricer.json | source
+    #starship init fish | source
+
+    nlear
+
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
+            rm -rf ~/.config/Mumble/Mumble/mumble_settings.json.back
             start-hyprland
         end
     end

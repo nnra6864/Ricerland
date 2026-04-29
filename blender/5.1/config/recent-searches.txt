@@ -1,0 +1,16 @@
+Generate ▸ Remesh
+Input ▸ Color
+Texture ▸ Noise Texture
+Color Ramp ▸ Factor
+Mix ▸ A
+Displacement ▸ Displacement
+Displacement ▸ Bump
+Texture ▸ Image Texture
+Color ▸ Mix Color ▸ Mix
+Input ▸ Attributes ▸ UVMap
+Input ▸ UV Map
+Utilities ▸ Vector ▸ Mapping
+Input ▸ Texture Coordinate ▸ UV
+Input ▸ Geometry ▸ Position
+   Mask (Solid Color 1)
+   OrangeColorMap

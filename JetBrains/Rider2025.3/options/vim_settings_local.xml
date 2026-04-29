@@ -1,0 +1,56 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd>
+        <entry encoding="base64" />
+      </history-cmd>
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="Ricer-b3b6961a">
+      <jump line="12" column="34" filename="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Program.cs" protocol="file" />
+      <jump line="5" column="13" filename="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Debug.cs" protocol="file" />
+      <jump line="2" column="22" filename="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Option.cs" protocol="file" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Option.cs" timestamp="1772982983202">
+        <mark key="&quot;" line="2" column="22" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Debug.cs" timestamp="1772982962744">
+        <mark key="&quot;" line="5" column="13" />
+      </file>
+      <file name="$USER_HOME$/Data/Projects/C_Sharp/Ricer/src/Program.cs" timestamp="1771979583925">
+        <mark key="[" line="12" column="34" />
+        <mark key="]" line="12" column="35" />
+        <mark key="." line="12" column="34" />
+        <mark key="^" line="12" column="35" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="CHARACTER_WISE">
+        <text encoding="base64">aQ==</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">aQ==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">Zg==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-offset encoding="base64" />
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

@@ -1,0 +1,81 @@
+[meta]
+name = "Ricer"
+description = "Ricer"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+accent = "ricer.col.background-highlight"
+accent_foreground = "ricer.col.foreground_highlight"
+background = "ricer.col.background"
+foreground = "ricer.col.foreground"
+secondary_background = "ricer.col.background_alt"
+border = "ricer.col.outline"
+
+[colors.main_window]
+border = "ricer.col.outline"
+footer = { background = "colors.core.secondary_background" }
+
+[colors.settings_window]
+border = "colors.core.border"
+
+[colors.accents]
+blue = "ricer.col.br_blue"
+green = "ricer.col.br_green"
+magenta = "ricer.col.br_magenta"
+orange = "ricer.col.yellow"
+red = "ricer.col.br_red"
+yellow = "ricer.col.br_yellow"
+cyan = "ricer.col.br_cyan"
+purple = "ricer.col.magenta"
+
+# For now, shortcuts cannot have their own dedicated background
+[colors.shortcut]
+border = "colors.core.border"
+
+[colors.text]
+default = "colors.core.foreground"
+muted = "ricer.col.foreground_inactive"
+danger = "ricer.col.br_red"
+success = "ricer.col.br_green"
+placeholder = "ricer.col.foreground_placeholder"
+selection = { background = "colors.core.foreground", foreground = "colors.core.background" }
+
+[colors.text.links]
+default = "ricer.col.link"
+visited = "ricer.col.link_visited"
+
+[colors.input]
+border = "ricer.col.outline_inactive"
+border_focus = "ricer.col.outline"
+border_error = "ricer.col.br_red"
+
+[colors.button.primary]
+background = "ricer.col.button"
+foreground = "ricer.col.button_foreground"
+hover = { background = "ricer.col.button_highlight", outline = "ricer.col.outline_inactive" }
+focus = { outline = "ricer.col.outline" }
+
+[colors.list.item.hover]
+foreground = "ricer.col.foreground_highlight"
+secondary_foreground = "ricer.col.foreground_highlight_alt"
+
+[colors.list.item.selection]
+background = "ricer.col.background_highlight"
+foreground = "ricer.col.foreground_highlight"
+secondary_background = "ricer.col.background_highlight_alt"
+secondary_foreground = "ricer.col.foreground_highlight_alt"
+
+[colors.grid.item]
+background = "ricer.col.background"
+hover = { background = "ricer.col.background_highlight", outline = "ricer.col.outline_inactive" }
+selection = { background = "ricer.col.background_highlight", outline = "ricer.col.outline" }
+
+[colors.scrollbars]
+background = "colors.core.background"
+
+[colors.loading]
+bar = "ricer.col.foreground"     # shown right below the search bar when something is loading
+spinner = "ricer.col.foreground" # used by dynamic toasts
+
+

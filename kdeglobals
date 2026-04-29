@@ -3,7 +3,7 @@ update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd
 
 [ColorEffects:Disabled]
 ChangeSelectionColor=
-Color=#102840
+Color=#081D26
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
@@ -14,7 +14,7 @@ IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
-Color=#061019
+Color=#000000
 ColorAmount=0.025
 ColorEffect=2
 ContrastAmount=0.1
@@ -24,10 +24,10 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=#102840
-BackgroundNormal=#102840
-DecorationFocus=#BDDFFF
-DecorationHover=#3687D8
+BackgroundAlternate=#0C2E3F
+BackgroundNormal=#081D26
+DecorationFocus=#266F7F
+DecorationHover=#A3C5CC
 ForegroundActive=#eceff4
 ForegroundInactive=#d8dee9
 ForegroundLink=#88c0d0
@@ -52,8 +52,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header]
-BackgroundAlternate=#102840
-BackgroundNormal=#102840
+BackgroundAlternate=#0C2E3F
+BackgroundNormal=#081D26
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -66,8 +66,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:Header][Inactive]
-BackgroundAlternate=#102840
-BackgroundNormal=#102840
+BackgroundAlternate=#0C2E3F
+BackgroundNormal=#081D26
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4
@@ -108,8 +108,8 @@ ForegroundPositive=#ebcb8b
 ForegroundVisited=#b48ead
 
 [Colors:View]
-BackgroundAlternate=#102840
-BackgroundNormal=#102840
+BackgroundAlternate=#0C2E3F
+BackgroundNormal=#081D26
 DecorationFocus=#3b4252
 DecorationHover=#3b4252
 ForegroundActive=#eceff4
@@ -122,8 +122,8 @@ ForegroundPositive=#3b4252
 ForegroundVisited=#eceff4
 
 [Colors:Window]
-BackgroundAlternate=#102840
-BackgroundNormal=#102840
+BackgroundAlternate=#0C2E3F
+BackgroundNormal=#081D26
 DecorationFocus=#3b4252
 DecorationHover=#434c5e
 ForegroundActive=#eceff4

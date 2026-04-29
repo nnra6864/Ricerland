@@ -17,6 +17,7 @@
 !/hyprland-preview-share-picker/
 !/HyprnordLogo.kra
 !/HyprnordLogo.png
+!/pypr/
 
 
 # Misc
@@ -24,11 +25,14 @@
 !/hints/
 !/xsettingsd/
 !/mimeapps.list
+!/environment.d/
+!/xdg-terminals.list
 !/xdg-desktop-portal/
 !/SFX/
 !/symbols
 !/blur/
 !/Packages
+!/wlr-which-key/
 
 # OBS
 !/obs-studio/
@@ -79,6 +83,8 @@
 # Applications #
 ################
 
+!/Applications/
+
 # Terminals
 !/ghostty/
 !/kitty/
@@ -88,6 +94,7 @@
 # CLI
 !/fish/
 !/nushell/
+!/tmux/
 !/oh-my-posh/
 !/starship.toml
 !/btop/
@@ -114,6 +121,7 @@
 
 # Blender
 !/blender/
+/blender/extension/.cache/
 !/BlenderNord.xml
 
 # IDE
@@ -127,6 +135,7 @@
 !/CS2/
 
 # Files
+!/yazi/
 !/dolphinrc
 !/ranger/
 !/nautilus/
@@ -150,6 +159,7 @@
 # Misc
 !/glava/
 !/mpv/
+!/vicinae/
 !/rofi/
 !/clapboard/
 !/cliphist-rofi-img

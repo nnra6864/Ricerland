@@ -212,6 +212,7 @@ wine-tkg-staging-bin
 winetricks
 wireplumber
 wl-clipboard
+wlr-which-key-git
 wol
 wtype
 wxwidgets-gtk3

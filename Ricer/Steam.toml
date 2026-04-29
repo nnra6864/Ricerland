@@ -10,14 +10,16 @@ space_files = true
 
 [Values]
 # Theme
-bg = "~/.config/Backgrounds/Nord/NordicRuinsInASnowyBlizzard.jpg"
+bg = "~/.config/Backgrounds/CS_1.6_Menu.jpg"
 icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
-gtk_theme = "Ricer"
+gtk_theme = "oomox-Ricer"
 nvim_theme = "nord"
 
 # Font
 font = "Maple Mono NF CN"
+font_fallback = "Cascadia Code NF"
+font_fallback_2 = "Adwaita Mono"
 min_font_size = 9
 small_font_size = 11
 font_size = 13
@@ -36,7 +38,7 @@ outline_rotation_bezier = "quadOut"
 outline_rotation_type = "once"
 
 # Misc
-terminal = "kitty"
+terminal = "ghostty"
 rounding = 0
 roundingPower = 1
 gapsIn = 5
@@ -44,7 +46,7 @@ gapsOut = 10
 blur = "false"
 blurSize = 20
 blurPasses = 4
-cursor_size = 32
+cursor_size = 24
 cursor_rot = 21
 notification_duration = 3
 
@@ -121,13 +123,15 @@ button_foreground_disabled = "$button_foreground.$disabled_hsv"
 
 # Outline
 outline = "282E22"
-outline_highlight = "$outline"
+outline_highlight = "$outline.$highlight_hsv"
+outline_inactive = "$outline.$inactive_hsv"
+outline_disabled = "$outline.$disabled_hsv"
+
+# Outline Alternative
 outline_alt = "889180"
-outline_highlight_alt = "$outline_alt"
-outline_inactive = "$outline_alt"
-outline_disabled = "$outline_alt"
-outline_inactive_alt = "$outline"
-outline_disabled_alt = "$outline"
+outline_highlight_alt = "$outline_alt.$highlight_hsv"
+outline_inactive_alt = "$outline_alt.$inactive_hsv"
+outline_disabled_alt = "$outline_alt.$disabled_hsv"
 
 # Shadow
 shadow = "$black"
@@ -193,12 +197,14 @@ ZenBrowserLogo = ["~/.config/ZenBrowser/ZenLogo.svg", "hexa"]
 ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
 ZenBrowserUserContent = ["~/.config/ZenBrowser/userContent.css", "hexa"]
 YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
+Ghostty = "~/.config/ghostty/Ricer"
+Foot = "~/.config/foot/foot.ini"
 Kitty = "~/.config/kitty/kitty.conf"
 KDEColors = ["~/.local/share/color-schemes/Ricer.colors", "hexa"]
 RicerHub = ["~/.config/RicerHub.py", "hexa"]
 MaterialDisc = ["~/.config/vesktop/settings/quickCss.css", "hexa"]
 MaterialDiscord = ["~/.config/equibop/settings/quickCss.css", "hexa"]
-Oomox = ["~/.config/OomoxRicer", "hexa"]
+Oomox = ["~/.config/oomox/colors/Ricer", "hexa"]
 Zed = ["~/.config/zed/themes/Ricer.json", "hexa"]
 DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
 Obsidian = ["~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css", "hexa"]
@@ -208,6 +214,7 @@ AdwSteamGtk = [
 ]
 Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
 HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
+Hyprtoolkit = ["~/.config/hypr/hyprtoolkit.conf", "hexa"]
 Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
 CS16 = "~/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
 CS2_Fonts = "~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/fonts.conf"

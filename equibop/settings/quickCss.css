@@ -3,16 +3,16 @@
 
 .theme-dark {
 	/* Variables */
-	--background-col: #10284010;
-	--background-col-alt: #10284020;
-	--background-highlight: #15395910;
-	--background-highlight-alt: #15395920;
-	--text-col: #ACCAE6FF;
-	--highlight-col: #BDDFFFFF;
-	--placeholder-col: #97B3CCFF;
-	--link-col: #6DA1D8FF;
-	--button-text-col: #ACCAE6FF;
-	--outline-col: #BDDFFFFF;
+	--background-col: #081D2680;
+	--background-col-alt: #0C2E3F80;
+	--background-highlight: #0C2E3F80;
+	--background-highlight-alt: #081D2680;
+	--text-col: #A3C5CCFF;
+	--highlight-col: #B7DCE5FF;
+	--placeholder-col: #8EABB2FF;
+	--link-col: #267F6FFF;
+	--button-text-col: #A3C5CCFF;
+	--outline-col: #266F7FFF;
 	--rounding-big: 10px;
 	--rounding-small: calc(var(--rounding-big) / 2);
 

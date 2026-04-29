@@ -1,0 +1,224 @@
+alias = "ricer"
+default_color_format = "hex"
+rgba01_precision = 2
+replace_files = true
+create_example = false
+color_log_format = "Name: {name} | HEXA: {hexa} | RGBA: {rgba} | RGBA01: {rgba01}"
+file_log_format = "Name: {name}\nPath: {path}\nTarget Path: {target_path}\nFormat: {format}"
+space_colors = false
+space_files = true
+
+[Values]
+# Theme
+bg = "~/.config/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jpg"
+icons = "Ricer"
+cursor = "Bibata-Modern-Ice"
+gtk_theme = "oomox-Ricer"
+nvim_theme = "nord"
+
+# Font
+font = "Maple Mono NF CN"
+font_fallback = "Cascadia Code NF"
+font_fallback_2 = "Adwaita Mono"
+min_font_size = 9
+small_font_size = 11
+font_size = 13
+big_font_size = 16
+max_font_size = 25
+
+# Outline
+outline_size = 2
+outline_rotation = 90
+outline_fade_animation = 1
+outline_fade_duration = 1
+outline_fade_bezier = "quadOut"
+outline_rotation_animation = 1
+outline_rotation_duration = 30
+outline_rotation_bezier = "linear"
+outline_rotation_type = "loop"
+
+# Misc
+terminal = "ghostty"
+rounding = 10
+roundingPower = 2
+gapsIn = 5
+gapsOut = 10
+blur = "true"
+blurSize = 20
+blurPasses = 4
+animationDuration = 2
+animationEasing = "expoOut"
+cursor_size = 24
+cursor_rot = 21
+notification_duration = 3
+
+# Color Values
+highlight_hsv = "h+0.s+0.v+10"
+placeholder_hsv = "h+0.s+0.v-10"
+inactive_hsv = "h+0.s+0.v-15"
+disabled_hsv = "h+0.s-10.v-20"
+prompt_bg_hsv_delta = "v+10"
+
+[Colors]
+# Terminal
+black = "081D2680"
+red = "661F1FFF"
+green = "1F6628FF"
+yellow = "66661FFF"
+blue = "1F5A66FF"
+magenta = "4D1F66FF"
+cyan = "1F665AFF"
+white = "A3C5CCFF"
+
+# Terminal Bright
+br_black = "$black.$highlight_hsv"
+br_red = "$red.$highlight_hsv"
+br_green = "$green.$highlight_hsv"
+br_yellow = "$yellow.$highlight_hsv"
+br_blue = "$blue.$highlight_hsv"
+br_magenta = "$magenta.$highlight_hsv"
+br_cyan = "$cyan.$highlight_hsv"
+br_white = "$white.$highlight_hsv"
+
+# Opacity
+opacity = "rgb(0, 0, 0, 1.0)"
+opacity_inactive = "rgb(0, 0, 0, 1.0)"
+opacity_cs16 = "rgb(0, 0, 0, 1.0)"
+
+# Foreground
+foreground = "$white"
+foreground_highlight = "$foreground.$highlight_hsv"
+foreground_placeholder = "$foreground.$placeholder_hsv"
+foreground_inactive = "$foreground.$inactive_hsv"
+foreground_disabled = "$foreground.$disabled_hsv"
+
+# Foreground Alternative
+foreground_alt = "$foreground"
+foreground_highlight_alt = "$foreground_alt.$highlight_hsv"
+foreground_placeholder_alt = "$foreground_alt.$placeholder_hsv"
+foreground_inactive_alt = "$foreground_alt.$inactive_hsv"
+foreground_disabled_alt = "$foreground_alt.$disabled_hsv"
+
+# Background
+background = "$black"
+background_highlight = "$br_black"
+background_inactive = "$background.$inactive_hsv"
+background_disabled = "$background.$disabled_hsv"
+
+# Background Alternative
+background_alt = "$br_black"
+background_highlight_alt = "$black"
+background_inactive_alt = "$background_alt.$inactive_hsv"
+background_disabled_alt = "$background_alt.$disabled_hsv"
+
+# Button Background
+button = "$black"
+button_highlight = "$br_black"
+button_inactive = "$button.$inactive_hsv"
+button_disabled = "$button.$disabled_hsv"
+
+# Button Foreground
+button_foreground = "$foreground"
+button_foreground_highlight = "$foreground_highlight"
+button_foreground_inactive = "$button_foreground.$inactive_hsv"
+button_foreground_disabled = "$button_foreground.$disabled_hsv"
+
+# Outline
+outline = "$br_blue"
+outline_highlight = "$outline.$highlight_hsv"
+outline_inactive = "$outline.$inactive_hsv"
+outline_disabled = "$outline.$disabled_hsv"
+
+# Outline Alternative
+outline_alt = "$white"
+outline_highlight_alt = "$outline_alt.$highlight_hsv"
+outline_inactive_alt = "$outline_alt.$inactive_hsv"
+outline_disabled_alt = "$outline_alt.$disabled_hsv"
+
+# Shadow
+shadow = "$black"
+shadow_inactive = "$shadow"
+
+# Link
+link = "$br_cyan"
+link_visited = "$br_blue"
+
+# Prompt
+prompt_bg = "$blue"
+prompt_fg = "$white"
+prompt_time_bg = "$prompt_bg"
+prompt_time_fg = "$prompt_fg"
+prompt_os_bg = "$prompt_time_bg.$prompt_bg_hsv_delta"
+prompt_os_fg = "$prompt_fg"
+prompt_dir_bg = "$prompt_os_bg.$prompt_bg_hsv_delta"
+prompt_dir_fg = "$prompt_fg"
+prompt_git_bg = "$prompt_dir_bg.$prompt_bg_hsv_delta"
+prompt_git_fg = "$prompt_fg"
+prompt_git_changed = "$cyan"
+prompt_git_diverged = "$magenta"
+prompt_git_ahead = "$green"
+prompt_git_behind = "$yellow"
+
+# Code
+code_var = "$foreground"
+code_type = "$br_cyan"
+code_keyword = "$br_blue"
+code_attribute = "$br_blue"
+
+code_const = "$br_blue"
+code_bracket = "$foreground"
+code_operator = "$br_cyan"
+code_punctuation = "$br_blue"
+
+code_str = "$br_cyan"
+code_str_literal = "$foreground"
+code_special_char = "$foreground_highlight_alt"
+code_comment = "$foreground_inactive"
+
+#Music Visualizer
+visualizer = "$white"
+visualizer_outline = "$cyan"
+
+[Files]
+oh-my-posh = ["~/.config/oh-my-posh/Ricer.json", "hex"]
+Alacritty = "~/.config/alacritty.toml"
+NvimTheme = "~/.config/nvim/lua/theme.lua"
+Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
+Vicinae = ["~/.local/share/vicinae/themes/Ricer.toml", "hex"]
+RofiConfig = ["~/.config/rofi/config.rasi", "hexa"]
+RofiTheme = "~/.config/rofi/themes/theme.rasi"
+GLavaRadial = "~/.config/glava/radial.glsl"
+GTKSettings = ["~/.local/share/nwg-look/gsettings", "hex"]
+Dunst = ["~/.config/dunst/dunstrc", "hexa"]
+Fonts = "~/.config/fontconfig/fonts.conf"
+Hyprmouse = "~/.config/hypr/hyprmouse.conf"
+QtCol = ["~/.config/qt5ct/colors/Ricer.conf", "hex"]
+QtColors = ["~/.config/qt6ct/colors/Ricer.conf", "hex"]
+KDEGlobals = ["~/.config/kdeglobals", "hex"]
+FirefoxTheme = "~/.config/FirefoxTheme/manifest.json"
+ZenBrowserLogo = ["~/.config/ZenBrowser/ZenLogo.svg", "hexa"]
+ZenBrowserUserChrome = ["~/.config/ZenBrowser/userChrome.css", "hexa"]
+ZenBrowserUserContent = ["~/.config/ZenBrowser/userContent.css", "hexa"]
+YTEnhancer = "~/.config/BrowserExtensions/YouTubeEnhancer.json"
+Ghostty = "~/.config/ghostty/Ricer"
+Foot = "~/.config/foot/foot.ini"
+Kitty = "~/.config/kitty/kitty.conf"
+KDEColors = ["~/.local/share/color-schemes/Ricer.colors", "hexa"]
+RicerHub = ["~/.config/RicerHub.py", "hexa"]
+MaterialDisc = ["~/.config/vesktop/settings/quickCss.css", "hexa"]
+MaterialDiscord = ["~/.config/equibop/settings/quickCss.css", "hexa"]
+Oomox = ["~/.config/oomox/colors/Ricer", "hex"]
+Zed = ["~/.config/zed/themes/Ricer.json", "hexa"]
+DarkReader = "~/.config/BrowserExtensions/DarkReaderSettings.json"
+Obsidian = ["~/Data/Obsidian/nn/.obsidian/themes/Ricer/theme.css", "hexa"]
+AdwSteamGtk = [
+	"~/.cache/AdwSteamInstaller/extracted/adwaita/colorthemes/ricer/ricer.css",
+	"rgb",
+]
+Fleet = "~/.config/JetBrains/Fleet/themes/Ricer.json"
+HyprlandPreviewSharePicker = "~/.config/hyprland-preview-share-picker/Ricer.scss"
+Hyprtoolkit = ["~/.config/hypr/hyprtoolkit.conf", "hexa"]
+Hyprland = "~/.config/hypr/hyprland.conf" # Should be done at the end
+CS16 = "~/Data/SteamLibrary/steamapps/common/Half-Life/valve/resource/TrackerScheme.res"
+CS2_Fonts = "~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/csgo/panorama/fonts/fonts.conf"
+CS2_42-Repl-Global = "~/Data/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/game/core/panorama/fonts/conf.d/42-repl-global.conf"

@@ -4,7 +4,8 @@
     "autoUpdateNotification": true,
     "useQuickCss": true,
     "themeLinks": [
-        "https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css"
+        "https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css",
+        "https://raw.githubusercontent.com/PL7963/Discord-Mica/refs/heads/main/discord-mica.theme.css"
     ],
     "enabledThemes": [
         "TranslucencePlus.theme.css",
@@ -239,7 +240,8 @@
             "enabled": false,
             "requireModifier": false,
             "enableDoubleClickToReply": true,
-            "enableDoubleClickToEdit": true
+            "enableDoubleClickToEdit": true,
+            "addAdditionalReacts": false
         },
         "MessageLinkEmbeds": {
             "enabled": true,
@@ -260,11 +262,8 @@
             "collapseDeleted": false,
             "inlineEdits": true,
             "showEditDiffs": false,
-            "separatedDiffs": false
-        },
-        "MessageTags": {
-            "enabled": false,
-            "clyde": true
+            "separatedDiffs": false,
+            "ignoreSelfEdits": false
         },
         "MoreCommands": {
             "enabled": true,
@@ -477,7 +476,10 @@
             "usernameColor": "Role-25",
             "nameSeparator": " ",
             "ignoreFonts": false,
-            "customNameColor": "Role-25"
+            "customNameColor": "Role-25",
+            "friendNameOnlyInDirectMessages": false,
+            "customNameOnlyInDirectMessages": false,
+            "typingIndicator": true
         },
         "SilentMessageToggle": {
             "enabled": false,
@@ -588,7 +590,8 @@
         },
         "ViewRaw": {
             "enabled": true,
-            "clickMethod": "Left"
+            "clickMethod": "Left",
+            "messageContextMenu": false
         },
         "VoiceMessages": {
             "enabled": true,
@@ -619,7 +622,8 @@
             "enabled": false
         },
         "FixYoutubeEmbeds": {
-            "enabled": true
+            "enabled": true,
+            "youtubeDescription": false
         },
         "ChatInputButtonAPI": {
             "enabled": true
@@ -1190,13 +1194,6 @@
         "LastActive": {
             "enabled": false
         },
-        "LimitMiddleClickPaste": {
-            "enabled": true,
-            "limitTo": "active",
-            "reenableDelay": 500,
-            "threshold": 100,
-            "scope": "always"
-        },
         "LoginWithQR": {
             "enabled": false
         },
@@ -1249,7 +1246,8 @@
             "logsDir": "/home/nn/.config/equibop/MessageLoggerData",
             "ignoreWebhooks": false,
             "ShowWhereMessageIsFrom": false,
-            "timeBasedCleanupMinutes": 0
+            "timeBasedCleanupMinutes": 0,
+            "clearLogsOnRestart": false
         },
         "MessageTranslate": {
             "enabled": false
@@ -1493,7 +1491,14 @@
             "removeActivitySection": false,
             "showYourOwnActivityButtons": false,
             "noDefaultHangStatus": false,
-            "forceRoleIcon": false
+            "forceRoleIcon": false,
+            "refreshSlashCommands": false,
+            "accountStandingButton": false,
+            "restoreFileDownloadButton": false,
+            "noModalAnimation": false,
+            "noBulletPoints": false,
+            "disableAdoptTagPrompt": false,
+            "jsonGateway": false
         },
         "CopyStickerLinks": {
             "enabled": false
@@ -1665,7 +1670,8 @@
             "showButtonsSelf": "display",
             "whichNameToShow": "both",
             "useServer": false,
-            "serverSelf": false
+            "serverSelf": false,
+            "buttonPosition": "left"
         },
         "SortFriends": {
             "enabled": true,
@@ -1736,9 +1742,6 @@
         "RepeatMessages": {
             "enabled": false
         },
-        "BetterUserArea": {
-            "enabled": false
-        },
         "RichMagnetLinks": {
             "enabled": false
         },
@@ -1783,6 +1786,78 @@
         },
         "VoiceMessageTranscriber": {
             "enabled": false
+        },
+        "FavouriteAnything": {
+            "enabled": false
+        },
+        "FileUpload": {
+            "enabled": false
+        },
+        "MessagePeek": {
+            "enabled": false
+        },
+        "ProfileSets": {
+            "enabled": false
+        },
+        "CleanerChannelGroups": {
+            "enabled": false
+        },
+        "Dragify": {
+            "enabled": false
+        },
+        "WaitForSlot": {
+            "enabled": false
+        },
+        "MiddleClickTweaks": {
+            "enabled": true,
+            "pasteScope": "always",
+            "pasteThreshold": 100
+        },
+        "HideMessages": {
+            "enabled": false
+        },
+        "NoPushToTalk": {
+            "enabled": false
+        },
+        "TriviaAI": {
+            "enabled": false
+        },
+        "Declutter": {
+            "enabled": false
+        },
+        "SongSpotlight": {
+            "enabled": false
+        },
+        "ClickableRoles": {
+            "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false,
+            "clyde": true
+        },
+        "RichPresence": {
+            "enabled": false
+        },
+        "CollapsibleUI": {
+            "enabled": false
+        },
+        "CustomStatusTimeouts": {
+            "enabled": false
+        },
+        "EquibopStreamFixes": {
+            "enabled": false
+        },
+        "CancelFriendRequest": {
+            "enabled": false
+        },
+        "SilenceUsers": {
+            "enabled": false
+        },
+        "VoiceChannelLog": {
+            "enabled": false
+        },
+        "ProfileCollectionsAPI": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1796,7 +1871,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1769150443025
+        "settingsSyncVersion": 1777024554724
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
@@ -1811,5 +1886,7 @@
         "messagePopoverButtons": {}
     },
     "enableOnlineThemes": true,
-    "pinnedThemes": []
+    "pinnedThemes": [],
+    "mainWindowFrameless": false,
+    "themeActivationModes": {}
 }

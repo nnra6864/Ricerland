@@ -16,8 +16,8 @@ function local_backup
 		end
 
 		mkdir -p "$target"
+		echo "$source => $target"
 		rsync -a --info=progress2 "$source" "$target"
-		and echo "$source => $target"
 	end
 
 	echo "Finished backup"
