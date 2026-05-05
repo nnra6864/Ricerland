@@ -1,8 +1,13 @@
 {
+    "git_panel": {
+        "dock": "left"
+    },
     "agent": {
+        "default_profile": "ask",
+        "dock": "right",
         "default_model": {
             "provider": "ollama",
-            "model": "qwen2.5-coder:7b",
+            "model": "unsloth-Qwen3.5-4B:latest",
         },
         "favorite_models": [],
         "model_parameters": [],
