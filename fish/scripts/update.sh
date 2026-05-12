@@ -31,6 +31,9 @@ paru -Syu --devel --sudoloop \
     aur/hyprshade-git \
     && hyprpm update
 
+# Update yazi pkgs
+ya pkg upgrade
+
 # Update flatpak
 flatpak update -y
 
