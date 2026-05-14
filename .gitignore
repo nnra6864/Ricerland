@@ -4,8 +4,10 @@
 
 # Git
 /*
+!/Assets/
 !/.gitignore
 !/README.md
+!/setup.sh
 
 
 ##########
@@ -14,10 +16,7 @@
 
 # Hyprland
 !/hypr/
-!/HyprnordLogo.kra
-!/HyprnordLogo.png
 !/pypr/
-
 
 # Misc
 !/glib-2.0/
