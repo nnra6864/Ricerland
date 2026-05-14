@@ -1,33 +1,38 @@
-[![Hyprnord](HyprnordLogo.png "Hyprnord")](https://www.youtube.com/watch?v=mIKWoNQUwN4)
-# [Nordic](https://www.nordtheme.com/) [Hyprland](https://hyprland.org/) Rice
+[![Hyprnord](Assets/Hyprnord/HyprnordLogo.png "Hyprnord")](https://www.youtube.com/watch?v=mIKWoNQUwN4)
 
-# Setup
-## Cloning
+## [Nordic](https://www.nordtheme.com/) [Hyprland](https://hyprland.org/) Rice
+
+## Setup
+
+### Cloning
+
 Simply run this:
-```sh
-cd ~/.config;
-git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git;
-cd Ricerland;
-mv * ..;
-cd ..;
-rm -rf Ricerland;
-```
-If you clone without using the '--recurse-submodules` you won't get any submodules, such as shaders, ricer stuff etc.
 
-## Updating
+```sh
+git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git ~/.config
+```
+
+Cloning without `--recurse` will result in missing submodules such as nvim, shaders, ricer stuff etc.
+
+### Updating
+
 To pull all the latest changes, including submodules, run:
 ```sh
-git submodule update --remote --merge
+git pull --recurse
 ```
 
-# Wallpapers
+## Wallpapers
+
 - [Nordic Ruins](https://www.heroscreen.cc/2023/05/4k-wallpaper-nordic-ruins-in-snowy.html)
 - [Snow Mountains](https://www.wallpaperflare.com/mountains-snow-nordic-landscapes-wallpaper-yujbl)
 
-# Font
+## Fonts
+
+- [Maple Mono NF CN](https://github.com/subframe7536/maple-font)
 - [Cascadia Code NF](https://github.com/microsoft/cascadia-code)
 
-# Themes
+## Themes
+
 - [GTK](https://github.com/EliverLara/Nordic) *v40*
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/)
 - [Chromium](https://chromewebstore.google.com/detail/nord/abehfkkfjlplnjadfcjiflnejblfmmpj?hl=en&pli=1)
@@ -40,33 +45,9 @@ git submodule update --remote --merge
 - [Krita](https://github.com/nnra6864/KritaNord)
 - [Unity](https://github.com/nnra6864/UnityNord)
 
-# Plugins
-- [csgo-vulkan-fix](https://github.com/hyprwm/hyprland-plugins/tree/main/csgo-vulkan-fix) - Stretched cs *or any other app*
-- [hyprexpo](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo) - App overview `SUPER+grave`
-- [hyprwinwrap](https://github.com/hyprwm/hyprland-plugins/tree/main/hyprwinwrap) - Any app as background
-- [hypr-dynamic-cursors](https://github.com/VirtCode/hypr-dynamic-cursors) - Cursor rotates in the direction you are moving
-- [hyprfocus](https://github.com/pyt0xic/hyprfocus) - Animate on focus [*causes weird animations behaviour*](https://github.com/pyt0xic/hyprfocus/issues/8)
-- [hycov](https://github.com/DreamMaoMao/hycov) - App overview *causes crashes*
-- [toggle_special](https://hyprland-community.github.io/pyprland/toggle_special.html) - Moving windows from and to a special workspace on the same bind
+## Apps
 
-# Apps
 - [Ricer](https://github.com/nnra6864/Ricer) - Rice with ease
 - [Hyprmouse](https://github.com/nnra6864/Hyprmouse) - Control the mouse with your keyboard using Vim Motions `SUPER+M`
-- [Pyprland](https://hyprland-community.github.io/pyprland/) - Lots of useful plugins
-- [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `CTRL+ATL+X` *active window* `$mainMod+ALT+X` *window* `Pint` *fullscreen(comment grim and uncomment hyprshot if you have multiple monitors)*
-- [hyprpicker](https://github.com/hyprwm/hyprpicker) - Easy to use color picker `SUPER+P`
-- [hyprcursor](https://github.com/hyprwm/hyprcursor) - Hyprland implementation of cursors
-- [swww](https://github.com/LGFae/swww) - Backgrounds
-- [hyprlock](https://github.com/hyprwm/hyprlock) - Hyprland lock
+- [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `main_mod+ATL+X` *active window* `main_mod+CTRL+X` *window* `Print` *fullscreen*
 - [fish](https://fishshell.com/) - Best shell
-- [tide](https://github.com/IlanCosman/tide) - The ultimate Fish prompt
-- [zoxide](https://github.com/ajeetdsouza/zoxide) - The ultimate Fish prompt
-- [nwg-look](https://github.com/nwg-piotr/nwg-look) - Customize GTK apps
-- [qt5ct](https://github.com/desktop-app/qt5ct) & [qt6ct](https://github.com/trialuser02/qt6ct) - Customize QT apps
-- [Neovide](https://neovide.dev/) - Best Neovim GUI `SUPER+T` *use `nv` when launching from terminal 0)*
-- [Excalidraw](https://excalidraw.com/) - Drawing app `SUPER+D` *use it as a progressive app*
-- [alacritty-smooth-cursor](https://github.com/GregTheMadMonk/alacritty-smooth-cursor) - Smooth cursor in terminal *broken clipboard when wayland fix is applied*
-- [GLava](https://github.com/jarcode-foss/glava) - Background audio visualizer
-- [Vesktop](https://github.com/Vencord/Vesktop) - I hate it but screensharing works
-- [ydotool](https://github.com/ReimuNotMoe/ydotool) - Simulating mouse movement and clicks *also required for Hyprmouse*
-- [clapboard](https://github.com/bjesus/clapboard) - Clipboard manager `$mainMod+ALT+C`
