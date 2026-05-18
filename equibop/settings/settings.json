@@ -457,7 +457,7 @@
             "emojiReactions": false,
             "showGradient": false,
             "userProfilePopout": false,
-            "triggerNameRerender": true,
+            "triggerNameRerender": false,
             "hideDefaultAtSign": false,
             "replies": true,
             "messages": true,
@@ -1607,7 +1607,8 @@
             "enabled": false
         },
         "Questify": {
-            "enabled": false
+            "enabled": false,
+            "migrationVersion": 1
         },
         "BetterCommands": {
             "enabled": false
@@ -1858,6 +1859,21 @@
         },
         "ProfileCollectionsAPI": {
             "enabled": false
+        },
+        "ProfileSectionsAPI": {
+            "enabled": true
+        },
+        "NoMiddleClickPaste": {
+            "enabled": false
+        },
+        "ConcatenatedModules": {
+            "enabled": false
+        },
+        "Streaks": {
+            "enabled": false
+        },
+        "VoiceStats": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1871,7 +1887,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1777024554724
+        "settingsSyncVersion": 1778873514148
     },
     "eagerPatches": false,
     "enabledThemeLinks": [
