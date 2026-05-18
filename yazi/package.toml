@@ -70,8 +70,8 @@ hash = "b2ae411155320dfc312e0be472978144"
 
 [[plugin.deps]]
 use = "simla33/ucp"
-rev = "b74651d"
-hash = "a008e4f6e4222f282472044bec7df1ef"
+rev = "a4b5ce1"
+hash = "e64d13d729d3a22f8c62893411328c79"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
