@@ -117,6 +117,7 @@ x-scheme-handler/tg=userapp-Kotatogram Desktop-QM88Y2.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/viber=viber.desktop
+x-scheme-handler/obsidian=obsidian.desktop
 
 [Removed Associations]
 application/x-desktop=nvim.desktop;dev.zed.Zed.desktop;blender.desktop;vim.desktop;libreoffice-writer.desktop;
