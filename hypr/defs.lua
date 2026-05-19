@@ -101,7 +101,7 @@ M.shadow = {
 }
 
 -- Glow
-M.shadow = {
+M.glow = {
     enabled = false,
 
     range        = 10,
@@ -149,7 +149,7 @@ M.theme = {
 }
 
 -- Animation
-M.animation ={
+M.animations = {
     enabled = true,
     workspace_wraparound = false,
     duration_multiplier = 1

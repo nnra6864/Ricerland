@@ -2,7 +2,7 @@ local defs = require("defs")
 
 hl.config({
     decoration = {
-        blur ={
+        blur = {
             enabled = defs.blur.enabled,
             size = defs.blur.size,
             passes = defs.blur.passes,
@@ -16,9 +16,9 @@ hl.config({
             vibrancy_darkness = defs.blur.vibrancy_darkness,
             special = defs.blur.special,
             popups = defs.blur.popups,
-            popups_ignore_alpha = defs.blur.popups_ignore_alpha,
+            popups_ignorealpha = defs.blur.popups_ignore_alpha,
             input_methods = defs.blur.input_methods,
-            input_methods_ignore_alpha = defs.blur.input_methods_ignore_alpha
+            input_methods_ignorealpha = defs.blur.input_methods_ignore_alpha
         }
     }
 })
