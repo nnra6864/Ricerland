@@ -63,6 +63,22 @@ function rice
     # Generate Steam theme
     adwaita-steam-gtk -i
 
+    # Update Flatpak env vars
+    flatpak override --user \
+        --env=XCURSOR_THEME=$XCURSOR_THEME \
+        --env=XCURSOR_SIZE=$XCURSOR_SIZE \
+        --env=GDK_BACKEND=$GDK_BACKEND \
+        --env=GDK_SCALE=$GDK_SCALE \
+        --env=GTK_THEME=$GTK_THEME \
+        --env=QT_QPA_PLATFORM=$QT_QPA_PLATFORM \
+        --env=QT_QPA_PLATFORMTHEME=$QT_QPA_PLATFORMTHEME \
+        --env=QT_QUICK_CONTROLS_STYLE=$QT_QUICK_CONTROLS_STYLE \
+        --env=QT_AUTO_SCREEN_SCALE_FACTOR=$QT_AUTO_SCREEN_SCALE_FACTOR \
+        --env=QT_SCALE_FACTOR=$QT_SCALE_FACTOR \
+        --env=QT_WAYLAND_DISABLE_WINDOWDECORATION=$QT_WAYLAND_DISABLE_WINDOWDECORATION \
+        --env=CLUTTER_BACKEND=$CLUTTER_BACKEND \
+        --env=ELECTRON_OZONE_PLATFORM_HINT=$ELECTRON_OZONE_PLATFORM_HINT
+
     # Reload Dunst
     dunstctl reload
 
