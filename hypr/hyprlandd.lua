@@ -1,4 +1,5 @@
 require("hyprland.env")
+require("hyprland.binds")
 require("hyprland.general")
 require("hyprland.decoration")
 require("hyprland.animations")

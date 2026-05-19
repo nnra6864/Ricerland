@@ -1,5 +1,3 @@
-local defs = require("defs")
-
 require("hyprland.binds.applications")
 require("hyprland.binds.layout")
 require("hyprland.binds.screenshot")
