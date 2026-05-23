@@ -1,0 +1,6 @@
+hl.config({
+    input = {
+        tablettool = {
+        }
+    }
+})
