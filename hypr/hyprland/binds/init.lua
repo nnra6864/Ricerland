@@ -1,5 +1,6 @@
 require("hyprland.binds.applications")
+require("hyprland.binds.binds")
 require("hyprland.binds.layout")
+require("hyprland.binds.media")
 require("hyprland.binds.screenshot")
 require("hyprland.binds.zoom")
-require("hyprland.binds.media")
