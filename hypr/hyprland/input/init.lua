@@ -1,0 +1,6 @@
+require("hyprland.input.input")
+require("hyprland.input.touchpad")
+require("hyprland.input.touchdevice")
+require("hyprland.input.virtualkeyboard")
+require("hyprland.input.tablet")
+require("hyprland.input.tablettool")
