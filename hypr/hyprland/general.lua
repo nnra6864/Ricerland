@@ -2,12 +2,12 @@ local defs = require("defs")
 
 hl.config({
     general = {
-        layout = "scrolling",
+        layout        = "scrolling",
         allow_tearing = true,
 
         -- Border
-        border_size = defs.border.size,
-        resize_on_border = true,
+        border_size             = defs.border.size,
+        resize_on_border        = true,
         extend_border_grab_area = 10,
 
         -- Border colors
@@ -24,9 +24,9 @@ hl.config({
 
         -- Snap
         snap = {
-            enabled = true,
-            window_gap = 10,
-            monitor_gap = 10,
+            enabled      = true,
+            window_gap   = 10,
+            monitor_gap  = 10,
             respect_gaps = true
         }
     }
