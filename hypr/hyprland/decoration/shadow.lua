@@ -2,7 +2,7 @@ local defs = require("defs")
 
 hl.config({
     decoration = {
-        shadow ={
+        shadow = {
             enabled        = defs.shadow.enabled,
             range          = defs.shadow.range,
             render_power   = defs.shadow.render_power,
