@@ -141,23 +141,27 @@ M.theme = {
     },
 
     color = {
-        bg   = "#081D26",
-        fg   = "#A3C5CC",
-        bg_a = "#081D2680",
-        ls   = "di=#A3C5CC:fi=#A3C5CC:ln=#267F6F:pi=#267F6F:so=#266F7F:bd=#266F7F:cd=#266F7F:or=#7F2626:mi=#7F2626:ex=#267F32"
+        background       = "#081D26",
+        foreground       = "#A3C5CC",
+        background_alpha = "#081D2680",
+
+        ls = "di=#A3C5CC:fi=#A3C5CC:ln=#267F6F:pi=#267F6F:so=#266F7F:bd=#266F7F:cd=#266F7F:or=#7F2626:mi=#7F2626:ex=#267F32"
     }
 }
 
 -- Animation
 M.animations = {
     enabled = true,
-    workspace_wraparound = false,
-    duration_multiplier = 1
+    workspace_wraparound         = false,
+    animate_manual_resizes       = true,
+    animate_mouse_windowdragging = true,
+    duration_multiplier          = 1
 }
 
 -- Sound
 M.sound = {
-    screenshot = os.getenv("HOME") .. "/.config/SFX/Select.wav"
+    screenshot     = os.getenv("HOME") .. "/.config/SFX/Select.wav",
+    instant_replay = os.getenv("HOME") .. "/.config/SFX/Select.wav"
 }
 
 -- Overrides
