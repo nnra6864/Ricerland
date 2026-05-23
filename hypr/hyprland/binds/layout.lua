@@ -45,6 +45,10 @@ hl.bind(defs.main_mod .. "+ comma",  hl.dsp.focus({ urgent_or_last = true }))
 hl.bind(defs.main_mod .. "+ S",       hl.dsp.layout("colresize +conf"))
 hl.bind(defs.main_mod .. "+ ALT + S", hl.dsp.layout("colresize -conf"))
 
+-- Mouse
+hl.bind(defs.main_mod .. "+ ALT + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(defs.main_mod .. "+ ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
 -- Workspace
 for i = 1, 10 do
     local key = i % 10
