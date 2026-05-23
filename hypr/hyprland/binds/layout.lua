@@ -41,6 +41,10 @@ end
 hl.bind(defs.main_mod .. "+ period", hl.dsp.focus({ last = true }))
 hl.bind(defs.main_mod .. "+ comma",  hl.dsp.focus({ urgent_or_last = true }))
 
+-- Resize Column (Scrolling)
+hl.bind(defs.main_mod .. "+ S",       hl.dsp.layout("colresize +conf"))
+hl.bind(defs.main_mod .. "+ ALT + S", hl.dsp.layout("colresize -conf"))
+
 -- Workspace
 for i = 1, 10 do
     local key = i % 10
