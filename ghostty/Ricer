@@ -23,7 +23,7 @@ palette = 13 = 5F267F
 palette = 14 = 267F6F
 palette = 15 = B7DCE5
 
-cursor-color = A3C5CC
+cursor-color = FFFFFF
 background = 081D26
 foreground = A3C5CC
 background-opacity = 0.5

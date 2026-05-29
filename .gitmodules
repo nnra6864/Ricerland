@@ -7,6 +7,6 @@
 [submodule "hypr/HyprlandUnityFix"]
 	path = hypr/HyprlandUnityFix
 	url = ../HyprlandUnityFix
-[submodule "ghostty/shaders/ghostty-shader-playground"]
-	path = ghostty/shaders/ghostty-shader-playground
-	url = ../ghostty-shader-playground
+[submodule "ghostty/shaders/ghostty-cursor-shaders"]
+	path = ghostty/shaders/ghostty-cursor-shaders
+	url = ../ghostty-cursor-shaders
