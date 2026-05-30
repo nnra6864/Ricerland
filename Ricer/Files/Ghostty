@@ -23,7 +23,7 @@ palette = 13 = ricer.col.br_magenta
 palette = 14 = ricer.col.br_cyan
 palette = 15 = ricer.col.br_white
 
-cursor-color = ricer.col.foreground
+cursor-color = FFFFFF
 background = ricer.col.background
 foreground = ricer.col.foreground
 background-opacity = ricer.col.background.a01
