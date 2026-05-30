@@ -1,19 +1,35 @@
 [mgr]
 prepend_keymap = [
+    # Open shell here
     { on = "!", for = "unix", run = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
-    { on = "z", run = "plugin zoxide", desc = "Jump to a directory using zoxide" },
-    { on = "Z", run = "plugin fzf", desc = "Jump to a directory using fzf" },
-    { on = "<C-k>", run = "plugin kdeconnect-send", desc = "Send selected files via KDE Connect" },
+
+    # Jump to char
     { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
-    { on = "M", run = "plugin mount" },
-    { on = [ "g", "c" ], run = "plugin vcs-files", desc = "Show Git file changes" },
-    { on = "<C-d>", run = "plugin diff", desc = "Diff the selected with the hovered file" },
-    { on = "+", run = "plugin zoom 1", desc = "Zoom in hovered file" },
-    { on = "-", run = "plugin zoom -1", desc = "Zoom out hovered file" },
-    { on = [ "c", "m" ], run = "plugin chmod", desc = "Chmod on selected files" },
-    { on = "y", run = [ 'shell -- for path in %s; do echo "file://$path"; done | wl-copy -t text/uri-list', "yank" ] },
-    { on = "y", run = "plugin ucp copy", desc = "Copy" },
+    
+    # Television
+    { on = "z",     run = "plugin tv zoxide", desc = "Jump to a directory using zoxide" },
+    { on = "Z",     run = "plugin tv dirs",   desc = "Jump to a directory via television" },
+    { on = "<C-t>", run = "plugin tv",        desc = "Jump to a file via television" },
+
+    # Clipboard copy-paste
+    { on = "y", run = "plugin ucp copy",  desc = "Copy" },
     { on = "p", run = "plugin ucp paste", desc = "Paste" },
-    { on = [ ".", "." ], run = "hidden toggle", desc = "Toggle the visibility of hidden files" },
+
+    # Zoom
+    { on = "+", run = "plugin zoom 1",  desc = "Zoom in hovered file" },
+    { on = "-", run = "plugin zoom -1", desc = "Zoom out hovered file" },
+
+    # KDE Connect
+    { on = "<C-k>", run = "plugin kdeconnect-send", desc = "Send selected files via KDE Connect" },
+
+
+    # Diff
+    { on = [ ".", "c" ], run = "plugin vcs-files", desc = "Show Git file changes" },
+    { on = [ ".", "d" ], run = "plugin diff",      desc = "Diff the selected with the hovered file" },
+
+    # Misc
+    { on = [ "c", "m" ], run = "plugin chmod",     desc = "Chmod on selected files" },
+    { on = [ ".", "." ], run = "hidden toggle",    desc = "Toggle the visibility of hidden files" },
     { on = [ ".", "s" ], run = "plugin what-size", desc = "Calc size of selection or cwd" },
+    { on = "M",          run = "plugin mount",     desc = "Mount" },
 ]
