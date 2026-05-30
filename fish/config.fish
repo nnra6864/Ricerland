@@ -47,15 +47,15 @@ function rice
 
     # Reload terminal cfg
     systemctl reload --user app-com.mitchellh.ghostty.service
-    kill -SIGUSR1 (pgrep kitty)
+    #kill -SIGUSR1 (pgrep kitty)
 
     # Remove all the gtk files to avoid conflicts
-    rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme &&
+    rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme
 
     # Generate Themix theme and icons
     #/opt/oomox/plugins/theme_oomox/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
     /opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
-    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer &&
+    themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer
 
     # Apply the theme with nwg-look
     nwg-look -a
@@ -81,6 +81,9 @@ function rice
 
     # Reload Dunst
     dunstctl reload
+
+    # Reload Hyprland
+    hyprctl reload
 
     # Nlear the console, sleep and kill Shifter
     #nlear
