@@ -128,7 +128,7 @@ M.theme = {
     background = os.getenv("HOME") .. "/.config/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jpg",
 
     qt = {
-        platform_theme            = "gtk3",
+        platform_theme            = "qt6ct",
         style                     = "breeze",
         quick_controls_style      = "org.kde.desktop",
         disable_window_decoration = 1,
