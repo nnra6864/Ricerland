@@ -20,7 +20,7 @@ M.opacity = {
 M.dimming = {
     modal    = true,
     inactive = true,
-    strength = 0.6,
+    strength = 0.2,
     special  = 0.2,
     around   = 0.4
 }
@@ -166,9 +166,9 @@ M.sound = {
 }
 
 -- Overrides
-local overrides_path = package.searchpath("overrides", package.path)
+local overrides_path = package.searchpath("def_overrides", package.path)
 if overrides_path then
-    local ok, overrides = pcall(require, "overrides")
+    local ok, overrides = pcall(require, "def_overrides")
     if ok and type(overrides) == "table" then
         for key, value in pairs(overrides) do
             M[key] = value
