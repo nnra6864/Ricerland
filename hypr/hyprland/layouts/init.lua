@@ -1,0 +1,1 @@
+require("hyprland/layouts/scrolling")
