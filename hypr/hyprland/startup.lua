@@ -1,0 +1,18 @@
+local defs = require("defs")
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("sunshine")
+    hl.exec_cmd("pypr")
+    hl.exec_cmd("vicinae server")
+    hl.exec_cmd("ydotoold")
+    hl.exec_cmd("lan-mouse daemon")
+    hl.exec_cmd("kdeconnectd")
+    hl.exec_cmd("kdeconnect-indicator")
+    hl.exec_cmd("openrgb --startminimized --profile 'Off' --server")
+    hl.exec_cmd("hyprpaper")
+    hl.exec_cmd("fish -c 'track_app_usage'")
+
+    hl.exec_cmd(defs.apps.terminal)
+    hl.exec_cmd(defs.apps.browser)
+    hl.exec_cmd(defs.apps.terminal)
+end)
