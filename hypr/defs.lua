@@ -159,6 +159,14 @@ M.animations = {
     duration_multiplier          = 1
 }
 
+-- Zoom
+M.zoom = {
+    max           = 10,
+    min           = 1,
+    toggle_factor = 1.5,
+    step          = 0.25
+}
+
 -- Sound
 M.sound = {
     screenshot     = os.getenv("HOME") .. "/.config/SFX/Select.wav",
