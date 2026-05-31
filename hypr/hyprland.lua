@@ -1,10 +1,11 @@
+require("hyprland.env")
+require("hyprland.rules")
+
 require("hyprland.animations")
 require("hyprland.binds")
 require("hyprland.decoration")
-require("hyprland.env")
 require("hyprland.input")
 require("hyprland.layouts")
-require("hyprland.rules")
 require("hyprland.ecosystem")
 require("hyprland.gamemode")
 require("hyprland.general")
