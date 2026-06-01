@@ -19,6 +19,20 @@ for _, layer in ipairs(layers) do
     })
 end
 
+local no_anim = {
+    "selection",
+    "hyprpicker"
+}
+
+for _, layer in ipairs(no_anim) do
+    hl.layer_rule({
+        match = {
+            namespace = layer
+        },
+        no_anim = true
+    })
+end
+
 -- Notifications should slide from top
 hl.layer_rule({
     match = {
