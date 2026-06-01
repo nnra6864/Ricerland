@@ -43,12 +43,6 @@ M.gaps = {
     outer = 10
 }
 
--- Shadow
-M.shadow = {
-    col         = "#081D2680",
-    inactiveCol = "#081D2680"
-}
-
 -- Border
 M.border = {
     rounding       = 10,
@@ -56,12 +50,8 @@ M.border = {
     size           = 2,
 
     -- Color
-    active_col   = { colors = { "#266F7F", "#A3C5CC" }, M.borderActiveRotation },
-    inactive_col = { colors = { "#1E444C", "#899699" }, M.borderInactiveRotation },
-
-    -- Rotation
-    active_rotation    = 90,
-    inactive_rotation  = -90,
+    active_col   = { colors = { "#266F7F", "#A3C5CC" }, 90 },
+    inactive_col = { colors = { "#1E444C", "#899699" }, -90 },
 }
 
 
@@ -205,7 +195,7 @@ M.animations = {
         s.leaf   = "borderangle"
         s.speed  = 10
         s.bezier = "quad_out"
-        s.stlye  = "once"
+        s.style  = "once"
         return s
     end)(),
 
