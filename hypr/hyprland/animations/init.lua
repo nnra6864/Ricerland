@@ -1,62 +1,17 @@
-require("hyprland.animations.curves")
 local defs = require("defs")
+require("hyprland.animations.curves")
 
 hl.config({
     animations = {
-        enabled = defs.animations.enabled,
+        enabled              = defs.animations.enabled,
         workspace_wraparound = defs.animations.workspace_wraparound
     }
 })
 
-hl.animation({
-    leaf = "windows",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-    style = "slide bottom"
-})
-
-hl.animation({
-    leaf = "layers",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-    style = "slide bottom"
-})
-
-hl.animation({
-    leaf = "fade",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-})
-
-hl.animation({
-    leaf = "border",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-})
-
-hl.animation({
-    leaf = "borderangle",
-    enabled = true,
-    speed = 10,
-    bezier = "quad_out",
-    style = "once"
-})
-
-hl.animation({
-    leaf = "workspaces",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-    style = "slidevert"
-})
-
-hl.animation({
-    leaf = "zoomFactor",
-    enabled = true,
-    speed = 3,
-    bezier = "expo_out",
-})
+hl.animation(defs.animations.windows)
+hl.animation(defs.animations.layers)
+hl.animation(defs.animations.fade)
+hl.animation(defs.animations.border)
+hl.animation(defs.animations.border_angle)
+hl.animation(defs.animations.workspaces)
+hl.animation(defs.animations.zoom_factor)

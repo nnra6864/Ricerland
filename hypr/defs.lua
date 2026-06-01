@@ -1,5 +1,17 @@
 local M = {}
 
+-- Copies values to a new table
+function M.copy(original)
+    -- Just return the item if it isn't a table
+    if type(original) ~= 'table' then return original end
+
+    local duplicate = {}
+    for key, value in pairs(original) do
+        duplicate[key] = M.copy(value)
+    end
+    return duplicate
+end
+
 -- Main mod
 M.main_mod = "SUPER"
 
@@ -50,15 +62,6 @@ M.border = {
     -- Rotation
     active_rotation    = 90,
     inactive_rotation  = -90,
-    rotation_animation = 1,
-    rotation_duration  = 30,
-    rotation_bezier    = "linear",
-    rotation_type      = "loop",
-
-    -- Fade
-    fade_animation = 1,
-    fade_duration  = 1,
-    fade_bezier    = "quadOut"
 }
 
 
@@ -151,12 +154,66 @@ M.theme = {
 }
 
 -- Animation
-M.animations = {
+M.animation_settings = {
     enabled = true,
+    speed   = 3,
+    bezier  = "expo_out",
+}
+
+M.animations = {
+    enabled                      = true,
     workspace_wraparound         = false,
     animate_manual_resizes       = true,
     animate_mouse_windowdragging = true,
-    duration_multiplier          = 1
+    duration_multiplier          = 1,
+
+    windows = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "windows"
+        s.style = "slide bottom"
+        return s
+    end)(),
+
+    layers = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "layers"
+        s.style = "slide bottom"
+        return s
+    end)(),
+
+    workspaces = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "workspaces"
+        s.style = "slidevert"
+        return s
+    end)(),
+
+    fade = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "fade"
+        return s
+    end)(),
+
+    border = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "border"
+        return s
+    end)(),
+
+    border_angle = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf   = "borderangle"
+        s.speed  = 10
+        s.bezier = "quad_out"
+        s.stlye  = "once"
+        return s
+    end)(),
+
+    zoom_factor = (function()
+        local s = M.copy(M.animation_settings)
+        s.leaf  = "zoomFactor"
+        return s
+    end)(),
 }
 
 -- Zoom

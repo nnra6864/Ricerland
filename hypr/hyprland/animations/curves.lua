@@ -10,7 +10,7 @@ hl.curve("expo_out", {
 
 hl.curve("spring", {
     type = "spring",
-    mass = 0.6,
+    mass = 1,
     stiffness = 50,
     dampening = 10
 })
