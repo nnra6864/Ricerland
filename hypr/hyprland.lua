@@ -1,6 +1,5 @@
 require("hyprland.env")
 require("hyprland.rules")
-
 require("hyprland.animations")
 require("hyprland.binds")
 require("hyprland.decoration")
@@ -12,4 +11,5 @@ require("hyprland.general")
 require("hyprland.misc")
 require("hyprland.monitors")
 require("hyprland.render")
+require("hyprland.plugins")
 require("hyprland.startup")
