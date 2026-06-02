@@ -96,6 +96,9 @@ menu:
                 - key: [8, o]
                   desc: Classic Offensive
                   cmd: gtk-launch "Classic Offensive"
+          - key: "o"
+            desc: OBS
+            cmd: obs --disable-missing-files-check
     - key: "n"
       desc: Notifications
       submenu:
