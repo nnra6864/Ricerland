@@ -25,7 +25,7 @@ M.apps = {
 -- Opacity
 M.opacity = {
     active   = 1.0,
-    inactive = 1.0,
+    inactive = 1.0
 }
 
 -- Dimming
@@ -51,7 +51,7 @@ M.border = {
 
     -- Color
     active_col   = { colors = { "#266F7F", "#A3C5CC" }, 90 },
-    inactive_col = { colors = { "#1E444C", "#899699" }, -90 },
+    inactive_col = { colors = { "#1E444C", "#899699" }, -90 }
 }
 
 
@@ -101,7 +101,13 @@ M.glow = {
     render_power = 3,
 
     color          = "#000000",
-    color_inactive = "#000000",
+    color_inactive = "#000000"
+}
+
+-- Motion Blur
+M.motion_blur = {
+    enabled = false,
+    samples = 7
 }
 
 -- Font
@@ -147,7 +153,7 @@ M.theme = {
 M.animation_settings = {
     enabled = true,
     speed   = 3,
-    bezier  = "expo_out",
+    bezier  = "expo_out"
 }
 
 M.animations = {
@@ -203,7 +209,7 @@ M.animations = {
         local s = M.copy(M.animation_settings)
         s.leaf  = "zoomFactor"
         return s
-    end)(),
+    end)()
 }
 
 -- Zoom
