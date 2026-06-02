@@ -1,24 +1,26 @@
-local defs = require("defs")
+if hl.plugin.dynamic_cursors ~= nil then
+    local defs = require("defs")
 
-hl.config {
-    plugin = {
-        dynamic_cursors = {
-            enabled   = true,
-            mode      = "rotate",
-            threshold = 1,
+    hl.config {
+        plugin = {
+            dynamic_cursors = {
+                enabled   = true,
+                mode      = "rotate",
+                threshold = 1,
 
-            rotate = {
-                length = defs.cursor.size,
-                offset = 21
-            },
+                rotate = {
+                    length = defs.cursor.size,
+                    offset = 21
+                },
 
-            shake = {
-                enabled = false
-            },
+                shake = {
+                    enabled = false
+                },
 
-            hyprcursor = {
-                enabled = true
+                hyprcursor = {
+                    enabled = true
+                }
             }
         }
     }
-}
+end
