@@ -17,13 +17,13 @@ menu:
             cmd: vicinae toggle
           - key: "h"
             desc: Clipboard History
-            cmd: vicinae vicinae://extensions/vicinae/clipboard/history
+            cmd: vicinae vicinae://launch/clipboard/history
           - key: "t"
             desc: Translate
-            cmd: vicinae vicinae://extensions/gebeto/translate/translate
+            cmd: vicinae vicinae://launch/@gebeto/store.raycast.translate/translate
           - key: "e"
             desc: Emoji
-            cmd: vicinae vicinae://extensions/vicinae/core/search-emojis
+            cmd: vicinae vicinae://launch/core/search-emojis
     - key: "a"
       desc: Applications
       submenu:
