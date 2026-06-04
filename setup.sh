@@ -25,7 +25,10 @@ config_packages=(
     "trash-cli"
     "tree-sitter-cli"
     "zoxide"
+    "zip"
+    "unzip"
     "xdg-terminal-exec"
+    "oh-my-posh-bin"
 )
 kernels=("linux" "linux-zen")
 cachy_packages=("cachyos-gaming-application" "cachyos-gaming-meta" "proton-cachyos" "proton-cachyos-slr")
