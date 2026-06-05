@@ -1,16 +1,6 @@
+local utils = require("utils")
+
 local M = {}
-
--- Copies values to a new table
-function M.copy(original)
-    -- Just return the item if it isn't a table
-    if type(original) ~= 'table' then return original end
-
-    local duplicate = {}
-    for key, value in pairs(original) do
-        duplicate[key] = M.copy(value)
-    end
-    return duplicate
-end
 
 -- Main mod
 M.main_mod = "SUPER"
@@ -164,40 +154,40 @@ M.animations = {
     duration_multiplier          = 1,
 
     windows = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "windows"
         s.style = "slide bottom"
         return s
     end)(),
 
     layers = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "layers"
         s.style = "slide bottom"
         return s
     end)(),
 
     workspaces = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "workspaces"
         s.style = "slidevert"
         return s
     end)(),
 
     fade = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "fade"
         return s
     end)(),
 
     border = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "border"
         return s
     end)(),
 
     border_angle = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf   = "borderangle"
         s.speed  = 10
         s.bezier = "quad_out"
@@ -206,7 +196,7 @@ M.animations = {
     end)(),
 
     zoom_factor = (function()
-        local s = M.copy(M.animation_settings)
+        local s = utils.copy(M.animation_settings)
         s.leaf  = "zoomFactor"
         return s
     end)()
@@ -231,9 +221,7 @@ local overrides_path = package.searchpath("def_overrides", package.path)
 if overrides_path then
     local ok, overrides = pcall(require, "def_overrides")
     if ok and type(overrides) == "table" then
-        for key, value in pairs(overrides) do
-            M[key] = value
-        end
+        utils.deep_merge(M, overrides)
     end
 end
 
