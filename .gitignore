@@ -9,6 +9,11 @@
 !/README.md
 !/setup.sh
 
+###########
+# .bashrc #
+###########
+
+!/.bashrc
 
 ###########
 # .config #
