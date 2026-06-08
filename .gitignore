@@ -57,9 +57,6 @@
 !/.config/nwg-drawer/
 !/.config/nwg-dock-hyprland/
 
-# Cosmic
-!/.config/cosmic/
-
 # Misc
 !/.config/Ricer/
 !/.config/Nisualizer/
