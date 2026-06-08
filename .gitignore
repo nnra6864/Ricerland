@@ -119,7 +119,6 @@
 !/.config/Unity/
 /.config/Unity/*
 !/.config/Unity/Layouts
-!/.config/UnityNord.json
 
 # Blender
 !/.config/blender/
