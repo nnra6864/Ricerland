@@ -119,8 +119,10 @@
 
 # Blender
 !/.config/blender/
-/.config/blender/extension/.cache/
-!/.config/BlenderNord.xml
+/.config/blender/*/*
+!/.config/blender/*/config/userpref.blend
+!/.config/blender/*/extensions/
+/.config/blender/*/extensions/.cache/
 
 # IDE
 !/.config/nvim/
@@ -164,3 +166,4 @@
 !/.config/hyprpanel/
 !/.config/yt-dlp/
 !/.config/.tidal-dl.json
+**/__pycache__

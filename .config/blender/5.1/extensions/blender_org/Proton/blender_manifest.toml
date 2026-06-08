@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+
+id = "Proton"
+version = "1.1.0"
+name = "Proton"
+tagline = "A modern dark theme for Blender with purple accents"
+maintainer = "VISaberToothIV"
+type = "theme"
+tags = ["Dark"]
+blender_version_min = "5.0.0"
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
