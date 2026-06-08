@@ -23,7 +23,6 @@
 !/.config/hypr/
 
 # Misc
-!/.config/glib-2.0/
 !/.config/hints/
 !/.config/xsettingsd/
 !/.config/mimeapps.list
