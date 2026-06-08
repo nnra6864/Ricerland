@@ -135,7 +135,6 @@
 # Files
 !/.config/yazi/
 !/.config/dolphinrc
-!/.config/ranger/
 !/.config/nautilus/
 !/.config/nemo/
 !/.config/caja/
