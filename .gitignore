@@ -137,9 +137,6 @@
 !/.config/dolphinrc
 !/.config/bat/
 
-# Social
-!/.config/BetterDiscord/
-
 # Equibop
 !/.config/equibop
 /.config/equibop/*
