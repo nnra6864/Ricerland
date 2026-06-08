@@ -78,8 +78,18 @@
 !/.config/kitty/
 !/.config/foot/
 
-# CLI
+# Fish
 !/.config/fish/
+/.config/fish/*
+!/.config/fish/completions/
+!/.config/fish/conf.d/
+!/.config/fish/functions/
+!/.config/fish/scripts/
+!/.config/fish/themes/
+!/.config/fish/config.fish
+!/.config/fish/fish_plugins
+
+# CLI
 !/.config/nushell/
 !/.config/tmux/
 !/.config/oh-my-posh/
