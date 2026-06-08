@@ -101,7 +101,6 @@
 !/.config/tmux/
 !/.config/oh-my-posh/
 !/.config/btop/
-!/.config/htop/
 !/.config/cava/
 !/.config/dunst/
 !/.config/ncmpcpp/
