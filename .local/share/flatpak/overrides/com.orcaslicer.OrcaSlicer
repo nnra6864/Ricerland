@@ -1,0 +1,7 @@
+[Context]
+sockets=cups;session-bus;wayland
+devices=!all
+filesystems=~/Projects/3D_Printing;!home
+
+[Environment]
+SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt

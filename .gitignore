@@ -67,7 +67,19 @@
 
 # APPLICATIONS #
 
-!/.local/share/applications/Custom
+!/.local/
+/.local/*
+
+!/.local/share/
+/.local/share/*
+
+!/.local/share/applications/
+/.local/share/applications/*
+!/.local/share/applications/Custom/
+
+!/.local/share/flatpak/
+/.local/share/flatpak/*
+!/.local/share/flatpak/overrides/
 
 # Terminals
 !/.config/ghostty/

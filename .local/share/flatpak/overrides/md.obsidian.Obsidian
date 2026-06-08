@@ -1,0 +1,6 @@
+[Context]
+sockets=wayland;!x11
+filesystems=!~/.local/share/fonts;~/Data/Obsidian;!home;host-os
+
+[Environment]
+OBSIDIAN_ENABLE_AUTOSCROLL=1
