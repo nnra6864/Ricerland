@@ -149,9 +149,5 @@
 !/.config/mpv/
 !/.config/vicinae/
 !/.config/rofi/
-!/.config/cliphist-rofi-img
-!/.config/swaync/
-!/.config/waybar/
-!/.config/hyprpanel/
 !/.config/yt-dlp/
 **/__pycache__
