@@ -41,7 +41,6 @@
 /.config/obs-studio/*
 !/.config/obs-studio/basic/
 /.config/obs-studio/basic/scenes
-/.config/obs-studio/basic/profiles/*/*.json.bak
 /.config/obs-studio/basic/profiles/*/service.json
 /.config/obs-studio/basic/profiles/*/service.json.bak
 
