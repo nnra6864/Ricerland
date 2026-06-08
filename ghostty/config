@@ -16,5 +16,5 @@ resize-overlay = never
 image-storage-limit = 4294967295
 confirm-close-surface = false
 
-custom-shader-animation = always
+custom-shader-animation = true
 custom-shader = shaders/ghostty-cursor-shaders/cursor_warp.glsl
