@@ -125,11 +125,6 @@
 !/.config/dolphinrc
 !/.config/bat/
 
-# Equibop
-!/.config/equibop
-/.config/equibop/*
-!/.config/equibop/settings/
-
 # Audio
 !/.config/pipewire/
 !/.config/wireplumber/
