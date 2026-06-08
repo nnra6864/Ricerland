@@ -46,6 +46,11 @@
 
 # RICING #
 
+# Backgrounds
+!/Pictures/
+/Pictures/*
+!/Pictures/Backgrounds/
+
 # KDE
 !/.config/qt5ct/
 !/.config/qt6ct/
@@ -58,7 +63,6 @@
 # Misc
 !/.config/Ricer/
 !/.config/Nisualizer/
-!/.config/Backgrounds/
 !/.config/fontconfig/
 !/.config/Fonts/
 /.config/Fonts/**/.uuid
