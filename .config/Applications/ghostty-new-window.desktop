@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Ghostty (new window)
-Exec=ghostty +new-window
-Type=Application
-Categories=TerminalEmulator;
-X-TerminalArgExec=-e

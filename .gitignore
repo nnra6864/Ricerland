@@ -63,13 +63,11 @@
 !/.config/Fonts/
 /.config/Fonts/**/.uuid
 !/.config/oomox/
-!/.config/wpaperd/
-!/.config/ags/
 
 
 # APPLICATIONS #
 
-!/.config/Applications/
+!/.local/share/applications/Custom
 
 # Terminals
 !/.config/ghostty/
