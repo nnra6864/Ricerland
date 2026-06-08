@@ -1,5 +1,0 @@
-Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
-Plug 'tommcdo/vim-exchange'
-set quickscope
-Plug 'tpope/vim-surround'
