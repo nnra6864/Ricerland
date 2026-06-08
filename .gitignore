@@ -125,8 +125,6 @@
 # IDE
 !/.config/nvim/
 !/.config/neovide/
-!/.config/JetBrains/
-!/.config/JetBrainsSettings/
 !/.config/zed/
 
 # Games
