@@ -1,2 +1,0 @@
-launcher = [ "rofi", "-dmenu", "-i", "-fuzzy-match", "-p", "clap: " ]
-history_size = 50
