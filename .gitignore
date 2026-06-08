@@ -49,8 +49,6 @@
 # KDE
 !/.config/qt5ct/
 !/.config/qt6ct/
-!/.config/Nord.colors
-!/.config/kdenliverc
 
 # GTK
 !/.config/gtk-3.0/
@@ -81,7 +79,6 @@
 # Terminals
 !/.config/ghostty/
 !/.config/kitty/
-!/.config/alacritty.toml
 !/.config/foot/
 
 # CLI
@@ -89,7 +86,6 @@
 !/.config/nushell/
 !/.config/tmux/
 !/.config/oh-my-posh/
-!/.config/starship.toml
 !/.config/btop/
 !/.config/htop/
 !/.config/cava/
