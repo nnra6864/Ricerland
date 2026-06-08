@@ -9,7 +9,7 @@
 Simply run this:
 
 ```sh
-git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git ~/.config
+git clone --recurse-submodules https://github.com/nnra6864/Ricerland.git ~
 ```
 
 Cloning without `--recurse` will result in missing submodules such as nvim, shaders, ricer stuff etc.
@@ -21,29 +21,11 @@ To pull all the latest changes, including submodules, run:
 git pull --recurse
 ```
 
-## Wallpapers
-
-- [Nordic Ruins](https://www.heroscreen.cc/2023/05/4k-wallpaper-nordic-ruins-in-snowy.html)
-- [Snow Mountains](https://www.wallpaperflare.com/mountains-snow-nordic-landscapes-wallpaper-yujbl)
-
 ## Fonts
 
 - [Maple Mono NF CN](https://github.com/subframe7536/maple-font)
 - [Cascadia Code NF](https://github.com/microsoft/cascadia-code)
-
-## Themes
-
-- [GTK](https://github.com/EliverLara/Nordic) *v40*
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/)
-- [Chromium](https://chromewebstore.google.com/detail/nord/abehfkkfjlplnjadfcjiflnejblfmmpj?hl=en&pli=1)
-- [Discord](https://github.com/nnra6864/DiscordNordicCascadia/)
-- [Telegram](https://github.com/gilbertw1/telegram-nord-theme)
-- [JetBrains](https://plugins.jetbrains.com/plugin/10321-nord)
-- [VS Codium](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
-- [Neovim](https://github.com/shaunsingh/nord.nvim)
-- [Blender](https://github.com/TehMerow/Blender_Nord_Dark_Theme)
-- [Krita](https://github.com/nnra6864/KritaNord)
-- [Unity](https://github.com/nnra6864/UnityNord)
+- [Hurmit NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip)
 
 ## Apps
 
