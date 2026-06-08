@@ -140,17 +140,17 @@
 !/.config/PixiEditor/
 /.config/PixiEditor/SecureStorage.data
 
-# MPD
-!/.config/mpd/
-/.config/mpd/*
-!/.config/mpd/mpd.conf
-
 # Games
 !/.config/CS2/
 
 # Audio
 !/.config/pipewire/
 !/.config/wireplumber/
+
+# MPD
+!/.config/mpd/
+/.config/mpd/*
+!/.config/mpd/mpd.conf
 
 # Misc
 !/.config/glava/
