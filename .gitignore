@@ -117,7 +117,8 @@
 
 # Unity
 !/.config/Unity/
-!/.config/UnityUltraWideLayout.wlt
+/.config/Unity/*
+!/.config/Unity/Layouts
 !/.config/UnityNord.json
 
 # Blender
