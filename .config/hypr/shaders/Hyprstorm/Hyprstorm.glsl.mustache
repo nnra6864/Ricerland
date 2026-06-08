@@ -1,0 +1,128 @@
+/*************
+ *           *
+ * HYPRSTORM *
+ *    BY     *
+ *   NNRA    *
+ *           *
+ *************/
+
+//Original snow code: https://codepen.io/UstymUkhman/pen/jpZGZW
+
+precision highp float;
+varying vec2 v_texcoord;
+uniform sampler2D tex;
+uniform vec2 resolution;
+uniform float time;
+
+//Snow settings
+vec3 snowCol = vec3(1.0, 1.0, 1.0) * 0.5; //Color * Intensity
+float snowSpeedY = 2.5; //How fast it falls down
+float snowSpeedX = 0.01; //How fast it switches sides
+float snowOffsetX = 0.75; //How much it's moved on the X axis
+float snowWaveSpeed = 1.0; //How fast the snow waves
+float snowWaveFreq = 25.0; //How wavy the snowfall is
+float snowWaveAmount = 1.0; //I advise you to not go past 1 :c
+
+//Fog settings
+vec3 fogCol = vec3(0.6, 0.75, 0.9) * 0.15; //Color * Intensity
+float fogPow = 1.75; //Determins the density of the fog, lower the denser
+float fogSpeed = 0.05; //How fast the fog moves
+float fogScale = 0.1; //How big the fog is, smaller the bigger
+float smallFogScale = 10.0; //How fast the small fog moves
+float smallFogSpeed = 0.1; //How big the small fog is, smaller the bigger
+
+float snowLayer(vec2 uv, float scale) {
+    //Scale time so that bigger particles fall faster
+    float t = time / scale;
+    
+    //Animate X and Y
+    uv.y -= t * snowSpeedY;
+    float wind = cos(time * snowSpeedX) * snowOffsetX;
+    wind += cos(time * snowWaveSpeed) * cos(uv.y * snowWaveFreq) * (snowWaveAmount * 0.01);
+    uv.x += wind;
+    uv *= scale;
+    
+    //I have no earthly clue what's being done here
+    vec2 s = floor(uv);
+    vec2 f = fract(uv);
+    vec2 p = vec2(0.0);
+    float k = 3.0;
+    float d = 0.0;
+    
+    p = 0.5 + 0.35 * sin(11.0 * fract(sin((s + p + scale) * mat2(7, 3, 6, 5)) * 5.0)) - f;
+    d = length(p);
+    k = min(d, k);
+    k = smoothstep(0.0, k, sin(f.x + f.y) * 0.01);
+    
+    return k;
+}
+
+float noise(vec2 p) {
+    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
+}
+
+float smoothNoise(vec2 p) {
+    vec2 i = floor(p);
+    vec2 f = fract(p);
+    float a = noise(i);
+    float b = noise(i + vec2(1.0, 0.0));
+    float c = noise(i + vec2(0.0, 1.0));
+    float d = noise(i + vec2(1.0, 1.0));
+    vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+}
+
+//Create a layered fog effect with additive noise
+float fogLayer(vec2 uv, float speed, float scale) {
+    uv += vec2(sin(time * speed), cos(time * speed)) * 0.2;
+    return smoothNoise(uv * scale) * 0.5;
+}
+
+float getSnow() {
+    //Calculate size
+    vec2 res = resolution.x == 0.0 ? vec2(5120.0, 2560.0) : resolution;
+    float size = mix(min(res.x, res.y), max(res.x, res.y), 0.5);
+    
+    //Calculate UV coordinates for snow effect
+    vec2 uv = (gl_FragCoord.xy * 2.0 - res.xy) / size;
+    
+    //Accumulate snow layers
+    float sc = 0.0;
+    sc += snowLayer(uv, 50.0) * 0.1;
+    sc += snowLayer(uv, 40.0) * 0.25;
+    sc += snowLayer(uv, 30.0) * 0.5;
+    sc += snowLayer(uv, 20.0);
+    
+    return sc;
+}
+
+float getFog() {
+    //Fog layers with different speeds and scales
+    float fog = fogLayer(v_texcoord, smallFogSpeed, smallFogScale);
+    fog += fogLayer(v_texcoord, -smallFogSpeed, smallFogScale);
+    fog += fogLayer(v_texcoord, -fogSpeed, fogScale);
+    fog += fogLayer(v_texcoord, fogSpeed, fogScale);
+    
+    //Scale fog density and intensity
+    fog = pow(fog, fogPow);
+    
+    return fog;
+}
+
+void main(void) {
+    vec4 baseCol = texture2D(tex, v_texcoord);
+    
+    //Get Snow and Fog
+    float snowA = getSnow();
+    float fogA = getFog();
+    
+    //Store Snow and Fog
+    vec3 snow = snowA * snowCol;
+    vec3 fog = fogA * fogCol;
+    
+    //Mix Fog with Snow and that with baseCol
+    vec3 fogSnow = mix(snow, fog, fogA);
+    vec3 finalCol = baseCol.rgb + fogSnow;
+    
+    gl_FragColor = vec4(finalCol, baseCol.a);
+}

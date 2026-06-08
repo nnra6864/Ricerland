@@ -1,12 +1,12 @@
 [submodule "hypr/shaders/Hyprstorm"]
-	path = hypr/shaders/Hyprstorm
+	path = .config/hypr/shaders/Hyprstorm
 	url = ../Hyprstorm.git
 [submodule "nvim"]
-	path = nvim
+	path = .config/nvim
 	url = ../kickstart.nvim
 [submodule "hypr/HyprlandUnityFix"]
-	path = hypr/HyprlandUnityFix
+	path = .config/hypr/HyprlandUnityFix
 	url = ../HyprlandUnityFix
 [submodule "ghostty/shaders/ghostty-cursor-shaders"]
-	path = ghostty/shaders/ghostty-cursor-shaders
+	path = .config/ghostty/shaders/ghostty-cursor-shaders
 	url = ../ghostty-cursor-shaders

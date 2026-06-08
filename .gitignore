@@ -1,6 +1,6 @@
-#############
-# RICERLAND #
-#############
+#################
+# ☦︎ RICERLAND ☦︎ #
+#################
 
 # Git
 /*
@@ -10,159 +10,160 @@
 !/setup.sh
 
 
-##########
-# System #
-##########
+###########
+# .config #
+###########
+
+!/.config/
+/.config/*
+
+# SYSTEM #
 
 # Hyprland
-!/hypr/
+!/.config/hypr/
 
 # Misc
-!/glib-2.0/
-!/hints/
-!/xsettingsd/
-!/mimeapps.list
-!/environment.d/
-!/xdg-terminals.list
-!/xdg-desktop-portal/
-!/SFX/
-!/symbols
-!/blur/
-!/Packages
-!/wlr-which-key/
+!/.config/glib-2.0/
+!/.config/hints/
+!/.config/xsettingsd/
+!/.config/mimeapps.list
+!/.config/environment.d/
+!/.config/xdg-terminals.list
+!/.config/xdg-desktop-portal/
+!/.config/SFX/
+!/.config/symbols
+!/.config/blur/
+!/.config/Packages
+!/.config/wlr-which-key/
 
 # OBS
-!/obs-studio/
-/obs-studio/*
-!/obs-studio/basic/
-/obs-studio/basic/scenes
-/obs-studio/basic/profiles/*/service.json
-/obs-studio/basic/profiles/*/service.json.bak
+!/.config/obs-studio/
+/.config/obs-studio/*
+!/.config/obs-studio/basic/
+/.config/obs-studio/basic/scenes
+/.config/obs-studio/basic/profiles/*/service.json
+/.config/obs-studio/basic/profiles/*/service.json.bak
 
 
-##########
-# Ricing #
-##########
+# RICING #
 
 # KDE
-!/kdedefaults/
-!/kdeglobals
-!/qt5ct/
-!/qt6ct/
-!/qtcurve/
-!/QtProject/
-!/Nord.colors
-!/kdenliverc
+!/.config/kdedefaults/
+!/.config/kdeglobals
+!/.config/qt5ct/
+!/.config/qt6ct/
+!/.config/qtcurve/
+!/.config/QtProject/
+!/.config/Nord.colors
+!/.config/kdenliverc
 
 # GTK
-!/gtk-3.0/
-!/gtk-4.0/
-!/nwg-look/
-!/nwg-drawer/
-!/nwg-dock-hyprland/
+!/.config/gtk-3.0/
+!/.config/gtk-4.0/
+!/.config/nwg-look/
+!/.config/nwg-drawer/
+!/.config/nwg-dock-hyprland/
 
 # Cosmic
-!/cosmic/
+!/.config/cosmic/
 
 # Misc
-!/Ricer/
-!/Nisualizer/
-!/Backgrounds/
-!/fontconfig/
-!/Fonts/
-/Fonts/**/.uuid
-!/oomox/
-!/wpaperd/
-!/ags/
+!/.config/Ricer/
+!/.config/Nisualizer/
+!/.config/Backgrounds/
+!/.config/fontconfig/
+!/.config/Fonts/
+/.config/Fonts/**/.uuid
+!/.config/oomox/
+!/.config/wpaperd/
+!/.config/ags/
 
 
-################
-# Applications #
-################
+# APPLICATIONS #
 
-!/Applications/
+!/.config/Applications/
 
 # Terminals
-!/ghostty/
-!/kitty/
-!/alacritty.toml
-!/foot/
+!/.config/ghostty/
+!/.config/kitty/
+!/.config/alacritty.toml
+!/.config/foot/
 
 # CLI
-!/fish/
-!/nushell/
-!/tmux/
-!/oh-my-posh/
-!/starship.toml
-!/btop/
-!/htop/
-!/cava/
-!/dunst/
-!/ncmpcpp/
-!/neofetch/
-!/fastfetch/
+!/.config/fish/
+!/.config/nushell/
+!/.config/tmux/
+!/.config/oh-my-posh/
+!/.config/starship.toml
+!/.config/btop/
+!/.config/htop/
+!/.config/cava/
+!/.config/dunst/
+!/.config/ncmpcpp/
+!/.config/neofetch/
+!/.config/fastfetch/
 
 # MPD
-!/mpd/
-/mpd/*
-!/mpd/mpd.conf
+!/.config/mpd/
+/.config/mpd/*
+!/.config/mpd/mpd.conf
 
 # Browsers
-!/BrowserExtensions/
-!/ZenBrowser/
+!/.config/BrowserExtensions/
+!/.config/ZenBrowser/
 
 # Unity
-!/Unity/
-!/UnityUltraWideLayout.wlt
-!/UnityNord.json
+!/.config/Unity/
+!/.config/UnityUltraWideLayout.wlt
+!/.config/UnityNord.json
 
 # Blender
-!/blender/
-/blender/extension/.cache/
-!/BlenderNord.xml
+!/.config/blender/
+/.config/blender/extension/.cache/
+!/.config/BlenderNord.xml
 
 # IDE
-!/nvim/
-!/neovide/
-!/JetBrains/
-!/JetBrainsSettings/
-!/zed/
+!/.config/nvim/
+!/.config/neovide/
+!/.config/JetBrains/
+!/.config/JetBrainsSettings/
+!/.config/zed/
 
 # Games
-!/CS2/
+!/.config/CS2/
 
 # Files
-!/yazi/
-!/dolphinrc
-!/ranger/
-!/nautilus/
-!/nemo/
-!/caja/
-!/bat/
-!/viewnior/
+!/.config/yazi/
+!/.config/dolphinrc
+!/.config/ranger/
+!/.config/nautilus/
+!/.config/nemo/
+!/.config/caja/
+!/.config/bat/
+!/.config/viewnior/
 
 # Social
-!/BetterDiscord/
+!/.config/BetterDiscord/
 
 # Equibop
-!/equibop
-/equibop/*
-!/equibop/settings/
+!/.config/equibop
+/.config/equibop/*
+!/.config/equibop/settings/
 
 # Audio
-!/pipewire/
-!/wireplumber/
+!/.config/pipewire/
+!/.config/wireplumber/
 
 # Misc
-!/glava/
-!/mpv/
-!/vicinae/
-!/rofi/
-!/clapboard/
-!/cliphist-rofi-img
-!/keepassxc/
-!/swaync/
-!/waybar/
-!/hyprpanel/
-!/yt-dlp/
-!/.tidal-dl.json
+!/.config/glava/
+!/.config/mpv/
+!/.config/vicinae/
+!/.config/rofi/
+!/.config/clapboard/
+!/.config/cliphist-rofi-img
+!/.config/keepassxc/
+!/.config/swaync/
+!/.config/waybar/
+!/.config/hyprpanel/
+!/.config/yt-dlp/
+!/.config/.tidal-dl.json
