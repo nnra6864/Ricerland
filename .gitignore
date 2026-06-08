@@ -110,14 +110,19 @@
 !/.config/ncmpcpp/
 !/.config/fastfetch/
 
-# MPD
-!/.config/mpd/
-/.config/mpd/*
-!/.config/mpd/mpd.conf
+# Files
+!/.config/yazi/
+!/.config/dolphinrc
+!/.config/bat/
 
 # Browsers
 !/.config/BrowserExtensions/
 !/.config/ZenBrowser/
+
+# IDE
+!/.config/nvim/
+!/.config/neovide/
+!/.config/zed/
 
 # Unity
 !/.config/Unity/
@@ -131,18 +136,17 @@
 !/.config/blender/*/extensions/
 /.config/blender/*/extensions/.cache/
 
-# IDE
-!/.config/nvim/
-!/.config/neovide/
-!/.config/zed/
+# PixiEditor
+!/.config/PixiEditor/
+/.config/PixiEditor/SecureStorage.data
+
+# MPD
+!/.config/mpd/
+/.config/mpd/*
+!/.config/mpd/mpd.conf
 
 # Games
 !/.config/CS2/
-
-# Files
-!/.config/yazi/
-!/.config/dolphinrc
-!/.config/bat/
 
 # Audio
 !/.config/pipewire/
