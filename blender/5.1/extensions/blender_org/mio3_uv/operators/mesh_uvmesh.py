@@ -3,8 +3,9 @@ import os
 import math
 import bmesh
 from bpy.props import BoolProperty, EnumProperty
+from bpy.types import Context
+from bmesh.types import BMesh
 from ..classes import Mio3UVOperator
-from ..icons import preview_collections
 
 BLEND_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "blend")
 NAME_NODE_GROUP_UV_MESH = "Mio3UVMesh"
@@ -16,7 +17,7 @@ NAME_MOD_UV_MESH = "Mio3UVMeshModifier"
 # https://blender.stackexchange.com/questions/302193/get-edge-seams-from-uv-islands-in-geometry-nodes/
 
 
-class MIO3UV_OT_uvmesh(Mio3UVOperator):
+class UV_OT_mio3_uvmesh(Mio3UVOperator):
     bl_idname = "mesh.mio3_uvmesh"
     bl_label = "UV Mesh"
     bl_description = "Set up a modifier for UV to Mesh (using Geometry Nodes)"
@@ -75,7 +76,7 @@ class MIO3UV_OT_uvmesh(Mio3UVOperator):
         area = sum(f.calc_area() for f in bm.faces)
         return area
 
-    def calc_uv_area(self, bm):
+    def calc_uv_area(self, bm: BMesh) -> float:
         uv_layer = bm.loops.layers.uv.verify()
         total_area = 0.0
         for face in bm.faces:
@@ -96,7 +97,7 @@ class MIO3UV_OT_uvmesh(Mio3UVOperator):
     def get_modifier(self, obj):
         return obj.modifiers.get(NAME_MOD_UV_MESH)
 
-    def create_new_geometry_node(self, context):
+    def create_new_geometry_node(self, context: Context):
         blend_path = os.path.join(BLEND_DIR, "mio3uv.blend")
         try:
             mode = context.active_object.mode
@@ -117,7 +118,7 @@ class MIO3UV_OT_uvmesh(Mio3UVOperator):
         return None
 
 
-class MIO3UV_OT_uvmesh_control(Mio3UVOperator):
+class UV_OT_mio3_uvmesh_control(Mio3UVOperator):
     bl_idname = "mesh.mio3_uvmesh_control"
     bl_label = "UV Mesh"
     bl_description = "Control UV Mesh Factor"
@@ -146,7 +147,7 @@ class MIO3UV_OT_uvmesh_control(Mio3UVOperator):
         return {"FINISHED"}
 
 
-class MIO3UV_OT_uvmesh_clear(Mio3UVOperator):
+class UV_OT_mio3_uvmesh_clear(Mio3UVOperator):
     bl_idname = "mesh.mio3_uvmesh_clear"
     bl_label = "UV Mesh"
     bl_description = ""
@@ -167,31 +168,14 @@ class MIO3UV_OT_uvmesh_clear(Mio3UVOperator):
         return {"FINISHED"}
 
 
-def panel_tools(self, context):
-    if context.active_object:
-        modifier = context.active_object.modifiers.get("Mio3UVMeshModifier")
-        if modifier:
-            icons = preview_collections["icons"]
-            props_object = context.active_object.mio3uv
-            row = self.layout.row(align=True)
-            row.operator(
-                "mesh.mio3_uvmesh_control",
-                text="",
-                icon_value=icons["UNFOLDIFY"].icon_id if props_object.uvmesh_factor > 0 else icons["CUBE"].icon_id,
-                depress=True if props_object.uvmesh_factor > 0 else False,
-            ).mode = "TOGGLE"
-
-
-classes = [MIO3UV_OT_uvmesh, MIO3UV_OT_uvmesh_control, MIO3UV_OT_uvmesh_clear]
+classes = [UV_OT_mio3_uvmesh, UV_OT_mio3_uvmesh_control, UV_OT_mio3_uvmesh_clear]
 
 
 def register():
     for c in classes:
         bpy.utils.register_class(c)
-    bpy.types.VIEW3D_HT_tool_header.append(panel_tools)
 
 
 def unregister():
-    bpy.types.VIEW3D_HT_tool_header.remove(panel_tools)
     for c in classes:
         bpy.utils.unregister_class(c)

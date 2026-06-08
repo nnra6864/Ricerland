@@ -1,9 +1,9 @@
 import bpy
 from bpy.props import EnumProperty
-from ..classes import UVNodeManager, Mio3UVOperator
+from ..classes import Mio3UVOperator, UVNodeManager
 
 
-class MIO3UV_OT_align_seam(Mio3UVOperator):
+class UV_OT_mio3_align_seam(Mio3UVOperator):
     bl_idname = "uv.mio3_align_seam"
     bl_label = "Align Seam"
     bl_description = "Align UVs of the same 3D vertex split by a seam"
@@ -30,18 +30,19 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
-        if not self.objects:
+        objects = self.get_selected_objects(context)
+        if not objects:
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        node_manager = UVNodeManager(self.objects, sync=use_uv_select_sync)
+        node_manager = UVNodeManager(objects, sync=use_uv_select_sync)
+        groups = node_manager.groups
 
-        if len(node_manager.groups) == 1:
-            obj = node_manager.groups[0].obj
-            bm = node_manager.groups[0].bm
+        if len(groups) == 1:
+            obj = groups[0].obj_info.obj
+            bm = groups[0].obj_info.bm
             selected_uv_verts = set()
             for face in bm.faces:
                 for loop in face.loops:
@@ -51,30 +52,32 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
                 for loop in face.loops:
                     if loop.vert in selected_uv_verts:
                         loop.uv_select_vert = True
-
             node_manager.update_uvmeshes()
+
             node_manager = UVNodeManager([obj], sync=use_uv_select_sync)
-            groups = []
+            pair_group = []
             for group in node_manager.groups:
                 if len(group.nodes) == 1:
-                    group.deselect_all_uv()
+                    group.uv_select_set_all(False)
                 else:
-                    groups.append(group)
+                    pair_group.append(group)
         else:
-            groups = node_manager.groups
+            pair_group = node_manager.groups
 
-        if len(groups) != 2:
+        if len(pair_group) != 2:
             self.report({"WARNING"}, "Select the two edge loops")
             return self.cancel_operator(context)
 
         if self.axis == "AUTO":
-            axis = self.determine_axis(groups[0])
+            axis = self.determine_axis(pair_group[0])
         else:
             axis = self.axis
         axis_index = 1 if axis == "Y" else 0
 
-        groups.sort(key=lambda group: min(node.uv[1 if axis == "X" else 0] for node in group.nodes), reverse=True)
-        group_a, group_b = groups
+        pair_group.sort(
+            key=lambda group: min(node.uv[1 if axis == "X" else 0] for node in group.nodes), reverse=True
+        )
+        group_a, group_b = pair_group
 
         # 同じ3D頂点を持つノードをグループ化
         vert_to_uv_nodes = {}
@@ -104,7 +107,7 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
             for node in target_nodes:
                 node.uv[axis_index] = pos
 
-        for group in groups:
+        for group in pair_group:
             group.update_uvs()
 
         node_manager.update_uvmeshes()
@@ -126,8 +129,8 @@ class MIO3UV_OT_align_seam(Mio3UVOperator):
 
 
 def register():
-    bpy.utils.register_class(MIO3UV_OT_align_seam)
+    bpy.utils.register_class(UV_OT_mio3_align_seam)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_align_seam)
+    bpy.utils.unregister_class(UV_OT_mio3_align_seam)

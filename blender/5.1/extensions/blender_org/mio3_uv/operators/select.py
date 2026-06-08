@@ -2,12 +2,13 @@ import bpy
 import bmesh
 import math
 from mathutils import Vector, kdtree
+from bmesh.types import BMesh, BMLoop, BMLayerItem
 from bpy.props import BoolProperty, FloatProperty, EnumProperty
-from ..classes import UVIslandManager, Mio3UVOperator
-from ..utils import uv_select_set_face, uv_select_set_all, get_uv_selected_edges
+from ..classes import Mio3UVOperator, UVIslandManager, UVIsland
+from ..utils.utils import uv_select_set_face, uv_select_set_all
 
 
-class MIO3UV_OT_auto_uv_sync(bpy.types.Operator):
+class UV_OT_mio3_auto_uv_sync(bpy.types.Operator):
     bl_idname = "uv.mio3_auto_uv_sync"
     bl_label = "Auto UV Sync"
     bl_description = "Auto UV Sync"
@@ -33,7 +34,7 @@ class MIO3UV_OT_auto_uv_sync(bpy.types.Operator):
         return {"FINISHED"}
 
 
-class MIO3UV_OT_select_half(Mio3UVOperator):
+class UV_OT_mio3_select_half(Mio3UVOperator):
     bl_idname = "uv.mio3_select_half"
     bl_label = "Select Half"
     bl_description = "Select UVs on one side of the axis in 3D space"
@@ -61,14 +62,14 @@ class MIO3UV_OT_select_half(Mio3UVOperator):
     def execute(self, context):
         self.start_time()
 
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
         use_global = self.orientation == "GLOBAL"
         is_negative = self.direction.startswith("NEGATIVE")
         axis = self.direction[-1].lower()
 
-        for obj in self.objects:
+        for obj in objects:
             bm = bmesh.from_edit_mesh(obj.data)
             if use_uv_select_sync and not bm.uv_select_sync_valid:
                 bm.uv_select_sync_from_mesh()
@@ -97,61 +98,78 @@ class MIO3UV_OT_select_half(Mio3UVOperator):
         return {"FINISHED"}
 
 
-class MIO3UV_OT_select_similar(Mio3UVOperator):
+class UV_OT_mio3_select_similar(Mio3UVOperator):
     bl_idname = "uv.mio3_select_similar"
     bl_label = "Similar"
     bl_description = "Select Similar"
     bl_options = {"REGISTER", "UNDO"}
 
-    check_edges: BoolProperty(name="Check Edges", description="", default=True)
+    edges: BoolProperty(name="Edge Count", description="", default=True)
+    area: BoolProperty(name="Area", description="", default=False)
+    area_threshold: FloatProperty(name="Threshold", default=0.005, min=0.001, precision=3, step=0.1)
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, find_all=True)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync, find_all=True)
 
-        check_edges = self.check_edges
         source_island = None
         source_face_count = 0
         source_edge_count = 0
         for island in island_manager.islands:
-            if any(all(loop.uv_select_vert for loop in face.loops) for face in island.faces):
+            if any(face.uv_select for face in island.faces):
                 source_island = island
                 source_face_count = len(source_island.faces)
-                source_edge_count = self.get_island_edge_count(source_island) if check_edges else None
+                source_edge_count = self.get_island_edge_count(source_island) if self.edges else None
+                source_area = self.get_island_area(source_island) if self.area else None
                 break
 
         if not source_island:
             return {"CANCELLED"}
 
-        source_island.select_all_uv()
+        source_island.uv_select_set_all(True)
 
         for island in island_manager.islands:
             if island == source_island:
                 continue
-            island.deselect_all_uv()
-            if not self.is_different(island, source_face_count, source_edge_count):
-                island.select_all_uv()
+            island.uv_select_set_all(False)
+            if not self.is_different(island, source_face_count, source_edge_count, source_area):
+                island.uv_select_set_all(True)
 
         island_manager.update_uvmeshes(True)
 
         self.print_time()
         return {"FINISHED"}
 
-    def get_island_edge_count(self, island):
+    def get_island_edge_count(self, island: UVIsland):
         return len({edge for face in island.faces for edge in face.edges})
 
-    def is_different(self, island, base_face_count, base_edge_count):
+    def get_island_area(self, island: UVIsland):
+        return sum(face.calc_area() for face in island.faces)
+
+    def is_different(self, island: UVIsland, base_face_count, base_edge_count, base_area):
         if len(island.faces) != base_face_count:
             return True
-        if self.check_edges and self.get_island_edge_count(island) != base_edge_count:
+        if self.edges and self.get_island_edge_count(island) != base_edge_count:
+            return True
+        if self.area and abs(self.get_island_area(island) - base_area) > self.area_threshold:
             return True
         return False
 
+    def draw(self, context):
+        layout = self.layout
+        layout.use_property_split = True
+        layout.use_property_decorate = False
+        layout.prop(self, "edges")
+        layout.prop(self, "area")
+        col = layout.column()
+        col.prop(self, "area_threshold")
+        if self.area != True:
+            col.enabled = False
 
-class MIO3UV_OT_select_mirror3d(Mio3UVOperator):
+class UV_OT_mio3_select_mirror3d(Mio3UVOperator):
     bl_idname = "uv.mio3_select_mirror3d"
     bl_label = "Mirror"
     bl_description = "Select Mirror 3D"
@@ -174,11 +192,11 @@ class MIO3UV_OT_select_mirror3d(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         self.threshold_sq = self.threshold * self.threshold
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        for obj in self.objects:
+        for obj in objects:
             bm = bmesh.from_edit_mesh(obj.data)
             bm.select_mode = {"VERT"}
             bm.verts.ensure_lookup_table()
@@ -196,7 +214,7 @@ class MIO3UV_OT_select_mirror3d(Mio3UVOperator):
         self.print_time()
         return {"FINISHED"}
 
-    def select_mirror(self, bm, use_uv_select_sync):
+    def select_mirror(self, bm: BMesh, use_uv_select_sync: bool):
         target_faces, source_faces, source_verts = self.find_targets(bm, use_uv_select_sync)
 
         kd = kdtree.KDTree(len(bm.faces))
@@ -309,165 +327,189 @@ class MIO3UV_OT_select_mirror3d(Mio3UVOperator):
         return target_faces, source_faces, source_face_verts
 
 
-class MIO3UV_OT_select_boundary(Mio3UVOperator):
-    bl_idname = "uv.mio3_select_boundary"
-    bl_label = "Boundary"
-    bl_description = "Select Boundary"
+class UV_OT_mio3_select_edge(Mio3UVOperator):
+    bl_idname = "uv.mio3_select_edge"
+    bl_label = "Edges"
+    bl_description = "Select edges based on their direction in UV space"
     bl_options = {"REGISTER", "UNDO"}
 
-    use_seam: BoolProperty(name="Seam", default=True, options={"HIDDEN"})
-    use_mesh_boundary: BoolProperty(name="Mesh Boundary", default=True)
-    use_uv_boundary: BoolProperty(name="UV Space Boundary", default=True, options={"HIDDEN"})
-
-    def execute(self, context):
-        self.start_time()
-
-        self.objects = self.get_selected_objects(context)
-        use_uv_select_sync = context.tool_settings.use_uv_select_sync
-
-        check_selected = self.check_selected_face_objects(self.objects)
-        if not check_selected:
-            bpy.ops.uv.select_all(action="SELECT")
-
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
-
-        use_seam = self.use_seam
-        use_mesh_boundary = self.use_mesh_boundary
-        use_uv_boundary = self.use_uv_boundary
-
-        for colle in island_manager.collections:
-            for island in colle.islands:
-                uv_layer = island.uv_layer
-                boundary_edges = island.boundary_edge if use_uv_boundary else ()
-
-                uv_to_loops = {}
-                selected_uv_coords = set()
-                uv_to_loops_get = uv_to_loops.get
-                for face in island.faces:
-                    for loop in face.loops:
-                        uv_coord = tuple(loop[uv_layer].uv)
-                        bucket = uv_to_loops_get(uv_coord)
-                        if bucket is None:
-                            bucket = []
-                            uv_to_loops[uv_coord] = bucket
-                        bucket.append(loop)
-                        if loop.uv_select_vert:
-                            selected_uv_coords.add(uv_coord)
-
-                original_selected_edges = get_uv_selected_edges(island.faces)
-
-                island.deselect_all_uv()
-
-                boundary_uv_coords = set()
-                for uv_coord in selected_uv_coords:
-                    loops = uv_to_loops[uv_coord]
-                    for loop in loops:
-                        edge = loop.edge
-                        if (
-                            (use_uv_boundary and edge in boundary_edges)
-                            or (use_mesh_boundary and edge.is_boundary)
-                            or (use_seam and edge.seam)
-                        ):
-                            boundary_uv_coords.add(uv_coord)
-                            if edge in original_selected_edges:
-                                loop.uv_select_edge = True
-                            break
-
-                for uv_coord in boundary_uv_coords:
-                    for loop in uv_to_loops[uv_coord]:
-                        loop.uv_select_vert = True
-
-        island_manager.update_uvmeshes(True)
-
-        self.print_time()
-        return {"FINISHED"}
-
-
-class MIO3UV_OT_select_edge_direction(Mio3UVOperator):
-    bl_idname = "uv.mio3_select_edge_direction"
-    bl_label = "Select Edge Loops"
-    bl_description = "Select only vertical or horizontal edges"
-    bl_options = {"REGISTER", "UNDO"}
-    axis: EnumProperty(
-        name="Direction",
+    method: EnumProperty(
+        name="Method",
         items=[
-            ("Y", "Vertical", ""),
-            ("X", "Horizontal", ""),
+            ("BOUNDARY", "Boundary", "Select boundary edges"),
+            ("X", "Horizontal", "Select only horizontal edges"),
+            ("Y", "Vertical", "Select only vertical edges"),
         ],
-        default="X",
+        default="BOUNDARY",
     )
     threshold: FloatProperty(name="Threshold", default=0.3, min=0.01, max=0.8, step=1)
 
-    @classmethod
-    def poll(cls, context):
-        obj = context.active_object
-        return cls.is_valid_object(obj)
+    def draw(self, context):
+        layout = self.layout
+        layout.row().prop(self, "method", expand=True)
+        layout.use_property_split = True
+        layout.use_property_decorate = False
+        col = layout.column()
+        col.prop(self, "threshold")
+        if self.method == "BOUNDARY":
+            col.enabled = False
 
     def execute(self, context):
         self.start_time()
 
-        self.objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            context.tool_settings.mesh_select_mode = (False, True, False)
+        objects = self.get_selected_objects(context)
+
+        if self.method == "BOUNDARY":
+            self.select_boundary(objects, use_uv_select_sync)
         else:
-            context.tool_settings.uv_select_mode = "EDGE"
-
-        check_selected = self.check_selected_face_objects(self.objects)
-        if not check_selected:
-            bpy.ops.uv.select_all(action="SELECT")
-
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
-
-        axis = self.axis
-
-        for colle in island_manager.collections:
-            for island in colle.islands:
-                uv_to_loops = {}
-                uv_layer = island.uv_layer
-
-                for face in island.faces:
-                    for loop in face.loops:
-                        uv_coord = tuple(loop[uv_layer].uv)
-                        if uv_coord not in uv_to_loops:
-                            uv_to_loops[uv_coord] = []
-                        uv_to_loops[uv_coord].append(loop)
-
-                original_selected_edges = get_uv_selected_edges(island.faces)
-
-                island.deselect_all_uv()
-
-                direction_matched_edges = set()
-                for edge in original_selected_edges:
-                    for loop in edge.link_loops:
-                        if loop.face not in island.faces:
-                            continue
-
-                        if self.is_direction(loop, axis, uv_layer):
-                            direction_matched_edges.add(edge)
-                            break
-
-                selected_uv_coords = set()
-                for edge in direction_matched_edges:
-                    for loop in edge.link_loops:
-                        if loop.face in island.faces:
-                            loop.uv_select_edge = True
-                            uv_coord1 = tuple(loop[uv_layer].uv)
-                            uv_coord2 = tuple(loop.link_loop_next[uv_layer].uv)
-                            selected_uv_coords.add(uv_coord1)
-                            selected_uv_coords.add(uv_coord2)
-
-                for uv_coord in selected_uv_coords:
-                    loops = uv_to_loops[uv_coord]
-                    for loop in loops:
-                        loop.uv_select_vert = True
-
-        island_manager.update_uvmeshes(True)
+            if use_uv_select_sync:
+                context.tool_settings.mesh_select_mode = (False, True, False)
+            else:
+                context.tool_settings.uv_select_mode = "EDGE"
+            self.select_direction(objects, use_uv_select_sync)
 
         self.print_time()
         return {"FINISHED"}
 
-    def is_direction(self, loop, axis, uv_layer):
+    def select_boundary(self, objects, use_uv_select_sync):
+        check_selected = self.check_selected_face_objects(objects)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync, find_all=True)
+
+        for island in island_manager.islands:
+            uv_layer = island.uv_layer
+            island_faces = set(island.faces)
+            uv_boundary_edges = self.find_uv_boundary_edges(island_faces, uv_layer)
+
+            uv_to_loops = {}
+            selected_uv_coords = set()
+            selected_edges = set()
+            for face in island.faces:
+                for loop in face.loops:
+                    uv_key = tuple(loop[uv_layer].uv)
+                    bucket = uv_to_loops.get(uv_key)
+                    if bucket is None:
+                        bucket = []
+                        uv_to_loops[uv_key] = bucket
+                    bucket.append(loop)
+
+                    if check_selected:
+                        if loop.uv_select_vert:
+                            selected_uv_coords.add(uv_key)
+                        if loop.uv_select_edge:
+                            selected_edges.add(loop.edge)
+                    else:
+                        selected_uv_coords.add(uv_key)
+                        selected_edges.add(loop.edge)
+
+            island.uv_select_set_all(False)
+
+            for uv_key in selected_uv_coords:
+                loops = uv_to_loops[uv_key]
+                for loop in loops:
+                    edge = loop.edge
+                    if edge in uv_boundary_edges:
+                        if edge in selected_edges:
+                            loop.uv_select_edge = True
+                        for shared_loop in loops:
+                            shared_loop.uv_select_vert = True
+                        break
+        island_manager.update_uvmeshes(True)
+
+    @staticmethod
+    def is_uv_continuous(loop: BMLoop, linked_loop: BMLoop, uv_layer: BMLayerItem, eps2):
+        a = loop[uv_layer].uv
+        b = loop.link_loop_next[uv_layer].uv
+        c = linked_loop[uv_layer].uv
+        d = linked_loop.link_loop_next[uv_layer].uv
+
+        if loop.vert is linked_loop.vert:
+            du = a.x - c.x
+            dv = a.y - c.y
+            if du * du + dv * dv > eps2:
+                return False
+            du = b.x - d.x
+            dv = b.y - d.y
+        else:
+            du = a.x - d.x
+            dv = a.y - d.y
+            if du * du + dv * dv > eps2:
+                return False
+            du = b.x - c.x
+            dv = b.y - c.y
+
+        return du * du + dv * dv <= eps2
+
+    @classmethod
+    def find_uv_boundary_edges(cls, island_faces, uv_layer):
+        eps_eq = 1e-14
+        island_edges = {edge for face in island_faces for edge in face.edges}
+        uv_boundary_edges = set()
+        for edge in island_edges:
+            island_loops = [ll for ll in edge.link_loops if ll.face in island_faces]
+            is_boundary = False
+
+            if len(island_loops) != 2:
+                is_boundary = True
+            else:
+                loop_a, loop_b = island_loops
+                if loop_a.face is loop_b.face:
+                    is_boundary = True
+                else:
+                    is_boundary = not cls.is_uv_continuous(loop_a, loop_b, uv_layer, eps_eq)
+
+            if is_boundary:
+                uv_boundary_edges.add(edge)
+        return uv_boundary_edges
+
+    def select_direction(self, objects, use_uv_select_sync):
+        check_selected = self.check_selected_face_objects(objects)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync, find_all=True)
+
+        axis = self.method
+
+        for island in island_manager.islands:
+            uv_to_loops = {}
+            uv_layer = island.uv_layer
+            selected_edges = set()
+
+            for face in island.faces:
+                for loop in face.loops:
+                    uv_key = tuple(loop[uv_layer].uv)
+                    bucket = uv_to_loops.get(uv_key)
+                    if bucket is None:
+                        bucket = []
+                        uv_to_loops[uv_key] = bucket
+                    bucket.append(loop)
+
+                    if check_selected:
+                        if loop.uv_select_edge:
+                            selected_edges.add(loop.edge)
+                    else:
+                        selected_edges.add(loop.edge)
+
+            island.uv_select_set_all(False)
+
+            for edge in selected_edges:
+                for loop in edge.link_loops:
+                    if loop.face not in island.faces:
+                        continue
+
+                    if self.is_direction(loop, axis, uv_layer):
+                        for shared_loop in edge.link_loops:
+                            if shared_loop.face in island.faces:
+                                shared_loop.uv_select_edge = True
+                                for uv_loops in (
+                                    uv_to_loops[tuple(shared_loop[uv_layer].uv)],
+                                    uv_to_loops[tuple(shared_loop.link_loop_next[uv_layer].uv)],
+                                ):
+                                    for uv_loop in uv_loops:
+                                        uv_loop.uv_select_vert = True
+                        break
+
+        island_manager.update_uvmeshes(True)
+
+    def is_direction(self, loop: BMLoop, axis, uv_layer: BMLayerItem):
         uv1 = loop[uv_layer].uv
         uv2 = loop.link_loop_next[uv_layer].uv
         edge_vector = uv2 - uv1
@@ -481,7 +523,7 @@ class MIO3UV_OT_select_edge_direction(Mio3UVOperator):
             return abs(math.cos(angle)) < self.threshold
 
 
-class MIO3UV_OT_select_zero(Mio3UVOperator, bpy.types.Operator):
+class UV_OT_mio3_select_zero(Mio3UVOperator, bpy.types.Operator):
     bl_idname = "uv.mio3_select_zero"
     bl_label = "No Region"
     bl_description = "Select Zero Area UV Faces"
@@ -489,10 +531,10 @@ class MIO3UV_OT_select_zero(Mio3UVOperator, bpy.types.Operator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        for obj in self.objects:
+        for obj in objects:
             bm = bmesh.from_edit_mesh(obj.data)
             uv_layer = bm.loops.layers.uv.verify()
 
@@ -527,7 +569,7 @@ class MIO3UV_OT_select_zero(Mio3UVOperator, bpy.types.Operator):
         return {"FINISHED"}
 
 
-class MIO3UV_OT_select_flipped_faces(Mio3UVOperator):
+class UV_OT_mio3_select_flipped_faces(Mio3UVOperator):
     bl_idname = "uv.mio3_select_flipped_faces"
     bl_label = "Flipped"
     bl_description = "Select Flipped UV Faces"
@@ -535,12 +577,11 @@ class MIO3UV_OT_select_flipped_faces(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        for obj in self.objects:
+        for obj in objects:
             bm = bmesh.from_edit_mesh(obj.data)
-            bm.faces.ensure_lookup_table()
             uv_layer = bm.loops.layers.uv.verify()
 
             if use_uv_select_sync and not bm.uv_select_sync_valid:
@@ -578,14 +619,13 @@ class MIO3UV_OT_select_flipped_faces(Mio3UVOperator):
 
 
 classes = [
-    MIO3UV_OT_auto_uv_sync,
-    MIO3UV_OT_select_half,
-    MIO3UV_OT_select_similar,
-    MIO3UV_OT_select_mirror3d,
-    MIO3UV_OT_select_boundary,
-    MIO3UV_OT_select_edge_direction,
-    MIO3UV_OT_select_flipped_faces,
-    MIO3UV_OT_select_zero,
+    UV_OT_mio3_auto_uv_sync,
+    UV_OT_mio3_select_half,
+    UV_OT_mio3_select_similar,
+    UV_OT_mio3_select_mirror3d,
+    UV_OT_mio3_select_edge,
+    UV_OT_mio3_select_flipped_faces,
+    UV_OT_mio3_select_zero,
 ]
 
 

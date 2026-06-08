@@ -1,29 +1,22 @@
 import bpy
-import bmesh
 from bpy.app.handlers import persistent
 from bpy.types import PropertyGroup
-from bpy.props import BoolProperty, FloatProperty, IntProperty, EnumProperty, PointerProperty
-from .icons import preview_collections
+from bpy.props import BoolProperty, FloatProperty, EnumProperty, PointerProperty
+from .icons import icons
 from .operators import view_padding
 from .globals import get_preferences
 
 
 ITEMS_TEXTURE_SIZE = [
-    ("512", "512", "512x512 (4px)"),
-    ("1024", "1024", "1024x1024 (8px)"),
-    ("2048", "2048", "2048x2048 (16px)"),
-    ("4096", "4096", "4096x4096 (32px)"),
-    ("8192", "8192", "8192x8192 (64px)"),
+    ("512", "512", ""),
+    ("1024", "1024", ""),
+    ("2048", "2048", ""),
+    ("4096", "4096", ""),
+    ("8192", "8192", ""),
 ]
 
 
-class MIO3UV_PG_scene(PropertyGroup):
-    def callback_update_exposure(self, context):
-        context.scene.view_settings.exposure = self.exposure
-
-    # auto_uv_sync: BoolProperty(name="UV Sync Auto Select", default=False)
-    auto_uv_sync_skip: BoolProperty(name="UV Sync Auto Select Skip", default=False)
-
+class SCENE_PG_mio3uv(PropertyGroup):
     edge_mode: BoolProperty(name="Edge Mode", description="Edge Mode", default=False)
     island_mode: BoolProperty(name="Island Mode", description="Island Mode", default=False)
 
@@ -37,29 +30,18 @@ class MIO3UV_PG_scene(PropertyGroup):
         default="AUTO",
     )
 
-    def symmetry_center_items(self, context):
-        icons = preview_collections["icons"]
+    udim: BoolProperty(name="Use UV Tiles", description="Use UDIM UV Tiles", default=False)
+
+    def symmetry_uv_axis_items(self, context):
         return [
-            ("X", "X", "", icons["AXIS_X"].icon_id, 0),
-            ("Y", "Y", "", icons["AXIS_Y"].icon_id, 1),
+            ("X", "X", "", icons.axis_x, 0),
+            ("Y", "Y", "", icons.axis_y, 1),
         ]
-
-    udim: BoolProperty(name="UDIM", default=False)
-
-    symmetry_center: EnumProperty(
-        name="Center",
-        items=[
-            ("GLOBAL", "Center", "Center"),
-            ("CURSOR", "Cursor", "2D Cursor"),
-            ("SELECT", "Selection", "Bounding Box Center"),
-        ],
-        default="GLOBAL",
-    )
 
     symmetry_uv_axis: EnumProperty(
         name="Axis",
         description="Axis of symmetry in UV space",
-        items=symmetry_center_items,
+        items=symmetry_uv_axis_items,
         default=0,
     )
     symmetry_3d_axis: EnumProperty(
@@ -74,20 +56,43 @@ class MIO3UV_PG_scene(PropertyGroup):
         default="AUTO",
     )
     checker_map_size: EnumProperty(
-        name="Checker Map Size",
+        name="Size",
         description="Choose an image size",
         items=ITEMS_TEXTURE_SIZE,
-        default="1024",
+        default=2,
     )
     use_exposure: BoolProperty(
         name="Exposure",
         default=False,
         description="Adjusts Exposure if image is set",
     )  # Dummy Property
+
+    def callback_update_exposure(self, context):
+        context.scene.view_settings.exposure = self.exposure
+
     exposure: FloatProperty(name="Exposure Level", default=-5, min=-7, max=5, step=10, update=callback_update_exposure)
 
+    def callback_update_texture_size_x(self, context):
+        if self.texture_size_link:
+            current_index = [i for i, item in enumerate(ITEMS_TEXTURE_SIZE) if item[0] == self.texture_size_x][0]
+            self["texture_size_y"] = current_index
 
-class MIO3UV_PG_object(PropertyGroup):
+    def callback_update_texture_size_y(self, context):
+        if self.texture_size_link:
+            current_index = [i for i, item in enumerate(ITEMS_TEXTURE_SIZE) if item[0] == self.texture_size_y][0]
+            self["texture_size_x"] = current_index
+
+    texture_size_x: EnumProperty(
+        name="Size X", items=ITEMS_TEXTURE_SIZE, default="2048", update=callback_update_texture_size_x
+    )
+    texture_size_y: EnumProperty(
+        name="Size Y", items=ITEMS_TEXTURE_SIZE, default="2048", update=callback_update_texture_size_y
+    )
+    texture_size_link: BoolProperty(name="Size Link", default=True)
+    texel_density: FloatProperty(name="Texel Density", default=256, min=0.01, max=10000, step=10, precision=1)
+
+
+class OBJECT_PG_mio3uv(PropertyGroup):
     def callback_update_padding(self, context):
         view_padding.UV_OT_mio3_guide_padding.redraw(context)
 
@@ -114,45 +119,25 @@ class MIO3UV_PG_object(PropertyGroup):
                 modifier[node_group.inputs["Size"].identifier] = self.uvmesh_size
 
     realtime: BoolProperty(name="Realtime", description="Warning: This option may poor performance", default=False)
-
-    def callback_update_texture_size_x(self, context):
-        if self.texture_size_link:
-            current_index = [i for i, item in enumerate(ITEMS_TEXTURE_SIZE) if item[0] == self.texture_size_x][0]
-            self["texture_size_y"] = current_index
-
-    def callback_update_texture_size_y(self, context):
-        if self.texture_size_link:
-            current_index = [i for i, item in enumerate(ITEMS_TEXTURE_SIZE) if item[0] == self.texture_size_y][0]
-            self["texture_size_x"] = current_index
-
-    texture_size_x: EnumProperty(
-        name="Size X",
-        description="Choose an image size",
-        items=ITEMS_TEXTURE_SIZE,
-        default="1024",
-        update=callback_update_texture_size_x,
-    )
-    texture_size_y: EnumProperty(
-        name="Size Y",
-        description="Choose an image size",
-        items=ITEMS_TEXTURE_SIZE,
-        default="1024",
-        update=callback_update_texture_size_y,
-    )
-    texture_size_link: BoolProperty(name="Size Link", default=True)
-
     image_size: EnumProperty(
         name="Size",
         description="Choose an image size",
         items=ITEMS_TEXTURE_SIZE,
-        default=1,
+        default=2,
         update=callback_update_padding,
     )
 
     padding_px: EnumProperty(
-        name="Padding (px)",
-        items=[("4", "4", ""), ("8", "8", ""), ("16", "16", ""), ("32", "32", ""), ("64", "64", "")],
-        default="16",
+        name="Padding",
+        items=[
+            ("AUTO", "Auto", ""),
+            ("4", "4", ""),
+            ("8", "8", ""),
+            ("16", "16", ""),
+            ("32", "32", ""),
+            ("64", "64", ""),
+        ],
+        default="AUTO",
         update=callback_update_padding,
     )
 
@@ -162,7 +147,7 @@ class MIO3UV_PG_object(PropertyGroup):
     )
 
 
-class MIO3UV_PG_image(PropertyGroup):
+class IMAGE_PG_mio3uv(PropertyGroup):
     def callback_update_use_exposure(self, context):
         if hasattr(context, "edit_image"):
             context.edit_image.use_view_as_render = self.use_exposure
@@ -187,14 +172,30 @@ class MIO3UV_PG_image(PropertyGroup):
                 scene.view_settings.exposure = 0
 
 
+class WM_PG_mio3uv(PropertyGroup):
+    texel_preset_buttons: BoolProperty(
+        name="Show Preset Buttons", default=False, description="Show quick set buttons for common texel densities"
+    )
+    texel_density_coverage_type: EnumProperty(
+        name="Type",
+        description="Calculate UV coverage inside the 0-1 UV space based on visible or selected UV faces",
+        items=[
+            ("VISIBLE", "Visible", ""),
+            ("SELECT", "Selected", ""),
+        ],
+    )
+    texel_density_percent: FloatProperty(name="Coverage", default=0, precision=4, subtype="PERCENTAGE")
+    texel_use_checker: BoolProperty(
+        name="Use Checker Size",
+        description="Use Mio3UV checker size if available. \nDisable if the actual texture size differs from the checker size",
+        default=False,
+    )
+
+
 def callback_use_uv_select_sync():
     pref = get_preferences()
-    context = bpy.context
-    props_s = context.scene.mio3uv
     if pref.auto_uv_sync:
-        if not props_s.auto_uv_sync_skip:
-            bpy.ops.uv.mio3_auto_uv_sync("EXEC_DEFAULT")
-    props_s.auto_uv_sync_skip = False
+        bpy.ops.uv.mio3_auto_uv_sync("EXEC_DEFAULT")
 
 
 msgbus_owner = object()
@@ -218,26 +219,29 @@ def load_handler(scene):
 
 
 classes = [
-    MIO3UV_PG_scene,
-    MIO3UV_PG_object,
-    MIO3UV_PG_image,
+    SCENE_PG_mio3uv,
+    OBJECT_PG_mio3uv,
+    IMAGE_PG_mio3uv,
+    WM_PG_mio3uv,
 ]
 
 
 def register():
     for c in classes:
         bpy.utils.register_class(c)
-    bpy.types.Scene.mio3uv = PointerProperty(type=MIO3UV_PG_scene)
-    bpy.types.Object.mio3uv = PointerProperty(type=MIO3UV_PG_object)
-    bpy.types.Image.mio3uv = PointerProperty(type=MIO3UV_PG_image)
+    bpy.types.WindowManager.mio3uv = PointerProperty(type=WM_PG_mio3uv)
+    bpy.types.Scene.mio3uv = PointerProperty(type=SCENE_PG_mio3uv)
+    bpy.types.Object.mio3uv = PointerProperty(type=OBJECT_PG_mio3uv)
+    bpy.types.Image.mio3uv = PointerProperty(type=IMAGE_PG_mio3uv)
     handler_register()
 
 
 def unregister():
-    MIO3UV_PG_image.reset_images()
+    IMAGE_PG_mio3uv.reset_images()
     del bpy.types.Image.mio3uv
     del bpy.types.Object.mio3uv
     del bpy.types.Scene.mio3uv
+    del bpy.types.WindowManager.mio3uv
     for c in classes:
         bpy.utils.unregister_class(c)
 

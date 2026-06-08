@@ -1,9 +1,9 @@
 import bpy
 from bpy.props import BoolProperty, IntProperty
-from ..classes import UVIslandManager, Mio3UVOperator
+from ..classes import Mio3UVOperator, UVIslandManager
 
 
-class MIO3UV_OT_stitch(Mio3UVOperator):
+class UV_OT_mio3_stitch(Mio3UVOperator):
     bl_idname = "uv.mio3_stitch"
     bl_label = "Stitch"
     bl_description = "Stitch Island"
@@ -13,10 +13,10 @@ class MIO3UV_OT_stitch(Mio3UVOperator):
     clear_seams: BoolProperty(name="Clear Seams", default=True)
 
     def execute(self, context):
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, select_mode="EDGE")
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync)
         if not island_manager.islands:
             return {"CANCELLED"}
 
@@ -36,8 +36,8 @@ class MIO3UV_OT_stitch(Mio3UVOperator):
 
 
 def register():
-    bpy.utils.register_class(MIO3UV_OT_stitch)
+    bpy.utils.register_class(UV_OT_mio3_stitch)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_stitch)
+    bpy.utils.unregister_class(UV_OT_mio3_stitch)

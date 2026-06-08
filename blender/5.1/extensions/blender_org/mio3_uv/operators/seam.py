@@ -3,11 +3,11 @@ import bmesh
 import math
 from mathutils import Vector
 from bpy.props import BoolProperty, FloatProperty, EnumProperty
-from ..icons import preview_collections
+from ..icons import icons
 from ..classes import Mio3UVOperator
 
 
-class MIO3UV_OT_seam(Mio3UVOperator):
+class UV_OT_mio3_seam(Mio3UVOperator):
     bl_idname = "uv.mio3_seam"
     bl_label = "Mark Seam by Angle"
     bl_description = "Mark Seam by Angle"
@@ -60,13 +60,13 @@ class MIO3UV_OT_seam(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
 
         view_matrix = context.space_data.region_3d.view_matrix
         view_direction = Vector((0, 0, -1)) @ view_matrix.to_3x3()
         view_position = view_matrix.inverted().translation
 
-        for obj in self.objects:
+        for obj in objects:
             world_matrix = obj.matrix_world
             bm = bmesh.from_edit_mesh(obj.data)
             selected_faces = {face for face in bm.faces if face.select}
@@ -135,7 +135,6 @@ class MIO3UV_OT_seam(Mio3UVOperator):
 
         if self.unwrap:
             bpy.ops.uv.unwrap(method="ANGLE_BASED", margin=0)
-            bpy.ops.uv.align_rotation(method="GEOMETRY", axis="Z")
 
         self.print_time()
         return {"FINISHED"}
@@ -270,7 +269,7 @@ class MIO3UV_OT_seam(Mio3UVOperator):
         layout.prop(self, "unwrap")
 
 
-class MIO3UV_OT_seam_boundary(Mio3UVOperator):
+class UV_OT_mio3_seam_boundary(Mio3UVOperator):
     bl_idname = "uv.mio3_seam_boundary"
     bl_label = "Mark Seam by Boundary"
     bl_description = "Mark Seam by Boundary"
@@ -304,22 +303,21 @@ class MIO3UV_OT_seam_boundary(Mio3UVOperator):
 
 
 classes = [
-    MIO3UV_OT_seam,
-    MIO3UV_OT_seam_boundary,
+    UV_OT_mio3_seam,
+    UV_OT_mio3_seam_boundary,
 ]
 
 
 def menu_context(self, context):
-    icons = preview_collections["icons"]
     self.layout.operator(
         "uv.mio3_seam",
-        text=MIO3UV_OT_seam.bl_label,
-        icon_value=icons["SEAM"].icon_id,
+        text=UV_OT_mio3_seam.bl_label,
+        icon_value=icons.seam,
     )
     self.layout.operator(
         "uv.mio3_seam_boundary",
-        text=MIO3UV_OT_seam_boundary.bl_label,
-        icon_value=icons["SEAM"].icon_id,
+        text=UV_OT_mio3_seam_boundary.bl_label,
+        icon_value=icons.seam,
     )
 
 

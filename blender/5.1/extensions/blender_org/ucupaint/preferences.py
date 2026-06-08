@@ -2,14 +2,12 @@ import bpy
 from bpy.props import *
 from bpy.types import AddonPreferences
 from bpy.app.handlers import persistent
-from . import image_ops
 from .common import *
-from .lib import *
-from .UDIM import *
 
 def update_icons(self, context):
-    unload_custom_icons()
-    load_custom_icons()
+    from . import lib
+    lib.unload_custom_icons()
+    lib.load_custom_icons()
 
 class YPaintPreferences(AddonPreferences):
     # this must match the addon name, use '__package__'
@@ -169,8 +167,11 @@ class YPaintPreferences(AddonPreferences):
         self.layout.prop(self, 'image_atlas_size')
         self.layout.prop(self, 'hdr_image_atlas_size')
         self.layout.prop(self, 'unique_image_atlas_per_yp')
-        if is_udim_supported():
+
+        from . import UDIM
+        if UDIM.is_udim_supported():
             self.layout.prop(self, 'enable_auto_udim_detection')
+
         self.layout.prop(self, 'enable_material_view_warning')
         self.layout.prop(self, 'make_preview_mode_srgb')
         self.layout.prop(self, 'use_image_preview')
@@ -184,8 +185,16 @@ class YPaintPreferences(AddonPreferences):
         self.layout.prop(self, 'developer_mode')
         #self.layout.prop(self, 'parallax_without_baked')
 
+        # Extra module preferences UI
+        extra_module_paths = ('.credits_ui', '.addon_updater_preferences')
+        for path in extra_module_paths:
+            module = get_package_module(path)
+            if path and hasattr(module, 'draw_preferences'):
+                module.draw_preferences(self, self.layout)
+
 @persistent
 def auto_save_images(scene):
+    from . import image_ops
 
     ypup = get_user_preferences()
 
@@ -225,6 +234,13 @@ def refresh_float_image_hack(scene):
         ypui.refresh_image_hack = False
 
 def register():
+    # Extra module preferences
+    extra_module_paths = ('.addon_updater_preferences', '.credits_ui')
+    for path in extra_module_paths:
+        module = get_package_module(path)
+        if path and hasattr(module, 'add_preference_props'):
+            module.add_preference_props(YPaintPreferences)
+
     bpy.utils.register_class(YPaintPreferences)
 
     bpy.app.handlers.save_pre.append(auto_save_images)

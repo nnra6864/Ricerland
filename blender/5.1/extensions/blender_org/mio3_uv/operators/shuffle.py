@@ -1,20 +1,20 @@
 import bpy
 import random
-from ..classes import UVIslandManager, Mio3UVOperator
+from ..classes import Mio3UVOperator, UVIslandManager
 
 
-class MIO3UV_OT_shuffle_island(Mio3UVOperator):
+class UV_OT_mio3_shuffle_island(Mio3UVOperator):
     bl_idname = "uv.mio3_shuffle_island"
     bl_label = "Shuffle"
     bl_description = "Shuffle Island"
     bl_options = {"REGISTER", "UNDO"}
 
     def execute(self, context):
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync)
 
         islands = island_manager.islands
         selected_count = len(island_manager.islands)
@@ -40,8 +40,8 @@ class MIO3UV_OT_shuffle_island(Mio3UVOperator):
 
 
 def register():
-    bpy.utils.register_class(MIO3UV_OT_shuffle_island)
+    bpy.utils.register_class(UV_OT_mio3_shuffle_island)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_shuffle_island)
+    bpy.utils.unregister_class(UV_OT_mio3_shuffle_island)

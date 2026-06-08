@@ -1,10 +1,10 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty
-from ..classes import UVIslandManager, Mio3UVOperator
+from ..classes import Mio3UVOperator, UVIslandManager, UVIsland
 
 
-class MIO3UV_OT_normalize(Mio3UVOperator):
+class UV_OT_mio3_normalize(Mio3UVOperator):
     bl_idname = "uv.mio3_normalize"
     bl_label = "Normalize"
     bl_description = "Normalize UVs"
@@ -15,10 +15,10 @@ class MIO3UV_OT_normalize(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
 
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync, extend=False)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync, extend=False)
 
         if self.individual:
             for island in island_manager.islands:
@@ -31,71 +31,52 @@ class MIO3UV_OT_normalize(Mio3UVOperator):
         self.print_time()
         return {"FINISHED"}
 
-    def normalize_island(self, context, island):
-        current_width = island.width
-        current_height = island.height
+    def normalize_island(self, context, island: UVIsland):
+        width = island.width
+        height = island.height
 
         if self.keep_aspect:
-            scale_factor = 1 / max(current_width, current_height)
+            scale_factor = 1 / max(width, height)
             scale_x = scale_y = scale_factor
         else:
-            scale_x = 1 / current_width
-            scale_y = 1 / current_height
+            scale_x = 1 / width
+            scale_y = 1 / height
 
         self.apply_scale(context, island, scale_x, scale_y)
 
-    def normalize_all_islands(self, context, islands):
-        min_uv = Vector((float('inf'), float('inf')))
-        max_uv = Vector((float('-inf'), float('-inf')))
+    def normalize_all_islands(self, context, islands: list[UVIsland]):
+        min_uv = Vector((min(island.min_uv.x for island in islands), min(island.min_uv.y for island in islands)))
+        max_uv = Vector((max(island.max_uv.x for island in islands), max(island.max_uv.y for island in islands)))
 
-        for island in islands:
-            min_uv.x = min(min_uv.x, island.min_uv.x)
-            min_uv.y = min(min_uv.y, island.min_uv.y)
-            max_uv.x = max(max_uv.x, island.max_uv.x)
-            max_uv.y = max(max_uv.y, island.max_uv.y)
-
-        total_width = max_uv.x - min_uv.x
-        total_height = max_uv.y - min_uv.y
+        width = max_uv.x - min_uv.x
+        height = max_uv.y - min_uv.y
 
         if self.keep_aspect:
-            scale_factor = 1 / max(total_width, total_height)
+            scale_factor = 1 / max(width, height)
             scale_x = scale_y = scale_factor
         else:
-            scale_x = 1 / total_width
-            scale_y = 1 / total_height
+            scale_x = 1 / width
+            scale_y = 1 / height
 
         for island in islands:
             self.apply_scale(context, island, scale_x, scale_y, min_uv)
 
-    def apply_scale(self, context, island, scale_x, scale_y, global_min_uv=None):
-        selected_loops = []
-        for face in island.faces:
-            for loop in face.loops:
-                selected_loops.append(loop)
-        
+    def apply_scale(self, context, island: UVIsland, scale_x: float, scale_y: float, global_min_uv: Vector = None):
         anchor = self.get_anchor(context, island.center)
-
         min_uv = global_min_uv if global_min_uv else island.min_uv
+        uv_layer = island.uv_layer
         for face in island.faces:
             for loop in face.loops:
-                uv = loop[island.uv_layer]
-                new_x = (uv.uv.x - min_uv.x) * scale_x
-                new_y = (uv.uv.y - min_uv.y) * scale_y
-                uv.uv = anchor + Vector((new_x, new_y))
+                uv = loop[uv_layer]
+                uv.uv = anchor + Vector(((uv.uv.x - min_uv.x) * scale_x, (uv.uv.y - min_uv.y) * scale_y))
 
-        island.update_bounds()
-
-        if not global_min_uv:
-            offset = anchor - island.min_uv
-            island.move(offset)
-
-    def get_anchor(self, context, center):
+    def get_anchor(self, context, center: Vector) -> Vector:
         if context.scene.mio3uv.udim:
             return self.get_tile_co(Vector((0, 0)), center)
         else:
             return Vector((0, 0))
 
-    def get_tile_co(self, offset_vector, center):
+    def get_tile_co(self, offset_vector: Vector, center: Vector) -> Vector:
         tile_u = int(center.x)
         tile_v = int(center.y)
         udim_x = tile_u + offset_vector.x
@@ -104,8 +85,8 @@ class MIO3UV_OT_normalize(Mio3UVOperator):
 
 
 def register():
-    bpy.utils.register_class(MIO3UV_OT_normalize)
+    bpy.utils.register_class(UV_OT_mio3_normalize)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_normalize)
+    bpy.utils.unregister_class(UV_OT_mio3_normalize)

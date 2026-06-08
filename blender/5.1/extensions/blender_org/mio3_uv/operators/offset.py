@@ -1,18 +1,17 @@
 import bpy
 from mathutils import Vector
 from bpy.props import BoolProperty, FloatProperty
-from ..classes import UVIslandManager, Mio3UVOperator
-from ..classes.operator import Mio3UVOperator
+from ..classes import Mio3UVOperator, UVIslandManager
 
 
-class MIO3UV_OT_offset(Mio3UVOperator):
+class UV_OT_mio3_offset(Mio3UVOperator):
     bl_idname = "uv.mio3_offset"
     bl_label = "Offset"
-    bl_description = "Expand/Shrink UV Borders"
+    bl_description = "Expand/Shrink UV Borders. Ensure space for the overlapping rim created by Solidify."
     bl_options = {"REGISTER", "UNDO"}
 
     offset: FloatProperty(
-        name="Offset", description="Offset to expand UV boundary", default=0.001, min=-1.0, max=1.0, step=0.01
+        name="Offset", description="Offset to expand UV boundary.", default=0.001, min=-1.0, max=1.0, step=0.01
     )
     keep_pin: BoolProperty(name="Keep Pin", default=False)
     use_seam: BoolProperty(name="Seam", default=True)
@@ -21,26 +20,21 @@ class MIO3UV_OT_offset(Mio3UVOperator):
 
     def execute(self, context):
         self.start_time()
-        self.objects = self.get_selected_objects(context)
-
-        if context.tool_settings.uv_select_mode in {"FACE", "ISLAND"}:
-            context.tool_settings.uv_select_mode = "VERTEX"
+        objects = self.get_selected_objects(context)
 
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-        if use_uv_select_sync:
-            context.tool_settings.mesh_select_mode = (True, False, False)
 
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync)
 
         for island in island_manager.islands:
-            self.expand_uv_boundary_outward(island, self.offset)
+            self.expand_uv_boundary(island, self.offset)
 
         island_manager.update_uvmeshes(True)
 
         self.print_time()
         return {"FINISHED"}
 
-    def expand_uv_boundary_outward(self, island, offset):
+    def expand_uv_boundary(self, island, offset):
         uv_layer = island.uv_layer
 
         selected_uv_edges = []
@@ -72,8 +66,8 @@ class MIO3UV_OT_offset(Mio3UVOperator):
 
 
 def register():
-    bpy.utils.register_class(MIO3UV_OT_offset)
+    bpy.utils.register_class(UV_OT_mio3_offset)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_offset)
+    bpy.utils.unregister_class(UV_OT_mio3_offset)

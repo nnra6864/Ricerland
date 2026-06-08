@@ -1,4 +1,3 @@
-Generate ▸ Remesh
 Input ▸ Color
 Texture ▸ Noise Texture
 Color Ramp ▸ Factor
@@ -14,3 +13,4 @@ Input ▸ Texture Coordinate ▸ UV
 Input ▸ Geometry ▸ Position
    Mask (Solid Color 1)
    OrangeColorMap
+Generate ▸ Remesh

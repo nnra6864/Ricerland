@@ -1,12 +1,13 @@
 import bpy
 import math
-from mathutils import Vector, Matrix
+from mathutils import Vector
 from bpy.props import BoolProperty, EnumProperty
-from ..classes import UVIslandManager, Mio3UVOperator
-from ..utils import get_uv_from_mirror_offset, rotate_uv_faces
+from ..classes import Mio3UVOperator, UVIslandManager, UVIsland
+from ..utils.utils import get_uv_from_mirror_offset, rotate_uv_faces
+from ..utils.uv_manager_utils import find_rotation_auto, find_rotation_geometry, rotate_island
 
 
-class MIO3UV_OT_orient(Mio3UVOperator):
+class UV_OT_mio3_orient(Mio3UVOperator):
     bl_idname = "uv.mio3_orient"
     bl_label = "Align Axis"
     bl_description = "Align the selected edge or island to an axis"
@@ -24,33 +25,41 @@ class MIO3UV_OT_orient(Mio3UVOperator):
     )
 
     def invoke(self, context, event):
-        self.objects = self.get_selected_objects(context)
-        if not self.objects:
+        objects = self.get_selected_objects(context)
+        if not objects:
             self.report({"WARNING"}, "Object is not selected")
             return {"CANCELLED"}
 
-        selected_face = self.check_selected_face_objects(self.objects)
-        self.island = True if context.scene.mio3uv.island_mode else selected_face
+        face_selected = self.check_selected_face_objects(objects)
+        self.island = True if context.scene.mio3uv.island_mode else face_selected
         return self.execute(context)
 
     def execute(self, context):
         self.start_time()
-
-        # アイランド
-        if self.island:
-            bpy.ops.uv.align_rotation(method="AUTO")
-            return {"FINISHED"}
-
-        # UVグループ
-
-        self.objects = self.get_selected_objects(context)
-        udim = context.scene.mio3uv.udim
+        objects = self.get_selected_objects(context)
         use_uv_select_sync = context.tool_settings.use_uv_select_sync
-
-        island_manager = UVIslandManager(self.objects, sync=use_uv_select_sync)
+        udim = context.scene.mio3uv.udim
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync)
         if not island_manager.islands:
             return {"CANCELLED"}
 
+        if self.island:
+            self.align_island_rotation(island_manager)
+        else:
+            self.align_edge_rotation(island_manager, udim)
+
+        island_manager.update_uvmeshes(True)
+
+        self.print_time()
+        return {"FINISHED"}
+
+    def align_island_rotation(self, island_manager: UVIslandManager):
+        for island in island_manager.islands:
+            angle = find_rotation_auto(island.uv_layer, island.faces)
+            if angle != 0.0:
+                rotate_island(island, angle)
+
+    def align_edge_rotation(self, island_manager: UVIslandManager, udim):
         for island in island_manager.islands:
             uv_layer = island.uv_layer
             loop_uv1, loop_uv2 = self.get_selected_edge_loop(island)
@@ -88,18 +97,7 @@ class MIO3UV_OT_orient(Mio3UVOperator):
                     for l in face.loops:
                         l[uv_layer].uv.y += move_delta
 
-        island_manager.update_uvmeshes(True)
-
-        self.print_time()
-        return {"FINISHED"}
-
-    def get_udim_co(self, is_udim, co, island):
-        if is_udim:
-            return Vector((int(island.center.x) + co.x, int(island.center.y) + co.y))
-        else:
-            return co
-
-    def get_selected_edge_loop(self, island):
+    def get_selected_edge_loop(self, island: UVIsland):
         uv_layer = island.uv_layer
         if island.sync:
             for face in island.faces:
@@ -116,6 +114,12 @@ class MIO3UV_OT_orient(Mio3UVOperator):
                             return (loop[uv_layer], loop.link_loop_next[uv_layer])
         return (None, None)
 
+    def get_udim_co(self, is_udim: bool, co: Vector, island: UVIsland) -> Vector:
+        if is_udim:
+            return Vector((int(island.center.x) + co.x, int(island.center.y) + co.y))
+        else:
+            return co
+
     def draw(self, context):
         layout = self.layout
         split = layout.split(factor=0.3)
@@ -127,9 +131,46 @@ class MIO3UV_OT_orient(Mio3UVOperator):
         split.enabled = not self.island
 
 
+class UV_OT_mio3_orient_world(Mio3UVOperator):
+    bl_idname = "uv.mio3_orient_world"
+    bl_label = "Orient World"
+    bl_description = "Align the selected islands to the world axis"
+    bl_options = {"REGISTER", "UNDO"}
+
+    axis: EnumProperty(
+        name="Axis",
+        items=[
+            ("X", "X Axis", ""),
+            ("Y", "Y Axis", ""),
+            ("Z", "Z Axis", ""),
+        ],
+        default="Z",
+    )
+
+    def execute(self, context):
+        self.start_time()
+        objects = self.get_selected_objects(context)
+        use_uv_select_sync = context.tool_settings.use_uv_select_sync
+        island_manager = UVIslandManager(objects, sync=use_uv_select_sync)
+        if not island_manager.islands:
+            return {"CANCELLED"}
+
+        for island in island_manager.islands:
+            angle = find_rotation_geometry(island.uv_layer, island.faces, self.axis, "WORLD", island.obj.matrix_world)
+            if angle != 0.0:
+                rotate_island(island, angle)
+
+        island_manager.update_uvmeshes(True)
+
+        self.print_time()
+        return {"FINISHED"}
+
+
 def register():
-    bpy.utils.register_class(MIO3UV_OT_orient)
+    bpy.utils.register_class(UV_OT_mio3_orient)
+    bpy.utils.register_class(UV_OT_mio3_orient_world)
 
 
 def unregister():
-    bpy.utils.unregister_class(MIO3UV_OT_orient)
+    bpy.utils.unregister_class(UV_OT_mio3_orient)
+    bpy.utils.unregister_class(UV_OT_mio3_orient_world)

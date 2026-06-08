@@ -454,6 +454,13 @@ class C3DB_OT_restore_selected(bpy.types.Operator):
     bl_idname = "view3d.c3db_restore_selected"
     bl_label = "Restore Selected 3D Cursor"
 
+    @classmethod
+    def poll(cls, context):
+        scene = context.scene
+        return bool(scene.C3DB_3Dcursors_collection) and scene.C3DB_3Dcursors_index < len(
+            scene.C3DB_3Dcursors_collection
+        )
+
     def execute(self, context):
         return bpy.ops.view3d.c3db_restore("INVOKE_DEFAULT", index=-1)
 

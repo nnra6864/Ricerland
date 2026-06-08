@@ -1,12 +1,13 @@
 import bpy
 from bpy.types import Panel
 from ..operators.view_padding import UV_OT_mio3_guide_padding
-from ..icons import preview_collections
+from ..icons import icons
+from ..globals import PADDING_AUTO
 
 
-class MIO3UV_PT_Utility(Panel):
+class UV_PT_mio3_Utility(Panel):
     bl_label = "Utility"
-    bl_idname = "MIO3UV_PT_Utility"
+    bl_idname = "UV_PT_mio3_Utility"
     bl_space_type = "IMAGE_EDITOR"
     bl_region_type = "UI"
     bl_category = "Mio3"
@@ -18,35 +19,35 @@ class MIO3UV_PT_Utility(Panel):
 
     def draw(self, context):
         layout = self.layout
-        icons = preview_collections["icons"]
+        col = layout.column()
         props_scene = context.scene.mio3uv
 
-        split = layout.split(factor=0.5)
+        split = col.split(factor=0.5)
         split.label(text="Size")
         split.prop(props_scene, "checker_map_size", text="")
-        
-        col = layout.column(align=True)
+
         row = col.row(align=True)
-        row.operator("mio3uv.checker_map", icon_value=icons["COLOR_GRID"].icon_id)
+        row.operator("mio3uv.checker_map", icon_value=icons.color_grid)
         row.operator("mio3uv.checker_map_clear", text="", icon="CANCEL")
 
-        layout.operator("mio3uv.checker_map_cleanup", text="Ceanup All Chaker Maps", icon="TRASH")
+        col.operator(
+            "mio3uv.checker_map_cleanup", text="Cleanup All Checker Maps", icon="TRASH"
+        )
 
 
-class MIO3UV_PT_UVMesh(Panel):
+class UV_PT_mio3_UVMesh(Panel):
     bl_label = "UV Mesh Nodes"
-    bl_idname = "MIO3UV_PT_UVMesh"
+    bl_idname = "UV_PT_mio3_UVMesh"
     bl_space_type = "IMAGE_EDITOR"
     bl_region_type = "UI"
     bl_category = "Mio3"
-    bl_parent_id = "MIO3UV_PT_Utility"
+    bl_parent_id = "UV_PT_mio3_Utility"
     bl_options = {"DEFAULT_CLOSED"}
 
     def draw(self, context):
         layout = self.layout
         layout.use_property_split = True
         layout.use_property_decorate = False
-        icons = preview_collections["icons"]
         props_object = context.active_object.mio3uv
 
         modifier = context.active_object.modifiers.get("Mio3UVMeshModifier")
@@ -57,13 +58,13 @@ class MIO3UV_PT_UVMesh(Panel):
             row.operator(
                 "mesh.mio3_uvmesh_control",
                 text="Mesh",
-                icon_value=icons["CUBE"].icon_id,
+                icon_value=icons.cube,
                 depress=False if props_object.uvmesh_factor > 0 else True,
             ).mode = "MESH"
             row.operator(
                 "mesh.mio3_uvmesh_control",
                 text="UV",
-                icon_value=icons["UNFOLDIFY"].icon_id,
+                icon_value=icons.unfoldify,
                 depress=True if props_object.uvmesh_factor > 0 else False,
             ).mode = "UV"
             col.row().prop(props_object, "uvmesh_factor", text="Factor")
@@ -84,42 +85,42 @@ class MIO3UV_PT_UVMesh(Panel):
             row.label(text="Add Modifier")
 
 
-class MIO3UV_PT_SubGuidePadding(Panel):
+class UV_PT_mio3_SubGuidePadding(Panel):
     bl_label = "Padding"
-    bl_idname = "MIO3UV_PT_SubGuidePadding"
+    bl_idname = "UV_PT_mio3_SubGuidePadding"
     bl_space_type = "IMAGE_EDITOR"
     bl_region_type = "UI"
     bl_category = "Mio3"
-    bl_parent_id = "MIO3UV_PT_Utility"
+    bl_parent_id = "UV_PT_mio3_Utility"
     bl_options = {"DEFAULT_CLOSED"}
 
     def draw(self, context):
-        icons = preview_collections["icons"]
         layout = self.layout
+        col = layout.column()
         props_object = context.active_object.mio3uv
 
-        row = layout.row()
+        row = col.row()
         row.prop(props_object, "image_size", text="Size")
 
-        row = layout.row(align=True)
+        row = col.row(align=True)
         row.operator(
             "uv.mio3_guide_padding",
-            icon_value=icons["OFFSET"].icon_id,
+            icon_value=icons.padding,
             depress=True if UV_OT_mio3_guide_padding.is_running() else False,
         )
-        row = layout.row()
+        row = col.row()
         row.label(text="Padding")
         row.alignment = "RIGHT"
         row.scale_x = 5
         row.prop(props_object, "padding_px", text="")
         row.scale_x = 1
-        row.label(text="px")
+        if props_object.padding_px == "AUTO":
+            row.label(text=str(PADDING_AUTO.get(props_object.image_size, 16)) + "px", translate=False)
+        else:
+            row.label(text="px", translate=False)
 
-        # row = layout.row()
-        # row.prop(props_object, "realtime")
 
-
-classes = [MIO3UV_PT_Utility, MIO3UV_PT_UVMesh, MIO3UV_PT_SubGuidePadding]
+classes = [UV_PT_mio3_Utility, UV_PT_mio3_UVMesh, UV_PT_mio3_SubGuidePadding]
 
 
 def register():

@@ -2,7 +2,9 @@ import bpy
 import bmesh
 import time
 from bpy.types import Context, Object, Operator, Panel
-from bmesh.types import BMVert, BMLoop, BMLayerItem, BMesh, BMFace, BMEdge
+from bmesh.types import BMesh
+
+DEBUG = "vscode_development" in __file__
 
 
 class Mio3UVPanel(Panel):
@@ -18,8 +20,8 @@ class Mio3UVDebug:
         self._start_time = time.time()
 
     def print_time(self):
-        # print("Time: {:.5f}".format(time.time() - self._start_time))
-        pass
+        if DEBUG:
+            print("Time: {:.5f}".format(time.time() - self._start_time))
 
 
 class Mio3UVOperator(Operator, Mio3UVDebug):
@@ -36,27 +38,16 @@ class Mio3UVOperator(Operator, Mio3UVDebug):
     def get_selected_objects(context: Context):
         return [obj for obj in context.objects_in_mode if obj.type == "MESH"]
 
-    @staticmethod
-    def store_mesh_select_mode(context: Context, mode=None):
-        select_mode = context.tool_settings.mesh_select_mode[:]
-        if mode is not None:
-            context.tool_settings.mesh_select_mode = mode
-        return select_mode
+    # @staticmethod
+    # def store_mesh_select_mode(context: Context, mode=None):
+    #     select_mode = context.tool_settings.mesh_select_mode[:]
+    #     if mode is not None:
+    #         context.tool_settings.mesh_select_mode = mode
+    #     return select_mode
 
-    @staticmethod
-    def restore_mesh_select_mode(context: Context, select_mode):
-        context.tool_settings.mesh_select_mode = select_mode
-
-    @staticmethod
-    def store_uv_select_mode(context: Context, mode=None):
-        select_mode = context.tool_settings.uv_select_mode
-        if mode is not None:
-            context.tool_settings.uv_select_mode = mode
-        return select_mode
-
-    @staticmethod
-    def restore_uv_select_mode(context: Context, select_mode):
-        context.tool_settings.uv_select_mode = select_mode
+    # @staticmethod
+    # def restore_mesh_select_mode(context: Context, select_mode):
+    #     context.tool_settings.mesh_select_mode = select_mode
 
     def check_selected_face_objects(self, objects: list[Object]) -> bool:
         if bpy.context.tool_settings.use_uv_select_sync:
