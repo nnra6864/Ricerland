@@ -90,7 +90,6 @@
 !/.config/fish/fish_plugins
 
 # CLI
-!/.config/nushell/
 !/.config/tmux/
 !/.config/oh-my-posh/
 !/.config/btop/
