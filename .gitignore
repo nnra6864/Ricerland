@@ -49,8 +49,6 @@
 # KDE
 !/.config/qt5ct/
 !/.config/qt6ct/
-!/.config/qtcurve/
-!/.config/QtProject/
 !/.config/Nord.colors
 !/.config/kdenliverc
 
