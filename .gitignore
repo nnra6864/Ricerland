@@ -47,7 +47,6 @@
 # RICING #
 
 # KDE
-!/.config/kdedefaults/
 !/.config/kdeglobals
 !/.config/qt5ct/
 !/.config/qt6ct/
