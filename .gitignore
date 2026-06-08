@@ -24,7 +24,6 @@
 
 # Misc
 !/.config/hints/
-!/.config/xsettingsd/
 !/.config/mimeapps.list
 !/.config/environment.d/
 !/.config/xdg-terminals.list
