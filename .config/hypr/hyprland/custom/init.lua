@@ -1,0 +1,1 @@
+require("hyprland.custom.blender")
