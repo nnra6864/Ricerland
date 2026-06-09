@@ -1,9 +1,6 @@
 [submodule "hypr/shaders/Hyprstorm"]
 	path = .config/hypr/shaders/Hyprstorm
 	url = ../Hyprstorm.git
-[submodule "nvim"]
-	path = .config/nvim
-	url = ../nvim
 [submodule "hypr/HyprlandUnityFix"]
 	path = .config/hypr/HyprlandUnityFix
 	url = ../HyprlandUnityFix
