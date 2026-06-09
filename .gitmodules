@@ -4,3 +4,6 @@
 [submodule ".config/hypr/HyprlandUnityFix"]
 	path = .config/hypr/HyprlandUnityFix
 	url = ../HyprlandUnityFix
+[submodule ".config/hypr/shaders/Hyprstorm"]
+	path = .config/hypr/shaders/Hyprstorm
+	url = ../Hyprstorm
