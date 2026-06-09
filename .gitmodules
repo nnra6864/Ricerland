@@ -3,7 +3,7 @@
 	url = ../Hyprstorm.git
 [submodule "nvim"]
 	path = .config/nvim
-	url = ../kickstart.nvim
+	url = ../nvim
 [submodule "hypr/HyprlandUnityFix"]
 	path = .config/hypr/HyprlandUnityFix
 	url = ../HyprlandUnityFix
