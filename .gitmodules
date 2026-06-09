@@ -7,3 +7,6 @@
 [submodule ".config/hypr/shaders/Hyprstorm"]
 	path = .config/hypr/shaders/Hyprstorm
 	url = ../Hyprstorm
+[submodule ".config/ghostty/shaders/ghostty-cursor-shaders"]
+	path = .config/ghostty/shaders/ghostty-cursor-shaders
+	url = ../ghostty-cursor-shaders
