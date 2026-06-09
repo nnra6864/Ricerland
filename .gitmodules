@@ -10,3 +10,6 @@
 [submodule "ghostty/shaders/ghostty-cursor-shaders"]
 	path = .config/ghostty/shaders/ghostty-cursor-shaders
 	url = ../ghostty-cursor-shaders
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = ../nvim
