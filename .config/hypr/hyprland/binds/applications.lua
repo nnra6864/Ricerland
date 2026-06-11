@@ -22,5 +22,5 @@ end)
 
 hl.bind("F10", function()
     hl.dispatch(hl.dsp.exec_cmd("notify-send -t 1000 'OBS' 'Instant Replay Saved'"))
-    hl.dispatch(hl.dsp.exec_cmd("paplay " .. defs.sound.instant_replay))
+    hl.dispatch(hl.dsp.exec_cmd(defs.sound.play_cmd .. defs.sound.instant_replay))
 end)

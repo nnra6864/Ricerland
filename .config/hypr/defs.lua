@@ -212,6 +212,7 @@ M.zoom = {
 
 -- Sound
 M.sound = {
+    play_cmd       = "pw-play --media-role=Notification ",
     screenshot     = os.getenv("HOME") .. "/.config/SFX/Select.wav",
     instant_replay = os.getenv("HOME") .. "/.config/SFX/Select.wav"
 }
