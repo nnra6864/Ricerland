@@ -1,6 +1,6 @@
 [Context]
 devices=dri;
-filesystems=xdg-config/gtk-4.0:ro;xdg-config/qt6ct:ro;xdg-data/themes:ro;xdg-data/fonts:ro;xdg-data/icons:ro;xdg-config/gtk-3.0:ro;xdg-config/qt5ct:ro;xdg-config/fontconfig:ro;xdg-config/kdeglobals:ro;xdg-config/Kvantum:ro;
+filesystems=xdg-config/gtk-4.0:ro;xdg-config/qt6ct:ro;xdg-data/themes:ro;xdg-data/fonts:ro;xdg-data/icons:ro;xdg-config/qt5ct:ro;xdg-config/gtk-3.0:ro;xdg-config/fontconfig:ro;xdg-config/kdeglobals:ro;xdg-config/Kvantum:ro;
 unset-environment=ICON_THEME;
 
 [Environment]
@@ -13,8 +13,8 @@ XCURSOR_THEME=Bibata-Modern-Ice
 QT_QUICK_CONTROLS_STYLE=org.kde.desktop
 QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 GDK_SCALE=1
-GDK_BACKEND=wayland, x11, *
-QT_AUTO_SCREEN_SCALE_FACTOR=1
+GDK_BACKEND=wayland,x11,*
+QT_AUTO_SCREEN_SCALE_FACTOR=0
 ELECTRON_OZONE_PLATFORM_HINT=wayland
 CLUTTER_BACKEND=wayland
 QT_STYLE_OVERRIDE=breeze
