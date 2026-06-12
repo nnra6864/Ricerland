@@ -38,7 +38,7 @@ function rice
     #rm -rf ~/Data/SteamLibrary/steamapps/common/Counter-Strike\ Global\ Offensive/game/csgo/panorama/fonts/*
 
     # Execute Ricer
-    python ~/Data/Projects/Ricer/Ricer.py $argv &&
+    python ~/Packages/Ricer/Ricer.py $argv &&
 
     # Reload terminal cfg
     systemctl reload --user app-com.mitchellh.ghostty.service
