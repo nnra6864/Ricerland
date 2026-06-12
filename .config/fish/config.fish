@@ -474,7 +474,7 @@ if status is-interactive
     if test (tty) = /dev/tty1
         if not set -q WAYLAND_DISPLAY
             rm -rf ~/.config/Mumble/Mumble/mumble_settings.json.back
-            start-hyprland
+            #start-hyprland
         end
     end
 end
