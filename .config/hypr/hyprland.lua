@@ -14,4 +14,7 @@ require("hyprland.render")
 require("hyprland.custom")
 require("hyprland.plugins")
 require("hyprland.startup")
+
+require("HyprlandUnityFix.unity_fix")
+
 require("overrides")
