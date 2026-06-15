@@ -36,6 +36,9 @@ menu:
                 - key: "Z"
                   desc: Zen (Blank)
                   cmd: zen-browser --blank-window
+                - key: "h"
+                  desc: Helium
+                  cmd: helium-browser
                 - key: "b"
                   desc: Brave
                   cmd: brave
