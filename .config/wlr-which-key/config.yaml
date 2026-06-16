@@ -150,11 +150,11 @@ menu:
     - key: "B"
       desc: Brightness
       submenu:
-          - key: [Up, l, plus]
+          - key: [Up, k, plus]
             desc: +10
             cmd: brightnessctl s +10%
             keep_open: true
-          - key: [Down, h, minus]
+          - key: [Down, j, minus]
             desc: -10
             cmd: brightnessctl s 10%-
             keep_open: true
