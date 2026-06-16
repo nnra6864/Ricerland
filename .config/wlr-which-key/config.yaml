@@ -143,7 +143,7 @@ menu:
       submenu:
           - key: "u"
             desc: Update
-            cmd: xdg-terminal-exec fish -ic "update"
+            cmd: xdg-terminal-exec fish -ic "update.sh"
           - key: "a"
             desc: App Usage
             cmd: xdg-terminal-exec fish -ic 'get_app_usage | bat --style="grid,numbers"'
