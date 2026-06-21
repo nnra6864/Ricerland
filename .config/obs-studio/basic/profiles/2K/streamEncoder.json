@@ -1,1 +1,1 @@
-{"rate_control":"CQP","profile":"main10","keyint_sec":2}
+{"rate_control":"CQP","profile":"main10","keyint_sec":2,"lookahead":false}
