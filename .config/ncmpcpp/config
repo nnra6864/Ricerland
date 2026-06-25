@@ -1,4 +1,6 @@
 volume_change_step = 5
+user_interface = alternative
+
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_in_stereo = "yes"
