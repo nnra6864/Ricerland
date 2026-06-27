@@ -25,7 +25,7 @@ perms:
   other_execute:      {foreground: BrightGreen}
   special_user_file:  {foreground: BrightPurple}
   special_other:      {foreground: BrightPurple}
-  attribute:          {foreground: BrightDefault}
+  attribute:          {foreground: Default}
 
 size:
   major:       {foreground: BrightCyan}
