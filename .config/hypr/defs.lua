@@ -135,7 +135,7 @@ M.theme = {
         foreground       = "#A3C5CC",
         background_alpha = "#081D2680",
 
-        ls = "di=#A3C5CC:fi=#A3C5CC:ln=#267F6F:pi=#267F6F:so=#266F7F:bd=#266F7F:cd=#266F7F:or=#7F2626:mi=#7F2626:ex=#267F32"
+        ls = "di=#267180:fi=#A3C5CC:ln=#267F6F:pi=#267F6F:so=#266F7F:bd=#266F7F:cd=#266F7F:or=#7F2626:mi=#7F2626:ex=#267F32"
     }
 }
 
