@@ -50,7 +50,7 @@ users:
   group_other: {foreground: BrightYellow}
 
 links:
-  normal         : {foreground: BrightBlue}
+  normal:          {foreground: BrightBlue}
   multi_link_file: {foreground: BrightCyan}
 
 git:
@@ -100,11 +100,3 @@ symlink_path:        {foreground: BrightCyan}
 control_char:        {foreground: BrightRed}
 broken_symlink:      {foreground: BrightRed}
 broken_path_overlay: {foreground: Default, is_underline: true}
-
-filenames:
-  # Custom filename-based overrides
-  # Cargo.toml: {icon: {glyph: 🦀}}
-
-extensions:
-  # Custom extension-based overrides
-  # rs: {filename: {foreground: Red}, icon: {glyph: 🦀}}
