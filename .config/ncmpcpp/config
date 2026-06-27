@@ -1,16 +1,19 @@
+# Required for startup window rule to work
+song_window_title_format = ncmpcpp
+
+# General
 volume_change_step = 5
 user_interface     = alternative
 progressbar_look   = ⪼⫸⪼
 
+# Visualizer
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_in_stereo   = "yes"
 visualizer_type        = "spectrum"
-visualizer_look        = "❖❖"
-visualizer_fps         = 144
-
-# Required for startup window rule to work
-song_window_title_format = ncmpcpp
+visualizer_look        = "❄❄"
+visualizer_color       = blue
+visualizer_fps         = 60
 
 # ┌───────────────────────────┐
 # │           Colors          │
