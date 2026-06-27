@@ -113,6 +113,7 @@
 !/.config/cava/
 !/.config/dunst/
 !/.config/ncmpcpp/
+/.config/ncmpcpp/error.log
 !/.config/fastfetch/
 
 # Files
