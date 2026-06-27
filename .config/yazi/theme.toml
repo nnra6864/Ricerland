@@ -1,0 +1,11 @@
+[filetype]
+rules = [
+    { url = "*/", fg = "brightblue" },
+    { url = "*",  fg = "brightcyan" },
+]
+
+[icon]
+globs = [
+    { url = "*/", text = "◈" },
+    { url = "*",  text = "🞋" },
+]
