@@ -19,4 +19,4 @@ hl.env("HYPRCURSOR_SIZE",  defs.cursor.size)
 hl.env("XCURSOR_SIZE",     defs.cursor.size)
 
 -- Term colors
-hl.env("LS_COLORS", defs.theme.color.ls)
+--hl.env("LS_COLORS", defs.theme.color.ls)
