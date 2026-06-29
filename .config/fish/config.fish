@@ -454,7 +454,8 @@ function get_app_usage
     end
 end
 
-fish_add_path PATH $PATH /home/nn/.local/bin
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.zvm/bin
 
 # Start the ssh-agent
 if not pgrep -u $USER ssh-agent > /dev/null
