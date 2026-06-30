@@ -5,8 +5,8 @@ hash = "869884767c2ef592bfb7f5764f8fcae3"
 
 [[plugin.deps]]
 use = "gesellkammer/audio-preview"
-rev = "74dfea3"
-hash = "6f185a283a3756475272d147a3c1d29c"
+rev = "c95e4f6"
+hash = "94334f36009e7e1635de43c98c6502c5"
 
 [[plugin.deps]]
 use = "walldmtd/blender-preview"
