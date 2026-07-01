@@ -83,5 +83,10 @@ use = "cap153/tv"
 rev = "b6b1f12"
 hash = "4bdf0523d3711d20982ad80b061dedf2"
 
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "e60e122"
+hash = "fbaf0adc8efc59555b748d36aab62d40"
+
 [flavor]
 deps = []
