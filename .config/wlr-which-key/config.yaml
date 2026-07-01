@@ -18,6 +18,9 @@ menu:
           - key: "h"
             desc: Clipboard History
             cmd: vicinae vicinae://launch/clipboard/history
+          - key: "k"
+            desc: KeePassXC
+            cmd: vicinae vicinae://launch/@system7/store.vicinae.keepassxc/search
           - key: "t"
             desc: Translate
             cmd: vicinae vicinae://launch/@gebeto/store.raycast.translate/translate
