@@ -7,9 +7,9 @@ prepend_keymap = [
     { on = "f", run = "plugin jump-to-char", desc = "Jump to char" },
     
     # Television
-    { on = "z",     run = "plugin zoxide", desc = "Jump to a directory using zoxide" },
-    #{ on = "Z",     run = "plugin tv dirs",        desc = "Jump to a directory via television" },
-    { on = "<C-t>", run = "plugin tv",             desc = "Jump to a file via television" },
+    { on = "z",     run = "plugin zoxide",  desc = "Jump to a directory using zoxide" },
+    #{ on = "Z",     run = "plugin tv dirs", desc = "Jump to a directory via television" },
+    { on = "<C-t>", run = "plugin tv",      desc = "Jump to a file via television" },
 
     # Clipboard copy-paste
     { on = "y", run = "plugin ucp copy",  desc = "Copy" },
