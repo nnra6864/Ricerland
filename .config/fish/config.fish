@@ -457,6 +457,9 @@ end
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.zvm/bin
 
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+
 # Start the ssh-agent
 if not pgrep -u $USER ssh-agent > /dev/null
     ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
