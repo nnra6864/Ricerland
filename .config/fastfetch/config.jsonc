@@ -10,6 +10,9 @@
   },
   "display": {
     "separator": "  ⪧",
+    "color": {
+      "keys": "light_blue"
+    },
     "key": {
       "width": 6,
       "type": "icon"
@@ -24,16 +27,16 @@
     "percent": {
       "type": 3,
       "color": {
-        "green": "green",
-        "yellow": "light_yellow",
-        "red": "light_red"
+        "green": "light_blue",
+        "yellow": "light_cyan",
+        "red": "light_green"
       }
     }
   },
   "modules": [
     {
       "type": "title",
-      "format": "≺ {user-name-colored} ☦ {host-name-colored} ≻"
+      "format": "≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻"
     },
     "os",
     "kernel",
