@@ -1,3 +1,6 @@
+[flavor]
+dark = "everforest-medium"
+
 [filetype]
 rules = [
     { url = "*/", fg = "brightblue" },
