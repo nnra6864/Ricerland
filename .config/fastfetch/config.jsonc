@@ -4,8 +4,9 @@
     "type": "command-raw",
     "source": "sh ~/.config/fastfetch/logo.sh",
     "padding": {
-      "left": 1,
-      "top": 1
+      "top": 7,
+      "right": 3,
+      "left": 3,
     }
   },
   "display": {
@@ -14,8 +15,9 @@
       "keys": "light_blue"
     },
     "key": {
-      "width": 6,
-      "type": "icon"
+      "width": 8,
+      "type": "icon",
+      "paddingLeft": 2
     },
     "bar": {
       "width": 20,
@@ -34,30 +36,24 @@
     }
   },
   "modules": [
-    {
-      "type": "title",
-      "format": "≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻"
-    },
-    "os",
-    "kernel",
-    "packages",
-    "shell",
-    "terminal",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "display",
-    "host",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "uptime",
+    { "type": "title",    "format": "╭─── {#94}System{#} ─────────────────────────────────────────────╮" },
+    { "type": "os",       "format": "{2}" },
+    { "type": "shell",    "format": "{1}" },
+    { "type": "terminal", "format": "{3}" },
+    { "type": "wm",       "format": "{2}" },
+    { "type": "font",     "format": "{1}" },
+    { "type": "cursor",   "format": "{1} ({2})" },
+    { "type": "packages", "format": "{pacman} pacman, {flatpak-system} flatpak-system, {flatpak-user} flatpak-user" },
+    { "type": "localip",  "format": "" },
+    { "type": "title",    "format": "├─── {#94}Hardware{#} ───────────────────────────────────────────┤" },
+    { "type": "display",  "format": "{6} {1}x{2}@{3}" },
+    { "type": "host",     "format": "{2}" },
+    { "type": "cpu",      "format": "{1}" },
+    { "type": "gpu",      "format": "{1} {2}" },
+    { "type": "title",    "format": "├──── {#94}Memory{#} ────────────────────────────────────────────┤" },
+    { "type": "memory",   "format": "{4} {1} / {2}" },
+    { "type": "swap",   "format": "{4} {1} / {2}" },
+    { "type": "disk",     "format": "{13} {1} / {2}" },
+    { "type": "title",    "format": "╰─── ≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻ ──────────────────────────────────────╯" },
   ]
 }
