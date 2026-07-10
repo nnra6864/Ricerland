@@ -36,7 +36,7 @@ git pull --recurse
 
 # ☦
 
-<pre style="font-family: monospace; background: none; border: none; padding: 0; margin: 0;">
+<pre style="font-family: monospace; font-feature-settings: normal; background: none; border: none; padding: 0; margin: 0;">
    Ὤ   
  Ὁ   Ν 
 Ι̅Ϲ̅ │ Χ̅Ϲ̅
