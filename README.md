@@ -36,12 +36,14 @@ git pull --recurse
 
 # ☦
 
-&nbsp; &nbsp;Ὤ<br>
-&nbsp;Ὁ&nbsp; &nbsp;Ν<br>
-Ι̅Ϲ̅ │ Χ̅Ϲ̅<br>
-───┼───<br>
-ΝΙ │ ΚΑ<br>
-&nbsp; &nbsp;☦<br>
+<pre style="font-family: monospace; background: none; border: none; padding: 0; margin: 0;">
+   Ὤ   
+ Ὁ   Ν 
+Ι̅Ϲ̅ │ Χ̅Ϲ̅
+───┼───
+ΝΙ │ ΚΑ
+   ☦   
+</pre>
 
 Εἰς δόξαν τοῦ Θεοῦ<br>
 *To the glory of God*
