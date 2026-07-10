@@ -3,6 +3,9 @@
 # Fixes inconsistent logo width
 export LC_ALL=en_US.UTF-8
 
+# Make text not bold
+printf "\033[22m"
+
 # Variables
 LOGO="$(dirname "$0")/eastern_orthodox_logo"
 LOGO_WIDTH=$(wc -L < "$LOGO")
