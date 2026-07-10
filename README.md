@@ -34,11 +34,14 @@ git pull --recurse
 - [hyprshot](https://github.com/Gustash/Hyprshot) - Excellent screenshot utility `ALT+X` *region* `main_mod+ATL+X` *active window* `main_mod+CTRL+X` *window* `Print` *fullscreen*
 - [fish](https://fishshell.com/) - Best shell
 
-#  Ὁ Ὤ Ν
-# Ι̅Ϲ̅ │ Χ̅Ϲ̅
-# ───┼───
-# ΝΙ │ ΚΑ
-#    ☦
+# ☦
+
+   Ὤ   
+ Ὁ   Ν 
+Ι̅Ϲ̅ │ Χ̅Ϲ̅
+───┼───
+ΝΙ │ ΚΑ
+   ☦   
 
 Εἰς δόξαν τοῦ Θεοῦ<br>
 *To the glory of God*
