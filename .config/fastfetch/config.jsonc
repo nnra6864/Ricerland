@@ -36,7 +36,7 @@
     }
   },
   "modules": [
-    { "type": "title",    "format": "╭─── {#94}System{#} ─────────────────────────────────────────────╮" },
+    { "type": "title",    "format": "╭─── {#94}System{#} ────────────────────────────────────────────╮" },
     { "type": "os",       "format": "{2}" },
     { "type": "shell",    "format": "{1}" },
     { "type": "terminal", "format": "{3}" },
@@ -45,15 +45,15 @@
     { "type": "cursor",   "format": "{1} ({2})" },
     { "type": "packages", "format": "{pacman} pacman, {flatpak-system} flatpak-system, {flatpak-user} flatpak-user" },
     { "type": "localip",  "format": "" },
-    { "type": "title",    "format": "├─── {#94}Hardware{#} ───────────────────────────────────────────┤" },
+    { "type": "title",    "format": "├─── {#94}Hardware{#} ──────────────────────────────────────────┤" },
     { "type": "display",  "format": "{6} {1}x{2}@{3}" },
     { "type": "host",     "format": "{2}" },
     { "type": "cpu",      "format": "{1}" },
     { "type": "gpu",      "format": "{1} {2}" },
-    { "type": "title",    "format": "├──── {#94}Memory{#} ────────────────────────────────────────────┤" },
+    { "type": "title",    "format": "├──── {#94}Memory{#} ───────────────────────────────────────────┤" },
     { "type": "memory",   "format": "{4} {1} / {2}" },
     { "type": "swap",   "format": "{4} {1} / {2}" },
     { "type": "disk",     "format": "{13} {1} / {2}" },
-    { "type": "title",    "format": "╰─── ≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻ ──────────────────────────────────────╯" },
+    { "type": "title",    "format": "╰─── ≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻ ─────────────────────────────────────╯" },
   ]
 }
