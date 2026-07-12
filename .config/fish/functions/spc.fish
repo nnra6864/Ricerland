@@ -24,7 +24,7 @@ function spc
 	set input_file_name (basename "$input_file")
 	set base_name (string replace -r '\.[^.]*$' '' (basename "$input_file"))
 	set extension (string match -r '\.[^.]*$' (basename "$input_file"))
-	set default_output "$base_name Remuxed$extension"
+	set default_output "$base_name.mkv"
 	set duration_seconds (ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$input_file")
 	set duration (printf "%02d:%02d:%09.6f" (math "floor($duration_seconds / 3600)") (math "floor($duration_seconds % 3600 / 60)") (math "$duration_seconds % 60"))
 
