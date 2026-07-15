@@ -88,10 +88,10 @@ function spc
 	read -P "End time (format: HH:MM:SS.MS, Default: $duration) - " end_time
 	set end_time (parse_time "$end_time" "$duration")
 
-	# Get the CQP quality
-	read -P "CQP(Default: 20) - " cqp_quality
-	if test -z "$cqp_quality"
-		set cqp_quality 20
+	# Get the CRF quality
+	read -P "CRF(Default: 30) - " crf
+	if test -z "$crf"
+		set crf 30
 	end
 
 	# Get the combine audio option
@@ -150,8 +150,8 @@ function spc
 
 	# Process the file with ffmpeg
 	ffmpeg -i "$input_file" -ss "$start_time" -to "$end_time" \
-	-c:v hevc_nvenc -preset p7 -profile:v main10 -rc vbr -cq "$cqp_quality" -b:v 0 \
-	-spatial_aq 1 -temporal_aq 1 -b_ref_mode middle -rc-lookahead 32 -multipass fullres \
+	-c:v libsvtav1 -preset 4 -crf "$crf" -pix_fmt yuv420p10le \
+	-svtav1-params tune=0:scd=1 \
 	$filter_args $map_args $codec_args $meta_args \
 	-metadata creation_time="$modified_date" \
 	"$output_file"
@@ -171,7 +171,7 @@ function spc
 	echo "Output:  '$output_file' ("(du -h "$output_file" | cut -f1)")"
 	echo "Start:   '$start_time'"
 	echo "End:     '$end_time'"
-	echo "Quality: '$cqp_quality'"
+	echo "CRF:     '$crf'"
 	echo ""
 
 	# Send the notification
