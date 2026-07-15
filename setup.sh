@@ -58,8 +58,6 @@ dev_packages=(
     "blender-bin"
     "curl"
     "git"
-    "godot"
-    "godot-mono"
     "kdenlive"
     "krita"
 )
