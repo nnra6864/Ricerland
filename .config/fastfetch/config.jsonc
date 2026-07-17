@@ -4,7 +4,7 @@
     "type": "command-raw",
     "source": "sh ~/.config/fastfetch/logo.sh",
     "padding": {
-      "top": 7,
+      "top": 5,
       "right": 3,
       "left": 3,
     }
@@ -47,7 +47,6 @@
     { "type": "localip",  "format": "" },
     { "type": "title",    "format": "├─── {#94}Hardware{#} ──────────────────────────────────────────┤" },
     { "type": "display",  "format": "{6} {1}x{2}@{3}" },
-    { "type": "host",     "format": "{2}" },
     { "type": "cpu",      "format": "{1}" },
     { "type": "gpu",      "format": "{1} {2}" },
     { "type": "title",    "format": "├──── {#94}Memory{#} ───────────────────────────────────────────┤" },
