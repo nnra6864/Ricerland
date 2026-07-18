@@ -1,0 +1,18 @@
+schema_version = "1.0.0"
+
+id = "Steam"
+version = "3.0.3"
+name = "Steam"
+tagline = "Inspired by the old Steam UI. "
+maintainer = "ArtinŌr <artinorr@gmail.com>"
+type = "theme"
+
+blender_version_min = "5.0.0"
+
+tags = ["Inspired By"]
+
+# License conforming to https://spdx.org/licenses/ (use "SPDX: prefix)
+# https://docs.blender.org/manual/en/dev/extensions/licenses.html
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
