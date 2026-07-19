@@ -118,7 +118,6 @@ M.theme = {
 
     qt = {
         platform_theme            = "qt6ct",
-        style                     = "breeze",
         quick_controls_style      = "org.kde.desktop",
         disable_window_decoration = 1,
         scaling                   = 1,
