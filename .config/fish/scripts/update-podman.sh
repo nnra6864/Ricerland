@@ -30,7 +30,8 @@ for dir in $dirs; do
     podman-compose pull
   fi
 
-  echo "    Starting..."
+  echo "    Restarting..."
+  podman-compose down
   podman-compose up -d
   cd - >/dev/null
 done
