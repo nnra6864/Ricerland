@@ -34,4 +34,7 @@ for dir in $dirs; do
   podman-compose down
   podman-compose up -d
   cd - >/dev/null
+
+  echo "    Pruning..."
+  podman system prune -a
 done
