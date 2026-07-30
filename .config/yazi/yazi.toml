@@ -34,6 +34,14 @@ open = [
     { run = "xdg-open %s", desc = "Open" },
 ]
 
+[open]
+prepend_rules = [
+    { mime = "text/*",  use = "edit" },
+    { mime = "image/*", use = "play" },
+    { mime = "video/*", use = "play" },
+    { mime = "audio/*", use = "play" },
+]
+
 [plugin]
 prepend_fetchers = [
     { group = "git", url = "*",  run = "git" },
