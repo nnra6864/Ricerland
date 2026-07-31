@@ -16,6 +16,7 @@ alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 alias tm='tmux new -As'
+alias ls='zl -la --dir-grouping=before --no-permissions --no-group'
 
 # Paths
 alias cfg='cd ~/.config/'
@@ -23,13 +24,6 @@ alias hypr='cd ~/.config/hypr/; nvim ./'
 alias fsh='cd ~/.config/fish/; nvim ./'
 alias nisu='cd ~/.config/Nisualizer/; nvim ./'
 alias ricer='cd ~/.config/Ricer/; nvim ./'
-
-# ls
-alias ls='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions'
-# Detailed ls
-alias lsd='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions -muU'
-# Link ls
-alias lsl='eza -lah --icons=always --no-quotes --group-directories-first --no-permissions --hyperlink'
 
 # Rices the system with the provided config
 function rice
