@@ -96,7 +96,7 @@ M.glow = {
 
 -- Motion Blur
 M.motion_blur = {
-    enabled = false,
+    enabled = true,
     samples = 7
 }
 
