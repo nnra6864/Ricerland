@@ -1,22 +1,29 @@
 #!/bin/bash
 
-# Fixes inconsistent logo width
-export LC_ALL=en_US.UTF-8
+# Ensure UTF-8 locale so wc -L uses wcwidth() for 0-width combining marks
+export LC_ALL=C.UTF-8
 
 # Make text not bold
-printf "\033[22m"
+printf '\033[22m'
+
+# Resolve logo path without subshells
+SCRIPT_DIR="${0%/*}"
+LOGO_FILE="${SCRIPT_DIR}/eastern_orthodox_logo"
+
+# Read logo into an array and get the width
+mapfile -t LOGO_LINES < "$LOGO_FILE"
+LOGO_WIDTH=$(wc -L < "$LOGO_FILE")
 
 # Variables
-LOGO="$(dirname "$0")/eastern_orthodox_logo"
-LOGO_WIDTH=$(wc -L < "$LOGO")
 COLOR_SYMBOL="፠፠፠"
-COLOR_WIDTH=$(($(printf $COLOR_SYMBOL | wc -m) * 8))
+COLOR_SYMBOL_WIDTH=$(wc -L <<< "$COLOR_SYMBOL")
+COLOR_WIDTH=$(( COLOR_SYMBOL_WIDTH * 8 ))
 
-# Padding
-if [ $LOGO_WIDTH -gt $COLOR_WIDTH ]; then
+# Padding calculation
+if (( LOGO_WIDTH > COLOR_WIDTH )); then
     LOGO_PADDING=0
     COLOR_PADDING=$(( (LOGO_WIDTH - COLOR_WIDTH) / 2 ))
-elif [ $COLOR_WIDTH -gt $LOGO_WIDTH ]; then
+elif (( COLOR_WIDTH > LOGO_WIDTH )); then
     LOGO_PADDING=$(( (COLOR_WIDTH - LOGO_WIDTH) / 2 ))
     COLOR_PADDING=0
 else
@@ -24,15 +31,19 @@ else
     COLOR_PADDING=0
 fi
 
-# Spaces
-LOGO_SPACES=$(printf "%*s" $LOGO_PADDING "")
-COLOR_SPACES=$(printf "%*s" $COLOR_PADDING "")
+# Padding string slicing (fastest way in Bash)
+PAD='                                                                                                                                '
+LOGO_SPACES=${PAD:0:LOGO_PADDING}
+COLOR_SPACES=${PAD:0:COLOR_PADDING}
 
-# Logo
-sed "s/^/$LOGO_SPACES/" "$LOGO"
-echo ""
+# Logo — single printf call
+printf '%s\n' "${LOGO_LINES[@]/#/$LOGO_SPACES}"
+printf '\n'
 
 # Regular colors
-echo -e "${COLOR_SPACES}\033[30m$COLOR_SYMBOL\033[31m$COLOR_SYMBOL\033[32m$COLOR_SYMBOL\033[33m$COLOR_SYMBOL\033[34m$COLOR_SYMBOL\033[35m$COLOR_SYMBOL\033[36m$COLOR_SYMBOL\033[37m$COLOR_SYMBOL\033[0m"
+printf '%s\033[30m%s\033[31m%s\033[32m%s\033[33m%s\033[34m%s\033[35m%s\033[36m%s\033[37m%s\033[0m\n' \
+    "$COLOR_SPACES" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL"
+
 # Bright colors
-echo -e "${COLOR_SPACES}\033[90m$COLOR_SYMBOL\033[91m$COLOR_SYMBOL\033[92m$COLOR_SYMBOL\033[93m$COLOR_SYMBOL\033[94m$COLOR_SYMBOL\033[95m$COLOR_SYMBOL\033[96m$COLOR_SYMBOL\033[97m$COLOR_SYMBOL\033[0m"
+printf '%s\033[90m%s\033[91m%s\033[92m%s\033[93m%s\033[94m%s\033[95m%s\033[96m%s\033[97m%s\033[0m\n' \
+    "$COLOR_SPACES" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL" "$COLOR_SYMBOL"
