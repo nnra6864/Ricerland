@@ -37,13 +37,38 @@ M.gaps = {
 M.border = {
     rounding       = 10,
     rounding_power = 2,
-    size           = 2,
+    size           = 0,
 
     -- Color
-    active_col   = { colors = { "#266F7F", "#A3C5CC" }, 90 },
-    inactive_col = { colors = { "#1E444C", "#899699" }, -90 }
+    active_col   = { colors = { "#267180", "#267180" } },
+    inactive_col = { colors = { "#1F665A", "#1F665A" } }
 }
 
+-- Shadow
+M.shadow = {
+    enabled = true,
+    sharp   = false,
+
+    range        = 10,
+    render_power = 4,
+    scale        = 1,
+
+    color          = "#267180",
+    color_inactive = "#1F665A",
+
+    offset = { 0, 0 }
+}
+
+-- Glow
+M.glow = {
+    enabled = true,
+
+    range        = 30,
+    render_power = 4,
+
+    color          = "#267180",
+    color_inactive = "#1F665A"
+}
 
 -- Blur
 M.blur = {
@@ -66,32 +91,6 @@ M.blur = {
     brightness        = 0.6,
     vibrancy          = 1,
     vibrancy_darkness = 0
-}
-
--- Shadow
-M.shadow = {
-    enabled = true,
-    sharp   = false,
-
-    range        = 4,
-    render_power = 3,
-    scale        = 1,
-
-    color          = "#000000",
-    color_inactive = "#000000",
-
-    offset = { 0, 0 }
-}
-
--- Glow
-M.glow = {
-    enabled = false,
-
-    range        = 10,
-    render_power = 3,
-
-    color          = "#000000",
-    color_inactive = "#000000"
 }
 
 -- Motion Blur
