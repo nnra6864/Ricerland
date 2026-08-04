@@ -37,6 +37,18 @@ for k, d in pairs(directional_keys) do
         hl.dsp.window.resize({ x = x, y = y, relative = true }), { repeating = true })
 end
 
+-- Toggle Tiled/Floating Focus
+hl.bind(defs.main_mod .. "+ CTRL + F", function()
+    local win = hl.get_active_window()
+    if not win then
+        hl.dsp.focus({last = true})
+        return
+    end
+
+    local floating = win.floating
+    hl.dispatch(hl.dsp.window.cycle_next({floating = not floating}))
+end)
+
 -- Focus Last/Urgent
 hl.bind(defs.main_mod .. "+ period", hl.dsp.focus({ last = true }))
 hl.bind(defs.main_mod .. "+ comma",  hl.dsp.focus({ urgent_or_last = true }))
