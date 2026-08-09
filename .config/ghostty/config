@@ -18,3 +18,6 @@ confirm-close-surface = false
 
 custom-shader-animation = true
 custom-shader = shaders/ghostty-cursor-shaders/cursor_warp.glsl
+
+# Conflicts with many common binds, such as ones in lazy git
+keybind = ctrl+enter=unbind
