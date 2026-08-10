@@ -37,7 +37,7 @@ M.gaps = {
 M.border = {
     rounding       = 10,
     rounding_power = 2,
-    size           = 0,
+    size           = 1,
 
     -- Color
     active_col   = { colors = { "#267180", "#267180" } },
