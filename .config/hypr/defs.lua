@@ -20,8 +20,8 @@ M.opacity = {
 
 -- Dimming
 M.dimming = {
-    modal    = true,
-    inactive = true,
+    modal    = false,
+    inactive = false,
     strength = 0.2,
     special  = 0.2,
     around   = 0.4
