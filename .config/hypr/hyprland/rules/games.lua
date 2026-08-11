@@ -8,6 +8,9 @@ hl.window_rule({ match = { class = "Beat Saber" },    tag = "+game" })
 -- R.E.P.O.
 hl.window_rule({ match = { class = "steam_app_3241660" }, tag = "+game" })
 
+-- The Forest
+hl.window_rule({ match = { class = "steam_app_242760" }, tag = "+game" })
+
 hl.window_rule({
     name            = "games",
     match           = { tag = "game" },
