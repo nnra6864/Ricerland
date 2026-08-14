@@ -4,7 +4,7 @@ local layers = {
     "vicinae",
     "hyprlauncher",
     "rofi",
-    "swaync-control-center"
+    "swaync-control-center",
 }
 
 for _, layer in ipairs(layers) do
@@ -21,7 +21,7 @@ end
 
 local no_anim = {
     "selection",
-    "hyprpicker"
+    "hyprpicker",
 }
 
 for _, layer in ipairs(no_anim) do
@@ -38,5 +38,24 @@ hl.layer_rule({
     match = {
         namespace = "notifications",
     },
-    animation = "slide top"
+    animation = "slide top",
 })
+
+-- GPU Screen Recorder
+local gsr = {
+    "gsr-ui",
+    "gsr-notify",
+}
+
+for _, layer in ipairs(gsr) do
+    hl.layer_rule({
+        match = {
+            namespace = layer
+        },
+        blur         = true,
+        xray         = true,
+        blur_popups  = true,
+        ignore_alpha = 0.4,
+        animation    = "fade",
+    })
+end
