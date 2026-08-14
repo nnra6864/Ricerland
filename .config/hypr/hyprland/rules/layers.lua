@@ -53,7 +53,6 @@ for _, layer in ipairs(gsr) do
             namespace = layer
         },
         blur         = true,
-        xray         = true,
         blur_popups  = true,
         ignore_alpha = 0.4,
         animation    = "fade",
