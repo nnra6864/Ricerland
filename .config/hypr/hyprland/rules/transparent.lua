@@ -17,7 +17,7 @@ hl.window_rule({
 })
 
 -- Broken Opaque (some apps behave weirdly when opaque if a transparent theme is used)
-hl.window_rule({ match = { class = "md.Obsidian"},        tag = "+broken_opaque" })
+hl.window_rule({ match = { class = "md.obsidian.Obsidian"}, tag = "+broken_opaque" })
 --hl.window_rule({ match = { class = "info.mumble.Mumble"}, tag = "broken_opaque" })
 
 hl.window_rule({
