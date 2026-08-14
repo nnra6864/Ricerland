@@ -154,6 +154,7 @@
 !/.config/mpd/mpd.conf
 
 # Misc
+~/.config/espanso/
 !/.config/glava/
 !/.config/mpv/
 !/.config/vicinae/
