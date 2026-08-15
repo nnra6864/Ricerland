@@ -6,7 +6,7 @@ set -e
 clear
 
 aur_helpers=("paru" "yay")
-pre_install=("git" "television" "ripgrep")
+pre_install=("git" "television" "ripgrep", "zvm", "podman")
 config_packages=(
     "bat"
     "brightnessctl"
@@ -161,6 +161,8 @@ echo "* ☦ Typikon ☦ *"
 echo "***************"
 space
 
+mkdir -p "$HOME/.local/bin"
+
 # Check if it's an Nvidia GPU
 lspci -nn | rg -iq "10de:"
 is_nvidia=$?
@@ -310,4 +312,19 @@ space
 echo "Installing ricing packages..."
 selected_ricing=$(multi_select "Select ricing packages" "$package_preview" "${ricing_packages[@]}")
 install_packages_and_dependencies "${selected_ricing[@]}"
+space
+
+echo "Installing zig..."
+zvm i master --zls
+space
+
+echo "Installing zlist..."
+cd "$HOME/Projects/Zig/zlist"
+zig build -Doptimize=ReleaseFast -Dtarget=native
+ln -sf "$HOME/Projects/Zig/zlist/zig-out/zl" "$HOME/.local/bin/zl"
+cd "$HOME"
+space
+
+echo "Installing Maple font..."
+"$HOME/Projects/Fonts/maple-font/build.sh"
 space
