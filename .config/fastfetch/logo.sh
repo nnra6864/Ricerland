@@ -15,7 +15,7 @@ mapfile -t LOGO_LINES < "$LOGO_FILE"
 LOGO_WIDTH=$(wc -L < "$LOGO_FILE")
 
 # Variables
-COLOR_SYMBOL="፠፠፠"
+COLOR_SYMBOL="🟍🟍🟍"
 COLOR_SYMBOL_WIDTH=$(wc -L <<< "$COLOR_SYMBOL")
 COLOR_WIDTH=$(( COLOR_SYMBOL_WIDTH * 8 ))
 
