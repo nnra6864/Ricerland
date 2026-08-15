@@ -63,8 +63,6 @@
 !/.config/Ricer/
 !/.config/Nisualizer/
 !/.config/fontconfig/
-!/.config/Fonts/
-/.config/Fonts/**/.uuid
 !/.config/oomox/
 
 # PROJECTS #
