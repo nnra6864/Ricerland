@@ -1,9 +1,9 @@
-font-family = Maple Mono NF CN
+font-family = Maple Mono Normal NFP
 font-family = Cascadia Code NF
 font-family = Adwaita Mono
-font-family-bold = Maple Mono NF CN
-font-family-italic = Maple Mono NF CN
-font-family-bold-italic = Maple Mono NF CN
+font-family-bold = Maple Mono Normal NFP
+font-family-italic = Maple Mono Normal NFP
+font-family-bold-italic = Maple Mono Normal NFP
 font-size = 13
 
 palette =  0 = 081D26

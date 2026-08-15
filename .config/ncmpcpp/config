@@ -4,7 +4,7 @@ song_window_title_format = ncmpcpp
 # General
 volume_change_step = 5
 user_interface     = alternative
-progressbar_look   = ⪼⫸⪼
+progressbar_look   = ፨፨፨
 
 # Visualizer
 visualizer_data_source = "/tmp/mpd.fifo"

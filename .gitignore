@@ -67,6 +67,19 @@
 /.config/Fonts/**/.uuid
 !/.config/oomox/
 
+# PROJECTS #
+!/Projects/
+/Projects/*
+
+# Zig
+!/Projects/Zig/
+/Projects/Zig/*
+!/Projects/Zig/zlist
+
+# Fonts
+!/Projects/Fonts/
+/Projects/Fonts/*
+!/Projects/Fonts/maple-font
 
 # APPLICATIONS #
 

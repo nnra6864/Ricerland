@@ -23,7 +23,7 @@ git pull --recurse
 
 ## Fonts
 
-- [Maple Mono NF CN](https://github.com/subframe7536/maple-font)
+- [Maple Mono Normal NFP](https://github.com/subframe7536/maple-font)
 - [Cascadia Code NF](https://github.com/microsoft/cascadia-code)
 - [Hurmit NF](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip)
 

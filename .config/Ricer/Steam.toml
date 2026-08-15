@@ -17,7 +17,7 @@ gtk_theme = "oomox-Ricer"
 nvim_theme = "nord"
 
 # Font
-font = "Maple Mono NF CN"
+font = "Maple Mono Normal NFP"
 font_fallback = "Cascadia Code NF"
 font_fallback_2 = "Adwaita Mono"
 min_font_size = 9

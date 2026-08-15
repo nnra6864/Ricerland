@@ -64,12 +64,12 @@
     "base_keymap": "JetBrains",
 
     //Font
-    "buffer_font_family": "Maple Mono NF CN",
+    "buffer_font_family": "Maple Mono Normal NFP",
     "buffer_font_size": 24,
     "buffer_font_weight": 400,
     "buffer_line_height": "comfortable",
 
-    "ui_font_family": "Maple Mono NF CN",
+    "ui_font_family": "Maple Mono Normal NFP",
     "ui_font_size": 24,
     "ui_font_weight": 400,
 

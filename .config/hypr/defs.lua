@@ -101,7 +101,7 @@ M.motion_blur = {
 
 -- Font
 M.font = {
-    family = "Maple Mono NF CN",
+    family = "Maple Mono Normal NFP",
     size   = 13
 }
 

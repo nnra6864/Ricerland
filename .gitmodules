@@ -13,3 +13,6 @@
 [submodule ".config/mpv/scripts/tachytome"]
 	path = .config/mpv/scripts/tachytome
 	url = ../../nnra6864/tachytome
+[submodule "Projects/Fonts/maple-font"]
+	path = Projects/Fonts/maple-font
+	url = ../../nnra6864/maple-font
