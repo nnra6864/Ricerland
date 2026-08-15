@@ -33,14 +33,6 @@
    },
    "favorites": [],
    "providers": {
-      "@marcjulian/store.raycast.obsidian": {
-         "preferences": {
-            "removeLatex": false,
-            "removeLinks": false,
-            "removeYAML": false,
-            "vaultPath": "/home/nn/Data/Obsidian/nn/"
-         }
-      },
       "@system7/store.vicinae.keepassxc": {
          "preferences": {
             "database": "/home/nn/Data/.Enenra/Keepass/nnra.kdbx",
