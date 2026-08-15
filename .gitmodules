@@ -16,3 +16,6 @@
 [submodule "Projects/Fonts/maple-font"]
 	path = Projects/Fonts/maple-font
 	url = ../../nnra6864/maple-font
+[submodule "Projects/Zig/zlist"]
+	path = Projects/Zig/zlist
+	url = ../../nnra6864/zlist
