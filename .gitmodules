@@ -13,9 +13,9 @@
 [submodule ".config/mpv/scripts/tachytome"]
 	path = .config/mpv/scripts/tachytome
 	url = ../../nnra6864/tachytome
-[submodule "Projects/Fonts/maple-font"]
-	path = Projects/Fonts/maple-font
+[submodule "Packages/zlist"]
+	path = Packages/zlist
+	url = ../../nnra6864-mirrors/zlist
+[submodule "Packages/maple-font"]
+	path = Packages/maple-font
 	url = ../../nnra6864/maple-font
-[submodule "Projects/Zig/zlist"]
-	path = Projects/Zig/zlist
-	url = ../../nnra6864/zlist

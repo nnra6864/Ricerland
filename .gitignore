@@ -65,19 +65,11 @@
 !/.config/fontconfig/
 !/.config/oomox/
 
-# PROJECTS #
-!/Projects/
-/Projects/*
-
-# Zig
-!/Projects/Zig/
-/Projects/Zig/*
-!/Projects/Zig/zlist
-
-# Fonts
-!/Projects/Fonts/
-/Projects/Fonts/*
-!/Projects/Fonts/maple-font
+# PACKAGES #
+!/Packages/
+/Packages/*
+!/Packages/zlist
+!/Packages/maple-font
 
 # APPLICATIONS #
 
