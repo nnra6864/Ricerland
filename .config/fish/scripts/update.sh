@@ -37,8 +37,14 @@ ya pkg upgrade
 # Update flatpak
 flatpak update -y
 
+# Update zlist
+pushd "$HOME/Packages/zlist"
+git pull
+zig build -Doptimize=ReleaseFast -Dtarget=native
+popd
+
 # Update fonts
-"$HOME/Projects/Fonts/maple-font/update.sh"
+"$HOME/Packages/maple-font/update.sh"
 
 # Clear the cache once again
 yes | paru -Scc
