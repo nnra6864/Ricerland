@@ -9,6 +9,6 @@ rules = [
 
 [icon]
 globs = [
-    { url = "*/", text = "◈" },
-    { url = "*",  text = "🞋" },
+    { url = "*/", text = "፨" },
+    { url = "*",  text = "፠" },
 ]
