@@ -38,6 +38,7 @@
   "modules": [
     { "type": "title",    "format": "╭─── {#94}System{#} ────────────────────────────────────────────╮" },
     { "type": "os",       "format": "{2}" },
+    { "type": "kernel",   "format": "{2}" },
     { "type": "shell",    "format": "{1}" },
     { "type": "terminal", "format": "{3}" },
     { "type": "wm",       "format": "{2}" },
@@ -52,7 +53,6 @@
     { "type": "gpu",      "format": "{1} {2}" },
     { "type": "title",    "format": "├──── {#94}Memory{#} ───────────────────────────────────────────┤" },
     { "type": "memory",   "format": "{4} {1} / {2}" },
-    { "type": "swap",   "format": "{4} {1} / {2}" },
     { "type": "disk",     "format": "{13} {1} / {2}" },
     { "type": "title",    "format": "╰─── ≺ {#94}{user-name}{#} ☦ {#94}{host-name}{#} ≻ ─────────────────────────────────────╯" },
   ]
