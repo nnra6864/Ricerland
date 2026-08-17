@@ -95,7 +95,7 @@ M.blur = {
 
 -- Motion Blur
 M.motion_blur = {
-    enabled = true,
+    enabled = false,
     samples = 7
 }
 
