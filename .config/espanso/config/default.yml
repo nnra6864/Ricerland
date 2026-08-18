@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/config.schema.json
+
+# --- Toggle key
+
+# Customize the key used to disable and enable espanso (when double tapped)
+# Available options: CTRL, SHIFT, ALT, CMD, OFF
+# You can also specify the key variant, such as LEFT_CTRL, RIGHT_SHIFT, etc...
+toggle_key: ALT
+
+show_notifications: false

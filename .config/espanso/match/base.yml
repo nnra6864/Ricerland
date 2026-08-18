@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/espanso/espanso/dev/schemas/match.schema.json
+
+matches:
+  - trigger: ";dj"
+    replace: "đ"
+  - trigger: ";DJ"
+    replace: "Đ"
+
+  - trigger: ";zh"
+    replace: "ž"
+  - trigger: ";ZH"
+    replace: "Ž"
+
+  - trigger: ";cj"
+    replace: "ć"
+  - trigger: ";CJ"
+    replace: "Ć"
+
+  - trigger: ";ch"
+    replace: "č"
+  - trigger: ";CH"
+    replace: "Č"
+
+  - trigger: ";dz"
+    replace: "dž"
+  - trigger: ";DZ"
+    replace: "DŽ"
+
+  - trigger: ";sh"
+    replace: "š"
+  - trigger: ";SH"
+    replace: "Š"
+
+  - trigger: ";date"
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: date
+        params:
+          format: "%m-%d-%Y"
+
+  - trigger: ";time"
+    replace: "{{time}}"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%H-%M-%S"
+
+  - trigger: ";dt"
+    replace: "{{time}}"
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%m-%d-%Y %H-%M-%S"
