@@ -84,13 +84,73 @@ M.blur = {
     new_optimizations = true,
     xray              = true,
 
+    variant           = "frost",
     size              = 20,
     passes            = 4,
     noise             = 0.02,
     contrast          = 1,
     brightness        = 0.6,
     vibrancy          = 1,
-    vibrancy_darkness = 0
+    vibrancy_darkness = 0,
+
+    glass = {
+        refraction = 20,
+        size       = 50,
+        roughness  = 0.75,
+    },
+
+    ripple = {
+        strength = 32,
+        radius   = 400,
+        width    = 64,
+        duration = 0.45,
+    },
+
+    drops = {
+        speed = 3,
+    },
+
+    water = {
+        strength = 32,
+        radius   = 10,
+        speed    = 0.76,
+        damping  = 0.95,
+        duration = 12,
+    },
+
+    fluid_jar = {
+        color       = "#1F5A66CC",
+        speed       = 5,
+        fill_amount = 0.5,
+        mass        = 5.4,
+        precision   = 1,
+        turbulence  = 1.2,
+        distortion  = 8,
+    },
+
+    heat_shimmer = {
+        speed = 1,
+    },
+
+    acrylic = {
+        refraction = 24,
+        bulb       = 48,
+        clarity    = 0.05,
+        aberration = 0.025,
+        tint       = "#EEF5FF14",
+    },
+
+    aurora = {
+        speed     = 1,
+        intensity = 1,
+        color1    = "#268071AA",
+        color2    = "#4D1F66AA",
+    },
+
+    haze = {
+        intensity   = 1,
+        iridescence = 1,
+    },
 }
 
 -- Motion Blur
