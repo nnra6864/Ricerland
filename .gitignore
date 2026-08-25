@@ -104,6 +104,7 @@
 !/.config/fish/fish_plugins
 
 # CLI
+!/.config/zlist/
 !/.config/eza/
 !/.config/tmux/
 !/.config/oh-my-posh/

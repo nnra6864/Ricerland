@@ -15,7 +15,7 @@
 	url = ../../nnra6864/tachytome
 [submodule "Packages/zlist"]
 	path = Packages/zlist
-	url = ../../nnra6864/zlist
+	url = ../../nnra6864-mirrors/zlist
 [submodule "Packages/maple-font"]
 	path = Packages/maple-font
 	url = ../../nnra6864/maple-font

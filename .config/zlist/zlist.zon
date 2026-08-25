@@ -1,0 +1,10 @@
+.{
+    .icons = .{
+        .dir = "፨ ",
+        .file = "፠ ",
+    },
+    .colors = .{
+        .dir = "bright_blue",
+        .file = "bright_cyan",
+    },
+}
