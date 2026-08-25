@@ -2,9 +2,15 @@
     .icons = .{
         .dir = "፨ ",
         .file = "፠ ",
+        .by_ext = .{
+            .{ .ext = "", .icon = "፠" },
+        },
     },
     .colors = .{
         .dir = "bright_blue",
         .file = "bright_cyan",
+        .by_ext = .{
+            .{ .ext = "", .color = "bright_cyan" },
+        },
     },
 }

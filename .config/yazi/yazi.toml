@@ -58,7 +58,7 @@ prepend_previewers = [
     { url = "*.tar*",               run = 'piper --format=url -- tar tf "$1"' },
     { url = "*.csv",                run = 'piper -- bat -p --color=always "$1"' },
     { url = "*.md",                 run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
-    { url = "*/",                   run = 'piper -- zl --color=always -r -L=3 --dir-grouping=before --root-display=none "$1"' },
+    { url = "*/",                   run = 'piper -- zl -C ~/.config/zlist/zlist.zon --color=always -r -L=3 --dir-grouping=before --root-display=none "$1"' },
     { mime = "application/sqlite3", run = 'piper -- sqlite3 "$1" ".schema --indent"' }
 ]
 
