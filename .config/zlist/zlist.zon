@@ -3,7 +3,7 @@
         .dir = "፨ ",
         .file = "፠ ",
         .by_ext = .{
-            .{ .ext = "", .icon = "፠" },
+            .{ .ext = "", .icon = "፠ " },
         },
     },
     .colors = .{
@@ -13,4 +13,6 @@
             .{ .ext = "", .color = "bright_cyan" },
         },
     },
+    .inherit_symlink = true,
+    .inherit_dir_symlink = true,
 }
