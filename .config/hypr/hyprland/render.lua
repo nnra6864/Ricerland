@@ -3,7 +3,7 @@ hl.config({
         -- Sends frames directly to the GPU instead of Hyprland
         -- Reduces latency but can introduce issues
         -- 0 - off, 1 - on, 2 - auto (on with content type ‘game’)
-        direct_scanout = 0,
+        direct_scanout = 1,
         -- Fixes issues with motion blur, wobble etc. when bit depth 10 is used
         use_fp16 = 1,
     }

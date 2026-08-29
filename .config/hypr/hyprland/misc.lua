@@ -14,7 +14,7 @@ hl.config({
         animate_manual_resizes       = defs.animations.animate_manual_resizes,
         animate_mouse_windowdragging = defs.animations.animate_mouse_windowdragging,
 
-        vrr                        = false,
+        vrr                        = 0,
         focus_on_activate          = false,
         session_lock_xray          = false,
         close_special_on_empty     = false,
