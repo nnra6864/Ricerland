@@ -5,20 +5,20 @@ hl.bind("SUPER + F1", function ()
         hl.exec_cmd("hyprctl reload")
         return
     end
-    
+
     hl.config({
         general = {
-            gaps_in = 0, gaps_out = 0, -- Disable gaps  
+            gaps_in = 0, gaps_out = 0,
             border_size = 0,
         },
 
         animations = {
-            enabled = false, -- Disable animations
+            enabled = false,
         },
-        
-        -- Disable blur, shadow and window rounding
+
         decoration = {
             shadow = { enabled = false },
+            glow = { enabled = false },
             blur = { enabled = false },
             rounding = 0,
         }
