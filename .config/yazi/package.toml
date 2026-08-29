@@ -75,8 +75,8 @@ hash = "dee1ba1aa0085616b90022b1f2fafc50"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "c1a8cb6"
-hash = "57056b9728006881d580ccabe8154a9c"
+rev = "ec94d9a"
+hash = "4b546f609ab8630a083cecf9ab5091d2"
 
 [[plugin.deps]]
 use = "cap153/tv"
