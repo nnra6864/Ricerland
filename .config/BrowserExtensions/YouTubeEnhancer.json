@@ -51,12 +51,12 @@
 		"customcolors":
 		{
 			"--main-color":"#B7DCE5",
-			"--main-background":"#081D26",
-			"--second-background":"#081D26",
-			"--hover-background":"#0C2E3F",
+			"--main-background":"#041C26",
+			"--second-background":"#041C26",
+			"--hover-background":"#082E3F",
 			"--main-text":"#A3C5CC",
 			"--dimmer-text":"#849FA5",
-			"--shadow":"#081D26"
+			"--shadow":"#041C26"
 		},
 		"customcssrules":"",
 		"customscript":"",

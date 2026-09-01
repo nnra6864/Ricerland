@@ -3,7 +3,7 @@
 /* center line thickness (pixels) */
 #define C_LINE 5
 /* outline color */
-#define OUTLINE #266F7F
+#define OUTLINE #2D8699
 /* number of bars (use even values for best results) */
 #define NBARS 1024
 /* width (in pixels) of each bar*/

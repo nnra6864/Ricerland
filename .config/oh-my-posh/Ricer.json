@@ -5,7 +5,7 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#1F5A66",
+          "background": "#267180",
           "foreground": "#A3C5CC",
           "properties": {
           "time_format": "15:04:05"
@@ -17,7 +17,7 @@
           "type": "time"
         },
         {
-          "background": "#266F7F",
+          "background": "#2D8699",
           "foreground": "#A3C5CC",
           "style": "diamond",
           "template": " {{ .Icon }}  ",
@@ -27,13 +27,13 @@
         {
           "type": "session",
           "style": "diamond",
-          "background": "#266F7F",
-          "foreground": "{{ if .Root }}#661F1F{{ else }}#A3C5CC{{ end }}",
+          "background": "#2D8699",
+          "foreground": "{{ if .Root }}#80333C{{ else }}#A3C5CC{{ end }}",
           "trailing_diamond": "",
           "template": "{{ if .SSHSession }} {{ end }}{{ .UserName }} ☦ {{ .HostName }} "
         },
         {
-          "background": "#2D8699",
+          "background": "#359DB2",
           "foreground": "#A3C5CC",
           "properties": {
             "folder_icon": " ",
@@ -49,12 +49,12 @@
           "type": "path"
         },
         {
-          "background": "#359DB2",
+          "background": "#3DB4CB",
           "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#1F665A{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#4D1F66{{ end }}",
-            "{{ if gt .Ahead 0 }}#1F6628{{ end }}",
-            "{{ if gt .Behind 0 }}#66661F{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#268078{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#436496{{ end }}",
+            "{{ if gt .Ahead 0 }}#338051{{ end }}",
+            "{{ if gt .Behind 0 }}#806633{{ end }}"
           ],
           "foreground": "#A3C5CC",
           "powerline_symbol": "",
