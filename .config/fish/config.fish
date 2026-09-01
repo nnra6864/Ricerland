@@ -16,7 +16,7 @@ alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 alias tm='tmux new -As'
-alias ls='zl -la --dir-grouping=before --no-permissions --no-group'
+alias ls='zl -la --dir-grouping=before --no-permissions --no-group -C ~/.config/zlist/zlist.zon'
 
 # Paths
 alias cfg='cd ~/.config/'

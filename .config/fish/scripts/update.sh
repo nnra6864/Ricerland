@@ -39,8 +39,8 @@ flatpak update -y
 
 # Update zlist
 pushd "$HOME/Packages/zlist"
-git pull
-zig build -Doptimize=ReleaseFast -Dtarget=native
+git pull --recurse
+zig build -Doptimize=ReleaseFast
 popd
 
 # Update fonts
