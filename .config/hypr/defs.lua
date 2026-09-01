@@ -40,8 +40,8 @@ M.border = {
     size           = 1,
 
     -- Color
-    active_col   = { colors = { "#267180", "#267180" } },
-    inactive_col = { colors = { "#1F665A", "#1F665A" } }
+    active_col   = { colors = { "#2E8799", "#2E8799" } },
+    inactive_col = { colors = { "#2E9990", "#2E9990" } }
 }
 
 -- Shadow
@@ -53,8 +53,8 @@ M.shadow = {
     render_power = 4,
     scale        = 1,
 
-    color          = "#267180",
-    color_inactive = "#1F665A",
+    color          = "#2E8799",
+    color_inactive = "#2E9990",
 
     offset = { 0, 0 }
 }
@@ -66,8 +66,8 @@ M.glow = {
     range        = 30,
     render_power = 4,
 
-    color          = "#267180",
-    color_inactive = "#1F665A"
+    color          = "#2E8799",
+    color_inactive = "#2E9990"
 }
 
 -- Blur
@@ -143,7 +143,7 @@ M.blur = {
     aurora = {
         speed     = 1,
         intensity = 1,
-        color1    = "#268071AA",
+        color1    = "#2E8799AA",
         color2    = "#4D1F66AA",
     },
 
