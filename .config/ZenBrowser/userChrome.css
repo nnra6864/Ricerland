@@ -164,13 +164,13 @@ vbox.zen-workspace-tabs-section.zen-current-workspace-indicator {
   }
 
   .identity-color-yellow {
-    --identity-tab-color: #806633FF !important;   /* Sets tab color to yellow */
-    --identity-icon-color: #806633FF !important;    /* Sets icon color to yellow */
+    --identity-tab-color: #668033FF !important;   /* Sets tab color to yellow */
+    --identity-icon-color: #668033FF !important;    /* Sets icon color to yellow */
   }
 
   .identity-color-orange {
-    --identity-tab-color: #997A3DFF !important; /* Sets tab color to a bright yellow/orange */
-    --identity-icon-color: #997A3DFF !important;  /* Sets icon color to a bright yellow/orange */
+    --identity-tab-color: #7A993DFF !important; /* Sets tab color to a bright yellow/orange */
+    --identity-icon-color: #7A993DFF !important;  /* Sets icon color to a bright yellow/orange */
   }
 
   .identity-color-red {

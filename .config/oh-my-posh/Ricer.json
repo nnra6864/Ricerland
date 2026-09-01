@@ -54,7 +54,7 @@
             "{{ if or (.Working.Changed) (.Staging.Changed) }}#268078{{ end }}",
             "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#436496{{ end }}",
             "{{ if gt .Ahead 0 }}#338051{{ end }}",
-            "{{ if gt .Behind 0 }}#806633{{ end }}"
+            "{{ if gt .Behind 0 }}#668033{{ end }}"
           ],
           "foreground": "#A3C5CC",
           "powerline_symbol": "",

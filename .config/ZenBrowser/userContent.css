@@ -113,13 +113,13 @@
     }
 
     .identity-color-yellow {
-      --identity-tab-color: #806633FF !important;  /* Identity tab color remains yellow */
-      --identity-icon-color: #806633FF !important;   /* Identity icon color remains yellow */
+      --identity-tab-color: #668033FF !important;  /* Identity tab color remains yellow */
+      --identity-icon-color: #668033FF !important;   /* Identity icon color remains yellow */
     }
 
     .identity-color-orange {
-      --identity-tab-color: #997A3DFF !important;  /* Identity tab color remains bright yellow/orange */
-      --identity-icon-color: #997A3DFF !important;   /* Identity icon color remains bright yellow/orange */
+      --identity-tab-color: #7A993DFF !important;  /* Identity tab color remains bright yellow/orange */
+      --identity-icon-color: #7A993DFF !important;   /* Identity icon color remains bright yellow/orange */
     }
 
     .identity-color-red {
@@ -158,7 +158,7 @@
       --zen-primary-color: #041C2680 !important;  /* Primary color for protections set to background */
       --social-color: #436496FF !important;  /* Color for social-related indicators */
       --coockie-color: #268078FF !important;  /* Color for cookie-related elements */
-      --fingerprinter-color: #806633FF !important;  /* Color for fingerprinting alerts */
+      --fingerprinter-color: #668033FF !important;  /* Color for fingerprinting alerts */
       --cryptominer-color: #B7DCE5FF !important;  /* Cryptominer alert color updated from br_blue */
       --tracker-color: #338051FF !important;  /* Tracker indicator color remains green */
       --in-content-primary-button-background-hover: #082E3F80 !important;  /* Hover background for primary buttons */

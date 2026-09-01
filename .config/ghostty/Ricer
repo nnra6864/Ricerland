@@ -9,7 +9,7 @@ font-size = 13
 palette =  0 = 041C26
 palette =  1 = 80333C
 palette =  2 = 338051
-palette =  3 = 806633
+palette =  3 = 668033
 palette =  4 = 267180
 palette =  5 = 436496
 palette =  6 = 268078
@@ -17,7 +17,7 @@ palette =  7 = A3C5CC
 palette =  8 = 082E3F
 palette =  9 = 993D49
 palette = 10 = 3D9961
-palette = 11 = 997A3D
+palette = 11 = 7A993D
 palette = 12 = 2D8699
 palette = 13 = 4D74AF
 palette = 14 = 2D998F
