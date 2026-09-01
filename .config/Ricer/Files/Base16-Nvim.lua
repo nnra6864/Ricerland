@@ -1,0 +1,20 @@
+return {
+  transparent = true,
+
+  base00 = '#ricer.col.background',
+  base01 = '#ricer.col.background_highlight',
+  base02 = '#ricer.col.background_alt',
+  base03 = '#ricer.col.code_comment',
+  base04 = '#ricer.col.foreground_inactive',
+  base05 = '#ricer.col.foreground',
+  base06 = '#ricer.col.foreground_highlight',
+  base07 = '#ricer.col.br_white',
+  base08 = '#ricer.col.br_red',
+  base09 = '#ricer.col.code_const',
+  base0A = '#ricer.col.br_yellow',
+  base0B = '#ricer.col.code_str',
+  base0C = '#ricer.col.br_cyan',
+  base0D = '#ricer.col.br_blue',
+  base0E = '#ricer.col.br_magenta',
+  base0F = '#ricer.col.code_special_char',
+}

@@ -14,7 +14,6 @@ bg = "~/.config/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jpg"
 icons = "Ricer"
 cursor = "Bibata-Modern-Ice"
 gtk_theme = "oomox-Ricer"
-nvim_theme = "nord"
 
 # Font
 font = "Maple Mono Normal NFP"
@@ -51,6 +50,7 @@ animationEasing = "expoOut"
 cursor_size = 24
 cursor_rot = 21
 notification_duration = 3
+transparent_nvim = true
 
 # Color Values
 highlight_hsv = "h+0.s+0.v+10"
@@ -62,12 +62,12 @@ prompt_bg_hsv_delta = "v+10"
 [Colors]
 # Terminal
 black = "081D2680"
-red = "661F1FFF"
-green = "1F6628FF"
-yellow = "66661FFF"
-blue = "1F5A66FF"
-magenta = "4D1F66FF"
-cyan = "1F665AFF"
+red = "802626FF"
+green = "268032FF"
+yellow = "808026"
+blue = "267180"
+magenta = "602680"
+cyan = "268071"
 white = "A3C5CCFF"
 
 # Terminal Bright
@@ -182,7 +182,7 @@ visualizer_outline = "$cyan"
 [Files]
 oh-my-posh = ["~/.config/oh-my-posh/Ricer.json", "hex"]
 Alacritty = "~/.config/alacritty.toml"
-NvimTheme = "~/.config/nvim/lua/theme.lua"
+Base16-Nvim = "~/.config/nvim/lua/theme.lua"
 Lualine = "~/.config/nvim/lua/transparent_lualine.lua"
 Vicinae = ["~/.local/share/vicinae/themes/Ricer.toml", "hex"]
 RofiConfig = ["~/.config/rofi/config.rasi", "hexa"]
