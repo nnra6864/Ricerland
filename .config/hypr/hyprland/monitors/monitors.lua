@@ -1,8 +1,11 @@
+local resolution = require("hyprland.monitors.resolution")
+
+local r = resolution.get("")
 hl.monitor({
     output   = "",
-    mode     = "highres@highrr",
-    position = "0x0",
-    scale    = 1,
+    mode     = r.mode,
+    position = r.position,
+    scale    = r.scale,
 
     bitdepth            = 10,
     supports_wide_color = true,

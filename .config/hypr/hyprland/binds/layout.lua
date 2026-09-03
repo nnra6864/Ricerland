@@ -1,4 +1,9 @@
-local defs = require("defs")
+local defs       = require("defs")
+local resolution = require("hyprland.monitors.resolution")
+
+-- Resolution
+hl.bind(defs.main_mod .. "+ bracketright", function() resolution.next() end)
+hl.bind(defs.main_mod .. "+ bracketleft",  function() resolution.prev() end)
 
 -- Window
 hl.bind(defs.main_mod .. "+ F",         hl.dsp.window.fullscreen("fullscreen"))
@@ -21,13 +26,13 @@ local directional_keys = {
 
 for k, d in pairs(directional_keys) do
     -- Focus
-    hl.bind(defs.main_mod .. "+" ..k, hl.dsp.focus({ direction = d }))
+    hl.bind(defs.main_mod .. "+" .. k, hl.dsp.focus({ direction = d }))
 
     -- Move
-    hl.bind(defs.main_mod .. "+ ALT +"..k, hl.dsp.window.move({ direction = d }))
+    hl.bind(defs.main_mod .. "+ ALT +".. k, hl.dsp.window.move({ direction = d }))
 
     -- Swap
-    hl.bind(defs.main_mod .. "+ SHIFT +"..k, hl.dsp.window.swap({ direction = d }))
+    hl.bind(defs.main_mod .. "+ SHIFT +".. k, hl.dsp.window.swap({ direction = d }))
 
     -- Resize
     local x, y = 0, 0
