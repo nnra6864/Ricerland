@@ -6,6 +6,7 @@ hl.window_rule({ match = { class = "hl_linux" },            tag = "+game" })
 hl.window_rule({ match = { class = "osu! # Osu" },          tag = "+game" })
 hl.window_rule({ match = { class = "Beat Saber" },          tag = "+game" })
 hl.window_rule({ match = { class = "org.vinegarhq.Sober" }, tag = "+game" })
+hl.window_rule({ match = { class = "steam_app_322170" }, tag = "+game" })
 
 -- R.E.P.O.
 hl.window_rule({ match = { class = "steam_app_3241660" }, tag = "+game" })
