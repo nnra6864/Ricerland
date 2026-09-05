@@ -121,3 +121,4 @@ x-scheme-handler/terminal=xdg-terminal-exec
 x-scheme-handler/tonsite=org.telegram.desktop.desktop
 x-scheme-handler/unknown=zen.desktop
 x-scheme-handler/viber=zen.desktop
+x-scheme-handler/unityhub=unityhub.desktop
