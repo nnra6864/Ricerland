@@ -39,8 +39,8 @@ for key, value in pairs(profile) do
         key, value, GSR_CONFIG
     ))
 end
-table.insert(cmds, "gsr-ui-cli reload-config")
-table.insert(cmds, "gsr-ui-cli toggle-replay")
+table.insert(cmds, "sleep 1 && gsr-ui-cli reload-config")
+table.insert(cmds, "sleep 1 && gsr-ui-cli toggle-replay")
 
 hl.exec_cmd(table.concat(cmds, " && "))
 
