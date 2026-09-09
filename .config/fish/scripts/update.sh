@@ -50,7 +50,7 @@ popd
 tv update-channels
 
 # Clear the cache once again
-paru -Scc
+yes | paru -Scc
 
 # Notify the user system has been updated
 if [ -n "$DISPLAY" ] || [ -n "$WAYLAND_DISPLAY" ]; then
