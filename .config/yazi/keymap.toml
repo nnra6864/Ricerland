@@ -10,7 +10,7 @@ prepend_keymap = [
     { on = "z",     run = "plugin tv zoxide-yazi", desc = "Jump to a directory using zoxide" },
     { on = "Z",     run = "plugin tv dirs",        desc = "Jump to a directory via television" },
     { on = "<C-f>", run = "plugin tv",             desc = "Jump to a file via television" },
-    { on = "<C-t>", run = "plugin tv text",        desc = "Jump to a file via television" },
+    { on = "<C-t>", run = "plugin tv text",        desc = "Jump and edit a text file" },
 
     # Clipboard copy-paste
     { on = "y", run = "plugin ucp copy",  desc = "Copy" },
