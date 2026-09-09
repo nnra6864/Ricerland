@@ -54,13 +54,19 @@ function M:entry(job)
 		local line = f:read("*all"):gsub("[\r\n]+$", "")
 		f:close()
 		os.remove(tmp_file)
-
+	
 		if line ~= "" then
 			local target = Url(line)
 			if not target.is_absolute then
 				target = Url(cwd):join(line)
 			end
-			ya.emit("reveal", { target })
+	
+			local cha = fs.cha(target)
+			if cha and cha.is_dir then
+				ya.emit("cd", { target })
+			else
+				ya.emit("reveal", { target })
+			end
 		end
 	end
 end
