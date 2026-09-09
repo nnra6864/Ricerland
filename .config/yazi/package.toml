@@ -20,47 +20,47 @@ hash = "4761fffb60a12d37096c34a356380cdf"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "7a4b4237223aaa94e589d1c01a23542a"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "b95f898e6dc60b52edbc415952e14395"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "853240b2454c93a93fd03fc9fd7e06e8"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "5bb0bfab901d3601c370eafdd66edd31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "45a533508a9840cc5a10cf6129f63e6a"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:zoom"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "e8e279463ee99c940e6945a14cf4aa9e"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "87472b05a8c420100f6a2b9cde1e7746"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "c591a36"
+rev = "4dc7f1b"
 hash = "14558d2829c0aa05e99c57de8f74d199"
 
 [[plugin.deps]]
@@ -75,8 +75,8 @@ hash = "dee1ba1aa0085616b90022b1f2fafc50"
 
 [[plugin.deps]]
 use = "pirafrank/what-size"
-rev = "ec94d9a"
-hash = "4b546f609ab8630a083cecf9ab5091d2"
+rev = "1cb456f"
+hash = "7699acf73a1079f8a4afef5cec84ce73"
 
 [[plugin.deps]]
 use = "cap153/tv"

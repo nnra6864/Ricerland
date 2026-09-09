@@ -1,5 +1,7 @@
 # what-size.yazi
 
+[![CI](https://github.com/pirafrank/what-size.yazi/actions/workflows/ci.yml/badge.svg)](https://github.com/pirafrank/what-size.yazi/actions/workflows/ci.yml)
+
 A plugin for [yazi](https://github.com/sxyazi/yazi) to calculate the size of the current selection or the current working directory (if no selection is made).
 
 ## Compatibility
@@ -26,17 +28,21 @@ In an effort to make things easy, I keep `compatibility/yazi-x.y.z` branches wit
 
 Please notice that `nightly` releses may work but are not explicitly supported.
 
-## Requirements
+## Minimum Yazi version
+
+You can check the current minimum required Yazi version [at the beginning of the `main.lua` file](https://github.com/pirafrank/what-size.yazi/blob/main/main.lua#L1), as per [Yazi guidelines](https://yazi-rs.github.io/docs/plugins/overview/#@since).
+
+## Additional Requirements
+
+### On Yazi's version 25.5.28 or newer
+
+- No requirement
 
 ### Before Yazi's version 25.5.28
 
 - Use this commit: [Old version](https://github.com/pirafrank/what-size.yazi/commit/d8966568f2a80394bf1f9a1ace6708ddd4cc8154)
 - `du` on Linux and macOS
 - PowerShell on Windows
-
-### On Yazi's version 25.5.28 or newer
-
-- No requirement
 
 ## Installation
 
@@ -101,13 +107,45 @@ If you have any feedback, suggestions, or ideas please let me know by opening an
 
 Check the debug config [here](https://yazi-rs.github.io/docs/plugins/overview/#debugging).
 
-To get debug logs while develoing use `ya.dbg()` in your code, then set the `YAZI_LOG` environment variable to `debug` before running Yazi.
+To get debug logs while developing use `ya.dbg()` in your code, then set the `YAZI_LOG` environment variable to `debug` before running Yazi.
 
 ```sh
 YAZI_LOG=debug yazi
 ```
 
 Logs will be saved to `~.local/state/yazi/yazi.log` file.
+
+### Requirements
+
+Install these tools before running the development recipes:
+
+- `just` for the repository commands
+- Bash 5 or newer for the e2e testing
+- Lua 5.4 for syntax checks
+- `luacheck` for static Lua analysis; LuaRocks is useful for installing it
+- `stylua` for Lua formatting; install it with `just setup-stylua`
+- [poof](https://poof.fpira.com/) for Yazi and StyLua installation and version selection
+- `tmux` for the real TUI compatibility test
+- `git`, `curl`, `realpath`, `head`, `grep`, `find`, `date`, and `tar` for tests and diagnostics
+
+The active `yazi` and `ya` executables must be available in `PATH` and must report the same version. Use poof to select them before running `just test`:
+
+```sh
+poof use sxyazi/yazi 26.9.1
+```
+
+### justfile
+
+The repository includes a `justfile` with shortcuts for common development tasks:
+
+```sh
+just test           # Run the Yazi compatibility suite with shell tracing
+just fmt            # Format main.lua with StyLua
+just check          # Check Lua syntax
+just lint           # Run Luacheck
+just better         # Run Lua checks and format the source
+just setup-stylua   # Install StyLua through poof
+```
 
 ### Plugin definition
 
@@ -119,9 +157,58 @@ ya pkg add yazi-rs/plugins:types
 
 as per the [docs](https://github.com/yazi-rs/plugins/tree/main/types.yazi).
 
+### Runtime compatibility tests
+
+The *compatibility test setup* requires [poof](https://poof.fpira.com/) to be installed locally. You should run `poof use sxyazi/yazi <version>` before starting the tests.
+
+The test setup checks out the plugin at the current commit.
+
+```sh
+# If you want to install any Yazi, different from the one in your PATH, you can do it with poof:
+poof install sxyazi/yazi -t v25.5.31
+# Note v25.5.31 is the tag on the Yazi repo. Once installed, you can switch to it with:
+# Then the tests use the active yazi/ya pair by default:
+tests/e2e/run.sh
+
+# Set YAZI_VERSION when strict validation is desired:
+YAZI_VERSION=26.9.1 tests/e2e/run.sh
+```
+
+With poof, you can easily install multiple versions side by side and switch the active `yazi`/`ya` pair. For example:
+
+```sh
+poof install sxyazi/yazi -t nightly
+poof use sxyazi/yazi 25.5.31
+tests/e2e/run.sh
+
+poof use sxyazi/yazi nightly
+tests/e2e/run.sh
+```
+
+By default, the test setup uses whichever `yazi` and `ya` versions are active in `PATH`. Set `YAZI_VERSION=26.9.1` or `YAZI_VERSION=nightly` when you want strict validation against the selected version.
+
+Under the hood, the tests run a real Yazi TUI in a tmux pseudo-terminal. The test setup is designed to be isolated and deterministic:
+
+- The test setup sets isolated `HOME`, `XDG_CONFIG_HOME`, `XDG_STATE_HOME`, and `XDG_CACHE_HOME` for Yazi only
+- It uses a deterministic 4096-byte fixture
+- `yazi` and `ya` are resolved from PATH; their binaries remain available
+- Yazi's state/config/logs are written under the temporary test directory
+
+When running locally:
+
+- `tests/e2e/ensure-poof.sh` keeps poof installed in the local user environment
+- Set `YAZI_VERSION` when you want the test setup to reject a different installed version
+
+When running on GitHub Actions:
+
+- GitHub Actions installs one version per matrix job using the Setup poof Marketplace action
+- On failure it writes diagnostics containing rendered terminal captures, Yazi logs, versions, configuration, and sanitized environment metadata; GitHub Actions compresses these into the retained diagnostic archive.
+
 ## Contributing
 
 Contributions are welcome. Please fork the repository and submit a PR.
+
+The Lua formatter MUST be run before submitting changes that touch Lua files. You can run it with: `just fmt`.
 
 ## License
 
