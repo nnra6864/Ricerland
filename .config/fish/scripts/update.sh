@@ -46,8 +46,11 @@ popd
 # Update fonts
 "$HOME/Packages/maple-font/update.sh"
 
+# Update television channels
+tv update-channels
+
 # Clear the cache once again
-yes | paru -Scc
+paru -Scc
 
 # Notify the user system has been updated
 if [ -n "$DISPLAY" ] || [ -n "$WAYLAND_DISPLAY" ]; then
