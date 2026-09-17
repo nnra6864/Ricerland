@@ -63,7 +63,7 @@ M.shadow = {
 M.glow = {
     enabled = true,
 
-    range        = 30,
+    range        = 20,
     render_power = 4,
 
     color          = "#2E8799",
