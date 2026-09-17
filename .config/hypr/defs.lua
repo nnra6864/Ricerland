@@ -95,8 +95,8 @@ M.blur = {
 
     glass = {
         refraction = 20,
-        size       = 50,
-        roughness  = 0.75,
+        size       = 300,
+        roughness  = 0.5,
     },
 
     ripple = {
