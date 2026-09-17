@@ -155,8 +155,20 @@ M.blur = {
 
 -- Motion Blur
 M.motion_blur = {
-    enabled = false,
+    enabled = true,
     samples = 7
+}
+
+-- Wobble
+M.wobble = {
+    enabled          = false,
+    mesh             = 10,
+    stiffness        = 1000,
+    damping          = 50,
+    mass             = 1,
+    intensity        = 0.5,
+    value_epsilon    = 0.25,
+    velocity_epsilon = 2,
 }
 
 -- Font
