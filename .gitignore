@@ -159,7 +159,7 @@
 # Misc
 !/.config/espanso/
 !/.config/glava/
-!/.config/mpv/
+!/.config/mpv
 !/.config/vicinae/
 !/.config/rofi/
 !/.config/yt-dlp/

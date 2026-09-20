@@ -16,3 +16,6 @@
 [submodule "Packages/maple-font"]
 	path = Packages/maple-font
 	url = ../../nnra6864/maple-font
+[submodule ".config/mpv"]
+	path = .config/mpv
+	url = ../mpv-config
