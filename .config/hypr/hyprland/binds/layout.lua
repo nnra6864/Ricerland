@@ -2,8 +2,8 @@ local defs       = require("defs")
 local resolution = require("hyprland.monitors.resolution")
 
 -- Resolution
-hl.bind(defs.main_mod .. "+ bracketright", function() resolution.next() end)
-hl.bind(defs.main_mod .. "+ bracketleft",  function() resolution.prev() end)
+hl.bind(defs.main_mod .. "+ bracketright", function() resolution.next() end, { locked = true })
+hl.bind(defs.main_mod .. "+ bracketleft",  function() resolution.prev() end, { locked = true })
 
 -- Window
 hl.bind(defs.main_mod .. "+ F",         hl.dsp.window.fullscreen("fullscreen"))
