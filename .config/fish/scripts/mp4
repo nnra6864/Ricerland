@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage: mp4.sh input.mkv output.mp4"
+    echo "       mp4.sh input.mkv"
+    exit 1
+fi
+
+input="$1"
+output="$2"
+
+if [ -z "$output" ]; then
+    output="${input%.*}.mp4"
+fi
+
+ffmpeg -i "\(input" -map 0 -c copy "\)output"
