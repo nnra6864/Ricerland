@@ -22,7 +22,7 @@ alias wmip='curl ifconfig.me --silent | wl-copy'
 # Paths
 alias cfg='cd ~/.config/'
 alias hypr='cd ~/.config/hypr/; nvim ./'
-alias fsh='cd ~/.config/fish/; nvim ./'
+alias fsh='cd ~/.config/fish/; nvim ./config.fish'
 alias nisu='cd ~/.config/Nisualizer/; nvim ./'
 alias ricer='cd ~/.config/Ricer/; nvim ./'
 
