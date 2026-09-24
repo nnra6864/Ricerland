@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 dirs=$(podman ps --format json | jq -r '.[].Labels["com.docker.compose.project.working_dir"] // empty' | sort -u)

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # to_jxl.sh — Losslessly convert images to JPEG XL
 # Usage: to_jxl.sh [-j JOBS] [-p PATH]
 #
