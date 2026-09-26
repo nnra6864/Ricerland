@@ -17,7 +17,8 @@ alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 alias tm='tmux new -As'
 alias ls='zl -la --dir-grouping=before --no-permissions --no-group -C ~/.config/zlist/zlist.zon'
-alias wmip='curl ifconfig.me --silent | wl-copy'
+alias wip='curl ifconfig.me --silent'
+alias cip='curl ifconfig.me --silent | wl-copy'
 
 # Paths
 alias cfg='cd ~/.config/'
