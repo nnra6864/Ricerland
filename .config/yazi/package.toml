@@ -5,8 +5,8 @@ hash = "869884767c2ef592bfb7f5764f8fcae3"
 
 [[plugin.deps]]
 use = "gesellkammer/audio-preview"
-rev = "c95e4f6"
-hash = "94334f36009e7e1635de43c98c6502c5"
+rev = "7a7e86c"
+hash = "c14ed0c202932a585631c01639929b0b"
 
 [[plugin.deps]]
 use = "walldmtd/blender-preview"
@@ -20,47 +20,47 @@ hash = "4761fffb60a12d37096c34a356380cdf"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "58c4f4e"
+rev = "7200d73"
 hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:jump-to-char"
-rev = "58c4f4e"
+rev = "7200d73"
 hash = "7a4b4237223aaa94e589d1c01a23542a"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "58c4f4e"
+rev = "7200d73"
 hash = "b95f898e6dc60b52edbc415952e14395"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "58c4f4e"
-hash = "a42c77c4b905959fcc35f648455426f2"
+rev = "7200d73"
+hash = "4f2a05edce73aef2bceb2ee2c134c8f2"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "58c4f4e"
-hash = "5bb0bfab901d3601c370eafdd66edd31"
+rev = "7200d73"
+hash = "347cc6b190eb0c2fd60513cc7ae37412"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "58c4f4e"
-hash = "45a533508a9840cc5a10cf6129f63e6a"
+rev = "7200d73"
+hash = "d1e0499cae5f3aeb628c267616d4b682"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:zoom"
-rev = "58c4f4e"
-hash = "83bb4de74060a850749189645413fcae"
+rev = "7200d73"
+hash = "558bbb58e3dd36d488280a8f10e7b904"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "58c4f4e"
+rev = "7200d73"
 hash = "87472b05a8c420100f6a2b9cde1e7746"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:diff"
-rev = "58c4f4e"
+rev = "7200d73"
 hash = "14558d2829c0aa05e99c57de8f74d199"
 
 [[plugin.deps]]
