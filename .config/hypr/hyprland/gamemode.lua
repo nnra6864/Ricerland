@@ -17,10 +17,12 @@ hl.bind("SUPER + F1", function ()
         },
 
         decoration = {
-            shadow = { enabled = false },
-            glow = { enabled = false },
-            blur = { enabled = false },
-            rounding = 0,
+            shadow      = { enabled = false },
+            glow        = { enabled = false },
+            blur        = { enabled = false },
+            motion_blur = { enabled = false },
+            wobble      = { enabled = false },
+            rounding    = 0,
         }
     })
 end)

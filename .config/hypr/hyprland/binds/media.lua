@@ -1,21 +1,53 @@
 local defs = require("defs")
 
 -- Volume
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"),
-    { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
-    { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), {
+    locked = true,
+    repeating = true,
+    description = "Volume up",
+})
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), {
+    locked = true,
+    repeating = true,
+    description = "Volume down",
+})
 
 -- Mute
-hl.bind("XF86AudioMute",    hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),   { locked = true })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
+hl.bind("XF86AudioMute",    hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), {
+    locked = true,
+    description = "Toggle mute",
+})
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), {
+    locked = true,
+    description = "Toggle mic mute",
+})
 
 -- Brightness
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"),  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl s 5%+"),  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl s 5%+"), {
+    locked = true,
+    repeating = true,
+    description = "Brightness up",
+})
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"), {
+    locked = true,
+    repeating = true,
+    description = "Brightness down",
+})
 
 -- Playerctl
-hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
-hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
-hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
+hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), {
+    locked = true,
+    description = "playerctl play/pause",
+})
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), {
+    locked = true,
+    description = "playerctl play/pause",
+})
+hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"), {
+    locked = true,
+    description = "playerctl previous",
+})
+hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"), {
+    locked = true,
+    description = "playerctl next",
+})

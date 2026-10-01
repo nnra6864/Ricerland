@@ -18,8 +18,8 @@ end
 
 hl.bind(defs.main_mod .. "+ mouse_up", function()
     zoom(defs.zoom.step)
-end)
+end, { description = "Zoom in" })
 
 hl.bind(defs.main_mod .. "+ mouse_down", function()
     zoom(-defs.zoom.step)
-end)
+end, { description = "Zoom out" })
