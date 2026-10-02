@@ -106,6 +106,7 @@
 # CLI
 !/.config/zlist/
 !/.config/eza/
+!/.config/television/
 !/.config/tmux/
 !/.config/oh-my-posh/
 !/.config/btop/
