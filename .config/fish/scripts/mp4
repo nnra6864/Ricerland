@@ -13,4 +13,4 @@ if [ -z "$output" ]; then
     output="${input%.*}.mp4"
 fi
 
-ffmpeg -i "\(input" -map 0 -c copy "\)output"
+ffmpeg -i "$input" -map 0 -c copy "$output"
