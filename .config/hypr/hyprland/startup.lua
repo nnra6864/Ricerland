@@ -22,7 +22,7 @@ hl.on("hyprland.start", function()
     -- Social
     local social_workspace = "2 silent"
     hl.exec_cmd("mumble",                              { workspace = social_workspace })
-    hl.exec_cmd("sleep 3 && flatpak run im.riot.Riot", { workspace = social_workspace })
+    --hl.exec_cmd("sleep 3 && flatpak run im.riot.Riot", { workspace = social_workspace })
 
     -- Special
     local special_workspace = "special"
