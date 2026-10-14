@@ -42,7 +42,10 @@ local directional_keys = {
 
 for k, d in pairs(directional_keys) do
     -- Focus
-    hl.bind(defs.main_mod .. "+" .. k, hl.dsp.focus({ direction = d }),
+    hl.bind(defs.main_mod .. "+" .. k, function()
+        hl.dispatch(hl.dsp.focus({ direction = d }))
+        hl.dispatch(hl.dsp.layout("center"))
+        end,
         { description = "Focus window " .. d })
 
     -- Move
