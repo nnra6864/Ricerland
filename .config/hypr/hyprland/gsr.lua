@@ -35,8 +35,8 @@ end
 local cmds = { "gsr-ui-cli toggle-replay" }
 for key, value in pairs(profile) do
     table.insert(cmds, string.format(
-        "sed -i -E 's|^(%s )[^ ]+|\\1%s|' %q",
-        key, value, GSR_CONFIG
+        "jq --arg k %q --argjson v %s 'setpath(($k | split(\".\")); $v)' %s > %s.tmp && mv %s.tmp %s",
+        key, value, GSR_CONFIG, GSR_CONFIG, GSR_CONFIG, GSR_CONFIG
     ))
 end
 table.insert(cmds, "sleep 1 && gsr-ui-cli reload-config")
