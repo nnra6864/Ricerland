@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+config=~/.config/local-backup.conf
+dry_run=()
+
+case "$1" in
+    -n|--dry-run)
+        dry_run=(--dry-run)
+        ;;
+    "")
+        ;;
+    *)
+        echo "Unknown option: $1" >&2
+        exit 1
+        ;;
+esac
+
+expand() {
+    local path="$1"
+    path="${path#"${path%%[![:space:]]*}"}"
+    path="${path%"${path##*[![:space:]]}"}"
+    path="${path/#\~/$HOME}"
+    echo "${path//\$HOME/$HOME}"
+}
+
+while IFS= read -r line; do
+    [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
+
+    if [[ "$line" != *" -> "* ]]; then
+        echo "Invalid entry: $line" >&2
+        continue
+    fi
+
+    source="${line%% -> *}"
+    target="${line#* -> }"
+    mode="additive"
+    flags=(--ignore-existing)
+
+    if [[ "$source" == "mirror "* ]]; then
+        source="${source#mirror }"
+        mode="mirror"
+        flags=(--delete)
+    fi
+
+    source=$(expand "$source")
+    target=$(expand "$target")
+
+    if [ -z "$source" ] || [ -z "$target" ]; then
+        echo "Invalid entry: $line" >&2
+        continue
+    fi
+
+    if [ ! -e "$source" ]; then
+        echo "Source not found: $source" >&2
+        continue
+    fi
+
+    src="${source%/}"
+    dest="${target%/}"
+
+    if [ ! -d "$src" ]; then
+        from="$src"
+    elif [[ "$source" != */ && "$target" == */ ]]; then
+        from="$src"
+    else
+        from="$src/"
+    fi
+
+    mkdir -p "$dest"
+    echo "[$mode] $source -> $target"
+    rsync -a --info=progress2 "${flags[@]}" "${dry_run[@]}" "$from" "$dest/"
+done < "$config"
+
+echo "Finished backup"
