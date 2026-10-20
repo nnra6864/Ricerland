@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage:"
+    echo "pactl-utils input"
+    echo "pactl-utils output"
+    echo "pactl-utils unload"
+    exit 1
+fi
+
+setup() {
+    pactl load-module module-null-sink sink_name="$1_mix" sink_properties=device.description="$1_mix" > /dev/null
+    pactl load-module module-virtual-source source_name="$1" master="$1_mix.monitor" source_properties=device.description="$1" > /dev/null
+}
+
+has_loopback() {
+    pactl list short modules | grep -qF "source=$1 sink=$2"
+}
+
+add_inputs() {
+    for source in $(pactl list sources short | awk '/input/ {print $2}'); do
+        if [[ "$source" != *CombinedInput* && "$source" != *monitor* ]] && ! has_loopback "$source" CombinedInput_mix; then
+            pactl load-module module-loopback source="$source" sink=CombinedInput_mix latency_msec=1 > /dev/null
+        fi
+    done
+}
+
+sync_output() {
+    default=$(pactl get-default-sink)
+
+    if ! has_loopback "$default.monitor" OutputInput_mix; then
+        for id in $(pactl list short modules | awk '/module-loopback/ && /sink=OutputInput_mix/ {print $1}'); do
+            pactl unload-module "$id"
+        done
+        pactl load-module module-loopback source="$default.monitor" sink=OutputInput_mix latency_msec=1 > /dev/null
+    fi
+}
+
+case "$1" in
+    input)
+        setup CombinedInput
+        add_inputs
+        echo "Combined all inputs into 'CombinedInput', watching for new devices..."
+
+        pactl subscribe | while read -r event; do
+            case "$event" in
+                *"'new' on source"*)
+                    sleep 1
+                    add_inputs
+                    ;;
+            esac
+        done
+        ;;
+    output)
+        setup OutputInput
+        sync_output
+        echo "Mirroring system audio into 'OutputInput', watching for output changes..."
+
+        pactl subscribe | while read -r event; do
+            case "$event" in
+                *"on server"*|*"'new' on sink"*)
+                    sleep 1
+                    sync_output
+                    ;;
+            esac
+        done
+        ;;
+    unload)
+        for id in $(pactl list short modules | awk '/CombinedInput|OutputInput/ {print $1}'); do
+            pactl unload-module "$id" 2> /dev/null
+        done
+        ;;
+    *)
+        echo "Unknown command: $1"
+        exit 1
+        ;;
+esac

@@ -12,7 +12,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("kdeconnect-indicator")
     hl.exec_cmd("openrgb --startminimized --profile 'Off' --server")
     hl.exec_cmd("hyprpaper")
-    hl.exec_cmd("fish -c 'track_app_usage'")
+    hl.exec_cmd("fish -c 'app-usage track'")
+    hl.exec_cmd("fish -c 'pactl-utils input'") -- Combine all input devices into CombinedInput
     hl.exec_cmd("gsr-ui launch-daemon")
 
     -- Main

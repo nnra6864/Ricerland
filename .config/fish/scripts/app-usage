@@ -1,0 +1,86 @@
+#!/usr/bin/env bash
+
+dir=~/TimeTracking
+interval=10
+
+format() {
+    local seconds="$1"
+    local days=$((seconds / 86400))
+    local time
+
+    time=$(printf "%02d:%02d:%02d" $((seconds % 86400 / 3600)) $((seconds % 3600 / 60)) $((seconds % 60)))
+
+    if [ "$days" -gt 0 ]; then
+        echo "${days}d $time"
+    else
+        echo "$time"
+    fi
+}
+
+track() {
+    mkdir -p "$dir"
+
+    while true; do
+        sleep "$interval"
+
+        class=$(hyprctl activewindow -j 2> /dev/null | jq -r '.initialClass // empty')
+
+        if [ -n "$class" ]; then
+            file="$dir/$class"
+            seconds=$(cat "$file" 2> /dev/null || echo 0)
+            echo $((seconds + interval)) > "$file"
+        fi
+    done
+}
+
+list() {
+    if [ ! -d "$dir" ]; then
+        echo "TimeTracking directory not found"
+        exit 1
+    fi
+
+    if [ -z "$(ls -A "$dir")" ]; then
+        echo "No time tracking data found"
+        exit 1
+    fi
+
+    for file in "$dir"/*; do
+        [ -f "$file" ] && echo "$(cat "$file") $(basename "$file")"
+    done | sort -nr | while read -r seconds app; do
+        printf "%s\t%s\n" "$app" "$(format "$seconds")"
+    done | column -t -s $'\t'
+}
+
+get() {
+    file="$dir/$1"
+
+    if [ ! -f "$file" ]; then
+        echo "No data for $1"
+        exit 1
+    fi
+
+    format "$(cat "$file")"
+}
+
+case "$1" in
+    track)
+        track
+        ;;
+    list)
+        list
+        ;;
+    get)
+        if [ "$#" -lt 2 ]; then
+            echo "Usage: app-usage get AppName"
+            exit 1
+        fi
+        get "$2"
+        ;;
+    *)
+        echo "Usage:"
+        echo "app-usage track"
+        echo "app-usage list"
+        echo "app-usage get AppName"
+        exit 1
+        ;;
+esac

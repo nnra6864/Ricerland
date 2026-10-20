@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 2 ]; then
+    echo "Usage:"
+    echo "to mp3 input.mkv"
+    echo "to mp3 input.mkv output.mp3"
+    echo "Formats: mp3 opus flac wav mp4 mkv"
+    exit 1
+fi
+
+format="$1"
+input="$2"
+output="$3"
+
+if [ -z "$output" ]; then
+    output="${input%.*}.$format"
+fi
+
+codec=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of csv=p=0 "$input")
+
+audio() {
+    if [[ "$codec" == $1 ]]; then
+        ffmpeg -i "$input" -map 0:a:0 -vn -c:a copy "$output"
+    else
+        ffmpeg -i "$input" -map 0:a:0 -vn "${@:2}" "$output"
+    fi
+}
+
+case "$format" in
+    mp4|mkv)
+        ffmpeg -i "$input" -map 0 -c copy "$output"
+        ;;
+    mp3)
+        audio mp3 -c:a libmp3lame -q:a 0
+        ;;
+    opus)
+        audio opus -c:a libopus -b:a 256k -compression_level 10
+        ;;
+    flac)
+        audio flac -c:a flac -compression_level 12
+        ;;
+    wav)
+        audio "pcm_*le" -c:a pcm_s24le
+        ;;
+    *)
+        echo "Unknown format: $format"
+        exit 1
+        ;;
+esac

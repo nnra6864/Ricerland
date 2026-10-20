@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage:"
+    echo "timer 5m"
+    echo "timer 30s"
+    exit 1
+fi
+
+duration="$1"
+
+echo "Timer set for $duration..."
+sleep "$duration"
+
+echo "Timer for $duration finished"
+notify-send "Timer" "Timer for $duration finished"
+paplay /usr/share/sounds/freedesktop/stereo/message.oga

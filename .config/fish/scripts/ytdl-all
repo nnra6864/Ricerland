@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+yt-dlp \
+    -f bestvideo+bestaudio \
+    --merge-output-format mkv \
+    --write-description \
+    --write-info-json \
+    --no-clean-info-json \
+    --write-comments \
+    --write-thumbnail \
+    --write-subs \
+    --write-auto-subs \
+    --sub-langs "en.*" \
+    -o "%(title)s/%(title)s.%(ext)s" \
+    "$@"
+
+find . -name "*.info.json" -exec sh -c 'jq . "$1" > temp.json && mv temp.json "$1"' _ {} \;

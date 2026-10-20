@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+rm -rf ~/.gtkrc-2.0 ~/.config/gtk-3.0/settings.ini ~/.config/gtk-4.0/ ~/.icons/default/index.theme
+
+python ~/Data/Projects/Ricer/Ricer.py "$@" || exit 1
+
+/opt/oomox/plugins/icons_suruplus_aspromauros/change_color.sh ~/.config/oomox/colors/Ricer -o Ricer
+themix-multi-export ~/.config/oomox/export_config/multi_export_Ricer.json ~/.config/oomox/colors/Ricer
+
+nwg-look -a
+adwaita-steam-gtk -i
+
+vars=(
+    XCURSOR_THEME
+    XCURSOR_SIZE
+    GDK_BACKEND
+    GDK_SCALE
+    GTK_THEME
+    QT_QPA_PLATFORM
+    QT_QPA_PLATFORMTHEME
+    QT_QUICK_CONTROLS_STYLE
+    QT_AUTO_SCREEN_SCALE_FACTOR
+    QT_SCALE_FACTOR
+    QT_WAYLAND_DISABLE_WINDOWDECORATION
+    CLUTTER_BACKEND
+    ELECTRON_OZONE_PLATFORM_HINT
+)
+
+args=()
+for var in "${vars[@]}"; do
+    args+=(--env="$var=${!var}")
+done
+
+flatpak override --user "${args[@]}"
+
+systemctl reload --user app-com.mitchellh.ghostty.service
+dunstctl reload
+hyprctl reload
