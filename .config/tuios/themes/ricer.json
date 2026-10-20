@@ -1,0 +1,34 @@
+{
+  "id": "ricer",
+  "display_name": "Ricer",
+
+  "fg": "#A3C5CC",
+  "bg": "#041C26",
+  "cursor": "#A3C5CC",
+  "black": "#041C26",
+  "red": "#80333C",
+  "green": "#338051",
+  "yellow": "#668033",
+  "blue": "#267180",
+  "purple": "#436496",
+  "cyan": "#268078",
+  "white": "#A3C5CC",
+  "bright_black": "#082E3F",
+  "bright_red": "#993D49",
+  "bright_green": "#3D9961",
+  "bright_yellow": "#7A993D",
+  "bright_blue": "#2D8699",
+  "bright_purple": "#4D74AF",
+  "bright_cyan": "#2D998F",
+  "bright_white": "#B7DCE5",
+
+  "chrome": {
+  "accent": "#2D8699",
+  "accent_bright": "#267180",
+  "success": "#338051",
+  "warning": "#7A993D",
+  "error": "#993D49",
+  "info": "#A3C5CC",
+  "surface": "#041C26"
+  }
+}

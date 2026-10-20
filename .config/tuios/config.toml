@@ -1,0 +1,51 @@
+[keybindings]
+leader_key = "ctrl+space"
+
+[startup]
+daemon = true
+layout = "bsp"
+open_default_window = true
+tiled = true
+
+[agents]
+enabled = false
+
+[appearance]
+animation_speed = 200
+border_focused_color = "bright_blue"
+border_unfocused_color = "bright_cyan"
+dockbar_position = "hidden"
+focus_follows_mouse = false
+hide_window_buttons = true
+max_fps = "auto"
+new_window_follow_ssh = true
+nvim_navigation = true
+panel_padding = 2
+session_border = false
+session_colors = true
+shared_borders = true
+theme = "ricer"
+window_title_align = "center"
+window_title_format = ""
+window_title_position = "hidden"
+window_title_style = "tab"
+zoom_borderless = true
+zoom_size = 100
+
+[appearance.sidebar.left]
+enabled = false
+
+[appearance.sidebar]
+enabled = false
+
+[appearance.sidebar.right]
+enabled = false
+
+[appearance.selection]
+bg = "bright_blue"
+
+[screenshot]
+font_family = "monospace"
+
+[spotlight]
+enabled = false
