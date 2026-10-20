@@ -1,0 +1,34 @@
+{
+  "id": "ricer",
+  "display_name": "Ricer",
+
+  "fg": "#ricer.col.foreground",
+  "bg": "#ricer.col.background",
+  "cursor": "#ricer.col.foreground",
+  "black": "#ricer.col.black",
+  "red": "#ricer.col.red",
+  "green": "#ricer.col.green",
+  "yellow": "#ricer.col.yellow",
+  "blue": "#ricer.col.blue",
+  "purple": "#ricer.col.magenta",
+  "cyan": "#ricer.col.cyan",
+  "white": "#ricer.col.white",
+  "bright_black": "#ricer.col.br_black",
+  "bright_red": "#ricer.col.br_red",
+  "bright_green": "#ricer.col.br_green",
+  "bright_yellow": "#ricer.col.br_yellow",
+  "bright_blue": "#ricer.col.br_blue",
+  "bright_purple": "#ricer.col.br_magenta",
+  "bright_cyan": "#ricer.col.br_cyan",
+  "bright_white": "#ricer.col.br_white",
+
+  "chrome": {
+  "accent": "#ricer.col.br_blue",
+  "accent_bright": "#ricer.col.blue",
+  "success": "#ricer.col.green",
+  "warning": "#ricer.col.br_yellow",
+  "error": "#ricer.col.br_red",
+  "info": "#ricer.col.foreground",
+  "surface": "#ricer.col.background"
+  }
+}
