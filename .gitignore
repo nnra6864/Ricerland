@@ -4,8 +4,8 @@
 
 # Git
 /*
-!/Assets/
 !/.gitignore
+!/Assets/
 !/README.md
 !/setup.sh
 
@@ -22,25 +22,25 @@
 !/.config/hypr/
 
 # Misc
+!/.config/Packages
+!/.config/SFX/
+!/.config/blur/
+!/.config/environment.d/
 !/.config/hints/
 !/.config/mimeapps.list
-!/.config/environment.d/
-!/.config/xdg-terminals.list
-!/.config/xdg-desktop-portal/
-!/.config/SFX/
 !/.config/symbols
-!/.config/blur/
-!/.config/Packages
 !/.config/wlr-which-key/
+!/.config/xdg-desktop-portal/
+!/.config/xdg-terminals.list
 
 # OBS
 !/.config/obs-studio/
 /.config/obs-studio/*
 !/.config/obs-studio/basic/
-/.config/obs-studio/basic/scenes
 /.config/obs-studio/basic/profiles/*/*.json.bak
 /.config/obs-studio/basic/profiles/*/service.json
 /.config/obs-studio/basic/profiles/*/service.json.bak
+/.config/obs-studio/basic/scenes
 
 
 # RICING #
@@ -60,74 +60,77 @@
 !/.config/nwg-look/
 
 # Misc
-!/.config/Ricer/
 !/.config/Nisualizer/
+!/.config/Ricer/
 !/.config/fontconfig/
 !/.config/oomox/
 
-# PACKAGES #
-!/Packages/
-/Packages/*
-!/Packages/zlist
-!/Packages/maple-font
 
 # APPLICATIONS #
 
+# Custom
 !/.local/
 /.local/*
-
 !/.local/share/
 /.local/share/*
-
 !/.local/share/applications/
 /.local/share/applications/*
 !/.local/share/applications/Custom/
 
+# Packages
+!/Packages/
+/Packages/*
+!/Packages/maple-font
+!/Packages/zlist
+
+# Flatpak
 !/.local/share/flatpak/
 /.local/share/flatpak/*
 !/.local/share/flatpak/overrides/
 
 # Terminals
+!/.config/foot/
 !/.config/ghostty/
 !/.config/kitty/
-!/.config/foot/
 
 # Fish
 !/.config/fish/
 /.config/fish/*
 !/.config/fish/completions/
 !/.config/fish/conf.d/
+!/.config/fish/config.fish
+!/.config/fish/fish_plugins
 !/.config/fish/functions/
 !/.config/fish/scripts/
 !/.config/fish/themes/
-!/.config/fish/config.fish
-!/.config/fish/fish_plugins
 
 # CLI
-!/.config/zlist/
-!/.config/eza/
-!/.config/television/
-!/.config/tmux/
-!/.config/oh-my-posh/
 !/.config/btop/
 !/.config/cava/
 !/.config/dunst/
+!/.config/eza/
+!/.config/fastfetch/
+!/.config/oh-my-posh/
+!/.config/television/
+!/.config/tmux/
+!/.config/tuios/
+!/.config/zlist/
+
 !/.config/ncmpcpp/
 /.config/ncmpcpp/error.log
-!/.config/fastfetch/
 
 # Files
-!/.config/yazi/
-!/.config/dolphinrc
 !/.config/bat/
+!/.config/dolphinrc
+!/.config/yazi/
 
 # Browsers
 !/.config/BrowserExtensions/
 !/.config/ZenBrowser/
 
 # IDE
-!/.config/nvim/
 !/.config/neovide/
+!/.config/nvim/
 !/.config/zed/
 
 # Unity
@@ -161,7 +164,7 @@
 !/.config/espanso/
 !/.config/glava/
 !/.config/mpv
-!/.config/vicinae/
 !/.config/rofi/
+!/.config/vicinae/
 !/.config/yt-dlp/
 **/__pycache__
