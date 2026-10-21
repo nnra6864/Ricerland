@@ -1,8 +1,9 @@
 local defs = require("defs")
 
 -- GTK
-hl.env("GTK_THEME", defs.theme.gtk.name)
-hl.env("GDK_SCALE", defs.theme.gtk.scaling)
+hl.env("GTK_THEME",           defs.theme.gtk.name)
+hl.env("GDK_SCALE",           defs.theme.gtk.scaling)
+hl.env("GDK_WAYLAND_DISABLE", "ext_background_effect_manager_v1")
 
 -- QT
 hl.env("QT_QPA_PLATFORMTHEME",                defs.theme.qt.platform_theme)
