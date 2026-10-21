@@ -15,7 +15,7 @@ alias timeshit='timeshift'
 alias tm='tmux new -As'
 alias wip='curl ifconfig.me --silent'
 alias ytdla 'yt-dlp -f bestaudio --extract-audio --exec \'du -sh {}\''
-alias ytdlv'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --exec \'du -sh {}\''
+alias ytdlv 'yt-dlp -f bestvideo+bestaudio --merge-output-format mkv --exec \'du -sh {}\''
 
 # Path aliases
 alias cfg='cd ~/.config/'
