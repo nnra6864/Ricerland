@@ -1,6 +1,12 @@
 [keybindings]
 leader_key = "ctrl+space"
 
+[keybindings.global]
+command_palette = []
+
+[keybindings.prefix_mode]
+command_palette = ["p"]
+
 [startup]
 daemon = true
 layout = "bsp"
