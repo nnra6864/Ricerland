@@ -1,0 +1,25 @@
+#!/bin/sh
+# Copy stdin (or the arguments) to the clipboard of the terminal you're looking at.
+# Works locally on Wayland, over SSH, and inside tmux, using OSC 52 when there's no display.
+#   echo hi | clip      clip "some text"      clip < file
+
+if [ $# -gt 0 ]; then
+    data=$(printf '%s' "$*")
+else
+    data=$(cat)
+fi
+
+# Local graphical session: use the real clipboard
+if [ -n "$WAYLAND_DISPLAY" ] && command -v wl-copy >/dev/null 2>&1; then
+    printf '%s' "$data" | wl-copy
+    exit
+fi
+
+# Inside tmux: hand it to tmux, which forwards it to the outer terminal via OSC 52
+if [ -n "$TMUX" ]; then
+    printf '%s' "$data" | tmux load-buffer -w -
+    exit
+fi
+
+# Plain terminal (SSH etc.): write OSC 52 straight to it
+printf '\033]52;c;%s\a' "$(printf '%s' "$data" | base64 | tr -d '\n')" > /dev/tty
