@@ -1,0 +1,12 @@
+[Unit]
+Description=KDE Connect daemon (headless, runs without a graphical session)
+After=dbus.socket
+
+[Service]
+ExecStart=/usr/bin/kdeconnectd
+Environment=QT_QPA_PLATFORM=offscreen
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

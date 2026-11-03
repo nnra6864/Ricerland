@@ -42,6 +42,12 @@
 /.config/obs-studio/basic/profiles/*/service.json.bak
 /.config/obs-studio/basic/scenes
 
+# Services
+!/.config/systemd/
+/.config/systemd/*
+!/.config/systemd/user/
+/.config/systemd/user/*
+!/.config/systemd/user/kdeconnectd-headless.service
 
 # RICING #
 
