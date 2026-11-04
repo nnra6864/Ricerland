@@ -26,3 +26,6 @@ hl.env("XAUTHORITY", os.getenv("HOME") .. "/.Xauthority")
 
 -- Java
 hl.env("_JAVA_AWT_WM_NONREPARENTING", "1")
+
+-- OpenGL
+hl.env("__GL_MaxFramesAllowed", "1")
