@@ -8,6 +8,7 @@ hl.env("QT_QPA_PLATFORM",              "wayland;xcb")
 hl.env("GDK_BACKEND",                  "wayland,x11,*")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "wayland")
 hl.env("SDL_VIDEODRIVER",              "wayland")
+hl.env("SDL_VIDEO_DRIVER",             "wayland")
 hl.env("CLUTTER_BACKEND",              "wayland")
 
 -- Mozilla
