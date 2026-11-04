@@ -17,10 +17,16 @@ has_loopback() {
     pactl list short modules | grep -qF "source=$1 sink=$2"
 }
 
+# Regex of source names to leave out of CombinedInput, e.g. PACTL_UTILS_EXCLUDE='Audeze'
+exclude="${PACTL_UTILS_EXCLUDE:-}"
+
 add_inputs() {
     for source in $(pactl list sources short | awk '/input/ {print $2}'); do
+        if [[ -n "$exclude" && "$source" =~ $exclude ]]; then
+            continue
+        fi
         if [[ "$source" != *CombinedInput* && "$source" != *monitor* ]] && ! has_loopback "$source" CombinedInput_mix; then
-            pactl load-module module-loopback source="$source" sink=CombinedInput_mix latency_msec=1 > /dev/null
+            pactl load-module module-loopback source="$source" sink=CombinedInput_mix latency_msec=1 source_dont_move=true sink_dont_move=true > /dev/null
         fi
     done
 }
@@ -32,7 +38,7 @@ sync_output() {
         for id in $(pactl list short modules | awk '/module-loopback/ && /sink=OutputInput_mix/ {print $1}'); do
             pactl unload-module "$id"
         done
-        pactl load-module module-loopback source="$default.monitor" sink=OutputInput_mix latency_msec=1 > /dev/null
+        pactl load-module module-loopback source="$default.monitor" sink=OutputInput_mix latency_msec=1 source_dont_move=true sink_dont_move=true > /dev/null
     fi
 }
 
@@ -66,7 +72,10 @@ case "$1" in
         done
         ;;
     unload)
-        for id in $(pactl list short modules | awk '/CombinedInput|OutputInput/ {print $1}'); do
+        # Stop the watchers first so they don't re-create loopbacks
+        pkill -f "pactl-utils (input|output)"
+        # Newest first: loopbacks go before their null sink, otherwise they get moved to the default sink
+        for id in $(pactl list short modules | awk '/CombinedInput|OutputInput/ {print $1}' | sort -rn); do
             pactl unload-module "$id" 2> /dev/null
         done
         ;;
