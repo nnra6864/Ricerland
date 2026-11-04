@@ -2,7 +2,7 @@ local defs = require("defs")
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("dunst")
-    hl.exec_cmd("sunshine")
+    hl.exec_cmd("sleep 5 && sunshine") -- Needs a bit of delay, otherwise crashes cuz no tray
     hl.exec_cmd("udiskie")
     hl.exec_cmd("vicinae server")
     hl.exec_cmd("hypridle")
