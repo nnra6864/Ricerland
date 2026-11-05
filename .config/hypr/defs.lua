@@ -185,7 +185,7 @@ M.cursor = {
 
 -- Theme
 M.theme = {
-    background = os.getenv("HOME") .. "/.config/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jpg",
+    background = os.getenv("HOME") .. "/Pictures/Backgrounds/Kyanos/Misty_Cloudy_Mountain.jxl",
 
     qt = {
         platform_theme            = "qt6ct",
