@@ -17,4 +17,22 @@ return {
   base0D = '#ricer.col.br_blue',
   base0E = '#ricer.col.br_magenta',
   base0F = '#ricer.col.code_special_char',
+
+  -- Not part of base16, can be used for configuring
+  black = '#ricer.col.black',
+  red = '#ricer.col.red',
+  green = '#ricer.col.green',
+  yellow = '#ricer.col.yellow',
+  blue = '#ricer.col.blue',
+  magenta = '#ricer.col.magenta',
+  cyan = '#ricer.col.cyan',
+  white = '#ricer.col.white',
+  br_black = '#ricer.col.br_black',
+  br_red = '#ricer.col.br_red',
+  br_green = '#ricer.col.br_green',
+  br_yellow = '#ricer.col.br_yellow',
+  br_blue = '#ricer.col.br_blue',
+  br_magenta = '#ricer.col.br_magenta',
+  br_cyan = '#ricer.col.br_cyan',
+  br_white = '#ricer.col.br_white',
 }
