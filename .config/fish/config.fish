@@ -27,6 +27,7 @@ alias ricer='cd ~/.config/Ricer/; nvim ./'
 # Paths
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.zvm/bin
+fish_add_path $HOME/.dotnet/tools
 
 # Environment
 set -gx EDITOR nvim
