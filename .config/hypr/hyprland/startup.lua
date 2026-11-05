@@ -26,13 +26,16 @@ hl.on("hyprland.start", function()
 
     -- Special
     local special_workspace = "special"
-    hl.exec_cmd("keepassxc",                        { workspace = special_workspace .. " silent" })
-    hl.exec_cmd("flatpak run md.obsidian.Obsidian", { workspace = special_workspace .. " silent" })
-    hl.exec_cmd("xdg-terminal-exec ncmpcpp",        { workspace = special_workspace .. " silent" })
+    hl.exec_cmd("keepassxc",
+        { workspace = special_workspace .. " silent" })
+    hl.exec_cmd([[xdg-terminal-exec --title=notes --dir="$HOME/Documents/Obsidian/nn" nvim +'lua require("config.notes").todo()']],
+        { workspace = special_workspace .. " silent" })
+    hl.exec_cmd("xdg-terminal-exec ncmpcpp",
+        { workspace = special_workspace .. " silent" })
 
     -- Move broken apps manually
     hl.exec_cmd(string.format(
-        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"class:md.obsidian.Obsidian\" })'",
+        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:notes\" })'",
         special_workspace))
     hl.exec_cmd(string.format(
         "sleep 4 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:ncmpcpp\" })'",
