@@ -2,8 +2,8 @@ hl.config({
     input = {
         -- Keyboard
         kb_model           = "",
-        kb_layout          = "us, ru, rs   , rs",
-        kb_variant         = "  ,   , latin,   ",
+        kb_layout          = "us_srb, ru, rs   , rs",
+        kb_variant         = "      ,   , latin,   ",
         kb_options         = "",
         kb_rules           = "",
         numlock_by_default = false,

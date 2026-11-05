@@ -32,6 +32,7 @@
 !/.config/wlr-which-key/
 !/.config/xdg-desktop-portal/
 !/.config/xdg-terminals.list
+!/.config/xkb/
 
 # OBS
 !/.config/obs-studio/
@@ -167,7 +168,6 @@
 !/.config/mpd/mpd.conf
 
 # Misc
-!/.config/espanso/
 !/.config/glava/
 !/.config/mpv
 !/.config/rofi/
