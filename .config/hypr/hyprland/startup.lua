@@ -28,14 +28,14 @@ hl.on("hyprland.start", function()
     local special_workspace = "special"
     hl.exec_cmd("keepassxc",
         { workspace = special_workspace .. " silent" })
-    hl.exec_cmd([[xdg-terminal-exec --title=notes --dir="$HOME/Documents/Obsidian/nn" nvim +'lua require("config.notes").todo()']],
+    hl.exec_cmd("xdg-terminal-exec --title=vault fish -c vault",
         { workspace = special_workspace .. " silent" })
     hl.exec_cmd("xdg-terminal-exec ncmpcpp",
         { workspace = special_workspace .. " silent" })
 
     -- Move broken apps manually
     hl.exec_cmd(string.format(
-        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:notes\" })'",
+        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:vault\" })'",
         special_workspace))
     hl.exec_cmd(string.format(
         "sleep 4 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:ncmpcpp\" })'",

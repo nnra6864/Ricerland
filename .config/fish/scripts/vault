@@ -1,0 +1,28 @@
+#!/bin/sh
+# Open the Obsidian vault in tuios: nvim on workspace 1, lazygit on workspace 2.
+# Reuses the session if it exists; idle shells get cd'd into the vault and start their app.
+
+dir="$HOME/Documents/Obsidian/nn"
+session=vault
+
+tuios new "$session" --cwd "$dir" --detach >/dev/null 2>&1
+
+# open <workspace> <command>: run command in that workspace's shell, unless something already runs there
+open() {
+    win=$(tuios list-windows -s "$session" --json |
+        jq -r --argjson ws "$1" 'first(.windows[] | select(.workspace == $ws)) | "\(.window_id) \(.running_cmdline // "")"')
+    id=${win%% *}
+    if [ -z "$id" ]; then
+        id=$(tuios new-window -s "$session" --workspace "$1" --cwd "$dir" --no-focus --print-id)
+    elif [ -n "${win#* }" ]; then
+        return
+    fi
+    tuios send-text -s "$session" -w "$id" "cd '$dir' && $2
+" >/dev/null
+}
+
+open 1 "nvim '+lua require(\"config.notes\").todo()'"
+open 2 lazygit
+tuios select-workspace 1 -s "$session" >/dev/null
+
+exec tuios attach "$session"
