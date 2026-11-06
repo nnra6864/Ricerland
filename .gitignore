@@ -161,6 +161,10 @@
 
 # Audio
 !/.config/pipewire/
+/.config/pipewire/*
+!/.config/pipewire/pipewire-pulse.conf.d/
+/.config/pipewire/pipewire-pulse.conf.d/*
+!/.config/pipewire/pipewire-pulse.conf.d/99-lock-mic-volume.conf
 
 # MPD
 !/.config/mpd/
