@@ -12,7 +12,7 @@
 	url = ../ghostty-cursor-shaders
 [submodule "Packages/zlist"]
 	path = Packages/zlist
-	url = ../../nnra6864-mirrors/zlist
+	url = ../../here-Leslie-Lau/zlist
 [submodule "Packages/maple-font"]
 	path = Packages/maple-font
 	url = ../../nnra6864/maple-font
