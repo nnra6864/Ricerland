@@ -26,6 +26,7 @@
 !/.config/SFX/
 !/.config/blur/
 !/.config/environment.d/
+!/.config/declarative-forgejo-mirrors/
 !/.config/hints/
 !/.config/mimeapps.list
 !/.config/symbols
