@@ -4,7 +4,6 @@ fish_add_path ~/.config/fish/scripts
 # Aliases
 alias cip='curl ifconfig.me --silent | wl-copy'
 alias doas='sudo'
-alias hdr='ENABLE_HDR_WSI=1 mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk --target-colorspace-hint-mode=source'
 alias lg='lazygit'
 alias lnw='sh ~/.config/hypr/HyprlandUnityFix/ListNewWindows.sh'
 alias ls='zl -la --dir-grouping=before --no-permissions --no-group -C ~/.config/zlist/zlist.zon'
@@ -35,7 +34,7 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 
 # Start the ssh-agent
-if not pgrep -u $USER ssh-agent > /dev/null
+if not pgrep -u $USER ssh-agent >/dev/null
     ssh-agent -c -a $XDG_RUNTIME_DIR/ssh-agent.socket | source
 end
 set -Ux SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
