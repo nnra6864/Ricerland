@@ -4,3 +4,4 @@ Exec=ghostty +new-window
 Type=Application
 Categories=TerminalEmulator;
 X-TerminalArgExec=-e
+X-TerminalArgTitle=--title=
