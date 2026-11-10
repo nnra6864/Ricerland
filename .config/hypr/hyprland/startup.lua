@@ -35,10 +35,10 @@ hl.on("hyprland.start", function()
 
     -- Move broken apps manually
     hl.exec_cmd(string.format(
-        "sleep 2 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:vault\" })'",
+        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:vault\" })'",
         special_workspace))
     hl.exec_cmd(string.format(
-        "sleep 3 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:ncmpcpp\" })'",
+        "sleep 4 && hyprctl dispatch 'hl.dsp.window.move({ workspace = \"%s\", follow = false, window = \"title:ncmpcpp\" })'",
         special_workspace))
 
     hl.exec_cmd("hyprlock")
