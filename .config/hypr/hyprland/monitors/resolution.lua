@@ -10,9 +10,12 @@ local profiles = {
     wide = {
         { output = "", mode = "2560x1440@240", position = "0x0", scale = 1 }
     },
+    fhd = {
+        { output = "", mode = "1920x1080@240", position = "0x0", scale = 1 }
+    },
 }
 
-local profile_order   = { "high", "wide" }
+local profile_order   = { "high", "wide", "fhd" }
 local default_profile = "high"
 
 os.execute("mkdir -p " .. STATE_DIR)
