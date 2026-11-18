@@ -22,6 +22,7 @@ end
 local no_anim = {
     "selection",
     "hyprpicker",
+    "hyprpaper",
 }
 
 for _, layer in ipairs(no_anim) do
