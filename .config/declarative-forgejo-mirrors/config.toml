@@ -3,6 +3,8 @@ interval = "24h"
 ["git.nnstdios.com"]
 mirrors = [
     "https://code.hexops.org/hexops",
+    "https://codeberg.org/dnkl",
+    "https://codeberg.org/LGFae/awww",
     "https://codeberg.org/mfussenegger/nvim-dap",
     "https://codeberg.org/mfussenegger/nvim-dap-python",
     "https://codeberg.org/mfussenegger/nvim-fzy",
@@ -55,6 +57,7 @@ mirrors = [
     "https://github.com/ghostty-org",
     "https://github.com/gittrahan/support-fins",
     "https://github.com/GlitchEnzo/NuGetForUnity",
+    "https://github.com/glpatcern/go-mime",
     "https://github.com/google/flatbuffers",
     "https://github.com/handzlikchris",
     "https://github.com/harfbuzz/harfbuzz",
@@ -83,6 +86,7 @@ mirrors = [
     "https://github.com/marton78/pffft",
     "https://github.com/matrix-org",
     "https://github.com/mautrix",
+    "https://github.com/MaxVerevkin/wlr-which-key",
     "https://github.com/MeanderingProgrammer/py-requirements.nvim",
     "https://github.com/MeanderingProgrammer/render-markdown.nvim",
     "https://github.com/Merlin1809/Eclipse-Shader",
@@ -183,6 +187,7 @@ mirrors = [
     "https://github.com/utox39/zigfetch",
     "https://github.com/ValveSoftware",
     "https://github.com/vercel-labs/fx",
+    "https://github.com/vicinaehq",
     "https://github.com/VirtCode/hypr-dynamic-cursors",
     "https://github.com/walcht/CGNvim",
     "https://github.com/walcht/com.walcht.ide.neovim",
