@@ -29,6 +29,9 @@ prepend_keymap = [
     # KDE Connect
     { on = "<C-k>", run = "plugin kdeconnect-send", desc = "Send selected files via KDE Connect" },
 
+    # Croc
+    { on = [ "c", "r" ], run = 'shell -- croc --ignore-stdin --extended-clipboard send --hash imohash %s', desc = "Send selected files via croc" },
+
 
     # Diff
     { on = [ ".", "c" ], run = "plugin vcs-files", desc = "Show Git file changes" },
