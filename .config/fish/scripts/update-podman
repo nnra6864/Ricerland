@@ -1,41 +1,54 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
-dirs=$(podman ps --format json | jq -r '.[].Labels["com.docker.compose.project.working_dir"] // empty' | sort -u)
+failed=()
 
-for dir in $dirs; do
+while IFS= read -r dir; do
   name=$(basename "$dir")
   echo "- $name ($dir)"
-  cd "$dir"
+  (
+    cd "$dir"
 
-  compose_file=""
-  for candidate in compose.yaml compose.yml docker-compose.yaml docker-compose.yml; do
-    if [ -f "$candidate" ]; then
-      compose_file="$candidate"
-      break
+    compose_file=""
+    for c in compose.yaml compose.yml docker-compose.yaml docker-compose.yml; do
+      [[ -f $c ]] && { compose_file=$c; break; }
+    done
+    if [[ -z $compose_file ]]; then
+      echo "    No compose file found, skipping..."
+      exit 0
     fi
-  done
 
-  if [ -z "$compose_file" ]; then
-    echo "    No compose file found, skipping..."
-    cd - >/dev/null
-    continue
-  fi
+    if yq -e '.services[] | select(has("build"))' "$compose_file" >/dev/null 2>&1; then
+      echo "    Building..."
+      podman-compose -f "$compose_file" build --pull
+    fi
 
-  if yq -e '.services[] | select(has("build"))' "$compose_file" >/dev/null 2>&1; then
-    echo "    Building..."
-    podman-compose build --no-cache
-  else
     echo "    Pulling..."
-    podman-compose pull
-  fi
+    podman-compose -f "$compose_file" pull --ignore-pull-failures || true
 
-  echo "    Restarting..."
-  podman-compose down
-  podman-compose up -d
+    echo "    Restarting..."
+    podman-compose -f "$compose_file" down
+    podman-compose -f "$compose_file" up -d
+  ) || {
+    echo "    FAILED, continuing..."
+    failed+=("$name ($dir)")
+  }
+done < <(
+  podman ps --format json \
+    | jq -r '.[].Labels["com.docker.compose.project.working_dir"] // empty' \
+    | sort -u
+)
 
-  echo "    Pruning..."
-  podman system prune -a -f
-  cd - >/dev/null
-done
+echo "Pruning old images..."
+podman container prune -f
+podman image prune -f
+
+if (( ${#failed[@]} )); then
+  echo
+  echo "Failed projects (${#failed[@]}):"
+  printf '  - %s\n' "${failed[@]}"
+  exit 1
+fi
+
+echo
+echo "All projects updated."
