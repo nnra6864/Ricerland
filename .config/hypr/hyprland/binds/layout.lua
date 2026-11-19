@@ -42,8 +42,14 @@ local directional_keys = {
 
 for k, d in pairs(directional_keys) do
     -- Focus
-    hl.bind(defs.main_mod .. "+" .. k, hl.dsp.focus({ direction = d }),
-        { description = "Focus window " .. d })
+    hl.bind(defs.main_mod .. "+" .. k, function()
+        local ws = hl.get_active_workspace()
+        if ws and ws.tiled_layout == "scrolling" then
+            hl.dispatch(hl.dsp.layout("focus " .. d))
+        else
+            hl.dispatch(hl.dsp.focus({ direction = d }))
+        end
+    end, { description = "Focus window " .. d })
 
     -- Move
     hl.bind(defs.main_mod .. "+ ALT +".. k, hl.dsp.window.move({ direction = d }),
