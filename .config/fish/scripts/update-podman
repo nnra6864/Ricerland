@@ -24,7 +24,7 @@ while IFS= read -r dir; do
     fi
 
     echo "    Pulling..."
-    podman-compose -f "$compose_file" pull --ignore-pull-failures || true
+    podman-compose -f "$compose_file" pull
 
     echo "    Restarting..."
     podman-compose -f "$compose_file" down
