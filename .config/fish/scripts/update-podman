@@ -40,8 +40,11 @@ done < <(
 )
 
 echo "Pruning old images..."
-podman container prune -f
-podman image prune -f
+# leftover buildah containers from interrupted/failed builds
+podman ps -a --external --format '{{.ID}} {{.Status}}' \
+  | awk '$2=="Storage"{print $1}' | xargs -r podman rm -f >/dev/nu
+podman container prune -f || echo "    container prune failed"
+podman image prune -f || echo "    image prune failed"
 
 if (( ${#failed[@]} )); then
   echo
