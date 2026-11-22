@@ -21,7 +21,7 @@ open() {
 " >/dev/null
 }
 
-open 1 "nvim '+lua require(\"config.notes\").todo()'"
+open 1 nvim
 open 2 lazygit
 tuios select-workspace 1 -s "$session" >/dev/null
 
