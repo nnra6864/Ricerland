@@ -6,8 +6,8 @@ hl.config({
         follow_focus             = 2,
         follow_min_visible       = 1,
         explicit_column_widths   = "0.249, 0.332, 0.499, 0.665, 0.749, 1.0",
-        wrap_focus               = true,
-        wrap_swapcol             = true,
+        wrap_focus               = false,
+        wrap_swapcol             = false,
         direction                = "right"
     }
 })
