@@ -1,8 +1,8 @@
 --[[
 Universal Copy/Paste for Yazi
 
-    plugin ucp copy [notify]
-    plugin ucp paste [notify]
+    plugin ucp -- copy [notify]
+    plugin ucp -- paste [notify]
 
 Native cuts use Yazi's paste command. Otherwise, external file URLs, images,
 and text take precedence over internal copied files. Unsupported clipboard
@@ -12,6 +12,8 @@ staging/recovery guarantees, platform requirements, and verification limits.
 
 local M = {}
 local PackageName = "ucp"
+local windows = ya.target_os() == "windows" and require("ucp.windows") or nil
+local portal = ya.target_os() == "linux" and require("ucp.portal") or nil
 
 --==============================================================================
 -- Helpers BEGIN
@@ -56,7 +58,7 @@ end
 -- Entry BEGIN
 --==============================================================================
 
-function M:entry(job)
+local function dispatch(job)
 	local action = job.args[1]
 
 	ya.dbg("Action", tostring(action), table.concat(job.args or {}, ", "))
@@ -73,9 +75,21 @@ function M:entry(job)
 		ya.dbg("Calling paste_entry")
 		return M:paste_entry(job)
 	else
-		warn("Unknown action, requires copy or paste argument")
+		warn("Unknown action, requires copy or paste")
 		return
 	end
+end
+
+function M:entry(job)
+	if not windows then
+		return dispatch(job)
+	end
+	local ok, result = pcall(dispatch, job)
+	windows.close()
+	if not ok then
+		error(result, 0)
+	end
+	return result
 end
 
 function M:setup(opts)
@@ -104,14 +118,21 @@ end
 -- Copy BEGIN
 --==============================================================================
 
--- Get selected or hovered files using ya.sync
+-- Export only local paths; keep virtual URLs intact in Yazi's native selection.
 local selected_or_hovered = ya.sync(function()
 	local tab, paths = cx.active, {}
 	for _, u in pairs(tab.selected) do
-		paths[#paths + 1] = tostring(u.url)
+		paths[#paths + 1] = u.url
 	end
 	if #paths == 0 and tab.current.hovered then
-		paths[1] = tostring(tab.current.hovered.url)
+		paths[1] = tab.current.hovered.url
+	end
+	for i, url in ipairs(paths) do
+		local spec = url.spec
+		if not (spec.is_regular or spec.is_search) then
+			return nil
+		end
+		paths[i] = tostring(url.path)
 	end
 	return paths
 end)
@@ -149,16 +170,20 @@ local function linux_backends()
 	return { "x11", "wayland" }
 end
 
+-- A plain JS array turns each NSURL into an NSDictionary, which writeObjects rejects.
+-- Reading back once keeps every item; otherwise only the first survives osascript exiting.
 local MAC_COPY = [[
 ObjC.import('AppKit');
 function run() {
     var data = $.NSFileHandle.fileHandleWithStandardInput.readDataToEndOfFile;
     var text = ObjC.unwrap($.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding));
-    var urls = text.split(/\r?\n/).filter(function(s) { return s.length > 0; })
-        .map(function(s) { return $.NSURL.URLWithString(s); });
+    var urls = $.NSMutableArray.array;
+    text.split(/\r?\n/).filter(function(s) { return s.length > 0; })
+        .forEach(function(s) { urls.addObject($.NSURL.URLWithString(s)); });
     var pb = $.NSPasteboard.generalPasteboard;
     pb.clearContents;
     if (!pb.writeObjects(urls)) throw new Error('Cannot write file URLs to clipboard');
+    pb.readObjectsForClassesOptions($.NSArray.arrayWithObject($.NSURL), $.NSDictionary.dictionary);
 }
 ]]
 
@@ -169,31 +194,45 @@ function M:copy_entry(job)
 	end
 	ya.emit("escape", { visual = true })
 	local paths = selected_or_hovered()
-	if #paths == 0 then
+	if paths and #paths == 0 then
 		if show_notify then
 			warn("No file selected")
 		end
 		return
 	end
 	ya.emit("yank", {})
-
-	local uris = {}
-	for _, path in ipairs(paths) do
-		uris[#uris + 1] = "file://" .. path:gsub("([^A-Za-z0-9%-%._~/])", function(c)
-			return string.format("%%%02X", c:byte())
-		end)
+	if not paths then
+		warn("External copy supports local files and search results only; native yank retained. Use Yazi's built-in paste for virtual files.")
+		return
 	end
-	local content = table.concat(uris, "\r\n") .. "\r\n"
-	local status, err = command_input("osascript", { "-l", "JavaScript", "-e", MAC_COPY }, content)
-	if not status or not status.success then
-		for _, backend in ipairs(linux_backends()) do
-			if backend == "wayland" then
-				status, err = command_input("wl-copy", { "--type", "text/uri-list" }, content)
-			else
-				status, err = command_input("xclip", { "-selection", "clipboard", "-t", "text/uri-list" }, content)
-			end
-			if status and status.success then
-				break
+
+	local status, err
+	if windows then
+		local result
+		result, err = windows.run("copy", { paths = paths })
+		status = { success = result ~= nil }
+	else
+		local uris = {}
+		for _, path in ipairs(paths) do
+			uris[#uris + 1] = "file://" .. path:gsub("([^A-Za-z0-9%-%._~/])", function(c)
+				return string.format("%%%02X", c:byte())
+			end)
+		end
+		local content = table.concat(uris, "\r\n") .. "\r\n"
+		status, err = command_input("osascript", { "-l", "JavaScript", "-e", MAC_COPY }, content)
+		if (not status or not status.success) and portal then
+			status, err = portal.copy(content)
+		end
+		if not status or not status.success then
+			for _, backend in ipairs(linux_backends()) do
+				if backend == "wayland" then
+					status, err = command_input("wl-copy", { "--type", "text/uri-list" }, content)
+				else
+					status, err = command_input("xclip", { "-selection", "clipboard", "-t", "text/uri-list" }, content)
+				end
+				if status and status.success then
+					break
+				end
 			end
 		end
 	end
@@ -261,6 +300,9 @@ local function mime_lines(content)
 end
 
 local function get_clipboard_mimetypes()
+	if windows then
+		return mime_lines(windows.run("types", {})), "windows"
+	end
 	local types = mime_lines(command_output("osascript", { "-l", "JavaScript", "-e", MAC_TYPES }))
 	if types then
 		return types, "mac"
@@ -280,7 +322,9 @@ local function get_clipboard_mimetypes()
 end
 
 local function read_clipboard(mime, backend)
-	if backend == "wayland" then
+	if backend == "windows" then
+		return windows.run(mime == "text/plain" and "text" or "image", {})
+	elseif backend == "wayland" then
 		return command_output("wl-paste", { "--no-newline", "--type", mime })
 	elseif backend == "x11" then
 		return command_output("xclip", { "-selection", "clipboard", "-o", "-t", mime })
@@ -332,22 +376,22 @@ local function get_clipboard_image_data(format, backend)
 	return data
 end
 
-function M:handle_image_paste(image_targets, no_hover, show_notify, backend)
+function M:handle_image_paste(image_targets, no_hover, backend)
 	local format = image_targets:match("image/svg%+xml") and "svg" or image_targets:match("image/([%w-]+)")
 	if backend == "mac" then
 		format = "png"
 	end
 	if not format then
 		warn("Could not determine clipboard image format")
-		return
+		return false
 	end
 	local data = get_clipboard_image_data(format, backend)
 	if not data or #data == 0 then
 		warn("Failed to get image data from clipboard")
-		return
+		return false
 	end
 	local file_name = string.format("pasted_%s.%s", os.date("%Y-%m-%d_%H-%M-%S"), format)
-	return M:save_file_with_conflict_handling(file_name, data, no_hover, show_notify)
+	return M:save_file_with_conflict_handling(file_name, data, no_hover)
 end
 
 --==============================================================================
@@ -399,7 +443,11 @@ local function decode_file_urls(content)
 end
 
 local function get_clipboard_file_uris(mimetypes, backend)
-	if backend == "mac" then
+	if backend == "windows" then
+		local content = windows.run("files", {})
+		local paths = content and ya.json_decode(content)
+		return type(paths) == "table" and #paths > 0 and paths or nil
+	elseif backend == "mac" then
 		return decode_file_urls(command_output("osascript", { "-l", "JavaScript", "-e", MAC_FILES }))
 	end
 	for _, mime in ipairs({ "code/file-list", "text/uri-list" }) do
@@ -416,7 +464,7 @@ end
 
 -- Filesystem transfers use structured lstat snapshots, never shell traversal.
 local function get_filename_from_path(path)
-	return path:gsub("/+$", ""):match("[^/]+$")
+	return windows and Url(path).name or path:gsub("/+$", ""):match("[^/]+$")
 end
 
 local function transfer_stat(url)
@@ -427,7 +475,52 @@ local function transfer_stat(url)
 	return nil, string.format("Cannot inspect %s: %s", tostring(url), tostring(err))
 end
 
+local function windows_component(name)
+	if name == "" or name:find('[%z\1-\31<>:"|?*]') or name:find("[%. ]$") then
+		return false
+	end
+	local stem = name:match("^([^.]*)"):gsub(" +$", ""):upper()
+	return stem ~= "CON" and stem ~= "PRN" and stem ~= "AUX" and stem ~= "NUL"
+		and stem ~= "CONIN$" and stem ~= "CONOUT$" and stem ~= "CLOCK$"
+		and not stem:match("^COM[1-9]$") and not stem:match("^LPT[1-9]$")
+		and not ((stem:sub(1, 3) == "COM" or stem:sub(1, 3) == "LPT")
+			and (stem:sub(4) == "¹" or stem:sub(4) == "²" or stem:sub(4) == "³"))
+end
+
 local function absolute_path(path)
+	if windows then
+		if type(path) ~= "string" then
+			return nil, "Expected an absolute Windows path"
+		end
+		path = path:gsub("\\", "/")
+		-- Accept only filesystem extended paths, never device namespaces.
+		if path:match("^//%?/UNC/") then
+			path = "//" .. path:sub(9)
+		elseif path:match("^//%?/[A-Za-z]:/") then
+			path = path:sub(5)
+		end
+		local root, rest = path:match("^([A-Za-z]:/)(.*)$")
+		if not root then
+			root, rest = path:match("^(//[^/]+/[^/]+)(.*)$")
+			if root then
+				for component in root:gmatch("[^/]+") do
+					if not windows_component(component) then
+						return nil, "Invalid Windows share root"
+					end
+				end
+			end
+		end
+		if not root then
+			return nil, "Expected an absolute drive or UNC path"
+		end
+		for component in rest:gmatch("[^/]+") do
+			if not windows_component(component) then
+				return nil, "Invalid Windows path component"
+			end
+		end
+		rest = rest:gsub("/+", "/"):gsub("^/", ""):gsub("/$", "")
+		return root .. (rest == "" and "" or ((root:sub(-1) == "/" and "" or "/") .. rest))
+	end
 	if type(path) ~= "string" or path:sub(1, 1) ~= "/" or path:find("\0", 1, true) then
 		return nil, "Expected an absolute local path without NUL bytes"
 	end
@@ -441,6 +534,13 @@ local function absolute_path(path)
 end
 
 local function canonical_path(url)
+	if windows then
+		local out, err = windows.run("canonical", { path = tostring(url) })
+		if not out then
+			return nil, err
+		end
+		return absolute_path(out)
+	end
 	local out = command_output("realpath", { tostring(url) })
 	if not out or out:sub(-1) ~= "\n" then
 		return nil, "Cannot canonicalize " .. tostring(url)
@@ -453,8 +553,19 @@ local function canonical_path(url)
 	return out
 end
 
-local function path_contains(a, b)
-	return a == b or (a == "/" and b:sub(1, 1) == "/") or b:sub(1, #a + 1) == a .. "/"
+local function paths_overlap(a, b)
+	if windows then
+		local result, err = windows.run("overlap", { left = a, right = b })
+		if result ~= "true" and result ~= "false" then
+			return nil, err or "Cannot compare canonical Windows paths"
+		end
+		return result == "true"
+	end
+	local function contains(parent, child)
+		return parent == child or (parent == "/" and child:sub(1, 1) == "/")
+			or child:sub(1, #parent + 1) == parent .. "/"
+	end
+	return contains(a, b) or contains(b, a)
 end
 
 -- Missing components are permitted for text filenames, but neither links
@@ -465,7 +576,7 @@ local function destination_safe(url)
 		local cha, err = transfer_stat(current)
 		if err then
 			return false, err
-		elseif cha and cha.is_link then
+		elseif cha and (cha.is_link or (windows and cha.is_indirect)) then
 			return false, "Destination contains a symlink: " .. tostring(current)
 		elseif current ~= url and cha and not cha.is_dir then
 			return false, "Destination parent is not a directory: " .. tostring(current)
@@ -478,7 +589,7 @@ end
 local function destination_cwd()
 	local chosen = Url(get_cwd())
 	local cha, err = transfer_stat(chosen)
-	if not cha or cha.is_link or not cha.is_dir then
+	if not cha or cha.is_link or (windows and cha.is_indirect) or not cha.is_dir then
 		return nil, err or ("Destination root must be a real directory: " .. tostring(chosen))
 	end
 	-- Resolve aliases above the chosen directory (e.g. macOS /var), not links
@@ -498,7 +609,7 @@ end
 -- Missing or dangling-link leaves use their canonical existing parent.
 -- No failed canonicalization is replaced by an unchecked raw path.
 local function canonical_leaf(url, cha)
-	if cha and not cha.is_link then
+	if cha and not (cha.is_link or (windows and cha.is_indirect)) then
 		return canonical_path(url)
 	end
 	local suffix, current = {}, url
@@ -507,13 +618,13 @@ local function canonical_leaf(url, cha)
 		if err then
 			return nil, err
 		end
-		if info and not (current == url and info.is_link) then
+		if info and not (current == url and (info.is_link or (windows and info.is_indirect))) then
 			local base, cerr = canonical_path(current)
 			if not base then
 				return nil, cerr
 			end
 			for i = #suffix, 1, -1 do
-				base = (base == "/" and "" or base) .. "/" .. suffix[i]
+				base = (base:sub(-1) == "/" and base or base .. "/") .. suffix[i]
 			end
 			return base
 		end
@@ -535,12 +646,15 @@ local function transfer_overlap(source, source_cha, target, target_cha)
 	if not dst then
 		return false, derr
 	end
-	if path_contains(src, dst) or path_contains(dst, src) then
+	local overlap, overlap_err = paths_overlap(src, dst)
+	if overlap == nil then
+		return false, overlap_err
+	elseif overlap then
 		return false, "Source and destination overlap: " .. tostring(target)
 	end
 	-- Also detect resolvable source-link aliases without traversing them
 	-- during copying or requiring realpath of dangling links.
-	if source_cha.is_link then
+	if source_cha.is_link or (windows and source_cha.is_indirect) then
 		local followed, follow_err = fs.cha(source, true)
 		local dangling = follow_err
 			and (follow_err.kind == "NotFound" or follow_err.kind == "NotADirectory")
@@ -551,7 +665,10 @@ local function transfer_overlap(source, source_cha, target, target_cha)
 			if not resolved then
 				return false, rerr
 			end
-			if path_contains(resolved, dst) or path_contains(dst, resolved) then
+			overlap, overlap_err = paths_overlap(resolved, dst)
+			if overlap == nil then
+				return false, overlap_err
+			elseif overlap then
 				return false, "Source and destination overlap through a link: " .. tostring(target)
 			end
 		end
@@ -560,7 +677,7 @@ local function transfer_overlap(source, source_cha, target, target_cha)
 end
 
 local function transfer_kind(cha)
-	if cha.is_link then
+	if cha.is_link or (windows and cha.is_indirect) then
 		return "link"
 	elseif cha.is_dir then
 		return "dir"
@@ -571,7 +688,15 @@ local function transfer_kind(cha)
 end
 
 -- Preserve rwx bits so a staged swap never widens private data.
-local function transfer_mode(cha)
+local function transfer_mode(cha, url)
+	if windows then
+		local content, err = windows.run("metadata", { path = tostring(url) })
+		local mode = content and ya.json_decode(content)
+		if type(mode) ~= "table" or type(mode.sddl) ~= "string" or type(mode.readonly) ~= "boolean" then
+			return nil, err or "Cannot read Windows access permissions"
+		end
+		return mode
+	end
 	local perm = cha:perm()
 	if type(perm) ~= "string" or #perm < 10 then
 		return cha.is_dir and "0700" or "0600"
@@ -595,6 +720,11 @@ local function transfer_mode(cha)
 end
 
 local function transfer_chmod(url, mode)
+	if windows then
+		local operation = type(mode) == "table" and "restore" or "private"
+		local result, err = windows.run(operation, { path = tostring(url), metadata = mode })
+		return result ~= nil, err
+	end
 	if command_output("chmod", { mode, tostring(url) }) == nil then
 		return false, "Cannot set permissions on " .. tostring(url)
 	end
@@ -606,7 +736,14 @@ local function snapshot_tree(url, cha)
 	if not kind then
 		return nil, "Unsupported source type: " .. tostring(url)
 	end
-	local node = { url = url, kind = kind, mode = transfer_mode(cha) }
+	local mode, mode_err
+	if kind ~= "link" then
+		mode, mode_err = transfer_mode(cha, url)
+		if not mode then
+			return nil, mode_err
+		end
+	end
+	local node = { url = url, kind = kind, mode = mode }
 	if kind == "dir" then
 		node.children = {}
 		local files, err = fs.read_dir(url, { resolve = false })
@@ -617,6 +754,8 @@ local function snapshot_tree(url, cha)
 			local name = file.url.name
 			if not name or name == "." or name == ".." or name:find("/", 1, true) then
 				return nil, "Invalid directory entry in " .. tostring(url)
+			elseif windows and not windows_component(name) then
+				return nil, "Invalid Windows directory entry"
 			end
 			local child_cha, stat_err = transfer_stat(file.url)
 			if not child_cha then
@@ -626,7 +765,17 @@ local function snapshot_tree(url, cha)
 			if not child then
 				return nil, cerr
 			end
-			node.children[name] = child
+			local key = name
+			if windows then
+				key, cerr = windows.run("name-key", { name = name })
+				if not key then
+					return nil, cerr
+				elseif node.children[key] then
+					return nil, "Ambiguous case-insensitive Windows directory entries"
+				end
+			end
+			child.name = name
+			node.children[key] = child
 		end
 	end
 	return node
@@ -641,13 +790,17 @@ local function stage_tree(node, destination)
 			return false, tostring(err)
 		end
 		for name, child in pairs(node.children) do
-			local copied, cerr = stage_tree(child, destination:join(name))
+			local copied, cerr = stage_tree(child, destination:join(child.name or name))
 			if not copied then
 				return false, cerr
 			end
 		end
 		return transfer_chmod(destination, node.mode)
 	elseif node.kind == "link" then
+		if windows then
+			local result, err = windows.run("copy-link", { source = tostring(node.url), target = tostring(destination) })
+			return result ~= nil, err
+		end
 		if command_output("cp", { "-P", "--", tostring(node.url), tostring(destination) }) == nil then
 			return false, "Cannot copy source link: " .. tostring(node.url)
 		end
@@ -718,12 +871,15 @@ local function cleanup_stage(stage)
 		local cha, stat_err = transfer_stat(url)
 		if not cha then
 			return false, stat_err or ("Missing staging entry: " .. tostring(url))
-		elseif cha.is_link or not cha.is_dir then
+		elseif cha.is_link or (windows and cha.is_indirect) or (not windows and not cha.is_dir) then
 			return true
 		end
 		local secured, secure_err = transfer_chmod(url, "0700")
 		if not secured then
 			return false, secure_err
+		end
+		if not cha.is_dir then
+			return true
 		end
 		local files, read_err = fs.read_dir(url, { resolve = false })
 		if not files then
@@ -746,6 +902,14 @@ local function cleanup_stage(stage)
 	if not ok then
 		warn("Cannot clean private staging directory %s: %s", tostring(stage), tostring(err))
 	end
+end
+
+local function transfer_rename(source, target)
+	if windows then
+		local result, err = windows.run("move", { source = tostring(source), target = tostring(target) })
+		return result ~= nil, err
+	end
+	return fs.rename(source, target)
 end
 
 -- Stage completely before mutation. Reserve fresh destinations exclusively;
@@ -774,7 +938,7 @@ local function install_tree(tree, target, old_cha)
 	end
 	local reserved
 	if old_cha then
-		local moved, merr = fs.rename(target, backup)
+		local moved, merr = transfer_rename(target, backup)
 		if not moved then
 			cleanup_stage(stage)
 			return nil, "Cannot back up destination: " .. tostring(merr)
@@ -787,17 +951,27 @@ local function install_tree(tree, target, old_cha)
 		end
 		target = reserved
 	end
-	local installed, ierr = fs.rename(payload, target)
+	if windows and reserved then
+		-- Windows cannot rename a directory over its empty reservation.
+		-- Release only our placeholder, then use a no-replace native rename.
+		local removed, remove_err = fs.remove(tree.kind == "dir" and "dir" or "file", reserved)
+		if not removed then
+			cleanup_stage(stage)
+			return nil, "Cannot release reserved destination: " .. tostring(remove_err)
+		end
+		reserved = nil
+	end
+	local installed, ierr = transfer_rename(payload, target)
 	if not installed then
 		if old_cha then
-			local restored, restore_err = fs.rename(backup, target)
+			local restored, restore_err = transfer_rename(backup, target)
 			if not restored then
 				return nil, string.format(
 					"Install failed (%s); rollback failed (%s). Original target retained at %s",
 					tostring(ierr), tostring(restore_err), tostring(backup)
 				)
 			end
-		else
+		elseif reserved then
 			local removed, remove_err = fs.remove(tree.kind == "dir" and "dir" or "file", reserved)
 			if not removed then
 				warn("Cannot remove reserved destination %s: %s", tostring(reserved), tostring(remove_err))
@@ -855,13 +1029,15 @@ local function reveal_transfer(url, no_hover)
 	end
 end
 
-function M:handle_file_list_paste(file_uris, no_hover, show_notify)
+function M:handle_file_list_paste(file_uris, no_hover)
+	local outcome = { pasted = 0, skipped = 0, failed = 0, cancelled = false }
 	local cwd, root_err = destination_cwd()
 	if not cwd then
 		warn("%s", root_err)
-		return
+		outcome.failed = #file_uris
+		return outcome
 	end
-	local success_count, bulk_action = 0, nil
+	local bulk_action
 	for index, raw in ipairs(file_uris) do
 		local function paste_item()
 			local path, perr = absolute_path(raw)
@@ -935,22 +1111,20 @@ function M:handle_file_list_paste(file_uris, no_hover, show_notify)
 		end
 		local result, err = paste_item()
 		if result == "cancel_all" then
+			outcome.skipped = outcome.skipped + #file_uris - index + 1
+			outcome.cancelled = true
 			break
-		elseif result and result ~= "skip" then
-			success_count = success_count + 1
+		elseif result == "skip" then
+			outcome.skipped = outcome.skipped + 1
+		elseif result then
+			outcome.pasted = outcome.pasted + 1
 			reveal_transfer(result, no_hover)
-		elseif err then
+		else
+			outcome.failed = outcome.failed + 1
 			warn("Failed to paste item %d/%d: %s", index, #file_uris, err)
 		end
 	end
-	if success_count > 0 and show_notify then
-		ya.notify({
-			title = PackageName,
-			content = string.format("Successfully pasted %d file(s)", success_count),
-			timeout = 3,
-			level = "info",
-		})
-	end
+	return outcome
 end
 
 --==============================================================================
@@ -973,32 +1147,33 @@ local function input_file_name(default_name)
 	if input_event == 1 then
 		if not input_value or input_value == "" then
 			warn("File name can't be empty!")
-			return
+			return false
 		elseif input_value:match("/$") then
-			warn("File name can't ends with '/'")
-			return
+			warn("File name cannot end with '/'")
+			return false
 		end
 		return input_value
 	end
 end
 
 -- Handle text paste (text/plain mimetype) - suggest creating a new file
-function M:handle_text_paste(clipboard_content, no_hover, show_notify)
-	-- Prompt user for filename
+function M:handle_text_paste(clipboard_content, no_hover)
 	local file_name = input_file_name()
-	if not file_name or file_name == "" then
-		return
+	if not file_name then
+		return file_name -- nil: cancelled; false: invalid input
 	end
-
-	M:save_file_with_conflict_handling(file_name, clipboard_content, no_hover, show_notify)
+	return M:save_file_with_conflict_handling(file_name, clipboard_content, no_hover)
 end
 
 -- Text and image bytes share the same private staging/transaction path.
-function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hover, show_notify)
+function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hover)
 	local cwd, err = destination_cwd()
 	if not cwd then
 		warn("%s", err)
 		return false
+	end
+	if windows and type(file_name) == "string" then
+		file_name = file_name:gsub("\\", "/")
 	end
 	if type(file_name) ~= "string" or file_name == "" or file_name:sub(1, 1) == "/"
 		or file_name:sub(-1) == "/" or file_name:find("\0", 1, true)
@@ -1010,6 +1185,10 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 	for component in file_name:gmatch("[^/]+") do
 		if component == "." or component == ".." then
 			warn("Dot path components are not allowed")
+			return false
+		end
+		if windows and not windows_component(component) then
+			warn("Invalid Windows file name component")
 			return false
 		end
 		target = target:join(component)
@@ -1025,7 +1204,6 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 		return false
 	end
 	local action = "overwrite"
-	local notification = "Created: %s"
 	if cha then
 		local choices = {
 			{ on = "o", desc = "Overwrite", action = "overwrite" },
@@ -1039,7 +1217,7 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 		local selected = ya.which({ cands = candidates })
 		action = selected and choices[selected].action or "cancel"
 		if action == "cancel" then
-			return false
+			return nil
 		elseif action == "copy" then
 			local copy, copy_err = copy_destination(target, "file")
 			if not copy then
@@ -1047,9 +1225,7 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 				return false
 			end
 			target, cha = copy, nil
-			notification = "Created copy: %s"
 		else
-			notification = "Overwritten: %s"
 			local final, final_cha, final_err = file_target(target, target.name)
 			if not final then
 				warn("%s", final_err)
@@ -1070,10 +1246,18 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 		warn("Cannot create destination parent: %s", tostring(make_err))
 		return false
 	end
+	local mode = "0600"
+	if cha then
+		mode, err = transfer_mode(cha, target)
+		if not mode then
+			warn("%s", err)
+			return false
+		end
+	end
 	local tree = {
 		kind = "data",
 		data = clipboard_content,
-		mode = cha and transfer_mode(cha) or "0600",
+		mode = mode,
 	}
 	local final, install_err = install_tree(tree, target, cha)
 	if not final then
@@ -1081,14 +1265,6 @@ function M:save_file_with_conflict_handling(file_name, clipboard_content, no_hov
 		return false
 	end
 	reveal_transfer(final, no_hover)
-	if show_notify then
-		ya.notify({
-			title = PackageName,
-			content = string.format(notification, final.name),
-			timeout = 3,
-			level = "info",
-		})
-	end
 	return true
 end
 
@@ -1109,6 +1285,42 @@ local yanked_info = ya.sync(function()
 
 	return paths, cx.yanked.is_cut
 end)
+
+local function single_paste_result(ok)
+	return {
+		pasted = ok == true and 1 or 0,
+		skipped = ok == nil and 1 or 0,
+		failed = ok == false and 1 or 0,
+		cancelled = ok == nil,
+	}
+end
+
+local function finish_paste(outcome, show_notify, original_yank)
+	if outcome.pasted > 0 and outcome.skipped == 0 and outcome.failed == 0 and not outcome.cancelled then
+		-- A prompt may outlive the original selection. Never clear a newer yank.
+		local current, is_cut = yanked_info()
+		local unchanged = not is_cut and #current == #original_yank
+		for i, path in ipairs(current) do
+			if path ~= original_yank[i] then
+				unchanged = false
+				break
+			end
+		end
+		if unchanged then
+			ya.emit("unyank", {})
+		end
+	end
+	if show_notify then
+		ya.notify({
+			title = PackageName,
+			content = string.format("%d pasted, %d skipped, %d failed%s",
+				outcome.pasted, outcome.skipped, outcome.failed, outcome.cancelled and " (cancelled)" or ""),
+			timeout = 5,
+			level = outcome.failed > 0 and "warn" or "info",
+		})
+	end
+	return outcome
+end
 
 -- Check if mimetypes array contains a mimetype that contains the substring
 local function has_mimetype(mimetypes, substring)
@@ -1133,7 +1345,6 @@ function M:paste_entry(job)
 	local yanked_files, is_cut = yanked_info()
 	if is_cut then
 		ya.emit("paste", {})
-		ya.emit("unyank", {})
 		return
 	end
 
@@ -1142,24 +1353,20 @@ function M:paste_entry(job)
 		if has_mimetype(mimetypes, "code/file-list") or has_mimetype(mimetypes, "text/uri-list") then
 			local paths = get_clipboard_file_uris(mimetypes, backend)
 			if paths then
-				M:handle_file_list_paste(paths, no_hover, show_notify)
-				ya.emit("unyank", {})
-				return
+				return finish_paste(M:handle_file_list_paste(paths, no_hover), show_notify, yanked_files)
 			end
 			-- A failed file representation may still have a usable image or text.
 		end
 		if has_mimetype(mimetypes, "image/") then
-			M:handle_image_paste(table.concat(mimetypes, "\n"), no_hover, show_notify, backend)
-			ya.emit("unyank", {})
-			return
+			return finish_paste(single_paste_result(
+				M:handle_image_paste(table.concat(mimetypes, "\n"), no_hover, backend)), show_notify, yanked_files)
 		end
 		for _, mime in ipairs(mimetypes) do
 			if mime:match("^text/plain") or mime == "UTF8_STRING" or mime == "TEXT" or mime == "STRING" then
 				local content = read_clipboard(backend == "mac" and "text/plain" or mime, backend)
 				if content and content ~= "" then
-					M:handle_text_paste(content, no_hover, show_notify)
-					ya.emit("unyank", {})
-					return
+					return finish_paste(single_paste_result(
+						M:handle_text_paste(content, no_hover)), show_notify, yanked_files)
 				end
 			end
 		end
@@ -1167,7 +1374,6 @@ function M:paste_entry(job)
 
 	if #yanked_files > 0 then
 		ya.emit("paste", {})
-		ya.emit("unyank", {})
 		return
 	end
 	warn("Clipboard does not contain readable supported data")

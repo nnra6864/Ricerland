@@ -1,106 +1,83 @@
-# Universal Copy/Paste for Yazi
+# ucp.yazi
 
-Clipboard backends for **Wayland**, **Xorg**, and **macOS**. Linux/Xorg is exercised with real Yazi; native macOS and Wayland execution are not verified by the current suite.
+Copy files between **Yazi and desktop apps**. Paste files, save clipboard images, or turn text into a new file.
 
-Integrates yazi copy/paste with system clipboard similar to GUI file managers.
+**Yazi 26.8.15+** · [MIT](LICENSE)
 
-## Features
+## Install
 
-- **Copy files to system clipboard** - Works with other file managers, browsers, and applications
-- **Paste files from external sources** - Supports pasting files from other file managers and code editors (including VS Code)
-- **Text paste to new file** - Automatically suggests creating new files when clipboard contains text
-- **Smart collision handling** - Manages file conflicts during paste operations
-
-- Native Yazi cuts retain priority over external clipboard contents.
-- When no supported clipboard data is readable, copied files fall back to native Yazi paste.
-
-
-## Previews
-
-### Copy
-![Copy preview](https://github.com/user-attachments/assets/8894ca14-402b-4885-b2b6-d9666a4661b4)
-
----
-
-### Paste
-![Paste preview](https://github.com/user-attachments/assets/ae29d283-fec1-4e56-8857-c57d17c0d4f8)
-
----
-
-### File collision handling & paste into new file
-![Collision preview](https://github.com/user-attachments/assets/92746b8d-e93e-4c0c-8bbb-7845be5f57e1)
-
-
-## Installation
-
-**Requires:**
-
-- **Wayland**: `wl-clipboard`
-- **Xorg**: `xclip`
-- **macOS**: `osascript` with AppKit, plus `pbpaste` for text
-- **Filesystem helpers on `PATH`**: `realpath`, `cp`, `chmod`, and `mktemp`. Transfers fail without changing an existing target if required preparation/canonicalization fails.
-
-```bash
+```sh
 ya pkg add simla33/ucp
 ```
 
-## Configuration
+| Platform | Requirements and verification |
+| --- | --- |
+| X11 | `xclip`. Tested with real Yazi and a private X11 clipboard. |
+| Wayland | `wl-clipboard`. Tested with real Yazi and headless Sway. |
+| macOS | `osascript`/AppKit and `pbpaste`. |
+| Windows | Built-in `powershell.exe` 5.1. [Native tests run in a disposable VM](docs/development.md#windows). |
 
-> [!NOTE]
-> Requires Yazi 26.8.15 or newer. Selected and yanked entries are `File` objects;
-> the plugin reads each entry's `url` when collecting file paths.
+Linux/macOS also need `realpath`, `cp`, `chmod`, and `mktemp`. Windows needs an interactive desktop and an ACL-capable filesystem. [Platform details](docs/safety.md#windows)
 
-```toml
-[mgr]
-prepend_keymap = [
-    { on = "p", run = "plugin ucp paste", desc = "Paste" },
-    { on = "y", run = "plugin ucp copy", desc = "Copy" }
-]
-```
+## Keys
 
-You can enable notifications for successful/failed operations:
+Add these entries to your existing `[mgr].prepend_keymap` in `keymap.toml`, then restart Yazi:
 
 ```toml
 [mgr]
 prepend_keymap = [
-    { on = "p", run = "plugin ucp paste notify", desc = "Paste" },
-    { on = "y", run = "plugin ucp copy notify", desc = "Copy" }
+    { on = "y", run = "plugin ucp -- copy notify", desc = "Copy to clipboard" },
+    { on = "p", run = "plugin ucp -- paste notify", desc = "Paste files, images or text" },
 ]
 ```
 
-## Paste behavior and safety
+Only `y` and `p` invoke ucp. [Native Yazi keys and an optional clipboard bypass](docs/troubleshooting.md#native-yazi-keys)
 
-- External copied files, images, or text take precedence over an internal copied selection. A native **cut** always uses Yazi's move operation instead.
-- File lists use percent-encoded local `file://` URLs, including `file://localhost/…`. Unicode, quotes, percent signs, CR/LF, and trailing filename whitespace are preserved. Remote authorities and ambiguous raw newline-separated POSIX lists are not interpreted as local file selections.
-- Source symlinks are copied **as links**, including dangling links and directory links with a trailing slash. Empty directories are retained. A directory symlink is not recursively dereferenced.
-- Source/destination equality and ancestor/descendant overlap are rejected, including aliases through source-parent symlinks. Destination symlinks are rejected rather than followed. Ancestor aliases above a real chosen working directory are resolved first; choosing a symlink itself as the destination root is rejected.
-- **Overwrite** replaces a directory only after its complete replacement is prepared. **Merge** prepares a merged tree and preserves unrelated entries. Overwriting a file onto an existing directory puts it inside that directory, using the same basename.
-- **Create copy** chooses an unused name: `a_copy.txt`, then `a_copy_1.txt`, etc. Existing copies and dangling-link names are never reused. `q`/Escape skip the current collision; `O`/`C` apply overwrite/copy to later collisions; `Q` stops the remaining batch.
-- Text filenames may contain subdirectories, but absolute paths and `.`/`..` components are rejected. New text/image files are private (`0600`). Copies and merges preserve ordinary `rwx` permission bits; ownership, special bits, ACLs, extended attributes, and timestamps are not guaranteed preserved.
+Remove `notify` for fewer notifications; keep `--` when passing multiple arguments. [Config locations and options](docs/troubleshooting.md#configuration)
 
-### Staging and recovery
+## Demos
 
-Transfers prepare a complete result in a private `0700` directory on the destination filesystem. Existing targets are moved to a backup until the prepared result is installed. Reported install failures restore that backup; if rollback itself fails, the warning gives the retained backup path (`.ucp-stage*/backup`). Enough free space for the prepared tree is required.
+![Copying a selected file from Yazi into a desktop file manager.](https://github.com/user-attachments/assets/8894ca14-402b-4885-b2b6-d9666a4661b4)
 
-This is **not crash-atomic or a filesystem snapshot**: process/power loss between renames can leave a recovery directory, and path-based checks do not defend against another process deliberately racing pathname changes. Do not remove a retained staging directory until any needed backup has been recovered.
+[Paste files](https://github.com/user-attachments/assets/ae29d283-fec1-4e56-8857-c57d17c0d4f8) · [Resolve collisions and save text](https://github.com/user-attachments/assets/92746b8d-e93e-4c0c-8bbb-7845be5f57e1)
 
-macOS images are converted to PNG using a private temporary directory. Paths are passed as process arguments, never inserted into shell commands. Cleanup uses the exact created directory, including when `TMPDIR` contains quotes or newlines or the image writer fails.
+## Paste behavior
 
-## Regression verification
+**Native cuts win.** Otherwise, clipboard files, images, then text take priority. With no supported readable clipboard data, ucp uses Yazi's native yank. Text asks for a filename; images use a timestamped name.
 
-```bash
-python -B -m unittest discover -s tests -v
+| Collision key | Action |
+| --- | --- |
+| `o` / `O` | Overwrite one / all later collisions. |
+| `c` / `C` | Create a uniquely named copy, such as `note_copy.txt`, once / for all later collisions. |
+| `m` | Merge directories, preserving unrelated entries. |
+| `q` / Escape | Skip one item; cancel a text/image save. |
+| `Q` | Stop the remaining file batch. |
+
+Text/image dialogs offer `o`, `c`, and `q`/Escape. In the filename prompt, Enter submits and Ctrl-C cancels.
+
+## Diagnostics
+
+```sh
+~/.config/yazi/plugins/ucp.yazi/ucp doctor
 ```
 
-The Linux suite launches real Yazi in a PTY with private Xvfb/Xauthority/clipboard state and a read-only-host bubblewrap sandbox. It covers copy/cut precedence, all collision keys, unique names, links and empty directories, filename framing and traversal escapes, private directory modes, read/staging failures, and injected final-rename rollback.
+No keybinding, no running Yazi, no clipboard payload reads. The report shows helper/session metadata and recognized formats—not paths, environment values, or unknown format names.
 
-Requirements: Python 3, `yazi`, `ya`, `bwrap`, `Xvfb`, `xclip`, and the filesystem helpers above. A C compiler is optional for the rename-failure case; permission-denial cases require a non-root user.
+[Use `ucp doctor` from PATH or Windows PowerShell](docs/troubleshooting.md#diagnostics) · [Troubleshooting](docs/troubleshooting.md)
 
-The macOS cases simulate the unavailable `osascript`/`pbpaste` executable boundary to exercise Lua framing, argv handling, private temporary paths, and cleanup. They **do not execute AppKit/JXA**. Native macOS clipboard/image conversion and a real Wayland compositor still require platform verification before claiming those backends are validated.
+## Limits and safety
 
-## Credits
+Local search results work. [Remote files](docs/troubleshooting.md#remote-files) must be downloaded locally before external copy. [Flatpak copying](docs/troubleshooting.md#flatpak-file-copying) has optional portal support.
 
-- **Paste into a new file** taken from [boydaihungst/save-clipboard-to-file.yazi](https://github.com/boydaihungst/save-clipboard-to-file.yazi)
-- **Copy** based on [grappas/wl-clipboard.yazi](https://github.com/grappas/wl-clipboard.yazi)
-- macOS clipboard contributions from **[Ze Huang (@Sutter099)](https://github.com/Sutter099)** in [PR #9](https://github.com/simla33/ucp.yazi/pull/9) and **[@Fun10165](https://github.com/Fun10165)** in [PR #16](https://github.com/simla33/ucp.yazi/pull/16), integrated selectively with the safety changes above.
-- Directory path/merge work from **[@VigneshR387](https://github.com/VigneshR387)** in [PR #6](https://github.com/simla33/ucp.yazi/pull/6) and [PR #7](https://github.com/simla33/ucp.yazi/pull/7).
+Transfers are staged, **not crash-atomic**. Keep any backup named in a recovery warning. [Safety and recovery](docs/safety.md) · [Tests and verification limits](docs/development.md)
+
+Update with `ya pkg upgrade simla33/ucp`, then restart Yazi.
+
+## Thanks
+
+- **[Alex Cicovic (@acicovic)](https://github.com/acicovic)** — macOS multi-file copy and Finder verification in [#18](https://github.com/simla33/ucp.yazi/pull/18), plus argument documentation in [#19](https://github.com/simla33/ucp.yazi/pull/19).
+- **[XYenon](https://github.com/XYenon)** and [clipboard.yazi](https://github.com/XYenon/clipboard.yazi) — Windows clipboard inspiration. ucp's implementation is independent; no AGPL source was copied.
+- **[boydaihungst/save-clipboard-to-file.yazi](https://github.com/boydaihungst/save-clipboard-to-file.yazi)** — the original paste-to-file implementation.
+- **[grappas/wl-clipboard.yazi](https://github.com/grappas/wl-clipboard.yazi)** — the basis for clipboard copy.
+- **[Ze Huang (@Sutter099)](https://github.com/Sutter099)** and **[@Fun10165](https://github.com/Fun10165)** — macOS contributions in [#9](https://github.com/simla33/ucp.yazi/pull/9) and [#16](https://github.com/simla33/ucp.yazi/pull/16).
+- **[@VigneshR387](https://github.com/VigneshR387)** — directory/merge work in [#6](https://github.com/simla33/ucp.yazi/pull/6) and [#7](https://github.com/simla33/ucp.yazi/pull/7).
