@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# ytdl <mode> [yt-dlp args...] <url...>
+#   v    best video+audio -> mkv
+#   vs   same, with uploaded subtitles embedded
+#   a    best audio, extracted
+#   as   best audio -> mka, with uploaded subtitles embedded
+#   all  archive: video, description, info json, comments, thumbnail, English subs
+# Anything after the mode goes straight to yt-dlp.
+
+set -euo pipefail
+
+usage() { sed -n '2,8s/^# \{0,1\}//p' "$0"; }
+
+subs=(--sub-langs 'all,-live_chat' --embed-subs)
+size=(--exec 'du -sh {}')
+
+mode=${1:-}
+[[ -n $mode ]] && shift
+
+case $mode in
+    v)   yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "${size[@]}" "$@" ;;
+    vs)  yt-dlp -f bestvideo+bestaudio --merge-output-format mkv "${subs[@]}" "${size[@]}" "$@" ;;
+    a)   yt-dlp -f bestaudio --extract-audio "${size[@]}" "$@" ;;
+    as)  yt-dlp -f bestaudio --remux-video mka "${subs[@]}" "${size[@]}" "$@" ;;
+    all)
+        yt-dlp \
+            -f bestvideo+bestaudio \
+            --merge-output-format mkv \
+            --write-description \
+            --write-info-json \
+            --no-clean-info-json \
+            --write-comments \
+            --write-thumbnail \
+            --write-subs \
+            --write-auto-subs \
+            --sub-langs "en.*" \
+            -o "%(title)s/%(title)s.%(ext)s" \
+            "$@"
+        find . -name "*.info.json" -exec sh -c 'jq . "$1" > temp.json && mv temp.json "$1"' _ {} \;
+        ;;
+    -h|--help|help) usage ;;
+    *) usage >&2; exit 1 ;;
+esac
